@@ -45,27 +45,66 @@ const ARCH = [
     pitch: 'Un build lent mais très résistant : régénération de Vishnu, Peau de chêne, poison. Idéal pour apprendre la magie sans trop de pression.' },
   { id: 'chasseur-tresors', title: 'Chasseur de trésors (Farm & butin)', obj: R => (1 + R.at['minecraft:generic.luck']) * Math.pow(ehp(R), 0.3) * Math.pow(R.dps + 1, 0.3) * Math.pow(R.at['apotheosis:experience_gained'], 0.5), origin: 'medievalorigins:goblin', cls: 'origins-classes:explorer', blessing: 'cisco_rpg_origins:chiron_blessing', tree: 'hunter', weapon: 'rogue', extra: [], armor: ['gilded_eagle', 'gilded_eagle'], spells: [], tags: ['Utilitaire', 'Farm', 'Butin'], wiki: 'builds/chasseur-tresors.html',
     pitch: 'Pas le plus fort en combat, mais le plus riche : Treasure Hunter (×3 de butin sur 15 % des kills), chance maximale et XP ×3 de Chiron.' },
+
+  // ---------------- variantes et builds supplémentaires ----------------
+  { isNew: 1, id: 'mage-glace', title: 'Mage de glace (Boréal)', obj: OBJ.magic('ice'), origin: 'origins:human', cls: 'origins-classes:cleric', blessing: 'cisco_rpg_origins:boreas_blessing', tree: 'enchanter', weapon: STAFF, extra: ['book'], armor: ['brightsteel', 'ascended_hero_violet'], spells: [['icicle', 10], ['cone_of_cold', 10], ['frostwave', 8], ['ray_of_frost', 5], ['ice_block', 6]], tags: ['Magie', 'Glace', 'Contrôle'], wiki: 'builds/mage-glace.html',
+    pitch: 'Un mage de contrôle : tes sorts ralentissent et gèlent. Chaque sort de glace a un multiplicateur de ×0,3 dans le pack : il faut un équipement très axé glace pour décoller.' },
+  { isNew: 1, id: 'mage-sang', title: 'Mage de sang (Demi-dieu Umbra)', obj: OBJ.magic('blood'), origin: 'cisco_rpg_origins:demi_god_umbra', cls: 'origins-classes:cleric', blessing: 'cisco_rpg_origins:babayaga_blessing', tree: 'alchemist', weapon: STAFF, extra: ['book'], armor: ['darksteel_armor', 'ascended_hero_violet'], spells: [['blood_slash', 5], ['wither_skull', 10], ['ray_of_siphoning', 10], ['acupuncture', 10], ['devour', 10]], tags: ['Magie', 'Sang', 'Vol de vie'], wiki: 'builds/mage-sang.html',
+    pitch: 'La magie de sang sans invocations : tu te soignes en frappant. +10 PV et +40 % de dégâts du Demi-dieu Umbra (mais +20 % de dégâts subis).' },
+  { isNew: 1, id: 'archer-elfe', title: 'Archer elfe des bois', obj: OBJ.ranged, origin: 'arkwys:woodelf', cls: 'origins-classes:archer', blessing: 'cisco_rpg_origins:skadis_blessing', tree: 'hunter', weapon: BOW, extra: [], armor: ['gilded_eagle', 'ascended_hero_rouge'], spells: [], tags: ['Distance', 'Souple', 'Débutant-friendly'], wiki: 'builds/archer-elfe.html',
+    pitch: 'Alternative plus simple à l\'archer Venthari : l\'elfe des bois tire mieux avec tout projectile (mais il est faible en mêlée) et ne subit pas −30 % de PV.' },
+  { isNew: 1, id: 'arbalete', title: 'Arbalétrier critique', obj: OBJ.ranged, origin: 'cisco_rpg_origins:venthari_sharpshooter', cls: 'origins-classes:archer', blessing: 'cisco_rpg_origins:ares_blessing', tree: 'hunter', weapon: { type: 'crossbow', name: 'Arbalète (dégâts de flèche de base)', base: { dmg: 11, spd: 1 } }, extra: [], armor: ['gilded_eagle', 'ascended_hero_rouge'], spells: [], tags: ['Distance', 'Critique', 'Burst'], wiki: 'builds/arbalete.html',
+    pitch: 'Un coup puissant à chaque rechargement. Arès (+10 % de critique, puis +20 % et +40 % de dégâts critiques) pousse la logique des critiques à fond.' },
+  { isNew: 1, id: 'demi-umbra', title: 'Demi-dieu Umbra (Bruiser)', obj: OBJ.melee, origin: 'cisco_rpg_origins:demi_god_umbra', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:thors_blessing', tree: 'blacksmith', weapon: 'equi', extra: [], armor: ['darksteel_armor', 'ascended_hero_rouge'], spells: [], tags: ['Mêlée', 'Dégâts', 'Simple'], wiki: 'builds/demi-umbra.html',
+    pitch: '+40 % de dégâts et +10 PV dès le début : un guerrier simple et efficace. En échange tu subis +20 % de dégâts.' },
+  { isNew: 1, id: 'demi-lux', title: 'Demi-dieu Lux (Lumière)', obj: OBJ.melee, origin: 'cisco_rpg_origins:demi_god_lux', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:ares_blessing', tree: 'blacksmith', weapon: 'equi', extra: [], armor: ['darksteel_armor', 'ascended_hero_rouge'], spells: [], tags: ['Mêlée', 'Dégâts', 'Anti-Wither'], wiki: 'builds/demi-lux.html',
+    pitch: 'Comme l\'Umbra mais immunisé aux ténèbres et au Wither, avec −10 % de dégâts sous le ciel ; Arès apporte les critiques.' },
+  { isNew: 1, id: 'duelliste', title: 'Duelliste glacé (Frijani)', obj: R => Math.pow(R.dps + 1, 0.55) * Math.pow(ehp(R), 0.45), origin: 'cisco_rpg_origins:frijani_drengr', cls: 'origins-classes:rogue', blessing: 'cisco_rpg_origins:ares_blessing', tree: 'hunter', weapon: 'rogue', extra: [], armor: ['gilded_eagle', 'gilded_eagle'], spells: [], tags: ['Mêlée', 'Rapide', 'Vol de vie'], wiki: 'builds/duelliste.html',
+    pitch: 'Le Frijani à l\'épée rapide : vol de vie, critiques et esquive du set Gilded Eagle. Moins lourd que le berserker à deux mains.' },
+  { isNew: 1, id: 'tank-lux', title: 'Rempart de lumière (Tank Lux)', obj: OBJ.tank, origin: 'cisco_rpg_origins:demi_god_lux', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:amaterasus_blessing', tree: 'blacksmith', weapon: 'equi', shield: true, extra: [], armor: ['darksteel_armor', 'sovereign_ascendant'], spells: [], tags: ['Tank', 'Bouclier', 'Vie'], wiki: 'builds/tank-lux.html',
+    pitch: 'Un tank qui fait aussi mal : +10 PV de l\'origine, +20 % de vie après le dragon (Amaterasu), −10 % de dégâts sous le ciel.' },
+  { isNew: 1, id: 'mage-tank', title: 'Gardien sacré (Mage tank)', obj: R => Math.pow(school(R, 'holy'), 0.4) * Math.pow(ehp(R), 0.6), origin: 'cisco_rpg_origins:rastrayian_justicar', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:vishnus_blessing', tree: 'blacksmith', weapon: STAFF, shield: true, extra: ['book'], armor: ['darksteel_armor', 'sovereign_ascendant'], spells: [['guiding_bolt', 10], ['heal', 10], ['divine_smite', 5], ['healing_circle', 10]], tags: ['Soutien', 'Tank', 'Hybride'], wiki: 'builds/mage-tank.html',
+    pitch: 'Le soigneur qu\'on ne peut pas tuer : armure lourde, régénération de Vishnu (−15 % de dégâts reçus après le dragon), et des soins sacrés.' },
+  { isNew: 1, id: 'phenix-bouclier', title: 'Rempart du Phénix', obj: R => Math.pow(R.dps + 1, 0.25) * Math.pow(ehp(R), 0.6) * Math.pow(R.at['irons_spellbooks:fire_spell_power'], 0.15), origin: 'cisco_rpg_origins:pyrios_pheonix_knight', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:hephaestus_blessing', tree: 'blacksmith', weapon: 'fire', shield: true, extra: [], armor: ['darksteel_armor', 'ascended_hero_rouge'], spells: [['burning_dash', 10], ['heat_surge', 8]], tags: ['Tank', 'Feu', 'Hybride'], wiki: 'builds/phenix-bouclier.html',
+    pitch: 'Un tank offensif : bouclier, épée de feu et Héphaïstos pour entamer les boss. Fragile dans le froid.' },
+  { isNew: 1, id: 'berserker-critique', title: 'Berserker critique (Arès)', obj: OBJ.melee, origin: 'cisco_rpg_origins:frijani_drengr', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:ares_blessing', tree: 'blacksmith', weapon: 'heavy', extra: [], armor: ['darksteel_armor', 'ascended_hero_rouge'], spells: [], tags: ['Mêlée', 'Critique', 'Burst'], wiki: 'builds/berserker-critique.html',
+    pitch: 'Variante du berserker : Arès à la place d\'Héphaïstos pour miser sur les critiques plutôt que sur les % de PV.' },
+  { isNew: 1, id: 'templier-sacre', title: 'Templier sacré (Paladin)', obj: R => Math.pow(R.dps + 1, 0.4) * Math.pow(ehp(R), 0.35) * Math.pow(school(R, 'holy'), 0.25), origin: 'strictly:paladin', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:chiron_blessing', tree: 'blacksmith', weapon: 'equi', shield: true, extra: ['book'], armor: ['darksteel_armor', 'ascended_hero_rouge'], spells: [['divine_smite', 5], ['heal', 10], ['guiding_bolt', 10]], tags: ['Mêlée', 'Soutien', 'Hybride'], wiki: 'builds/templier-sacre.html',
+    pitch: 'Épée, bouclier et soins : le polyvalent du groupe. Chiron triple ton XP et renforce les soins.' },
+  { isNew: 1, id: 'assassin-voleur', title: 'Voleur de l\'ombre', obj: R => Math.pow(R.dps + 1, 0.5) * Math.pow(ehp(R), 0.5), origin: 'strictly:thief', cls: 'origins-classes:rogue', blessing: 'cisco_rpg_origins:lokis_blessing', tree: 'hunter', weapon: 'rogue', extra: [], armor: ['gilded_eagle', 'gilded_eagle'], spells: [], tags: ['Mêlée', 'Furtivité', 'Loki'], wiki: 'builds/assassin-voleur.html',
+    pitch: 'Invisible accroupi (équipement compris), +9 emplacements d\'inventaire, et Loki : poison, portée, invisibilité. Frappe dans le dos.' },
+  { isNew: 1, id: 'nain-tank', title: 'Tank Shulk (peau de pierre)', obj: OBJ.tank, origin: 'origins:shulk', cls: 'origins-classes:blacksmith', blessing: 'cisco_rpg_origins:athenas_blessing', tree: 'blacksmith', weapon: 'equi', shield: true, extra: [], armor: ['darksteel_armor', 'sovereign_ascendant'], spells: [], tags: ['Tank', 'Armure', 'Simple'], wiki: 'builds/nain-tank.html',
+    pitch: 'Armure naturelle de la carapace du Shulk + 9 emplacements d\'inventaire en plus ; Forgeron pour de petits bonus d\'équipement. Un tank facile à vivre.' },
 ];
 
+const school = (R, s) => R.at['irons_spellbooks:' + s + '_spell_power'] * R.spellPower;
 const ehp = R => { const red = R.armorReduction(250); return R.hp / Math.max(0.02, 1 - red) / Math.max(0.1, 1 - Math.min(0.9, R.dodgeTotal)) / R.taken; };
 
+const ALLC = ['ring1', 'ring2', 'ring3', 'neck', 'belt', 'back', 'body', 'hands', 'wrist', 'talis', 'charm'];
 const STAGES = [
-  { key: 'milieu', label: 'Milieu de jeu', rarity: 'epic', points: 45, flags: { dragon: false }, wi: 0, ai: 0, affixLimit: 2, socketLimit: 1, roll: 0.4, curios: ['ring1', 'ring2', 'neck'] },
-  { key: 'fin', label: 'Fin de jeu', rarity: 'mythic', points: 100, flags: { dragon: true }, wi: 1, ai: 1, affixLimit: 3, socketLimit: 2, roll: 0.6, curios: ['ring1', 'ring2', 'ring3', 'neck', 'belt', 'back', 'charm'] },
+  { key: 'debutant', label: 'Débutant', rarity: 'rare', points: 15, flags: { dragon: false }, wi: -1, ai: -1, affixLimit: 1, socketLimit: 1, roll: 0.3, curios: ['ring1', 'ring2'], fixedTree: true, hp: 120 },
+  { key: 'milieu', label: 'Intermédiaire', rarity: 'epic', points: 45, flags: { dragon: false }, wi: 0, ai: 0, affixLimit: 2, socketLimit: 1, roll: 0.4, curios: ['ring1', 'ring2', 'neck'], hp: 180 },
+  { key: 'fin', label: 'Avancé', rarity: 'mythic', points: 100, flags: { dragon: true }, wi: 1, ai: 1, affixLimit: 3, socketLimit: 2, roll: 0.6, curios: ['ring1', 'ring2', 'ring3', 'neck', 'belt', 'back', 'charm'], hp: 350 },
+  { key: 'optimise', label: 'Optimisé (BiS)', rarity: 'mythic', points: 115, flags: { dragon: true }, wi: 1, ai: 1, affixLimit: 4, socketLimit: 3, roll: 0.9, curios: ALLC, hp: 400 },
 ];
-
+const EARLY = { sword: P('sword', 'Épée en fer'), heavy_weapon: P('heavy_weapon', 'Hache en fer') };
+const ONLY_STAGES = process.env.STAGES ? process.env.STAGES.split(',') : null, ONLY_ARCH = process.env.ARCHS ? process.env.ARCHS.split(',') : null;
+const prevB = fs.existsSync(__dirname + '/../site/data/builds.js') ? JSON.parse(fs.readFileSync(__dirname + '/../site/data/builds.js', 'utf8').replace('window.BUILDS=', '').replace(/;$/, '')) : [];
+const prevR = fs.existsSync(__dirname + '/../out/builds_report.json') ? JSON.parse(fs.readFileSync(__dirname + '/../out/builds_report.json', 'utf8')) : [];
 const out = [], report = [];
 for (const a of ARCH) {
+  if (ONLY_ARCH && !ONLY_ARCH.includes(a.id) && !(ONLY_ARCH.includes('new') && a.isNew)) continue;
   for (const st of STAGES) {
-    const w = typeof a.weapon === 'string' ? WEAPON[a.weapon][st.wi] : a.weapon;
+    if (ONLY_STAGES && !ONLY_STAGES.includes(st.key)) continue;
+    let w = typeof a.weapon === 'string' ? (st.wi < 0 ? (a.weapon === 'heavy' ? EARLY.heavy_weapon : EARLY.sword) : WEAPON[a.weapon][st.wi]) : a.weapon;
     const gear = { main: Object.assign({ rarity: st.rarity }, w) };
     if (a.shield) gear.off = Object.assign({ rarity: st.rarity }, SHIELD);
-    const arm = armorSet(a.armor[st.ai]);
+    const arm = armorSet(st.ai < 0 ? 'adventurer' : a.armor[st.ai]);
     for (const k of Object.keys(arm)) gear[k] = Object.assign({ rarity: st.rarity }, arm[k]);
     const cg = {}; [...st.curios, ...a.extra].forEach(sl => cg[sl] = { type: CTYPE[sl], name: NAME[sl] });
     for (const k of Object.keys(cg)) gear[k] = Object.assign({ rarity: st.rarity, gemRarity: st.rarity }, cg[k]);
     for (const k of Object.keys(gear)) gear[k].gemRarity = st.rarity;
-    const spec = { affixLimit: st.affixLimit, socketLimit: st.socketLimit, roll: st.roll, hpFloor: st.key === 'fin' ? 350 : 180, title: a.title + ' — ' + st.label, origin: a.origin, cls: a.cls, blessing: a.blessing, flags: st.flags, points: st.points, objective: a.obj, treeClass: process.env.TREE || a.tree, gear, spells: a.spells.map(([id, l]) => ({ id, level: l })) };
+    const spec = { affixLimit: st.affixLimit, socketLimit: st.socketLimit, roll: st.roll, hpFloor: st.hp, title: a.title + ' — ' + st.label, origin: a.origin, cls: a.cls, blessing: a.blessing, flags: st.flags, points: st.points, objective: a.obj, treeClass: st.fixedTree ? a.tree : (process.env.TREE || a.tree), gear, spells: a.spells.map(([id, l]) => ({ id, level: l })) };
     let S;
     try { S = optimize(spec); } catch (e) { console.error('ERREUR', a.id, st.key, e.message); continue; }
     const R = ENG.compute(S);
@@ -77,13 +116,17 @@ for (const a of ARCH) {
       affixes: it.affixes.map(x => { const af = IDX.AFFIX[x.id]; return { id: x.id, name: af.name, text: af.text[it.rarity] }; }),
       gems: it.gems.map(g => ({ id: g.id, name: IDX.GEM[g.id].name, rar: g.rar })) }));
     const keystones = S.nodes.map(id => IDX.TREE.byId[id]).filter(n => n.tier === 'keystone' || n.tier === 'notable').map(n => ({ name: n.name, tier: n.tier, effects: n.effects }));
-    const entry = { id: a.id + '-' + st.key, title: a.title + ' — ' + st.label, summary: a.pitch, tags: [...a.tags, st.label], wiki: a.wiki, state: S };
+    const entry = { id: a.id + '-' + st.key, title: a.title + ' — ' + st.label, summary: a.pitch, tags: [...a.tags, st.label], wiki: a.wiki, arch: a.id, level: st.key, state: S };
     S.name = entry.title;
     out.push(entry);
     report.push({ id: a.id, stage: st.key, title: a.title, label: st.label, summary: sm, spells: sp, gear: gearRep, keystones, nodes: S.nodes, origin: a.origin, cls: a.cls, blessing: a.blessing, tree: a.tree });
     console.log(a.id, st.key, JSON.stringify(sm));
   }
 }
-fs.writeFileSync(path.join(__dirname, '..', 'site/data/builds.js'), 'window.BUILDS=' + JSON.stringify(out) + ';');
-fs.writeFileSync(path.join(__dirname, '..', 'out/builds_report.json'), JSON.stringify(report, null, 1));
-console.log('OK', out.length);
+const key = x => (x.arch || x.id.replace(/-(milieu|fin|debutant|optimise)$/, '')) + '|' + (x.level || x.stage || x.id.split('-').pop());
+const fixOld = x => { if (!x.arch) { x.arch = x.id.replace(/-(milieu|fin)$/, ''); x.level = x.id.endsWith('-fin') ? 'fin' : 'milieu'; x.title = x.title.replace('Milieu de jeu', 'Intermédiaire').replace('Fin de jeu', 'Avancé'); x.tags = x.tags.map(t => t === 'Milieu de jeu' ? 'Intermédiaire' : t === 'Fin de jeu' ? 'Avancé' : t); } return x; };
+const mergedB = [...prevB.map(fixOld).filter(x => !out.find(o => key(o) === key(x))), ...out];
+const mergedR = [...prevR.map(x => (x.label === 'Milieu de jeu' ? Object.assign(x, { label: 'Intermédiaire' }) : x.label === 'Fin de jeu' ? Object.assign(x, { label: 'Avancé' }) : x)).filter(x => !report.find(o => o.id === x.id && o.stage === x.stage)), ...report];
+fs.writeFileSync(path.join(__dirname, '..', 'site/data/builds.js'), 'window.BUILDS=' + JSON.stringify(mergedB) + ';');
+fs.writeFileSync(path.join(__dirname, '..', 'out/builds_report.json'), JSON.stringify(mergedR, null, 1));
+console.log('OK', out.length, 'nouveaux ;', mergedB.length, 'total');

@@ -35,7 +35,7 @@ Le pipeline lit `../minecraft/` (mods, config, kubejs, datapacks Paxi) et recré
 
 ```bash
 ./run_all.sh                         # extraction -> données -> wiki -> vérif des liens
-TREE=auto node sim/gen_builds.js     # (long, ~25 min) recalcule les builds optimisés
+TREE=auto node sim/gen_builds.js     # (long) recalcule les 104 builds ; options : STAGES=debutant,optimise ARCHS=new,archer
 python3 build_wiki.py                # régénère le wiki avec les nouveaux builds
 ```
 

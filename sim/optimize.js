@@ -106,7 +106,7 @@ function optimize(spec) {
     S.nodes.push(...bestPath.reverse()); base = score(S);
   }
   };
-  const CLASSES = spec.treeClass === 'auto' ? ['hunter', 'blacksmith', 'enchanter', 'alchemist', 'cook', 'miner'] : [spec.treeClass];
+  const CLASSES = spec.treeClass === 'auto' ? ['hunter', 'blacksmith', 'alchemist', 'miner'] : [spec.treeClass];
   const bestTree = () => {
     let best = null, bs = -1;
     for (const c of CLASSES) { treePass(c); const sc = score(S); if (sc > bs) { bs = sc; best = { nodes: S.nodes.slice(), c }; } }

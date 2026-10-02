@@ -20,10 +20,13 @@ NAV = [
     ('Équipement', [('equipement', 'Rareté, affixes & sockets'), ('gemmes', 'Gemmes'), ('affixes', 'Catalogue des affixes'), ('atelier', 'Ateliers & enchantement'), ('enchants', 'Tous les enchantements'), ('objets-campagne', 'Équipement de campagne'), ('accessoires', 'Accessoires & reliques')]),
     ('Magie', [('magie', 'Comprendre la magie'), ('sorts', 'Catalogue des sorts (Iron\'s)'), ('ars', 'Glyphes d\'Ars Nouveau')]),
     ('Boss', [('boss', 'Guide des boss')]),
-    ('Builds', [('builds/index', 'Tous les builds')] + [(f"builds/{b[0]}", b[1]) for b in [
+    ('Builds', [('builds/index', 'Tous les builds'), ('builds/niveaux', 'Débutant → Optimisé')] + [(f"builds/{b[0]}", b[1]) for b in [
         ('mage-ender', 'Mage sombre (Ender)'), ('justicier', 'Justicier sacré'), ('mage-feu', 'Chevalier-mage du Phénix'), ('mage-foudre', 'Mage de la tempête'),
         ('necro', 'Chaman nécromant'), ('archer', 'Tireur d\'élite'), ('berserker', 'Berserker du Nord'), ('chevalier', 'Chevalier gardien'),
-        ('assassin', 'Lame fantôme'), ('paladin-feu', 'Templier du Phénix'), ('druide', 'Druide du marais'), ('chasseur-tresors', 'Chasseur de trésors')]]),
+        ('assassin', 'Lame fantôme'), ('paladin-feu', 'Templier du Phénix'), ('druide', 'Druide du marais'), ('chasseur-tresors', 'Chasseur de trésors'),
+        ('mage-glace', 'Mage de glace'), ('mage-sang', 'Mage de sang'), ('archer-elfe', 'Archer elfe'), ('arbalete', 'Arbalétrier critique'), ('demi-umbra', 'Demi-dieu Umbra'), ('demi-lux', 'Demi-dieu Lux'),
+        ('duelliste', 'Duelliste glacé'), ('tank-lux', 'Rempart de lumière'), ('mage-tank', 'Gardien sacré'), ('phenix-bouclier', 'Rempart du Phénix'), ('berserker-critique', 'Berserker critique'),
+        ('templier-sacre', 'Templier sacré'), ('assassin-voleur', 'Voleur de l\'ombre'), ('nain-tank', 'Tank Shulk')]]),
     ('Vie quotidienne', [('vie', 'Cuisine, ferme, colonie & stockage')]),
     ('Référence', [('outil', 'Utiliser le planificateur'), ('quetes', 'Le livre de quêtes'), ('mods', 'Liste des mods'), ('glossaire', 'Glossaire'), ('faq', 'FAQ')]),
 ]
@@ -338,11 +341,12 @@ def build_page(bid, md_text):
     rs = [b for b in BUILDS if b['id'] == bid]
     if not rs: return md(md_text)
     out = [md(md_text)]
-    for st in ['milieu', 'fin']:
+    STD = {'debutant': 'Rare, affixes à 30 % de leur plage, 1 affixe et 1 gemme par pièce, armure d\'aventurier et arme en fer', 'milieu': 'Épique, affixes à 40 % de leur plage, 2 affixes et 1 gemme optimisés par pièce', 'fin': 'Mythique, affixes à 60 % de leur plage, 3 affixes et 2 gemmes optimisés par pièce', 'optimise': 'Mythique, affixes à 90 % de leur plage, 4 affixes et 3 gemmes optimisés par pièce, tous les accessoires'}
+    for st in ['debutant', 'milieu', 'fin', 'optimise']:
         b = next((x for x in rs if x['stage'] == st), None)
         if not b: continue
         s = b['summary']
-        out.append(f'<h2>Fiche chiffrée — {b["label"]}</h2><div class="note small">Calculée avec le moteur du planificateur : équipement {"Épique, affixes à 40 % de leur plage, 2 affixes et 1 gemme optimisés par pièce" if st == "milieu" else "Mythique, affixes à 60 % de leur plage, 3 affixes et 2 gemmes optimisés par pièce"}, {s["nodes"]} points de talent choisis automatiquement. <b>C\'est une cible théorique</b>, pas un loot garanti.</div><div class="grid2"><div class="card">')
+        out.append(f'<h2>Fiche chiffrée — {b["label"]}</h2><div class="note small">Calculée avec le moteur du planificateur : équipement : {STD[st]} ; {s["nodes"]} points de talent {"fixés sur la classe de départ" if st == "debutant" else "choisis automatiquement"}. <b>C\'est une cible théorique</b>, pas un loot garanti.</div><div class="grid2"><div class="card">')
         out.append(stat('Vie max', fnum(s['hp'], 0)) + stat('Armure / robustesse', f"{s['armor']} / {fnum(s['tough'],0)}") + stat('Esquive', pct(s['dodge'], 0)))
         if s['arrow'] and b['id'] == 'archer' or (bid == 'archer'):
             out.append(stat('Flèche', fnum(s['arrow'], 0)))
