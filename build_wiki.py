@@ -17,7 +17,7 @@ from mods_fr import FR as FRM
 NAV = [
     ('Démarrer', [('index', 'Accueil'), ('premiers-pas', 'Premiers pas'), ('monde', 'Le monde & le danger'), ('campagne', 'La campagne'), ('survie', 'Mort, sauvegarde & sécurité')]),
     ('Personnage', [('origines', 'Origines'), ('classes', 'Classes'), ('benedictions', 'Bénédictions divines'), ('talents', 'Arbre de talents'), ('combat', 'Combat & statistiques')]),
-    ('Équipement', [('equipement', 'Rareté, affixes & sockets'), ('gemmes', 'Gemmes'), ('affixes', 'Catalogue des affixes'), ('atelier', 'Ateliers & enchantement'), ('enchants', 'Tous les enchantements'), ('objets-campagne', 'Équipement de campagne'), ('accessoires', 'Accessoires & reliques')]),
+    ('Équipement', [('equipement', 'Rareté, affixes & sockets'), ('gemmes', 'Gemmes'), ('affixes', 'Catalogue des affixes'), ('atelier', 'Ateliers & enchantement'), ('enchants', 'Tous les enchantements'), ('objets-campagne', 'Équipement de campagne'), ('accessoires', 'Accessoires & reliques'), ('ring-sept-maledictions', 'Anneau des Sept Malédictions')]),
     ('Magie', [('magie', 'Comprendre la magie'), ('sorts', 'Catalogue des sorts (Iron\'s)'), ('ars', 'Glyphes d\'Ars Nouveau')]),
     ('Boss', [('boss', 'Guide des boss')]),
     ('Builds', [('builds/index', 'Tous les builds'), ('builds/niveaux', 'Débutant → Optimisé')] + [(f"builds/{b[0]}", b[1]) for b in [
@@ -26,7 +26,8 @@ NAV = [
         ('assassin', 'Lame fantôme'), ('paladin-feu', 'Templier du Phénix'), ('druide', 'Druide du marais'), ('chasseur-tresors', 'Chasseur de trésors'),
         ('mage-glace', 'Mage de glace'), ('mage-sang', 'Mage de sang'), ('archer-elfe', 'Archer elfe'), ('arbalete', 'Arbalétrier critique'), ('demi-umbra', 'Demi-dieu Umbra'), ('demi-lux', 'Demi-dieu Lux'),
         ('duelliste', 'Duelliste glacé'), ('tank-lux', 'Rempart de lumière'), ('mage-tank', 'Gardien sacré'), ('phenix-bouclier', 'Rempart du Phénix'), ('berserker-critique', 'Berserker critique'),
-        ('templier-sacre', 'Templier sacré'), ('assassin-voleur', 'Voleur de l\'ombre'), ('nain-tank', 'Tank Shulk')]]),
+        ('templier-sacre', 'Templier sacré'), ('assassin-voleur', 'Voleur de l\'ombre'), ('nain-tank', 'Tank Shulk'),
+        ('maudit-tank', 'Le Maudit (Tank)'), ('maudit-esquive', 'Spectre maudit'), ('maudit-mage', 'Mage maudit'), ('maudit-archer', 'Archer maudit'), ('maudit-berserker', 'Berserker maudit')]]),
     ('Vie quotidienne', [('vie', 'Cuisine, ferme, colonie & stockage')]),
     ('Référence', [('outil', 'Utiliser le planificateur'), ('quetes', 'Le livre de quêtes'), ('mods', 'Liste des mods'), ('glossaire', 'Glossaire'), ('faq', 'FAQ')]),
 ]

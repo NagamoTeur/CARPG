@@ -3,7 +3,7 @@ title: Tous les builds
 desc: 12 guides de builds pour le pack
 ---
 
-**26 builds**, chacun en **4 niveaux** (Débutant, Intermédiaire, Avancé, Optimisé) : voir [Débutant → Optimisé](niveaux.html). Chaque guide donne : **les 3 choix de départ**, **la classe de talents**, les **priorités d'équipement**, les **sorts**, une **progression** et des **conseils de boss**, avec une **fiche chiffrée** calculée par le planificateur (milieu et fin de jeu). Tu peux charger chacun dans le [planificateur](../../pob/index.html) (onglet « Builds prêts », avec filtres par niveau et par rôle) et le modifier.
+**31 builds** (dont **5 pour l'[Anneau des Sept Malédictions](../ring-sept-maledictions.html)**), chacun en **4 niveaux** (Débutant, Intermédiaire, Avancé, Optimisé) : voir [Débutant → Optimisé](niveaux.html). Chaque guide donne : **les 3 choix de départ**, **la classe de talents**, les **priorités d'équipement**, les **sorts**, une **progression** et des **conseils de boss**, avec une **fiche chiffrée** calculée par le planificateur (milieu et fin de jeu). Tu peux charger chacun dans le [planificateur](../../pob/index.html) (onglet « Builds prêts », avec filtres par niveau et par rôle) et le modifier.
 
 !!! warning "À lire"
     Ces builds sont des **cibles théoriques** : l'optimiseur choisit les meilleurs affixes et gemmes possibles. Ton loot sera plus aléatoire. Les chiffres servent à **comparer** des builds entre eux ; pour les chiffres en jeu, vérifie dans l'info-bulle.
@@ -36,6 +36,11 @@ desc: 12 guides de builds pour le pack
 | [Templier du Phénix](paladin-feu.html) | Mêlée + feu | ★★☆ | Polyvalent |
 | [Templier sacré](templier-sacre.html) | Mêlée + soins | ★★☆ | Polyvalent soutien |
 | [Chasseur de trésors](chasseur-tresors.html) | Farm / butin | ★☆☆ | Loot, XP |
+| [Le Maudit (Tank)](maudit-tank.html) | Anneau maudit · Tank | ★★☆ | Tester l'anneau en sécurité |
+| [Spectre maudit](maudit-esquive.html) | Anneau maudit · Esquive | ★★★ | Ne jamais être touché |
+| [Mage maudit](maudit-mage.html) | Anneau maudit · Magie | ★★☆ | Contourner les −50 % |
+| [Archer maudit](maudit-archer.html) | Anneau maudit · Distance | ★☆☆ | Débutants à l'arc |
+| [Berserker maudit](maudit-berserker.html) | Anneau maudit · Mêlée | ★★★ | Le grand pari |
 
 ## Composition d'équipe (à 7)
 

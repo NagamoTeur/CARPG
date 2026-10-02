@@ -30,7 +30,7 @@ function gemCandidates(type) {
 function optimize(spec) {
   const S = {
     v: 1, name: spec.title, origin: spec.origin, cls: spec.cls, blessing: spec.blessing, flags: spec.flags || { dragon: true },
-    points: spec.points || 60, nodes: [], gear: {}, spells: spec.spells || [], manual: spec.manual || [], notes: spec.notes || '', hit: spec.hit || 100,
+    points: spec.points || 60, nodes: [], gear: {}, spells: spec.spells || [], manual: spec.manual || [], notes: spec.notes || '', hit: spec.hit || 100, assume: spec.assume ? Object.assign({}, spec.assume) : undefined,
   };
   const obj = typeof spec.objective === 'function' ? spec.objective : OBJ[spec.objective];
   const floor = spec.hpFloor || 250;

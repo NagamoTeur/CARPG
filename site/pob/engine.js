@@ -298,6 +298,13 @@
     R.mana = g('irons_spellbooks:max_mana'); R.manaRegen = g('irons_spellbooks:mana_regen');
     R.manaPerSec = R.mana * 0.01 * R.manaRegen * 2; // 1 % du max toutes les 10 ticks
     R.spellPower = g('irons_spellbooks:spell_power');
+    // Ring of the Seven Curses (Enigmatic Legacy, config du pack) : x2 dégâts subis, armure -30 %, dégâts infligés aux monstres -50 %
+    if ((S.assume || {}).cursed) {
+      R.cursed = true;
+      R.taken *= 2; R.armor *= 0.7; R.tough *= 0.7;
+      R.hit *= 0.5; R.dps *= 0.5; R.arrowHit *= 0.5; R.arrowDps *= 0.5;
+      R.lootBonus = { looting: 1, fortune: 1, xp: 4, enchPower: 10 };
+    }
     return R;
   }
 
@@ -315,7 +322,7 @@
     const st = bossStats(b, dist, wl, which);
     const g = id => R.at[id] ?? 0;
     const eff = Math.max(0, st.armor * (1 - Math.min(1, g('apotheosis:armor_shred'))) - g('apotheosis:armor_pierce'));
-    const raw = R.ranged ? R.arrowHit : R.hit;
+    const raw = R.ranged ? R.arrowHit : R.hit; const cm = R.cursed ? 0.5 : 1;
     const red = armorRed(eff, st.tough, raw);
     let perHit = raw * (1 - red) * R.critE, capped = false;
     if (st.cap && perHit > st.cap) { perHit = st.cap; capped = true; }
@@ -328,7 +335,7 @@
       const c = spellCalc(d, sp.level, R.at);
       const inf = c.info.find(i => /Dégâts|Dégâts de base|Dégâts d'impact|Dégâts de zone/.test(i.label) && typeof i.val === 'number');
       if (!inf) continue;
-      let hit = inf.val; if (st.cap && hit > st.cap) hit = st.cap;
+      let hit = inf.val * cm; if (st.cap && hit > st.cap) hit = st.cap;
       const t = Math.max(c.cast + 0.05, c.cd, 0.5);
       const dps2 = hit / t;
       if (!spellBest || dps2 > spellBest.dps) spellBest = { name: d.name, dps: dps2, hit, uncapped: inf.val, mana: c.mana, t };

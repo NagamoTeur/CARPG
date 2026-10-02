@@ -52,6 +52,8 @@ Les **reliques** sont des objets à **pouvoirs actifs** qui montent de niveau. A
 
 Un classique : amulettes, anneaux et objets maudits **puissants mais risqués** (pacte avec des malédictions : plus de dégâts contre moins de défense, ou l'inverse), cercle des *Enigmas* du pack, **Spellstone** (touche `K`), anneau d'Ender (touche `I`)… Le pack ajoute des **Enigmas** débloqués par la campagne (*Trial of the Enigmas* : des artefacts divins sous malédiction du « Dark One »).
 
+**À lire absolument :** l'**[Anneau des Sept Malédictions](ring-sept-maledictions.html)** est offert dès ta première connexion. Il est puissant (XP ×5, butin, +10 puissance d'enchantement) mais **double les dégâts que tu subis** et ne peut plus être retiré une fois équipé.
+
 ## Autres accessoires
 
 - **Majrusz's Accessories** : accessoires à effets variés (chance, confort, mobilité…).

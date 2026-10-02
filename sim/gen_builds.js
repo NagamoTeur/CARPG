@@ -77,6 +77,21 @@ const ARCH = [
     pitch: 'Armure naturelle de la carapace du Shulk + 9 emplacements d\'inventaire en plus ; Forgeron pour de petits bonus d\'équipement. Un tank facile à vivre.' },
 ];
 
+// ---- Builds « Anneau des Sept Malédictions » : mêmes bases que des builds existants, avec l'anneau équipé (assume.cursed) ----
+const derive = (base, over) => Object.assign({}, ARCH.find(x => x.id === base), { isNew: 1, cursed: true }, over);
+ARCH.push(
+  derive('nain-tank', { id: 'maudit-tank', title: 'Le Maudit (Tank)', tags: ['Anneau maudit', 'Tank', 'Armure'], wiki: 'builds/maudit-tank.html',
+    pitch: 'Le moyen le plus sûr de porter l\'Anneau des Sept Malédictions : énormes PV et armure de Shulk pour absorber les dégâts doublés, bouclier pour parer ce qui reste.' }),
+  derive('duelliste', { id: 'maudit-esquive', title: 'Spectre maudit (Esquive)', tags: ['Anneau maudit', 'Esquive', 'Vol de vie'], wiki: 'builds/maudit-esquive.html',
+    pitch: 'Ne pas se faire toucher du tout : esquive et vol de vie pour ignorer la malédiction de douleur, épée rapide pour compenser les dégâts réduits de moitié.' }),
+  derive('mage-sang', { id: 'maudit-mage', title: 'Mage maudit (Sang)', tags: ['Anneau maudit', 'Magie', 'Vol de vie'], wiki: 'builds/maudit-mage.html',
+    pitch: 'Sorts de sang et siphon de vie : la magie ignore l\'armure réduite, et chaque sort soigne. Le plein de loot et d\'XP du Ring, sans prendre de coups.' }),
+  derive('archer-elfe', { id: 'maudit-archer', title: 'Archer maudit (Distance)', tags: ['Anneau maudit', 'Distance', 'Débutant-friendly'], wiki: 'builds/maudit-archer.html',
+    pitch: 'Tout ce qui est neutre vous attaque quand vous portez l\'Anneau : tirer de loin est la meilleure façon d\'en profiter sans en subir les inconvénients.' }),
+  derive('berserker-critique', { id: 'maudit-berserker', title: 'Berserker maudit (Critique)', tags: ['Anneau maudit', 'Mêlée', 'Critique'], wiki: 'builds/maudit-berserker.html',
+    pitch: 'Le pari fou : gros critiques à deux mains pour faire oublier les −50 % de dégâts, et un Emblème du Berserker qui récompense les PV bas.' }),
+);
+
 const school = (R, s) => R.at['irons_spellbooks:' + s + '_spell_power'] * R.spellPower;
 const ehp = R => { const red = R.armorReduction(250); return R.hp / Math.max(0.02, 1 - red) / Math.max(0.1, 1 - Math.min(0.9, R.dodgeTotal)) / R.taken; };
 
@@ -105,6 +120,7 @@ for (const a of ARCH) {
     for (const k of Object.keys(cg)) gear[k] = Object.assign({ rarity: st.rarity, gemRarity: st.rarity }, cg[k]);
     for (const k of Object.keys(gear)) gear[k].gemRarity = st.rarity;
     const spec = { affixLimit: st.affixLimit, socketLimit: st.socketLimit, roll: st.roll, hpFloor: st.hp, title: a.title + ' — ' + st.label, origin: a.origin, cls: a.cls, blessing: a.blessing, flags: st.flags, points: st.points, objective: a.obj, treeClass: st.fixedTree ? a.tree : (process.env.TREE || a.tree), gear, spells: a.spells.map(([id, l]) => ({ id, level: l })) };
+    if (a.cursed) { spec.assume = { cursed: true }; spec.gear.ring1 = { type: 'curios:ring', name: 'Anneau des Sept Malédictions', rarity: 'epic', fixedAffixes: [], sockets: 0 }; }
     let S;
     try { S = optimize(spec); } catch (e) { console.error('ERREUR', a.id, st.key, e.message); continue; }
     const R = ENG.compute(S);

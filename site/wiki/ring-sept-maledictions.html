@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>L'Anneau des Sept Malédictions — Wiki CARPG</title>
+<meta name="description" content="Bénéfices, malédictions, config du pack et reliques de l'Anneau des Sept Malédictions (Enigmatic Legacy)">
+<link rel="stylesheet" href="../css/app.css"><link rel="stylesheet" href="../css/wiki.css">
+</head><body>
+<header class="top"><a class="brand" href="../index.html">⚔ CARPG</a>
+<button id="navbtn" class="sm" aria-label="Menu">☰ Menu</button>
+<input id="q" type="search" placeholder="Rechercher dans le wiki…" autocomplete="off"><div id="results" class="hidden"></div>
+<span class="spacer"></span><a href="../pob/index.html"><button class="pri">Ouvrir le planificateur de build</button></a></header>
+<div class="wikiwrap"><nav id="wnav"><details class="navsec" ><summary>Démarrer</summary><a href="../wiki/index.html" class="">Accueil</a><a href="../wiki/premiers-pas.html" class="">Premiers pas</a><a href="../wiki/monde.html" class="">Le monde &amp; le danger</a><a href="../wiki/campagne.html" class="">La campagne</a><a href="../wiki/survie.html" class="">Mort, sauvegarde &amp; sécurité</a></details><details class="navsec" ><summary>Personnage</summary><a href="../wiki/origines.html" class="">Origines</a><a href="../wiki/classes.html" class="">Classes</a><a href="../wiki/benedictions.html" class="">Bénédictions divines</a><a href="../wiki/talents.html" class="">Arbre de talents</a><a href="../wiki/combat.html" class="">Combat &amp; statistiques</a></details><details class="navsec" open><summary>Équipement</summary><a href="../wiki/equipement.html" class="">Rareté, affixes &amp; sockets</a><a href="../wiki/gemmes.html" class="">Gemmes</a><a href="../wiki/affixes.html" class="">Catalogue des affixes</a><a href="../wiki/atelier.html" class="">Ateliers &amp; enchantement</a><a href="../wiki/enchants.html" class="">Tous les enchantements</a><a href="../wiki/objets-campagne.html" class="">Équipement de campagne</a><a href="../wiki/accessoires.html" class="">Accessoires &amp; reliques</a><a href="../wiki/ring-sept-maledictions.html" class="on">Anneau des Sept Malédictions</a></details><details class="navsec" ><summary>Magie</summary><a href="../wiki/magie.html" class="">Comprendre la magie</a><a href="../wiki/sorts.html" class="">Catalogue des sorts (Iron's)</a><a href="../wiki/ars.html" class="">Glyphes d'Ars Nouveau</a></details><details class="navsec" ><summary>Boss</summary><a href="../wiki/boss.html" class="">Guide des boss</a></details><details class="navsec" ><summary>Builds</summary><a href="../wiki/builds/index.html" class="">Tous les builds</a><a href="../wiki/builds/niveaux.html" class="">Débutant → Optimisé</a><a href="../wiki/builds/mage-ender.html" class="">Mage sombre (Ender)</a><a href="../wiki/builds/justicier.html" class="">Justicier sacré</a><a href="../wiki/builds/mage-feu.html" class="">Chevalier-mage du Phénix</a><a href="../wiki/builds/mage-foudre.html" class="">Mage de la tempête</a><a href="../wiki/builds/necro.html" class="">Chaman nécromant</a><a href="../wiki/builds/archer.html" class="">Tireur d'élite</a><a href="../wiki/builds/berserker.html" class="">Berserker du Nord</a><a href="../wiki/builds/chevalier.html" class="">Chevalier gardien</a><a href="../wiki/builds/assassin.html" class="">Lame fantôme</a><a href="../wiki/builds/paladin-feu.html" class="">Templier du Phénix</a><a href="../wiki/builds/druide.html" class="">Druide du marais</a><a href="../wiki/builds/chasseur-tresors.html" class="">Chasseur de trésors</a><a href="../wiki/builds/mage-glace.html" class="">Mage de glace</a><a href="../wiki/builds/mage-sang.html" class="">Mage de sang</a><a href="../wiki/builds/archer-elfe.html" class="">Archer elfe</a><a href="../wiki/builds/arbalete.html" class="">Arbalétrier critique</a><a href="../wiki/builds/demi-umbra.html" class="">Demi-dieu Umbra</a><a href="../wiki/builds/demi-lux.html" class="">Demi-dieu Lux</a><a href="../wiki/builds/duelliste.html" class="">Duelliste glacé</a><a href="../wiki/builds/tank-lux.html" class="">Rempart de lumière</a><a href="../wiki/builds/mage-tank.html" class="">Gardien sacré</a><a href="../wiki/builds/phenix-bouclier.html" class="">Rempart du Phénix</a><a href="../wiki/builds/berserker-critique.html" class="">Berserker critique</a><a href="../wiki/builds/templier-sacre.html" class="">Templier sacré</a><a href="../wiki/builds/assassin-voleur.html" class="">Voleur de l'ombre</a><a href="../wiki/builds/nain-tank.html" class="">Tank Shulk</a><a href="../wiki/builds/maudit-tank.html" class="">Le Maudit (Tank)</a><a href="../wiki/builds/maudit-esquive.html" class="">Spectre maudit</a><a href="../wiki/builds/maudit-mage.html" class="">Mage maudit</a><a href="../wiki/builds/maudit-archer.html" class="">Archer maudit</a><a href="../wiki/builds/maudit-berserker.html" class="">Berserker maudit</a></details><details class="navsec" ><summary>Vie quotidienne</summary><a href="../wiki/vie.html" class="">Cuisine, ferme, colonie &amp; stockage</a></details><details class="navsec" ><summary>Référence</summary><a href="../wiki/outil.html" class="">Utiliser le planificateur</a><a href="../wiki/quetes.html" class="">Le livre de quêtes</a><a href="../wiki/mods.html" class="">Liste des mods</a><a href="../wiki/glossaire.html" class="">Glossaire</a><a href="../wiki/faq.html" class="">FAQ</a></details></nav>
+<main class="wiki"><h1>L'Anneau des Sept Malédictions</h1><blockquote>
+<p><strong>En une phrase :</strong> un anneau qu'on te donne <strong>dès ta première connexion</strong>, qui fait <strong>tout ce qui te fait mal te faire deux fois plus mal</strong> mais te donne <strong>4 fois plus d'XP</strong>, plus de butin et l'accès à des reliques uniques. Ce n'est <strong>pas</strong> un objet à mettre « pour voir » : une fois porté, <strong>tu ne peux plus l'enlever</strong>.</p>
+</blockquote>
+<h2 id="ou-est-il-comment-lobtenir">Où est-il ? Comment l'obtenir ?</h2>
+<p>À ta <strong>toute première arrivée</strong> dans le monde, l'anneau est ajouté à ton inventaire (<strong>8ᵉ case de la barre rapide</strong>). Il n'est <strong>pas</strong> équipé automatiquement (option du serveur <code>CursedRingAutoEquip</code> = désactivée). Tu choisis quand le mettre, dans un emplacement d'anneau.</p>
+<div class="admonition danger">
+<p class="admonition-title">On ne l'enlève pas !</p>
+<p>Une fois équipé, l'anneau est <strong>lié à ton âme</strong> : impossible de le retirer en survie (seul un joueur en <strong>créatif</strong> peut le faire), et il <strong>reste sur toi à ta mort</strong>. Parle-en avec tes amis <strong>avant</strong> de le porter.</p>
+</div>
+<h2 id="les-7-maledictions-ce-que-tu-perds">Les 7 malédictions (ce que tu perds)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Malédiction</th>
+<th>Effet réel sur ce pack</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Douleur</strong></td>
+<td>Tu subis <strong>200 %</strong> des dégâts de <strong>n'importe quelle source</strong> (chutes, feu, monstres, boss… tout).</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Hostilité</strong></td>
+<td>Les créatures <strong>neutres</strong> (loups, golems, piglins, abeilles, Enderman…) deviennent agressives dans <strong>24 blocs</strong>, et te repèrent même sans te voir à moins de <strong>4 blocs</strong>. Les <strong>Endermen</strong> se téléportent aussi vers toi (jusqu'à 32 blocs).</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Armure fragile</strong></td>
+<td><strong>Armure et robustesse −30 %</strong> (ex. : 100 d'armure ne valent plus que 70).</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Faiblesse</strong></td>
+<td>Tu infliges <strong>50 % de dégâts en moins</strong> aux monstres (c'est-à-dire presque à tout ce qui veut te tuer).</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Brûlure éternelle</strong></td>
+<td>Quand tu prends feu, <strong>tu ne t'éteins plus tout seul</strong>. Il faut de l'eau (ou le Bouclier infernal, voir plus bas). Dangereux dans le Nether.</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Âme déchirée</strong></td>
+<td><strong>Chaque mort</strong> fait perdre un <strong>Cristal d'âme</strong> : <strong>−10 % de PV max</strong> par cristal, jusqu'à <strong>9 cristaux</strong> (le serveur ne descend pas plus bas). Le cristal reste à l'endroit de ta mort : tu peux le <strong>récupérer</strong> pour restaurer ta vie.</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Insomnie</strong></td>
+<td>Dormir <strong>ne fait plus passer la nuit</strong>. Tu peux toujours définir ton lit comme point d'apparition.</td>
+</tr>
+</tbody>
+</table>
+<p>En plus : le <strong>recul</strong> que tu subis est <strong>doublé</strong> (200 %).</p>
+<div class="admonition warning">
+<p class="admonition-title">Les dégâts doublés, ça compte vraiment</p>
+<p>Dans ce pack, les boss ont des attaques en <strong>pourcentage de tes PV</strong> et un niveau qui monte avec la distance. Avec le ×2, un coup qui te laissait à 60 % de vie te laisse à 20 %. Prévois <strong>beaucoup</strong> de PV, d'esquive ou de blocage : voir les <a href="#builds-dedies">builds dédiés</a>.</p>
+</div>
+<h2 id="les-7-benedictions-ce-que-tu-gagnes">Les 7 bénédictions (ce que tu gagnes)</h2>
+<table>
+<thead>
+<tr>
+<th>Bénédiction</th>
+<th>Valeur sur ce pack</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Butin (Pillage)</strong></td>
+<td><strong>+1</strong> niveau de Pillage (sur toutes tes armes)</td>
+</tr>
+<tr>
+<td><strong>Fortune</strong></td>
+<td><strong>+1</strong> niveau de Fortune (pioches, etc.)</td>
+</tr>
+<tr>
+<td><strong>Expérience</strong></td>
+<td><strong>+400 %</strong> d'XP lâchée par les monstres (donc <strong>×5</strong> au total)</td>
+</tr>
+<tr>
+<td><strong>Puissance d'enchantement</strong></td>
+<td><strong>+10</strong> à la table d'enchantement (c'est énorme : cela équivaut à une salle de bibliothèques entière)</td>
+</tr>
+<tr>
+<td><strong>Butins uniques</strong></td>
+<td>Les monstres vanilla lâchent des objets en plus (voir ci-dessous)</td>
+</tr>
+<tr>
+<td><strong>Anneau d'Ender</strong></td>
+<td>Tu peux ouvrir ton <strong>coffre d'Ender à distance</strong> (touche dédiée, comme l'Anneau d'Ender)</td>
+</tr>
+<tr>
+<td><strong>Reliques maudites</strong></td>
+<td>Tu peux <strong>fabriquer et utiliser</strong> des reliques réservées aux porteurs (voir ci-dessous)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="butins-uniques">Butins uniques</h3>
+<p>Quand tu portes l'anneau, <strong>la plupart des monstres vanilla lâchent des objets en plus</strong> de leur butin normal (os, fils, poudre à canon, perles, bâtons de blaze, émeraudes, or, potions…). Quelques exemples notables : les <strong>Shulkers</strong> peuvent lâcher de la <strong>poussière astrale</strong>, le <strong>Wither</strong> de l'<strong>essence maléfique</strong> (pour fabriquer des reliques), et le <strong>Gardien ancien</strong> un <strong>cœur de gardien</strong> parmi d'autres trésors. Cette option est activée sur notre serveur.</p>
+<h2 id="les-reliques-maudites">Les reliques maudites</h2>
+<p>Certains objets de l'Enigmatic Legacy sont <strong>liés à la malédiction</strong> : ils ne marchent (ou ne se fabriquent) qu'avec l'anneau, ou sont <strong>plus forts</strong> grâce à lui.</p>
+<table>
+<thead>
+<tr>
+<th>Objet</th>
+<th>Ce qu'il fait</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Parchemin des mille malédictions</strong></td>
+<td>Augmente les <strong>dégâts (+4 %)</strong>, la <strong>vitesse de minage (+7 %)</strong> et la <strong>régénération (+4 %)</strong> <strong>par malédiction</strong> portée par ton équipement.</td>
+</tr>
+<tr>
+<td><strong>Pacte d'avarice infinie</strong></td>
+<td>+1 Fortune ; piglins neutres malgré la malédiction n°2 ; échanges avec eux ≈ ×2 meilleurs ; 35 % de réduction chez les villageois ; chance de lâcher une émeraude sur tout mob.</td>
+</tr>
+<tr>
+<td><strong>Emblème du Berserker</strong></td>
+<td>Plus tu as <strong>perdu de PV</strong>, plus tu gagnes en dégâts, vitesse d'attaque, vitesse de déplacement et <strong>réduction de dégâts</strong>. Parfait quand on prend ×2 !</td>
+</tr>
+<tr>
+<td><strong>Le Twist</strong> (arme)</td>
+<td><strong>Contre les boss et les joueurs, elle inflige toujours ses dégâts pleins</strong> : annule la malédiction n°4 pour cette arme.</td>
+</tr>
+<tr>
+<td><strong>Bouclier infernal</strong></td>
+<td>Éteint le feu qui te brûle (annule la n°5), peut bloquer immédiatement et les flèches perçantes, <strong>brûle les attaquants</strong>, et chaque blocage donne de la <strong>Puissance flamboyante</strong>. Attaque par derrière : +50 % de dégâts.</td>
+</tr>
+<tr>
+<td><strong>L'Ender-Slayer</strong> (arme)</td>
+<td>Redoutable contre les créatures de l'End.</td>
+</tr>
+<tr>
+<td><strong>Cœur de gardien</strong></td>
+<td>Les gardiens deviennent neutres ; en main rapide, il met un monstre en rage contre un autre monstre (utile pour les groupes).</td>
+</tr>
+<tr>
+<td><strong>Miroir tordu / Potion de miséricorde tordue</strong></td>
+<td>Retour au lit, ou à l'endroit de ta dernière mort (au prix de presque toute ta vie).</td>
+</tr>
+<tr>
+<td><strong>Boussole du damné</strong></td>
+<td>Montre le <strong>Cristal d'âme</strong> le plus proche, donc ta récupération après la mort.</td>
+</tr>
+<tr>
+<td><strong>Fruit céleste</strong></td>
+<td>+1 emplacement d'anneau, <strong>définitivement</strong>.</td>
+</tr>
+<tr>
+<td><strong>Tome de la malignité dévorée</strong></td>
+<td>Transfère les <strong>malédictions</strong> d'un objet vers un livre enchanté.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="soulager-les-maledictions">Soulager les malédictions</h2>
+<ul>
+<li><strong>PV doublés par les dégâts ?</strong> Monte les <strong>PV max</strong>, l'<strong>esquive</strong>, le <strong>blocage</strong>, le <strong>bouclier</strong> et la <strong>réduction de dégâts</strong> (arbres de talents : Forgeron et Chasseur). Le planificateur calcule déjà ce ×2 : cochez la case « Anneau des Sept Malédictions » dans <strong>Personnage → Hypothèses de combat</strong>.</li>
+<li><strong>Armure −30 % ?</strong> Elle compte moins : privilégie la <strong>robustesse</strong>, les PV et l'esquive, ou des armures à gros bonus de vie.</li>
+<li><strong>Dégâts −50 % ?</strong> Cible les <strong>critiques</strong>, les dégâts de <strong>sorts</strong> (le planificateur applique −50 % partout) et les sources qui montent vite.</li>
+<li><strong>Feu éternel ?</strong> Garde une <strong>eau</strong>, un seau, ou le <strong>Bouclier infernal</strong> ; évite le Nether au début.</li>
+<li><strong>Insomnie ?</strong> Pas de saut de nuit : prépare des <strong>abris</strong> et des <strong>lits</strong> pour ton point d'apparition, ou joue de nuit avec l'équipe.</li>
+</ul>
+<h2 id="qui-doit-le-porter">Qui doit le porter ?</h2>
+<p>À <strong>7 joueurs</strong>, c'est un choix d'équipe. Le plus malin : <strong>un ou deux</strong> volontaires « pilote de risque » (tank, esquive, archer) qui profitent de l'XP ×5 et des drops pendant que les autres jouent normalement. L'XP supplémentaire ne se partage pas ; les <strong>reliques</strong>, elles, peuvent servir aux autres (hors parchemin, qui dépend de l'anneau).</p>
+<div class="admonition tip">
+<p class="admonition-title">Pour l'XP, vraiment</p>
+<p>Avec <strong>×5 d'XP</strong> et <strong>+10 puissance d'enchantement</strong>, un porteur monte très vite en niveaux et obtient des enchantements de très haut niveau. Mais la <strong>perte de PV max</strong> après chaque mort rend l'équilibre délicat : sois à l'aise avant de te lancer dans les boss.</p>
+</div>
+<h2 id="builds-dedies">Builds dédiés</h2>
+<table>
+<thead>
+<tr>
+<th>Build</th>
+<th>Style</th>
+<th>Idéal pour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="builds/maudit-tank.html">Le Maudit (Tank)</a></td>
+<td>Tank Shulk + bouclier</td>
+<td>Débuter avec l'anneau</td>
+</tr>
+<tr>
+<td><a href="builds/maudit-esquive.html">Spectre maudit (Esquive)</a></td>
+<td>Esquive + vol de vie</td>
+<td>Ne jamais être touché</td>
+</tr>
+<tr>
+<td><a href="builds/maudit-mage.html">Mage maudit (Sang)</a></td>
+<td>Sorts de sang</td>
+<td>Contourner les −50 %</td>
+</tr>
+<tr>
+<td><a href="builds/maudit-archer.html">Archer maudit (Distance)</a></td>
+<td>Distance</td>
+<td>Éviter l'aggro</td>
+</tr>
+<tr>
+<td><a href="builds/maudit-berserker.html">Berserker maudit (Critique)</a></td>
+<td>Mêlée à 2 mains</td>
+<td>Le grand pari</td>
+</tr>
+</tbody>
+</table>
+<p>Tous existent en 4 niveaux (Débutant → Optimisé) et se chargent dans le <a href="../pob/index.html">planificateur</a>.</p>
+<p><em>Valeurs tirées de la configuration du pack (<code>enigmaticlegacy-common.omniconf</code>) et du code du mod. Pour les cas limites (certains boss, entités modifiées), vérifie en jeu dans l'info-bulle.</em></p>
+<footer class="mut small">Wiki généré à partir des fichiers du modpack « Cisco's Adventure RPG Ultimate » (V8E). Les chiffres viennent des fichiers de config et du code des mods ; en cas de doute, ce qui s'affiche en jeu fait foi.</footer></main></div>
+<script>window.ROOT="../";</script><script src="../wiki/search-index.js"></script><script src="../wiki/wiki.js"></script>
+</body></html>

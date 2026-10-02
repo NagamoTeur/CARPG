@@ -78,7 +78,7 @@
     const as = S.assume = S.assume || {};
     const ck = (k, label) => el('label', { class: 'small', style: 'margin-right:14px' }, el('input', { type: 'checkbox', checked: !!as[k], onchange: e => { as[k] = e.target.checked; recalc(); } }), ' ' + label);
     m.append(el('div', { class: 'card' }, el('h3', {}, 'Hypothèses de combat'), el('div', { class: 'small mut' }, 'Certains talents et pouvoirs dépendent de la situation. Coche ce qui s\'applique à ton calcul.'),
-      el('div', { class: 'row' }, ck('burning', 'Cible en feu'), ck('lowHp', 'PV ≤ 50 %'), ck('targetEffect', 'Cible sous effet (poison…)'), ck('sun', 'Exposé au soleil / au ciel')),
+      el('div', { class: 'row' }, ck('burning', 'Cible en feu'), ck('lowHp', 'PV ≤ 50 %'), ck('targetEffect', 'Cible sous effet (poison…)'), ck('sun', 'Exposé au soleil / au ciel'), ck('cursed', 'Porte l\'Anneau des Sept Malédictions (dégâts subis ×2, armure −30 %, dégâts infligés −50 %)')),
       el('div', { class: 'row' }, el('label', { class: 'small' }, 'Distance moyenne de la cible (blocs) '), el('input', { type: 'number', min: 0, value: as.dist ?? '', placeholder: 'auto', onchange: e => { as.dist = e.target.value === '' ? undefined : +e.target.value; recalc(); } }),
         el('label', { class: 'small' }, ' Effets de potion actifs '), el('input', { type: 'number', min: 0, value: as.potions || 0, onchange: e => { as.potions = +e.target.value; recalc(); } }),
         el('label', { class: 'small' }, ' Niveaux d\'enchantement sur l\'arme '), el('input', { type: 'number', min: 0, value: as.enchants || 0, onchange: e => { as.enchants = +e.target.value; recalc(); } }))));
