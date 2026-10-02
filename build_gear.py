@@ -180,7 +180,7 @@ def special_fr(t, v, rar):
     if t == 'retreating': return "Vous bondissez en arrière en bloquant au corps à corps"
     if t == 'catalyzing': return "Bloquer une explosion vous donne une grande force"
     if t == 'durable': return "L'objet ignore une partie des dégâts de durabilité"
-    if t == 'telepathic': return "Les objets récoltés vont directement dans votre inventaire"
+    if t == 'telepathic': return "Le butin des monstres / blocs est téléporté directement vers vous"
     return None
 
 
@@ -259,6 +259,8 @@ def main():
             v = {r: 1 for r in rs}
         e['rarities'] = sorted(v.keys(), key=lambda r: RARITY_ORDER.index(r) if r in RARITY_ORDER else 9)
         aff.append(e)
+    for e in aff:
+        if e['kind'] == 'telepathic' and not e['types']: e['types'] = ['sword', 'heavy_weapon', 'trident', 'bow', 'crossbow', 'pickaxe', 'shovel']; e['cat'] = 'sword'
     json.dump(aff, open('site/data/affixes.json', 'w'), ensure_ascii=False, separators=(',', ':'))
     import collections
     print('affixes', len(aff), collections.Counter(a['kind'] for a in aff))

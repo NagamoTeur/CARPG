@@ -90,8 +90,8 @@
       else if (m.k === 'attr') u = Math.floor((A1 ? (A1[ENG_NORM(m.attr)] ?? 0) : 0) / (m.div || 1));
       else if (m.k === 'food') u = as.hunger;
       else if (m.k === 'potions') u = as.potions;
-      else if (m.k === 'enchlevels') u = as.enchants;
-      else if (m.k === 'enchants') u = as.enchants ? Math.max(1, Math.round(as.enchants / 4)) : 0;
+      else if (m.k === 'enchlevels') u = enchLevels(S) || as.enchants;
+      else if (m.k === 'enchants') u = itemsMatching(S, m.item).reduce((a, x) => a + (x.it.ench || []).length, 0) || (as.enchants ? Math.max(1, Math.round(as.enchants / 4)) : 0);
       else u = 0;
       if (u === 0) return { val: 0 };
     }
@@ -99,6 +99,7 @@
   }
   const ENG_NORM = id => id.startsWith('generic.') ? 'minecraft:' + id : id;
   /* bonus de l'arbre sur les gemmes / sockets */
+  const enchLevels = S => { const w = (S.gear || {}).main; return w ? (w.ench || []).reduce((a, e) => a + (+e.lvl || 0), 0) : 0; };
   function treeSocketInfo(S) {
     const gp = [], so = []; let rings = 0;
     for (const id of S.nodes || []) { const n = IDX.TREE.byId[id]; if (!n) continue;
@@ -170,6 +171,12 @@
       if (b.kb) add(label, 'minecraft:generic.knockback_resistance', 0, +b.kb, 'base');
       if (b.fire) add(label, 'apotheosis:fire_damage', 0, +b.fire, 'base');
       for (const m of it.extra || []) add(label, m.attr, m.op, +m.val, 'manuel');
+      for (const en of it.ench || []) {
+        const E = ENCH[en.id]; if (!E) continue; const lv = +en.lvl || 1;
+        if (en.id === 'minecraft:sharpness' && sd.weapon && type !== 'bow' && type !== 'crossbow') add(label, 'minecraft:generic.attack_damage', 0, 0.5 * lv + 0.5, 'Sharpness');
+        else if (en.id === 'minecraft:protection' || en.id === 'minecraft:power') { /* traité dans compute */ }
+        else texts.push({ src: label, text: E.name + ' ' + lv + ' : ' + E.desc });
+      }
       const rar = it.rarity || 'common';
       for (const af of it.affixes || []) {
         const a = AFFIX[af.id]; if (!a) continue;
@@ -261,6 +268,8 @@
     const R = { at, mods, texts, dmgPct, projPct, taken };
     // défense
     R.hp = g('minecraft:generic.max_health'); R.armor = g('minecraft:generic.armor'); R.tough = g('minecraft:generic.armor_toughness');
+    const epf = ['head', 'chest', 'legs', 'boots'].reduce((a, id) => a + (((S.gear || {})[id] || {}).ench || []).filter(e => e.id === 'minecraft:protection').reduce((b, e) => b + (+e.lvl || 0), 0), 0);
+    R.epf = Math.min(20, epf); R.taken *= (1 - 0.04 * R.epf);
     R.armorReduction = (hit) => { const x = Math.min(20, Math.max(R.armor / 5, R.armor - hit / (2 + R.tough / 4))); return x / 25; }; // formule vanilla CombatRules.getDamageAfterAbsorb
     R.evasion = g('skilltree:evasion'); R.evasionChance = evaChance(R.evasion);
     R.blocking = g('skilltree:blocking'); R.blockChance = evaChance(R.blocking);
@@ -280,7 +289,7 @@
     // armes à distance : dégâts de flèche = base de l'arc × attribut « dégâts des flèches » (Apotheosis)
     const mt = w && (w.type || 'sword');
     R.ranged = mt === 'bow' || mt === 'crossbow';
-    R.arrowBase = R.ranged ? (+((w.base || {}).dmg) || 9) : 0;
+    R.arrowBase = R.ranged ? (+((w.base || {}).dmg) || 9) + (((w.ench || []).find(e => e.id === 'minecraft:power') || {}).lvl ? 0.5 * (+((w.ench || []).find(e => e.id === 'minecraft:power').lvl)) + 0.5 : 0) : 0;
     R.arrowHit = (R.arrowBase + R.fire + R.cold) * g('apotheosis:arrow_damage') * (1 + dmgPct) * (1 + projPct);
     R.drawSpeed = g('apotheosis:draw_speed');
     R.arrowDps = R.arrowHit * R.critE * R.drawSpeed * (mt === 'crossbow' ? 0.7 : 1);
@@ -337,6 +346,7 @@
 
   /* index */
   const TREE = { byId: {} }; D.skilltree.nodes.forEach(n => TREE.byId[n.id] = n);
+  const ENCH = {}; (D.enchants || []).forEach(e => ENCH[e.id] = e);
   const AFFIX = {}; D.affixes.forEach(a => AFFIX[a.id] = a);
   const GEM = {}; D.gems.apotheosis.forEach(g => GEM[g.id] = g); D.gems.skilltree.forEach(g => { g.skilltree = true; GEM[g.id] = g; });
   window.IDX = { TREE, AFFIX, GEM };

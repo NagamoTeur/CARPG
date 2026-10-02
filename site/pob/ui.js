@@ -39,7 +39,7 @@
   const nameOf = o => o.name_fr || o.name;
   const descOf = o => o.desc_fr || o.desc;
   const isFr = o => !!(o.desc_fr);
-  function affixLabel(a, rar) { const t = a.text && (a.text[rar] || a.text[a.rarities[0]]); return a.name + (t ? '  —  ' + t : ''); }
+  function affixLabel(a, rar) { const t = a.text && (a.text[rar] || a.text[a.rarities[0]]); return a.name + (a.suffix ? ' / ' + a.suffix : '') + (t ? '  —  ' + t : ''); }
   function slotTitle(sd) { const it = S.gear[sd.id]; return it ? (it.name || '') : ''; }
 
   /* ---------- onglets ---------- */
@@ -213,6 +213,14 @@
     });
     if (it.gems.length < Math.max(maxS, 1)) card.append(el('div', { class: 'row' }, el('button', { class: 'sm', onclick: () => { it.gems.push({ id: '', rar: 'epic' }); upd(); } }, '+ socket')));
     else card.append(el('div', { class: 'row' }, el('button', { class: 'sm', onclick: () => { it.gems.push({ id: '', rar: 'epic' }); upd(); } }, '+ socket supplémentaire (compétence/reforge)')));
+    // enchantements
+    card.append(el('div', { class: 'sec' }, 'Enchantements (niveau max du pack indiqué ; tu peux dépasser avec l\'enchantement apothique)'));
+    (it.ench = it.ench || []).forEach((en, idx) => { const E = D.enchants.find(x => x.id === en.id) || { name: en.id, desc: '' };
+      card.append(el('div', { class: 'affrow' }, el('div', {}, el('b', {}, E.name), el('div', { class: 'txt' }, E.desc)), el('div', { class: 'row' }, el('input', { type: 'number', min: 1, max: 255, value: en.lvl, style: 'width:64px', onchange: e => { en.lvl = +e.target.value || 1; recalc(); } }), el('span', { class: 'mut small' }, '/' + (E.max || '?')), el('button', { class: 'sm', onclick: () => { it.ench.splice(idx, 1); upd(); } }, '✕')))); });
+    const have = new Set(it.ench.map(x => x.id));
+    const esel = el('select', { onchange: e => { if (e.target.value) { const E = D.enchants.find(x => x.id === e.target.value); it.ench.push({ id: E.id, lvl: E.max || 1 }); upd(); } } }, el('option', { value: '' }, '+ ajouter un enchantement'),
+      ...['Arme', 'Arc', 'Arbalète', 'Trident', 'Armure', 'Outil', 'Canne à pêche', 'Tous', 'Autre', 'Malédiction'].map(cat => el('optgroup', { label: cat }, ...D.enchants.filter(x => x.cat === cat && !have.has(x.id)).sort((a, b) => a.name.localeCompare(b.name)).map(x => el('option', { value: x.id }, x.name + (x.max ? ' (max ' + x.max + ')' : ''))))));
+    card.append(el('div', { class: 'row' }, esel));
     // extra
     card.append(el('div', { class: 'sec' }, 'Stats supplémentaires (effet propre à l\'objet, enchantements…)'));
     (it.extra = it.extra || []).forEach((x, idx) => card.append(manualRow(x, () => { it.extra.splice(idx, 1); upd(); })));

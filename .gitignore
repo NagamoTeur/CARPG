@@ -1,0 +1,7 @@
+decomp/
+extract/
+merged/
+__pycache__/
+*.pyc
+carpg-site.zip
+node_modules/

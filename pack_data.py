@@ -5,7 +5,7 @@ sys.path.insert(0, '.')
 import jl
 from fr import *
 D = {}
-for n in ['skilltree', 'gems', 'affixes', 'origins', 'spells', 'attrs', 'quests', 'bosses', 'items']:
+for n in ['skilltree', 'gems', 'affixes', 'origins', 'spells', 'attrs', 'quests', 'bosses', 'items', 'enchants']:
     D[n] = json.load(open(f'site/data/{n}.json'))
 # raretés
 rar = {}

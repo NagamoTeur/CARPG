@@ -17,7 +17,7 @@ from mods_fr import FR as FRM
 NAV = [
     ('Démarrer', [('index', 'Accueil'), ('premiers-pas', 'Premiers pas'), ('monde', 'Le monde & le danger'), ('campagne', 'La campagne'), ('survie', 'Mort, sauvegarde & sécurité')]),
     ('Personnage', [('origines', 'Origines'), ('classes', 'Classes'), ('benedictions', 'Bénédictions divines'), ('talents', 'Arbre de talents'), ('combat', 'Combat & statistiques')]),
-    ('Équipement', [('equipement', 'Rareté, affixes & sockets'), ('gemmes', 'Gemmes'), ('affixes', 'Catalogue des affixes'), ('atelier', 'Ateliers & enchantement'), ('objets-campagne', 'Équipement de campagne'), ('accessoires', 'Accessoires & reliques')]),
+    ('Équipement', [('equipement', 'Rareté, affixes & sockets'), ('gemmes', 'Gemmes'), ('affixes', 'Catalogue des affixes'), ('atelier', 'Ateliers & enchantement'), ('enchants', 'Tous les enchantements'), ('objets-campagne', 'Équipement de campagne'), ('accessoires', 'Accessoires & reliques')]),
     ('Magie', [('magie', 'Comprendre la magie'), ('sorts', 'Catalogue des sorts (Iron\'s)'), ('ars', 'Glyphes d\'Ars Nouveau')]),
     ('Boss', [('boss', 'Guide des boss')]),
     ('Builds', [('builds/index', 'Tous les builds')] + [(f"builds/{b[0]}", b[1]) for b in [
@@ -152,7 +152,7 @@ def page_affixes():
             r = 'mythic' if 'mythic' in rs else rs[-1]
             kind = 'Stat' if a['kind'] == 'attribute' else 'Capacité'
             types = ', '.join(tfr(t) for t in a['types'][:6]) + (' …' if len(a['types']) > 6 else '')
-            out.append(f'<tr data-q="{esc((a["name"] + " " + a["text"][r] + " " + types).lower())}"><td><b>{esc(a["name"])}</b><div class="mut small">{kind}</div></td><td>{rarity_chip(r)} : {esc(a["text"][r])}</td><td class="small">{esc(types)}</td></tr>')
+            out.append(f'<tr data-q="{esc((a["name"] + " " + (a.get("suffix") or "") + " " + a["text"][r] + " " + types).lower())}"><td><b>{esc(a["name"])}</b><div class="mut small">{kind}{(" · suffixe « " + esc(a["suffix"]) + " »") if a.get("suffix") else ""}</div></td><td>{rarity_chip(r)} : {esc(a["text"][r])}</td><td class="small">{esc(types)}</td></tr>')
         out.append('</table>')
     out.append('</div>')
     return '\n'.join(out)
@@ -276,6 +276,24 @@ def page_quetes():
     return '\n'.join(out)
 
 
+def page_enchants():
+    E = json.load(open('site/data/enchants.json'))
+    RF = {'COMMON': 'Commun', 'UNCOMMON': 'Peu commun', 'RARE': 'Rare', 'VERY_RARE': 'Très rare'}
+    out = ['<p>Tous les enchantements du pack (vanilla + mods), avec leur <b>niveau maximum à la table d\'enchantement</b> (réglage du pack) et leur effet en français. Les noms restent ceux du jeu. « Butin max » = niveau maximal qu\'on trouve dans les coffres/sur les monstres ; au-delà, il faut enchanter soi-même (voir <a href="atelier.html">Ateliers & enchantement</a>).</p>',
+           '<input class="filter" data-target="enlist" placeholder="Filtrer (nom, effet, mod)…"><div id="enlist">']
+    order = ['Arme', 'Arc', 'Arbalète', 'Trident', 'Armure', 'Outil', 'Canne à pêche', 'Tous', 'Autre', 'Malédiction']
+    for cat in order:
+        lst = sorted([e for e in E if e['cat'] == cat], key=lambda e: (e['mod'] != 'Vanilla', e['mod'], e['name']))
+        if not lst: continue
+        out.append(f'<h2>{cat} ({len(lst)})</h2><table class="t"><tr><th>Enchantement</th><th>Effet</th><th>Niv. max</th><th>Butin max</th><th>Rareté</th></tr>')
+        for e in lst:
+            fl = ' <span class="tag">trésor</span>' if e['treasure'] else ''
+            out.append(f'<tr data-q="{esc((e["name"] + " " + e["desc"] + " " + e["mod"]).lower())}"><td><b>{esc(e["name"])}</b>{fl}<div class="mut small">{esc(e["mod"])}</div></td><td class="small">{esc(e["desc"])}</td><td>{e["max"] or "?"}</td><td>{e["loot"] or "—"}</td><td class="small">{RF.get(e["rarity"], "—")}</td></tr>')
+        out.append('</table>')
+    out.append('</div>')
+    return '\n'.join(out)
+
+
 def page_ars():
     G = json.load(open('site/data/ars.json'))
     out = ['<p>Coût en <b>Source</b> de chaque glyphe (config du pack). <b>Compose ton sort</b> : coche des glyphes, le total s\'affiche.</p>',
@@ -380,7 +398,7 @@ def pct(x, nd=1): return fnum(x * 100, nd) + ' %'
 def main():
     shutil.rmtree(OUT, ignore_errors=True); os.makedirs(OUT, exist_ok=True); shutil.copy(SRC + '/_wiki.js', OUT + '/wiki.js')
     pages = load_md()
-    DYN = {'gemmes': page_gemmes, 'affixes': page_affixes, 'talents': page_talents, 'sorts': page_sorts, 'boss': page_boss, 'objets-campagne': page_objets_campagne, 'quetes': page_quetes, 'mods': page_mods, 'ars': page_ars,
+    DYN = {'gemmes': page_gemmes, 'affixes': page_affixes, 'talents': page_talents, 'sorts': page_sorts, 'boss': page_boss, 'objets-campagne': page_objets_campagne, 'quetes': page_quetes, 'mods': page_mods, 'ars': page_ars, 'enchants': page_enchants,
            'origines': lambda: origin_cards('origins:origin'), 'classes': lambda: origin_cards('origins-classes:class'), 'benedictions': lambda: origin_cards('cisco_rpg_origins:divineblessings')}
     done = set()
     for slug, (meta, raw) in pages.items():

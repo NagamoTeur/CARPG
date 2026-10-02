@@ -1,0 +1,158 @@
+minecraft:protection|Réduit la plupart des dégâts (chaque niveau compte pour 1 point de protection ; 20 points au total = 80 % de réduction maximale).
+minecraft:fire_protection|Réduit les dégâts de feu et la durée de combustion.
+minecraft:feather_falling|Réduit les dégâts de chute.
+minecraft:blast_protection|Réduit les dégâts d'explosion et le recul des explosions.
+minecraft:projectile_protection|Réduit les dégâts des projectiles (flèches, boules de feu…).
+minecraft:respiration|Allonge le temps de respiration sous l'eau.
+minecraft:aqua_affinity|Mine sous l'eau aussi vite qu'à l'air libre.
+minecraft:thorns|Renvoie des dégâts aux attaquants au corps à corps (use la durabilité de l'armure).
+minecraft:depth_strider|Accélère les déplacements sous l'eau.
+minecraft:frost_walker|Transforme l'eau sous tes pieds en glace.
+minecraft:binding_curse|Malédiction : l'objet ne peut plus être retiré.
+minecraft:soul_speed|Accélère la marche sur le sable des âmes.
+minecraft:swift_sneak|Accélère les déplacements accroupi.
+minecraft:sharpness|Augmente les dégâts de mêlée : +0,5 par niveau (+0,5 de base).
+minecraft:smite|Augmente les dégâts contre les morts-vivants.
+minecraft:bane_of_arthropods|Augmente les dégâts contre les arthropodes (araignées…) et les ralentit.
+minecraft:knockback|Augmente le recul infligé.
+minecraft:fire_aspect|Enflamme la cible touchée.
+minecraft:looting|Augmente le butin lâché par les monstres.
+minecraft:sweeping|Augmente les dégâts du coup balayé (épée).
+minecraft:efficiency|Augmente la vitesse de minage.
+minecraft:silk_touch|Récupère les blocs tels quels (minerais, vitres, herbe…).
+minecraft:unbreaking|Chance de ne pas user l'objet.
+minecraft:fortune|Augmente le butin des blocs minés (minerais, cultures).
+minecraft:power|Augmente les dégâts des flèches d'arc.
+minecraft:punch|Augmente le recul des flèches.
+minecraft:flame|Les flèches enflamment la cible.
+minecraft:infinity|Les flèches ne sont pas consommées.
+minecraft:luck_of_the_sea|Meilleur butin à la pêche.
+minecraft:lure|Les poissons mordent plus vite.
+minecraft:loyalty|Le trident revient après le lancer.
+minecraft:impaling|Dégâts supplémentaires du trident contre les créatures aquatiques.
+minecraft:riptide|Te propulse avec le trident dans l'eau ou sous la pluie.
+minecraft:channeling|Le trident invoque la foudre pendant un orage.
+minecraft:multishot|L'arbalète tire 3 flèches d'un coup.
+minecraft:quick_charge|Recharge l'arbalète plus vite.
+minecraft:piercing|Les flèches d'arbalète traversent plusieurs cibles.
+minecraft:mending|Répare l'objet avec l'XP ramassée.
+minecraft:vanishing_curse|Malédiction : l'objet disparaît à ta mort.
+alexsmobs:board_return|La planche revient dans l'inventaire du cavalier si elle se casse.
+alexsmobs:lavawax|Donne la résistance au feu au cavalier de la planche.
+alexsmobs:serpentfriend|Les serpents d'os deviennent neutres envers le cavalier.
+alexsmobs:straddle_jump|Augmente la hauteur des sauts de la planche.
+apotheosis:bane_of_illagers|Les illagers subissent plus de dégâts.
+apotheosis:berserkers_fury|Tu entres en rage quand tu es blessé (recharge de 45 s).
+apotheosis:capturing|Les monstres ont une chance de lâcher leur œuf d'invocation.
+apotheosis:chainsaw|Les arbres sont anéantis d'un coup.
+apotheosis:chromatic|La laine tondue prend une couleur aléatoire.
+apotheosis:crescendo|Ton arbalète peut tirer plusieurs fois par rechargement.
+apotheosis:earths_boon|Des minerais peuvent apparaître en minant la pierre.
+apotheosis:endless_quiver|Toutes les flèches sont infinies.
+apotheosis:exploitation|La laine obtenue est doublée, mais le mouton subit des dégâts.
+apotheosis:growth_serum|Les moutons ont 50 % de chance de repousser leur laine instantanément.
+apotheosis:icy_thorns|Ralentit les attaquants.
+apotheosis:infusion|Réservé à l'artisanat d'enchantements (non utilisable seul).
+apotheosis:knowledge|Le butin des ennemis est converti directement en expérience.
+apotheosis:life_mending|Utilise les soins reçus pour réparer les objets.
+apotheosis:magic_protection|Réduit les dégâts magiques infligés par et contre toi.
+apotheosis:miners_fervor|Tu mines très vite, mais jamais instantanément.
+apotheosis:mounted_strike|Dégâts supplémentaires quand tu es à cheval.
+apotheosis:natures_blessing|Les houes peuvent servir de poudre d'os sur les cultures.
+apotheosis:obliteration|Permet à une enclume de séparer un enchantement unique d'un livre qui tombe dessus.
+apotheosis:rebounding|Les attaquants au corps à corps peuvent être projetés bien plus loin.
+apotheosis:reflective|Les attaques bloquées peuvent blesser l'attaquant.
+apotheosis:scavenger|Les monstres tués peuvent relancer deux fois leur table de butin.
+apotheosis:shield_bash|Renforce les dégâts infligés avec les boucliers.
+apotheosis:spearfishing|Les kills au trident lancé peuvent attraper un poisson.
+apotheosis:splitting|Permet à une enclume de séparer plusieurs enchantements d'un livre qui tombe dessus.
+apotheosis:stable_footing|Annule la pénalité de vitesse de minage en vol.
+apotheosis:tempting|Attire les animaux de ferme proches.
+ars_elemental:mirror_shield|Le bouclier peut renvoyer les sorts projectiles et les ondes sonores du Warden.
+ars_elemental:soulbound|Lié à l'âme : l'objet est conservé à la mort.
+ars_nouveau:mana_boost|Augmente le mana maximum du joueur.
+ars_nouveau:mana_regen|Augmente la régénération de mana du joueur.
+ars_nouveau:reactive|Chance de lancer le sort inscrit à l'usage de l'outil ou quand tu es blessé.
+azurelib:incendiaryenchantment|Les projectiles tirés enflamment les monstres.
+combatroll:acrobat|Réduit le temps de recharge entre tes roulades.
+combatroll:longfooted|Augmente la distance de tes roulades.
+combatroll:multi_roll|Donne des roulades supplémentaires.
+deeperdarker:catalysis|Enchantement lié aux Abysses (catalyseurs de sculk).
+deeperdarker:sculk_smite|Dégâts contre les créatures de sculk.
+dragonenchants:aftershock|Crée une explosion après avoir touché un ennemi.
+dragonenchants:berserk|Augmente tes dégâts jusqu'à 25 % × niveau selon la vie qu'il te reste.
+dragonenchants:chain_lightning|Frappe plusieurs ennemis par la foudre quand ils sont groupés.
+dragonenchants:critical_sunder|Dégâts supplémentaires sur coup critique.
+dragonenchants:detonate|Crée une explosion là où ta flèche atterrit.
+dragonenchants:devour|Répare ton arme quand tu tues un ennemi.
+dragonenchants:end_step|Te téléporte là où ta flèche atterrit (sauf sur les monstres).
+dragonenchants:end_walker|Chance de te téléporter loin quand tu reçois un projectile.
+dragonenchants:enderference|Empêche les Endermen proches de se téléporter.
+dragonenchants:eternal|Consomme de la faim et 200 de durabilité pour t'éviter la mort.
+dragonenchants:frost_heart|Ralentit et affaiblit les ennemis qui t'attaquent.
+dragonenchants:homing|La flèche suit l'ennemi le plus proche.
+dragonenchants:obliterate|Hache uniquement : provoque une explosion à la mort d'un ennemi, avec réaction en chaîne.
+dragonenchants:soulstealer|Vole des âmes (enchantement du pack Dragon Enchants).
+dragonenchants:true_edge|Traverse la magie et le fer (ignore une partie des défenses).
+dragonenchants:venomous|Empoisonne les ennemis. Inutile contre les morts-vivants.
+dragonenchants:water_aspect|Dégâts d'eau supplémentaires, très efficaces contre les Endermen.
+dragonenchants:wind_step|Donne de la vitesse en courant.
+endlessbiomes:shared_pain|Enchantement des biomes de l'End (douleur partagée).
+endlessbiomes:vwooping|Enchantement des biomes de l'End.
+enigmaticaddons:frost_aspect|La cible attaquée gèle progressivement.
+enigmaticaddons:frost_protection|Réduit les dégâts et les effets du froid.
+enigmaticaddons:frost_shattering|Augmente les dégâts critiques de la hache contre une cible totalement gelée.
+enigmaticaddons:redemption_curse|Malédiction : augmente les dégâts reçus (réduit avec l'Anneau de rédemption).
+enigmaticaddons:redemption_curse_alt|Bénédiction de rédemption (variante de la malédiction).
+enigmaticlegacy:ceaseless|Permet de tirer des flèches simples sans consommer de munitions.
+enigmaticlegacy:eternal_binding|Malédiction : l'objet ne peut être retiré ni perdu à la mort.
+enigmaticlegacy:nemesis|Malédiction : te renvoie 25 % des dégâts à chaque attaque de mêlée.
+enigmaticlegacy:sharpshooter|Dégâts de flèche augmentés et moins aléatoires.
+enigmaticlegacy:slayer|Dégâts augmentés contre les monstres.
+enigmaticlegacy:sorrow|Malédiction : applique parfois des malus aléatoires quand tu es blessé.
+enigmaticlegacy:torrent|Dégâts augmentés contre les créatures sensibles à l'eau ou immunisées au feu.
+enigmaticlegacy:wrath|Dégâts augmentés contre tout.
+farmersdelight:backstabbing|Amplifie les dégâts en frappant une cible dans le dos.
+forbidden_arcanus:indestructible|Rend l'objet indestructible.
+forbidden_arcanus:permafrost|Permet à un seau en bois d'Edelwood de transporter de la lave en sécurité.
+majruszsenchantments:absorber|Les boucliers absorbent tous les effets négatifs au prix de leur durabilité.
+majruszsenchantments:breaking_curse|Malédiction : l'objet se casse plus vite.
+majruszsenchantments:corrosion_curse|Malédiction : détruit progressivement l'armure et te blesse dans l'eau.
+majruszsenchantments:death_wish|Augmente les dégâts infligés à hauteur du pourcentage de vie perdu.
+majruszsenchantments:dodge|Chance d'éviter complètement tout type de dégâts.
+majruszsenchantments:enlightenment|Augmente l'expérience gagnée de toute source.
+majruszsenchantments:fatigue_curse|Malédiction : réduit ta vitesse de déplacement et d'utilisation des objets.
+majruszsenchantments:fishing_fanatic|Chance de pêcher des objets supplémentaires.
+majruszsenchantments:fuse_cutter|Les explosions proches ne détruisent pas de blocs et n'infligent pas de dégâts.
+majruszsenchantments:gold_fuelled|Répare entièrement les outils et armures en or pour un lingot d'or quand l'objet va se casser.
+majruszsenchantments:harvester|Permet la récolte au clic droit et fait pousser les cultures proches.
+majruszsenchantments:horse_frost_walker|Crée un chemin de glace en traversant l'eau à cheval.
+majruszsenchantments:horse_protection|Réduit les dégâts subis par le cheval.
+majruszsenchantments:horse_swiftness|Augmente la vitesse du cheval.
+majruszsenchantments:hunter|Augmente le butin et fait croître les dégâts avec la distance.
+majruszsenchantments:immortality|Te sauve d'un coup fatal au prix d'un bouclier.
+majruszsenchantments:incompatibility_curse|Malédiction : l'objet ne peut plus être enchanté.
+majruszsenchantments:leech|Chance de voler les effets positifs, la vie et la faim des ennemis.
+majruszsenchantments:magic_protection|Protège des dégâts magiques (crocs d'evoker, gardiens, potions de dégâts…).
+majruszsenchantments:misanthropy|Augmente les dégâts contre les villageois, pillards, sorcières et autres joueurs.
+majruszsenchantments:repulsion|Repousse les monstres quand tu bloques leur attaque.
+majruszsenchantments:sixth_sense|Met en surbrillance les monstres proches qui font du bruit quand tu es accroupi.
+majruszsenchantments:slippery_curse|Malédiction : l'objet tombe parfois de ta main.
+majruszsenchantments:smelter|Les blocs détruits sont automatiquement fondus.
+majruszsenchantments:telekinesis|Ajoute directement les objets obtenus à ton inventaire.
+majruszsenchantments:vampirism_curse|Malédiction : t'affaiblit et t'enflamme en plein jour, mais renforce Leech.
+medievalorigins:featherweight|Enchantement lié aux origines médiévales (poids plume).
+minecolonies:raider_damage_enchant|Augmente les dégâts contre les pillards de MineColonies.
+obscure_api:distance|Augmente le rayon d'orbite du projectile.
+obscure_api:fast_spin|Augmente la vitesse de vol du projectile.
+obscure_api:mirror|Duplique le projectile, mais chaque copie n'inflige que 50 % des dégâts.
+oriacs:flying_protection|Protection liée au vol (origines).
+origins:water_protection|Retarde les dégâts d'hydrophobie.
+stalwart_dungeons:thunder_strike|Frappe de foudre (Stalwart Dungeons).
+supplementaries:stasis|Les projectiles de fronde ignorent la gravité.
+twilightforest:chill_aura|Chance que l'attaquant reçoive l'effet « Frosted » après t'avoir touché.
+twilightforest:destruction|Permet à la masse à chaîne (Block and Chain) de casser des blocs de plus haut niveau.
+twilightforest:fire_react|Chance que l'attaquant soit enflammé après t'avoir touché.
+undead_unleashed:undertaker|Enchantement d'Undead Unleashed (fossoyeur).
+unusualend:boloks_fury|Inflige plus de dégâts si la cible a toute sa vie.
+unusualend:everlasting|L'objet ne disparaît jamais naturellement (despawn).
