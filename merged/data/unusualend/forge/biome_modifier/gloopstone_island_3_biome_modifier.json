@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "small_end_islands",
-  "features": "unusualend:gloopstone_island_3",
-  "step": "raw_generation"
-}

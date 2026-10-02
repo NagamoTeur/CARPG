@@ -1,8 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "storagedrawers:controller",
-        "storagedrawers:controller_slave",
-        "storagedrawers:compacting_drawers_3"
-    ]
-}

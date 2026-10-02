@@ -1,8 +1,0 @@
-{
-  "parent": "block/template_wall_side",
-  "textures": {
-    "wall": "iter_rpg:blocks/blue_ice_bricks",
-    "particle": "iter_rpg:blocks/blue_ice_bricks"
-  },
-  "render_type": "solid"
-}

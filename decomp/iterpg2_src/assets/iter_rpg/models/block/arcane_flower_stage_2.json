@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "iter_rpg:blocks/arcane_flower_stage2",
-    "particle": "iter_rpg:blocks/arcane_flower_stage2"
-  },
-  "render_type": "cutout"
-}

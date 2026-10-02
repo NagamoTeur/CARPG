@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Specification-Title: dreadsteel
-Specification-Vendor: dreadsteelsareus
-Specification-Version: 1
-Implementation-Title: dreadsteelFORGE192
-Implementation-Version: 1.19.2-1.1.6
-Implementation-Vendor: dreadsteelsareus
-Implementation-Timestamp: 2023-07-22T23:16:12+0300
-

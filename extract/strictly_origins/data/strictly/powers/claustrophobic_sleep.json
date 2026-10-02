@@ -1,8 +1,0 @@
-{
-	"type": "origins:prevent_sleep",
-    "message": "You need open sky to sleep comfortably!",
-    "condition": {
-        "type": "origins:exposed_to_sky",
-        "inverted": true
-    }
-}

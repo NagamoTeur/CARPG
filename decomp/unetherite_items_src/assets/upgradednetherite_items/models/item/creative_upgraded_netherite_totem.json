@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "upgradednetherite_items:items/creative_upgraded_netherite_totem"
-  }
-}

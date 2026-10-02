@@ -1,9 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": [
-    "crimson_forest",
-    "nether_wastes"
-  ],
-  "features": "stalwart_dungeons:keeping_castle",
-  "step": "underground_structures"
-}

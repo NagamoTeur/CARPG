@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "iter_rpg:blocks/netherrack_geodite",
-    "particle": "iter_rpg:blocks/netherrack_geodite"
-  },
-  "render_type": "solid"
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_top",
-  "textures": {
-    "top": "mowziesmobs:block/raked_sand_northwest",
-    "side": "minecraft:block/sand"
-  }
-}

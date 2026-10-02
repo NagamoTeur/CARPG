@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "cataclysm:block/melting_netherrack_2"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "experience": 6,
-  "cookingtime": 100,
-  "ingredient": {
-    "item": "royalvariations:royal_bone"
-  },
-  "result": "minecraft:gold_ingot"
-}

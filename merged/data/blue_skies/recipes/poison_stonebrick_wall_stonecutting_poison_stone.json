@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "blue_skies:poison_stone"
-  },
-  "result": "blue_skies:poison_stonebrick_wall"
-}

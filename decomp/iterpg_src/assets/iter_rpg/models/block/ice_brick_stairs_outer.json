@@ -1,9 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "iter_rpg:blocks/blue_ice_bricks",
-    "top": "iter_rpg:blocks/blue_ice_bricks",
-    "side": "iter_rpg:blocks/blue_ice_bricks"
-  },
-  "render_type": "solid"
-}

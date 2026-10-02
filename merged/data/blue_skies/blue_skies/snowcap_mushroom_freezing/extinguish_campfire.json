@@ -1,8 +1,0 @@
-{
-  "block": "minecraft:campfire",
-  "frozen_block": "minecraft:campfire",
-  "preserve_states": true,
-  "states": {
-    "lit": "false"
-  }
-}

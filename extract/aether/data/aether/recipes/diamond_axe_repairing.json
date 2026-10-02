@@ -1,9 +1,0 @@
-{
-  "type": "aether:repairing",
-  "category": "enchanting_repair",
-  "group": "altar_axe_repair",
-  "ingredient": {
-    "item": "minecraft:diamond_axe"
-  },
-  "repairTime": 1500
-}

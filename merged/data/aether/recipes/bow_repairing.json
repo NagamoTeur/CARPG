@@ -1,8 +1,0 @@
-{
-  "type": "aether:repairing",
-  "category": "enchanting_repair",
-  "ingredient": {
-    "item": "minecraft:bow"
-  },
-  "repairTime": 4000
-}

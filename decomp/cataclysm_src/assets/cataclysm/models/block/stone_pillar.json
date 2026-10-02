@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end":  "cataclysm:block/stone_pillar_top",
-    "side": "cataclysm:block/stone_pillar"
-  }
-}

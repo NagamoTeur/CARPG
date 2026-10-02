@@ -1,9 +1,0 @@
-{
-    "type": "origins:action_over_time",
-    "interval": 10,
-    "entity_action": {
-        "type": "origins:execute_command",
-        "permission_level": 4,
-        "command": "execute as @s run function arkwys:milk1"
-    }
-}

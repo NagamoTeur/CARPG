@@ -1,6 +1,0 @@
-{
-	"parent": "simplyswords:item/long_handheld",
-	"textures": {
-		"layer0": "simplyswords:item/gobber_compat/end_gobber/halberd_end_gobber"
-	}
-}

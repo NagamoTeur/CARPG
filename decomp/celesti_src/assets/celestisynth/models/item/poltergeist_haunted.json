@@ -1,6 +1,0 @@
-{
-  "parent": "celestisynth:item/poltergeist",
-  "textures": {
-    "0": "celestisynth:item/poltergeist_haunted"
-  }
-}

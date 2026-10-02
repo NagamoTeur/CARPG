@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "blue_skies:cinderstone"
-  },
-  "result": "blue_skies:cinderstone_stairs"
-}

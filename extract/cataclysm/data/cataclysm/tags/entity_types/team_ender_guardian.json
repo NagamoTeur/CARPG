@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "minecraft:shulker",
-    "cataclysm:ender_golem",
-    "cataclysm:endermaptera",
-    "cataclysm:ender_guardian"
-  ]
-}

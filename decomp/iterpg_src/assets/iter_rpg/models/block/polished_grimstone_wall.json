@@ -1,8 +1,0 @@
-{
-  "parent": "block/template_wall_side",
-  "textures": {
-    "wall": "iter_rpg:blocks/polished_grimstone",
-    "particle": "iter_rpg:blocks/polished_grimstone"
-  },
-  "render_type": "cutout_mipped"
-}

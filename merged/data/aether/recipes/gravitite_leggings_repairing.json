@@ -1,9 +1,0 @@
-{
-  "type": "aether:repairing",
-  "category": "enchanting_repair",
-  "group": "altar_leggings_repair",
-  "ingredient": {
-    "item": "aether:gravitite_leggings"
-  },
-  "repairTime": 1500
-}

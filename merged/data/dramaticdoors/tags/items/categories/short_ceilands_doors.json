@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    {"id": "dramaticdoors:short_ceiltrunk_door", "required": false},
-    {"id": "dramaticdoors:short_luzawood_door", "required": false}
-  ]
-}

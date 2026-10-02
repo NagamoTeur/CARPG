@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom":  "cataclysm:block/frosted_stone_bricks_top",
-    "top": "cataclysm:block/frosted_stone_bricks_top",
-    "side": "cataclysm:block/frosted_stone_bricks"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "nether_wastes",
-  "features": "undead_unleashed:charstone_pile",
-  "step": "raw_generation"
-}

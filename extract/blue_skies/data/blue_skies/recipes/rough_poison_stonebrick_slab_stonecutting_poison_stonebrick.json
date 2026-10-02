@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "blue_skies:poison_stonebrick"
-  },
-  "result": "blue_skies:rough_poison_stonebrick_slab"
-}

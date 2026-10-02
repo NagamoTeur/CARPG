@@ -1,8 +1,0 @@
-{
-  "type": "majruszsaccessories:crafting_accessory",
-  "ingredients": [
-    "majruszsaccessories:adventurer_kit",
-    "majruszsaccessories:swimmer_guide"
-  ],
-  "result": "majruszsaccessories:adventurer_rune"
-}

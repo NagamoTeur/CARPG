@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Specification-Title: meetyourfight
-Specification-Vendor: Lykrast
-Specification-Version: 1
-Implementation-Title: MeetYourFight
-Implementation-Version: 1.19.2-1.3.4
-Implementation-Vendor: Lykrast
-Implementation-Timestamp: 2023-07-15T11:14:08+0200
-

@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "iter_rpg:blocks/frosty_grass",
-    "particle": "iter_rpg:blocks/frosty_grass"
-  },
-  "render_type": "cutout"
-}

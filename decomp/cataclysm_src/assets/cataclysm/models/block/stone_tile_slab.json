@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom":  "cataclysm:block/stone_tiles",
-    "top": "cataclysm:block/stone_tiles",
-    "side": "cataclysm:block/stone_tiles"
-  }
-}

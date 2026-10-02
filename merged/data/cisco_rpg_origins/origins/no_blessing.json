@@ -1,8 +1,0 @@
-{
-    "name": "No Blessing",
-    "description": "You renounce the gods and walk your path alone. You recieve no blessing.",
-    "icon": {
-        "item": "undead_unleashed:grave_metal_helmet"
-    },
-    "impact": 0
-}

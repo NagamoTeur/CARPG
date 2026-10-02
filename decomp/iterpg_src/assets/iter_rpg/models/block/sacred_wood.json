@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "iter_rpg:blocks/sacred_log_side",
-    "particle": "iter_rpg:blocks/sacred_log_side"
-  },
-  "render_type": "solid"
-}

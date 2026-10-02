@@ -1,6 +1,0 @@
-{
-    "parent": "item/crossbow",
-    "textures": {
-        "layer0": "upgradednetherite:items/water_upgraded_netherite_crossbow_arrow"
-    }
-}

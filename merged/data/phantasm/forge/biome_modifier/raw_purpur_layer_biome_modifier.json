@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "end_barrens",
-  "features": "phantasm:raw_purpur_layer",
-  "step": "surface_structures"
-}

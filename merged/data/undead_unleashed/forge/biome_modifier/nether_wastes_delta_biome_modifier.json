@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "nether_wastes",
-  "features": "undead_unleashed:nether_wastes_delta",
-  "step": "lakes"
-}

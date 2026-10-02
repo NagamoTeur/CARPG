@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "experience": 1,
-  "cookingtime": 125,
-  "ingredient": {
-    "item": "undead_unleashed:grave_metal_scrap"
-  },
-  "result": "minecraft:iron_nugget"
-}

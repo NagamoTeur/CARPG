@@ -1,1 +1,0 @@
-give @s minecraft:milk_bucket{display:{Name:'[{"text":"Minotaur Milk","italic":false,"color":"light_purple"}]'},Enchantments:[{}]} 1

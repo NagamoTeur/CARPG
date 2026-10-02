@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "undead_unleashed:shaded_bricks"
-  },
-  "result": "undead_unleashed:chiseled_shaded_bricks"
-}

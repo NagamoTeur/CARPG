@@ -1,8 +1,0 @@
-{
-  "parent": "block/template_wall_side_tall",
-  "textures": {
-    "wall": "iter_rpg:blocks/packed_snow_bricks",
-    "particle": "iter_rpg:blocks/packed_snow_bricks"
-  },
-  "render_type": "solid"
-}

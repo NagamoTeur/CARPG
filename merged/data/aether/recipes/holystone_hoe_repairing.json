@@ -1,9 +1,0 @@
-{
-  "type": "aether:repairing",
-  "category": "enchanting_repair",
-  "group": "altar_hoe_repair",
-  "ingredient": {
-    "item": "aether:holystone_hoe"
-  },
-  "repairTime": 500
-}

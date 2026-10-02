@@ -1,7 +1,0 @@
-{
-	"parent": "minecraft:item/handheld",
-	"textures": {
-		"layer0": "meetyourfight:item/cocktail_cutlass",
-		"layer1": "meetyourfight:item/cocktail_cutlass_overlay"
-	}
-}

@@ -1,9 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "iter_rpg:blocks/smooth_blue_ice",
-    "top": "iter_rpg:blocks/smooth_blue_ice",
-    "side": "iter_rpg:blocks/smooth_blue_ice"
-  },
-  "render_type": "solid"
-}

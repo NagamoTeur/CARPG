@@ -1,8 +1,0 @@
-{
-  "parent": "block/door_top_right_open",
-  "textures": {
-    "bottom": "iter_rpg:blocks/sacred_door_bottom",
-    "top": "iter_rpg:blocks/sacred_door_top"
-  },
-  "render_type": "solid"
-}

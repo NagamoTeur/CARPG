@@ -1,8 +1,0 @@
-{
-  "parent": "block/wall_inventory",
-  "textures": {
-    "wall": "iter_rpg:blocks/hivestone",
-    "particle": "iter_rpg:blocks/hivestone"
-  },
-  "render_type": "solid"
-}

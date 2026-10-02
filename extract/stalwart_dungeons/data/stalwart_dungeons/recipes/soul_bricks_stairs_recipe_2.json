@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "stalwart_dungeons:soul_bricks"
-  },
-  "result": "stalwart_dungeons:soul_bricks_stairs"
-}

@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    {
-      "id": "tlc:lost_castle",
-      "required": false
-    }
-  ]
-}

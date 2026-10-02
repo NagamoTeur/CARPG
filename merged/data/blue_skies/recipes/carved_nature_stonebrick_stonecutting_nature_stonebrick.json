@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "blue_skies:nature_stonebrick"
-  },
-  "result": "blue_skies:carved_nature_stonebrick"
-}

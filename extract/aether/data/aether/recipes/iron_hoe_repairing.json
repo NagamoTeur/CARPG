@@ -1,9 +1,0 @@
-{
-  "type": "aether:repairing",
-  "category": "enchanting_repair",
-  "group": "altar_hoe_repair",
-  "ingredient": {
-    "item": "minecraft:iron_hoe"
-  },
-  "repairTime": 750
-}

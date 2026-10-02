@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "iter_rpg:items/sacrificial_dagger"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "aether:repairing",
-  "category": "enchanting_repair",
-  "group": "altar_hoe_repair",
-  "ingredient": {
-    "item": "aether:gravitite_hoe"
-  },
-  "repairTime": 1500
-}

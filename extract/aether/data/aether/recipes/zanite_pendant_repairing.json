@@ -1,9 +1,0 @@
-{
-  "type": "aether:repairing",
-  "category": "enchanting_repair",
-  "group": "altar_pendant_repair",
-  "ingredient": {
-    "item": "aether:zanite_pendant"
-  },
-  "repairTime": 500
-}

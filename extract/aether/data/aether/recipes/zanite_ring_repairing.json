@@ -1,9 +1,0 @@
-{
-  "type": "aether:repairing",
-  "category": "enchanting_repair",
-  "group": "altar_ring_repair",
-  "ingredient": {
-    "item": "aether:zanite_ring"
-  },
-  "repairTime": 500
-}

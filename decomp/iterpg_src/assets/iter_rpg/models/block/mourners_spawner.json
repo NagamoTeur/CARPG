@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "iter_rpg:blocks/sorrow_spawner",
-    "particle": "iter_rpg:blocks/sorrow_spawner"
-  },
-  "render_type": "cutout"
-}

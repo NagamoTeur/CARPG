@@ -1,6 +1,0 @@
-{
-    "parent": "item/bow",
-    "textures": {
-        "layer0": "upgradednetherite:items/echo_upgraded_netherite_bow_pulling_2"
-    }
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "galosphere:smooth_allurite"
-  },
-  "result": "galosphere:allurite_brick_slab"
-}

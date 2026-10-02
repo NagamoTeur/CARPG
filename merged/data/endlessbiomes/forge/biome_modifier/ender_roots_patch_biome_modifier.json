@@ -1,9 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": [
-    "end_midlands",
-    "end_highlands"
-  ],
-  "features": "endlessbiomes:ender_roots_patch",
-  "step": "vegetal_decoration"
-}

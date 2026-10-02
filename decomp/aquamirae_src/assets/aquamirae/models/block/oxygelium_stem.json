@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "aquamirae:block/oxygelium_stem",
-    "particle": "aquamirae:block/oxygelium_stem"
-  },
-  "render_type": "cutout_mipped"
-}

@@ -1,8 +1,0 @@
-{
-    "type": "origins:modify_exhaustion",
-    "modifier": {
-        "name": "Reduced exhaustion",
-        "operation": "multiply_base",
-        "value": -0.75
-    }
-}

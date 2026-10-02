@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "galosphere:lumiere_block"
-  },
-  "result": "galosphere:chiseled_lumiere"
-}

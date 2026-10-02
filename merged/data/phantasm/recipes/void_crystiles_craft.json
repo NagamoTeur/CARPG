@@ -1,9 +1,0 @@
-{
-  "group": "crystal",
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "tag": "forge:void_crystiles_cuttable"
-  },
-  "result": "phantasm:void_crystiles"
-}

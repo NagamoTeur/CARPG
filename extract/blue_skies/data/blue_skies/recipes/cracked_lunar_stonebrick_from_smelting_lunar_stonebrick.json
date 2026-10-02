@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "cookingtime": 200,
-  "experience": 0.1,
-  "ingredient": {
-    "item": "blue_skies:lunar_stonebrick"
-  },
-  "result": "blue_skies:cracked_lunar_stonebrick"
-}

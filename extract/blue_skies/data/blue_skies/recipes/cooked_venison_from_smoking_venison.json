@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smoking",
-  "cookingtime": 100,
-  "experience": 0.35,
-  "ingredient": {
-    "item": "blue_skies:venison"
-  },
-  "result": "blue_skies:cooked_venison"
-}

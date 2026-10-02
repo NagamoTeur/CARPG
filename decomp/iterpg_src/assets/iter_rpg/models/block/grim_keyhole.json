@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "iter_rpg:blocks/grim_tear_hole",
-    "particle": "iter_rpg:blocks/grim_tear_hole"
-  },
-  "render_type": "solid"
-}

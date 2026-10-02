@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "endlessbiomes:polished_arkan"
-  },
-  "result": "endlessbiomes:arkan_brick_wall"
-}

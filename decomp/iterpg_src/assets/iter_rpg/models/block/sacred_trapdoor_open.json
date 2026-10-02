@@ -1,8 +1,0 @@
-{
-  "parent": "block/template_orientable_trapdoor_open",
-  "textures": {
-    "texture": "iter_rpg:blocks/sacred_trapdoor",
-    "particle": "iter_rpg:blocks/sacred_trapdoor"
-  },
-  "render_type": "solid"
-}

@@ -1,9 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": [
-    "small_end_islands",
-    "end_barrens"
-  ],
-  "features": "endlessbiomes:ender_ferns_patch",
-  "step": "vegetal_decoration"
-}

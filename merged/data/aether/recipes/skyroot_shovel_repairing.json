@@ -1,9 +1,0 @@
-{
-  "type": "aether:repairing",
-  "category": "enchanting_repair",
-  "group": "altar_shovel_repair",
-  "ingredient": {
-    "item": "aether:skyroot_shovel"
-  },
-  "repairTime": 250
-}

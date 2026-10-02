@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "iter_rpg:blocks/sacred_sapling",
-    "particle": "iter_rpg:blocks/sacred_sapling"
-  },
-  "render_type": "cutout"
-}

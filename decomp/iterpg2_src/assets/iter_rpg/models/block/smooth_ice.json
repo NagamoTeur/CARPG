@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "iter_rpg:blocks/smooth_blue_ice",
-    "particle": "iter_rpg:blocks/smooth_blue_ice"
-  },
-  "render_type": "solid"
-}

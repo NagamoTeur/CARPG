@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "experience": 3,
-  "cookingtime": 200,
-  "ingredient": {
-    "item": "cisco_mod:raw_brightsteel"
-  },
-  "result": "cisco_mod:brightsteel_ingot"
-}

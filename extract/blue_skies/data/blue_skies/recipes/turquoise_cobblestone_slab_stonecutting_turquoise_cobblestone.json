@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "blue_skies:turquoise_cobblestone"
-  },
-  "result": "blue_skies:turquoise_cobblestone_slab"
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "blue_skies:mossy_turquoise_stonebrick"
-  },
-  "result": "blue_skies:mossy_turquoise_stonebrick_stairs"
-}

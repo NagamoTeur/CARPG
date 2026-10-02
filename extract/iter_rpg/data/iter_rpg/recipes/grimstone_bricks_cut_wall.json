@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "iter_rpg:grimstone_bricks"
-  },
-  "result": "iter_rpg:grimstone_bricks_wall"
-}

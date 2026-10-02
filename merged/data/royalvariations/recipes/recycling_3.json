@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "experience": 6,
-  "cookingtime": 200,
-  "ingredient": {
-    "item": "royalvariations:royal_bone"
-  },
-  "result": "minecraft:gold_ingot"
-}

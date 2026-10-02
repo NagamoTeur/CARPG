@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "iter_rpg:blocks/magmanum_block",
-    "particle": "iter_rpg:blocks/magmanum_block"
-  },
-  "render_type": "solid"
-}

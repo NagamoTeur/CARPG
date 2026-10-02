@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "blue_skies:umber"
-  },
-  "result": "blue_skies:umber_stairs"
-}

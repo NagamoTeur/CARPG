@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end":  "cataclysm:block/chiseled_stone_brick_pillar_top",
-    "side": "cataclysm:block/chiseled_stone_brick_pillar"
-  }
-}

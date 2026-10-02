@@ -1,6 +1,0 @@
-{
-  "parent": "cataclysm:block/pointed_icicle",
-  "textures": {
-    "cross": "cataclysm:block/pointed_icicle_down_tip_merge"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    {
-      "id": "corpse:corpse",
-      "required": false
-    }
-  ]
-}

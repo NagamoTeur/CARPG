@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "upgradednetherite:items/phantom_upgraded_netherite_sword"
-  }
-}

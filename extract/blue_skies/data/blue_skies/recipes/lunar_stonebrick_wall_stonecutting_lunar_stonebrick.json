@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "blue_skies:lunar_stonebrick"
-  },
-  "result": "blue_skies:lunar_stonebrick_wall"
-}

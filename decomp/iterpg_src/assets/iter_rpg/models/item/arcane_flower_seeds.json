@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "iter_rpg:items/arcane_flower_seeds"
-  },
-  "render_type": "translucent"
-}
