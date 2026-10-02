@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blue_skies:pine_fruit"
+    }
+  ],
+  "result": {
+    "item": "blue_skies:pine_fruit_seeds"
+  }
+}

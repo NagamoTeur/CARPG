@@ -1,0 +1,1 @@
+{"name":"awesomedungeonend:end_palace/start_pool","fallback":"minecraft:empty","elements":[{"weight":1,"element":{"location":"awesomedungeonend:end_palace","processors":"minecraft:empty","projection":"rigid","element_type":"minecraft:single_pool_element"}}]}

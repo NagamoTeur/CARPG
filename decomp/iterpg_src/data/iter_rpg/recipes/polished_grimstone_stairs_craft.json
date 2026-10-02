@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 45",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "iter_rpg:polished_grimstone"
+    },
+    "4": {
+      "item": "iter_rpg:polished_grimstone"
+    },
+    "5": {
+      "item": "iter_rpg:polished_grimstone"
+    },
+    "6": {
+      "item": "iter_rpg:polished_grimstone"
+    },
+    "7": {
+      "item": "iter_rpg:polished_grimstone"
+    },
+    "8": {
+      "item": "iter_rpg:polished_grimstone"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:polished_grimstone_stairs",
+    "count": 4
+  }
+}

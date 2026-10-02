@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 45",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "iter_rpg:packed_snow_bricks"
+    },
+    "4": {
+      "item": "iter_rpg:packed_snow_bricks"
+    },
+    "5": {
+      "item": "iter_rpg:packed_snow_bricks"
+    },
+    "6": {
+      "item": "iter_rpg:packed_snow_bricks"
+    },
+    "7": {
+      "item": "iter_rpg:packed_snow_bricks"
+    },
+    "8": {
+      "item": "iter_rpg:packed_snow_bricks"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:packed_snow_bricks_stairs",
+    "count": 4
+  }
+}

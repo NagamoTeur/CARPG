@@ -1,0 +1,298 @@
+{
+ "minecraft:warden": {
+  "starting_level": 75,
+  "max_level": 0,
+  "levels_per_distance": 0.016,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 25,
+  "kind": "entities"
+ },
+ "minecraft:elder_guardian": {
+  "starting_level": 60,
+  "max_level": 0,
+  "levels_per_distance": 0.02,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 15,
+  "kind": "entities"
+ },
+ "minecraft:ender_dragon": {
+  "starting_level": 100,
+  "max_level": 0,
+  "levels_per_distance": 0.03,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 50,
+  "kind": "entities"
+ },
+ "minecraft:wither": {
+  "starting_level": 50,
+  "max_level": 0,
+  "levels_per_distance": 0.016,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 25,
+  "kind": "entities"
+ },
+ "minecraft:the_nether": {
+  "starting_level": 35,
+  "max_level": 0,
+  "levels_per_distance": 0.02,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 0,
+  "kind": "dimensions"
+ },
+ "minecraft:overworld": {
+  "starting_level": 1,
+  "max_level": 0,
+  "levels_per_distance": 0.008,
+  "levels_per_deepness": 0.01,
+  "random_level_bonus": 0,
+  "kind": "dimensions"
+ },
+ "minecraft:the_end": {
+  "starting_level": 150,
+  "max_level": 0,
+  "levels_per_distance": 0.03,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 0,
+  "kind": "dimensions"
+ },
+ "aquamirae:captain_cornelia": {
+  "starting_level": 50,
+  "max_level": 0,
+  "levels_per_distance": 0.018,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 15,
+  "kind": "entities"
+ },
+ "alexsmobs:warped_mosco": {
+  "starting_level": 85,
+  "max_level": 0,
+  "levels_per_distance": 0.02,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 20,
+  "kind": "entities"
+ },
+ "alexsmobs:void_worm": {
+  "starting_level": 100,
+  "max_level": 0,
+  "levels_per_distance": 0.035,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 25,
+  "kind": "entities"
+ },
+ "cisco_mod:fellkingboss": {
+  "starting_level": 80,
+  "max_level": 0,
+  "levels_per_distance": 0.016,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 0,
+  "kind": "entities"
+ },
+ "cisco_mod:cisco": {
+  "starting_level": 70,
+  "max_level": 0,
+  "levels_per_distance": 0.016,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 0,
+  "kind": "entities"
+ },
+ "bosses_of_mass_destruction:gauntlet": {
+  "starting_level": 85,
+  "max_level": 0,
+  "levels_per_distance": 0.02,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 20,
+  "kind": "entities"
+ },
+ "bosses_of_mass_destruction:void_blossom": {
+  "starting_level": 50,
+  "max_level": 0,
+  "levels_per_distance": 0.018,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 15,
+  "kind": "entities"
+ },
+ "bosses_of_mass_destruction:obsidilith": {
+  "starting_level": 85,
+  "max_level": 0,
+  "levels_per_distance": 0.02,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 20,
+  "kind": "entities"
+ },
+ "bosses_of_mass_destruction:lich": {
+  "starting_level": 85,
+  "max_level": 0,
+  "levels_per_distance": 0.02,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 20,
+  "kind": "entities"
+ },
+ "blue_skies:starlit_crusher": {
+  "starting_level": 50,
+  "max_level": 0,
+  "levels_per_distance": 0.018,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 15,
+  "kind": "entities"
+ },
+ "blue_skies:arachnarch": {
+  "starting_level": 50,
+  "max_level": 0,
+  "levels_per_distance": 0.018,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 15,
+  "kind": "entities"
+ },
+ "meetyourfight:bellringer": {
+  "starting_level": 25,
+  "max_level": 0,
+  "levels_per_distance": 0.016,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 10,
+  "kind": "entities"
+ },
+ "meetyourfight:dame_fortuna": {
+  "starting_level": 25,
+  "max_level": 0,
+  "levels_per_distance": 0.016,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 10,
+  "kind": "entities"
+ },
+ "meetyourfight:swampjaw": {
+  "starting_level": 25,
+  "max_level": 0,
+  "levels_per_distance": 0.016,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 10,
+  "kind": "entities"
+ },
+ "meetyourfight:rosalyne": {
+  "starting_level": 25,
+  "max_level": 0,
+  "levels_per_distance": 0.016,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 10,
+  "kind": "entities"
+ },
+ "cataclysm:ender_guardian": {
+  "starting_level": 60,
+  "max_level": 0,
+  "levels_per_distance": 0.03,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 25,
+  "kind": "entities"
+ },
+ "cataclysm:ancient_remnant": {
+  "starting_level": 85,
+  "max_level": 0,
+  "levels_per_distance": 0.02,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 20,
+  "kind": "entities"
+ },
+ "cataclysm:maledictus": {
+  "starting_level": 100,
+  "max_level": 0,
+  "levels_per_distance": 0.025,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 25,
+  "kind": "entities"
+ },
+ "cataclysm:the_harbinger": {
+  "starting_level": 85,
+  "max_level": 0,
+  "levels_per_distance": 0.02,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 20,
+  "kind": "entities"
+ },
+ "cataclysm:ignis": {
+  "starting_level": 30,
+  "max_level": 0,
+  "levels_per_distance": 0.02,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 15,
+  "kind": "entities"
+ },
+ "cataclysm:netherite_monstrosity": {
+  "starting_level": 35,
+  "max_level": 0,
+  "levels_per_distance": 0.022,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 17,
+  "kind": "entities"
+ },
+ "cataclysm:the_leviathan": {
+  "starting_level": 100,
+  "max_level": 0,
+  "levels_per_distance": 0.025,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 25,
+  "kind": "entities"
+ },
+ "knightquest:netherman": {
+  "starting_level": 35,
+  "max_level": 0,
+  "levels_per_distance": 0.022,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 17,
+  "kind": "entities"
+ },
+ "iter_rpg:sorrowsealed": {
+  "starting_level": 85,
+  "max_level": 0,
+  "levels_per_distance": 0.02,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 20,
+  "kind": "entities"
+ },
+ "iter_rpg:insatiable": {
+  "starting_level": 25,
+  "max_level": 0,
+  "levels_per_distance": 0.016,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 10,
+  "kind": "entities"
+ },
+ "mowziesmobs:ferrous_wroughtnaut": {
+  "starting_level": 55,
+  "max_level": 0,
+  "levels_per_distance": 0.02,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 15,
+  "kind": "entities"
+ },
+ "mowziesmobs:frostmaw": {
+  "starting_level": 50,
+  "max_level": 0,
+  "levels_per_distance": 0.018,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 15,
+  "kind": "entities"
+ },
+ "mowziesmobs:umvuthi": {
+  "starting_level": 50,
+  "max_level": 0,
+  "levels_per_distance": 0.018,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 15,
+  "kind": "entities"
+ },
+ "aether:the_aether": {
+  "starting_level": 35,
+  "max_level": 0,
+  "levels_per_distance": 0.022,
+  "levels_per_deepness": 0.0,
+  "random_level_bonus": 0,
+  "kind": "dimensions"
+ },
+ "irons_spellbooks:dead_king": {
+  "starting_level": 50,
+  "max_level": 0,
+  "levels_per_distance": 0.018,
+  "levels_per_deepness": 0,
+  "random_level_bonus": 15,
+  "kind": "entities"
+ }
+}

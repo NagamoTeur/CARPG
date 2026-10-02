@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 45",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "iter_rpg:hivestone"
+    },
+    "4": {
+      "item": "iter_rpg:hivestone"
+    },
+    "5": {
+      "item": "iter_rpg:hivestone"
+    },
+    "6": {
+      "item": "iter_rpg:hivestone"
+    },
+    "7": {
+      "item": "iter_rpg:hivestone"
+    },
+    "8": {
+      "item": "iter_rpg:hivestone"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:hivestone_stairs",
+    "count": 4
+  }
+}

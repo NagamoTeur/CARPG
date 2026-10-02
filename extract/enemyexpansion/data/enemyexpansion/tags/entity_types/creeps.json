@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:creeper",
+    "enemyexpansion:crawler",
+    "enemyexpansion:intruder",
+    "enemyexpansion:faller"
+  ]
+}

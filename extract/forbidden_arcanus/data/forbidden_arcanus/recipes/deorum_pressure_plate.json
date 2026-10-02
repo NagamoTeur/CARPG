@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/deorum"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "forbidden_arcanus:deorum_pressure_plate"
+  }
+}

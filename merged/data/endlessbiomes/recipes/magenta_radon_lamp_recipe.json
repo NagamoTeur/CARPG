@@ -1,0 +1,19 @@
+{
+  "group": "radon_lamps",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:magenta_dye"
+    },
+    {
+      "item": "endlessbiomes:radon"
+    },
+    {
+      "item": "endlessbiomes:arkan_glass"
+    }
+  ],
+  "result": {
+    "item": "endlessbiomes:magenta_radon_lamp",
+    "count": 1
+  }
+}

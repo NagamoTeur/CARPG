@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "enemyexpansion:vampire",
+    "enemyexpansion:vampflyer",
+    "enemyexpansion:vampbiter"
+  ]
+}

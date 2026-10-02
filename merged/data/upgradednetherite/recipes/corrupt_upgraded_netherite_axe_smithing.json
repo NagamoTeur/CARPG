@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_axe"
+  },
+  "addition": {
+    "item": "upgradednetherite:corrupt_upgraded_netherite_ingot"
+  },
+  "result": {
+    "item": "upgradednetherite:corrupt_upgraded_netherite_axe"
+  }
+}

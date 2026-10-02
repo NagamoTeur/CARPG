@@ -1,0 +1,28 @@
+{
+	"conditions": [{
+		"type": "forge:mod_loaded",
+		"modid": "botania"
+	},
+	{
+		"type": "forge:mod_loaded",
+		"modid": "apothiccurios"
+	}],
+	"type": "apotheosis:attribute",
+	"attribute": "botania:pixie_spawn_chance",
+	"operation": "MULTIPLY_BASE",
+	"values": {
+	"mythic": {
+		"min": 0.01,
+		"steps": 2,
+		"step": 0.0025
+	},
+	"ancient": {
+		"min": 0.02,
+		"steps": 2,
+		"step": 0.005
+	}
+	},
+	"types": [
+		"curios:ring", "curios:an_focus", "curios:necklace", "curios:charm", "curios:belt", "curios:spellstone", "curios:scroll", "curios:bracelet", "curios:talisman", "curios:scroll", "curios:spellstone", "curios:bracelet"
+	]
+}

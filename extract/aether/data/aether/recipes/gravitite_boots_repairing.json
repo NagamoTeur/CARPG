@@ -1,0 +1,9 @@
+{
+  "type": "aether:repairing",
+  "category": "enchanting_repair",
+  "group": "altar_boots_repair",
+  "ingredient": {
+    "item": "aether:gravitite_boots"
+  },
+  "repairTime": 1500
+}

@@ -1,0 +1,6 @@
+{
+  "block": "blue_skies:raw_horizonite_block",
+  "frozen_block": "minecraft:raw_iron_block",
+  "preserve_states": false,
+  "states": {}
+}

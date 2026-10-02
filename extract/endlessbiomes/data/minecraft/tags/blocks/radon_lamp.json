@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "endlessbiomes:black_radon_lamp",
+    "endlessbiomes:magenta_radon_lamp",
+    "endlessbiomes:yellow_radon_lamp",
+    "endlessbiomes:red_radon_lamp",
+    "endlessbiomes:brown_radon_lamp",
+    "endlessbiomes:pink_radon_lamp",
+    "endlessbiomes:light_blue_radon_lamp",
+    "endlessbiomes:lime_radon_lamp",
+    "endlessbiomes:white_radon_lamp",
+    "endlessbiomes:gray_radon_lamp",
+    "endlessbiomes:blue_radon_lamp",
+    "endlessbiomes:green_radon_lamp",
+    "endlessbiomes:purple_radon_lamp",
+    "endlessbiomes:orange_radon_lamp",
+    "endlessbiomes:cyan_radon_lamp",
+    "endlessbiomes:light_gray_radon_lamp"
+  ]
+}

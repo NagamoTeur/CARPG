@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:ice_brick_wall",
+    "iter_rpg:packed_snow_bricks_wall",
+    "iter_rpg:polished_grimstone_wall",
+    "iter_rpg:grimstone_bricks_wall",
+    "iter_rpg:hivestone_wall"
+  ]
+}

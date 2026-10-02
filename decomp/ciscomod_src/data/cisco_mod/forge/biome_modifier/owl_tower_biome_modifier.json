@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "cisco_mod:owl_tower",
+  "step": "surface_structures"
+}

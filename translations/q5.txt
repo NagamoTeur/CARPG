@@ -1,0 +1,225 @@
+740|Construire la hutte du bâtisseur
+741|Avant de pouvoir construire quoi que ce soit, il te faut un bâtisseur qui construise la hutte du bâtisseur. ⏎  ⏎ Réponds à ses demandes de ressources pendant qu'il construit le bâtiment.
+742|Construire un restaurant
+743|Nourrir les masses
+744|Le restaurant est un bâtiment important qui fournit automatiquement de la nourriture à tes citoyens.
+745|Stockage supplémentaire
+746|L'entrepôt est un lieu pour stocker et gérer les ressources produites par le royaume.
+747|Messager rapide
+748|La hutte du coursier est la base du coursier, chargé de collecter et stocker les ressources excédentaires dans l'entrepôt et de livrer aux citoyens qui en demandent.
+749|Construire la hutte du pêcheur
+750|Trouver du poisson
+751|La hutte du pêcheur est le moyen le plus efficace de commencer à produire de la nourriture pour tes citoyens.
+752|Creuser profond
+753|La mine fournira au mineur un endroit pour récolter des ressources comme la pierre, les diamants, etc.
+754|Logement supplémentaire
+755|La résidence offre un logement pour un villageois supplémentaire par niveau, ce qui te permet d'augmenter la population de ton royaume.
+756|Renforcer les défenses
+757|La tour de garde sera la base d'où opèrent les gardes. ⏎  ⏎ Tu peux choisir entre trois classes de garde : le chevalier tank, l'archer à distance et le druide de soutien.
+758|Chercher le savoir
+759|L'université est le bâtiment où tu recherches des bâtiments plus avancés pour ton royaume, comme la caserne ou l'hôpital.
+760|Cultiver pour manger
+761|La ferme est une autre façon de produire de la nourriture pour tes citoyens, par des méthodes végétales.
+762|Construire la taverne
+763|La taverne offre un logement temporaire à tes citoyens et permet aussi de recruter de nouveaux citoyens.
+764|Finis Dierum
+765|Échange
+766|Échange tes éclats de soleil radieux (radiant sunshards) contre des gemmes parfaites.
+767|Portail des souvenirs
+768|Ouvre le portail des souvenirs pour affronter des versions renforcées de Cisco et du Fell King et recevoir des pièces de champion et des tablettes d'ascension.
+769|Portail cataclysmique
+770|Le portail cataclysmique te permet d'affronter des versions renforcées des boss de Cataclysm, qui donnent des éclats de soleil radieux.
+771|Difficulté Ascendante
+772|Défi renouvelé
+773|Il est temps de renouveler le défi. Lis attentivement la description de chaque récompense et choisis-en autant que tu veux pour recommencer ton voyage. ⏎  ⏎ Débloque l'usage de la plupart des Énigmes. ⏎  ⏎ Azure augmente le niveau global dans toutes les dimensions de 150. (Attention en serveur : si plusieurs joueurs choisissent cette récompense, elles se cumulent.) ⏎  ⏎ Violet réinitialise le chapitre Deus pour te permettre de refaire tous les boss à des niveaux plus élevés. ⏎  ⏎ Rouge réinitialise le chapitre des Sept Péchés capitaux pour te permettre de refaire les boss à des niveaux plus élevés.
+774|Avoir le succès Régicide
+775|Difficulté Divine
+776|Défi divin
+777|Réinitialise le chapitre Deus et tue tous les boss à une difficulté accrue. ⏎  ⏎ Débloque l'usage des Énigmes plus puissantes. ⏎  ⏎ Réservé aux plus braves aventuriers.
+778|Clique pour terminer
+779|Difficulté Hellheim
+780|Augmente le niveau du monde de 500 et réinitialise le chapitre Deus pour affronter à nouveau les boss. Les ennemis de niveau 400 à 750 lâchent des matériaux plus rares comme la poussière de gemme et les sceaux de socket. ⏎  ⏎ Au-dessus du niveau 750, ils lâchent des objets très précieux comme des cendres brûlantes et des pièces de champion. ⏎  ⏎ Débloque l'usage des Énigmes les plus puissantes.
+781|Clique pour terminer.
+782|Descente dans la folie
+783|La couronne fut conçue à l'origine par les Lawbringers comme un instrument pour punir les dieux rebelles. Elle arrachait cruellement tous les souvenirs agréables de la psyché de la victime avant de l'incinérer dans une traînée de flammes violettes. Comme tu peux l'imaginer, une exposition prolongée aux effets de l'appareil briserait même les esprits les plus résolus. ⏎  ⏎ Cependant, certains dieux masochistes en tiraient un plaisir tordu et reproduisirent plus tard l'appareil pour leur propre plaisir.
+784|Sept péchés capitaux
+785|Péché de gourmandise
+786|Glorieuse gourmandise
+787|Avec sa faim insatiable de puissance, la vie et l'attaque du wistiver augmentent à chaque kill.
+788|Terrasser le wistiver
+789|Péché de paresse
+790|Terrasser la paresse
+791|Le lit ambulant est lent mais frappe incroyablement fort et possède de très hautes défenses.
+792|Terrasser le lit ambulant
+793|Péché d'orgueil
+794|Purger l'orgueil
+795|Rapide et mortel.
+796|Terrasser le prowler
+797|Péché d'envie
+798|Éliminer l'envie
+799|Plus lent que ses frères mais tout aussi vicieux.
+800|Terrasser Kelvin
+801|Péché de luxure
+802|Lamentations de la luxure
+803|La malédiction préfère voler, car c'est mieux pour poser son regard lubrique sur sa proie.
+804|Péché d'avarice
+805|Grimace de l'avarice
+806|Moins mobile mais le plus robuste, et il possède aussi des attaques à distance.
+807|Péché de colère
+808|Colère dévastatrice
+809|Polyvalent et vicieux.
+810|Maux mineurs
+811|Terrasser un squelette mutant
+812|Tireur d'élite squelettique
+813|Armé d'un grand arc, ce squelette mutant représente une menace significative à distance. ⏎  ⏎ Il repousse violemment les ennemis qui s'approchent au corps à corps.
+814|Terrasser un creeper mutant
+815|Creeper calamiteux
+816|Ce creeper mutant est plus mobile et peut attaquer au corps à corps. ⏎  ⏎ À sa mort, il se charge et explose violemment en laissant un œuf.
+817|Terrasser un Enderman mutant
+818|Enderman erratique
+819|Cet Enderman mutant se trouve dans l'End et est nettement plus menaçant que ses congénères. ⏎  ⏎ Après avoir subi des dégâts fatals, il tente d'attirer et de blesser les ennemis proches.
+820|Terrasser des Endermen mutants
+821|Terrasser un zombie mutant
+822|Zombie zélé
+823|Cette variante mutante du zombie tente de te projeter en l'air avant de te rabattre brutalement au sol. ⏎  ⏎ Il faut l'enflammer, sinon il se régénère.
+824|Terrasser le Hidebehind
+825|Traqueur serein
+826|Cet ennemi traque prudemment ses proies dans l'obscurité mais évite celles qui sont dans la lumière.
+827|Terrasser le Hidebehind
+828|Terrasser le Hirchgeist
+829|Esprit de la forêt
+830|L'esprit de la forêt, capable d'attaques de flammes dévastatrices et d'invoquer des feux follets pour combattre pour lui.
+831|Armes célestes
+832|Les armes célestes sont des armes incroyablement puissantes qui changent radicalement ta façon d'aborder le combat. ⏎  ⏎ Pour commencer à les fabriquer, il te faudra un établi céleste.
+833|Arc de la chute d'étoiles (Starfall Bow)
+834|L'arc des étoiles n'utilise pas de flèches mais tire des faisceaux de pure lumière stellaire sur ses ennemis, ignorant complètement leurs immunités aux projectiles et les transperçant.
+835|Lame des fleurs (Blade of Flowers)
+836|La lame des fleurs excelle dans le contrôle de zone et les dégâts continus. ⏎  ⏎ Son matériau de base est composé de plantes et de fleurs qu'on trouve dans l'Overworld.
+837|Lame de l'ouragan (Blade of Hurricane)
+838|La lame de l'ouragan offre à son porteur une mobilité inégalée. ⏎  ⏎ Son extrême légèreté permet de l'utiliser en main secondaire avec de nombreuses armes improbables comme la rainfall serenity. ⏎  ⏎ Son matériau se trouve entre Y 100 et 320, tout en haut des montagnes.
+839|Hache des esprits (Axe of Spirits)
+840|La puissante hache des esprits excelle dans les gros dégâts en rafale. ⏎  ⏎ Ses matériaux de base sont principalement des yeux d'Ender et elle s'obtient par fabrication.
+841|Lame du soleil (Blade of the Sun)
+842|Cette puissante lame de flammes excelle dans les gros dégâts continus tout en restant mobile. ⏎  ⏎ Le matériau de base nécessaire pour la fabriquer se trouve dans le Nether.
+843|Faux de la lune endeuillée (Scythe of the Sorrowful Moon)
+844|Cette faux lunaire excelle à donner des bonus défensifs et à infliger des dégâts continus modérés. ⏎  ⏎ Ses matériaux de base se trouvent dans les grottes.
+845|Les marchandises de Cisco
+846|Caisse de butin légendaire
+847|Caisse de butin épique
+848|Caisse de butin rare
+849|Lingot de netherite
+850|Talisman of Challenge
+851|Tainted Talisman
+852|Bloc de brightsteel
+853|Wind Core
+854|Thunder Core
+855|Dark Core
+856|Light Core
+857|Glacial Core
+858|Ember Core
+859|Divine Ruby
+860|Wisdom Scroll (parchemin de sagesse)
+861|Gemme Flawed aléatoire
+862|Péché de gourmandise
+863|Amulet of Vitality
+864|Amulet of Swim Speed
+865|Amulet of Luck
+866|Amnesia Scroll (parchemin d'amnésie)
+867|Assiette de jambon glacé au miel
+868|Réduire le niveau du monde de 50
+869|Réduit le niveau du monde de 50. Nécessite d'avoir terminé la quête « Difficulté Ascendante ».
+870|Insatiable
+871|Ancient Remnant
+872|Grâce du Créateur
+873|Fruit céleste
+874|Fruit défendu
+875|Cube non euclidien
+876|Emperor's Crown
+877|Belt of Bracing
+878|Ring of Flight (anneau de vol)
+879|Perfect Dark One Gem
+880|Temporal Core
+881|Échange équivalent
+882|Talisman of Betrayal
+883|Le destin de Cisco
+884|Armure divine
+885|Champion élu
+886|J'ai façonné un ensemble d'armure ornée et, l'une après l'autre, j'ai gagné la faveur des dieux, obtenant quatre bénédictions uniques, une pour chaque pièce d'armure. ⏎  ⏎ Le pouvoir qu'elle contenait fut d'abord trop grand pour moi, mais par une profonde méditation et une grande concentration, j'ai appris à le contrôler et même à l'amplifier avec ma propre force.
+887|Géant endormi
+888|Il me fallait une arme puissante, alors je suis allé dans les profondeurs de l'enfer à la recherche du matériau le plus résistant connu de l'humanité à l'époque. ⏎  ⏎ Avec lui, j'ai forgé une lame que j'ai ornée de métaux plus tendres et plus décoratifs.
+889|Lame de l'équilibre
+890|J'ai inséré la gemme et la lame s'est illuminée devant moi. Les ennemis qu'elle touchait étaient consumés par un feu de dragon.
+891|La taille compte
+892|Mon ami, le légendaire forgeron Arthas, tout en entretenant la lame, a pensé qu'il serait plus efficace de l'utiliser comme une variante plus légère de l'originale. Cette modification permettrait des attaques plus rapides et plus agiles. ⏎  ⏎ À contrecœur, je l'ai laissé faire ses modifications, avec la promesse qu'il la remettrait dans son état d'origine si nécessaire.
+893|Un héros déchu se relève
+894|Un ennemi imprévu... mes frères et sœurs des cieux massacrés... au bord de la mort, par pure rage, mon véritable pouvoir s'est enfin éveillé. ⏎  ⏎ J'ai senti l'emprise de quelque chose de sinistre, mais aussi une force bien au-delà de tout ce que j'avais ressenti. Je me suis rendu à contrecœur à son étreinte froide. Souillé mais renaissant, j'ai juré de venger les disparus.
+895|Héros déchu
+896|À quel prix ?
+897|Je me suis frayé un chemin à travers ce qui m'a semblé être des milliers de soldats du Fell King. Ma force, pourtant, ne faisait que croître à chaque coup de Nightfall. ⏎  ⏎ Peut-être était-il las de l'incompétence de sa légion, ou a-t-il jugé bon d'en finir lui-même avec moi, mais le Fell King s'est abattu sur moi avec une férocité déterminée. Après des heures de combat acharné, je me tenais debout sur son corps vaincu.
+898|Éclat cramoisi
+899|J'ai amélioré et affiné la gemme jusqu'à ce que le pouvoir qu'elle contenait déborde si violemment que j'ai cru qu'elle se consumerait. ⏎  ⏎ La gemme enfin stable, elle était prête à remplir sa fonction.
+900|Le Fell King
+901|Amis et ennemis
+902|Je me suis agenouillé et j'ai soulevé le heaume du Fell King, révélant non le visage d'un démon mais le sourire ensanglanté d'Arthas... le forgeron... celui que je considérais comme un ami proche. ⏎  ⏎ Il a levé lentement le bras... il y a eu une brève pause avant qu'une douleur fulgurante ne résonne dans ma poitrine, me paralysant complètement. J'ai vu des traînées d'énergie sombre quitter mon corps pour être transférées vers lui. La couleur est lentement revenue sur son visage tandis qu'il se relevait.
+903|Ragnarok
+904|Gravement affaibli, j'ai lutté pour me relever... Mais un coup brutal de Fell Ragnarok a brisé mon plastron et m'a envoyé voler au bord d'une falaise proche. ⏎  ⏎ En plongeant dans les profondeurs, j'ai vu son visage autrefois familier me regarder, les yeux brûlants d'énergie sombre et de mépris, avant qu'il ne me tourne lentement le dos et s'éloigne, me laissant à mon sort.
+905|L'épreuve de Cisco
+906|Défier Cisco
+907|J'ai utilisé la dernière part de mon pouvoir pour me téléporter dans l'End, évitant la catastrophe imminente. Là, l'Ender Dragon m'a accueilli comme l'un des siens pendant ma convalescence. ⏎  ⏎ Je n'ai pas la force de vaincre seul le Fell King, mais toi peut-être... Je souhaite éprouver ta force ; si tu parviens à me vaincre, je t'apprendrai à invoquer le Fell King pour que nous en finissions une bonne fois. ⏎  ⏎ Fabrique et utilise le talisman du défi, et ton épreuve commencera.
+908|Vaincre le Fell King
+909|Abattre le Fell King
+910|*[Attention !!] Terminer cette quête accorde de façon permanente le bonus d'ascension divine ; tue d'abord Descended Cisco pour obtenir à la place l'ascension déchue.* ⏎  ⏎ Lors de mon voyage dans le royaume déchu à la recherche d'un moyen de vaincre le Fell King, je suis tombé sur ses soldats qui extrayaient un mystérieux cristal sombre. Après un examen minutieux, j'ai compris qu'il était bien la source de son immense pouvoir. ⏎  ⏎ Après de nombreuses expériences, j'ai pu altérer sa signature magique unique pour créer un effet d'affaiblissement. ⏎  ⏎ Fabrique un autel qui servira de portail puis corromps le talisman avec les fragments déchus. L'autel extraira son essence primordiale à sa mort. ⏎  ⏎ Utilise le talisman corrompu sur l'autel, vaincs le Fell King et prends ta place légitime parmi les divinités.
+911|Vaincre le Fell King
+912|Rouge comme un rubis
+913|Fils d'une fermière et d'un dieu inconnu, j'ai grandi sans être plus fort qu'un mortel ordinaire. Malgré cela, mes demi-frères et sœurs des cieux me regardaient toujours d'un bon œil, intervenant à des moments clés de ma vie. ⏎  ⏎ Ce que j'avais, en revanche, c'était une aptitude naturelle aux choses arcaniques. Dès que j'ai eu l'âge, j'ai quitté mon petit village pour m'inscrire à l'ordre du hibou à la grande citadelle. ⏎  ⏎ J'y ai atteint assez vite le prestigieux rang de Sage. Je me suis pourtant lassé de la citadelle et j'ai décidé de partir faire mon nom. Grâce à mes connaissances en alchimie, j'ai forgé un rubis qui m'aiderait à emprunter et canaliser les dons divins de mes parents plus puissants, pour affronter ce qui serait sûrement un voyage périlleux.
+914|Équipement divin
+915|Justice divine ?
+916|Les Lawbringers étaient une race d'êtres célestes mystérieux dont le but était de juger les dieux coupables de crimes qu'ils jugeaient « impardonnables ». ⏎  ⏎ L'un de ces crimes était de ressusciter les morts. Pollux fut jugé coupable pour avoir ramené son frère jumeau de la mort et, en punition, les deux furent scellés dans deux lames distinctes.
+917|Lame tonnante
+918|Le dieu du tonnerre offrit cette lame à un brave guerrier chargé de garder la porte des îles du tonnerre. ⏎  ⏎ Il l'utilisa un jour pour transformer un champ plein d'envahisseurs en un champ de cendres.
+919|Armure bénie des vents
+920|La divinité du vent bénit cette armure et l'offrit aux premiers colons de sa nation. Depuis, elle est portée par la monarchie souveraine du pays du vent, sous son souverain titré « Ventus Supremi ». ⏎  ⏎ Un grand prince portant cette armure brisa un jour un détachement ennemi avec une telle férocité et rapidité que les survivants rapportèrent avoir été attaqués par un ouragan.
+921|Lance du ciel.
+922|Une lance légendaire qui contient une puissante magie du vent. Personne ne connaît sa véritable origine ni le but de sa création. ⏎  ⏎ Cependant, les érudits pensent qu'elle a pu être forgée au pays du vent avant d'être perdue avec le temps.
+923|Dieux jumeaux
+924|Ces dagues jumelles portent les âmes de deux frères au lien indéfectible.
+925|Tempête hivernale
+926|Certains pensent que cette arme vient de la déesse de la glace, dont les descendants conquirent et gouvernèrent les tribus des glaces grâce à son pouvoir. ⏎  ⏎ Le premier Fell King serait lui aussi un membre de la tribu des glaces, dit-on.
+927|Ascendant Azure
+928|Le premier héros ascendant, Cisco. Il combattit avec un héros anonyme pour vaincre le premier Fell King, Arthas. ⏎  ⏎ Son pouvoir fut transmis à ses descendants, qui combattirent plus tard les descendants du Fell King.
+929|Ascendant Violet
+930|500 ans après la guerre du premier Fell King, le deuxième Fell King, Bjorn, attaqua et faillit anéantir le royaume du feu. ⏎  ⏎ À cette époque, la princesse Carmilla de cette nation hérita du pouvoir de son ancêtre Cisco et devint le deuxième héros ascendant, repoussant les forces déchues.
+931|Ascendant Rouge
+932|250 ans plus tard, le troisième Fell King, Sylvi, se leva, cette fois avec l'intention de conquérir plutôt que de détruire totalement. Elle réussit en grande partie à fusionner les nations de la glace, du tonnerre et de l'ombre en un grand empire. ⏎  ⏎ Le royaume du feu s'allia aux nations du vent et du sacré pour combattre cette menace. À cette époque, Arthur, un chevalier du royaume du feu, hérita du pouvoir de son ancêtre et devint le troisième héros ascendant. Après des années de combats incessants, il proposa un marché à Sylvi. ⏎  ⏎ Pour le reste de sa vie il y aurait la paix et, en retour, il l'épouserait, fusionnant ainsi les lignées du premier Fell King et de Cisco, et garantissant que leurs descendants auraient un jour le pouvoir et le rang pour unir tous les royaumes en un seul.
+933|Rites et runes
+934|Pour évaluer la capacité magique de ses initiés, l'ordre du hibou leur faisait accorder une pierre magique à l'emplacement de leur dortoir assigné. ⏎  ⏎ Ceux qui échouaient dans le temps imparti et avaient de la chance étaient jugés sans talent et expulsés de l'ordre sans exception. ⏎  ⏎ Les malchanceux... se téléportaient dans un mur, dans l'antre d'une créature affamée, ou rencontraient une autre fin très regrettable.
+935|Brillance
+936|Cette bague ornée était offerte à tous les membres de l'ordre du hibou qui atteignaient le rang de sage. ⏎  ⏎ On n'y parvenait qu'en gravissant les échelons jusqu'à adepte mage-chevalier, puis en acquérant la maîtrise complète de l'un des nombreux domaines de la magie. ⏎  ⏎ Pour prouver cette maîtrise, il fallait créer un sort inédit dans ce domaine à ajouter au grand répertoire.
+937|Le démon cramoisi
+938|Quand un culte de mages fanatiques de la nation des glaces libéra par accident les forces déchues sur le monde, ils ne purent rien faire pour arrêter le massacre qui suivit. ⏎  ⏎ Bjorn, un général au service de la tribu régnante, demanda de l'aide à la seule nation avec laquelle ils entretenaient de bonnes relations, le royaume du feu. ⏎  ⏎ Le royaume du feu refusa, voyant dans l'affaire une juste punition de leur folie. La famille royale ayant été massacrée, les mages responsables de la catastrophe proposèrent une solution. ⏎  ⏎ Un rituel pour envoyer le plus fort guerrier encore vivant au royaume déchu, dans l'espoir d'obtenir le pouvoir nécessaire pour arrêter les forces déchues. Ils jetèrent le sort sur Bjorn, qui fut transporté dans le royaume des déchus. ⏎  ⏎ Des années passèrent pour lui, mais en quelques instants il revint, vêtu d'une armure de demonium, ne pouvant prononcer qu'un seul mot d'une voix sinistre : « Vengeance ». Les forces déchues se prosternèrent devant lui et, avec leur force, il lança une campagne pour tout détruire, en commençant par le royaume du feu.
+939|Le Loup d'argent
+940|La princesse Sylvi de la tribu des glaces régnante était réputée pour sa férocité de guerrière, mais surtout pour son intelligence remarquable et son aptitude à la stratégie. ⏎  ⏎ Quand son père fut tué au combat, elle s'attendait à monter sur le trône. Son oncle Ragnar avait cependant d'autres plans et, au conclave, s'opposa à son règne en gagnant le soutien de la majorité des tribus des glaces. ⏎  ⏎ Sylvi fut contrainte à l'exil. Ce qui s'est exactement passé durant cette période est inconnu, mais à son retour, une armée de légionnaires déchus marchait derrière elle. ⏎  ⏎ Elle décima les forces de son oncle et l'envoya elle-même à Niflheim. Après avoir passé au fil de l'épée le reste des chefs traîtres et récupéré son droit de naissance, elle tourna son regard vers les royaumes voisins. ⏎  ⏎ Quand on lui proposa le titre de « Reine déchue », elle refusa, insistant pour que le titre de « Fell King » soit utilisé, en l'honneur de ceux qui l'avaient précédée.
+941|La morsure du Loup d'argent
+942|Peu après son 16ᵉ anniversaire, Sylvi mena sa première bataille contre une tribu voisine. Alors que les membres de sa garde personnelle tombaient un à un, elle continua de se battre férocement, semblant gagner en force à mesure que la bataille faisait rage. ⏎  ⏎ Bien que la victoire ait eu un coût élevé, son père, le roi Ivar, voulut récompenser sa bravoure et fit forger et enchanter une lame immaculée en cadeau à son héritière. ⏎  ⏎ « Une lame qui grandira en force pour égaler ta volonté », dit-il en la lui mettant dans les mains. Elle s'en servira pour reprendre son droit de naissance, l'abattant sur la nuque de son oncle traître Ragnar, mettant fin au conflit de succession.
+943|Courroux du démon infernal
+944|Bjorn émergea du royaume déchu, coquille brisée de ce qu'il avait été. Malgré sa nouvelle puissance, ce qui restait de son esprit semblait prisonnier de l'emprise pernicieuse d'une entité impie. ⏎  ⏎ Il sortit du portail armé de Hellbrand, une arme singulière, apparemment un conduit pour la présence sombre. Elle lui murmurait des récits de destruction glorieuse tout en restant constamment vigilante envers ceux qui chercheraient à trahir le Fell King nouvellement couronné.
+945|Ascendant Verdant
+946|Des siècles après la mort de Cisco, on vit s'élever Alexandre, son descendant, l'ascendant verdoyant et héritier des lignées unifiées de la lumière et de la déchéance. ⏎  ⏎ Il possédait une maîtrise inégalée du temps et de la gravité et unifierait les royaumes connus en un seul empire, couronné plus tard ascendant souverain.
+947|Cendres d'allégeance
+948|La voie de la trahison
+949|Là où meurt la loyauté
+950|*Arthas s'approche de toi avec une offre.* Cisco n'est qu'un sot demi-sang né d'un sang corrompu. Regarde-toi, son élève favori forgé à son image, mais attaché inutilement par ses chaînes. ⏎  ⏎ Crois-tu vraiment que le pouvoir de Cisco ait jamais été tien à partager ? Le vrai pouvoir, il le garde pour lui tout en t'exhortant à la modération et à la retenue. ⏎  ⏎ Mais je vois cette faim ardente vaciller derrière ta loyauté. Rejoins-moi et, ensemble, nous abattrons le faux héros. Nous ne nous agenouillerons pas devant les dieux qui se sont joués de lui, ni ne trembleront devant l'héritage auquel il s'accroche. ⏎  ⏎ Ensemble, nous prendrons cette précieuse étincelle de divinité qu'il possède et nous en userons comme bon nous semble.
+951|Fils de la trahison
+952|Le rite de la traîtrise
+953|Alors tu as choisi les ombres plutôt que ton sauveur potentiel... bien. ⏎  ⏎ Malgré ses défauts, Cisco ne doit pas être sous-estimé. L'invoquer avec l'intention de le trahir sans l'avoir d'abord affaibli serait une grave erreur. ⏎  ⏎ Rassemble des fragments déchus et de l'améthyste nocturne, puis tords le talisman du défi pour prendre l'avantage.
+954|Le sceau du traître
+955|Le moment est venu, petit traître. ⏎  ⏎ Le talisman du défi, jadis relique forgée dans la confiance et utilisée pour votre duel amical, portera ta trahison droit à son cœur.
+956|Vaincre Descended Cisco
+957|La rupture finale
+958|*[Attention !!] Terminer cette quête accorde de façon permanente le bonus d'ascension déchue ; tue d'abord le Fell King pour obtenir à la place l'ascension divine.* ⏎  ⏎ Appelle ton ancien maître, le soi-disant sage qui voudrait enfermer ton vrai pouvoir. ⏎  ⏎ Il viendra de son plein gré, croyant à une autre épreuve de ta force. À ce moment, il sentira sa force drainée. Quand il se tiendra devant toi, affaibli, n'hésite pas : abats-le et prends son étincelle divine. ⏎  ⏎ Invoque-le. Combats-le. Finis-en.
+959|Supreme Nightfall
+960|Équilibre libéré
+961|Supreme Nightfall, lame d'un crépuscule sans fin, fendant les ennemis quand elle est tenue et protégeant son maître quand elle est cachée. ⏎  ⏎ Souviens-toi : Nightfall ne sert pas les lâches. Manie-la avec audace, trahis sa confiance, et elle se retournera contre toi avec le temps. ⏎  ⏎ Si tu tiens son tranchant rassasié... aucun mortel ni dieu ne se dressera sur ton chemin.
+962|Ensemble d'armure déchue
+963|Avatar de l'Obscur
+964|Plus tu saignes, moins tu te brises. Quand la ruine approche, ne fais qu'un avec l'abysse, inarrêtable, intouchable. ⏎  ⏎ La puissance du fer et de l'ombre est à toi.

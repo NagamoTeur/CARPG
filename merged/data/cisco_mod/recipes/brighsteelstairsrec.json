@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "cisco_mod:brightsteelblock"
+    },
+    "3": {
+      "item": "cisco_mod:brightsteelblock"
+    },
+    "4": {
+      "item": "cisco_mod:brightsteelblock"
+    },
+    "6": {
+      "item": "cisco_mod:brightsteelblock"
+    },
+    "7": {
+      "item": "cisco_mod:brightsteelblock"
+    },
+    "8": {
+      "item": "cisco_mod:brightsteelblock"
+    }
+  },
+  "result": {
+    "item": "cisco_mod:brightsteelstairs",
+    "count": 6
+  }
+}

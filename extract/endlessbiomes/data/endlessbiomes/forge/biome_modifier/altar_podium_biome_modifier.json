@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "small_end_islands",
+    "end_midlands",
+    "end_highlands",
+    "end_barrens"
+  ],
+  "features": "endlessbiomes:altar_podium",
+  "step": "surface_structures"
+}

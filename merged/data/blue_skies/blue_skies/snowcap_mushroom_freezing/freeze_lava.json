@@ -1,0 +1,6 @@
+{
+  "block": "minecraft:lava",
+  "frozen_block": "minecraft:obsidian",
+  "preserve_states": false,
+  "states": {}
+}

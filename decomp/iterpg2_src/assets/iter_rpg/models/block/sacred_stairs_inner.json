@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "iter_rpg:blocks/sacred_planks",
+    "top": "iter_rpg:blocks/sacred_planks",
+    "side": "iter_rpg:blocks/sacred_planks"
+  },
+  "render_type": "solid"
+}

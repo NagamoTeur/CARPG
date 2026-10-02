@@ -1,0 +1,9 @@
+{
+	"type": "origins:action_on_callback",
+	"entity_action_respawned": {
+		"type": "origins:change_resource",
+		"resource": "arkwys:demon/soul_count",
+		"change": -50
+	},
+	"hidden": true
+}

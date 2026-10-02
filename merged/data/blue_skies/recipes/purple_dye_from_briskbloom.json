@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blue_skies:briskbloom"
+    }
+  ],
+  "result": {
+    "item": "minecraft:purple_dye"
+  }
+}

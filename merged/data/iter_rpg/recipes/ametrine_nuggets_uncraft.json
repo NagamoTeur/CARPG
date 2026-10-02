@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "iter_rpg:ametrine_nugget"
+    },
+    "1": {
+      "item": "iter_rpg:ametrine_nugget"
+    },
+    "2": {
+      "item": "iter_rpg:ametrine_nugget"
+    },
+    "3": {
+      "item": "iter_rpg:ametrine_nugget"
+    },
+    "4": {
+      "item": "iter_rpg:ametrine_nugget"
+    },
+    "5": {
+      "item": "iter_rpg:ametrine_nugget"
+    },
+    "6": {
+      "item": "iter_rpg:ametrine_nugget"
+    },
+    "7": {
+      "item": "iter_rpg:ametrine_nugget"
+    },
+    "8": {
+      "item": "iter_rpg:ametrine_nugget"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:ametrine_ingot",
+    "count": 1
+  }
+}

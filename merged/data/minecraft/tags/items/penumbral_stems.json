@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "endlessbiomes:stripped_penumbra_hyphae",
+    "endlessbiomes:penumbra_hyphae",
+    "endlessbiomes:penumbra_stem",
+    "endlessbiomes:stripped_penumbra_stem"
+  ]
+}

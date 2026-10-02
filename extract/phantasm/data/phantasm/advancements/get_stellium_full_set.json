@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "phantasm:stellium_chestplate"
+    },
+    "title": {
+      "translate": "advancements.get_stellium_full_set.title"
+    },
+    "description": {
+      "translate": "advancements.get_stellium_full_set.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_stellium_full_set": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 200
+  },
+  "parent": "phantasm:enter_dreaming_den"
+}

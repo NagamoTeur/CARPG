@@ -1,0 +1,74 @@
+{
+	"type": "origins:action_on_callback",
+	"entity_action_added": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale set pehkui:base 0.5"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale persist set pehkui:motion 2.1 true @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale set pehkui:motion 2.1"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale set pehkui:width 1.2 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale set pehkui:reach 1.1 @s"
+			}
+		]
+	},
+	"entity_action_lost": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale reset pehkui:base"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale persist reset pehkui:base true @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale reset pehkui:motion"
+			}
+		]
+	},
+	"entity_action_chosen": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale set pehkui:base 0.5"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale persist set pehkui:motion 2.1 true @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"permission_level": 4,
+				"command": "scale set pehkui:motion 2.1"
+			}
+		]
+	},
+	"execute_chosen_when_orb": true
+}

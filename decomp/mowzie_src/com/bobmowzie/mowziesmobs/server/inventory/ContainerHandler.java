@@ -1,0 +1,22 @@
+package com.bobmowzie.mowziesmobs.server.inventory;
+
+import net.minecraft.world.inventory.MenuType;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
+@EventBusSubscriber(
+   modid = "mowziesmobs",
+   bus = Bus.MOD
+)
+public class ContainerHandler {
+   public static final DeferredRegister<MenuType<?>> REG = DeferredRegister.create(ForgeRegistries.MENU_TYPES, "mowziesmobs");
+   public static final MenuType<ContainerUmvuthanaTrade> UMVUTHANA_TRADE = new MenuType(ContainerUmvuthanaTrade::new);
+   public static final MenuType<ContainerUmvuthiTrade> UMVUTHI_TRADE = new MenuType(ContainerUmvuthiTrade::new);
+   public static final MenuType<ContainerSculptorTrade> SCULPTOR_TRADE = new MenuType(ContainerSculptorTrade::new);
+   public static final RegistryObject<MenuType<ContainerUmvuthanaTrade>> CONTAINER_UMVUTHANA_TRADE = REG.register("umvuthana_trade", () -> UMVUTHANA_TRADE);
+   public static final RegistryObject<MenuType<ContainerUmvuthiTrade>> CONTAINER_UMVUTHI_TRADE = REG.register("umvuthi_trade", () -> UMVUTHI_TRADE);
+   public static final RegistryObject<MenuType<ContainerSculptorTrade>> CONTAINER_SCULPTOR_TRADE = REG.register("sculptor_trade", () -> SCULPTOR_TRADE);
+}

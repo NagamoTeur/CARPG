@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blue_skies:charoite"
+    },
+    {
+      "item": "blue_skies:moonstone_shard"
+    }
+  ],
+  "result": {
+    "item": "blue_skies:zeal_lighter"
+  }
+}

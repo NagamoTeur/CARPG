@@ -1,0 +1,39 @@
+{
+  "parent": "blue_skies:everdawn/get_wood",
+  "criteria": {
+    "kill_alchemist": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "blue_skies:alchemist"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.blue_skies.everdawn.kill_alchemist.desc"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "blue_skies:dusk_arc"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.blue_skies.everdawn.kill_alchemist"
+    }
+  },
+  "requirements": [
+    [
+      "kill_alchemist"
+    ]
+  ]
+}

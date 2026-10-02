@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:arrow"
+    },
+    "b": {
+      "item": "royalvariations:royal_bone_meal"
+    }
+  },
+  "result": {
+    "item": "minecraft:spectral_arrow",
+    "count": 8
+  }
+}

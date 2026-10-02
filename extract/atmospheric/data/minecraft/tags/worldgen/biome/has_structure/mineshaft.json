@@ -1,0 +1,11 @@
+{
+  "values": [
+    "#atmospheric:is_dunes",
+    "atmospheric:aspen_parkland",
+    "atmospheric:kousa_jungle",
+    "atmospheric:scrubland",
+    "atmospheric:snowy_scrubland",
+    "atmospheric:spiny_thicket",
+    "atmospheric:grimwoods"
+  ]
+}

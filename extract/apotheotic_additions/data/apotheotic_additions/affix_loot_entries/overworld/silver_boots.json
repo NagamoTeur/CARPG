@@ -1,0 +1,19 @@
+{
+  "conditions": [{
+		"type": "forge:mod_loaded",
+		"modid": "eidolon"
+	}],
+  "weight": 75,
+  "quality": 4.0,
+  "stack": {
+    "item": "eidolon:silver_boots",
+    "count": 1,
+    "nbt": "{Damage:0}"
+  },
+  "type": "ARMOR",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "min_rarity": "common",
+  "max_rarity": "uncommon"
+}

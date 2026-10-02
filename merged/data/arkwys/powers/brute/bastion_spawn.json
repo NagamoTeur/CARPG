@@ -1,0 +1,6 @@
+{
+  "type": "origins:modify_player_spawn",
+  "dimension": "minecraft:the_nether",
+  "structure": "minecraft:bastion_remnant",
+  "spawn_strategy": "center"
+}

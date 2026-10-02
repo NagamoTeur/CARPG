@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "undead_unleashed:cursed_cloth"
+    },
+    "1": {
+      "item": "undead_unleashed:cursed_cloth"
+    },
+    "2": {
+      "item": "undead_unleashed:cursed_cloth"
+    },
+    "3": {
+      "item": "undead_unleashed:cursed_cloth"
+    },
+    "4": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "5": {
+      "item": "undead_unleashed:cursed_cloth"
+    }
+  },
+  "result": {
+    "item": "undead_unleashed:shadow_helmet",
+    "count": 1
+  }
+}

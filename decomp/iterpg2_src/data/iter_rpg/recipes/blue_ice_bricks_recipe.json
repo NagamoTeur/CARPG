@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "iter_rpg:smooth_ice"
+    },
+    "1": {
+      "item": "iter_rpg:smooth_ice"
+    },
+    "2": {
+      "item": "iter_rpg:smooth_ice"
+    },
+    "3": {
+      "item": "iter_rpg:smooth_ice"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:ice_bricks",
+    "count": 4
+  }
+}

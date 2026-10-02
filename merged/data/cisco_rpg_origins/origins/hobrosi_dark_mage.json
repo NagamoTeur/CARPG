@@ -1,0 +1,17 @@
+{
+    "name": "Anthraxi Dark Mage",
+    "description": "You are a dark mage from Anthrax the veiled land of darkness . Dark magic bends effortlessly to your will,  while your enemies break.",
+    "powers": [
+        "cisco_rpg_origins:ender_affinity",
+        "cisco_rpg_origins:holy_rebuke",
+        "cisco_rpg_origins:dark_blessing",
+        "cisco_rpg_origins:dl_blessing",
+        "cisco_rpg_origins:magic_missle_expert",
+        "cisco_rpg_origins:ethereal_evasion",
+        "cisco_rpg_origins:profane_sacrifice"
+    ],
+    "icon": {
+        "item": "irons_spellbooks:shadowwalker_helmet"
+    },
+    "impact": 2
+}

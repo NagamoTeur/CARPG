@@ -1,0 +1,21 @@
+{
+  "type": "bakery:pot_cooking",
+  "ingredients": [
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "tag": "bakery:jam"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "result": {
+    "item": "bakery:pudding",
+    "count": 1
+  }
+}

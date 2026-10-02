@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "N",
+    "N",
+    "S"
+  ],
+  "key": {
+    "N": {
+      "item": "unusualend:enderblob_moult"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "unusualend:moult_dagger",
+    "count": 1
+  }
+}

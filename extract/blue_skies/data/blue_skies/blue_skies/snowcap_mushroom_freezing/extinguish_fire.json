@@ -1,0 +1,6 @@
+{
+  "block": "minecraft:fire",
+  "frozen_block": "minecraft:air",
+  "preserve_states": false,
+  "states": {}
+}

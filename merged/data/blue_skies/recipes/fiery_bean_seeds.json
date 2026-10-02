@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blue_skies:fiery_beans"
+    }
+  ],
+  "result": {
+    "item": "blue_skies:fiery_bean_seeds"
+  }
+}

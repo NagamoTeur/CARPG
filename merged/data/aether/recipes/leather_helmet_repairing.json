@@ -1,0 +1,9 @@
+{
+  "type": "aether:repairing",
+  "category": "enchanting_repair",
+  "group": "altar_helmet_repair",
+  "ingredient": {
+    "item": "minecraft:leather_helmet"
+  },
+  "repairTime": 250
+}

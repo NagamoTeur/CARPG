@@ -1,0 +1,4078 @@
+[
+ {
+  "file": "AI-Improvements-1.19.2-0.5.2.jar",
+  "size": 29466,
+  "modid": "aiimprovements",
+  "name": "AI-Improvements",
+  "version": "${file.jarVersion}",
+  "desc": "Small adjustements and improvements to AI logic focusing on optimizations for increased server performance",
+  "authors": "BuiltBrokenModding",
+  "has_data": 0,
+  "classes": 20,
+  "namespaces": []
+ },
+ {
+  "file": "AdvancementPlaques-1.19.2-1.4.7.jar",
+  "size": 206511,
+  "modid": "advancementplaques",
+  "name": "Advancement Plaques",
+  "version": "${file.jarVersion}",
+  "desc": "Replaces standard advancement toasts with fancy plaques.",
+  "authors": "Grend",
+  "has_data": 0,
+  "classes": 10,
+  "namespaces": []
+ },
+ {
+  "file": "Apotheosis-1.19.2-6.5.2.jar",
+  "size": 2274766,
+  "modid": "apotheosis",
+  "name": "Apotheosis",
+  "version": "6.5.2",
+  "desc": "All things that should have been",
+  "authors": "Shadows_of_Fire",
+  "has_data": 1043,
+  "classes": 543,
+  "namespaces": [
+   "apotheosis",
+   "curios",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "ApothicCurios-1.19.2-1.0.3c.jar",
+  "size": 13986,
+  "modid": "apothiccurios",
+  "name": "Apothic Curios",
+  "version": "1.0.3c",
+  "desc": "Compatibility bridge between Apotheosis and Curios mods",
+  "authors": "Daripher",
+  "has_data": 0,
+  "classes": 3,
+  "namespaces": [
+   "apotheosis",
+   "apothiccurios"
+  ]
+ },
+ {
+  "file": "Aquaculture-1.19.2-2.4.17.jar",
+  "size": 591222,
+  "modid": "aquaculture",
+  "name": "Aquaculture 2",
+  "version": "${file.jarVersion}",
+  "desc": "Welcome to Aquaculture! An expansion of Minecraft's fishing system.",
+  "authors": "Shadowclaimer, Girafi",
+  "has_data": 256,
+  "classes": 121,
+  "namespaces": [
+   "aquaculture",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "ArmorDamageLimit-1.19.2-1.0.0.jar",
+  "size": 6886,
+  "modid": "armordamagelimit",
+  "name": "Armor Damage Limit",
+  "version": "1.19.2-1.0.0",
+  "desc": "Ensuring that the durability loss in a single hit does not exceed a percentage of the armor's maximum durability.",
+  "authors": "Rinko1231",
+  "has_data": 0,
+  "classes": 3,
+  "namespaces": []
+ },
+ {
+  "file": "AttributeFix-Forge-1.19.2-17.2.8.jar",
+  "size": 19478,
+  "modid": "attributefix",
+  "name": "AttributeFix",
+  "version": "17.2.8",
+  "desc": "Extends the maximum attribute ranges to allow for higher values.",
+  "authors": "Darkhax",
+  "has_data": 0,
+  "classes": 9,
+  "namespaces": []
+ },
+ {
+  "file": "AutoLeveling-1.19.2-1.19b.jar",
+  "size": 70072,
+  "modid": "autoleveling",
+  "name": "Auto Leveling",
+  "version": "1.19b",
+  "desc": "Adds auto leveling to Minecraft",
+  "authors": "Daripher",
+  "has_data": 0,
+  "classes": 33,
+  "namespaces": []
+ },
+ {
+  "file": "AutoRegLib-1.8.2-55.jar",
+  "size": 45741,
+  "modid": "autoreglib",
+  "name": "AutoRegLib",
+  "version": "${file.jarVersion}",
+  "desc": "Automatically item, block, and model registration for mods.",
+  "authors": "Vazkii",
+  "has_data": 0,
+  "classes": 29,
+  "namespaces": []
+ },
+ {
+  "file": "BHMenu-Forge-1.19.2-2.4.3.jar",
+  "size": 165280,
+  "modid": "bhmenu",
+  "name": "BHMenu",
+  "version": "2.4.3",
+  "desc": "Introducing the BisectHosting Server Integration Mod, exclusively designed for our Official BisectHosting Partners!\nThis unique mod enables our partners to easily embed their partner links into the multiplayer menu of their modpacks.\nThis functionality, developed with user-friendliness in mind, allo",
+  "authors": "BisectHosting",
+  "has_data": 0,
+  "classes": 70,
+  "namespaces": []
+ },
+ {
+  "file": "BOMD-Forge-1.19.2-1.0.6.jar",
+  "size": 1845562,
+  "modid": "bosses_of_mass_destruction",
+  "name": "Bosses of Mass Destruction",
+  "version": "1.0.6",
+  "desc": "Adds high threat mobs for players to take on.",
+  "authors": "CerbonXD",
+  "has_data": 52,
+  "classes": 338,
+  "namespaces": [
+   "bosses_of_mass_destruction",
+   "c",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "BadMobs-1.19.2-16.1.3.jar",
+  "size": 9680,
+  "modid": "badmobs",
+  "name": "BadMobs",
+  "version": "16.1.3",
+  "desc": "Allows mob spawning to be disabled.",
+  "authors": "Darkhax",
+  "has_data": 0,
+  "classes": 4,
+  "namespaces": []
+ },
+ {
+  "file": "BadOptimizations-2.1.4-1.19.1-19.2.jar",
+  "size": 421318,
+  "modid": "badoptimizations",
+  "name": "BadOptimizations",
+  "version": "2.1.4",
+  "desc": "Optimization mod that focuses on things other than rendering",
+  "authors": "Thosea",
+  "has_data": 0,
+  "classes": 80,
+  "namespaces": []
+ },
+ {
+  "file": "BetterAdvancements-1.19.2-0.2.2.142.jar",
+  "size": 71144,
+  "modid": "betteradvancements",
+  "name": "Better Advancements",
+  "version": "0.2.2.142",
+  "desc": "Improvements to the advancements screen.",
+  "authors": "way2muchnoise",
+  "has_data": 0,
+  "classes": 36,
+  "namespaces": []
+ },
+ {
+  "file": "BetterThirdPerson-Forge-1.19-1.9.0.jar",
+  "size": 60964,
+  "modid": "betterthirdperson",
+  "name": "Better Third Person",
+  "version": "${file.jarVersion}",
+  "desc": "Adds independent camera rotation for third-person view",
+  "authors": "Socolio",
+  "has_data": 0,
+  "classes": 29,
+  "namespaces": []
+ },
+ {
+  "file": "Bookshelf-Forge-1.19.2-16.3.20.jar",
+  "size": 320523,
+  "modid": "bookshelf",
+  "name": "Bookshelf",
+  "version": "16.3.20",
+  "desc": "A library for building other mods.",
+  "authors": "Darkhax",
+  "has_data": 43,
+  "classes": 164,
+  "namespaces": [
+   "bookshelf",
+   "forge"
+  ]
+ },
+ {
+  "file": "BrewinAndChewin-1.19-2.0.jar",
+  "size": 366890,
+  "modid": "brewinandchewin",
+  "name": "Brewin' and Chewin'",
+  "version": "1.19-2.0",
+  "desc": "An addon created by Umpaz and HoboJoe, for the Farmer's Delight mod. Adds a keg in which you can ferment some booze or dry out some foods!",
+  "authors": "Umpaz, Probleyes",
+  "has_data": 85,
+  "classes": 74,
+  "namespaces": [
+   "brewinandchewin",
+   "farmersdelight",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "Clumps-forge-1.19.2-9.0.0+14.jar",
+  "size": 19083,
+  "modid": "clumps",
+  "name": "Clumps",
+  "version": "${file.jarVersion}",
+  "desc": "Clumps xp orbs together.",
+  "authors": "Jaredlll08",
+  "has_data": 0,
+  "classes": 13,
+  "namespaces": []
+ },
+ {
+  "file": "Controlling-forge-1.19.2-10.0+7.jar",
+  "size": 117659,
+  "modid": "controlling",
+  "name": "Controlling",
+  "version": "${file.jarVersion}",
+  "desc": "Adds the ability to search for keybinds using their name in the KeyBinding menu, this allows players to easily find a key binding in the menu.",
+  "authors": "Jaredlll08",
+  "has_data": 0,
+  "classes": 40,
+  "namespaces": []
+ },
+ {
+  "file": "CorgiLib-forge-1.19.2-1.0.0.34.jar",
+  "size": 285958,
+  "modid": "corgilib",
+  "name": "CorgiLib",
+  "version": "${file.jarVersion}",
+  "desc": "Library with handy utilities.",
+  "authors": "Corgi Taco",
+  "has_data": 0,
+  "classes": 150,
+  "namespaces": []
+ },
+ {
+  "file": "CraftTweaker-forge-1.19.2-10.1.56.jar",
+  "size": 3044307,
+  "modid": "crafttweaker",
+  "name": "CraftTweaker",
+  "version": "${file.jarVersion}",
+  "desc": "Customize your minecraft experience!",
+  "authors": "Jaredlll08, Kindlich, StanHebben and TheSilkMiner",
+  "has_data": 0,
+  "classes": 1769,
+  "namespaces": [
+   "crafttweaker"
+  ]
+ },
+ {
+  "file": "CrashAssistant-forge-1.19-1.20.1-1.11.9.jar",
+  "size": 3181512,
+  "modid": "crash_assistant",
+  "name": "Crash Assistant",
+  "version": "1.11.9",
+  "desc": "Shows a GUI after Minecraft crashes, immediately showing all affected logs, crash reports, or hs_err files. Provides a one-click solution to upload them, copy the link, and perform other actions for easier reporting, debugging, and troubleshooting.",
+  "authors": "KostromDan",
+  "has_data": 0,
+  "classes": 633,
+  "namespaces": []
+ },
+ {
+  "file": "CraterLib-Forge-1.19.2-3.0.1.jar",
+  "size": 1241471,
+  "modid": "craterlib",
+  "name": "CraterLib",
+  "version": "3.0.1",
+  "desc": "A library mod used by First Dark Development and HypherionSA Mods",
+  "authors": "HypherionSA, Zenith",
+  "has_data": 0,
+  "classes": 834,
+  "namespaces": []
+ },
+ {
+  "file": "CullLessLeaves-Reforged-1.0.5.jar",
+  "size": 18831,
+  "modid": "culllessleaves",
+  "name": "Cull Less Leaves Reforged",
+  "version": "${file.jarVersion}",
+  "desc": "Cull leaves while looking hot!",
+  "authors": "CCr4ft3r (this port), isXander (original fabric version)",
+  "has_data": 0,
+  "classes": 9,
+  "namespaces": []
+ },
+ {
+  "file": "DarkerDepths-1.19.2-1.0.0.jar",
+  "size": 830367,
+  "modid": "darkerdepths",
+  "name": "Darker Depths",
+  "version": "1.19-1.0.7",
+  "desc": "A mod all about expanding vanilla caves\n\nAuthor:\n- Nate\n\nMain Developers:\n- Orcinus\n- Blackgear\n\nArtist:\n- Nate\n- Toxteer\n\nAmbasssador:\n- Qbert",
+  "authors": "Nate, Blackgear, Toxteer, Orcinus",
+  "has_data": 548,
+  "classes": 97,
+  "namespaces": [
+   "darkerdepths",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "Decorative Blocks-forge-1.19.2-3.0.0.jar",
+  "size": 512221,
+  "modid": "decorative_blocks",
+  "name": "Decorative Blocks",
+  "version": "${file.jarVersion}",
+  "desc": "A small mod that adds several new decorative blocks.",
+  "authors": "stohun, lilypuree",
+  "has_data": 219,
+  "classes": 108,
+  "namespaces": [
+   "corail_woodcutter",
+   "decorative_blocks",
+   "minecraft",
+   "woodcutter"
+  ]
+ },
+ {
+  "file": "Delightful-1.19.2-3.4.1.jar",
+  "size": 952298,
+  "modid": "delightful",
+  "name": "Delightful",
+  "version": "${file.jarVersion}",
+  "desc": "Farmer's Delight addon with mod compatibility features and fun new foods.",
+  "authors": "brnbrd",
+  "has_data": 645,
+  "classes": 117,
+  "namespaces": [
+   "additionaladditions",
+   "ars_nouveau",
+   "biomemakeover",
+   "botania",
+   "byg",
+   "collectorsreap",
+   "create",
+   "create_sa"
+  ]
+ },
+ {
+  "file": "DramaticDoors-QuiFabrge-1.19.2-3.2.7.jar",
+  "size": 12333771,
+  "modid": "dramaticdoors",
+  "name": "Dramatic Doors",
+  "version": "1.19.2-3.2.7",
+  "desc": "Doors that are barely tall enough to fit your player ... ?\n    Doors that suffocate you when you ride ol' Blackjack the horse through? Enderman discrimination? Seriously?\n    ... PAH!!\n\n    Can we not have intrigue?  Whatever happened to the tender grace and elegance of a nice tall door? Where is th",
+  "authors": "FizzWare",
+  "has_data": 280,
+  "classes": 410,
+  "namespaces": [
+   "aether",
+   "caupona",
+   "create",
+   "dramaticdoors",
+   "forge",
+   "locksmith",
+   "minecraft",
+   "twilightforest"
+  ]
+ },
+ {
+  "file": "DungeonCrawl-1.19-2.3.12.jar",
+  "size": 760172,
+  "modid": "dungeoncrawl",
+  "name": "Dungeon Crawl",
+  "version": "2.3.12",
+  "desc": "Dungeon Crawl, a spiritual successor to Roguelike Dungeons.",
+  "authors": "xiroc",
+  "has_data": 172,
+  "classes": 167,
+  "namespaces": [
+   "dungeoncrawl"
+  ]
+ },
+ {
+  "file": "DungeonsArise-1.19.2-2.1.54-release.jar",
+  "size": 6678694,
+  "modid": "dungeons_arise",
+  "name": "When Dungeons Arise",
+  "version": "2.1.54-1.19.2",
+  "desc": "Elegant - and likely dangerous - structures and roguelike dungeons to lose yourself in...",
+  "authors": "Aurelj, DiamondTown and Zephyrusj",
+  "has_data": 385,
+  "classes": 6,
+  "namespaces": [
+   "dungeons_arise",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "DungeonsAriseSevenSeas-1.19.2-1.0.2-forge.jar",
+  "size": 248171,
+  "modid": "dungeons_arise_seven_seas",
+  "name": "When Dungeons Arise: Seven Seas",
+  "version": "1.0.2",
+  "desc": "Elegant - and likely dangerous - vessels lost in the seven seas...",
+  "authors": "Zephyrusj, Aurelj",
+  "has_data": 40,
+  "classes": 1,
+  "namespaces": [
+   "dungeons_arise_seven_seas"
+  ]
+ },
+ {
+  "file": "EnchantmentDescriptions-Forge-1.19.2-13.0.14.jar",
+  "size": 63128,
+  "modid": "enchdesc",
+  "name": "EnchantmentDescriptions",
+  "version": "13.0.14",
+  "desc": "Adds descriptions of enchantments to their tooltip.",
+  "authors": "Darkhax",
+  "has_data": 0,
+  "classes": 6,
+  "namespaces": []
+ },
+ {
+  "file": "End's Phantasm - BETAv1.2.10.5 - 1.19.2.jar",
+  "size": 969929,
+  "modid": "phantasm",
+  "name": "End's Phantasm",
+  "version": "1.2.10.5",
+  "desc": "A vanilla friendly mod intended to be the End update that we don't have.",
+  "authors": "Lyof",
+  "has_data": 168,
+  "classes": 222,
+  "namespaces": [
+   "forge",
+   "minecraft",
+   "phantasm"
+  ]
+ },
+ {
+  "file": "EndlessBiomes 1.4s - 1.19.2 (Server-friendly).jar",
+  "size": 2820092,
+  "modid": "endlessbiomes",
+  "name": "EndlessBiomes",
+  "version": "1.0.0",
+  "desc": "",
+  "authors": "madoc, MCreator",
+  "has_data": 177,
+  "classes": 421,
+  "namespaces": [
+   "endlessbiomes",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "EnigmaticLegacy-2.26.5.jar",
+  "size": 6951700,
+  "modid": "enigmaticlegacy",
+  "name": "Enigmatic Legacy",
+  "version": "2.26.5",
+  "desc": "This mod is designed to provide tools that will aid you in exploring seemingly endless reaches of Minecraft's worlds. As well as new resources, powerful gear and ancient relics - to reward you for doing so. Despite revolving around themes of arcane and mystery, Enigmatic Legacy doesn't stray too far",
+  "authors": "Aizistral",
+  "has_data": 420,
+  "classes": 387,
+  "namespaces": [
+   "curios",
+   "enigmaticlegacy",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "Entity_Collision_FPS_Fix-forge-1.19-2.0.0.0.jar",
+  "size": 10173,
+  "modid": "entitycollisionfpsfix",
+  "name": "Entity Collision FPS Fix",
+  "version": "${file.jarVersion}",
+  "desc": "Removes client side collision checks, which boosts FPS. Fixes https://bugs.mojang.com/browse/MC-228976",
+  "authors": "Corgi Taco, jklw10",
+  "has_data": 0,
+  "classes": 7,
+  "namespaces": []
+ },
+ {
+  "file": "ExplorersCompass-1.19.2-1.3.0-forge.jar",
+  "size": 155497,
+  "modid": "explorerscompass",
+  "name": "Explorer's Compass",
+  "version": "${file.jarVersion}",
+  "desc": "Search for and locate structures anywhere in the world.",
+  "authors": "ChaosTheDude",
+  "has_data": 4,
+  "classes": 33,
+  "namespaces": [
+   "explorerscompass"
+  ]
+ },
+ {
+  "file": "Explorify v1.6.3 f10-88.mod.jar",
+  "size": 756976,
+  "modid": "explorify",
+  "name": "Explorify",
+  "version": "1.6.3",
+  "desc": "A simplistic, vanilla-friendly collection of new structures.",
+  "authors": "bebebea_loste",
+  "has_data": 136,
+  "classes": 0,
+  "namespaces": [
+   "cristellib",
+   "explorify"
+  ]
+ },
+ {
+  "file": "FarmersDelight-1.19.2-1.2.4.jar",
+  "size": 2769499,
+  "modid": "farmersdelight",
+  "name": "Farmer's Delight",
+  "version": "1.19.2-1.2.4",
+  "desc": "A cozy farming and cooking expansion for Minecraft!",
+  "authors": "vectorwing",
+  "has_data": 746,
+  "classes": 240,
+  "namespaces": [
+   "create",
+   "createaddition",
+   "farmersdelight",
+   "forge",
+   "minecraft",
+   "origins",
+   "sereneseasons",
+   "tconstruct"
+  ]
+ },
+ {
+  "file": "FarmersRespite-1.19-2.0.jar",
+  "size": 493349,
+  "modid": "farmersrespite",
+  "name": "Farmer's Respite",
+  "version": "1.19-2.0",
+  "desc": "An addon for the Farmer's Delight mod centered around brewing tea and coffee in the kettle",
+  "authors": "Umpaz, Probleyes",
+  "has_data": 147,
+  "classes": 81,
+  "namespaces": [
+   "farmersdelight",
+   "farmersrespite",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "Galosphere-1.19.2-1.3.0-Forge.jar",
+  "size": 12015269,
+  "modid": "galosphere",
+  "name": "Galosphere",
+  "version": "1.19.2-1.3.0",
+  "desc": "This mod enhances the underground by adding new content to the base game\n\nAuthor:\n- Orcinus\n\nArtist:\n- Ninni\n\nSound Desinger:\n- Bunten",
+  "authors": "Orcinus",
+  "has_data": 391,
+  "classes": 171,
+  "namespaces": [
+   "forge",
+   "galosphere",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "GameStages-Forge-1.19.2-11.1.4.jar",
+  "size": 79311,
+  "modid": "gamestages",
+  "name": "GameStages",
+  "version": "11.1.4",
+  "desc": "A framework for creating custom progression systems.",
+  "authors": "Darkhax",
+  "has_data": 0,
+  "classes": 31,
+  "namespaces": [
+   "gamestages"
+  ]
+ },
+ {
+  "file": "GatewaysToEternity-1.19.2-3.2.3.jar",
+  "size": 578501,
+  "modid": "gateways",
+  "name": "Gateways To Eternity",
+  "version": "3.2.3",
+  "desc": "Invoke that from the dark beyond.  Let it pour into this world.  A mod about creating temporary mob spawners in the form of portals.",
+  "authors": "Shadows_of_Fire",
+  "has_data": 66,
+  "classes": 53,
+  "namespaces": [
+   "gateways"
+  ]
+ },
+ {
+  "file": "Highlighter-1.19.1-1.1.4.jar",
+  "size": 26314,
+  "modid": "highlighter",
+  "name": "Highlighter",
+  "version": "${file.jarVersion}",
+  "desc": "Highlights newly picked-up items in your inventory.",
+  "authors": "Grend",
+  "has_data": 0,
+  "classes": 7,
+  "namespaces": []
+ },
+ {
+  "file": "HopoBetterRuinedPortals-[1.19-1.19.3]-1.3.3b.jar",
+  "size": 330320,
+  "modid": "hoporp",
+  "name": "HopoBetterRuinedPortals",
+  "version": "1.3.3",
+  "desc": "",
+  "authors": "Hoponopono",
+  "has_data": 42,
+  "classes": 1,
+  "namespaces": [
+   "hopo",
+   "minecraft",
+   "zhopo"
+  ]
+ },
+ {
+  "file": "Iceberg-1.19.2-forge-1.1.4.jar",
+  "size": 109565,
+  "modid": "iceberg",
+  "name": "Iceberg",
+  "version": "${file.jarVersion}",
+  "desc": "A library containing events, helpers, and utilities to make modding easier.",
+  "authors": "Grend",
+  "has_data": 0,
+  "classes": 51,
+  "namespaces": []
+ },
+ {
+  "file": "ImmediatelyFast-Forge-1.4.0+1.19.2.jar",
+  "size": 416424,
+  "modid": "immediatelyfast",
+  "name": "ImmediatelyFast",
+  "version": "1.4.0+1.19.2",
+  "desc": "Speed up and optimize immediate mode rendering in Minecraft",
+  "authors": "RK_01",
+  "has_data": 0,
+  "classes": 80,
+  "namespaces": []
+ },
+ {
+  "file": "Incendium_1.19.3_v5.1.6.jar",
+  "size": 4357270,
+  "modid": "incendium",
+  "name": "Incendium",
+  "version": "5.1.6",
+  "desc": "Incendium ~ Nether Expansion (v5.1.6 for 1.19-1.19.3)",
+  "authors": "Stardust Labs",
+  "has_data": 914,
+  "classes": 1,
+  "namespaces": [
+   "incendium",
+   "load",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "InsaneLib-1.7.5-mc1.19.2.jar",
+  "size": 73851,
+  "modid": "insanelib",
+  "name": "InsaneLib",
+  "version": "${file.jarVersion}",
+  "desc": "A Library mod used by Insane's Mods",
+  "authors": "Insane96MCP",
+  "has_data": 0,
+  "classes": 46,
+  "namespaces": []
+ },
+ {
+  "file": "ItemProductionLib-1.19.2-1.0.2a-all.jar",
+  "size": 171675,
+  "modid": "itemproductionlib",
+  "name": "Item Production Lib",
+  "version": "1.0.2a",
+  "desc": "Provides tools for tracking item production",
+  "authors": "Daripher",
+  "has_data": 0,
+  "classes": 13,
+  "namespaces": [
+   "tetra"
+  ]
+ },
+ {
+  "file": "ItemStages-Forge-1.19.2-5.1.4.jar",
+  "size": 30336,
+  "modid": "itemstages",
+  "name": "ItemStages",
+  "version": "5.1.4",
+  "desc": "Restrict access to items behind GameStage progression flags.",
+  "authors": "Darkhax",
+  "has_data": 0,
+  "classes": 7,
+  "namespaces": [
+   "gamestages"
+  ]
+ },
+ {
+  "file": "Item_Obliterator-FORGE-MC1.19.2-1.6.2.jar",
+  "size": 20706,
+  "modid": "item_obliterator",
+  "name": "Item Obliterator",
+  "version": "1.6.2",
+  "desc": "Allows to remove items!",
+  "authors": "ElocinDev",
+  "has_data": 0,
+  "classes": 13,
+  "namespaces": []
+ },
+ {
+  "file": "Jade-1.19.1-forge-8.9.2.jar",
+  "size": 429175,
+  "modid": "jade",
+  "name": "Jade",
+  "version": "${file.jarVersion}",
+  "desc": "Minecraft mod shows what you are looking at. (Hwyla fork)",
+  "authors": "Snownee",
+  "has_data": 0,
+  "classes": 196,
+  "namespaces": []
+ },
+ {
+  "file": "JustEnoughResources-1.19.2-1.2.3.243.jar",
+  "size": 276327,
+  "modid": "jeresources",
+  "name": "Just Enough Resources",
+  "version": "1.2.3.243",
+  "desc": "Adds Resources and Mob Drops to JEI",
+  "authors": "way2muchnoise",
+  "has_data": 0,
+  "classes": 144,
+  "namespaces": []
+ },
+ {
+  "file": "L_Enders_Cataclysm-2.46-1.19.2.jar",
+  "size": 79899301,
+  "modid": "cataclysm",
+  "name": "Cataclysm Mod",
+  "version": "2.46",
+  "desc": "Hello\nAlso Listen Cataclysmic Tunes\nhttps://www.curseforge.com/minecraft/texture-packs/cataclysmic-tunes\nArtist=dogulkkun,mango03034,Gytator,LegendNoob\nPatron\n[Adam,\nAngry Mutant Enderman,\ndarkMind204,\nDENOBODY2,\nHippo0824,\nprinta,\nwalker,\n참치,\n3T,\ndanimodder,\nEternalOne,\nKarat Feng,\nlucy,\nnameed,\nPe",
+  "authors": "L_Ender",
+  "has_data": 471,
+  "classes": 1046,
+  "namespaces": [
+   "alexscaves",
+   "cataclysm",
+   "curios",
+   "forge",
+   "iceandfire",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "LeavesBeGone-v4.0.1-1.19.2-Forge.jar",
+  "size": 48549,
+  "modid": "leavesbegone",
+  "name": "Leaves Be Gone",
+  "version": "4.0.1",
+  "desc": "Quick leaf decay from cutting down trees. Built for great performance and mod compat!",
+  "authors": "Fuzs",
+  "has_data": 0,
+  "classes": 8,
+  "namespaces": []
+ },
+ {
+  "file": "LegendaryTooltips-1.19.2-forge-1.4.0.jar",
+  "size": 54346,
+  "modid": "legendarytooltips",
+  "name": "Legendary Tooltips",
+  "version": "${file.jarVersion}",
+  "desc": "Gives rare items a fancy tooltip and adds additional tooltip configuration options.",
+  "authors": "Grend",
+  "has_data": 0,
+  "classes": 15,
+  "namespaces": []
+ },
+ {
+  "file": "LongNbtKiller-Forge-1.19.2-1.0.0.jar",
+  "size": 15247,
+  "modid": "longnbtkiller",
+  "name": "LongNbtKiller",
+  "version": "1.0.0",
+  "desc": "Prevent minecraft from crashing while encountering deep nbt tags",
+  "authors": "Tapio",
+  "has_data": 0,
+  "classes": 11,
+  "namespaces": []
+ },
+ {
+  "file": "MaxHealthFix-Forge-1.19.2-8.0.2.jar",
+  "size": 8580,
+  "modid": "maxhealthfix",
+  "name": "MaxHealthFix",
+  "version": "8.0.2",
+  "desc": "Fixes the infamous MC-17876 bug. This bug would cause players with above 20 health to be reset when the restart the game.",
+  "authors": "Darkhax",
+  "has_data": 0,
+  "classes": 3,
+  "namespaces": []
+ },
+ {
+  "file": "MouseTweaks-forge-mc1.19-2.23.jar",
+  "size": 75983,
+  "modid": "mousetweaks",
+  "name": "Mouse Tweaks",
+  "version": "${file.jarVersion}",
+  "desc": "A mod that enhances the inventory management by adding various additional functions to the usual mouse buttons.",
+  "authors": "Ivan Molodetskikh (YaLTeR)",
+  "has_data": 0,
+  "classes": 23,
+  "namespaces": []
+ },
+ {
+  "file": "MutantMonsters-v4.0.6-1.19.2-Forge.jar",
+  "size": 1337216,
+  "modid": "mutantmonsters",
+  "name": "Mutant Monsters",
+  "version": "4.0.6",
+  "desc": "Mutant creatures and beasts to face off against. Will you triumph, or will you perish?",
+  "authors": "shcott21, Chumbanotz, Fuzs",
+  "has_data": 37,
+  "classes": 161,
+  "namespaces": [
+   "forge",
+   "minecraft",
+   "mutantmonsters"
+  ]
+ },
+ {
+  "file": "MyServerIsCompatible-1.19-1.0.jar",
+  "size": 3421,
+  "modid": "myserveriscompatible",
+  "name": "MyServerIsCompatible",
+  "version": "${file.jarVersion}",
+  "desc": "Client-side mod to disable Forge's \"Incompatible FML Modded Server\" message.",
+  "authors": "Focamacho",
+  "has_data": 0,
+  "classes": 2,
+  "namespaces": []
+ },
+ {
+  "file": "NaturesCompass-1.19.2-1.10.0-forge.jar",
+  "size": 210023,
+  "modid": "naturescompass",
+  "name": "Nature's Compass",
+  "version": "${file.jarVersion}",
+  "desc": "Search for a biome and get information about it.",
+  "authors": "ChaosTheDude",
+  "has_data": 4,
+  "classes": 31,
+  "namespaces": [
+   "naturescompass"
+  ]
+ },
+ {
+  "file": "Necronomicon-Forge-1.4.2.jar",
+  "size": 45990,
+  "modid": "necronomicon",
+  "name": "Necronomicon",
+  "version": "1.4.2",
+  "desc": "An utility library for my mods!",
+  "authors": "ElocinDev",
+  "has_data": 0,
+  "classes": 31,
+  "namespaces": []
+ },
+ {
+  "file": "NethersDelight-1.19-3.1.jar",
+  "size": 344436,
+  "modid": "nethersdelight",
+  "name": "Nether's Delight",
+  "version": "1.19-3.1",
+  "desc": "A nether expansion for the Farmer's Delight mod!",
+  "authors": "Umpaz, SoyTutta",
+  "has_data": 113,
+  "classes": 58,
+  "namespaces": [
+   "farmersdelight",
+   "forge",
+   "minecraft",
+   "nethersdelight"
+  ]
+ },
+ {
+  "file": "NightConfigFixes-v4.0.7-1.19.2-Forge.jar",
+  "size": 65655,
+  "modid": "nightconfigfixes",
+  "name": "Night Config Fixes",
+  "version": "4.0.7",
+  "desc": "A small number of workarounds for relatively common issues concerning the Night Config library.",
+  "authors": "Fuzs",
+  "has_data": 0,
+  "classes": 11,
+  "namespaces": []
+ },
+ {
+  "file": "Oh_The_Biomes_You'll_Go-forge-1.19.2-2.0.1.6.jar",
+  "size": 37211656,
+  "modid": "byg",
+  "name": "Oh The Biomes You'll Go",
+  "version": "${file.jarVersion}",
+  "desc": "An Adventure and Exploration mod with over 80 new biomes!\n\nNotice: The linked wiki is not owned by BYG, the wiki is open for anyone to edit and any inaccuracies that may appear are not BYG's responsibility.",
+  "authors": "AOCAWOL, Corgi Taco, YaBoiChips, JT122406",
+  "has_data": 3198,
+  "classes": 699,
+  "namespaces": [
+   "byg",
+   "forge",
+   "minecraft",
+   "nourish",
+   "soulfired"
+  ]
+ },
+ {
+  "file": "OverflowingBars-v4.0.1-1.19.2-Forge.jar",
+  "size": 69881,
+  "modid": "overflowingbars",
+  "name": "Overflowing Bars",
+  "version": "4.0.1",
+  "desc": "Expand health, armor and armor toughness bars beyond vanilla. Nice and compact without confusing colors.",
+  "authors": "Fuzs",
+  "has_data": 0,
+  "classes": 16,
+  "namespaces": []
+ },
+ {
+  "file": "PassiveSkillTree-1.19.2-BETA-0.6.14b-all.jar",
+  "size": 2360893,
+  "modid": "skilltree",
+  "name": "Passive Skill Tree",
+  "version": "0.6.14b",
+  "desc": "Adds passive skill tree with player class system",
+  "authors": "Daripher",
+  "has_data": 733,
+  "classes": 400,
+  "namespaces": [
+   "curios",
+   "forge",
+   "skilltree"
+  ]
+ },
+ {
+  "file": "Patchouli-1.19.2-77.jar",
+  "size": 635370,
+  "modid": "patchouli",
+  "name": "Patchouli",
+  "version": "${file.jarVersion}",
+  "desc": "Accessible, Data-Driven, Dependency-Free Documentation for Minecraft Modders and Pack Makers",
+  "authors": "Vazkii",
+  "has_data": 1,
+  "classes": 195,
+  "namespaces": [
+   "minecraft",
+   "patchouli"
+  ]
+ },
+ {
+  "file": "Paxi-1.19.2-Forge-3.0.1.jar",
+  "size": 96325,
+  "modid": "paxi",
+  "name": "Paxi",
+  "version": "1.19.2-Forge-3.0.1",
+  "desc": "Drag-and-drop your data packs and let Paxi do the rest! Global data packs made easy.",
+  "authors": "YUNGNICKYOUNG",
+  "has_data": 0,
+  "classes": 11,
+  "namespaces": []
+ },
+ {
+  "file": "Pehkui-3.8.2+1.19.2-forge.jar",
+  "size": 670815,
+  "modid": "pehkui",
+  "name": "Pehkui",
+  "version": "3.8.2+1.19.2-forge",
+  "desc": "Allows resizing of most entities.",
+  "authors": "Virtuoel",
+  "has_data": 0,
+  "classes": 339,
+  "namespaces": []
+ },
+ {
+  "file": "Placebo-1.19.2-7.4.1.jar",
+  "size": 249350,
+  "modid": "placebo",
+  "name": "Placebo",
+  "version": "7.4.1",
+  "desc": "1 (one) library boi",
+  "authors": "Shadows_of_Fire",
+  "has_data": 0,
+  "classes": 140,
+  "namespaces": []
+ },
+ {
+  "file": "Prism-1.19.1-1.0.2.jar",
+  "size": 51537,
+  "modid": "prism",
+  "name": "Prism",
+  "version": "1.0.2",
+  "desc": "A library all about color! Provides lots of color-related functionality for dependent mods.",
+  "authors": "Grend",
+  "has_data": 0,
+  "classes": 17,
+  "namespaces": []
+ },
+ {
+  "file": "ProgressiveBosses-3.7.6-mc1.19.2.jar",
+  "size": 210161,
+  "modid": "progressivebosses",
+  "name": "Progressive Bosses",
+  "version": "${file.jarVersion}",
+  "desc": "Make Bosses harder the more you respawn them. Adding Health, Armor and some Abilities.",
+  "authors": "Insane96MCP",
+  "has_data": 12,
+  "classes": 83,
+  "namespaces": [
+   "progressivebosses"
+  ]
+ },
+ {
+  "file": "PuzzlesLib-v4.4.3-1.19.2-Forge.jar",
+  "size": 395272,
+  "modid": "puzzleslib",
+  "name": "Puzzles Lib",
+  "version": "4.4.3",
+  "desc": "Why's it called Puzzles you ask? That's the puzzle!",
+  "authors": "Fuzs",
+  "has_data": 0,
+  "classes": 231,
+  "namespaces": []
+ },
+ {
+  "file": "Quark-3.4-418.jar",
+  "size": 15024651,
+  "modid": "quark",
+  "name": "Quark",
+  "version": "${file.jarVersion}",
+  "desc": "Small things, improving Minecraft bit by bit.",
+  "authors": "Vazkii, WireSegal, MCVinnyq, Sully",
+  "has_data": 2700,
+  "classes": 1076,
+  "namespaces": [
+   "forge",
+   "lootr",
+   "minecraft",
+   "quark"
+  ]
+ },
+ {
+  "file": "Raided-1.19.2-0.1.6.jar",
+  "size": 132360,
+  "modid": "raided",
+  "name": "Raided",
+  "version": "${file.jarVersion}",
+  "desc": "Expands upon the vanilla raid system to allow for more advanced raid mechanics.",
+  "authors": "Mrbysco, silentine",
+  "has_data": 6,
+  "classes": 44,
+  "namespaces": [
+   "minecraft",
+   "raided"
+  ]
+ },
+ {
+  "file": "RingsOfAscension-1.19-1.0.1.jar",
+  "size": 137331,
+  "modid": "ringsofascension",
+  "name": "Rings of Ascension",
+  "version": "1.0.0",
+  "desc": "Rings of Ascension is a mod that uses the Curios API to add 20+ new rings to your minecraft. Each ring has its own special effect that is activated when the ring is equipped.",
+  "authors": null,
+  "has_data": 1,
+  "classes": 40,
+  "namespaces": [
+   "curios"
+  ]
+ },
+ {
+  "file": "SimpleRPC-4.0.4.jar",
+  "size": 713920,
+  "modid": "simplerpc",
+  "name": "Simple RPC",
+  "version": "4.0.4",
+  "desc": "A simple discord RPC plugin for modpacks",
+  "authors": "HypherionMC",
+  "has_data": 0,
+  "classes": 361,
+  "namespaces": []
+ },
+ {
+  "file": "SkyVillages-1.0.3-1.19.2-1.20.x-forge-release.jar",
+  "size": 246657,
+  "modid": "skyvillages",
+  "name": "Sky Villages",
+  "version": "1.0.3",
+  "desc": "Villages in the land of clouds!",
+  "authors": "Aureljz, Y4Z0N",
+  "has_data": 22,
+  "classes": 1,
+  "namespaces": [
+   "skyvillages"
+  ]
+ },
+ {
+  "file": "StorageDrawers-1.19.2-11.4.1.jar",
+  "size": 617641,
+  "modid": "storagedrawers",
+  "name": "Storage Drawers",
+  "version": "11.4.1",
+  "desc": "Multi-drawer storage blocks for quick storage and retrieval.",
+  "authors": "Texelsaur",
+  "has_data": 139,
+  "classes": 182,
+  "namespaces": [
+   "minecraft",
+   "storagedrawers"
+  ]
+ },
+ {
+  "file": "Structory_1.19.3_v1.3.1a.jar",
+  "size": 1243852,
+  "modid": "structory",
+  "name": "Structory",
+  "version": "1.3.1a",
+  "desc": "Structory (v1.3.1a for 1.19-1.19.3)",
+  "authors": "Stardust Labs",
+  "has_data": 135,
+  "classes": 1,
+  "namespaces": [
+   "structory"
+  ]
+ },
+ {
+  "file": "Structory_Towers_1.19.3_v1.0.2.jar",
+  "size": 477865,
+  "modid": "structorytowers",
+  "name": "Structory: Towers",
+  "version": "1.0.2",
+  "desc": "Structory: Towers (v1.0.2 for 1.19-1.19.3)",
+  "authors": "Stardust Labs",
+  "has_data": 118,
+  "classes": 1,
+  "namespaces": [
+   "minecraft",
+   "structory_towers"
+  ]
+ },
+ {
+  "file": "TerraBlender-forge-1.19.2-2.0.1.166.jar",
+  "size": 96810,
+  "modid": "terrablender",
+  "name": "TerraBlender",
+  "version": "${file.jarVersion}",
+  "desc": "A library mod for adding biomes in a simple and compatible manner with Minecraft's new biome/terrain system.",
+  "authors": "Adubbz",
+  "has_data": 2,
+  "classes": 48,
+  "namespaces": [
+   "terrablender"
+  ]
+ },
+ {
+  "file": "TextruesRubidiumOptions-1.0.7-mc1.19.2.jar",
+  "size": 212100,
+  "modid": "reeses_sodium_options",
+  "name": "TexTrue's Rubidium Options",
+  "version": "1.0.7-mc1.19.2",
+  "desc": "Replaces Rubidium Options Screen",
+  "authors": "TexTrue, TexTrueStudio",
+  "has_data": 0,
+  "classes": 29,
+  "namespaces": []
+ },
+ {
+  "file": "Towns-and-Towers-v.1.10-_FORGE-1.19.2_.jar",
+  "size": 2822026,
+  "modid": "t_and_t",
+  "name": "Towns and Towers",
+  "version": "${file.jarVersion}",
+  "desc": "Spice up your world with new villages, pillager outposts, and even new ships!",
+  "authors": "Kubek, Biban_Auriu, Cristelknight",
+  "has_data": 344,
+  "classes": 29,
+  "namespaces": [
+   "kaisyn",
+   "minecraft",
+   "towns_and_towers"
+  ]
+ },
+ {
+  "file": "TravelersTitles-1.19.2-Forge-3.1.2.jar",
+  "size": 219061,
+  "modid": "travelerstitles",
+  "name": "Traveler's Titles",
+  "version": "1.19.2-Forge-3.1.2",
+  "desc": "Epic, RPG-like titles when entering biomes & dimensions",
+  "authors": "YUNGNICKYOUNG",
+  "has_data": 1,
+  "classes": 35,
+  "namespaces": [
+   "travelerstitles"
+  ]
+ },
+ {
+  "file": "UndeadUnleashed-1.1.1-1.19.2.jar",
+  "size": 2073800,
+  "modid": "undead_unleashed",
+  "name": "Undead Unleashed",
+  "version": "1.1.0",
+  "desc": "Undead Unleashed adds hostile mobs and features with unique properties.",
+  "authors": "Fredzik2",
+  "has_data": 94,
+  "classes": 214,
+  "namespaces": [
+   "curios",
+   "minecraft",
+   "undead_unleashed"
+  ]
+ },
+ {
+  "file": "UnusualEnd1.19.2_V1.4.3.jar",
+  "size": 4903370,
+  "modid": "unusualend",
+  "name": "Unusual End",
+  "version": "1.4.3",
+  "desc": "Enhance your End experience !",
+  "authors": "Sweetygamer",
+  "has_data": 272,
+  "classes": 451,
+  "namespaces": [
+   "curios",
+   "forge",
+   "minecraft",
+   "unusualend"
+  ]
+ },
+ {
+  "file": "Wabi-Sabi-Structures-1.2.0-1.19-Forge.jar",
+  "size": 1261949,
+  "modid": "wabi_sabi_structures",
+  "name": "Wabi-Sabi Structures",
+  "version": "1.2.0-1.19",
+  "desc": "Wabi-Sabi Structures adds a plethora of new structures that generate throughout your Minecraft world, all designed with the Japanese philosophy of \"Wabi-Sabi\" in mind - embracing imperfection while still being aesthetically interesting.\n\nExpect anything from patches of natural crops, to various cozy",
+  "authors": "Wpgradford, Wight of Shadows, Wilva, Nate Pinkston",
+  "has_data": 466,
+  "classes": 2,
+  "namespaces": [
+   "wabi_sabi_structures"
+  ]
+ },
+ {
+  "file": "YungsApi-1.19.2-Forge-3.8.10.jar",
+  "size": 293336,
+  "modid": "yungsapi",
+  "name": "YUNG's API",
+  "version": "${file.jarVersion}",
+  "desc": "API Library for YUNG's minecraft mods.",
+  "authors": "YUNGNICKYOUNG",
+  "has_data": 0,
+  "classes": 152,
+  "namespaces": []
+ },
+ {
+  "file": "YungsBetterDesertTemples-1.19.2-Forge-2.2.2.jar",
+  "size": 986299,
+  "modid": "betterdeserttemples",
+  "name": "YUNG's Better Desert Temples",
+  "version": "1.19.2-Forge-2.2.2",
+  "desc": "A complete redesign of Minecraft's desert temples",
+  "authors": "YUNGNICKYOUNG, Tera",
+  "has_data": 47,
+  "classes": 54,
+  "namespaces": [
+   "betterdeserttemples"
+  ]
+ },
+ {
+  "file": "YungsBetterDungeons-1.19.2-Forge-3.2.2.jar",
+  "size": 997998,
+  "modid": "betterdungeons",
+  "name": "YUNG's Better Dungeons",
+  "version": "1.19.2-Forge-3.2.2",
+  "desc": "A complete redesign of Minecraft's dungeons",
+  "authors": "YUNGNICKYOUNG, Acarii",
+  "has_data": 77,
+  "classes": 70,
+  "namespaces": [
+   "betterdungeons"
+  ]
+ },
+ {
+  "file": "YungsBetterEndIsland-1.19.2-Forge-1.0.jar",
+  "size": 636740,
+  "modid": "betterendisland",
+  "name": "YUNG's Better End Island",
+  "version": "1.19.2-Forge-1.0",
+  "desc": "A complete redesign of the End island, making the Ender Dragon fight much more fun and interesting!",
+  "authors": "YUNGNICKYOUNG, Acarii",
+  "has_data": 2,
+  "classes": 34,
+  "namespaces": [
+   "betterendisland",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "YungsBetterJungleTemples-1.19.2-Forge-1.0.1.jar",
+  "size": 1268117,
+  "modid": "betterjungletemples",
+  "name": "YUNG's Better Jungle Temples",
+  "version": "1.19.2-Forge-1.0.1",
+  "desc": "A complete redesign of Minecraft's Jungle Temples!",
+  "authors": "YUNGNICKYOUNG, Tera",
+  "has_data": 27,
+  "classes": 38,
+  "namespaces": [
+   "betterjungletemples",
+   "morevillagers"
+  ]
+ },
+ {
+  "file": "YungsBetterMineshafts-1.19.2-Forge-3.2.1.jar",
+  "size": 273478,
+  "modid": "bettermineshafts",
+  "name": "YUNG's Better Mineshafts",
+  "version": "1.19.2-Forge-3.2.1",
+  "desc": "The long-awaited and much-needed abandoned mineshaft overhaul!",
+  "authors": "YUNGNICKYOUNG",
+  "has_data": 30,
+  "classes": 50,
+  "namespaces": [
+   "bettermineshafts",
+   "minecraft",
+   "morevillagers"
+  ]
+ },
+ {
+  "file": "YungsBetterNetherFortresses-1.19.2-Forge-1.0.6.jar",
+  "size": 820449,
+  "modid": "betterfortresses",
+  "name": "YUNG's Better Nether Fortresses",
+  "version": "1.19.2-Forge-1.0.6",
+  "desc": "A complete redesign of Minecraft's Nether Fortresses!",
+  "authors": "YUNGNICKYOUNG, Acarii",
+  "has_data": 32,
+  "classes": 31,
+  "namespaces": [
+   "betterfortresses",
+   "minecraft",
+   "morevillagers"
+  ]
+ },
+ {
+  "file": "YungsBetterOceanMonuments-1.19.2-Forge-2.1.1.jar",
+  "size": 1510053,
+  "modid": "betteroceanmonuments",
+  "name": "YUNG's Better Ocean Monuments",
+  "version": "1.19.2-Forge-2.1.1",
+  "desc": "A complete redesign of Minecraft's ocean monuments",
+  "authors": "YUNGNICKYOUNG, Tera",
+  "has_data": 20,
+  "classes": 29,
+  "namespaces": [
+   "betteroceanmonuments",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "YungsBetterStrongholds-1.19.2-Forge-3.2.0.jar",
+  "size": 409767,
+  "modid": "betterstrongholds",
+  "name": "YUNG's Better Strongholds",
+  "version": "1.19.2-Forge-3.2.0",
+  "desc": "A complete redesign of Minecraft's strongholds",
+  "authors": "YUNGNICKYOUNG, Acarii",
+  "has_data": 34,
+  "classes": 37,
+  "namespaces": [
+   "betterstrongholds",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "aeroblender-1.19.2-1.0.1.jar",
+  "size": 23971,
+  "modid": "aeroblender",
+  "name": "AeroBlender",
+  "version": "${file.jarVersion}",
+  "desc": "AeroBlender is a library mod for adding biomes in a simple and compatible manner with Aether's biome/terrain system, using Terrablender.",
+  "authors": "RazorDevs",
+  "has_data": 4,
+  "classes": 16,
+  "namespaces": [
+   "aeroblender",
+   "aether",
+   "terrablender"
+  ]
+ },
+ {
+  "file": "aether-1.19.2-1.4.2-forge.jar",
+  "size": 23258002,
+  "modid": "aether",
+  "name": "The Aether",
+  "version": "${file.jarVersion}",
+  "desc": "The Aether Team presents the original Aether mod! Up to date for modern Minecraft versions and fully compatible with multiplayer. The Aether is a dimension of floating islands high in the sky. Ascend through a Glowstone portal and begin a new survival adventure packed with new ores, mythical creatur",
+  "authors": "AlphaMode, bconlon, Burning Cactus, Drullkus, Hugo Payn, Jaryt, Oscar Payn, quek, Raptor, reetam, RENREN, sunsette",
+  "has_data": 1230,
+  "classes": 893,
+  "namespaces": [
+   "aether",
+   "curios",
+   "forge",
+   "minecraft",
+   "randomium",
+   "supplementaries"
+  ]
+ },
+ {
+  "file": "alexsdelight-1.4.1.jar",
+  "size": 54030,
+  "modid": "alexsdelight",
+  "name": "Alex's Delight",
+  "version": "${file.jarVersion}",
+  "desc": "Adds compatibility between Alex's Mobs and Farmer's Delight",
+  "authors": "NCP Bails",
+  "has_data": 44,
+  "classes": 4,
+  "namespaces": [
+   "alexsdelight",
+   "alexsmobs"
+  ]
+ },
+ {
+  "file": "alexsmobs-1.21.1.jar",
+  "size": 25655463,
+  "modid": "alexsmobs",
+  "name": "Alex's Mobs",
+  "version": "1.21.1",
+  "desc": "New, original, engaging, and aesthetic mobs for Minecraft.",
+  "authors": "Alexthe668, Carro1001",
+  "has_data": 457,
+  "classes": 1092,
+  "namespaces": [
+   "alexsmobs",
+   "domesticationinnovation",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "apotheotic_additions1.0.4.jar",
+  "size": 602991,
+  "modid": "apotheotic_additions",
+  "name": "apotheotic_additions",
+  "version": "1.0.4",
+  "desc": "",
+  "authors": "Bryce792, MCreator",
+  "has_data": 619,
+  "classes": 19,
+  "namespaces": [
+   "apotheotic_additions",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "apothsb-1.0.0.jar",
+  "size": 7036,
+  "modid": "apothsb",
+  "name": "ApothSB",
+  "version": "1.0.0",
+  "desc": "Fixes Apotheosis gems being rejected by Sophisticated Backpacks tag filter slots.",
+  "authors": "Nightwielder23",
+  "has_data": 1,
+  "classes": 2,
+  "namespaces": [
+   "apotheosis"
+  ]
+ },
+ {
+  "file": "appleskin-forge-mc1.19-2.4.2.jar",
+  "size": 46991,
+  "modid": "appleskin",
+  "name": "AppleSkin",
+  "version": "${file.jarVersion}",
+  "desc": "Adds various food-related HUD improvements",
+  "authors": "squeek",
+  "has_data": 0,
+  "classes": 28,
+  "namespaces": []
+ },
+ {
+  "file": "aquamirae-6.API15.jar",
+  "size": 17322001,
+  "modid": "aquamirae",
+  "name": "Aquamirae",
+  "version": "6.API15",
+  "desc": "Ship graveyard with terrible deep sea creatures.",
+  "authors": "Obscuria, Pluvia",
+  "has_data": 133,
+  "classes": 201,
+  "namespaces": [
+   "aquamirae",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "architectury-6.6.92-forge.jar",
+  "size": 559099,
+  "modid": "architectury",
+  "name": "Architectury",
+  "version": "6.6.92",
+  "desc": "A intermediary api aimed to ease developing multiplatform mods.",
+  "authors": "shedaniel",
+  "has_data": 0,
+  "classes": 370,
+  "namespaces": []
+ },
+ {
+  "file": "ars_additions-1.19.2-1.4.0.jar",
+  "size": 759443,
+  "modid": "ars_additions",
+  "name": "Ars Additions",
+  "version": "1.19.2-1.4.0",
+  "desc": "An Ars Nouveau addon focused on small tweaks and quality of life additions.",
+  "authors": null,
+  "has_data": 142,
+  "classes": 107,
+  "namespaces": [
+   "ars_additions",
+   "ars_nouveau",
+   "curios",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "ars_elemental-1.19.2-0.5.9.4.1.jar",
+  "size": 1516921,
+  "modid": "ars_elemental",
+  "name": "Ars Elemental",
+  "version": "${file.jarVersion}",
+  "desc": "This Ars Nouveau add-on is about the Elemental Schools. More spell foci and equips, powering up one of the elemental schools, as well as new glyphs and hidden combos.",
+  "authors": "Alexthw",
+  "has_data": 296,
+  "classes": 263,
+  "namespaces": [
+   "ars_elemental",
+   "ars_nouveau",
+   "botany_pots",
+   "curios",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "ars_nouveau-1.19.2-3.23.0.jar",
+  "size": 14558041,
+  "modid": "ars_nouveau",
+  "name": "Ars Nouveau",
+  "version": "${file.jarVersion}",
+  "desc": "Craft spells, create powerful baubles, and summon magical creatures!",
+  "authors": "Bailey Hollingsworth",
+  "has_data": 1523,
+  "classes": 2468,
+  "namespaces": [
+   "ars_nouveau",
+   "carryon",
+   "curios",
+   "forge",
+   "malum",
+   "minecraft",
+   "nyfsquiver"
+  ]
+ },
+ {
+  "file": "atmospheric-1.19.2-5.1.2.jar",
+  "size": 2793007,
+  "modid": "atmospheric",
+  "name": "Atmospheric",
+  "version": "${file.jarVersion}",
+  "desc": "Adds two unique biome types with several variants.\n    Also introduces several new types of blocks, foliage, and plants!\n    There will continue to be more biomes over time!",
+  "authors": "Team Abnormals",
+  "has_data": 1196,
+  "classes": 214,
+  "namespaces": [
+   "atmospheric",
+   "boatload",
+   "forge",
+   "minecraft",
+   "quark",
+   "woodworks"
+  ]
+ },
+ {
+  "file": "awesomedungeonend-forge-1.19.2-3.1.1.jar",
+  "size": 209232,
+  "modid": "awesomedungeonend",
+  "name": "Awesome dungeon the end",
+  "version": "3.1.1",
+  "desc": "Add a structure in your dimension the END !!!",
+  "authors": "JTorLeon Studios",
+  "has_data": 24,
+  "classes": 7,
+  "namespaces": [
+   "awesomedungeonend"
+  ]
+ },
+ {
+  "file": "awesomedungeonnether-forge-1.19.2-3.1.1.jar",
+  "size": 234927,
+  "modid": "awesomedungeonnether",
+  "name": "Awesome dungeon nether",
+  "version": "3.1.1",
+  "desc": "Add awesome dungeon in your Nether !",
+  "authors": "JTorLeon Studios",
+  "has_data": 32,
+  "classes": 7,
+  "namespaces": [
+   "awesomedungeonnether"
+  ]
+ },
+ {
+  "file": "azurelib-forge-1.19.2-3.2.2.jar",
+  "size": 1050897,
+  "modid": "azurelib",
+  "name": "AzureLib",
+  "version": "3.2.2",
+  "desc": "Java Minecraft mod using Bedrock models to create custom models and animations for items, blocks, entities",
+  "authors": "AzureDoom, Bvanseg, DerToaster, ZigyTheBird, Gecko, Eliot, Chappie, Tslat",
+  "has_data": 0,
+  "classes": 504,
+  "namespaces": []
+ },
+ {
+  "file": "balm-forge-1.19.2-4.6.0.jar",
+  "size": 314084,
+  "modid": "balm",
+  "name": "Balm",
+  "version": "${file.jarVersion}",
+  "desc": "Abstraction Layer (but not really)™ for Blay's multiplatform mods",
+  "authors": "BlayTheNinth",
+  "has_data": 32,
+  "classes": 232,
+  "namespaces": [
+   "balm"
+  ]
+ },
+ {
+  "file": "bettercombat-forge-1.7.1+1.19.jar",
+  "size": 904072,
+  "modid": "bettercombat",
+  "name": "Better Combat",
+  "version": "1.7.1+1.19",
+  "desc": "Easy, spectacular and fun melee combat system from Minecraft Dungeons.",
+  "authors": "Daedelus",
+  "has_data": 35,
+  "classes": 140,
+  "namespaces": [
+   "bettercombat",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "betterfpsdist-1.19.2-4.1.jar",
+  "size": 17012,
+  "modid": "betterfpsdist",
+  "name": "betterfpsdist mod",
+  "version": "${file.jarVersion}",
+  "desc": "betterfpsdist mod",
+  "authors": "Someaddon",
+  "has_data": 0,
+  "classes": 8,
+  "namespaces": []
+ },
+ {
+  "file": "betterwithminecolonies-1.19-1.18.19.jar",
+  "size": 34149,
+  "modid": "betterwithminecolonies",
+  "name": "Better With Minecolonies",
+  "version": "${file.jarVersion}",
+  "desc": "A mod that fixes a bunch of recipes to make 1.19 more enjoyable especially when\n\nused with Minecolonies.\n\n\n\nNote: Minecolonies is not a requirement to benefit!\n\n\n\nAdds in ways to get flowers so you don't have to go bonemeal crazy, also you can get grass and path blocks, and dyes from coral.",
+  "authors": "Donate to my projects at https://patreon.com/kreezxil",
+  "has_data": 78,
+  "classes": 1,
+  "namespaces": [
+   "betterwithminecolonies"
+  ]
+ },
+ {
+  "file": "biomemusic-1.19.2-2.2.jar",
+  "size": 19555,
+  "modid": "biomemusic",
+  "name": "biomemusic mod",
+  "version": "${file.jarVersion}",
+  "desc": "biomemusic mod",
+  "authors": "Someaddon",
+  "has_data": 0,
+  "classes": 11,
+  "namespaces": []
+ },
+ {
+  "file": "blockui-1.19.2-1.0.140-BETA.jar",
+  "size": 394383,
+  "modid": "blockui",
+  "name": "UI Library Mod",
+  "version": "1.19.2-1.0.140-BETA",
+  "desc": "UI Library mod, use ctrl+alt+shift+x to open a test-ui",
+  "authors": "LDT Team",
+  "has_data": 1,
+  "classes": 125,
+  "namespaces": [
+   "blockui"
+  ]
+ },
+ {
+  "file": "blue_skies-1.19.2-1.3.20.jar",
+  "size": 82865712,
+  "modid": "blue_skies",
+  "name": "Blue Skies",
+  "version": "${file.jarVersion}",
+  "desc": "Blue Skies adds two dimensions called the Everbright and the Everdawn. It includes lots of new unique features, blocks, weapons, mobs and even massive dungeons! Each dimension has its own theme, with the Everbright being very bright, snowy and cold while the Everdawn is typically darker and warm. Ea",
+  "authors": "KingPhygieBoo, Silver_David, Lachney",
+  "has_data": 2505,
+  "classes": 1010,
+  "namespaces": [
+   "blue_skies",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "blueprint-1.19.2-6.2.0.jar",
+  "size": 992248,
+  "modid": "blueprint",
+  "name": "Blueprint",
+  "version": "6.2.0",
+  "desc": "The library mod used by all Abnormals mods. Adds support for various types of blocks, helps with registering, and adds tons of misc. utils.\n    Also comes with Endimator, an animation library that supports data-driven and coded animations.",
+  "authors": "Team Abnormals",
+  "has_data": 44,
+  "classes": 420,
+  "namespaces": [
+   "blueprint",
+   "boatload",
+   "forge",
+   "minecraft",
+   "quark",
+   "woodworks"
+  ]
+ },
+ {
+  "file": "bocchium-1.19.2-0.0.3.jar",
+  "size": 10154,
+  "modid": "bocchium",
+  "name": "Bocchium",
+  "version": "1.19.2-0.0.3",
+  "desc": "Bocchi The Bedrock!",
+  "authors": "TeamPotato",
+  "has_data": 0,
+  "classes": 3,
+  "namespaces": []
+ },
+ {
+  "file": "brutalbosses-1.19.2-6.8.jar",
+  "size": 172146,
+  "modid": "brutalbosses",
+  "name": "brutalbosses mod",
+  "version": "${file.jarVersion}",
+  "desc": "brutalbosses mod",
+  "authors": "Someaddons",
+  "has_data": 30,
+  "classes": 75,
+  "namespaces": [
+   "brutalbosses"
+  ]
+ },
+ {
+  "file": "bygonenether-1.3.2-1.19.2.jar",
+  "size": 7675614,
+  "modid": "bygonenether",
+  "name": "Bygone Nether",
+  "version": "1.3.2",
+  "desc": "Remnants of the nether dimension's ancient history",
+  "authors": "izofar",
+  "has_data": 174,
+  "classes": 85,
+  "namespaces": [
+   "bygonenether",
+   "create",
+   "forge",
+   "minecraft",
+   "quark"
+  ]
+ },
+ {
+  "file": "caelus-forge-1.19.2-3.0.0.6.jar",
+  "size": 37254,
+  "modid": "caelus",
+  "name": "Caelus API",
+  "version": "1.19.2-3.0.0.6",
+  "desc": "A coremod and API to provide developers access to elytra flight mechanics through an entity attribute.",
+  "authors": "C4",
+  "has_data": 1,
+  "classes": 12,
+  "namespaces": [
+   "forge"
+  ]
+ },
+ {
+  "file": "canary-mc1.19.2-0.3.3.jar",
+  "size": 591441,
+  "modid": "canary",
+  "name": "Canary",
+  "version": "0.3.3",
+  "desc": "A performance mod designed to optimize Minecraft's general performance and unofficial fork of Lithium mod for Minecraft Forge.",
+  "authors": "AbdElAziz",
+  "has_data": 0,
+  "classes": 378,
+  "namespaces": []
+ },
+ {
+  "file": "carryon-forge-1.19.2-2.1.2.23.jar",
+  "size": 440569,
+  "modid": "carryon",
+  "name": "Carry On",
+  "version": "${file.jarVersion}",
+  "desc": "Carry On is a simple mod that improves game interaction by allowing players to pick up, carry, and place single block Tile Entities using only their empty hands.",
+  "authors": "Tschipp, Purplicious_Cow, cy4n",
+  "has_data": 6,
+  "classes": 80,
+  "namespaces": [
+   "carryon"
+  ]
+ },
+ {
+  "file": "celestisynth-1.19.2-1.1.5.jar",
+  "size": 1092025,
+  "modid": "celestisynth",
+  "name": "Celestisynth",
+  "version": "1.19.2-1.1.5",
+  "desc": "Celestisynth is a Minecraft mod that focuses in adding brand-new and unique weapons with special abilities for you to play around with!",
+  "authors": "AquTheSeal, Meme Man, YeoXuHang",
+  "has_data": 68,
+  "classes": 149,
+  "namespaces": [
+   "celestisynth",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "celestweaks-beta-0.9.7-1.19.2.jar",
+  "size": 57961,
+  "modid": "celestweaks",
+  "name": "Celestweaks",
+  "version": "0.9.7",
+  "desc": "A bunch of miscellaneous fixes, tied together in one mod",
+  "authors": null,
+  "has_data": 1,
+  "classes": 25,
+  "namespaces": [
+   "celestweaks"
+  ]
+ },
+ {
+  "file": "chunksending-1.19.2-2.8.jar",
+  "size": 11897,
+  "modid": "chunksending",
+  "name": "chunksending mod",
+  "version": "${file.jarVersion}",
+  "desc": "Optimizes chunk sending",
+  "authors": "Someaddon",
+  "has_data": 0,
+  "classes": 5,
+  "namespaces": []
+ },
+ {
+  "file": "cisco_mod_9.6.jar",
+  "size": 84914671,
+  "modid": "cisco_mod",
+  "name": "Cisco's Content",
+  "version": "5.8",
+  "desc": "Adds custom items and features.",
+  "authors": "franciscogolden",
+  "has_data": 183,
+  "classes": 580,
+  "namespaces": [
+   "cisco_mod",
+   "curios",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "ciscounbound-1.2.jar",
+  "size": 84066563,
+  "modid": "ciscounbound",
+  "name": "Ciscos Content Unbound",
+  "version": "0.0.1-1.19.2",
+  "desc": "Nexu Solutus.",
+  "authors": "Cisco",
+  "has_data": 184,
+  "classes": 22,
+  "namespaces": [
+   "ciscounbound",
+   "curios",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "citadel-2.1.4-1.19.jar",
+  "size": 3063232,
+  "modid": "citadel",
+  "name": "Citadel",
+  "version": "2.1.4",
+  "desc": "A shared code library for many of Alexthe666's mods. Code used from LLibrary with permission.",
+  "authors": "Alexthe666",
+  "has_data": 2,
+  "classes": 1375,
+  "namespaces": [
+   "citadel"
+  ]
+ },
+ {
+  "file": "clayworks-1.19.2-2.1.0.jar",
+  "size": 1217886,
+  "modid": "clayworks",
+  "name": "Clayworks",
+  "version": "${file.jarVersion}",
+  "desc": "Introduces a new furnace type and several building blocks!",
+  "authors": "Team Abnormals",
+  "has_data": 1162,
+  "classes": 36,
+  "namespaces": [
+   "clayworks",
+   "minecraft",
+   "quark"
+  ]
+ },
+ {
+  "file": "cloth-config-8.3.134-forge.jar",
+  "size": 1176412,
+  "modid": "cloth_config",
+  "name": "Cloth Config v8 API",
+  "version": "8.3.134",
+  "desc": "An API for config screens.",
+  "authors": "shedaniel",
+  "has_data": 0,
+  "classes": 631,
+  "namespaces": []
+ },
+ {
+  "file": "collection-of-singiro-1.19.x-1.1.4.jar",
+  "size": 363146,
+  "modid": "collectionofsingiro",
+  "name": "Collection of Singiro",
+  "version": "1.0",
+  "desc": "Collection of Origins",
+  "authors": "Aiko Suzuki,Arkwys",
+  "has_data": 361,
+  "classes": 1,
+  "namespaces": [
+   "arkwys",
+   "medievalorigins",
+   "minecraft",
+   "origins"
+  ]
+ },
+ {
+  "file": "combatroll-forge-1.1.5+1.19.jar",
+  "size": 199326,
+  "modid": "combatroll",
+  "name": "Combat Roll",
+  "version": "1.1.5+1.19",
+  "desc": "Adds combat roll ability, with related attributes and enchantments.",
+  "authors": "Daedelus",
+  "has_data": 0,
+  "classes": 96,
+  "namespaces": []
+ },
+ {
+  "file": "comforts-forge-6.0.7+1.19.2.jar",
+  "size": 331918,
+  "modid": "comforts",
+  "name": "Comforts",
+  "version": "6.0.7+1.19.2",
+  "desc": "Adds sleeping bags and hammocks for, respectively, portability and turning day to night, without setting new spawns.\nComes in 16 different colors!",
+  "authors": "Illusive Soulworks",
+  "has_data": 165,
+  "classes": 53,
+  "namespaces": [
+   "comforts",
+   "forge"
+  ]
+ },
+ {
+  "file": "connectivity-1.19.2-4.6.jar",
+  "size": 62868,
+  "modid": "connectivity",
+  "name": "Connectivity Mod",
+  "version": "${file.jarVersion}",
+  "desc": "Lightweight mod which solves connection and packet size issues.",
+  "authors": "Someaddons",
+  "has_data": 0,
+  "classes": 42,
+  "namespaces": []
+ },
+ {
+  "file": "constructionwand-1.19.2-2.10.jar",
+  "size": 209396,
+  "modid": "constructionwand",
+  "name": "Construction Wand",
+  "version": "${file.jarVersion}",
+  "desc": "Construction Wands make building easier!\n\nWith a Construction Wand you can place multiple blocks (up to 1024) at once, extending your build on the side you're\nfacing. If that's not enough: you can upgrade your wand with additional cores, allowing you to place a block\nbehind the block you are facing,",
+  "authors": "ThetaDev",
+  "has_data": 13,
+  "classes": 72,
+  "namespaces": [
+   "constructionwand"
+  ]
+ },
+ {
+  "file": "corpse-forge-1.19.2-1.0.17.jar",
+  "size": 242007,
+  "modid": "corpse",
+  "name": "Corpse",
+  "version": "1.19.2-1.0.17",
+  "desc": "This mod brings a corpse into the game.\nIt will spawn upon your death containing all items that you had in your inventory.",
+  "authors": "Max Henkel",
+  "has_data": 0,
+  "classes": 123,
+  "namespaces": []
+ },
+ {
+  "file": "corpsecurioscompat-1.18.x-1.20.x-Forge-2.2.2.jar",
+  "size": 9117,
+  "modid": "corpsecurioscompat",
+  "name": "corpsecurioscompat",
+  "version": "2.2.2",
+  "desc": "",
+  "authors": "",
+  "has_data": 0,
+  "classes": 3,
+  "namespaces": []
+ },
+ {
+  "file": "ctov-3.2.6c.jar",
+  "size": 4637536,
+  "modid": "ctov",
+  "name": "ChoiceTheorem's Overhauled Village",
+  "version": "3.2.6c",
+  "desc": "Enhances and creates new villages and pillager outposts, that perfectly fit into your Minecraft world.",
+  "authors": "ChoiceTheorem",
+  "has_data": 363,
+  "classes": 2,
+  "namespaces": [
+   "ctov",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "cupboard-1.19.2-2.6.jar",
+  "size": 24766,
+  "modid": "cupboard",
+  "name": "Cupboard utilities",
+  "version": "${file.jarVersion}",
+  "desc": "Cupboard mod providing utilities",
+  "authors": "Someaddon",
+  "has_data": 0,
+  "classes": 14,
+  "namespaces": []
+ },
+ {
+  "file": "curios-forge-1.19.2-5.1.6.4.jar",
+  "size": 288916,
+  "modid": "curios",
+  "name": "Curios API",
+  "version": "${file.jarVersion}",
+  "desc": "A flexible and expandable accessory/equipment API for users and developers.",
+  "authors": "C4",
+  "has_data": 0,
+  "classes": 114,
+  "namespaces": []
+ },
+ {
+  "file": "deep_aether-1.19.2-1.0.4.jar",
+  "size": 8623492,
+  "modid": "deep_aether",
+  "name": "Deep Aether",
+  "version": "${file.jarVersion}",
+  "desc": "Deep Aether is an unofficial addon for the Aether Mod which aims to add extra content to the Aether Dimension in a similar fashion to the 1.16 Nether Expansion update.\nExtra content includes new blocks, items, plants, biomes, trees, mobs, and more!\nCreated by RazorDevs!",
+  "authors": "Team Razor: 345boneshoss, Aethyus, AwesomeGames, Egg, EnderCristy, darksonic300, TunefulTurntip, and the other members.",
+  "has_data": 1026,
+  "classes": 231,
+  "namespaces": [
+   "aether",
+   "curios",
+   "deep_aether",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "deeperdarker-forge-1.19.2-1.2.2.jar",
+  "size": 17322653,
+  "modid": "deeperdarker",
+  "name": "Deeper and Darker",
+  "version": "1.2.2",
+  "desc": "A Minecraft mod featuring new blocks, items, armor, and hidden mysteries to complement the Deep Dark.",
+  "authors": "Kyanite Team",
+  "has_data": 661,
+  "classes": 126,
+  "namespaces": [
+   "deeperdarker",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "defaultoptions-forge-1.19-15.0.2.jar",
+  "size": 86980,
+  "modid": "defaultoptions",
+  "name": "Default Options",
+  "version": "${file.jarVersion}",
+  "desc": "A way for modpacks to ship a default (key) configuration without having to include an options.txt file. Also allows local options from any mod .cfg file.",
+  "authors": "BlayTheNinth",
+  "has_data": 0,
+  "classes": 30,
+  "namespaces": []
+ },
+ {
+  "file": "doapi-1.1.0b.jar",
+  "size": 366613,
+  "modid": "doapi",
+  "name": "Lets Do Api",
+  "version": "1.1.0b",
+  "desc": "This is an API for the Let's do mods",
+  "authors": "Cristelknight, BaumeisterJO",
+  "has_data": 0,
+  "classes": 91,
+  "namespaces": []
+ },
+ {
+  "file": "doespotatotick-1.19.2-5.3.4.jar",
+  "size": 28954,
+  "modid": "doespotatotick",
+  "name": "DoesPotatoTick",
+  "version": "1.19.2-5.3.4",
+  "desc": "",
+  "authors": "Kall",
+  "has_data": 0,
+  "classes": 18,
+  "namespaces": []
+ },
+ {
+  "file": "domum_ornamentum-1.19-1.0.146-BETA-universal.jar",
+  "size": 1026970,
+  "modid": "domum_ornamentum",
+  "name": "Domum Ornamentum",
+  "version": "${file.jarVersion}",
+  "desc": "Home decorations made easy. Out of several materials",
+  "authors": "LDTTeam, OrionDevelopment",
+  "has_data": 204,
+  "classes": 269,
+  "namespaces": [
+   "domum_ornamentum",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "dragon_enchants-1.0.4-1.19.2.jar",
+  "size": 217850,
+  "modid": "dragonenchants",
+  "name": "Dragon Enchants",
+  "version": "1.0.4",
+  "desc": "Brings some incredible, useful enchantments to Minecraft!\nDynamic, craftable, modifiable, and generally cool enchantments planned!",
+  "authors": "FavouriteDragon (and the Omega Source team)",
+  "has_data": 0,
+  "classes": 37,
+  "namespaces": []
+ },
+ {
+  "file": "dreadsteel-1.19.2-1.1.6.jar",
+  "size": 248878,
+  "modid": "dreadsteel",
+  "name": "Dreadsteel",
+  "version": "${file.jarVersion}",
+  "desc": "NIGHTMARE NIGHTMARE NIGHTMARE NIGHTMARE",
+  "authors": "Code by Mindoth",
+  "has_data": 11,
+  "classes": 26,
+  "namespaces": [
+   "dreadsteel"
+  ]
+ },
+ {
+  "file": "dummmmmmy-1.19.2-1.7.1.jar",
+  "size": 186878,
+  "modid": "dummmmmmy",
+  "name": "MmmMmmMmmmmm",
+  "version": "1.19.2-1.7.1",
+  "desc": "don't hurt me pls :S",
+  "authors": "MehVahdJukaar, Bonusboni",
+  "has_data": 2,
+  "classes": 27,
+  "namespaces": [
+   "dummmmmmy"
+  ]
+ },
+ {
+  "file": "dungeons-and-taverns-2.0.2 forge.jar",
+  "size": 7794083,
+  "modid": "dungeons_andtaverns_mr",
+  "name": "Dungeons and Taverns",
+  "version": "2.0.2",
+  "desc": "A Structure Datapack adding dungeons, taverns and other structures to find while you explore the world.",
+  "authors": "NovaWostra, Walls17",
+  "has_data": 313,
+  "classes": 0,
+  "namespaces": [
+   "minecraft",
+   "nova_structures"
+  ]
+ },
+ {
+  "file": "dungeons_enhanced-1.19.2-4.1.jar",
+  "size": 1172536,
+  "modid": "dungeons_enhanced",
+  "name": "Dungeons Enhanced",
+  "version": "4.1",
+  "desc": "Minecraft is great game, but exploring always felt a bit boring for us.\nThere aren't many structures or dungeons you can explore and the ones you find, are getting repetitive.\nWe decided to spice things up a bit, by adding new dungeons and structures for you to explore.\nBy now 26 new dungeons and st",
+  "authors": "Ametrin Studios",
+  "has_data": 58,
+  "classes": 55,
+  "namespaces": [
+   "dungeons_enhanced"
+  ]
+ },
+ {
+  "file": "dungeons_plus-1.19.2-1.3.1.jar",
+  "size": 1204646,
+  "modid": "dungeons_plus",
+  "name": "Dungeons Plus",
+  "version": "${file.jarVersion}",
+  "desc": "Adds a few new dungeons to the world using Structure Gel API",
+  "authors": "Silver_David",
+  "has_data": 80,
+  "classes": 100,
+  "namespaces": [
+   "dungeons_plus",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "easy-villagers-forge-1.19.2-1.1.23.jar",
+  "size": 411228,
+  "modid": "easy_villagers",
+  "name": "Easy Villagers",
+  "version": "1.19.2-1.1.23",
+  "desc": "Easy Villagers",
+  "authors": "Max Henkel",
+  "has_data": 15,
+  "classes": 192,
+  "namespaces": [
+   "easy_villagers",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "eccentrictome-1.19.2-1.10.2.jar",
+  "size": 40768,
+  "modid": "eccentrictome",
+  "name": "Eccentric Tome",
+  "version": "1.19.2-1.10.2",
+  "desc": "This mod adds a single item: the Eccentric Tome.\n\nThe Tome solves a single problem: managing all of your guide books.\n\nThe Tome allows many (infinite?) books to be combined into a single item, and enables them to be retrieved when needed.",
+  "authors": "EccentricVamp",
+  "has_data": 3,
+  "classes": 17,
+  "namespaces": [
+   "eccentrictome"
+  ]
+ },
+ {
+  "file": "ecologics-forge-1.19.2-2.1.11.jar",
+  "size": 1811681,
+  "modid": "ecologics",
+  "name": "Ecologics",
+  "version": "2.1.11",
+  "desc": "Simple vanilla biome updates, with fun mobs, blocks, and more!",
+  "authors": "SameButDifferent, Zero_DSRS_VX, Drigonis, Crispytwig, Irishjevil, Foquito Azul",
+  "has_data": 362,
+  "classes": 100,
+  "namespaces": [
+   "ecologics",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "elevatorid-1.19.2-1.8.10.jar",
+  "size": 188388,
+  "modid": "elevatorid",
+  "name": "Elevator Mod",
+  "version": "${file.jarVersion}",
+  "desc": "Simple port of the elevator from OpenBlocks to 1.8+",
+  "authors": "VsnGamer",
+  "has_data": 50,
+  "classes": 26,
+  "namespaces": [
+   "elevatorid"
+  ]
+ },
+ {
+  "file": "elytraslot-forge-6.1.2+1.19.2.jar",
+  "size": 88019,
+  "modid": "elytraslot",
+  "name": "Elytra Slot",
+  "version": "6.1.2+1.19.2",
+  "desc": "Adds an accessory slot for the elytra so you can fly and wear chest armor at the same time.",
+  "authors": "Illusive Soulworks",
+  "has_data": 1,
+  "classes": 31,
+  "namespaces": [
+   "curios"
+  ]
+ },
+ {
+  "file": "endrem_forge-5.2.1-R-1.19.X.jar",
+  "size": 877722,
+  "modid": "endrem",
+  "name": "End Remastered",
+  "version": "${file.jarVersion}",
+  "desc": "End Remastered makes your Minecraft experience more challenging by emphasizing the adventurous side of the game.\n\n\nExploration is the main focus of End Remastered, and to reach the End and beat the Ender Dragon, you will have to find the 12 custom eyes by exploring vanilla structures and fighting va",
+  "authors": "Team Remastered",
+  "has_data": 55,
+  "classes": 18,
+  "namespaces": [
+   "endrem",
+   "forge"
+  ]
+ },
+ {
+  "file": "enemyexpansion-2.4.0-forge-1.19.2.jar",
+  "size": 1075547,
+  "modid": "enemyexpansion",
+  "name": "Enemy Expansion",
+  "version": "2.4.0",
+  "desc": "Adding more enemies to Minecraft!",
+  "authors": "nekomaster1000",
+  "has_data": 87,
+  "classes": 334,
+  "namespaces": [
+   "enemyexpansion",
+   "forge"
+  ]
+ },
+ {
+  "file": "enigmaticaddons-1.19.2-1.2.2.jar",
+  "size": 722198,
+  "modid": "enigmaticaddons",
+  "name": "Enigmatic Addons",
+  "version": "1.19.2-1.2.2",
+  "desc": "Addons for Enigmatic Legacy",
+  "authors": "Auviotre",
+  "has_data": 121,
+  "classes": 189,
+  "namespaces": [
+   "curios",
+   "enigmaticaddons",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "entityculling-forge-1.6.1-mc1.19.2.jar",
+  "size": 60289,
+  "modid": "entityculling",
+  "name": "EntityCulling",
+  "version": "1.6.1",
+  "desc": "Using async raytracing to hide Tile-/Entities that are hidden behind solid blocks.",
+  "authors": "tr7zw",
+  "has_data": 0,
+  "classes": 27,
+  "namespaces": []
+ },
+ {
+  "file": "fancymenu_forge_3.8.1_MC_1.19.2.jar",
+  "size": 6914631,
+  "modid": "fancymenu",
+  "name": "FancyMenu",
+  "version": "3.8.1",
+  "desc": "Customize Minecraft's menus with ease!",
+  "authors": "Keksuccino",
+  "has_data": 0,
+  "classes": 1345,
+  "namespaces": []
+ },
+ {
+  "file": "fantasyfurniture-1.19.2-6.7.0.jar",
+  "size": 3215770,
+  "modid": "fantasyfurniture",
+  "name": "Fantasy's Furniture",
+  "version": "${file.jarVersion}",
+  "desc": "Adds Fantasy-Themed Furniture & Decorational blocks to the game",
+  "authors": "ApexStudios",
+  "has_data": 322,
+  "classes": 229,
+  "namespaces": [
+   "apexcore",
+   "fantasyfurniture",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "fastasyncworldsave-1.19.2-2.0.jar",
+  "size": 11074,
+  "modid": "fastasyncworldsave",
+  "name": "fastasyncworldsave mod",
+  "version": "${file.jarVersion}",
+  "desc": "fastasyncworldsave mod",
+  "authors": "Someaddon",
+  "has_data": 0,
+  "classes": 7,
+  "namespaces": []
+ },
+ {
+  "file": "fastpaintings-1.19-1.1.3.jar",
+  "size": 305895,
+  "modid": "fastpaintings",
+  "name": "Fast Paintings",
+  "version": "1.19-1.1.3",
+  "desc": "Makes paintings way faster by turning them into blocks! Also allows customizing their model",
+  "authors": "MehVahdJukaar",
+  "has_data": 1,
+  "classes": 17,
+  "namespaces": [
+   "fastpaintings"
+  ]
+ },
+ {
+  "file": "ferritecore-5.0.3-forge.jar",
+  "size": 116824,
+  "modid": "ferritecore",
+  "name": "Ferrite Core",
+  "version": "${file.jarVersion}",
+  "desc": "Reduces memory usage.",
+  "authors": "malte0811",
+  "has_data": 0,
+  "classes": 76,
+  "namespaces": []
+ },
+ {
+  "file": "forbidden_arcanus-1.19.2-2.1.5.jar",
+  "size": 2412071,
+  "modid": "forbidden_arcanus",
+  "name": "Forbidden & Arcanus",
+  "version": "${file.jarVersion}",
+  "desc": "",
+  "authors": "stal111, CesarZorak",
+  "has_data": 837,
+  "classes": 374,
+  "namespaces": [
+   "forbidden_arcanus",
+   "forge",
+   "minecraft",
+   "valhelsia_core"
+  ]
+ },
+ {
+  "file": "ftb-chunks-forge-1902.4.7-build.420.jar",
+  "size": 836309,
+  "modid": "ftbchunks",
+  "name": "FTB Chunks",
+  "version": "1902.4.7-build.420",
+  "desc": "Mapping, chunk claim protection and chunk loading all in one!",
+  "authors": "FTB Team",
+  "has_data": 5,
+  "classes": 136,
+  "namespaces": [
+   "ftbchunks"
+  ]
+ },
+ {
+  "file": "ftb-library-forge-1902.4.1-build.236.jar",
+  "size": 603296,
+  "modid": "ftblibrary",
+  "name": "FTB Library",
+  "version": "1902.4.1-build.236",
+  "desc": "FTB Library adds nothing.",
+  "authors": "FTB Team",
+  "has_data": 0,
+  "classes": 261,
+  "namespaces": []
+ },
+ {
+  "file": "ftb-quests-forge-1902.5.10-build.497.jar",
+  "size": 1093704,
+  "modid": "ftbquests",
+  "name": "FTB Quests",
+  "version": "1902.5.10-build.497",
+  "desc": "Lets you easily create and play with quests",
+  "authors": "FTB Team",
+  "has_data": 17,
+  "classes": 352,
+  "namespaces": [
+   "ftbquests",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "ftb-teams-forge-1902.2.14-build.123.jar",
+  "size": 220052,
+  "modid": "ftbteams",
+  "name": "FTB Teams",
+  "version": "1902.2.14-build.123",
+  "desc": "FTB Teams adds ability to create your own teams that can be used for quests etc.",
+  "authors": "FTB Team",
+  "has_data": 0,
+  "classes": 111,
+  "namespaces": []
+ },
+ {
+  "file": "ftb-ultimine-forge-1902.4.2-build.14.jar",
+  "size": 101521,
+  "modid": "ftbultimine",
+  "name": "FTB Ultimine",
+  "version": "1902.4.2-build.14",
+  "desc": "Allows you to break multiple blocks at once",
+  "authors": "LatvianModder",
+  "has_data": 5,
+  "classes": 55,
+  "namespaces": [
+   "ftbultimine"
+  ]
+ },
+ {
+  "file": "ftb-xmod-compat-forge-1.2.4.jar",
+  "size": 108928,
+  "modid": "ftbxmodcompat",
+  "name": "FTB XMod Compat",
+  "version": "1.2.4",
+  "desc": "Provides cross-mod compatibilty/integration for all main FTB mods",
+  "authors": "FTB Team",
+  "has_data": 0,
+  "classes": 67,
+  "namespaces": []
+ },
+ {
+  "file": "geckolib-forge-1.19-3.1.40.jar",
+  "size": 2938383,
+  "modid": "geckolib3",
+  "name": "GeckoLib",
+  "version": "${file.jarVersion}",
+  "desc": "GeckoLib is an animation engine for Minecraft Mods, with support for complex 3D keyframe-based animations, 30+ easings, concurrent animation support, sound and particle keyframes, event keyframes, and more.",
+  "authors": "Gecko, Eliot, AzureDoom, Chappie, DerToaster",
+  "has_data": 0,
+  "classes": 1109,
+  "namespaces": []
+ },
+ {
+  "file": "getittogetherdrops-forge-1.19.2-1.3.jar",
+  "size": 7831,
+  "modid": "getittogetherdrops",
+  "name": "Get It Together, Drops!",
+  "version": "${file.jarVersion}",
+  "desc": "Adds configuration options for defining how dropped items should combine.",
+  "authors": "bl4ckscor3",
+  "has_data": 0,
+  "classes": 3,
+  "namespaces": []
+ },
+ {
+  "file": "goblintraders-1.8.0-1.19.2.jar",
+  "size": 436421,
+  "modid": "goblintraders",
+  "name": "Goblin Traders",
+  "version": "1.8.0",
+  "desc": "Adds goblins that have unique trades to improve your adventure!",
+  "authors": "MrCrayfish",
+  "has_data": 11,
+  "classes": 57,
+  "namespaces": [
+   "goblintraders"
+  ]
+ },
+ {
+  "file": "gpumemleakfix-1.19.2-1.6.jar",
+  "size": 8002,
+  "modid": "gpumemleakfix",
+  "name": "Gpu memory leak fix",
+  "version": "${file.jarVersion}",
+  "desc": "Fixes some gpu memory leaks",
+  "authors": "Someaddon",
+  "has_data": 0,
+  "classes": 4,
+  "namespaces": []
+ },
+ {
+  "file": "humancompanions-1.19.2-1.7.4.jar",
+  "size": 350073,
+  "modid": "humancompanions",
+  "name": "Human Companions",
+  "version": "${file.jarVersion}",
+  "desc": "This mod adds human companions that can help you on your journey.",
+  "authors": "justinwon777",
+  "has_data": 12,
+  "classes": 46,
+  "namespaces": [
+   "humancompanions"
+  ]
+ },
+ {
+  "file": "immersive_armors-1.5.6+1.19.2-forge.jar",
+  "size": 1237151,
+  "modid": "immersive_armors",
+  "name": "Immersive Armors",
+  "version": "1.5.6+1.19.2",
+  "desc": "A lot of unique and vanilla-faithful armor sets.",
+  "authors": "Luke100000",
+  "has_data": 52,
+  "classes": 93,
+  "namespaces": [
+   "forge",
+   "immersive_armors"
+  ]
+ },
+ {
+  "file": "immersive_paintings-0.6.7+1.19.2-forge.jar",
+  "size": 4842105,
+  "modid": "immersive_paintings",
+  "name": "Immersive Paintings",
+  "version": "0.6.7+1.19.2",
+  "desc": "Use your own paintings!",
+  "authors": "Luke100000",
+  "has_data": 103,
+  "classes": 95,
+  "namespaces": [
+   "immersive_paintings"
+  ]
+ },
+ {
+  "file": "infernalmobs-1.19.2.4.jar",
+  "size": 139925,
+  "modid": "infernalmobs",
+  "name": "Infernal Mobs",
+  "version": "${file.jarVersion}",
+  "desc": "Diablo Style random Enchantments on Entities! Harder fights! More XP and enchanted loot!",
+  "authors": "AtomicStryker",
+  "has_data": 0,
+  "classes": 53,
+  "namespaces": []
+ },
+ {
+  "file": "ironchest-1.19.2-14.2.7.jar",
+  "size": 295119,
+  "modid": "ironchest",
+  "name": "Iron Chests",
+  "version": "1.19.2-14.2.7",
+  "desc": "New chests with larger sizes, with in-place upgrade items.\nThe feature chest is the crystal chest, which is transparent - some inventory contents are visible without opening the chest",
+  "authors": "cpw, alexbegt, progwml6",
+  "has_data": 60,
+  "classes": 88,
+  "namespaces": [
+   "ironchest",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "ironfurnaces-1.19.2-3.6.5.jar",
+  "size": 601448,
+  "modid": "ironfurnaces",
+  "name": "Iron Furnaces",
+  "version": "${file.jarVersion}",
+  "desc": "IronFurnaces is a mod that adds various tiers of metal furnaces that will smelt away to your desires.",
+  "authors": "Qelifern (pizzaatime), XenoMustache",
+  "has_data": 92,
+  "classes": 180,
+  "namespaces": [
+   "forge",
+   "ironfurnaces",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "irons_spellbooks-1.19.2-3.4.0.jar",
+  "size": 8648543,
+  "modid": "irons_spellbooks",
+  "name": "Iron's Spells 'n Spellbooks",
+  "version": "1.19.2-3.4.0",
+  "desc": "A magic mod for Minecraft returning to the classic RPG spellcasting fantasy.",
+  "authors": "Iron431, Lab3",
+  "has_data": 419,
+  "classes": 887,
+  "namespaces": [
+   "curios",
+   "forge",
+   "irons_spellbooks",
+   "minecraft",
+   "tetra"
+  ]
+ },
+ {
+  "file": "item-filters-forge-1902.2.9-build.51.jar",
+  "size": 115504,
+  "modid": "itemfilters",
+  "name": "Item Filters",
+  "version": "1902.2.9-build.51",
+  "desc": "Adds Item Filters that can be used in other mods to filter multiple items in devices",
+  "authors": "LatvianModder",
+  "has_data": 17,
+  "classes": 59,
+  "namespaces": [
+   "itemfilters"
+  ]
+ },
+ {
+  "file": "iterpg-0.5.0-1.19.2.jar",
+  "size": 15673923,
+  "modid": "iter_rpg",
+  "name": "Iter RPG",
+  "version": "0.5.0",
+  "desc": "Global semi-vanilla RPG mod",
+  "authors": "BaronFonShish, RayRindou",
+  "has_data": 385,
+  "classes": 1109,
+  "namespaces": [
+   "curios",
+   "forge",
+   "iter_rpg",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "jei-1.19.2-forge-11.8.1.1034.jar",
+  "size": 1177872,
+  "modid": "jei",
+  "name": "Just Enough Items",
+  "version": "11.8.1.1034",
+  "desc": "JEI is an item and recipe viewing mod for Minecraft, built from the ground up for stability and performance.",
+  "authors": "mezz",
+  "has_data": 0,
+  "classes": 767,
+  "namespaces": []
+ },
+ {
+  "file": "knightlib-forge-1.19.2-1.2.0.jar",
+  "size": 157668,
+  "modid": "knightlib",
+  "name": "Knight Lib",
+  "version": "${file.jarVersion}",
+  "desc": "A Minecraft library mod that serves as a bridge between mods.",
+  "authors": "Xylonity",
+  "has_data": 32,
+  "classes": 38,
+  "namespaces": [
+   "forge",
+   "knightlib",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "knightquest-1.8.5.jar",
+  "size": 3715430,
+  "modid": "knightquest",
+  "name": "Knight Quest",
+  "version": "1.8.5",
+  "desc": "Unravel a questline full of mysteries and treasures, battle new enemies and obtain rare materials, and craft armor and equipment with unique designs. With over 30 armor sets to discover, you're sure to find the perfect one that'll make you a true paladin.",
+  "authors": "Xylonity",
+  "has_data": 380,
+  "classes": 150,
+  "namespaces": [
+   "forge",
+   "knightquest",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "konkrete_forge_1.8.0_MC_1.19-1.19.2.jar",
+  "size": 628963,
+  "modid": "konkrete",
+  "name": "Konkrete",
+  "version": "1.8.0",
+  "desc": "COPYRIGHT:\n\nKonkrete Copyright © 2020-2024 Keksuccino.\nKonkrete is licensed under Apache-2.0.\n\nOpen Imaging Copyright © 2014 Dhyan Blum.\nOpen Imaging is licensed under Apache-2.0.\n\nJsonPath Copyright © 2017 Jayway.\nJsonPath is licensed under Apache-2.0.\n\nJson-smart Copyright © netplex.\nJson-smart is",
+  "authors": "Keksuccino",
+  "has_data": 0,
+  "classes": 402,
+  "namespaces": []
+ },
+ {
+  "file": "kubejs-forge-1902.6.2-build.73.jar",
+  "size": 1562312,
+  "modid": "kubejs",
+  "name": "KubeJS",
+  "version": "1902.6.2-build.73",
+  "desc": "Customize your modpack or server with JavaScript!",
+  "authors": "LatvianModder",
+  "has_data": 0,
+  "classes": 772,
+  "namespaces": [
+   "kubejs"
+  ]
+ },
+ {
+  "file": "lazydfu-1.19-1.0.2.jar",
+  "size": 14972,
+  "modid": "lazydfu",
+  "name": "LazyDFU",
+  "version": "0.1.3",
+  "desc": "Makes DataFixerUpper more lazy",
+  "authors": "tuxed",
+  "has_data": 0,
+  "classes": 3,
+  "namespaces": []
+ },
+ {
+  "file": "letmedespawn-forge-1.3.2b.jar",
+  "size": 85057,
+  "modid": "letmedespawn",
+  "name": "Let Me Despawn",
+  "version": "1.3.2b",
+  "desc": "Tweaks mob despawn rules to prevent accidental persistent mobs to increase performance.",
+  "authors": "frikinjay",
+  "has_data": 0,
+  "classes": 8,
+  "namespaces": []
+ },
+ {
+  "file": "letsdo-bakery-forge-1.0.6.jar",
+  "size": 1649227,
+  "modid": "bakery",
+  "name": "Bakery",
+  "version": "1.0.6",
+  "desc": "A Mod all about crafting Bread, Cakes and Pastry",
+  "authors": "Satisfy",
+  "has_data": 209,
+  "classes": 110,
+  "namespaces": [
+   "bakery",
+   "c",
+   "farmersdelight",
+   "forge",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "letsdo-vinery-forge-1.3.12b.jar",
+  "size": 2332729,
+  "modid": "vinery",
+  "name": "Vinery",
+  "version": "1.3.12",
+  "desc": "Vinery contains nearly everything needed for not only creating wine but also for building up your own vinery.",
+  "authors": "satisfy_u, Cristelknight, BaumeisterJO(weird name but a nice guy)",
+  "has_data": 377,
+  "classes": 183,
+  "namespaces": [
+   "c",
+   "candlelight",
+   "farmersdelight",
+   "forge",
+   "minecraft",
+   "vinery"
+  ]
+ },
+ {
+  "file": "libraryferret-forge-1.19.2-4.0.0.jar",
+  "size": 189524,
+  "modid": "libraryferret",
+  "name": "Library ferret",
+  "version": "4.0.0",
+  "desc": "Shared code for my mod.",
+  "authors": "JTorLeon Studios",
+  "has_data": 26,
+  "classes": 40,
+  "namespaces": [
+   "libraryferret",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "lionfishapi-1.8.jar",
+  "size": 126780,
+  "modid": "lionfishapi",
+  "name": "LionfishAPI",
+  "version": "1.8",
+  "desc": "HELLO",
+  "authors": null,
+  "has_data": 0,
+  "classes": 70,
+  "namespaces": []
+ },
+ {
+  "file": "lootintegrations-1.19.2-4.7.jar",
+  "size": 38892,
+  "modid": "lootintegrations",
+  "name": "Lootintegrations mod",
+  "version": "${file.jarVersion}",
+  "desc": "Integrates items from loottables into other loottables for intermod loot compatibility",
+  "authors": "Someaddon",
+  "has_data": 50,
+  "classes": 10,
+  "namespaces": [
+   "lootintegrations"
+  ]
+ },
+ {
+  "file": "lootr-forge-1.19-0.4.29.76.jar",
+  "size": 463767,
+  "modid": "lootr",
+  "name": "Lootr",
+  "version": "0.4.28.75",
+  "desc": "Makes loot chest loot per-user.",
+  "authors": "Noobanidus",
+  "has_data": 40,
+  "classes": 103,
+  "namespaces": [
+   "forge",
+   "lootr",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "majrusz-library-forge-1.19.2-7.0.5-backport.1.jar",
+  "size": 432588,
+  "modid": "majruszlibrary",
+  "name": "Majrusz Library",
+  "version": "7.0.5-backport.1",
+  "desc": "Library with common code for my other modifications.",
+  "authors": "Majrusz",
+  "has_data": 0,
+  "classes": 325,
+  "namespaces": []
+ },
+ {
+  "file": "majruszs-accessories-forge-1.19.2-1.5.2-backport.2.jar",
+  "size": 306836,
+  "modid": "majruszsaccessories",
+  "name": "Majrusz's Accessories",
+  "version": "1.5.2-backport.2",
+  "desc": "Mod that adds new special accessories to make certain aspects of the game more enjoyable.",
+  "authors": "Majrusz",
+  "has_data": 36,
+  "classes": 141,
+  "namespaces": [
+   "curios",
+   "majruszsaccessories"
+  ]
+ },
+ {
+  "file": "majruszs-difficulty-forge-1.19.2-1.9.9-backport.1.jar",
+  "size": 751435,
+  "modid": "majruszsdifficulty",
+  "name": "Majrusz's Progressive Difficulty",
+  "version": "1.9.9-backport.1",
+  "desc": "Mod that progressively increases the game difficulty over time.",
+  "authors": "Majrusz",
+  "has_data": 113,
+  "classes": 242,
+  "namespaces": [
+   "majruszsdifficulty",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "majruszs-enchantments-forge-1.19.2-1.10.7-backport.1.jar",
+  "size": 154186,
+  "modid": "majruszsenchantments",
+  "name": "Majrusz's Enchantments",
+  "version": "1.10.7-backport.1",
+  "desc": "Mod that adds plenty of unique and balanced enchantments to the game.",
+  "authors": "Majrusz",
+  "has_data": 6,
+  "classes": 51,
+  "namespaces": [
+   "majruszsenchantments"
+  ]
+ },
+ {
+  "file": "mcsa-forge-3.1.4+1.19.jar",
+  "size": 208932,
+  "modid": "mcsa",
+  "name": "MC Story Mode Armors",
+  "version": "3.1.4+1.19",
+  "desc": "Brings the armors from Minecraft Story Mode to Minecraft Java.",
+  "authors": "chronosacaria",
+  "has_data": 7,
+  "classes": 27,
+  "namespaces": [
+   "mcsa"
+  ]
+ },
+ {
+  "file": "medieval_paintings-1.19.2-7.0.jar",
+  "size": 904831,
+  "modid": "medieval_paintings",
+  "name": "Medieval Paintings",
+  "version": "7.0",
+  "desc": "Medieval Paintings mod adds 60+ new paintings to the game.\nPaintings are in medieval-fantasy style and vanilla friendly.\n\nView all: https://imgur.com/gallery/jBMkWIY",
+  "authors": null,
+  "has_data": 1,
+  "classes": 2,
+  "namespaces": [
+   "minecraft"
+  ]
+ },
+ {
+  "file": "meetyourfight-1.19.2-1.3.4.jar",
+  "size": 14948375,
+  "modid": "meetyourfight",
+  "name": "Meet Your Fight",
+  "version": "${file.jarVersion}",
+  "desc": "Adds several bosses to fight, each giving you access to unique goodies, such as weapons, armors or curios. Theses bosses won't come to you on their own though, to call them you need to craft the appropriate summoning item.",
+  "authors": "Lykrast",
+  "has_data": 47,
+  "classes": 90,
+  "namespaces": [
+   "curios",
+   "forge",
+   "meetyourfight",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "melody_forge_1.0.1_MC_1.19.2.jar",
+  "size": 37177,
+  "modid": "melody",
+  "name": "Melody",
+  "version": "1.0.1",
+  "desc": "OpenAL-based library mod for playing background music.\n\nCOPYRIGHT:\n\n> Melody © Copyright 2023 Keksuccino.\n  Melody is licensed under MIT.",
+  "authors": "Keksuccino",
+  "has_data": 0,
+  "classes": 22,
+  "namespaces": []
+ },
+ {
+  "file": "memoryleakfix-forge-1.17+-1.0.0.jar",
+  "size": 155597,
+  "modid": "memoryleakfix",
+  "name": "Memory Leak Fix",
+  "version": "1.0.0",
+  "desc": "A mod which fixes multiple memory leaks, both client-side & server-side",
+  "authors": "FX - PR0CESS",
+  "has_data": 0,
+  "classes": 95,
+  "namespaces": []
+ },
+ {
+  "file": "memorysettings-1.19.2-5.4.jar",
+  "size": 20490,
+  "modid": "memorysettings",
+  "name": "memorysettings mod",
+  "version": "${file.jarVersion}",
+  "desc": "memorysettings mod",
+  "authors": "Love, Cheese and small house plants",
+  "has_data": 0,
+  "classes": 7,
+  "namespaces": []
+ },
+ {
+  "file": "minecolonies-1.19.2-1.1.516-BETA.jar",
+  "size": 77785228,
+  "modid": "minecolonies",
+  "name": "MineColonies",
+  "version": "1.19.2-1.1.516-BETA",
+  "desc": "MineColonies is a colony simulator within Minecraft! There are numerous types of workers, and each worker has its own type of hut, letting you build a busy and vibrant village/town/city/colony. There is no coded limit to the number of NPC's at your disposal, so you can create a small, efficient vill",
+  "authors": "LDT Team",
+  "has_data": 1066,
+  "classes": 2291,
+  "namespaces": [
+   "minecolonies",
+   "minecraft"
+  ]
+ },
+ {
+  "file": "modernfix-forge-5.18.1+mc1.19.2.jar",
+  "size": 777028,
+  "modid": "modernfix",
+  "name": "ModernFix",
+  "version": "5.18.1+mc1.19.2",
+  "desc": "Egregious, yet effective performance improvements for modern Minecraft",
+  "authors": "embeddedt",
+  "has_data": 0,
+  "classes": 294,
+  "namespaces": []
+ },
+ {
+  "file": "moonlight-1.19.2-2.3.7-forge.jar",
+  "size": 836351,
+  "modid": "moonlight",
+  "name": "Moonlight Library",
+  "version": "1.19.2-2.3.7",
+  "desc": "A small library with many cool unique features, from dynamic asset generation to dynamic villager schedules and simple multi loader utilities",
+  "authors": "MehVahdJukaar",
+  "has_data": 17,
+  "classes": 356,
+  "namespaces": [
+   "moonlight"
+  ]
+ },
+ {
+  "file": "morevillagers-forge-1.19-4.0.3.jar",
+  "size": 234333,
+  "modid": "morevillagers",
+  "name": "More Villagers",
+  "version": "4.0.3",
+  "desc": "Adds new villager jobs, trades, and workstations!",
+  "authors": "SameButDifferent, Zero_DSRS_VX",
+  "has_data": 53,
+  "classes": 16,
+  "namespaces": [
+   "minecraft",
+   "morevillagers"
+  ]
+ },
+ {
+  "file": "mowziesmobs-1.6.3.jar",
+  "size": 15096887,
+  "modid": "mowziesmobs",
+  "name": "Mowzie's Mobs",
+  "version": "1.6.3",
+  "desc": "Mowzie's Mobs adds a variety of high-quality fantasy creatures to your Minecraft world.",
+  "authors": "BobMowzie, Wadoo, Vakypanda, Noonyez, pau101",
+  "has_data": 109,
+  "classes": 666,
+  "namespaces": [
+   "forge",
+   "minecraft",
+   "mowziesmobs"
+  ]
+ },
+ {
+  "file": "multipiston-1.19.2-1.2.25-ALPHA.jar",
+  "size": 37230,
+  "modid": "multipiston",
+  "name": "Multi-Piston",
+  "version": "1.19.2-1.2.25-ALPHA",
+  "desc": "Piston unlimited adds the multipiston block which allows you to move any block with a handy GUI into any direction!",
+  "authors": "Let's Dev Together Team",
+  "has_data": 3,
+  "classes": 14,
+  "namespaces": [
+   "minecraft",
+   "multipiston"
+  ]
+ },
+ {
+  "file": "mythicmounts-19.2-7.2.1-forge.jar",
+  "size": 4371070,
+  "modid": "mythicmounts",
+  "name": "MythicMounts",
+  "version": "${file.jarVersion}",
+  "desc": "",
+  "authors": null,
+  "has_data": 52,
+  "classes": 75,
+  "namespaces": [
+   "minecraft",
+   "mythicmounts"
+  ]
+ },
+ {
+  "file": "nerb-1.19.2-0.3-FORGE.jar",
+  "size": 10391,
+  "modid": "nerb",
+  "name": "Not Enough Recipe Book",
+  "version": "0.3",
+  "desc": "",
+  "authors": "SSKirillSS",
+  "has_data": 0,
+  "classes": 7,
+  "namespaces": []
+ },
+ {
+  "file": "noisium-1.0.2.jar",
+  "size": 41551,
+  "modid": "noisium",
+  "name": "Noisium",
+  "version": "1.0.2",
+  "desc": "Mod who optimise Noise used in the world generation",
+  "authors": "steveplays28",
+  "has_data": 0,
+  "classes": 4,
+  "namespaces": []
+ },
+ {
+  "file": "obscure_api-15.jar",
+  "size": 964152,
+  "modid": "obscure_api",
+  "name": "Obscure API",
+  "version": "15",
+  "desc": "Heart of all Obscuria Collection mods.",
+  "authors": "Obscuria",
+  "has_data": 0,
+  "classes": 162,
+  "namespaces": [
+   "minecraft"
+  ]
+ },
+ {
+  "file": "octolib-1.19.2-0.3.jar",
+  "size": 280777,
+  "modid": "octolib",
+  "name": "OctoLib",
+  "version": "0.3",
+  "desc": "",
+  "authors": "SSKirillSS",
+  "has_data": 0,
+  "classes": 19,
+  "namespaces": []
+ },
+ {
+  "file": "oculus-mc1.19.2-1.6.9a.jar",
+  "size": 3503720,
+  "modid": "oculus",
+  "name": "Oculus",
+  "version": "1.6.9a",
+  "desc": "Unofficial Fork of \"Iris\", made to work with FML",
+  "authors": "coderbot, IMS212, Justsnoopy30, FoundationGames",
+  "has_data": 0,
+  "classes": 1635,
+  "namespaces": []
+ },
+ {
+  "file": "origins-accessbilities-1.19.2-1.1.1.jar",
+  "size": 93339,
+  "modid": "oriacs",
+  "name": "Origins: Accessibilities",
+  "version": "1.1.0",
+  "desc": "An add-on for the Origins mod making your Origins life easier.",
+  "authors": "LimonBlaze",
+  "has_data": 29,
+  "classes": 33,
+  "namespaces": [
+   "forge",
+   "oriacs",
+   "origins"
+  ]
+ },
+ {
+  "file": "origins-classes-forge-1.2.1.jar",
+  "size": 191259,
+  "modid": "origins_classes",
+  "name": "Origins: Classes",
+  "version": "1.2.1",
+  "desc": "An add-on for the Origins mod which adds classes to the game.",
+  "authors": "LimonBlaze",
+  "has_data": 80,
+  "classes": 66,
+  "namespaces": [
+   "origins-classes"
+  ]
+ },
+ {
+  "file": "origins-forge-1.19.2-1.7.1.7-all.jar",
+  "size": 1935495,
+  "modid": "origins",
+  "name": "Origins",
+  "version": "1.19.2-1.7.1.7",
+  "desc": "This mod adds several origins with passive abilities to the game, which you can choose from at the beginning of the game.",
+  "authors": "Apace",
+  "has_data": 81,
+  "classes": 139,
+  "namespaces": [
+   "origins"
+  ]
+ },
+ {
+  "file": "packetfixer-3.1.4-1.18-1.20.4-merged.jar",
+  "size": 163268,
+  "modid": "packetfixer",
+  "name": "PacketFixer",
+  "version": "3.1.4",
+  "desc": "A simple mod to solve various problems with packets.",
+  "authors": "TonimatasDEV",
+  "has_data": 0,
+  "classes": 147,
+  "namespaces": []
+ },
+ {
+  "file": "player-animation-lib-forge-1.0.2.jar",
+  "size": 181297,
+  "modid": "playeranimator",
+  "name": "Player Animator",
+  "version": "1.0.2",
+  "desc": "Look for FabricMC (or QuiltMC) builds...",
+  "authors": "KosmX",
+  "has_data": 0,
+  "classes": 115,
+  "namespaces": []
+ },
+ {
+  "file": "pluto-mc1.19.2-0.0.9.jar",
+  "size": 162595,
+  "modid": "pluto",
+  "name": "Pluto",
+  "version": "${file.jarVersion}",
+  "desc": "Pluto is a performance mod that optimizes Minecraft's networking stack and entity tracker.",
+  "authors": "AbdElAziz",
+  "has_data": 0,
+  "classes": 56,
+  "namespaces": []
+ },
+ {
+  "file": "polymorph-forge-0.46.6+1.19.2.jar",
+  "size": 257315,
+  "modid": "polymorph",
+  "name": "Polymorph",
+  "version": "0.46.6+1.19.2",
+  "desc": "No more recipe conflicts! Adds an option to choose the crafting result if more than one is available.",
+  "authors": "Illusive Soulworks",
+  "has_data": 0,
+  "classes": 91,
+  "namespaces": []
+ },
+ {
+  "file": "potfix-cataclysm-addon-1.0.6.jar",
+  "size": 3905,
+  "modid": "mixample",
+  "name": "mixample",
+  "version": "1.0.1",
+  "desc": "Small Forge mod whose only job is to run a mixin.",
+  "authors": "inklightly",
+  "has_data": 0,
+  "classes": 2,
+  "namespaces": []
+ },
+ {
+  "file": "recipeessentials-1.19.2-3.5.jar",
+  "size": 44186,
+  "modid": "recipeessentials",
+  "name": "recipeessentials mod",
+  "version": "${file.jarVersion}",
+  "desc": "recipeessentials mod",
+  "authors": "Someaddon",
+  "has_data": 0,
+  "classes": 27,
+  "namespaces": []
+ },
+ {
+  "file": "redirector-5.0.0.jar",
+  "size": 5793,
+  "modid": "redirector",
+  "name": "Redirector",
+  "version": "5.0.0",
+  "desc": "A Minecraft Mod.",
+  "authors": "TeamPotato",
+  "has_data": 0,
+  "classes": 3,
+  "namespaces": []
+ },
+ {
+  "file": "relics-1.19.2-0.6.2.5.jar",
+  "size": 1345845,
+  "modid": "relics",
+  "name": "Relics",
+  "version": "0.6.2.5",
+  "desc": "Just a mod about useful relics with unique mechanics ;)",
+  "authors": "SSKirillSS",
+  "has_data": 14,
+  "classes": 249,
+  "namespaces": [
+   "curios",
+   "forge",
+   "minecraft",
+   "relics"
+  ]
+ },
+ {
+  "file": "repurposed_structures_forge-6.3.29+1.19.2.jar",
+  "size": 7696256,
+  "modid": "repurposed_structures",
+  "name": "Repurposed Structures",
+  "version": "${file.jarVersion}",
+  "desc": "Taking existing vanilla structures and changing them up for extra variety!",
+  "authors": "TelepathicGrunt",
+  "has_data": 2218,
+  "classes": 197,
+  "namespaces": [
+   "forge",
+   "minecraft",
+   "pneumaticcraft",
+   "repurposed_structures"
+  ]
+ },
+ {
+  "file": "rhino-forge-1902.2.3-build.284.jar",
+  "size": 1719247,
+  "modid": "rhino",
+  "name": "Rhino",
+  "version": "1902.2.3-build.284",
+  "desc": "A fork of Mozilla's Rhino library, modified for use in mods",
+  "authors": "LatvianModder, Mozilla",
+  "has_data": 0,
+  "classes": 446,
+  "namespaces": []
+ },
+ {
+  "file": "right-click-harvest-3.2.3+1.19.2-forge.jar",
+  "size": 264091,
+  "modid": "rightclickharvest",
+  "name": "Right Click Harvest",
+  "version": "${file.jarVersion}",
+  "desc": "Allows you to harvest crops with a single right click.",
+  "authors": "Jamalam & Various Contributors",
+  "has_data": 6,
+  "classes": 5,
+  "namespaces": [
+   "rightclickharvest"
+  ]
+ },
+ {
+  "file": "royal_variations_[Forge]_1.19.2_1.0.jar",
+  "size": 211898,
+  "modid": "royalvariations",
+  "name": "Royal Variations",
+  "version": "1.0.0",
+  "desc": "Adds enhanced royal variations of vanilla mobs with their own characteristics",
+  "authors": "Mongoose_artist",
+  "has_data": 19,
+  "classes": 88,
+  "namespaces": [
+   "royalvariations"
+  ]
+ },
+ {
+  "file": "rubidium-mc1.19.2-0.6.2c.jar",
+  "size": 1407451,
+  "modid": "rubidium",
+  "name": "Rubidium",
+  "version": "0.6.2c",
+  "desc": "Rubidium is a Unofficial Fork of the Sodium maked to work on FML.",
+  "authors": "NanoLive",
+  "has_data": 0,
+  "classes": 491,
+  "namespaces": []
+ },
+ {
+  "file": "rubidium_extras-1.19.2_v1.4.3.jar",
+  "size": 63223,
+  "modid": "rubidium_extras",
+  "name": "Rubidium Extras",
+  "version": "${file.jarVersion}",
+  "desc": "Adds Extra Settings to Rubidium.",
+  "authors": "TeamDeusVult",
+  "has_data": 0,
+  "classes": 40,
+  "namespaces": []
+ },
+ {
+  "file": "saturn-mc1.19.2-0.1.4.jar",
+  "size": 99426,
+  "modid": "saturn",
+  "name": "Saturn",
+  "version": "0.1.4",
+  "desc": "A performance optimization mod designed to optimize Minecraft's memory usage.",
+  "authors": "AbdElAziz",
+  "has_data": 0,
+  "classes": 48,
+  "namespaces": []
+ },
+ {
+  "file": "savage_and_ravage-1.19.2-5.0.5.jar",
+  "size": 1317317,
+  "modid": "savage_and_ravage",
+  "name": "Savage & Ravage",
+  "version": "${file.jarVersion}",
+  "desc": "A mod that improves and expands on illagers through new structures, enemies and challenges.",
+  "authors": "Team Abnormals",
+  "has_data": 100,
+  "classes": 137,
+  "namespaces": [
+   "forge",
+   "minecraft",
+   "quark",
+   "savage_and_ravage"
+  ]
+ },
+ {
+  "file": "servercore-forge-1.3.6+1.19.2.jar",
+  "size": 1186247,
+  "modid": "servercore",
+  "name": "ServerCore",
+  "version": "1.3.6+1.19.2",
+  "desc": "A forge mod that aims to optimize the minecraft server.",
+  "authors": "Wesley1808",
+  "has_data": 0,
+  "classes": 722,
+  "namespaces": []
+ },
+ {
+  "file": "shadowizardlib-1.19.2-1.0.8.jar",
+  "size": 27142,
+  "modid": "shadowizardlib",
+  "name": "ShadowizardLib",
+  "version": "${file.jarVersion}",
+  "desc": "",
+  "authors": "Mindoth",
+  "has_data": 0,
+  "classes": 13,
+  "namespaces": []
+ },
+ {
+  "file": "simplyswords-forge-1.47.0-1.19.2.jar",
+  "size": 32228283,
+  "modid": "simplyswords",
+  "name": "Simply Swords",
+  "version": "1.47.0-1.19.2",
+  "desc": "A variety of unique weapons to add to your minecraft repertoire",
+  "authors": "Sweenus",
+  "has_data": 1309,
+  "classes": 80,
+  "namespaces": [
+   "c",
+   "levelz",
+   "mythicmetals",
+   "simplyswords"
+  ]
+ },
+ {
+  "file": "smallships-forge-1.19.2-2.0.0-b1.3.1.jar",
+  "size": 1786023,
+  "modid": "smallships",
+  "name": "Small Ships",
+  "version": "2.0.0-b1.3.1",
+  "desc": "This mod adds vanilla friendly ships into Minecraft!",
+  "authors": "talhanation, metroite",
+  "has_data": 66,
+  "classes": 113,
+  "namespaces": [
+   "smallships"
+  ]
+ },
+ {
+  "file": "smoothboot(reloaded)-mc1.19.2-0.0.4.jar",
+  "size": 40952,
+  "modid": "smoothboot",
+  "name": "Smooth Boot (Reloaded)",
+  "version": "0.0.4",
+  "desc": "Tweaks for Minecraft CPU scheduling.",
+  "authors": "AbdElAziz",
+  "has_data": 0,
+  "classes": 11,
+  "namespaces": []
+ },
+ {
+  "file": "solapplepie-1.19.2-2.2.0.jar",
+  "size": 190031,
+  "modid": "solapplepie",
+  "name": "Spice of Life: Apple Pie Edition",
+  "version": "${file.jarVersion}",
+  "desc": "A mod designed to encourage dietary variety!\n\nIt does so by rewarding the player with customizable benefits depending on how diverse their diet is. These benefits\nrequire maintaining a diverse diet, rather than a one-time consumption.",
+  "authors": "tarinoita",
+  "has_data": 5,
+  "classes": 78,
+  "namespaces": [
+   "solapplepie"
+  ]
+ },
+ {
+  "file": "sons-of-sins-1.19.2-2.1.6.jar",
+  "size": 4357542,
+  "modid": "sons_of_sins",
+  "name": "Sons of Sins",
+  "version": "2.1.6",
+  "desc": "Here is the Sons of Sins mod, this mod adds seven creatures that represent each of them, one of the seven capital sins, they are violent creatures thirsty for blood",
+  "authors": "Furti_Two",
+  "has_data": 107,
+  "classes": 577,
+  "namespaces": [
+   "alexscaves",
+   "minecraft",
+   "sons_of_sins"
+  ]
+ },
+ {
+  "file": "sophisticatedbackpacks-1.19.2-3.20.2.1035.jar",
+  "size": 835625,
+  "modid": "sophisticatedbackpacks",
+  "name": "Sophisticated Backpacks",
+  "version": "${file.jarVersion}",
+  "desc": "Fancy and functional backpacks.",
+  "authors": "P3pp3rF1y, Ridanisaurus",
+  "has_data": 188,
+  "classes": 262,
+  "namespaces": [
+   "carryon",
+   "curios",
+   "sophisticatedbackpacks"
+  ]
+ },
+ {
+  "file": "sophisticatedcore-1.19.2-0.6.4.730.jar",
+  "size": 1059085,
+  "modid": "sophisticatedcore",
+  "name": "Sophisticated Core",
+  "version": "${file.jarVersion}",
+  "desc": "Base mod of Sophisticated mods.",
+  "authors": "P3pp3rF1y",
+  "has_data": 2,
+  "classes": 500,
+  "namespaces": [
+   "forge",
+   "sophisticatedcore"
+  ]
+ },
+ {
+  "file": "stalwart-dungeons-1.19.2-1.2.8.jar",
+  "size": 1051964,
+  "modid": "stalwart_dungeons",
+  "name": "Stalwart Dungeons",
+  "version": "1.2.8",
+  "desc": "Adds hard dungeons for adventurers who want to collect relics and atrifacts",
+  "authors": "Furti_Two, Zezer_123",
+  "has_data": 92,
+  "classes": 305,
+  "namespaces": [
+   "minecraft",
+   "stalwart_dungeons"
+  ]
+ },
+ {
+  "file": "starlight-1.1.1+forge.cf5b10b.jar",
+  "size": 110720,
+  "modid": "starlight",
+  "name": "Starlight",
+  "version": "1.1.1+forge.a3aea74",
+  "desc": "Rewrites the light engine to fix lighting performance and lighting errors",
+  "authors": "Spottedleaf",
+  "has_data": 0,
+  "classes": 35,
+  "namespaces": []
+ },
+ {
+  "file": "strictly_origins_v9.2.1_1.19.2.jar",
+  "size": 194818,
+  "modid": "strictly_origins",
+  "name": "Strictly Origins",
+  "version": "8",
+  "desc": "",
+  "authors": "orangejewce92",
+  "has_data": 160,
+  "classes": 14,
+  "namespaces": [
+   "origins",
+   "strictly",
+   "strictly_origins"
+  ]
+ },
+ {
+  "file": "structure_gel-1.19.2-2.7.3.jar",
+  "size": 706623,
+  "modid": "structure_gel",
+  "name": "Structure Gel API",
+  "version": "${file.jarVersion}",
+  "desc": "An API mod to improve the developer side of structure gen",
+  "authors": "Silver_David, KingPhygieBoo, Jonathing",
+  "has_data": 5,
+  "classes": 266,
+  "namespaces": [
+   "minecraft",
+   "structure_gel"
+  ]
+ },
+ {
+  "file": "structureessentials-1.19.2-3.2.jar",
+  "size": 28449,
+  "modid": "structureessentials",
+  "name": "Structure Essentials mod",
+  "version": "${file.jarVersion}",
+  "desc": "Fixes and logging for structures",
+  "authors": "Someaddon",
+  "has_data": 0,
+  "classes": 12,
+  "namespaces": []
+ },
+ {
+  "file": "structurize-1.19.2-1.0.689-RELEASE.jar",
+  "size": 1074925,
+  "modid": "structurize",
+  "name": "Structurize",
+  "version": "1.19.2-1.0.689-RELEASE",
+  "desc": "An astonishing way to copy & paste structures!\n\nAllows you to:\n - save structures of your choice into a file of small size\n - load them back and place them anywhere anytime\n - create various shapes using math formulas\n - and many other nice things a great builder would love to have!",
+  "authors": "LDT Team",
+  "has_data": 7,
+  "classes": 261,
+  "namespaces": [
+   "structurize"
+  ]
+ },
+ {
+  "file": "stylecolonies-1.2.2.jar",
+  "size": 26945994,
+  "modid": "stylecolonies",
+  "name": "stylecolonies mod",
+  "version": "${file.jarVersion}",
+  "desc": "Adds a lot of additional styles",
+  "authors": "Raycoms",
+  "has_data": 0,
+  "classes": 1,
+  "namespaces": []
+ },
+ {
+  "file": "supplementaries-1.19.2-2.4.20.jar",
+  "size": 14957348,
+  "modid": "supplementaries",
+  "name": "Supplementaries",
+  "version": "1.19.2-2.4.20",
+  "desc": "Many functional and useful Vanilla+ blocks",
+  "authors": "MehVahdJukaar, Plantkillable",
+  "has_data": 895,
+  "classes": 945,
+  "namespaces": [
+   "create",
+   "curios",
+   "farmersdelight",
+   "forge",
+   "minecraft",
+   "neapolitan",
+   "quark",
+   "sereneseasons"
+  ]
+ },
+ {
+  "file": "takesapillage-1.0.3-1.19.2.jar",
+  "size": 3758527,
+  "modid": "takesapillage",
+  "name": "It Takes A Pillage",
+  "version": "1.0.3",
+  "desc": "Advancing the pillager civilization.",
+  "authors": "izofar",
+  "has_data": 63,
+  "classes": 48,
+  "namespaces": [
+   "minecraft",
+   "takesapillage"
+  ]
+ },
+ {
+  "file": "tlc_forge-1.0.2-R-1.19.2.jar",
+  "size": 707141,
+  "modid": "tlc",
+  "name": "The Lost Castle",
+  "version": "1.0.2",
+  "desc": "The Lost Castle introduces an enormous castle that you'll be able to find with the help of a map given by a journeyman cartographer.",
+  "authors": "Team Remastered",
+  "has_data": 25,
+  "classes": 8,
+  "namespaces": [
+   "tlc"
+  ]
+ },
+ {
+  "file": "toms_storage-1.19-1.5.11.jar",
+  "size": 513113,
+  "modid": "toms_storage",
+  "name": "Tom's Simple Storage Mod",
+  "version": "${file.jarVersion}",
+  "desc": "Simple vanilla style storage mod.",
+  "authors": "tom5454",
+  "has_data": 43,
+  "classes": 170,
+  "namespaces": [
+   "curios",
+   "minecraft",
+   "toms_storage"
+  ]
+ },
+ {
+  "file": "toofast-1.19-0.2.2.4.jar",
+  "size": 3883,
+  "modid": "toofast",
+  "name": "Too Fast",
+  "version": "0.2.2.4",
+  "desc": "Disables \"moved too quickly\".",
+  "authors": "Noobanidus",
+  "has_data": 0,
+  "classes": 2,
+  "namespaces": []
+ },
+ {
+  "file": "toomanyglyphs-1.19.2-2.2.376.1564.jar",
+  "size": 105096,
+  "modid": "toomanyglyphs",
+  "name": "Too Many Glyphs",
+  "version": "${file.jarVersion}",
+  "desc": "A mixed bag of add-ons to make Ars Nouveau spells more flexible, more intelligent, or maybe in a few cases just plain overpowered.",
+  "authors": "DerringersMods",
+  "has_data": 35,
+  "classes": 39,
+  "namespaces": [
+   "ars_nouveau",
+   "toomanyglyphs"
+  ]
+ },
+ {
+  "file": "totw_modded-forge-1.19.2-1.0.5.jar",
+  "size": 288948,
+  "modid": "totw_modded",
+  "name": "Towers of the Wild Modded",
+  "version": "${file.jarVersion}",
+  "desc": "This is a long form description of the mod. You can write whatever you want here\n\nHave some lorem ipsum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis lacinia magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sagittis luctus odio",
+  "authors": "celsiusqc",
+  "has_data": 105,
+  "classes": 1,
+  "namespaces": [
+   "totw_modded"
+  ]
+ },
+ {
+  "file": "towntalk-1.19.2-1.0.1.jar",
+  "size": 48753469,
+  "modid": "towntalk",
+  "name": "TownTalk",
+  "version": "1.0.1",
+  "desc": "TownTalk is an Expansion for Minecolonies that adds more Voicelines to Minecolonies",
+  "authors": "LDT Team",
+  "has_data": 0,
+  "classes": 1,
+  "namespaces": []
+ },
+ {
+  "file": "transmog-forge-1.2.2+1.19.2.jar",
+  "size": 96198,
+  "modid": "transmog",
+  "name": "Transmog",
+  "version": "${file.jarVersion}",
+  "desc": "Change the appearance of your items without modifying their behavior/stats!",
+  "authors": "Hidoni",
+  "has_data": 6,
+  "classes": 59,
+  "namespaces": [
+   "minecraft",
+   "transmog"
+  ]
+ },
+ {
+  "file": "twigs-forge-1.19.2-3.0.1.jar",
+  "size": 2743435,
+  "modid": "twigs",
+  "name": "Twigs",
+  "version": "1.19.2-3.0.1",
+  "desc": "A Minecraft mod all about building, adding new and interesting materials, as well as new renditions of current vanilla blocks.\n\nAuthor:\n- Ninni\n\nContributors:\n- Orcinus\n- Andante",
+  "authors": "Ninni",
+  "has_data": 1398,
+  "classes": 73,
+  "namespaces": [
+   "forge",
+   "minecraft",
+   "twigs"
+  ]
+ },
+ {
+  "file": "twilightforest-1.19.2-4.2.1518-universal.jar",
+  "size": 23563760,
+  "modid": "twilightforest",
+  "name": "The Twilight Forest",
+  "version": "${file.jarVersion}",
+  "desc": "An enchanted forest dimension.",
+  "authors": "Benimatic, AtomicBlom, Drullkus, Killer_Demon, quadraxis, Tamaized, williewillus, Andromander, GizmoTheMoonPig, Jodlodi",
+  "has_data": 1767,
+  "classes": 1488,
+  "namespaces": [
+   "curios",
+   "forge",
+   "minecraft",
+   "twilightforest"
+  ]
+ },
+ {
+  "file": "upgradedcore-1.19.2-4.1.0.1-release.jar",
+  "size": 41516,
+  "modid": "upgradedcore",
+  "name": "Upgraded Core",
+  "version": "${file.jarVersion}",
+  "desc": "Upgraded Core",
+  "authors": "Rolfmao25",
+  "has_data": 1,
+  "classes": 23,
+  "namespaces": [
+   "upgradedcore"
+  ]
+ },
+ {
+  "file": "upgradednetherite-1.19.2-5.1.0.9-release.jar",
+  "size": 1248319,
+  "modid": "upgradednetherite",
+  "name": "Upgraded Netherite",
+  "version": "${file.jarVersion}",
+  "desc": "Give some love to your Netherite !",
+  "authors": "Rolfmao25",
+  "has_data": 285,
+  "classes": 60,
+  "namespaces": [
+   "forge",
+   "minecraft",
+   "upgradednetherite"
+  ]
+ },
+ {
+  "file": "upgradednetherite_items-1.19.2-4.1.0.2-release.jar",
+  "size": 138770,
+  "modid": "upgradednetherite_items",
+  "name": "Upgraded Netherite : Items",
+  "version": "${file.jarVersion}",
+  "desc": "Give love to your Netherite !",
+  "authors": "Rolfmao25",
+  "has_data": 31,
+  "classes": 29,
+  "namespaces": [
+   "curios",
+   "upgradednetherite_items"
+  ]
+ },
+ {
+  "file": "upgradednetherite_ultimate-1.19.2-4.1.0.4-release.jar",
+  "size": 179851,
+  "modid": "upgradednetherite_ultimate",
+  "name": "Upgraded Netherite : Ultimerite",
+  "version": "${file.jarVersion}",
+  "desc": "Give love to your Netherite !",
+  "authors": "Rolfmao25",
+  "has_data": 19,
+  "classes": 29,
+  "namespaces": [
+   "upgradednetherite_ultimate"
+  ]
+ },
+ {
+  "file": "valhelsia_core-forge-1.19.2-0.5.0.jar",
+  "size": 702728,
+  "modid": "valhelsia_core",
+  "name": "Valhelsia Core",
+  "version": "${file.jarVersion}",
+  "desc": "Valhelsia Core is an API for our different mods.",
+  "authors": "Valhelsia Team",
+  "has_data": 1,
+  "classes": 159,
+  "namespaces": [
+   "valhelsia_core"
+  ]
+ },
+ {
+  "file": "waystones-forge-1.19.2-11.4.2.jar",
+  "size": 409113,
+  "modid": "waystones",
+  "name": "Waystones",
+  "version": "${file.jarVersion}",
+  "desc": "Teleport back to activated waystones. For Survival, Adventure or Servers.",
+  "authors": "BlayTheNinth",
+  "has_data": 89,
+  "classes": 171,
+  "namespaces": [
+   "minecraft",
+   "repurposed_structures",
+   "waystones"
+  ]
+ },
+ {
+  "file": "whisperwoods-1.19-2.1.1-forge.jar",
+  "size": 1236082,
+  "modid": "whisperwoods",
+  "name": "Whisperwoods",
+  "version": "1.19-2.1.1",
+  "desc": "Spooky forest stuff for spooky jam",
+  "authors": "cybercat5555, itsmeowdev",
+  "has_data": 38,
+  "classes": 194,
+  "namespaces": [
+   "betteranimalsplus",
+   "minecraft",
+   "whisperwoods"
+  ]
+ },
+ {
+  "file": "woodworks-1.19.2-2.2.2.jar",
+  "size": 851514,
+  "modid": "woodworks",
+  "name": "Woodworks",
+  "version": "${file.jarVersion}",
+  "desc": "Adds very varying wood variant blocks to improve your building capabilities!",
+  "authors": "Team Abnormals",
+  "has_data": 865,
+  "classes": 31,
+  "namespaces": [
+   "forge",
+   "minecraft",
+   "quark",
+   "woodworks"
+  ]
+ },
+ {
+  "file": "xaerominimap-forge-1.19.2-25.3.13.jar",
+  "size": 2125054,
+  "modid": "xaerominimap",
+  "name": "Xaero's Minimap",
+  "version": "25.3.13",
+  "desc": "The most vanilla-looking minimap for Minecraft.",
+  "authors": "xaero96",
+  "has_data": 0,
+  "classes": 680,
+  "namespaces": []
+ },
+ {
+  "file": "xaeroworldmap-forge-1.19.2-1.40.16.jar",
+  "size": 1368884,
+  "modid": "xaeroworldmap",
+  "name": "Xaero's World Map",
+  "version": "1.40.16",
+  "desc": "A self-writing fullscreen map which also works as an add-on to Xaero's Minimap.",
+  "authors": "xaero96",
+  "has_data": 0,
+  "classes": 367,
+  "namespaces": []
+ },
+ {
+  "file": "xptome-1.19-2.1.7.jar",
+  "size": 19495,
+  "modid": "xpbook",
+  "name": "XP Tome",
+  "version": "${file.jarVersion}",
+  "desc": "Adds a book that can store a configurable amount of XP.",
+  "authors": "bl4ckscor3",
+  "has_data": 1,
+  "classes": 5,
+  "namespaces": [
+   "xpbook"
+  ]
+ },
+ {
+  "file": "yeetusexperimentus-1.0.1-build.2+mc1.19.1.jar",
+  "size": 5869,
+  "modid": "yeetusexperimentus",
+  "name": "Yeetus Experimentus",
+  "version": "1.0.1-build.2+mc1.19.1",
+  "desc": "Disable's the Experimental Settings popup, which appears when you create or load world.",
+  "authors": "Sunekaer",
+  "has_data": 0,
+  "classes": 4,
+  "namespaces": []
+ },
+ {
+  "file": "zmedievalmusic-1.19.2-2.0.jar",
+  "size": 281842572,
+  "modid": "medievalmusic",
+  "name": "medievalmusic mod",
+  "version": "${file.jarVersion}",
+  "desc": "medievalmusic mod",
+  "authors": "Love, Cheese and small house plants",
+  "has_data": 0,
+  "classes": 6,
+  "namespaces": []
+ }
+]

@@ -1,0 +1,9 @@
+{
+  "group": "smooth_obsidian",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "tag": "forge:smooth_obsidian_blocks"
+  },
+  "result": "phantasm:smooth_obsidian_bricks_stairs"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blue_skies:camellia"
+    }
+  ],
+  "result": {
+    "item": "minecraft:pink_dye"
+  }
+}

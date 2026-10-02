@@ -1,0 +1,13 @@
+{
+  "group": "ender_clover_dye",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "phantasm:ender_clover"
+    }
+  ],
+  "result": {
+    "item": "minecraft:purple_dye",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "itemfilters:filter",
+	"result": {
+		"item": "itemfilters:damage",
+		"count": 4
+	},
+	"pattern": [
+		"  F",
+		"FF ",
+		" F "
+	],
+	"key": {
+		"F": {
+			"tag": "itemfilters:filters"
+		}
+	}
+}

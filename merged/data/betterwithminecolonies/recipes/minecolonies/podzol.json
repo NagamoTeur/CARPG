@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ggg",
+    "333",
+    "xxx"
+  ],
+  "key": {
+    "g": {
+      "item": "minecraft:grass_block"
+    },
+    "x": {
+      "item": "minecraft:coarse_dirt"
+    },
+    "3": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "result": {
+    "item": "minecraft:podzol",
+    "count": 16
+  }
+}

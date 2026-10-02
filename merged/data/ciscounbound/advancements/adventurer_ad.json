@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cisco_mod:adventurer_helmet"
+    },
+    "title": {
+      "translate": "advancements.adventurer_ad.title"
+    },
+    "description": {
+      "translate": "advancements.adventurer_ad.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adventurer_ad": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cisco_mod:divine_ruby_advancement"
+}

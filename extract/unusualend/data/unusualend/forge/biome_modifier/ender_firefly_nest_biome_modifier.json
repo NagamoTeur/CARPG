@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "end_midlands",
+    "end_highlands"
+  ],
+  "features": "unusualend:ender_firefly_nest",
+  "step": "surface_structures"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cisco_mod:absolute_equillibrium"
+    },
+    "title": {
+      "translate": "advancements.absolute_balance.title"
+    },
+    "description": {
+      "translate": "advancements.absolute_balance.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "absolute_balance": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cisco_mod:nightfall_ad"
+}

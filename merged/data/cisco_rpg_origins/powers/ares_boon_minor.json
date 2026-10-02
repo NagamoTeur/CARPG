@@ -1,0 +1,12 @@
+{
+    "name": "Minor Boon of Ferocity",
+    "description": "Ares blesses your strikes granting you 10 percent increased critical chance.",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "apotheosis:crit_chance",
+        "operation": "addition",
+        "value": 0.1,
+        "name": "Minor Boon of Lethality "
+    },
+    "update_health": true
+}

@@ -1,0 +1,24 @@
+{
+  "icon": {
+    "type": "texture",
+    "icon": {
+      "texture": "blue_skies:textures/gui/journal/icons/venom_spider.png"
+    }
+  },
+  "lores": [
+    {
+      "display": {
+        "type": "entity",
+        "display": {
+          "entity": "blue_skies:venom_spider",
+          "scale": 50,
+          "y_offset": 30
+        }
+      },
+      "text": "blue_skies.everdawn.venom_spider.lore"
+    }
+  ],
+  "requirement": "blue_skies:enter_everdawn",
+  "section": "blue_skies:everdawn",
+  "title": "blue_skies.everdawn.venom_spider.title"
+}

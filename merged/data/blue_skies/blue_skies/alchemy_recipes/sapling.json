@@ -1,0 +1,12 @@
+{
+  "type": "blue_skies:catylist",
+  "catylists": [
+    "minecraft:echo_shard"
+  ],
+  "input_tags": [
+    "minecraft:saplings"
+  ],
+  "results_tags": [
+    "minecraft:saplings"
+  ]
+}

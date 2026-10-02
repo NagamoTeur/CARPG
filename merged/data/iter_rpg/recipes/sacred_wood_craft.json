@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "iter_rpg:sacred_log"
+    },
+    "1": {
+      "item": "iter_rpg:sacred_log"
+    },
+    "2": {
+      "item": "iter_rpg:sacred_log"
+    },
+    "3": {
+      "item": "iter_rpg:sacred_log"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:sacred_wood",
+    "count": 3
+  }
+}

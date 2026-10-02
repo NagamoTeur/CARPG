@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "woodworks:config",
+          "inverted": true,
+          "value": "wooden_bookshelves"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "#": {
+            "tag": "minecraft:planks"
+          },
+          "X": {
+            "item": "minecraft:book"
+          }
+        },
+        "pattern": [
+          "###",
+          "XXX",
+          "###"
+        ],
+        "result": {
+          "item": "minecraft:bookshelf"
+        }
+      }
+    }
+  ]
+}

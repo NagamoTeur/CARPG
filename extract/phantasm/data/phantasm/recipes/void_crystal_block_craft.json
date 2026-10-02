@@ -1,0 +1,26 @@
+{
+  "group": "crystal",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "phantasm:void_crystal_spike_tip"
+    },
+    "1": {
+      "item": "phantasm:void_crystal_spike_tip"
+    },
+    "2": {
+      "item": "phantasm:void_crystal_spike_tip"
+    },
+    "3": {
+      "item": "phantasm:void_crystal_spike_tip"
+    }
+  },
+  "result": {
+    "item": "phantasm:void_crystal_block",
+    "count": 1
+  }
+}

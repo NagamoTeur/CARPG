@@ -1,0 +1,46 @@
+{
+  "parent": "dungeons_plus:nether/find_soul_prison",
+  "criteria": {
+    "kill_ghast": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:ghast"
+            }
+          }
+        ],
+        "killing_blow": {
+          "direct_entity": {
+            "type": "dungeons_plus:soul_fireball"
+          },
+          "is_projectile": true
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "dungeons_plus:advancements.nether.shoot_ghast_with_soul.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "dungeons_plus:soul_cannon",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "dungeons_plus:advancements.nether.shoot_ghast_with_soul.title"
+    }
+  },
+  "requirements": [
+    [
+      "kill_ghast"
+    ]
+  ]
+}

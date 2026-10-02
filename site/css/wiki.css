@@ -1,0 +1,36 @@
+.wikiwrap{display:grid;grid-template-columns:270px minmax(0,1fr);gap:22px;max-width:1500px;margin:0 auto;padding:16px}
+#wnav{position:sticky;top:64px;align-self:start;max-height:calc(100vh - 80px);overflow:auto;padding-right:6px}
+#wnav .navsec{margin-bottom:6px;border:1px solid var(--line);border-radius:9px;background:var(--bg2)}
+#wnav summary{cursor:pointer;padding:7px 12px;font-weight:600;color:var(--acc);font-family:Georgia,serif}
+#wnav a{display:block;padding:4px 14px 4px 20px;color:var(--txt);font-size:.92rem;border-left:3px solid transparent}
+#wnav a:hover{background:var(--bg3);text-decoration:none}
+#wnav a.on{border-left-color:var(--acc);background:var(--bg3);color:var(--acc)}
+main.wiki{min-width:0;max-width:980px}
+main.wiki h2{margin-top:1.6em;border-bottom:1px solid var(--line);padding-bottom:.2em}
+main.wiki h3{color:var(--txt)}
+main.wiki table{border-collapse:collapse;width:100%;margin:10px 0}
+main.wiki th,main.wiki td{border-bottom:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
+main.wiki th{color:var(--mut);font-size:.8rem;text-transform:uppercase}
+main.wiki blockquote{border-left:3px solid var(--acc2);margin:10px 0;padding:4px 14px;background:var(--bg2)}
+main.wiki code{background:var(--bg3);padding:1px 5px;border-radius:4px}
+.admonition{border:1px solid var(--line);border-left:4px solid var(--acc2);background:var(--bg2);border-radius:8px;padding:8px 14px;margin:14px 0}
+.admonition.warning{border-left-color:var(--bad)}.admonition.tip{border-left-color:var(--good)}.admonition.example{border-left-color:var(--acc)}
+.admonition-title{font-weight:700;margin:0 0 4px}
+.btn{display:inline-block;padding:7px 14px;background:var(--acc);color:#1a1405!important;border-radius:8px;font-weight:600}
+.btn:hover{text-decoration:none;filter:brightness(1.1)}
+.filter{width:100%;margin:8px 0}
+#q{width:260px}
+#results{position:absolute;top:52px;left:210px;width:420px;max-height:70vh;overflow:auto;background:var(--bg2);border:1px solid var(--acc);border-radius:9px;z-index:40;box-shadow:var(--shadow)}
+#results a{display:block;padding:7px 12px;border-bottom:1px solid var(--line);color:var(--txt)}
+#results a small{display:block;color:var(--mut)}
+#navbtn{display:none}
+@media (max-width:900px){.wikiwrap{grid-template-columns:1fr}#wnav{display:none;position:static;max-height:none}#wnav.open{display:block}#navbtn{display:inline-block}#q{width:150px}#results{left:8px;width:calc(100vw - 16px)}}
+.hero{padding:22px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(135deg,var(--bg2),var(--bg3));margin-bottom:18px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin:14px 0}
+.tile{display:block;padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--bg2);color:var(--txt)}
+.tile:hover{border-color:var(--acc);text-decoration:none;transform:translateY(-1px)}
+.tile b{display:block;color:var(--acc);font-family:Georgia,serif;font-size:1.05rem}
+.calc input,.calc select{margin:2px}
+.calc table td{padding:3px 8px}
+details.quest{border:1px solid var(--line);border-radius:8px;margin:5px 0;padding:6px 12px;background:var(--bg2)}
+details.quest summary{cursor:pointer}details.quest[open]{border-color:var(--acc)}

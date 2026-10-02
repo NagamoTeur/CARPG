@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "item": "phantasm:crystal_spike_tip"
+    },
+    "title": {
+      "translate": "advancements.get_crystal.title"
+    },
+    "description": {
+      "translate": "advancements.get_crystal.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_crystal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "phantasm:crystal_spike_tip"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "phantasm:crystalily_uncraft",
+      "phantasm:crystal_block_craft",
+      "phantasm:crystiles_recipe",
+      "phantasm:crystiles_stairs_recipe",
+      "phantasm:crystiles_slab_recipe",
+      "phantasm:crystiles_stair_craft",
+      "phantasm:crystiles_slab_craft",
+      "phantasm:crystiles_pillar_craft",
+      "phantasm:crystiles_pillar_recipe",
+      "phantasm:crystiles_craft",
+      "phantasm:crystal_block_uncraft",
+      "phantasm:crystal_framed_glass_recipe",
+      "phantasm:crystal_framed_glass_pane_recipe"
+    ]
+  },
+  "parent": "phantasm:enter_dreaming_den"
+}

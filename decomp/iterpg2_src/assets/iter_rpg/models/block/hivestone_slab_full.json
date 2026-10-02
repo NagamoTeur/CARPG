@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "iter_rpg:blocks/hivestone",
+    "top": "iter_rpg:blocks/hivestone",
+    "side": "iter_rpg:blocks/hivestone"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HA",
+    "AH"
+  ],
+  "key": {
+    "H": {
+      "item": "unusualend:shiny_crystal_block"
+    },
+    "A": {
+      "item": "minecraft:amethyst_block"
+    }
+  },
+  "result": {
+    "item": "unusualend:shiny_crystal_tiles",
+    "count": 4
+  }
+}

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Combat &amp; statistiques — Wiki CARPG</title>
+<meta name="description" content="Comment lire ses statistiques : armure, esquive, critiques, puissance de sorts">
+<link rel="stylesheet" href="../css/app.css"><link rel="stylesheet" href="../css/wiki.css">
+</head><body>
+<header class="top"><a class="brand" href="../index.html">⚔ CARPG</a>
+<button id="navbtn" class="sm" aria-label="Menu">☰ Menu</button>
+<input id="q" type="search" placeholder="Rechercher dans le wiki…" autocomplete="off"><div id="results" class="hidden"></div>
+<span class="spacer"></span><a href="../pob/index.html"><button class="pri">Ouvrir le planificateur de build</button></a></header>
+<div class="wikiwrap"><nav id="wnav"><details class="navsec" ><summary>Démarrer</summary><a href="../wiki/index.html" class="">Accueil</a><a href="../wiki/premiers-pas.html" class="">Premiers pas</a><a href="../wiki/monde.html" class="">Le monde &amp; le danger</a><a href="../wiki/campagne.html" class="">La campagne</a><a href="../wiki/survie.html" class="">Mort, sauvegarde &amp; sécurité</a></details><details class="navsec" open><summary>Personnage</summary><a href="../wiki/origines.html" class="">Origines</a><a href="../wiki/classes.html" class="">Classes</a><a href="../wiki/benedictions.html" class="">Bénédictions divines</a><a href="../wiki/talents.html" class="">Arbre de talents</a><a href="../wiki/combat.html" class="on">Combat &amp; statistiques</a></details><details class="navsec" ><summary>Équipement</summary><a href="../wiki/equipement.html" class="">Rareté, affixes &amp; sockets</a><a href="../wiki/gemmes.html" class="">Gemmes</a><a href="../wiki/affixes.html" class="">Catalogue des affixes</a><a href="../wiki/atelier.html" class="">Ateliers &amp; enchantement</a><a href="../wiki/objets-campagne.html" class="">Équipement de campagne</a><a href="../wiki/accessoires.html" class="">Accessoires &amp; reliques</a></details><details class="navsec" ><summary>Magie</summary><a href="../wiki/magie.html" class="">Comprendre la magie</a><a href="../wiki/sorts.html" class="">Catalogue des sorts (Iron's)</a><a href="../wiki/ars.html" class="">Glyphes d'Ars Nouveau</a></details><details class="navsec" ><summary>Boss</summary><a href="../wiki/boss.html" class="">Guide des boss</a></details><details class="navsec" ><summary>Builds</summary><a href="../wiki/builds/index.html" class="">Tous les builds</a><a href="../wiki/builds/mage-ender.html" class="">Mage sombre (Ender)</a><a href="../wiki/builds/justicier.html" class="">Justicier sacré</a><a href="../wiki/builds/mage-feu.html" class="">Chevalier-mage du Phénix</a><a href="../wiki/builds/mage-foudre.html" class="">Mage de la tempête</a><a href="../wiki/builds/necro.html" class="">Chaman nécromant</a><a href="../wiki/builds/archer.html" class="">Tireur d'élite</a><a href="../wiki/builds/berserker.html" class="">Berserker du Nord</a><a href="../wiki/builds/chevalier.html" class="">Chevalier gardien</a><a href="../wiki/builds/assassin.html" class="">Lame fantôme</a><a href="../wiki/builds/paladin-feu.html" class="">Templier du Phénix</a><a href="../wiki/builds/druide.html" class="">Druide du marais</a><a href="../wiki/builds/chasseur-tresors.html" class="">Chasseur de trésors</a></details><details class="navsec" ><summary>Vie quotidienne</summary><a href="../wiki/vie.html" class="">Cuisine, ferme, colonie &amp; stockage</a></details><details class="navsec" ><summary>Référence</summary><a href="../wiki/outil.html" class="">Utiliser le planificateur</a><a href="../wiki/quetes.html" class="">Le livre de quêtes</a><a href="../wiki/mods.html" class="">Liste des mods</a><a href="../wiki/glossaire.html" class="">Glossaire</a><a href="../wiki/faq.html" class="">FAQ</a></details></nav>
+<main class="wiki"><h1>Combat &amp; statistiques</h1><p>Tout ce que ton équipement, ton arbre de talents, ton origine et tes gemmes te donnent se résume à des <strong>statistiques</strong> (« attributs »). Voici ce qu'elles font <strong>vraiment</strong>, d'après le code des mods.</p>
+<h2 id="comment-les-bonus-sadditionnent">Comment les bonus s'additionnent</h2>
+<p>Chaque bonus a un type :</p>
+<ul>
+<li><strong>+X</strong> (ajout) : s'additionne à la base. </li>
+<li><strong>+X %</strong> « de base » : s'additionne avec les autres « % de base » puis multiplie la base.</li>
+<li><strong>×(1+X)</strong> « total » : multiplie le résultat, <strong>séparément pour chaque source</strong> — donc plusieurs bonus « total » <strong>se multiplient entre eux</strong>.</li>
+</ul>
+<p>Formule : <strong>(base + Σ ajouts) × (1 + Σ % de base) × Π(1 + % total)</strong>. C'est pour ça que les gemmes de puissance de sorts (souvent « total ») explosent quand on en empile.</p>
+<h2 id="defense">Défense</h2>
+<h3 id="vie-et-armure">Vie et armure</h3>
+<ul>
+<li><strong>Vie max</strong> de base : 20 (10 cœurs). Le pack permet des valeurs bien plus hautes (plafond à 90 millions).</li>
+<li><strong>Armure</strong> : réduit les dégâts physiques. Formule vanilla : réduction = min(20 ; max(armure/5 ; armure − dégâts/(2 + robustesse/4))) / 25. <strong>La réduction maximale est de 80 %</strong> (≈ armure 100 contre un coup moyen).</li>
+<li><strong>Robustesse</strong> : aide l'armure contre les <strong>gros coups</strong>. Au-delà de 80 % de réduction, ajouter de l'armure ne sert à rien : mieux vaut de la vie, de l'esquive ou du blocage.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Armure</th>
+<th>contre un coup de 50</th>
+<th>contre un coup de 250</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20</td>
+<td>16 %</td>
+<td>16 %</td>
+</tr>
+<tr>
+<td>60 (robustesse 15)</td>
+<td>80 %</td>
+<td>66 %</td>
+</tr>
+<tr>
+<td>100 (robustesse 28)</td>
+<td>80 %</td>
+<td>80 %</td>
+</tr>
+</tbody>
+</table>
+<h3 id="esquive-et-blocage-arbre-de-talents">Esquive et blocage (arbre de talents)</h3>
+<p>Chaque point d'<strong>Esquive</strong> (ou de <strong>Blocage</strong>, qui demande un bouclier) donne une chance d'éviter une attaque :</p>
+<blockquote>
+<p>chance = 0,8 × (0,05 × points) / (1 + 0,05 × points)</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Points</th>
+<th>5</th>
+<th>10</th>
+<th>20</th>
+<th>32</th>
+<th>60</th>
+<th>90 (max)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chance</td>
+<td>16 %</td>
+<td>27 %</td>
+<td>40 %</td>
+<td>49 %</td>
+<td>60 %</td>
+<td>65 %</td>
+</tr>
+</tbody>
+</table>
+<p>L'attribut <strong>Chance d'esquive</strong> d'Apotheosis (en %) est <strong>séparé</strong> : les deux se combinent (1 − (1−a)(1−b)).</p>
+<h3 id="degats-recus">Dégâts reçus</h3>
+<p>Certaines origines <strong>augmentent</strong> (Hubris +20 %, Berserkergang +30 %) ou <strong>réduisent</strong> (Athena −25 % après le dragon, Vishnu −15 %) les dégâts que tu subis.</p>
+<div class="admonition warning">
+<p class="admonition-title">Attaques « % de PV max »</p>
+<p>Plusieurs boss Cataclysm (Ignis, Leviathan, Maledictus, Ender Guardian…) infligent un <strong>pourcentage de tes PV max</strong> (jusqu'à 15 %). Armure et vie n'y changent rien : il faut <strong>esquiver</strong>, bloquer ou rester hors de portée.</p>
+</div>
+<h2 id="attaque">Attaque</h2>
+<h3 id="degats-dune-arme">Dégâts d'une arme</h3>
+<p>Dégâts d'un coup = (dégâts de l'arme + bonus d'attaque + dégâts de feu + dégâts de froid) × (1 + bonus de dégâts %) × (effet du critique).
+La <strong>vitesse d'attaque</strong> détermine le nombre de coups par seconde. Les <strong>dégâts de feu et de froid</strong> sont des dégâts <strong>fixes ajoutés à chaque coup</strong> : très bons avec les armes rapides.</p>
+<h3 id="critiques-apotheosis">Critiques (Apotheosis)</h3>
+<ul>
+<li>Base : <strong>5 % de chance</strong>, <strong>×1,5</strong> de dégâts.</li>
+<li>La chance peut <strong>dépasser 100 %</strong> : un critique garanti, puis un second critique avec la chance restante, avec un multiplicateur réduit de 15 % à chaque fois (critique 3 → ×1,5 × 1,28 × 1,09…).</li>
+<li>Chance de critique 200 % + dégâts critiques ×4 ≈ plusieurs critiques par coup. C'est ce qui donne les chiffres énormes des builds de critiques.</li>
+</ul>
+<h3 id="perforation-dechirement">Perforation / déchirement</h3>
+<table>
+<thead>
+<tr>
+<th>Attribut</th>
+<th>Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Perforation d'armure</strong></td>
+<td>Ignore une quantité fixe d'armure de la cible</td>
+</tr>
+<tr>
+<td><strong>Déchirement d'armure</strong></td>
+<td>Réduit l'armure de la cible en %</td>
+</tr>
+<tr>
+<td><strong>Perforation / déchirement de protection</strong></td>
+<td>Pareil pour les enchantements de protection</td>
+</tr>
+<tr>
+<td><strong>Dégâts en % des PV actuels</strong></td>
+<td>Inflige un % des PV <strong>actuels</strong> de la cible (idéal contre les boss à des dizaines de milliers de PV)</td>
+</tr>
+<tr>
+<td><strong>Vol de vie</strong></td>
+<td>Te soigne d'un % des dégâts infligés</td>
+</tr>
+</tbody>
+</table>
+<h3 id="armes-a-distance">Armes à distance</h3>
+<p>Dégâts de flèche = dégâts de l'arc × attribut <strong>Dégâts des flèches</strong> × (1 + bonus de dégâts). La <strong>vitesse de tension</strong> de l'arc donne la cadence.</p>
+<h2 id="magie">Magie</h2>
+<p>Voir aussi <a href="magie.html">Comprendre la magie</a>. Les points clés :</p>
+<ul>
+<li><strong>Puissance du sort</strong> = (base du sort + gain par niveau) × <strong>puissance de sorts globale</strong> × <strong>puissance de l'école</strong> × multiplicateur du pack.</li>
+<li><strong>Mana</strong> : le maximum est ton attribut <em>Mana max</em> ; tu <strong>régénères 1 % du max × ta régénération toutes les 0,5 s</strong> (donc 2 %/s de base).</li>
+<li><strong>Recharge</strong> et <strong>temps d'incantation</strong> : l'effet est « lissé » : au-delà de ×1,75 de réduction, les gains diminuent fortement (formule de plafond doux). Une origine donnant +200 % de vitesse d'incantation rend les sorts <strong>presque instantanés</strong>.</li>
+</ul>
+<h2 id="vitesse-roulade-portee">Vitesse, roulade, portée</h2>
+<ul>
+<li><strong>Roulade</strong> (<code>R</code>) : esquive active avec brève invulnérabilité (mod Combat Roll). Nombre, recharge et distance sont des attributs.</li>
+<li><strong>Better Combat</strong> : les armes ont des <strong>enchaînements</strong> de coups et une <strong>portée</strong> propres ; certaines armes (claymores, hallebardes) frappent en zone.</li>
+<li><strong>Vitesse de déplacement</strong> : 100 % = vitesse normale ; les bonus de bottes/origines s'additionnent.</li>
+</ul>
+<footer class="mut small">Wiki généré à partir des fichiers du modpack « Cisco's Adventure RPG Ultimate » (V8E). Les chiffres viennent des fichiers de config et du code des mods ; en cas de doute, ce qui s'affiche en jeu fait foi.</footer></main></div>
+<script>window.ROOT="../";</script><script src="../wiki/search-index.js"></script><script src="../wiki/wiki.js"></script>
+</body></html>

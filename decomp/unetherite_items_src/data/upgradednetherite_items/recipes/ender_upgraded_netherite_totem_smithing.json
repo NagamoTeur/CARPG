@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "upgradednetherite_items:netherite_totem"
+  },
+  "addition": {
+    "item": "upgradednetherite:ender_essence"
+  },
+  "result": {
+    "item": "upgradednetherite_items:ender_upgraded_netherite_totem"
+  }
+}

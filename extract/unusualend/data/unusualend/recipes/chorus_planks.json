@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "planks"
+    },
+    {
+      "tag": "planks"
+    },
+    {
+      "tag": "planks"
+    },
+    {
+      "tag": "planks"
+    },
+    {
+      "item": "unusualend:chorus_juice"
+    },
+    {
+      "tag": "planks"
+    },
+    {
+      "tag": "planks"
+    },
+    {
+      "tag": "planks"
+    },
+    {
+      "tag": "planks"
+    }
+  ],
+  "result": {
+    "item": "unusualend:chorus_nest_planks",
+    "count": 8
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Susanoo's Blessing",
+    "description": "You are favoured by susanoo god of storms. He grants you his tempestuous blessing.",
+    "powers": [
+        "cisco_rpg_origins:susanoos_boon_minor",
+        "cisco_rpg_origins:susanoos_boon_major",
+        "cisco_rpg_origins:susanoos_boon_major2"
+    ],
+    "icon": {
+        "item": "simplyswords:storms_edge"
+    },
+    "impact": 1
+}

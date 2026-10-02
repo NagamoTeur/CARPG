@@ -1,0 +1,28 @@
+{
+  "type": "undead_unleashed:nether_wastes_delta",
+  "config": {
+    "contents": {
+      "Name": "minecraft:lava",
+      "Properties": {
+        "level": "0"
+      }
+    },
+    "rim": {
+      "Name": "undead_unleashed:charstone"
+    },
+    "size": {
+      "type": "uniform",
+      "value": {
+        "min_inclusive": 2,
+        "max_inclusive": 4
+      }
+    },
+    "rim_size": {
+      "type": "uniform",
+      "value": {
+        "min_inclusive": 3,
+        "max_inclusive": 6
+      }
+    }
+  }
+}

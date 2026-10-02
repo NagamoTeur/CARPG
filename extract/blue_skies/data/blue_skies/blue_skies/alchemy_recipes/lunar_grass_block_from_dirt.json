@@ -1,0 +1,12 @@
+{
+  "type": "blue_skies:catylist",
+  "catylists": [
+    "minecraft:bone_meal"
+  ],
+  "inputs": [
+    "blue_skies:lunar_dirt"
+  ],
+  "results": [
+    "blue_skies:lunar_grass_block"
+  ]
+}

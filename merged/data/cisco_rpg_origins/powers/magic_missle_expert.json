@@ -1,0 +1,13 @@
+{
+    "name": "Magic Missile Expert",
+    "description": "You have honed the magic missile to it's limits able to cast it at max level at will. (default key ) (g) ",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "cast @p magic_missile 10"
+    },
+    "cooldown": 30,
+    "key": {
+        "key": "key.origins.primary_active"
+    }
+}

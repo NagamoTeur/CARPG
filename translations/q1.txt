@@ -1,0 +1,170 @@
+0|Tutoriel
+1|La connaissance, c'est le pouvoir
+2|Exploration
+3|Le monde est hostile. Les ennemis deviennent plus forts à mesure que tu t'éloignes du point d'apparition du monde. ⏎  ⏎ Il est sage d'explorer d'abord les environs de ton spawn pour récupérer du butin avant d'affronter des ennemis plus coriaces. ⏎  ⏎ Les ennemis de haut niveau donnent plus d'expérience et, à des niveaux extrêmes, lâchent des objets rares.
+4|Ennemis
+5|Ennemis féroces
+6|Tu rencontreras de nombreux ennemis puissants au cours de ton voyage. Méfie-toi surtout de ceux-ci : ⏎  ⏎ Les ennemis **infernaux** sont des créatures soudainement renforcées par la magie du royaume déchu. Cela peut arriver au hasard à n'importe quel monstre hostile et lui donne de meilleures stats et des effets spéciaux. On les repère aux particules violettes qu'ils émettent. ⏎  ⏎ Les **maîtres de donjon** sont de puissants ennemis qui gardent souvent des coffres dans les donjons. Il faut les vaincre pour ouvrir ces coffres. ⏎  ⏎ Les **boss apothiques** sont de puissants ennemis qui lâchent du butin arcanique à leur mort. Un son et une notification spéciaux t'avertissent quand l'un d'eux apparaît près de toi.
+7|Gagner en puissance
+8|Acquérir de la puissance
+9|Il y a de nombreuses façons de devenir plus fort, mais les principales sont : ⏎  ⏎ Ton arbre de talents te permet de convertir l'expérience gagnée en tuant des monstres en points de talent, à dépenser en précieux bonus passifs. ⏎ Touche par défaut (O). ⏎  ⏎ Les gemmes sont des objets rares, de qualités variées, répartis dans le monde ; elles donnent de puissants bonus quand on les place dans un socket de ton équipement. La plupart des objets n'ont pas de sockets au départ : il faut les ajouter à une table de reforge. ⏎  ⏎ Les enchantements s'appliquent à ton équipement à la table d'enchantement et augmentent aussi ta force de façon spectaculaire. La table d'enchantement peut être configurée de nombreuses façons pour obtenir des enchantements très puissants.
+10|Boutique de pièces
+11|Échange éloquent
+12|Les pièces de champion sont une ressource précieuse gagnée en terminant des quêtes et d'autres activités de fin de jeu. ⏎  ⏎ Ces pièces peuvent être échangées dans la section « Cisco's Wares » du livre de quêtes contre des objets précieux pour t'aider dans ton voyage.
+13|Diversité alimentaire
+14|Régime équilibré
+15|Beaucoup d'origines, malgré de légères restrictions alimentaires, te permettent de manger une grande variété de plats cuisinés. ⏎  ⏎ Chaque aliment reçoit un score de diversité et tu obtiens de puissants bonus selon ton score total. Essaie un maximum d'aliments différents pour l'augmenter. ⏎  ⏎ Tu peux suivre ton score et les aliments mangés dans le livre de nourriture, touche par défaut (.).
+16|Énigmes
+17|Épreuve des Énigmes
+18|À l'âge des héros, les dieux créèrent de puissants artefacts pour aider les mortels. Mais les mortels acquirent une telle puissance que les dieux eux-mêmes en furent lassés. ⏎  ⏎ Une mystérieuse divinité primordiale connue sous le nom de « l'Obscur » sacrifia une petite partie de son immense pouvoir pour jeter une malédiction sur ces artefacts, afin que seuls ceux prêts à de grands sacrifices puissent les manier.
+19|Les Épreuves sombres
+20|Ascension sans cérémonie
+21|Tu possèdes le même pouvoir sombre que moi, qui te permettra un jour de porter mon équipement. ⏎  ⏎ L'Obscur craint ce qui s'éveille en toi et rendra ton voyage plus difficile à certains moments : ⏎  ⏎ Épreuve 1 : commence au début de ton voyage ; augmente la cohésion et la létalité des ennemis, avec une possibilité de lune de sang. ⏎  ⏎ Épreuve 2 : commence quand tu entres dans une autre dimension ; les ennemis sont encore plus forts, mais les récompenses aussi. ⏎  ⏎ Épreuve 3 : commence à la mort de l'Ender Dragon ; les ennemis sont encore plus impitoyables et des ennemis élites peuvent apparaître.
+22|Les épreuves
+23|Les Épreuves du Champion
+24|L'aventure commence !
+25|Nouvelle aventure
+26|Je sens un pouvoir familier en toi. Tu pourrais m'aider dans ma quête pour vaincre le Fell King. ⏎  ⏎ Prends ces objets et commence ton voyage pour gagner en force. ⏎  ⏎ Je viendrai à toi quand je jugerai que tu es prêt.
+27|La voie du guerrier
+28|Lame et bouclier
+29|De près et en personne.
+30|Apprenti lanceur de sorts
+31|Mon premier tome
+32|La Source peut être manipulée de presque une infinité de façons, limitées seulement par ta créativité et les glyphes dont tu disposes. ⏎  ⏎ Pour cela, il te faudra fabriquer un livre de sorts. Tu pourras plus tard le teindre de ta couleur préférée.
+33|La voie du mage
+34|Apprenti sorcier
+35|Il est temps de commencer ta formation de lanceur de sorts. ⏎  ⏎ Il existe deux grandes origines de la magie dans ce monde : l'une utilise une ressource appelée « Source », l'autre le « mana ambiant » présent dans le monde et ses créatures vivantes. ⏎  ⏎ Quelle voie choisiras-tu ?
+36|Obtenir du fer
+37|Trouver du métal
+38|Le fer est un composant clé de nombreuses recettes et vital au début de ton aventure.
+39|La relique des anciens
+40|Relique récupérée
+41|On raconte qu'une relique légendaire est en la possession des villageois. ⏎  ⏎ Si tu gagnes leur faveur, peut-être te la confieront-ils ?
+42|Établi du mage
+43|C'est ici que tu fabriques les glyphes utilisés pour lancer des sorts. ⏎  ⏎ À chaque nouveau glyphe, ton mana maximum augmente légèrement.
+44|Magies amplifiées
+45|Plus de puissance
+46|Ce glyphe augmente la puissance de nombreux autres glyphes lorsqu'il est utilisé avec eux dans un sort.
+47|Obtenir de l'obsidienne
+48|Portail vers le purgatoire
+49|Obtiens de l'obsidienne et fabrique un portail du Nether.
+50|Les profondeurs de l'Enfer
+51|Brave le Nether
+52|Le Nether est rempli de grandes structures et d'ennemis puissants : prépare-toi soigneusement avant d'y entrer.
+53|Obtenir du quartz
+54|Brillant ?
+55|Le quartz est nécessaire à des recettes importantes, comme passer à un livre de sorts de rang 2.
+56|Monte en rang
+57|Promu
+58|Améliorer ton livre de sorts te permettra de lancer des sorts plus puissants.
+59|Trouver une ancienne tablette runique
+60|Rituels runiques
+61|On en trouve dans les coffres de donjons.
+62|Obtenir une table d'enchantement
+63|Enchanteur novice
+64|Ce sera ta deuxième grande source de puissance. ⏎  ⏎ Maîtrise le système d'enchantement d'Apotheosis et même un équipement de bas niveau pourra devenir divin.
+65|Pour la gloire !
+66|Droiture renaissante
+67|Embrasse la lumière.
+68|Tous s'agenouilleront...
+69|Abysse éveillé
+70|Embrasse les ténèbres.
+71|Obtenir de la netherite
+72|Les lingots de netherite sont essentiels à de nombreuses recettes complexes : il t'en faudra une bonne quantité. ⏎  ⏎ Les pioches aux enchantements puissants ou certains coffres de donjons sont d'excellents moyens d'en obtenir davantage.
+73|Trouver l'arène brûlante
+74|L'œil de flamme permet de localiser l'arène brûlante, demeure du Roi des flammes Ignis.
+75|Terrasser la terreur du Nether
+76|Malheurs du Wither
+77|Gardien ⏎  ⏎ L'étoile du Nether obtenue en tuant le Wither sert à fabriquer des objets très puissants.
+78|Terrasser le roi des flammes
+79|Chute du Roi des flammes
+80|Gardien ⏎  ⏎ Récupère des cendres brûlantes sur les revenants enflammés qui gardent l'arène brûlante. ⏎  ⏎ Utilise les cendres sur l'autel au centre de l'arène et éteins le Roi des flammes.
+81|Pas de l'or, mais ça brille
+82|Améthyste acquise
+83|L'améthyste est un autre ingrédient clé de tout ce qui est arcanique et il t'en faudra beaucoup. ⏎  ⏎ Heureusement, tu peux automatiser sa production avec les familiers golems d'améthyste.
+84|Enchantement apothique
+85|Au-delà des limites
+86|Apotheosis te permet d'enchanter ton équipement bien au-delà de ce à quoi tu es habitué. ⏎  ⏎ Cela demandera un peu de configuration, mais tu finiras par fabriquer un équipement qui te rend invincible.
+87|Collecter les 12 yeux
+88|Collectionneur d'yeux
+89|Les 12 yeux nécessaires pour allumer le portail de l'End se trouvent dans des coffres de donjons partout dans le monde, dans le Nether, et certains doivent être fabriqués. ⏎  ⏎ Ces trois-là sont un bon point de départ.
+90|Obtenir du Dreadsteel
+91|L'un des métaux les plus puissants que nous connaissions. ⏎  ⏎ Sert à fabriquer l'armure et les armes légendaires en Dreadsteel.
+92|Dread Knight
+93|Devenir le Chevalier de l'effroi
+94|L'armure Dreadsteel offre l'immunité à de nombreux types de dégâts, comme le feu et la foudre, avec une armure et une robustesse de base élevées.
+95|Entrer dans l'End
+96|Dans le vide
+97|Il est temps d'affronter le Dragon.
+98|Terrasser l'Ender Dragon
+99|Fin de l'Ender Dragon
+100|Gardien ⏎  ⏎ Même l'Ender Dragon ne peut résister à ta puissance. ⏎  ⏎ Terrasse-la et libère la dimension de l'End.
+101|Trouver la citadelle en ruine
+102|L'œil du Vide sert à localiser la citadelle en ruine où réside le puissant Ender Guardian.
+103|Terrasser l'Ender Guardian
+104|Chute de l'Ender Guardian
+105|Gardien ⏎  ⏎ Sauras-tu vaincre ce puissant adversaire ?
+106|Le plus grand magicien
+107|Maître magicien
+108|Améliore ton livre de sorts jusqu'au rang final en le combinant avec les matériaux les plus rares.
+109|Monstruosité fusionnée
+110|Invoque la Wilden Chimera et vaincs-la pour obtenir le tribut wilden. ⏎  ⏎ Cela se fait avec le brasero rituel, une tablette d'invocation wilden et les 3 types de butin wilden.
+111|Droiture flamboyante
+112|La forme finale de l'épée de justice.
+113|Héraut de l'Abysse
+114|La forme finale de l'épée des ténèbres.
+115|C'est l'heure de la transmogrification !
+116|Changer de couleurs
+117|Cette table élégante permet de changer l'apparence d'objets comme les armures, et même de les rendre invisibles.
+118|Petit bourreau de travail
+119|Les starbuncles sont essentiels pour automatiser la production de Source, nécessaire à tout ce qui touche à Ars Nouveau. ⏎  ⏎ Interagis avec un starbuncle sauvage en lui donnant des pépites d'or, puis utilise le fragment pour fabriquer son charme.
+120|Fabriquer le set Ignitium
+121|Armure Ignitium
+122|L'armure Ignitium est indestructible et offre divers effets, comme marcher sur la lave.
+123|Broyer des gemmes
+124|Tu peux broyer des gemmes ici pour obtenir de la poussière de gemme, utilisée pour imprégner ton équipement d'affixes spéciaux à la table de reforge.
+125|Reforgeur novice
+126|C'est ici que tu reforges ton équipement. ⏎  ⏎ La reforge ajoute des stats et des sockets pour gemmes à ton équipement selon la qualité des matériaux de reforge utilisés. ⏎  ⏎ Peut être améliorée.
+127|Maître reforgeur
+128|La table de reforge ultime.
+129|Stocker le savoir
+130|Tu peux stocker ici des enchantements pour plus tard. Peut être améliorée.
+131|Maître bibliothécaire
+132|La bibliothèque d'enchantements ultime.
+133|Amplification arcanique
+134|Les charmes de potion sont des objets très puissants qui donnent un effet de potion permanent tant qu'ils sont dans ton inventaire. ⏎  ⏎ Par défaut ils perdent de la durabilité quand ils sont actifs, mais tu peux les rendre incassables en les enchantant avec une certaine quantité de quanta, d'eterna, etc. (voir tes recettes).
+135|Terrasser l'Endstone Golem
+136|Endstone Golem détruit
+137|Gardien ⏎  ⏎ Le deuxième des puissants golems qui résident dans l'End : détruis-le. ⏎  ⏎ L'Endstone Golem peut être invoqué au sommet d'une tour que l'on trouve généralement dans les anciennes cités de l'End. ⏎  ⏎ Utilise du souffle de dragon sur son autel pour l'invoquer.
+138|Voir l'arbre de talents.
+139|Chercher des compétences
+140|L'arbre de talents te permettra de personnaliser ton personnage et d'acquérir la force nécessaire pour relever les défis à venir. ⏎  ⏎ Touche par défaut : (O). Clique sur la coche pour terminer la quête.
+141|Voir l'arbre de talents
+142|Obtenir du Brightsteel
+143|Combinaison de métaux et de non-métaux renforcée par la magie, ce métal résistant sert à fabriquer de nombreuses armes et armures.
+144|Armure en Brightsteel
+145|Chevalier lourd
+146|L'armure en Brightsteel offre une bonne protection et un petit bonus de résistance quand tu es en bonne santé.
+147|Gilded Eagle
+148|Maître assassin
+149|Le set Gilded Eagle offre une protection moyenne mais un bonus de vitesse et la capacité d'esquiver brièvement les attaques.
+150|Outil polyvalent
+151|Ce multi-outil façonné en brightsteel t'aidera grandement à acquérir des ressources naturelles.
+152|Tuer des Equestrians
+153|Menace montée
+154|Des zombies montés attaquent les voyageurs et doivent être éliminés.
+155|Tuer des Meatures
+156|Hachis de viande
+157|Ces petites créatures agaçantes terrorisent les villages : débarrasse-t'en.
+158|Vaincre des chevaliers renégats
+159|Serments reniés
+160|Des chevaliers renégats rôdent sur ces terres et menacent la sécurité des villageois. Détruis-les.
+161|Terrasser des Graverisers
+162|Danger de tombe
+163|Des maîtres des morts-vivants ressuscitent des cadavres dans le monde et doivent être arrêtés.
+164|Terrasser des araignées
+165|Arachnides anéanties
+166|La population d'araignées a explosé : réduis leur nombre.
+167|Ouvrir la porte des zombies
+168|Les perles de portail peuvent être fabriquées pour invoquer des vagues de créatures précises. ⏎  ⏎ Fabrique la perle de zombie, ouvre sa porte, puis vaincs la déferlante dans le temps imparti.
+169|Terrasser des gobelins

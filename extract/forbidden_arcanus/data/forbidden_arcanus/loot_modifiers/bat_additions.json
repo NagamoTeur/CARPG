@@ -1,0 +1,10 @@
+{
+  "type": "valhelsia_core:append_loot",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/bat"
+    }
+  ],
+  "loot_addition": "forbidden_arcanus:entities/additions/bat_additions"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "unusualend:warped_end_stone"
+    },
+    "title": {
+      "translate": "advancements.trade_with_bolok.title"
+    },
+    "description": {
+      "translate": "advancements.trade_with_bolok.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "trade_with_bolok": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "minecraft:end/enter_end_gateway"
+}

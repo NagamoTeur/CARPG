@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blue_skies:winter_leaves"
+    }
+  ],
+  "result": {
+    "item": "blue_skies:winter_leaf_seeds"
+  }
+}

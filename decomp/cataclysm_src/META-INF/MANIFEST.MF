@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: cataclysm
+Specification-Vendor: L_Ender
+Specification-Version: 1.0
+Implementation-Title: L_ender-s-Cataclysm-Backport
+Implementation-Version: 2.46-1.19.2
+Implementation-Vendor: L_Ender
+Implementation-Timestamp: 2025-04-27T23:15:57+0900
+MixinConfigs: cataclysm.mixins.json
+

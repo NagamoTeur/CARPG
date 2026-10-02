@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:acacia_leaves",
+    "minecraft:oak_log",
+    "minecraft:warped_wart_block",
+    "minecraft:bone_block",
+    "minecraft:oak_leaves",
+    "minecraft:acacia_log",
+    "minecraft:nether_wart_block",
+    "minecraft:hay_block"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "sons_of_sins:block_of_slime_rear"
+    }
+  },
+  "result": {
+    "item": "sons_of_sins:slime_rear",
+    "count": 9
+  }
+}

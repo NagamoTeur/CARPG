@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "blue_skies:midnight_sandstone"
+  },
+  "result": "blue_skies:chiseled_midnight_sandstone"
+}

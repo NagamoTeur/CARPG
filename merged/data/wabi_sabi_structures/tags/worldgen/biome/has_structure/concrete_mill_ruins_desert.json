@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:desert",
+	{
+		"id": "terrestria:dunes",
+		"required": false
+	},
+	{
+		"id": "terrestria:lush_desert",
+		"required": false
+	},
+	{
+		"id": "terralith:ancient_sands",
+		"required": false
+	},
+    {
+	    "id": "terralith:brushland",
+	    "required": false
+    },
+    {
+        "id": "terrestria:oasis",
+        "required": false
+    }
+  ]
+}

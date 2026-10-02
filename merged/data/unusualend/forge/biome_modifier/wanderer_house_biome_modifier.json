@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "small_end_islands",
+  "features": "unusualend:wanderer_house",
+  "step": "raw_generation"
+}

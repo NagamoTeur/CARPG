@@ -1,0 +1,42 @@
+{
+  "group": "purpur",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:purpur_slab"
+    },
+    "1": {
+      "item": "minecraft:purpur_slab"
+    },
+    "2": {
+      "item": "minecraft:purpur_slab"
+    },
+    "3": {
+      "item": "minecraft:purple_stained_glass"
+    },
+    "4": {
+      "item": "minecraft:end_rod"
+    },
+    "5": {
+      "item": "minecraft:purple_stained_glass"
+    },
+    "6": {
+      "item": "minecraft:purpur_slab"
+    },
+    "7": {
+      "item": "minecraft:purpur_slab"
+    },
+    "8": {
+      "item": "minecraft:purpur_slab"
+    }
+  },
+  "result": {
+    "item": "phantasm:purpur_lamp",
+    "count": 1
+  }
+}

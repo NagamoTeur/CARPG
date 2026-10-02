@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_boots"
+  },
+  "addition": {
+    "item": "upgradednetherite:poison_essence"
+  },
+  "result": {
+    "item": "upgradednetherite:poison_upgraded_netherite_boots"
+  }
+}

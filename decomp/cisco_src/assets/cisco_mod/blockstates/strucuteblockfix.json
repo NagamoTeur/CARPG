@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cisco_mod:block/strucuteblockfix"
+    }
+  }
+}

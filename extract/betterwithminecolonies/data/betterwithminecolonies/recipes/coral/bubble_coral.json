@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " s ",
+    "sbs",
+    " c "
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "b": {
+      "item": "minecraft:magenta_dye"
+    },
+    "c": {
+      "item": "minecraft:dead_bubble_coral_block"
+    }
+  },
+  "result": {
+    "item": "minecraft:bubble_coral"
+  }
+}

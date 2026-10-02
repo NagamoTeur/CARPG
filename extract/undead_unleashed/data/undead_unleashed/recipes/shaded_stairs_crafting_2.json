@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "undead_unleashed:shaded_bricks"
+  },
+  "result": "undead_unleashed:shaded_brick_stairs"
+}

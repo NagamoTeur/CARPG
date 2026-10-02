@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "enemyexpansion:healing_eye"
+    },
+    "title": {
+      "translate": "advancements.ladybug_feeding.title"
+    },
+    "description": {
+      "translate": "advancements.ladybug_feeding.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ladybug_feeding_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "enemyexpansion:enemy_expansion_advancement"
+}

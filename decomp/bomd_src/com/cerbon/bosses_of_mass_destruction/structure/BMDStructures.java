@@ -1,0 +1,55 @@
+package com.cerbon.bosses_of_mass_destruction.structure;
+
+import com.cerbon.bosses_of_mass_destruction.structure.util.CodeStructurePiece;
+import com.cerbon.bosses_of_mass_destruction.structure.void_blossom_cavern.VoidBlossomArenaStructureFeature;
+import com.cerbon.bosses_of_mass_destruction.structure.void_blossom_cavern.VoidBlossomCavernPieceGenerator;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.level.levelgen.structure.Structure;
+import net.minecraft.world.level.levelgen.structure.StructureType;
+import net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
+
+public class BMDStructures {
+   public static final DeferredRegister<StructurePieceType> STRUCTURE_PIECES = DeferredRegister.create(Registry.f_122842_, "bosses_of_mass_destruction");
+   public static final DeferredRegister<StructureType<?>> STRUCTURE_TYPES = DeferredRegister.create(Registry.f_235739_, "bosses_of_mass_destruction");
+   public static final StructureRegister OBSIDILITH_STRUCTURE_REGISTRY = new StructureRegister(
+      new ResourceLocation("bosses_of_mass_destruction", "obsidilith_arena")
+   );
+   public static final StructureRegister VOID_BLOSSOM_STRUCTURE_REGISTRY = new StructureRegister(
+      new ResourceLocation("bosses_of_mass_destruction", "void_blossom")
+   );
+   public static final StructureRegister GAUNTLET_STRUCTURE_REGISTRY = new StructureRegister(
+      new ResourceLocation("bosses_of_mass_destruction", "gauntlet_arena")
+   );
+   public static final StructureRegister LICH_STRUCTURE_REGISTRY = new StructureRegister(new ResourceLocation("bosses_of_mass_destruction", "lich_tower"));
+   public static final RegistryObject<StructureType<VoidBlossomArenaStructureFeature>> VOID_BLOSSOM_STRUCTURE_TYPE = STRUCTURE_TYPES.register(
+      "void_blossom",
+      () -> (StructureType)Registry.m_122965_(
+            Registry.f_235740_, new ResourceLocation("bosses_of_mass_destruction", "void_blossom"), (StructureType)() -> VoidBlossomArenaStructureFeature.CODEC
+         )
+   );
+   public static final RegistryObject<StructurePieceType> VOID_BLOSSOM_CAVERN_PIECE = STRUCTURE_PIECES.register(
+      "void_blossom_piece", () -> BMDStructures.StructureFactories.VOID_BLOSSOM
+   );
+   public static final TagKey<Structure> SOUL_STAR_STRUCTURE_KEY = TagKey.m_203882_(
+      Registry.f_235725_, new ResourceLocation("bosses_of_mass_destruction", "soul_star_target")
+   );
+   public static final TagKey<Structure> VOID_LILY_STRUCTURE_KEY = TagKey.m_203882_(
+      Registry.f_235725_, new ResourceLocation("bosses_of_mass_destruction", "void_lily_target")
+   );
+
+   public static void register(IEventBus eventBus) {
+      STRUCTURE_TYPES.register(eventBus);
+      STRUCTURE_PIECES.register(eventBus);
+   }
+
+   private static class StructureFactories {
+      public static final StructurePieceType VOID_BLOSSOM = (context, tag) -> new CodeStructurePiece(
+            (StructurePieceType)BMDStructures.VOID_BLOSSOM_CAVERN_PIECE.get(), tag, new VoidBlossomCavernPieceGenerator()
+         );
+   }
+}

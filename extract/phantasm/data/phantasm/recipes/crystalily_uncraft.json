@@ -1,0 +1,13 @@
+{
+  "group": "crystalily",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "phantasm:crystalily"
+    }
+  ],
+  "result": {
+    "item": "phantasm:crystal_spike_tip",
+    "count": 1
+  }
+}

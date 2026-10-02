@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "cisco_mod:brightsteel_boots"
+  },
+  "addition": {
+    "item": "cisco_mod:darksteel"
+  },
+  "result": {
+    "item": "cisco_mod:darksteel_armor_boots"
+  }
+}

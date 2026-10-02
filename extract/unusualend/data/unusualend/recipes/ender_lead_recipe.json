@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HH ",
+    "HN ",
+    "  H"
+  ],
+  "key": {
+    "H": {
+      "item": "unusualend:chorus_roots"
+    },
+    "N": {
+      "item": "unusualend:end_blob"
+    }
+  },
+  "result": {
+    "item": "minecraft:lead",
+    "count": 1
+  }
+}

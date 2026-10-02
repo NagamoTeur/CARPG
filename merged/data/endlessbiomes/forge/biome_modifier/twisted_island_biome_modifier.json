@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "small_end_islands",
+    "end_midlands",
+    "end_barrens"
+  ],
+  "features": "endlessbiomes:twisted_island",
+  "step": "surface_structures"
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    " 4 ",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "iter_rpg:spider_silk"
+    },
+    "2": {
+      "item": "iter_rpg:spider_silk"
+    },
+    "4": {
+      "item": "iter_rpg:spider_silk"
+    },
+    "6": {
+      "item": "iter_rpg:spider_silk"
+    },
+    "8": {
+      "item": "iter_rpg:spider_silk"
+    }
+  },
+  "result": {
+    "item": "minecraft:cobweb",
+    "count": 4
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iter_rpg:blocks/pearl_block",
+    "particle": "iter_rpg:blocks/pearl_block"
+  },
+  "render_type": "solid"
+}

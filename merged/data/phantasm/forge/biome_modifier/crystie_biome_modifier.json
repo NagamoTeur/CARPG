@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "end_highlands",
+  "spawners": {
+    "type": "phantasm:crystie",
+    "weight": 4,
+    "minCount": 2,
+    "maxCount": 4
+  }
+}

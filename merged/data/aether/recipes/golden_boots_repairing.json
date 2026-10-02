@@ -1,0 +1,9 @@
+{
+  "type": "aether:repairing",
+  "category": "enchanting_repair",
+  "group": "altar_boots_repair",
+  "ingredient": {
+    "item": "minecraft:golden_boots"
+  },
+  "repairTime": 300
+}

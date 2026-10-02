@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "cisco_mod:darksteel"
+    },
+    "1": {
+      "item": "cisco_mod:darksteel"
+    },
+    "2": {
+      "item": "cisco_mod:darksteel"
+    },
+    "3": {
+      "item": "cisco_mod:darksteel"
+    },
+    "4": {
+      "item": "cisco_mod:darksteel"
+    },
+    "5": {
+      "item": "cisco_mod:darksteel"
+    },
+    "6": {
+      "item": "cisco_mod:darksteel"
+    },
+    "7": {
+      "item": "cisco_mod:darksteel"
+    },
+    "8": {
+      "item": "cisco_mod:darksteel"
+    }
+  },
+  "result": {
+    "item": "cisco_mod:darksteel_block",
+    "count": 1
+  }
+}

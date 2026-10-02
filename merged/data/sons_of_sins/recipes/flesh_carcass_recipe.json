@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "sons_of_sins:is_flesh"
+    }
+  },
+  "result": {
+    "item": "sons_of_sins:flesh_carcass",
+    "count": 1
+  }
+}

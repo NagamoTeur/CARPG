@@ -1,0 +1,50 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+issueTrackerURL = "https://kubejs.com/support?source=kubejs&mc=1902&loader=forge"
+license = "GNU LGPLv3"
+
+[[mods]]
+modId = "kubejs"
+version = "1902.6.2-build.73"
+displayName = "KubeJS"
+authors = "LatvianModder"
+description = '''
+Customize your modpack or server with JavaScript!
+'''
+logoFile = "kubejs_logo.png"
+license = "GNU LGPLv3"
+
+[[dependencies.kubejs]]
+modId = "forge"
+mandatory = true
+versionRange = "[40.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.kubejs]]
+modId = "rhino"
+mandatory = true
+versionRange = "[1902.2.2-build.280,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.kubejs]]
+modId = "architectury"
+mandatory = true
+versionRange = "[6.5.82,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.kubejs]]
+modId = "jei"
+mandatory = false
+versionRange = "[1.0.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.kubejs]]
+modId = "roughlyenoughitems"
+mandatory = false
+versionRange = "[9.1.572,)"
+ordering = "AFTER"
+side = "BOTH"

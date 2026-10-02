@@ -1,0 +1,10 @@
+{
+    "name": "Hubris",
+    "description": "Your natural strength makes you prideful .. careless.You take 20 percent increased damage.",
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+        "operation": "multiply_base_multiplicative",
+        "value": 0.2,
+        "name": "Hubris"
+    }
+}

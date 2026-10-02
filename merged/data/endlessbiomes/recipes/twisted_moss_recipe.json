@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "endlessbiomes:twisted_coral"
+    },
+    "1": {
+      "item": "endlessbiomes:twisted_coral"
+    },
+    "2": {
+      "item": "endlessbiomes:twisted_coral"
+    },
+    "3": {
+      "item": "minecraft:end_stone"
+    },
+    "4": {
+      "item": "minecraft:end_stone"
+    },
+    "5": {
+      "item": "minecraft:end_stone"
+    },
+    "6": {
+      "item": "minecraft:end_stone"
+    },
+    "7": {
+      "item": "minecraft:end_stone"
+    },
+    "8": {
+      "item": "minecraft:end_stone"
+    }
+  },
+  "result": {
+    "item": "endlessbiomes:twisted_moss",
+    "count": 6
+  }
+}

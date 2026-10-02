@@ -1,0 +1,57 @@
+{
+    "name": "Greater Boon of Gale",
+    "description": "Upon slaying the ender dragon,Zephyrus grants you winged flight. Flap your wings by pressing (default key (h).",
+    "type": "origins:multiple",
+    "condition": {
+        "type": "origins:advancement",
+        "advancement": "minecraft:end/kill_dragon"
+    },
+    "elytra": {
+        "condition": {
+            "type": "origins:advancement",
+            "advancement": "minecraft:end/kill_dragon"
+        },
+        "type": "origins:elytra_flight",
+        "render_elytra": true,
+        "texture_location": "minecraft:textures/entity/elytra.png"
+    },
+    "flap": {
+        "condition": {
+            "type": "origins:advancement",
+            "advancement": "minecraft:end/kill_dragon"
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:add_velocity",
+                    "x": 0,
+                    "y": 0.5,
+                    "z": 2,
+                    "space": "local",
+                    "client": true,
+                    "server": true,
+                    "set": true
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.ender_dragon.flap master @a[distance=..15] ~ ~ ~ 1 1.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:cloud ~ ~ ~ 0.7 0.2 0.7 0.01 30 normal"
+                }
+            ]
+        },
+        "cooldown": 20,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 4
+        },
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    }
+}

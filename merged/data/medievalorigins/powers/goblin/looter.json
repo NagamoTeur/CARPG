@@ -1,0 +1,9 @@
+{
+	"type": "origins:attribute",
+	"hidden": "true",
+	"modifier": {
+		"attribute": "minecraft:generic.luck",
+		"operation": "addition",
+		"value": 20
+	}
+}

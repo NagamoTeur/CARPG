@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "transmog:void_fragment"
+    },
+    "Y": {
+      "item": "minecraft:glass"
+    },
+    "Z": {
+      "item": "minecraft:amethyst_block"
+    }
+  },
+  "pattern": [
+    " X ",
+    "YZY",
+    "ZZZ"
+  ],
+  "result": {
+    "item": "transmog:transmogrification_table"
+  }
+}

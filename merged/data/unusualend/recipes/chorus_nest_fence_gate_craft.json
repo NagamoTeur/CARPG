@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SHS",
+    "SHS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "H": {
+      "item": "unusualend:chorus_nest_mosaic"
+    }
+  },
+  "result": {
+    "item": "unusualend:chorus_nest_fence_gate",
+    "count": 1
+  }
+}

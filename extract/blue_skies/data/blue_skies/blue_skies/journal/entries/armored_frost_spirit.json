@@ -1,0 +1,24 @@
+{
+  "icon": {
+    "type": "texture",
+    "icon": {
+      "texture": "blue_skies:textures/gui/journal/icons/armored_frost_spirit.png"
+    }
+  },
+  "lores": [
+    {
+      "display": {
+        "type": "entity",
+        "display": {
+          "entity": "blue_skies:armored_frost_spirit",
+          "scale": 70,
+          "y_offset": 70
+        }
+      },
+      "text": "blue_skies.everbright.armored_frost_spirit.lore"
+    }
+  ],
+  "requirement": "blue_skies:enter_everbright",
+  "section": "blue_skies:everbright",
+  "title": "blue_skies.everbright.armored_frost_spirit.title"
+}

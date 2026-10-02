@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "iter_rpg:water_sword"
+    },
+    "title": {
+      "translate": "advancements.enemy_expanded.title"
+    },
+    "description": {
+      "translate": "advancements.enemy_expanded.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "enemy_expanded": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 8
+  },
+  "parent": "iter_rpg:life_tax"
+}

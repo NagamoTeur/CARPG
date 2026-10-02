@@ -1,0 +1,1 @@
+tag @a[nbt={Inventory:[{id:"minecraft:milk_bucket"},{tag:{display:{Name:'[{"text":"Minotaur Milk","italic":false,"color":"light_purple"}]'}}}]}] add milk 

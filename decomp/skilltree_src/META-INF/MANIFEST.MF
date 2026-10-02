@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Passive-Skill-Tree
+MixinConfigs: skilltree.mixins.json
+Implementation-Version: 0.6.14b
+Specification-Vendor: Daripher
+Specification-Title: skilltree
+Implementation-Timestamp: 2024-09-16T23:50:08+0500
+Specification-Version: 0.6.14b
+Implementation-Vendor: Daripher
+

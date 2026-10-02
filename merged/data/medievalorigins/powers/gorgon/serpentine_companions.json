@@ -1,0 +1,26 @@
+{
+	"type": "origins:self_action_when_hit",
+	"entity_action": {
+		"type": "origins:choice",
+		"actions": [
+			{
+				"element": {
+					"type": "origins:execute_command",
+					"command": "summon silverfish ~ ~1 ~ {Team:Silverfish,PersistenceRequired:1}"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"type": "origins:execute_command",
+					"command": "particle minecraft:smoke ~ ~ ~"
+				},
+				"weight": 1
+			}
+		]
+	},
+	"cooldown": 0,
+	"hud_render": {
+		"should_render": "false"
+	}
+}

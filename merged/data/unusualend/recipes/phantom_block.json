@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PN",
+    "NP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "N": {
+      "item": "unusualend:enderling_scrap"
+    }
+  },
+  "result": {
+    "item": "unusualend:phantom_block",
+    "count": 2
+  }
+}

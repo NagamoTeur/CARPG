@@ -1,0 +1,69 @@
+{
+  "display": {
+    "icon": {
+      "item": "phantasm:vivid_nihilium"
+    },
+    "title": {
+      "translate": "advancements.enter_dreaming_den.title"
+    },
+    "description": {
+      "translate": "advancements.enter_dreaming_den.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "enter_dreaming_den": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "phantasm:pream_wood_recipe",
+      "phantasm:pream_planks_recipe",
+      "phantasm:pream_stairs_recipe",
+      "phantasm:pream_slab_recipe",
+      "phantasm:pream_fence_recipe",
+      "phantasm:pream_fence_gate_recipe",
+      "phantasm:pream_pressure_plate_recipe",
+      "phantasm:pream_button_recipe",
+      "phantasm:pream_door_recipe",
+      "phantasm:pream_trapdoor_recipe",
+      "phantasm:fallen_pream_leaves_recipe",
+      "phantasm:hanging_pream_leaves_recipe",
+      "phantasm:chorus_fruit_salad_recipe",
+      "phantasm:raw_purpur_bricks_recipe",
+      "phantasm:chiseled_raw_purpur_recipe",
+      "phantasm:cracked_raw_purpur_recipe",
+      "phantasm:raw_purpur_pillar_recipe",
+      "phantasm:raw_purpur_bricks_slabs_recipe",
+      "phantasm:raw_purpur_bricks_stairs_recipe",
+      "phantasm:raw_purpur_bricks_craft",
+      "phantasm:chiseled_raw_purpur_craft",
+      "phantasm:cracked_raw_purpur_bricks_craft",
+      "phantasm:raw_purpur_pillar_craft",
+      "phantasm:raw_purpur_tiles_craft",
+      "phantasm:raw_purpur_bricks_slabs_craft",
+      "phantasm:raw_purpur_bricks_stairs_craft",
+      "phantasm:pream_stripped_wood_recipe",
+      "phantasm:chiseled_end_stone_recipe",
+      "phantasm:smooth_obsidian_recipe",
+      "phantasm:smooth_obsidian_bricks_recipe",
+      "phantasm:smooth_obsidian_pillar_recipe",
+      "phantasm:chiseled_smooth_obsidian_recipe",
+      "phantasm:smooth_obsidian_lamp_recipe",
+      "phantasm:smooth_obsidian_bricks_craft",
+      "phantasm:smooth_obsidian_pillar_craft",
+      "phantasm:smooth_obsidian_craft",
+      "phantasm:chiseled_smooth_obsidian_craft",
+      "phantasm:smooth_obsidian_bricks_stairs_craft",
+      "phantasm:smooth_obsidian_bricks_slab_craft",
+      "phantasm:smooth_obsidian_bricks_stairs_recipe",
+      "phantasm:smooth_obsidian_bricks_slab_recipe"
+    ]
+  },
+  "parent": "minecraft:end/enter_end_gateway"
+}

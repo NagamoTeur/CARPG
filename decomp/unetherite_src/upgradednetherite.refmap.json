@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "com/rolfmao/upgradednetherite/mixin/MixinApplyBonusCount": {
+      "run": "Lnet/minecraft/world/level/storage/loot/functions/ApplyBonusCount;m_7372_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/storage/loot/LootContext;)Lnet/minecraft/world/item/ItemStack;",
+      "net/minecraft/world/item/enchantment/EnchantmentHelper.getItemEnchantmentLevel(Lnet/minecraft/world/item/enchantment/Enchantment;Lnet/minecraft/world/item/ItemStack;)I": "Lnet/minecraft/world/item/enchantment/EnchantmentHelper;m_44843_(Lnet/minecraft/world/item/enchantment/Enchantment;Lnet/minecraft/world/item/ItemStack;)I"
+    },
+    "com/rolfmao/upgradednetherite/mixin/MixinElderGuardian": {
+      "customServerAiStep": "Lnet/minecraft/world/entity/monster/ElderGuardian;m_8024_()V"
+    },
+    "com/rolfmao/upgradednetherite/mixin/MixinMobEffectUtil": {
+      "addEffectToPlayersAround": "Lnet/minecraft/world/effect/MobEffectUtil;m_216946_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;DLnet/minecraft/world/effect/MobEffectInstance;I)Ljava/util/List;"
+    }
+  },
+  "data": {
+    "searge": {
+      "com/rolfmao/upgradednetherite/mixin/MixinApplyBonusCount": {
+        "run": "Lnet/minecraft/world/level/storage/loot/functions/ApplyBonusCount;m_7372_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/storage/loot/LootContext;)Lnet/minecraft/world/item/ItemStack;",
+        "net/minecraft/world/item/enchantment/EnchantmentHelper.getItemEnchantmentLevel(Lnet/minecraft/world/item/enchantment/Enchantment;Lnet/minecraft/world/item/ItemStack;)I": "Lnet/minecraft/world/item/enchantment/EnchantmentHelper;m_44843_(Lnet/minecraft/world/item/enchantment/Enchantment;Lnet/minecraft/world/item/ItemStack;)I"
+      },
+      "com/rolfmao/upgradednetherite/mixin/MixinElderGuardian": {
+        "customServerAiStep": "Lnet/minecraft/world/entity/monster/ElderGuardian;m_8024_()V"
+      },
+      "com/rolfmao/upgradednetherite/mixin/MixinMobEffectUtil": {
+        "addEffectToPlayersAround": "Lnet/minecraft/world/effect/MobEffectUtil;m_216946_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;DLnet/minecraft/world/effect/MobEffectInstance;I)Ljava/util/List;"
+      }
+    }
+  }
+}

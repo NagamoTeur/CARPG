@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "iter_rpg:potsherd"
+    },
+    "1": {
+      "item": "minecraft:clay_ball"
+    },
+    "2": {
+      "item": "iter_rpg:potsherd"
+    },
+    "4": {
+      "item": "iter_rpg:potsherd"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:small_vase_deco",
+    "count": 1
+  }
+}

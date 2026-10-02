@@ -1,0 +1,102 @@
+{
+  "parent": "blue_skies:everbright/enter",
+  "criteria": {
+    "has_bluebright_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:bluebright_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_bluebright_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:bluebright_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_frostbright_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:frostbright_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_frostbright_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:frostbright_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_starlit_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:starlit_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_starlit_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:starlit_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.blue_skies.everbright.get_wood.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "blue_skies:bluebright_log"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.blue_skies.everbright.get_wood"
+    }
+  },
+  "requirements": [
+    [
+      "has_bluebright_log",
+      "has_bluebright_wood",
+      "has_starlit_log",
+      "has_starlit_wood",
+      "has_frostbright_log",
+      "has_frostbright_wood"
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "simplyswords:netherite_greathammer"
+  },
+  "addition": {
+    "item": "simplyswords:runic_tablet"
+  },
+  "result": {
+    "item": "simplyswords:runic_greathammer"
+  }
+}

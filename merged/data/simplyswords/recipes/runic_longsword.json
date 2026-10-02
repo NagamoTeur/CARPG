@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "simplyswords:netherite_longsword"
+  },
+  "addition": {
+    "item": "simplyswords:runic_tablet"
+  },
+  "result": {
+    "item": "simplyswords:runic_longsword"
+  }
+}

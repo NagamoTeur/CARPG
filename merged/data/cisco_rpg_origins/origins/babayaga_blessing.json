@@ -1,0 +1,12 @@
+{
+    "name": "Baba Yaga's Blessing",
+    "description": "You are favoured by the Baba Yaga the slavic witch of the cauldron. You recieve her wicked blessing.",
+    "powers": [
+        "cisco_rpg_origins:babayaga_boon_minor",
+        "cisco_rpg_origins:babayaga_boon_major"
+    ],
+    "icon": {
+        "item": "minecraft:cauldron"
+    },
+    "impact": 1
+}

@@ -1,0 +1,45 @@
+package com.cerbon.bosses_of_mass_destruction.entity;
+
+import com.cerbon.bosses_of_mass_destruction.client.render.ITextureProvider;
+import com.cerbon.bosses_of_mass_destruction.entity.util.animation.ICodeAnimations;
+import java.util.function.Function;
+import net.minecraft.resources.ResourceLocation;
+import software.bernie.geckolib3.core.IAnimatable;
+import software.bernie.geckolib3.core.IAnimationTickable;
+import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
+import software.bernie.geckolib3.model.AnimatedTickingGeoModel;
+
+public class GeoModel<T extends IAnimatable & IAnimationTickable> extends AnimatedTickingGeoModel<T> {
+   private final Function<T, ResourceLocation> modelLocation;
+   private final ITextureProvider<T> textureProvider;
+   private final ResourceLocation animationLocation;
+   private final ICodeAnimations<T> codeAnimations;
+
+   public GeoModel(
+      Function<T, ResourceLocation> modelLocation, ITextureProvider<T> textureProvider, ResourceLocation animationLocation, ICodeAnimations<T> codeAnimations
+   ) {
+      this.modelLocation = modelLocation;
+      this.textureProvider = textureProvider;
+      this.animationLocation = animationLocation;
+      this.codeAnimations = codeAnimations;
+   }
+
+   public ResourceLocation getModelResource(T t) {
+      return this.modelLocation.apply(t);
+   }
+
+   public ResourceLocation getTextureResource(T t) {
+      return this.textureProvider.getTexture(t);
+   }
+
+   public ResourceLocation getAnimationResource(T t) {
+      return this.animationLocation;
+   }
+
+   public void setLivingAnimations(T animatable, Integer instanceId, AnimationEvent customPredicate) {
+      super.setLivingAnimations(animatable, instanceId, customPredicate);
+      if (animatable != null && customPredicate != null) {
+         this.codeAnimations.animate(animatable, customPredicate, this);
+      }
+   }
+}

@@ -1,0 +1,33 @@
+{
+  "group": "ebony",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "phantasm:ebony_planks"
+    },
+    "3": {
+      "item": "phantasm:ebony_planks"
+    },
+    "4": {
+      "item": "phantasm:ebony_planks"
+    },
+    "6": {
+      "item": "phantasm:ebony_planks"
+    },
+    "7": {
+      "item": "phantasm:ebony_planks"
+    },
+    "8": {
+      "item": "phantasm:ebony_planks"
+    }
+  },
+  "result": {
+    "item": "phantasm:ebony_stairs",
+    "count": 4
+  }
+}

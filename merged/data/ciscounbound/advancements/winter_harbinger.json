@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cisco_mod:glacies"
+    },
+    "title": {
+      "translate": "advancements.winter_harbinger.title"
+    },
+    "description": {
+      "translate": "advancements.winter_harbinger.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "winter_harbinger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cisco_mod:divine_ruby_advancement"
+}

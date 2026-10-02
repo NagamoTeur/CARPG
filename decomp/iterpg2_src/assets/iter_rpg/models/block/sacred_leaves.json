@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iter_rpg:blocks/sacred_leaves",
+    "particle": "iter_rpg:blocks/sacred_leaves"
+  }
+}

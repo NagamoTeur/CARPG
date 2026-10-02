@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "upgradednetherite:gold_upgraded_netherite_ingot",
+    "upgradednetherite:gold_upgraded_netherite_helmet",
+    "upgradednetherite:gold_upgraded_netherite_chestplate",
+    "upgradednetherite:gold_upgraded_netherite_leggings",
+    "upgradednetherite:gold_upgraded_netherite_boots",
+    "upgradednetherite:gold_upgraded_netherite_horse_armor",
+    "upgradednetherite:gold_upgraded_netherite_sword",
+    "upgradednetherite:gold_upgraded_netherite_pickaxe",
+    "upgradednetherite:gold_upgraded_netherite_shovel",
+    "upgradednetherite:gold_upgraded_netherite_axe"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/citizeninvslotsaddition": 2
+    }
+  ],
+  "icon": "minecraft:red_shulker_box",
+  "parentResearch": "minecolonies:technology/deeppockets",
+  "requirements": [
+    {
+      "building": "library",
+      "level": 5
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": [
+          "minecraft:emerald"
+        ]
+      },
+      "quantity": 128
+    }
+  ],
+  "researchLevel": 5
+}

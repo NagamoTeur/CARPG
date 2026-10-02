@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:wither_rose"
+    },
+    "title": {
+      "text": "Ascensio Tenebris",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Abandon the light and embrace corruption."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+
+  "criteria": {
+    "umbral": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

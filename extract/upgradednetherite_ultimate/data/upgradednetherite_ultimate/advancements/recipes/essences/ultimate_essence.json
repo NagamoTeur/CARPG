@@ -1,0 +1,138 @@
+{
+  "parent": "upgradednetherite_ultimate:recipes/root",
+  "criteria": {
+    "has_gold_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "upgradednetherite:gold_essence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_fire_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "upgradednetherite:fire_essence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_ender_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "upgradednetherite:ender_essence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_water_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "upgradednetherite:water_essence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_wither_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "upgradednetherite:wither_essence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_poison_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "upgradednetherite:poison_essence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_phantom_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "upgradednetherite:phantom_essence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_feather_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "upgradednetherite:feather_essence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_echo_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "upgradednetherite:echo_essence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "upgradednetherite_ultimate:ultimate_essence"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_gold_essence",
+      "has_fire_essence",
+      "has_ender_essence",
+      "has_water_essence",
+      "has_wither_essence",
+      "has_poison_essence",
+      "has_phantom_essence",
+      "has_feather_essence",
+      "has_echo_essence",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "upgradednetherite_ultimate:ultimate_essence"
+    ]
+  }
+}

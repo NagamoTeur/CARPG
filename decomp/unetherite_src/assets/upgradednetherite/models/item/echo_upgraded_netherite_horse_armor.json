@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "upgradednetherite:items/echo_upgraded_netherite_horse_armor"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_axe"
+  },
+  "addition": {
+    "item": "upgradednetherite:phantom_essence"
+  },
+  "result": {
+    "item": "upgradednetherite:phantom_upgraded_netherite_axe"
+  }
+}

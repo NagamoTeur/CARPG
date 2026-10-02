@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blue_skies:raw_ventium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "blue_skies:raw_ventium"
+  }
+}

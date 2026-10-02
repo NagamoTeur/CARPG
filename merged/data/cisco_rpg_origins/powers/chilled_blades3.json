@@ -1,0 +1,21 @@
+{
+    "name": "Chilled Blades 3",
+    "description": "You inflict slowness on enemies.",
+    "hidden": true,
+    "type": "origins:target_action_on_hit",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:slowness",
+            "duration": 180,
+            "amplifier": 3,
+            "show_particles": true,
+            "show_icon": true
+        }
+    },
+    "cooldown": 20,
+    "hud_render": {
+        "should_render": false,
+        "bar_index": 5
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_boots"
+  },
+  "addition": {
+    "item": "upgradednetherite:water_essence"
+  },
+  "result": {
+    "item": "upgradednetherite:water_upgraded_netherite_boots"
+  }
+}

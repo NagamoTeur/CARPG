@@ -1,0 +1,24 @@
+{
+  "type": "blue_skies:transmute",
+  "blacklist": [
+    "botania:livingwood_log",
+    "botania:stripped_livingwood_log",
+    "botania:glimmering_livingwood_log",
+    "botania:glimmering_stripped_livingwood_log",
+    "botania:livingwood",
+    "botania:stripped_livingwood",
+    "botania:glimmering_livingwood",
+    "botania:glimmering_stripped_livingwood",
+    "botania:dreamwood_log",
+    "botania:stripped_dreamwood_log",
+    "botania:glimmering_dreamwood_log",
+    "botania:glimmering_stripped_dreamwood_log",
+    "botania:dreamwood",
+    "botania:stripped_dreamwood",
+    "botania:glimmering_dreamwood",
+    "botania:glimmering_stripped_dreamwood"
+  ],
+  "tags": [
+    "minecraft:logs_that_burn"
+  ]
+}

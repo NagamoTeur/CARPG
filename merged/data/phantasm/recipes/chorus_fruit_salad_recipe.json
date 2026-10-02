@@ -1,0 +1,22 @@
+{
+  "group": "chorus_salad",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "item": "phantasm:oblifruit"
+    },
+    {
+      "item": "phantasm:pream_berry"
+    }
+  ],
+  "result": {
+    "item": "phantasm:chorus_fruit_salad",
+    "count": 1
+  }
+}

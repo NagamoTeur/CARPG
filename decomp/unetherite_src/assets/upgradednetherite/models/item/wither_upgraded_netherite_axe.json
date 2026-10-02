@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "upgradednetherite:items/wither_upgraded_netherite_axe"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "unusualend:shulker_orb",
+    "unusualend:nether_orb",
+    "unusualend:golem_orb",
+    "unusualend:wither_orb"
+  ]
+}

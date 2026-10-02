@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "upgradednetherite_items:items/poison_upgraded_netherite_totem"
+  }
+}

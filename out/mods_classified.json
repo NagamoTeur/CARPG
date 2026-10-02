@@ -1,0 +1,1764 @@
+{
+ "⚙️ Performance / Optimisation": [
+  [
+   "aiimprovements",
+   "AI-Improvements",
+   "${file.jarVersion}",
+   "AI-Improvements-1.19.2-0.5.2.jar"
+  ],
+  [
+   "badoptimizations",
+   "BadOptimizations",
+   "2.1.4",
+   "BadOptimizations-2.1.4-1.19.1-19.2.jar"
+  ],
+  [
+   "culllessleaves",
+   "Cull Less Leaves Reforged",
+   "${file.jarVersion}",
+   "CullLessLeaves-Reforged-1.0.5.jar"
+  ],
+  [
+   "entitycollisionfpsfix",
+   "Entity Collision FPS Fix",
+   "${file.jarVersion}",
+   "Entity_Collision_FPS_Fix-forge-1.19-2.0.0.0.jar"
+  ],
+  [
+   "immediatelyfast",
+   "ImmediatelyFast",
+   "1.4.0+1.19.2",
+   "ImmediatelyFast-Forge-1.4.0+1.19.2.jar"
+  ],
+  [
+   "leavesbegone",
+   "Leaves Be Gone",
+   "4.0.1",
+   "LeavesBeGone-v4.0.1-1.19.2-Forge.jar"
+  ],
+  [
+   "longnbtkiller",
+   "LongNbtKiller",
+   "1.0.0",
+   "LongNbtKiller-Forge-1.19.2-1.0.0.jar"
+  ],
+  [
+   "nightconfigfixes",
+   "Night Config Fixes",
+   "4.0.7",
+   "NightConfigFixes-v4.0.7-1.19.2-Forge.jar"
+  ],
+  [
+   "reeses_sodium_options",
+   "TexTrue's Rubidium Options",
+   "1.0.7-mc1.19.2",
+   "TextruesRubidiumOptions-1.0.7-mc1.19.2.jar"
+  ],
+  [
+   "betterfpsdist",
+   "betterfpsdist mod",
+   "${file.jarVersion}",
+   "betterfpsdist-1.19.2-4.1.jar"
+  ],
+  [
+   "bocchium",
+   "Bocchium",
+   "1.19.2-0.0.3",
+   "bocchium-1.19.2-0.0.3.jar"
+  ],
+  [
+   "canary",
+   "Canary",
+   "0.3.3",
+   "canary-mc1.19.2-0.3.3.jar"
+  ],
+  [
+   "celestweaks",
+   "Celestweaks",
+   "0.9.7",
+   "celestweaks-beta-0.9.7-1.19.2.jar"
+  ],
+  [
+   "chunksending",
+   "chunksending mod",
+   "${file.jarVersion}",
+   "chunksending-1.19.2-2.8.jar"
+  ],
+  [
+   "connectivity",
+   "Connectivity Mod",
+   "${file.jarVersion}",
+   "connectivity-1.19.2-4.6.jar"
+  ],
+  [
+   "doespotatotick",
+   "DoesPotatoTick",
+   "1.19.2-5.3.4",
+   "doespotatotick-1.19.2-5.3.4.jar"
+  ],
+  [
+   "entityculling",
+   "EntityCulling",
+   "1.6.1",
+   "entityculling-forge-1.6.1-mc1.19.2.jar"
+  ],
+  [
+   "fastasyncworldsave",
+   "fastasyncworldsave mod",
+   "${file.jarVersion}",
+   "fastasyncworldsave-1.19.2-2.0.jar"
+  ],
+  [
+   "ferritecore",
+   "Ferrite Core",
+   "${file.jarVersion}",
+   "ferritecore-5.0.3-forge.jar"
+  ],
+  [
+   "gpumemleakfix",
+   "Gpu memory leak fix",
+   "${file.jarVersion}",
+   "gpumemleakfix-1.19.2-1.6.jar"
+  ],
+  [
+   "lazydfu",
+   "LazyDFU",
+   "0.1.3",
+   "lazydfu-1.19-1.0.2.jar"
+  ],
+  [
+   "memoryleakfix",
+   "Memory Leak Fix",
+   "1.0.0",
+   "memoryleakfix-forge-1.17+-1.0.0.jar"
+  ],
+  [
+   "memorysettings",
+   "memorysettings mod",
+   "${file.jarVersion}",
+   "memorysettings-1.19.2-5.4.jar"
+  ],
+  [
+   "modernfix",
+   "ModernFix",
+   "5.18.1+mc1.19.2",
+   "modernfix-forge-5.18.1+mc1.19.2.jar"
+  ],
+  [
+   "noisium",
+   "Noisium",
+   "1.0.2",
+   "noisium-1.0.2.jar"
+  ],
+  [
+   "oculus",
+   "Oculus",
+   "1.6.9a",
+   "oculus-mc1.19.2-1.6.9a.jar"
+  ],
+  [
+   "packetfixer",
+   "PacketFixer",
+   "3.1.4",
+   "packetfixer-3.1.4-1.18-1.20.4-merged.jar"
+  ],
+  [
+   "pluto",
+   "Pluto",
+   "${file.jarVersion}",
+   "pluto-mc1.19.2-0.0.9.jar"
+  ],
+  [
+   "mixample",
+   "mixample",
+   "1.0.1",
+   "potfix-cataclysm-addon-1.0.6.jar"
+  ],
+  [
+   "redirector",
+   "Redirector",
+   "5.0.0",
+   "redirector-5.0.0.jar"
+  ],
+  [
+   "rubidium",
+   "Rubidium",
+   "0.6.2c",
+   "rubidium-mc1.19.2-0.6.2c.jar"
+  ],
+  [
+   "rubidium_extras",
+   "Rubidium Extras",
+   "${file.jarVersion}",
+   "rubidium_extras-1.19.2_v1.4.3.jar"
+  ],
+  [
+   "saturn",
+   "Saturn",
+   "0.1.4",
+   "saturn-mc1.19.2-0.1.4.jar"
+  ],
+  [
+   "servercore",
+   "ServerCore",
+   "1.3.6+1.19.2",
+   "servercore-forge-1.3.6+1.19.2.jar"
+  ],
+  [
+   "smoothboot",
+   "Smooth Boot (Reloaded)",
+   "0.0.4",
+   "smoothboot(reloaded)-mc1.19.2-0.0.4.jar"
+  ],
+  [
+   "starlight",
+   "Starlight",
+   "1.1.1+forge.a3aea74",
+   "starlight-1.1.1+forge.cf5b10b.jar"
+  ],
+  [
+   "structureessentials",
+   "Structure Essentials mod",
+   "${file.jarVersion}",
+   "structureessentials-1.19.2-3.2.jar"
+  ]
+ ],
+ "🧭 Outils & interface / Aide en jeu": [
+  [
+   "advancementplaques",
+   "Advancement Plaques",
+   "${file.jarVersion}",
+   "AdvancementPlaques-1.19.2-1.4.7.jar"
+  ],
+  [
+   "betteradvancements",
+   "Better Advancements",
+   "0.2.2.142",
+   "BetterAdvancements-1.19.2-0.2.2.142.jar"
+  ],
+  [
+   "betterthirdperson",
+   "Better Third Person",
+   "${file.jarVersion}",
+   "BetterThirdPerson-Forge-1.19-1.9.0.jar"
+  ],
+  [
+   "controlling",
+   "Controlling",
+   "${file.jarVersion}",
+   "Controlling-forge-1.19.2-10.0+7.jar"
+  ],
+  [
+   "enchdesc",
+   "EnchantmentDescriptions",
+   "13.0.14",
+   "EnchantmentDescriptions-Forge-1.19.2-13.0.14.jar"
+  ],
+  [
+   "explorerscompass",
+   "Explorer's Compass",
+   "${file.jarVersion}",
+   "ExplorersCompass-1.19.2-1.3.0-forge.jar"
+  ],
+  [
+   "highlighter",
+   "Highlighter",
+   "${file.jarVersion}",
+   "Highlighter-1.19.1-1.1.4.jar"
+  ],
+  [
+   "jade",
+   "Jade",
+   "${file.jarVersion}",
+   "Jade-1.19.1-forge-8.9.2.jar"
+  ],
+  [
+   "jeresources",
+   "Just Enough Resources",
+   "1.2.3.243",
+   "JustEnoughResources-1.19.2-1.2.3.243.jar"
+  ],
+  [
+   "legendarytooltips",
+   "Legendary Tooltips",
+   "${file.jarVersion}",
+   "LegendaryTooltips-1.19.2-forge-1.4.0.jar"
+  ],
+  [
+   "mousetweaks",
+   "Mouse Tweaks",
+   "${file.jarVersion}",
+   "MouseTweaks-forge-mc1.19-2.23.jar"
+  ],
+  [
+   "naturescompass",
+   "Nature's Compass",
+   "${file.jarVersion}",
+   "NaturesCompass-1.19.2-1.10.0-forge.jar"
+  ],
+  [
+   "overflowingbars",
+   "Overflowing Bars",
+   "4.0.1",
+   "OverflowingBars-v4.0.1-1.19.2-Forge.jar"
+  ],
+  [
+   "patchouli",
+   "Patchouli",
+   "${file.jarVersion}",
+   "Patchouli-1.19.2-77.jar"
+  ],
+  [
+   "travelerstitles",
+   "Traveler's Titles",
+   "1.19.2-Forge-3.1.2",
+   "TravelersTitles-1.19.2-Forge-3.1.2.jar"
+  ],
+  [
+   "appleskin",
+   "AppleSkin",
+   "${file.jarVersion}",
+   "appleskin-forge-mc1.19-2.4.2.jar"
+  ],
+  [
+   "eccentrictome",
+   "Eccentric Tome",
+   "1.19.2-1.10.2",
+   "eccentrictome-1.19.2-1.10.2.jar"
+  ],
+  [
+   "jei",
+   "Just Enough Items",
+   "11.8.1.1034",
+   "jei-1.19.2-forge-11.8.1.1034.jar"
+  ],
+  [
+   "xaerominimap",
+   "Xaero's Minimap",
+   "25.3.13",
+   "xaerominimap-forge-1.19.2-25.3.13.jar"
+  ],
+  [
+   "xaeroworldmap",
+   "Xaero's World Map",
+   "1.40.16",
+   "xaeroworldmap-forge-1.19.2-1.40.16.jar"
+  ]
+ ],
+ "🎮 Gameplay / Cœur RPG (talents, loot, gemmes, affixes)": [
+  [
+   "apotheosis",
+   "Apotheosis",
+   "6.5.2",
+   "Apotheosis-1.19.2-6.5.2.jar"
+  ],
+  [
+   "apothiccurios",
+   "Apothic Curios",
+   "1.0.3c",
+   "ApothicCurios-1.19.2-1.0.3c.jar"
+  ],
+  [
+   "armordamagelimit",
+   "Armor Damage Limit",
+   "1.19.2-1.0.0",
+   "ArmorDamageLimit-1.19.2-1.0.0.jar"
+  ],
+  [
+   "attributefix",
+   "AttributeFix",
+   "17.2.8",
+   "AttributeFix-Forge-1.19.2-17.2.8.jar"
+  ],
+  [
+   "autoleveling",
+   "Auto Leveling",
+   "1.19b",
+   "AutoLeveling-1.19.2-1.19b.jar"
+  ],
+  [
+   "maxhealthfix",
+   "MaxHealthFix",
+   "8.0.2",
+   "MaxHealthFix-Forge-1.19.2-8.0.2.jar"
+  ],
+  [
+   "skilltree",
+   "Passive Skill Tree",
+   "0.6.14b",
+   "PassiveSkillTree-1.19.2-BETA-0.6.14b-all.jar"
+  ],
+  [
+   "apotheotic_additions",
+   "apotheotic_additions",
+   "1.0.4",
+   "apotheotic_additions1.0.4.jar"
+  ],
+  [
+   "apothsb",
+   "ApothSB",
+   "1.0.0",
+   "apothsb-1.0.0.jar"
+  ],
+  [
+   "infernalmobs",
+   "Infernal Mobs",
+   "${file.jarVersion}",
+   "infernalmobs-1.19.2.4.jar"
+  ],
+  [
+   "xpbook",
+   "XP Tome",
+   "${file.jarVersion}",
+   "xptome-1.19-2.1.7.jar"
+  ]
+ ],
+ "🎮 Gameplay / Cuisine, ferme & pêche": [
+  [
+   "aquaculture",
+   "Aquaculture 2",
+   "${file.jarVersion}",
+   "Aquaculture-1.19.2-2.4.17.jar"
+  ],
+  [
+   "brewinandchewin",
+   "Brewin' and Chewin'",
+   "1.19-2.0",
+   "BrewinAndChewin-1.19-2.0.jar"
+  ],
+  [
+   "delightful",
+   "Delightful",
+   "${file.jarVersion}",
+   "Delightful-1.19.2-3.4.1.jar"
+  ],
+  [
+   "farmersdelight",
+   "Farmer's Delight",
+   "1.19.2-1.2.4",
+   "FarmersDelight-1.19.2-1.2.4.jar"
+  ],
+  [
+   "farmersrespite",
+   "Farmer's Respite",
+   "1.19-2.0",
+   "FarmersRespite-1.19-2.0.jar"
+  ],
+  [
+   "nethersdelight",
+   "Nether's Delight",
+   "1.19-3.1",
+   "NethersDelight-1.19-3.1.jar"
+  ],
+  [
+   "alexsdelight",
+   "Alex's Delight",
+   "${file.jarVersion}",
+   "alexsdelight-1.4.1.jar"
+  ],
+  [
+   "bakery",
+   "Bakery",
+   "1.0.6",
+   "letsdo-bakery-forge-1.0.6.jar"
+  ],
+  [
+   "vinery",
+   "Vinery",
+   "1.3.12",
+   "letsdo-vinery-forge-1.3.12b.jar"
+  ],
+  [
+   "rightclickharvest",
+   "Right Click Harvest",
+   "${file.jarVersion}",
+   "right-click-harvest-3.2.3+1.19.2-forge.jar"
+  ],
+  [
+   "solapplepie",
+   "Spice of Life: Apple Pie Edition",
+   "${file.jarVersion}",
+   "solapplepie-1.19.2-2.2.0.jar"
+  ]
+ ],
+ "📚 Bibliothèques / API": [
+  [
+   "autoreglib",
+   "AutoRegLib",
+   "${file.jarVersion}",
+   "AutoRegLib-1.8.2-55.jar"
+  ],
+  [
+   "bookshelf",
+   "Bookshelf",
+   "16.3.20",
+   "Bookshelf-Forge-1.19.2-16.3.20.jar"
+  ],
+  [
+   "corgilib",
+   "CorgiLib",
+   "${file.jarVersion}",
+   "CorgiLib-forge-1.19.2-1.0.0.34.jar"
+  ],
+  [
+   "craterlib",
+   "CraterLib",
+   "3.0.1",
+   "CraterLib-Forge-1.19.2-3.0.1.jar"
+  ],
+  [
+   "iceberg",
+   "Iceberg",
+   "${file.jarVersion}",
+   "Iceberg-1.19.2-forge-1.1.4.jar"
+  ],
+  [
+   "insanelib",
+   "InsaneLib",
+   "${file.jarVersion}",
+   "InsaneLib-1.7.5-mc1.19.2.jar"
+  ],
+  [
+   "necronomicon",
+   "Necronomicon",
+   "1.4.2",
+   "Necronomicon-Forge-1.4.2.jar"
+  ],
+  [
+   "placebo",
+   "Placebo",
+   "7.4.1",
+   "Placebo-1.19.2-7.4.1.jar"
+  ],
+  [
+   "prism",
+   "Prism",
+   "1.0.2",
+   "Prism-1.19.1-1.0.2.jar"
+  ],
+  [
+   "puzzleslib",
+   "Puzzles Lib",
+   "4.4.3",
+   "PuzzlesLib-v4.4.3-1.19.2-Forge.jar"
+  ],
+  [
+   "terrablender",
+   "TerraBlender",
+   "${file.jarVersion}",
+   "TerraBlender-forge-1.19.2-2.0.1.166.jar"
+  ],
+  [
+   "yungsapi",
+   "YUNG's API",
+   "${file.jarVersion}",
+   "YungsApi-1.19.2-Forge-3.8.10.jar"
+  ],
+  [
+   "aeroblender",
+   "AeroBlender",
+   "${file.jarVersion}",
+   "aeroblender-1.19.2-1.0.1.jar"
+  ],
+  [
+   "architectury",
+   "Architectury",
+   "6.6.92",
+   "architectury-6.6.92-forge.jar"
+  ],
+  [
+   "azurelib",
+   "AzureLib",
+   "3.2.2",
+   "azurelib-forge-1.19.2-3.2.2.jar"
+  ],
+  [
+   "balm",
+   "Balm",
+   "${file.jarVersion}",
+   "balm-forge-1.19.2-4.6.0.jar"
+  ],
+  [
+   "blueprint",
+   "Blueprint",
+   "6.2.0",
+   "blueprint-1.19.2-6.2.0.jar"
+  ],
+  [
+   "caelus",
+   "Caelus API",
+   "1.19.2-3.0.0.6",
+   "caelus-forge-1.19.2-3.0.0.6.jar"
+  ],
+  [
+   "citadel",
+   "Citadel",
+   "2.1.4",
+   "citadel-2.1.4-1.19.jar"
+  ],
+  [
+   "cloth_config",
+   "Cloth Config v8 API",
+   "8.3.134",
+   "cloth-config-8.3.134-forge.jar"
+  ],
+  [
+   "cupboard",
+   "Cupboard utilities",
+   "${file.jarVersion}",
+   "cupboard-1.19.2-2.6.jar"
+  ],
+  [
+   "doapi",
+   "Lets Do Api",
+   "1.1.0b",
+   "doapi-1.1.0b.jar"
+  ],
+  [
+   "ftblibrary",
+   "FTB Library",
+   "1902.4.1-build.236",
+   "ftb-library-forge-1902.4.1-build.236.jar"
+  ],
+  [
+   "ftbteams",
+   "FTB Teams",
+   "1902.2.14-build.123",
+   "ftb-teams-forge-1902.2.14-build.123.jar"
+  ],
+  [
+   "ftbxmodcompat",
+   "FTB XMod Compat",
+   "1.2.4",
+   "ftb-xmod-compat-forge-1.2.4.jar"
+  ],
+  [
+   "geckolib3",
+   "GeckoLib",
+   "${file.jarVersion}",
+   "geckolib-forge-1.19-3.1.40.jar"
+  ],
+  [
+   "knightlib",
+   "Knight Lib",
+   "${file.jarVersion}",
+   "knightlib-forge-1.19.2-1.2.0.jar"
+  ],
+  [
+   "libraryferret",
+   "Library ferret",
+   "4.0.0",
+   "libraryferret-forge-1.19.2-4.0.0.jar"
+  ],
+  [
+   "lionfishapi",
+   "LionfishAPI",
+   "1.8",
+   "lionfishapi-1.8.jar"
+  ],
+  [
+   "majruszlibrary",
+   "Majrusz Library",
+   "7.0.5-backport.1",
+   "majrusz-library-forge-1.19.2-7.0.5-backport.1.jar"
+  ],
+  [
+   "moonlight",
+   "Moonlight Library",
+   "1.19.2-2.3.7",
+   "moonlight-1.19.2-2.3.7-forge.jar"
+  ],
+  [
+   "obscure_api",
+   "Obscure API",
+   "15",
+   "obscure_api-15.jar"
+  ],
+  [
+   "octolib",
+   "OctoLib",
+   "0.3",
+   "octolib-1.19.2-0.3.jar"
+  ],
+  [
+   "playeranimator",
+   "Player Animator",
+   "1.0.2",
+   "player-animation-lib-forge-1.0.2.jar"
+  ],
+  [
+   "shadowizardlib",
+   "ShadowizardLib",
+   "${file.jarVersion}",
+   "shadowizardlib-1.19.2-1.0.8.jar"
+  ],
+  [
+   "structure_gel",
+   "Structure Gel API",
+   "${file.jarVersion}",
+   "structure_gel-1.19.2-2.7.3.jar"
+  ],
+  [
+   "upgradedcore",
+   "Upgraded Core",
+   "${file.jarVersion}",
+   "upgradedcore-1.19.2-4.1.0.1-release.jar"
+  ],
+  [
+   "valhelsia_core",
+   "Valhelsia Core",
+   "${file.jarVersion}",
+   "valhelsia_core-forge-1.19.2-0.5.0.jar"
+  ]
+ ],
+ "🛠️ Admin / modpack / Scripts & config": [
+  [
+   "bhmenu",
+   "BHMenu",
+   "2.4.3",
+   "BHMenu-Forge-1.19.2-2.4.3.jar"
+  ],
+  [
+   "badmobs",
+   "BadMobs",
+   "16.1.3",
+   "BadMobs-1.19.2-16.1.3.jar"
+  ],
+  [
+   "crafttweaker",
+   "CraftTweaker",
+   "${file.jarVersion}",
+   "CraftTweaker-forge-1.19.2-10.1.56.jar"
+  ],
+  [
+   "crash_assistant",
+   "Crash Assistant",
+   "1.11.9",
+   "CrashAssistant-forge-1.19-1.20.1-1.11.9.jar"
+  ],
+  [
+   "itemproductionlib",
+   "Item Production Lib",
+   "1.0.2a",
+   "ItemProductionLib-1.19.2-1.0.2a-all.jar"
+  ],
+  [
+   "item_obliterator",
+   "Item Obliterator",
+   "1.6.2",
+   "Item_Obliterator-FORGE-MC1.19.2-1.6.2.jar"
+  ],
+  [
+   "myserveriscompatible",
+   "MyServerIsCompatible",
+   "${file.jarVersion}",
+   "MyServerIsCompatible-1.19-1.0.jar"
+  ],
+  [
+   "paxi",
+   "Paxi",
+   "1.19.2-Forge-3.0.1",
+   "Paxi-1.19.2-Forge-3.0.1.jar"
+  ],
+  [
+   "simplerpc",
+   "Simple RPC",
+   "4.0.4",
+   "SimpleRPC-4.0.4.jar"
+  ],
+  [
+   "biomemusic",
+   "biomemusic mod",
+   "${file.jarVersion}",
+   "biomemusic-1.19.2-2.2.jar"
+  ],
+  [
+   "defaultoptions",
+   "Default Options",
+   "${file.jarVersion}",
+   "defaultoptions-forge-1.19-15.0.2.jar"
+  ],
+  [
+   "fancymenu",
+   "FancyMenu",
+   "3.8.1",
+   "fancymenu_forge_3.8.1_MC_1.19.2.jar"
+  ],
+  [
+   "getittogetherdrops",
+   "Get It Together, Drops!",
+   "${file.jarVersion}",
+   "getittogetherdrops-forge-1.19.2-1.3.jar"
+  ],
+  [
+   "itemfilters",
+   "Item Filters",
+   "1902.2.9-build.51",
+   "item-filters-forge-1902.2.9-build.51.jar"
+  ],
+  [
+   "konkrete",
+   "Konkrete",
+   "1.8.0",
+   "konkrete_forge_1.8.0_MC_1.19-1.19.2.jar"
+  ],
+  [
+   "kubejs",
+   "KubeJS",
+   "1902.6.2-build.73",
+   "kubejs-forge-1902.6.2-build.73.jar"
+  ],
+  [
+   "letmedespawn",
+   "Let Me Despawn",
+   "1.3.2b",
+   "letmedespawn-forge-1.3.2b.jar"
+  ],
+  [
+   "lootintegrations",
+   "Lootintegrations mod",
+   "${file.jarVersion}",
+   "lootintegrations-1.19.2-4.7.jar"
+  ],
+  [
+   "melody",
+   "Melody",
+   "1.0.1",
+   "melody_forge_1.0.1_MC_1.19.2.jar"
+  ],
+  [
+   "nerb",
+   "Not Enough Recipe Book",
+   "0.3",
+   "nerb-1.19.2-0.3-FORGE.jar"
+  ],
+  [
+   "polymorph",
+   "Polymorph",
+   "0.46.6+1.19.2",
+   "polymorph-forge-0.46.6+1.19.2.jar"
+  ],
+  [
+   "recipeessentials",
+   "recipeessentials mod",
+   "${file.jarVersion}",
+   "recipeessentials-1.19.2-3.5.jar"
+  ],
+  [
+   "rhino",
+   "Rhino",
+   "1902.2.3-build.284",
+   "rhino-forge-1902.2.3-build.284.jar"
+  ],
+  [
+   "toofast",
+   "Too Fast",
+   "0.2.2.4",
+   "toofast-1.19-0.2.2.4.jar"
+  ],
+  [
+   "yeetusexperimentus",
+   "Yeetus Experimentus",
+   "1.0.1-build.2+mc1.19.1",
+   "yeetusexperimentus-1.0.1-build.2+mc1.19.1.jar"
+  ],
+  [
+   "medievalmusic",
+   "medievalmusic mod",
+   "${file.jarVersion}",
+   "zmedievalmusic-1.19.2-2.0.jar"
+  ]
+ ],
+ "🎮 Gameplay / Boss & monstres": [
+  [
+   "bosses_of_mass_destruction",
+   "Bosses of Mass Destruction",
+   "1.0.6",
+   "BOMD-Forge-1.19.2-1.0.6.jar"
+  ],
+  [
+   "cataclysm",
+   "Cataclysm Mod",
+   "2.46",
+   "L_Enders_Cataclysm-2.46-1.19.2.jar"
+  ],
+  [
+   "mutantmonsters",
+   "Mutant Monsters",
+   "4.0.6",
+   "MutantMonsters-v4.0.6-1.19.2-Forge.jar"
+  ],
+  [
+   "undead_unleashed",
+   "Undead Unleashed",
+   "1.1.0",
+   "UndeadUnleashed-1.1.1-1.19.2.jar"
+  ],
+  [
+   "alexsmobs",
+   "Alex's Mobs",
+   "1.21.1",
+   "alexsmobs-1.21.1.jar"
+  ],
+  [
+   "dummmmmmy",
+   "MmmMmmMmmmmm",
+   "1.19.2-1.7.1",
+   "dummmmmmy-1.19.2-1.7.1.jar"
+  ],
+  [
+   "enemyexpansion",
+   "Enemy Expansion",
+   "2.4.0",
+   "enemyexpansion-2.4.0-forge-1.19.2.jar"
+  ],
+  [
+   "meetyourfight",
+   "Meet Your Fight",
+   "${file.jarVersion}",
+   "meetyourfight-1.19.2-1.3.4.jar"
+  ],
+  [
+   "mowziesmobs",
+   "Mowzie's Mobs",
+   "1.6.3",
+   "mowziesmobs-1.6.3.jar"
+  ],
+  [
+   "royalvariations",
+   "Royal Variations",
+   "1.0.0",
+   "royal_variations_[Forge]_1.19.2_1.0.jar"
+  ],
+  [
+   "savage_and_ravage",
+   "Savage & Ravage",
+   "${file.jarVersion}",
+   "savage_and_ravage-1.19.2-5.0.5.jar"
+  ],
+  [
+   "sons_of_sins",
+   "Sons of Sins",
+   "2.1.6",
+   "sons-of-sins-1.19.2-2.1.6.jar"
+  ],
+  [
+   "whisperwoods",
+   "Whisperwoods",
+   "1.19-2.1.1",
+   "whisperwoods-1.19-2.1.1-forge.jar"
+  ]
+ ],
+ "🎮 Gameplay / Vie pratique (stockage, déplacement)": [
+  [
+   "clumps",
+   "Clumps",
+   "${file.jarVersion}",
+   "Clumps-forge-1.19.2-9.0.0+14.jar"
+  ],
+  [
+   "storagedrawers",
+   "Storage Drawers",
+   "11.4.1",
+   "StorageDrawers-1.19.2-11.4.1.jar"
+  ],
+  [
+   "carryon",
+   "Carry On",
+   "${file.jarVersion}",
+   "carryon-forge-1.19.2-2.1.2.23.jar"
+  ],
+  [
+   "comforts",
+   "Comforts",
+   "6.0.7+1.19.2",
+   "comforts-forge-6.0.7+1.19.2.jar"
+  ],
+  [
+   "constructionwand",
+   "Construction Wand",
+   "${file.jarVersion}",
+   "constructionwand-1.19.2-2.10.jar"
+  ],
+  [
+   "corpse",
+   "Corpse",
+   "1.19.2-1.0.17",
+   "corpse-forge-1.19.2-1.0.17.jar"
+  ],
+  [
+   "corpsecurioscompat",
+   "corpsecurioscompat",
+   "2.2.2",
+   "corpsecurioscompat-1.18.x-1.20.x-Forge-2.2.2.jar"
+  ],
+  [
+   "elevatorid",
+   "Elevator Mod",
+   "${file.jarVersion}",
+   "elevatorid-1.19.2-1.8.10.jar"
+  ],
+  [
+   "ftbchunks",
+   "FTB Chunks",
+   "1902.4.7-build.420",
+   "ftb-chunks-forge-1902.4.7-build.420.jar"
+  ],
+  [
+   "ftbultimine",
+   "FTB Ultimine",
+   "1902.4.2-build.14",
+   "ftb-ultimine-forge-1902.4.2-build.14.jar"
+  ],
+  [
+   "ironchest",
+   "Iron Chests",
+   "1.19.2-14.2.7",
+   "ironchest-1.19.2-14.2.7.jar"
+  ],
+  [
+   "ironfurnaces",
+   "Iron Furnaces",
+   "${file.jarVersion}",
+   "ironfurnaces-1.19.2-3.6.5.jar"
+  ],
+  [
+   "lootr",
+   "Lootr",
+   "0.4.28.75",
+   "lootr-forge-1.19-0.4.29.76.jar"
+  ],
+  [
+   "mythicmounts",
+   "MythicMounts",
+   "${file.jarVersion}",
+   "mythicmounts-19.2-7.2.1-forge.jar"
+  ],
+  [
+   "smallships",
+   "Small Ships",
+   "2.0.0-b1.3.1",
+   "smallships-forge-1.19.2-2.0.0-b1.3.1.jar"
+  ],
+  [
+   "sophisticatedbackpacks",
+   "Sophisticated Backpacks",
+   "${file.jarVersion}",
+   "sophisticatedbackpacks-1.19.2-3.20.2.1035.jar"
+  ],
+  [
+   "sophisticatedcore",
+   "Sophisticated Core",
+   "${file.jarVersion}",
+   "sophisticatedcore-1.19.2-0.6.4.730.jar"
+  ],
+  [
+   "toms_storage",
+   "Tom's Simple Storage Mod",
+   "${file.jarVersion}",
+   "toms_storage-1.19-1.5.11.jar"
+  ],
+  [
+   "waystones",
+   "Waystones",
+   "${file.jarVersion}",
+   "waystones-forge-1.19.2-11.4.2.jar"
+  ]
+ ],
+ "🎮 Gameplay / Dimensions & biomes": [
+  [
+   "darkerdepths",
+   "Darker Depths",
+   "1.19-1.0.7",
+   "DarkerDepths-1.19.2-1.0.0.jar"
+  ],
+  [
+   "phantasm",
+   "End's Phantasm",
+   "1.2.10.5",
+   "End's Phantasm - BETAv1.2.10.5 - 1.19.2.jar"
+  ],
+  [
+   "endlessbiomes",
+   "EndlessBiomes",
+   "1.0.0",
+   "EndlessBiomes 1.4s - 1.19.2 (Server-friendly).jar"
+  ],
+  [
+   "galosphere",
+   "Galosphere",
+   "1.19.2-1.3.0",
+   "Galosphere-1.19.2-1.3.0-Forge.jar"
+  ],
+  [
+   "incendium",
+   "Incendium",
+   "5.1.6",
+   "Incendium_1.19.3_v5.1.6.jar"
+  ],
+  [
+   "byg",
+   "Oh The Biomes You'll Go",
+   "${file.jarVersion}",
+   "Oh_The_Biomes_You'll_Go-forge-1.19.2-2.0.1.6.jar"
+  ],
+  [
+   "unusualend",
+   "Unusual End",
+   "1.4.3",
+   "UnusualEnd1.19.2_V1.4.3.jar"
+  ],
+  [
+   "aether",
+   "The Aether",
+   "${file.jarVersion}",
+   "aether-1.19.2-1.4.2-forge.jar"
+  ],
+  [
+   "aquamirae",
+   "Aquamirae",
+   "6.API15",
+   "aquamirae-6.API15.jar"
+  ],
+  [
+   "atmospheric",
+   "Atmospheric",
+   "${file.jarVersion}",
+   "atmospheric-1.19.2-5.1.2.jar"
+  ],
+  [
+   "blue_skies",
+   "Blue Skies",
+   "${file.jarVersion}",
+   "blue_skies-1.19.2-1.3.20.jar"
+  ],
+  [
+   "bygonenether",
+   "Bygone Nether",
+   "1.3.2",
+   "bygonenether-1.3.2-1.19.2.jar"
+  ],
+  [
+   "deep_aether",
+   "Deep Aether",
+   "${file.jarVersion}",
+   "deep_aether-1.19.2-1.0.4.jar"
+  ],
+  [
+   "deeperdarker",
+   "Deeper and Darker",
+   "1.2.2",
+   "deeperdarker-forge-1.19.2-1.2.2.jar"
+  ],
+  [
+   "endrem",
+   "End Remastered",
+   "${file.jarVersion}",
+   "endrem_forge-5.2.1-R-1.19.X.jar"
+  ],
+  [
+   "twilightforest",
+   "The Twilight Forest",
+   "${file.jarVersion}",
+   "twilightforest-1.19.2-4.2.1518-universal.jar"
+  ]
+ ],
+ "🏗️ Décoration & construction / Blocs & mobilier": [
+  [
+   "decorative_blocks",
+   "Decorative Blocks",
+   "${file.jarVersion}",
+   "Decorative Blocks-forge-1.19.2-3.0.0.jar"
+  ],
+  [
+   "dramaticdoors",
+   "Dramatic Doors",
+   "1.19.2-3.2.7",
+   "DramaticDoors-QuiFabrge-1.19.2-3.2.7.jar"
+  ],
+  [
+   "quark",
+   "Quark",
+   "${file.jarVersion}",
+   "Quark-3.4-418.jar"
+  ],
+  [
+   "clayworks",
+   "Clayworks",
+   "${file.jarVersion}",
+   "clayworks-1.19.2-2.1.0.jar"
+  ],
+  [
+   "ecologics",
+   "Ecologics",
+   "2.1.11",
+   "ecologics-forge-1.19.2-2.1.11.jar"
+  ],
+  [
+   "fantasyfurniture",
+   "Fantasy's Furniture",
+   "${file.jarVersion}",
+   "fantasyfurniture-1.19.2-6.7.0.jar"
+  ],
+  [
+   "fastpaintings",
+   "Fast Paintings",
+   "1.19-1.1.3",
+   "fastpaintings-1.19-1.1.3.jar"
+  ],
+  [
+   "immersive_paintings",
+   "Immersive Paintings",
+   "0.6.7+1.19.2",
+   "immersive_paintings-0.6.7+1.19.2-forge.jar"
+  ],
+  [
+   "medieval_paintings",
+   "Medieval Paintings",
+   "7.0",
+   "medieval_paintings-1.19.2-7.0.jar"
+  ],
+  [
+   "multipiston",
+   "Multi-Piston",
+   "1.19.2-1.2.25-ALPHA",
+   "multipiston-1.19.2-1.2.25-ALPHA.jar"
+  ],
+  [
+   "supplementaries",
+   "Supplementaries",
+   "1.19.2-2.4.20",
+   "supplementaries-1.19.2-2.4.20.jar"
+  ],
+  [
+   "twigs",
+   "Twigs",
+   "1.19.2-3.0.1",
+   "twigs-forge-1.19.2-3.0.1.jar"
+  ],
+  [
+   "woodworks",
+   "Woodworks",
+   "${file.jarVersion}",
+   "woodworks-1.19.2-2.2.2.jar"
+  ]
+ ],
+ "🎮 Gameplay / Structures & donjons": [
+  [
+   "dungeoncrawl",
+   "Dungeon Crawl",
+   "2.3.12",
+   "DungeonCrawl-1.19-2.3.12.jar"
+  ],
+  [
+   "dungeons_arise",
+   "When Dungeons Arise",
+   "2.1.54-1.19.2",
+   "DungeonsArise-1.19.2-2.1.54-release.jar"
+  ],
+  [
+   "dungeons_arise_seven_seas",
+   "When Dungeons Arise: Seven Seas",
+   "1.0.2",
+   "DungeonsAriseSevenSeas-1.19.2-1.0.2-forge.jar"
+  ],
+  [
+   "explorify",
+   "Explorify",
+   "1.6.3",
+   "Explorify v1.6.3 f10-88.mod.jar"
+  ],
+  [
+   "hoporp",
+   "HopoBetterRuinedPortals",
+   "1.3.3",
+   "HopoBetterRuinedPortals-[1.19-1.19.3]-1.3.3b.jar"
+  ],
+  [
+   "skyvillages",
+   "Sky Villages",
+   "1.0.3",
+   "SkyVillages-1.0.3-1.19.2-1.20.x-forge-release.jar"
+  ],
+  [
+   "structory",
+   "Structory",
+   "1.3.1a",
+   "Structory_1.19.3_v1.3.1a.jar"
+  ],
+  [
+   "structorytowers",
+   "Structory: Towers",
+   "1.0.2",
+   "Structory_Towers_1.19.3_v1.0.2.jar"
+  ],
+  [
+   "t_and_t",
+   "Towns and Towers",
+   "${file.jarVersion}",
+   "Towns-and-Towers-v.1.10-_FORGE-1.19.2_.jar"
+  ],
+  [
+   "wabi_sabi_structures",
+   "Wabi-Sabi Structures",
+   "1.2.0-1.19",
+   "Wabi-Sabi-Structures-1.2.0-1.19-Forge.jar"
+  ],
+  [
+   "betterdeserttemples",
+   "YUNG's Better Desert Temples",
+   "1.19.2-Forge-2.2.2",
+   "YungsBetterDesertTemples-1.19.2-Forge-2.2.2.jar"
+  ],
+  [
+   "betterdungeons",
+   "YUNG's Better Dungeons",
+   "1.19.2-Forge-3.2.2",
+   "YungsBetterDungeons-1.19.2-Forge-3.2.2.jar"
+  ],
+  [
+   "betterendisland",
+   "YUNG's Better End Island",
+   "1.19.2-Forge-1.0",
+   "YungsBetterEndIsland-1.19.2-Forge-1.0.jar"
+  ],
+  [
+   "betterjungletemples",
+   "YUNG's Better Jungle Temples",
+   "1.19.2-Forge-1.0.1",
+   "YungsBetterJungleTemples-1.19.2-Forge-1.0.1.jar"
+  ],
+  [
+   "bettermineshafts",
+   "YUNG's Better Mineshafts",
+   "1.19.2-Forge-3.2.1",
+   "YungsBetterMineshafts-1.19.2-Forge-3.2.1.jar"
+  ],
+  [
+   "betterfortresses",
+   "YUNG's Better Nether Fortresses",
+   "1.19.2-Forge-1.0.6",
+   "YungsBetterNetherFortresses-1.19.2-Forge-1.0.6.jar"
+  ],
+  [
+   "betteroceanmonuments",
+   "YUNG's Better Ocean Monuments",
+   "1.19.2-Forge-2.1.1",
+   "YungsBetterOceanMonuments-1.19.2-Forge-2.1.1.jar"
+  ],
+  [
+   "betterstrongholds",
+   "YUNG's Better Strongholds",
+   "1.19.2-Forge-3.2.0",
+   "YungsBetterStrongholds-1.19.2-Forge-3.2.0.jar"
+  ],
+  [
+   "awesomedungeonend",
+   "Awesome dungeon the end",
+   "3.1.1",
+   "awesomedungeonend-forge-1.19.2-3.1.1.jar"
+  ],
+  [
+   "awesomedungeonnether",
+   "Awesome dungeon nether",
+   "3.1.1",
+   "awesomedungeonnether-forge-1.19.2-3.1.1.jar"
+  ],
+  [
+   "ctov",
+   "ChoiceTheorem's Overhauled Village",
+   "3.2.6c",
+   "ctov-3.2.6c.jar"
+  ],
+  [
+   "dungeons_andtaverns_mr",
+   "Dungeons and Taverns",
+   "2.0.2",
+   "dungeons-and-taverns-2.0.2 forge.jar"
+  ],
+  [
+   "dungeons_enhanced",
+   "Dungeons Enhanced",
+   "4.1",
+   "dungeons_enhanced-1.19.2-4.1.jar"
+  ],
+  [
+   "dungeons_plus",
+   "Dungeons Plus",
+   "${file.jarVersion}",
+   "dungeons_plus-1.19.2-1.3.1.jar"
+  ],
+  [
+   "knightquest",
+   "Knight Quest",
+   "1.8.5",
+   "knightquest-1.8.5.jar"
+  ],
+  [
+   "repurposed_structures",
+   "Repurposed Structures",
+   "${file.jarVersion}",
+   "repurposed_structures_forge-6.3.29+1.19.2.jar"
+  ],
+  [
+   "stalwart_dungeons",
+   "Stalwart Dungeons",
+   "1.2.8",
+   "stalwart-dungeons-1.19.2-1.2.8.jar"
+  ],
+  [
+   "takesapillage",
+   "It Takes A Pillage",
+   "1.0.3",
+   "takesapillage-1.0.3-1.19.2.jar"
+  ],
+  [
+   "tlc",
+   "The Lost Castle",
+   "1.0.2",
+   "tlc_forge-1.0.2-R-1.19.2.jar"
+  ],
+  [
+   "totw_modded",
+   "Towers of the Wild Modded",
+   "${file.jarVersion}",
+   "totw_modded-forge-1.19.2-1.0.5.jar"
+  ]
+ ],
+ "🎮 Gameplay / Accessoires & reliques": [
+  [
+   "enigmaticlegacy",
+   "Enigmatic Legacy",
+   "2.26.5",
+   "EnigmaticLegacy-2.26.5.jar"
+  ],
+  [
+   "ringsofascension",
+   "Rings of Ascension",
+   "1.0.0",
+   "RingsOfAscension-1.19-1.0.1.jar"
+  ],
+  [
+   "curios",
+   "Curios API",
+   "${file.jarVersion}",
+   "curios-forge-1.19.2-5.1.6.4.jar"
+  ],
+  [
+   "elytraslot",
+   "Elytra Slot",
+   "6.1.2+1.19.2",
+   "elytraslot-forge-6.1.2+1.19.2.jar"
+  ],
+  [
+   "enigmaticaddons",
+   "Enigmatic Addons",
+   "1.19.2-1.2.2",
+   "enigmaticaddons-1.19.2-1.2.2.jar"
+  ],
+  [
+   "majruszsaccessories",
+   "Majrusz's Accessories",
+   "1.5.2-backport.2",
+   "majruszs-accessories-forge-1.19.2-1.5.2-backport.2.jar"
+  ],
+  [
+   "relics",
+   "Relics",
+   "0.6.2.5",
+   "relics-1.19.2-0.6.2.5.jar"
+  ],
+  [
+   "transmog",
+   "Transmog",
+   "${file.jarVersion}",
+   "transmog-forge-1.2.2+1.19.2.jar"
+  ]
+ ],
+ "🎮 Gameplay / Progression & difficulté": [
+  [
+   "gamestages",
+   "GameStages",
+   "11.1.4",
+   "GameStages-Forge-1.19.2-11.1.4.jar"
+  ],
+  [
+   "gateways",
+   "Gateways To Eternity",
+   "3.2.3",
+   "GatewaysToEternity-1.19.2-3.2.3.jar"
+  ],
+  [
+   "itemstages",
+   "ItemStages",
+   "5.1.4",
+   "ItemStages-Forge-1.19.2-5.1.4.jar"
+  ],
+  [
+   "progressivebosses",
+   "Progressive Bosses",
+   "${file.jarVersion}",
+   "ProgressiveBosses-3.7.6-mc1.19.2.jar"
+  ],
+  [
+   "raided",
+   "Raided",
+   "${file.jarVersion}",
+   "Raided-1.19.2-0.1.6.jar"
+  ],
+  [
+   "brutalbosses",
+   "brutalbosses mod",
+   "${file.jarVersion}",
+   "brutalbosses-1.19.2-6.8.jar"
+  ],
+  [
+   "ftbquests",
+   "FTB Quests",
+   "1902.5.10-build.497",
+   "ftb-quests-forge-1902.5.10-build.497.jar"
+  ],
+  [
+   "majruszsdifficulty",
+   "Majrusz's Progressive Difficulty",
+   "1.9.9-backport.1",
+   "majruszs-difficulty-forge-1.19.2-1.9.9-backport.1.jar"
+  ]
+ ],
+ "🎮 Gameplay / Combat & armes": [
+  [
+   "pehkui",
+   "Pehkui",
+   "3.8.2+1.19.2-forge",
+   "Pehkui-3.8.2+1.19.2-forge.jar"
+  ],
+  [
+   "bettercombat",
+   "Better Combat",
+   "1.7.1+1.19",
+   "bettercombat-forge-1.7.1+1.19.jar"
+  ],
+  [
+   "celestisynth",
+   "Celestisynth",
+   "1.19.2-1.1.5",
+   "celestisynth-1.19.2-1.1.5.jar"
+  ],
+  [
+   "cisco_mod",
+   "Cisco's Content",
+   "5.8",
+   "cisco_mod_9.6.jar"
+  ],
+  [
+   "ciscounbound",
+   "Ciscos Content Unbound",
+   "0.0.1-1.19.2",
+   "ciscounbound-1.2.jar"
+  ],
+  [
+   "combatroll",
+   "Combat Roll",
+   "1.1.5+1.19",
+   "combatroll-forge-1.1.5+1.19.jar"
+  ],
+  [
+   "dragonenchants",
+   "Dragon Enchants",
+   "1.0.4",
+   "dragon_enchants-1.0.4-1.19.2.jar"
+  ],
+  [
+   "dreadsteel",
+   "Dreadsteel",
+   "${file.jarVersion}",
+   "dreadsteel-1.19.2-1.1.6.jar"
+  ],
+  [
+   "immersive_armors",
+   "Immersive Armors",
+   "1.5.6+1.19.2",
+   "immersive_armors-1.5.6+1.19.2-forge.jar"
+  ],
+  [
+   "iter_rpg",
+   "Iter RPG",
+   "0.5.0",
+   "iterpg-0.5.0-1.19.2.jar"
+  ],
+  [
+   "majruszsenchantments",
+   "Majrusz's Enchantments",
+   "1.10.7-backport.1",
+   "majruszs-enchantments-forge-1.19.2-1.10.7-backport.1.jar"
+  ],
+  [
+   "mcsa",
+   "MC Story Mode Armors",
+   "3.1.4+1.19",
+   "mcsa-forge-3.1.4+1.19.jar"
+  ],
+  [
+   "simplyswords",
+   "Simply Swords",
+   "1.47.0-1.19.2",
+   "simplyswords-forge-1.47.0-1.19.2.jar"
+  ],
+  [
+   "upgradednetherite",
+   "Upgraded Netherite",
+   "${file.jarVersion}",
+   "upgradednetherite-1.19.2-5.1.0.9-release.jar"
+  ],
+  [
+   "upgradednetherite_items",
+   "Upgraded Netherite : Items",
+   "${file.jarVersion}",
+   "upgradednetherite_items-1.19.2-4.1.0.2-release.jar"
+  ],
+  [
+   "upgradednetherite_ultimate",
+   "Upgraded Netherite : Ultimerite",
+   "${file.jarVersion}",
+   "upgradednetherite_ultimate-1.19.2-4.1.0.4-release.jar"
+  ]
+ ],
+ "🎮 Gameplay / Magie": [
+  [
+   "ars_additions",
+   "Ars Additions",
+   "1.19.2-1.4.0",
+   "ars_additions-1.19.2-1.4.0.jar"
+  ],
+  [
+   "ars_elemental",
+   "Ars Elemental",
+   "${file.jarVersion}",
+   "ars_elemental-1.19.2-0.5.9.4.1.jar"
+  ],
+  [
+   "ars_nouveau",
+   "Ars Nouveau",
+   "${file.jarVersion}",
+   "ars_nouveau-1.19.2-3.23.0.jar"
+  ],
+  [
+   "forbidden_arcanus",
+   "Forbidden & Arcanus",
+   "${file.jarVersion}",
+   "forbidden_arcanus-1.19.2-2.1.5.jar"
+  ],
+  [
+   "irons_spellbooks",
+   "Iron's Spells 'n Spellbooks",
+   "1.19.2-3.4.0",
+   "irons_spellbooks-1.19.2-3.4.0.jar"
+  ],
+  [
+   "toomanyglyphs",
+   "Too Many Glyphs",
+   "${file.jarVersion}",
+   "toomanyglyphs-1.19.2-2.2.376.1564.jar"
+  ]
+ ],
+ "🎮 Gameplay / Colonie & PNJ": [
+  [
+   "betterwithminecolonies",
+   "Better With Minecolonies",
+   "${file.jarVersion}",
+   "betterwithminecolonies-1.19-1.18.19.jar"
+  ],
+  [
+   "blockui",
+   "UI Library Mod",
+   "1.19.2-1.0.140-BETA",
+   "blockui-1.19.2-1.0.140-BETA.jar"
+  ],
+  [
+   "domum_ornamentum",
+   "Domum Ornamentum",
+   "${file.jarVersion}",
+   "domum_ornamentum-1.19-1.0.146-BETA-universal.jar"
+  ],
+  [
+   "easy_villagers",
+   "Easy Villagers",
+   "1.19.2-1.1.23",
+   "easy-villagers-forge-1.19.2-1.1.23.jar"
+  ],
+  [
+   "goblintraders",
+   "Goblin Traders",
+   "1.8.0",
+   "goblintraders-1.8.0-1.19.2.jar"
+  ],
+  [
+   "humancompanions",
+   "Human Companions",
+   "${file.jarVersion}",
+   "humancompanions-1.19.2-1.7.4.jar"
+  ],
+  [
+   "minecolonies",
+   "MineColonies",
+   "1.19.2-1.1.516-BETA",
+   "minecolonies-1.19.2-1.1.516-BETA.jar"
+  ],
+  [
+   "morevillagers",
+   "More Villagers",
+   "4.0.3",
+   "morevillagers-forge-1.19-4.0.3.jar"
+  ],
+  [
+   "structurize",
+   "Structurize",
+   "1.19.2-1.0.689-RELEASE",
+   "structurize-1.19.2-1.0.689-RELEASE.jar"
+  ],
+  [
+   "stylecolonies",
+   "stylecolonies mod",
+   "${file.jarVersion}",
+   "stylecolonies-1.2.2.jar"
+  ],
+  [
+   "towntalk",
+   "TownTalk",
+   "1.0.1",
+   "towntalk-1.19.2-1.0.1.jar"
+  ]
+ ],
+ "🎮 Gameplay / Classes & origines": [
+  [
+   "collectionofsingiro",
+   "Collection of Singiro",
+   "1.0",
+   "collection-of-singiro-1.19.x-1.1.4.jar"
+  ],
+  [
+   "oriacs",
+   "Origins: Accessibilities",
+   "1.1.0",
+   "origins-accessbilities-1.19.2-1.1.1.jar"
+  ],
+  [
+   "origins_classes",
+   "Origins: Classes",
+   "1.2.1",
+   "origins-classes-forge-1.2.1.jar"
+  ],
+  [
+   "origins",
+   "Origins",
+   "1.19.2-1.7.1.7",
+   "origins-forge-1.19.2-1.7.1.7-all.jar"
+  ],
+  [
+   "strictly_origins",
+   "Strictly Origins",
+   "8",
+   "strictly_origins_v9.2.1_1.19.2.jar"
+  ]
+ ]
+}

@@ -1,0 +1,39 @@
+{
+  "parent": "blue_skies:everdawn/enter_poison_dungeon",
+  "criteria": {
+    "kill_arachnarch": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "blue_skies:arachnarch"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.blue_skies.everdawn.kill_arachnarch.desc"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "blue_skies:poison_arc"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.blue_skies.everdawn.kill_arachnarch"
+    }
+  },
+  "requirements": [
+    [
+      "kill_arachnarch"
+    ]
+  ]
+}

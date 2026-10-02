@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "unusualend:chorus_juice"
+    },
+    "title": {
+      "translate": "advancements.i_am_the_cure.title"
+    },
+    "description": {
+      "translate": "advancements.i_am_the_cure.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "i_am_the_cure": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "unusualend:chorus_juice"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "unusualend:local_food"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "blue_skies:turquoise_cobblestone"
+  },
+  "result": "blue_skies:turquoise_stone"
+}

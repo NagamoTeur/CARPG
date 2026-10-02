@@ -1,0 +1,13 @@
+{
+    "name": "Ares' Blessing",
+    "description": "You are favoured by Ares god of war and courage. You recieve his ferocious blessing.",
+    "powers": [
+        "cisco_rpg_origins:ares_boon_minor",
+        "cisco_rpg_origins:ares_boon_major",
+        "cisco_rpg_origins:ares_boon_major2"
+    ],
+    "icon": {
+        "item": "iter_rpg:fire_armor_helmet"
+    },
+    "impact": 1
+}

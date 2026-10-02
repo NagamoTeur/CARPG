@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "enemyexpansion:trollface"
+    },
+    "title": {
+      "translate": "advancements.troll_petrified.title"
+    },
+    "description": {
+      "translate": "advancements.troll_petrified.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "troll_petrified_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "enemyexpansion:enemy_expansion_advancement"
+}

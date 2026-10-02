@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OE",
+    "EO"
+  ],
+  "key": {
+    "O": {
+      "item": "unusualend:bolok_scale"
+    },
+    "E": {
+      "item": "minecraft:end_stone"
+    }
+  },
+  "result": {
+    "item": "unusualend:gneiss",
+    "count": 4
+  }
+}

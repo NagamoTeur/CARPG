@@ -1,0 +1,33 @@
+{
+  "group": "pream",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "phantasm:pream_planks"
+    },
+    "3": {
+      "item": "phantasm:pream_planks"
+    },
+    "4": {
+      "item": "phantasm:pream_planks"
+    },
+    "6": {
+      "item": "phantasm:pream_planks"
+    },
+    "7": {
+      "item": "phantasm:pream_planks"
+    },
+    "8": {
+      "item": "phantasm:pream_planks"
+    }
+  },
+  "result": {
+    "item": "phantasm:pream_stairs",
+    "count": 4
+  }
+}

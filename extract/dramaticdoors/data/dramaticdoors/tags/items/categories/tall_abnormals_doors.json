@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "dramaticdoors:tall_aspen_door", "required": false},
+    {"id": "dramaticdoors:tall_grimwood_door", "required": false},
+    {"id": "dramaticdoors:tall_kousa_door", "required": false},
+    {"id": "dramaticdoors:tall_laurel_door", "required": false},
+    {"id": "dramaticdoors:tall_morado_door", "required": false},
+    {"id": "dramaticdoors:tall_rosewood_door", "required": false},
+    {"id": "dramaticdoors:tall_yucca_door", "required": false},
+    {"id": "dramaticdoors:tall_maple_door", "required": false},
+    {"id": "dramaticdoors:tall_azalea_door", "required": false},
+    {"id": "dramaticdoors:tall_poise_door", "required": false},
+    {"id": "dramaticdoors:tall_dark_cherry_door", "required": false},
+    {"id": "dramaticdoors:tall_pine_door", "required": false},
+    {"id": "dramaticdoors:tall_willow_door", "required": false},
+    {"id": "dramaticdoors:tall_wisteria_door", "required": false},
+    {"id": "dramaticdoors:tall_honeycomb_door", "required": false},
+    {"id": "dramaticdoors:tall_driftwood_door", "required": false},
+    {"id": "dramaticdoors:tall_river_door", "required": false},
+    {"id": "dramaticdoors:tall_tooth_door", "required": false},
+    {"id": "dramaticdoors:tall_glass_door", "required": false}
+  ]
+}

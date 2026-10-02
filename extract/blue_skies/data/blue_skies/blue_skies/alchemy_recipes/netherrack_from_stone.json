@@ -1,0 +1,12 @@
+{
+  "type": "blue_skies:catylist",
+  "catylists": [
+    "minecraft:nether_wart"
+  ],
+  "inputs": [
+    "minecraft:stone"
+  ],
+  "results": [
+    "minecraft:netherrack"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "parent": "blue_skies:everdawn/enter",
+  "criteria": {
+    "has_dusk_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:dusk_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_dusk_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:dusk_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_lunar_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:lunar_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_lunar_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:lunar_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_maple_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:maple_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_maple_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:maple_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.blue_skies.everdawn.get_wood.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "blue_skies:lunar_log"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.blue_skies.everdawn.get_wood"
+    }
+  },
+  "requirements": [
+    [
+      "has_lunar_log",
+      "has_lunar_wood",
+      "has_dusk_log",
+      "has_dusk_wood",
+      "has_maple_log",
+      "has_maple_wood"
+    ]
+  ]
+}

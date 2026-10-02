@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "unusualend:polished_gloopstone"
+    }
+  },
+  "result": {
+    "item": "unusualend:polished_gloopstone_stairs",
+    "count": 4
+  }
+}

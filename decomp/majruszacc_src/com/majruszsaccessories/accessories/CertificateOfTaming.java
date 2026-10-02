@@ -1,0 +1,45 @@
+package com.majruszsaccessories.accessories;
+
+import com.majruszlibrary.annotation.AutoInstance;
+import com.majruszlibrary.data.Reader;
+import com.majruszlibrary.events.OnAnimalTamed;
+import com.majruszlibrary.math.Range;
+import com.majruszsaccessories.MajruszsAccessories;
+import com.majruszsaccessories.accessories.components.AccessoryIncompatibility;
+import com.majruszsaccessories.accessories.components.TamingStrongerAnimals;
+import com.majruszsaccessories.common.AccessoryHandler;
+import com.majruszsaccessories.common.BonusComponent;
+import com.majruszsaccessories.common.BonusHandler;
+import com.majruszsaccessories.common.components.TradeOffer;
+import com.majruszsaccessories.events.base.CustomConditions;
+import com.majruszsaccessories.items.AccessoryItem;
+
+@AutoInstance
+public class CertificateOfTaming extends AccessoryHandler {
+   public CertificateOfTaming() {
+      super(MajruszsAccessories.CERTIFICATE_OF_TAMING, CertificateOfTaming.class);
+      this.add(TamingStrongerAnimals.create(0.2F))
+         .add(CertificateOfTaming.TamingDropChance.create())
+         .add(TradeOffer.create())
+         .add(AccessoryIncompatibility.create(MajruszsAccessories.NATURE_RUNE))
+         .add(AccessoryIncompatibility.create(MajruszsAccessories.SOUL_OF_MINECRAFT));
+   }
+
+   static class TamingDropChance extends BonusComponent<AccessoryItem> {
+      float chance = 0.1F;
+
+      public static BonusComponent.ISupplier<AccessoryItem> create() {
+         return CertificateOfTaming.TamingDropChance::new;
+      }
+
+      protected TamingDropChance(BonusHandler<AccessoryItem> handler) {
+         super(handler);
+         OnAnimalTamed.listen(this::spawnCertificate).addCondition(CustomConditions.dropChance(s -> this.chance, data -> data.tamer));
+         handler.getConfig().define("taming_drop_chance", Reader.number(), s -> this.chance, (s, v) -> this.chance = (Float)Range.CHANCE.clamp(v));
+      }
+
+      private void spawnCertificate(OnAnimalTamed data) {
+         this.spawnFlyingItem(data.getLevel(), data.animal.m_20182_(), data.tamer.m_20182_());
+      }
+   }
+}

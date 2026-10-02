@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "origins": [
+    "strictly:otter",
+    "strictly:adapted_raccoon",
+    "strictly:buzz",
+    "strictly:thief",
+    "strictly:umvuthi",
+    "strictly:priest",
+    "strictly:dwarf",
+    "strictly:troll",
+    "strictly:wildcat",
+    "strictly:orcs_shaman",
+    "strictly:birdofparadise",
+    "strictly:knight",
+    "strictly:paladin",
+    "strictly:plantaemancer",
+    "strictly:high_elf"
+  ]
+}

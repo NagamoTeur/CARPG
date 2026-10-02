@@ -1,0 +1,183 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:soul_sand",
+            "probability": 0.8
+          },
+          "output_state": {
+            "Name": "minecraft:soul_soil"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:nether_bricks",
+            "probability": 0.15
+          },
+          "output_state": {
+            "Name": "minecraft:cracked_nether_bricks"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:iron_bars",
+            "probability": 0.1
+          },
+          "output_state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:crimson_roots",
+            "probability": 0.2
+          },
+          "output_state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:nether_gold_ore",
+            "probability": 0.05
+          },
+          "output_state": {
+            "Name": "minecraft:raw_gold_block"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:nether_gold_ore",
+            "probability": 0.4
+          },
+          "output_state": {
+            "Name": "minecraft:nether_quartz_ore"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "Name": "minecraft:blast_furnace",
+              "Properties": {
+                "facing": "south",
+                "lit": "false"
+              }
+            },
+            "probability": 0.75
+          },
+          "output_state": {
+            "Name": "minecraft:blast_furnace",
+            "Properties": {
+              "facing": "south",
+              "lit": "false"
+            }
+          },
+          "output_nbt": {"Items":[{"Slot":1,"id":"minecraft:coal","Count":3}]}
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "Name": "minecraft:blast_furnace",
+              "Properties": {
+                "facing": "south",
+                "lit": "false"
+              }
+            },
+            "probability": 0.50
+          },
+          "output_state": {
+            "Name": "minecraft:blast_furnace",
+            "Properties": {
+              "facing": "south",
+              "lit": "false"
+            }
+          },
+          "output_nbt": {"Items":[{"Slot":1,"id":"minecraft:coal","Count":5}]}
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "Name": "minecraft:blast_furnace",
+              "Properties": {
+                "facing": "south",
+                "lit": "false"
+              }
+            },
+            "probability": 0.25
+          },
+          "output_state": {
+            "Name": "minecraft:blast_furnace",
+            "Properties": {
+              "facing": "south",
+              "lit": "false"
+            }
+          },
+          "output_nbt": {"Items":[{"Slot":1,"id":"minecraft:coal","Count":7}]}
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "Name": "minecraft:blast_furnace",
+              "Properties": {
+                "facing": "south",
+                "lit": "false"
+              }
+            },
+            "probability": 0.15
+          },
+          "output_state": {
+            "Name": "minecraft:blast_furnace",
+            "Properties": {
+              "facing": "south",
+              "lit": "false"
+            }
+          },
+          "output_nbt": {"Items":[{"Slot":1,"id":"minecraft:coal","Count":12}]}
+        }
+      ]
+    }
+  ]
+}

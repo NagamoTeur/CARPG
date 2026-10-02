@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "cisco_mod:brightsteel_ingot"
+    },
+    "2": {
+      "item": "cisco_mod:brightsteel_ingot"
+    },
+    "3": {
+      "item": "cisco_mod:brightsteel_ingot"
+    },
+    "5": {
+      "item": "cisco_mod:brightsteel_ingot"
+    }
+  },
+  "result": {
+    "item": "cisco_mod:brightsteel_boots",
+    "count": 1
+  }
+}

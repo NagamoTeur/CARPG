@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "upgradednetherite:netherite_shield"
+  },
+  "addition": {
+    "item": "upgradednetherite:water_essence"
+  },
+  "result": {
+    "item": "upgradednetherite:water_upgraded_netherite_shield"
+  }
+}

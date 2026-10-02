@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "has_resource": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:charoite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_resource"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "blue_skies:charoite_axe"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "group": "stellium_smelting",
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "phantasm:stellium_ore"
+  },
+  "result": "phantasm:stellium_nugget"
+}

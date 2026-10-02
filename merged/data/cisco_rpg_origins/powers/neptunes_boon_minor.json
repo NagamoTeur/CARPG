@@ -1,0 +1,13 @@
+{
+    "name": "Minor Boon of Waves ",
+    "description": "You are strengthened by the tides. You deal 80 percent increased damage under water.",
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "water"
+    },
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 0.8
+    }
+}

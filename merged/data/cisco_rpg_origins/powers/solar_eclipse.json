@@ -1,0 +1,29 @@
+{
+    "name": "Solar Eclipse",
+    "description": "You derive your power from exposure to the sun. When not exposed you become weakened and slowed.",
+    "condition": {
+        "inverted": true,
+        "type": "origins:exposed_to_sun"
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:weakness",
+            "duration": 100,
+            "amplifier": 1,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        },
+        "effects": [
+            {
+                "effect": "minecraft:slowness",
+                "duration": 100,
+                "amplifier": 0,
+                "show_particles": true,
+                "show_icon": true
+            }
+        ]
+    }
+}

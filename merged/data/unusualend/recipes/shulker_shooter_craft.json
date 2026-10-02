@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EOE",
+    "ODO",
+    "EOE"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:end_stone_bricks"
+    },
+    "O": {
+      "item": "unusualend:bottled_shulker_bullet"
+    },
+    "D": {
+      "item": "minecraft:dispenser"
+    }
+  },
+  "result": {
+    "item": "unusualend:shulker_shooter",
+    "count": 2
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "unusualend:chorus_nest_planks_door",
+    "unusualend:chorus_nest_trapdoor",
+    "unusualend:chorus_nest_planks",
+    "unusualend:chorus_nest_stairs",
+    "unusualend:chorus_nest_slab",
+    "unusualend:stripped_chorus_nest_planks",
+    "unusualend:stripped_chorus_nest_stairs",
+    "unusualend:stripped_chorus_nest_slab",
+    "unusualend:chorus_nest_mosaic",
+    "unusualend:chorus_nest_mosaic_slab",
+    "unusualend:chorus_nest_mosaic_stairs",
+    "unusualend:chorus_nest_mosaic_fence",
+    "unusualend:chorus_nest_fence_gate"
+  ]
+}

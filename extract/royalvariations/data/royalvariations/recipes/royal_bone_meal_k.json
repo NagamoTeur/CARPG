@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "royalvariations:royal_bone"
+    }
+  ],
+  "result": {
+    "item": "royalvariations:royal_bone_meal",
+    "count": 6
+  }
+}

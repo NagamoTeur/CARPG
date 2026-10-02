@@ -1,0 +1,7 @@
+{
+  "replace" : false,
+  "entries" : [
+    "upgradednetherite:auto_smelt_tool",
+    "upgradednetherite:ender_teleport_tool"
+  ]
+}

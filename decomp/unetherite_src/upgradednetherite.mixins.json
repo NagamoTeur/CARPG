@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.rolfmao.upgradednetherite.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "upgradednetherite.refmap.json",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "MixinApplyBonusCount",
+    "MixinMobEffectUtil"
+  ]
+}

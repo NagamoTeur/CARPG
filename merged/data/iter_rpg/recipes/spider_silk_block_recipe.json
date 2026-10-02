@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "iter_rpg:spider_silk"
+    },
+    "1": {
+      "item": "iter_rpg:spider_silk"
+    },
+    "2": {
+      "item": "iter_rpg:spider_silk"
+    },
+    "3": {
+      "item": "iter_rpg:spider_silk"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:spider_silk_block",
+    "count": 1
+  }
+}

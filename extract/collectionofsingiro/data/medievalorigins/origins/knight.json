@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"medievalorigins:knight/burdened",
+		"medievalorigins:knight/for_honour_and_glory",
+		"medievalorigins:knight/magic_prone",
+		"medievalorigins:knight/melee4ever",
+		"medievalorigins:knight/melee4ever_dungeons_gear",
+		"medievalorigins:knight/melee4ever_iceandfire",
+		"medievalorigins:knight/melee4ever_spartanweaponry",
+		"medievalorigins:knight/skilled_swordsman",
+		"medievalorigins:knight/skilled_swordsman_dungeons_gear",
+		"medievalorigins:knight/skilled_swordsman_iceandfire",
+		"medievalorigins:knight/skilled_swordsman_spartanweaponry",
+		"medievalorigins:knight/valour"
+	],
+	"icon": "minecraft:shield",
+	"impact": 1,
+	"order": 1
+}

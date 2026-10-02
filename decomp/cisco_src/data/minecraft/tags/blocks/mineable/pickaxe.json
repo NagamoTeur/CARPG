@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "cisco_mod:brightsteelblock",
+    "cisco_mod:brightsteelstairs",
+    "cisco_mod:brightsteelslab",
+    "cisco_mod:arcane_brightsteel_block",
+    "cisco_mod:darksteel_block",
+    "cisco_mod:darksteel_stairs",
+    "cisco_mod:darksteel_slab",
+    "cisco_mod:podiumofpurgatory"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "modifiers": [
+    {
+      "type": "effects_changed",
+      "config": {
+        "criteria": "all_effects",
+        "effects": {
+          "atmospheric:persistence": {},
+          "atmospheric:relief": {},
+          "atmospheric:spitting": {},
+          "atmospheric:worsening": {}
+        },
+        "removes": false
+      }
+    }
+  ],
+  "priority": "normal",
+  "selector": "minecraft:nether/all_effects"
+}

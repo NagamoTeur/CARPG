@@ -1,0 +1,12 @@
+{
+    "name": "Minor Boon of Grace",
+    "description": "Amaterasu blesses your body granting you a +10 boost to max health .",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "generic.max_health",
+        "operation": "addition",
+        "value": 10,
+        "name": "Amaterasu's Blessing"
+    },
+    "update_health": true
+}

@@ -1,0 +1,12 @@
+{
+  "type": "blue_skies:catylist",
+  "catylists": [
+    "blue_skies:soul_fragment"
+  ],
+  "inputs": [
+    "minecraft:iron_ingot"
+  ],
+  "results": [
+    "blue_skies:falsite_ingot"
+  ]
+}

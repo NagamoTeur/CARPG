@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "sons_of_sins:strider_muscle"
+    }
+  },
+  "result": {
+    "item": "sons_of_sins:block_of_strider_muscle",
+    "count": 1
+  }
+}

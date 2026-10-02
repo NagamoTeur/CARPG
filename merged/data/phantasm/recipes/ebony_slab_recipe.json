@@ -1,0 +1,22 @@
+{
+  "group": "ebony",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "phantasm:ebony_planks"
+    },
+    "1": {
+      "item": "phantasm:ebony_planks"
+    },
+    "2": {
+      "item": "phantasm:ebony_planks"
+    }
+  },
+  "result": {
+    "item": "phantasm:ebony_slab",
+    "count": 6
+  }
+}

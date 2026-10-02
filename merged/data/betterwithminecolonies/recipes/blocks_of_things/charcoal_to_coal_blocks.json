@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "modid": "charcoalblock",
+          "type": "forge:mod_loaded"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "sss",
+          "sss",
+          "sss"
+        ],
+        "key": {
+          "s": {
+            "item": "charcoalblock:charcoal_block"
+          }
+        },
+        "result": {
+          "item": "minecraft:coal_block",
+          "count": 3
+        }
+      }
+    }
+  ]
+}

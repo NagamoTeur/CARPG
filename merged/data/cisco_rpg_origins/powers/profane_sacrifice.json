@@ -1,0 +1,12 @@
+{
+    "name": "Profane Sacrifice",
+    "description": "Anthrax demands blood in exchange for power. You have 40 percent less hp.",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "generic.max_health",
+        "operation": "multiply_base",
+        "value": -0.4,
+        "name": "profane sacrifice"
+    },
+    "update_health": true
+}

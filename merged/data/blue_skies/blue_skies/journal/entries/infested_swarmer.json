@@ -1,0 +1,24 @@
+{
+  "icon": {
+    "type": "texture",
+    "icon": {
+      "texture": "blue_skies:textures/gui/journal/icons/infested_swarmer.png"
+    }
+  },
+  "lores": [
+    {
+      "display": {
+        "type": "entity",
+        "display": {
+          "entity": "blue_skies:infested_swarmer",
+          "scale": 29,
+          "y_offset": 20
+        }
+      },
+      "text": "blue_skies.everdawn.infested_swarmer.lore"
+    }
+  ],
+  "requirement": "blue_skies:enter_everdawn",
+  "section": "blue_skies:everdawn",
+  "title": "blue_skies.everdawn.infested_swarmer.title"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "endlessbiomes:concentrated_void_air",
+  "step": "underground_ores"
+}

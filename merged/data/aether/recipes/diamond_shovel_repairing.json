@@ -1,0 +1,9 @@
+{
+  "type": "aether:repairing",
+  "category": "enchanting_repair",
+  "group": "altar_shovel_repair",
+  "ingredient": {
+    "item": "minecraft:diamond_shovel"
+  },
+  "repairTime": 1500
+}

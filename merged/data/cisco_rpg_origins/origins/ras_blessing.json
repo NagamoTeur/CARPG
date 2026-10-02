@@ -1,0 +1,12 @@
+{
+    "name": "Ra's Blessing",
+    "description": "You are favoured by Ra god of the sun , light and order.  You recieve his Radiant blessing.",
+    "powers": [
+        "cisco_rpg_origins:ras_boon_minor",
+        "cisco_rpg_origins:ras_boon_major"
+    ],
+    "icon": {
+        "item": "mowziesmobs:sol_visage"
+    },
+    "impact": 1
+}

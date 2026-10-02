@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "iter_rpg:blocks/packed_snow_bottom",
+    "up": "iter_rpg:blocks/packed_snow_top",
+    "north": "iter_rpg:blocks/packed_snow",
+    "east": "iter_rpg:blocks/packed_snow",
+    "south": "iter_rpg:blocks/packed_snow",
+    "west": "iter_rpg:blocks/packed_snow",
+    "particle": "iter_rpg:blocks/packed_snow_bottom"
+  },
+  "render_type": "solid"
+}

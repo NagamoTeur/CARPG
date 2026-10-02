@@ -1,0 +1,17 @@
+{
+  "icon": {
+    "type": "item",
+    "icon": {
+      "item": "blue_skies:pyrope_gem"
+    }
+  },
+  "lores": [
+    {
+      "text": "blue_skies.general.pyrope.lore"
+    }
+  ],
+  "priority": 43,
+  "requirement": "blue_skies:enter_one",
+  "section": "blue_skies:general",
+  "title": "blue_skies.general.pyrope.title"
+}

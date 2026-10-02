@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "woodworks:config",
+          "inverted": true,
+          "value": "wooden_ladders"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "#": {
+            "item": "minecraft:stick"
+          }
+        },
+        "pattern": [
+          "# #",
+          "###",
+          "# #"
+        ],
+        "result": {
+          "count": 3,
+          "item": "minecraft:ladder"
+        }
+      }
+    }
+  ]
+}

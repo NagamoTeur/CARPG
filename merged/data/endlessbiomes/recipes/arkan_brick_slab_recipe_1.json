@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "endlessbiomes:arkan_bricks"
+    },
+    "1": {
+      "item": "endlessbiomes:arkan_bricks"
+    },
+    "2": {
+      "item": "endlessbiomes:arkan_bricks"
+    }
+  },
+  "result": {
+    "item": "endlessbiomes:arkan_brick_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Boreas' Blessing",
+    "description": "You are favoured by Boreas god of ice and the north wind. You recieve his Frigid blessing.",
+    "powers": [
+        "cisco_rpg_origins:boreas_boon_minor",
+        "cisco_rpg_origins:boreas_boon_major"
+    ],
+    "icon": {
+        "item": "aquamirae:terrible_helmet"
+    },
+    "impact": 1
+}

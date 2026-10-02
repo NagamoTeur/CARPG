@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "cisco_mod:slumbering_equillibrium"
+    },
+    "1": {
+      "item": "cisco_mod:radiant_ruby"
+    }
+  },
+  "result": {
+    "item": "cisco_mod:equillibrium",
+    "count": 1
+  }
+}

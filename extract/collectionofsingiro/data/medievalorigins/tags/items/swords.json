@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "wooden_sword",
+    "stone_sword",
+    "minecraft:golden_sword",
+    "iron_sword",
+    "diamond_sword",
+    "netherite_sword",
+    "sinister_sword",
+    "dungeons_gear:rapier",
+    "dungeons_gear:gold_sword"
+  ]
+}

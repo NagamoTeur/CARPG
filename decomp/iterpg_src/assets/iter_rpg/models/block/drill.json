@@ -1,0 +1,9 @@
+{
+  "parent": "iter_rpg:custom/drill",
+  "textures": {
+    "all": "iter_rpg:blocks/drill",
+    "particle": "iter_rpg:blocks/drill",
+    "1": "iter_rpg:blocks/drill"
+  },
+  "render_type": "solid"
+}

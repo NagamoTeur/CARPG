@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_block"
+    },
+    "1": {
+      "item": "cisco_mod:refined_equillibrium"
+    }
+  },
+  "result": {
+    "item": "cisco_mod:equillibrium",
+    "count": 1
+  }
+}

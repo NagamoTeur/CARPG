@@ -1,0 +1,190 @@
+{
+  "mappings": {
+    "shadows/apotheosis/mixin/NearestAttackableTargetGoalMixin": {
+      "findTarget()V": "Lnet/minecraft/world/entity/ai/goal/target/NearestAttackableTargetGoal;m_26073_()V",
+      "<init>(Lnet/minecraft/world/entity/Mob;Ljava/lang/Class;IZZLjava/util/function/Predicate;)V": "Lnet/minecraft/world/entity/ai/goal/target/NearestAttackableTargetGoal;<init>(Lnet/minecraft/world/entity/Mob;Ljava/lang/Class;IZZLjava/util/function/Predicate;)V"
+    },
+    "shadows/apotheosis/mixin/CrossbowItemMixin": {
+      "Lnet/minecraft/world/item/CrossbowItem;performShooting(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;FF)V": "Lnet/minecraft/world/item/CrossbowItem;m_40887_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;FF)V",
+      "use": "Lnet/minecraft/world/item/CrossbowItem;m_7203_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder;",
+      "getArrow": "Lnet/minecraft/world/item/CrossbowItem;m_40914_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/projectile/AbstractArrow;"
+    },
+    "shadows/apotheosis/mixin/LivingEntityInvoker": {
+      "actuallyHurt": "m_6475_(Lnet/minecraft/world/damagesource/DamageSource;F)V",
+      "getDeathSound": "m_5592_()Lnet/minecraft/sounds/SoundEvent;",
+      "getSoundVolume": "m_6121_()F",
+      "checkTotemDeathProtection": "m_21262_(Lnet/minecraft/world/damagesource/DamageSource;)Z"
+    },
+    "shadows/apotheosis/mixin/MHFMixinLivingEntity": {
+      "readAdditionalSaveData(Lnet/minecraft/nbt/CompoundTag;)V": "Lnet/minecraft/world/entity/LivingEntity;m_7378_(Lnet/minecraft/nbt/CompoundTag;)V",
+      "detectEquipmentUpdates()V": "Lnet/minecraft/world/entity/LivingEntity;m_21315_()V"
+    },
+    "shadows/apotheosis/mixin/ThrownTridentMixin": {
+      "tridentItem": "f_37555_:Lnet/minecraft/world/item/ItemStack;",
+      "onHitEntity(Lnet/minecraft/world/phys/EntityHitResult;)V": "Lnet/minecraft/world/entity/projectile/ThrownTrident;m_5790_(Lnet/minecraft/world/phys/EntityHitResult;)V"
+    },
+    "shadows/apotheosis/mixin/ItemStackMixin": {
+      "getHoverName": "Lnet/minecraft/world/item/ItemStack;m_41786_()Lnet/minecraft/network/chat/Component;",
+      "getTooltipLines(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/TooltipFlag;)Ljava/util/List;": "Lnet/minecraft/world/item/ItemStack;m_41651_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/TooltipFlag;)Ljava/util/List;",
+      "Lnet/minecraft/world/item/ItemStack;appendEnchantmentNames(Ljava/util/List;Lnet/minecraft/nbt/ListTag;)V": "Lnet/minecraft/world/item/ItemStack;m_41709_(Ljava/util/List;Lnet/minecraft/nbt/ListTag;)V",
+      "getTooltipLines": "Lnet/minecraft/world/item/ItemStack;m_41651_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/TooltipFlag;)Ljava/util/List;",
+      "net/minecraft/world/item/ItemStack.shouldShowInTooltip(ILnet/minecraft/world/item/ItemStack$TooltipPart;)Z": "Lnet/minecraft/world/item/ItemStack;m_41626_(ILnet/minecraft/world/item/ItemStack$TooltipPart;)Z",
+      "net/minecraft/world/item/ItemStack.hasTag()Z": "Lnet/minecraft/world/item/ItemStack;m_41782_()Z",
+      "hurt": "Lnet/minecraft/world/item/ItemStack;m_220157_(ILnet/minecraft/util/RandomSource;Lnet/minecraft/server/level/ServerPlayer;)Z",
+      "net/minecraft/world/item/ItemStack.getDamageValue()I": "Lnet/minecraft/world/item/ItemStack;m_41773_()I"
+    },
+    "shadows/apotheosis/mixin/AnvilMenuMixin": {
+      "Lnet/minecraft/world/entity/player/Player;giveExperienceLevels(I)V": "Lnet/minecraft/world/entity/player/Player;m_6749_(I)V",
+      "onTake": "Lnet/minecraft/world/inventory/AnvilMenu;m_142365_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;)V",
+      "createResult()V": "Lnet/minecraft/world/inventory/AnvilMenu;m_6640_()V"
+    },
+    "shadows/apotheosis/mixin/EnchantmentHelperMixin": {
+      "getDamageBonus(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/MobType;)F": "Lnet/minecraft/world/item/enchantment/EnchantmentHelper;m_44833_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/MobType;)F",
+      "getDamageProtection(Ljava/lang/Iterable;Lnet/minecraft/world/damagesource/DamageSource;)I": "Lnet/minecraft/world/item/enchantment/EnchantmentHelper;m_44856_(Ljava/lang/Iterable;Lnet/minecraft/world/damagesource/DamageSource;)I",
+      "doPostDamageEffects(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;)V": "Lnet/minecraft/world/item/enchantment/EnchantmentHelper;m_44896_(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;)V",
+      "Lnet/minecraft/nbt/ListTag;getCompound(I)Lnet/minecraft/nbt/CompoundTag;": "Lnet/minecraft/nbt/ListTag;m_128728_(I)Lnet/minecraft/nbt/CompoundTag;",
+      "doPostHurtEffects(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;)V": "Lnet/minecraft/world/item/enchantment/EnchantmentHelper;m_44823_(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;)V"
+    },
+    "shadows/apotheosis/mixin/client/AnvilScreenMixin": {
+      "renderLabels(Lcom/mojang/blaze3d/vertex/PoseStack;II)V": "Lnet/minecraft/client/gui/screens/inventory/AnvilScreen;m_7027_(Lcom/mojang/blaze3d/vertex/PoseStack;II)V"
+    },
+    "shadows/apotheosis/mixin/DamageSourceMixin": {
+      "explosion(Lnet/minecraft/world/level/Explosion;)Lnet/minecraft/world/damagesource/DamageSource;": "Lnet/minecraft/world/damagesource/DamageSource;m_19358_(Lnet/minecraft/world/level/Explosion;)Lnet/minecraft/world/damagesource/DamageSource;"
+    },
+    "shadows/apotheosis/mixin/PotionUtilsMixin": {
+      "addPotionTooltip(Lnet/minecraft/world/item/ItemStack;Ljava/util/List;F)V": "Lnet/minecraft/world/item/alchemy/PotionUtils;m_43555_(Lnet/minecraft/world/item/ItemStack;Ljava/util/List;F)V"
+    },
+    "shadows/apotheosis/mixin/client/GuiMixin": {
+      "setOverlayMessage": "Lnet/minecraft/client/gui/Gui;m_93063_(Lnet/minecraft/network/chat/Component;Z)V"
+    },
+    "shadows/apotheosis/mixin/EnchantmentMixin": {
+      "getFullname": "Lnet/minecraft/world/item/enchantment/Enchantment;m_44700_(I)Lnet/minecraft/network/chat/Component;"
+    },
+    "shadows/apotheosis/mixin/LivingEntityMixin": {
+      "Lnet/minecraft/world/effect/MobEffectInstance;getAmplifier()I": "Lnet/minecraft/world/effect/MobEffectInstance;m_19564_()I",
+      "getDamageAfterArmorAbsorb(Lnet/minecraft/world/damagesource/DamageSource;F)F": "Lnet/minecraft/world/entity/LivingEntity;m_21161_(Lnet/minecraft/world/damagesource/DamageSource;F)F",
+      "getDamageAfterMagicAbsorb(Lnet/minecraft/world/damagesource/DamageSource;F)F": "Lnet/minecraft/world/entity/LivingEntity;m_6515_(Lnet/minecraft/world/damagesource/DamageSource;F)F",
+      "Lnet/minecraft/world/damagesource/CombatRules;getDamageAfterMagicAbsorb(FF)F": "Lnet/minecraft/world/damagesource/CombatRules;m_19269_(FF)F",
+      "Lnet/minecraft/world/entity/LivingEntity;hasEffect(Lnet/minecraft/world/effect/MobEffect;)Z": "Lnet/minecraft/world/entity/LivingEntity;m_21023_(Lnet/minecraft/world/effect/MobEffect;)Z",
+      "Lnet/minecraft/world/damagesource/CombatRules;getDamageAfterAbsorb(FFF)F": "Lnet/minecraft/world/damagesource/CombatRules;m_19272_(FFF)F"
+    },
+    "shadows/apotheosis/mixin/client/AbstractContainerScreenMixin": {
+      "mouseDragged(DDIDD)Z": "Lnet/minecraft/client/gui/screens/inventory/AbstractContainerScreen;m_7979_(DDIDD)Z"
+    },
+    "shadows/apotheosis/mixin/TemptGoalMixin": {
+      "shouldFollow": "Lnet/minecraft/world/entity/ai/goal/TemptGoal;m_148138_(Lnet/minecraft/world/entity/LivingEntity;)Z"
+    },
+    "shadows/apotheosis/mixin/BlockMixin": {
+      "net/minecraft/world/level/Level.addFreshEntity(Lnet/minecraft/world/entity/Entity;)Z": "Lnet/minecraft/world/level/Level;m_7967_(Lnet/minecraft/world/entity/Entity;)Z",
+      "popResource(Lnet/minecraft/world/level/Level;Ljava/util/function/Supplier;Lnet/minecraft/world/item/ItemStack;)V": "Lnet/minecraft/world/level/block/Block;m_152440_(Lnet/minecraft/world/level/Level;Ljava/util/function/Supplier;Lnet/minecraft/world/item/ItemStack;)V",
+      "dropResources(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/item/ItemStack;)V": "Lnet/minecraft/world/level/block/Block;m_49881_(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/item/ItemStack;)V"
+    },
+    "shadows/apotheosis/mixin/SlimeMixin": {
+      "net/minecraft/world/level/Level.addFreshEntity(Lnet/minecraft/world/entity/Entity;)Z": "Lnet/minecraft/world/level/Level;m_7967_(Lnet/minecraft/world/entity/Entity;)Z",
+      "remove(Lnet/minecraft/world/entity/Entity$RemovalReason;)V": "Lnet/minecraft/world/entity/monster/Slime;m_142687_(Lnet/minecraft/world/entity/Entity$RemovalReason;)V"
+    },
+    "shadows/apotheosis/mixin/WandererSpawnerMixin": {
+      "findSpawnPositionNear": "Lnet/minecraft/world/entity/npc/WanderingTraderSpawner;m_35928_(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;I)Lnet/minecraft/core/BlockPos;",
+      "spawn": "Lnet/minecraft/world/entity/npc/WanderingTraderSpawner;m_35915_(Lnet/minecraft/server/level/ServerLevel;)Z",
+      "tick": "Lnet/minecraft/world/entity/npc/WanderingTraderSpawner;m_7995_(Lnet/minecraft/server/level/ServerLevel;ZZ)I"
+    },
+    "shadows/apotheosis/mixin/SmithingMenuMixin": {
+      "onTake": "Lnet/minecraft/world/inventory/SmithingMenu;m_142365_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;)V"
+    }
+  },
+  "data": {
+    "searge": {
+      "shadows/apotheosis/mixin/NearestAttackableTargetGoalMixin": {
+        "findTarget()V": "Lnet/minecraft/world/entity/ai/goal/target/NearestAttackableTargetGoal;m_26073_()V",
+        "<init>(Lnet/minecraft/world/entity/Mob;Ljava/lang/Class;IZZLjava/util/function/Predicate;)V": "Lnet/minecraft/world/entity/ai/goal/target/NearestAttackableTargetGoal;<init>(Lnet/minecraft/world/entity/Mob;Ljava/lang/Class;IZZLjava/util/function/Predicate;)V"
+      },
+      "shadows/apotheosis/mixin/CrossbowItemMixin": {
+        "Lnet/minecraft/world/item/CrossbowItem;performShooting(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;FF)V": "Lnet/minecraft/world/item/CrossbowItem;m_40887_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/item/ItemStack;FF)V",
+        "use": "Lnet/minecraft/world/item/CrossbowItem;m_7203_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder;",
+        "getArrow": "Lnet/minecraft/world/item/CrossbowItem;m_40914_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/projectile/AbstractArrow;"
+      },
+      "shadows/apotheosis/mixin/LivingEntityInvoker": {
+        "actuallyHurt": "m_6475_(Lnet/minecraft/world/damagesource/DamageSource;F)V",
+        "getDeathSound": "m_5592_()Lnet/minecraft/sounds/SoundEvent;",
+        "getSoundVolume": "m_6121_()F",
+        "checkTotemDeathProtection": "m_21262_(Lnet/minecraft/world/damagesource/DamageSource;)Z"
+      },
+      "shadows/apotheosis/mixin/MHFMixinLivingEntity": {
+        "readAdditionalSaveData(Lnet/minecraft/nbt/CompoundTag;)V": "Lnet/minecraft/world/entity/LivingEntity;m_7378_(Lnet/minecraft/nbt/CompoundTag;)V",
+        "detectEquipmentUpdates()V": "Lnet/minecraft/world/entity/LivingEntity;m_21315_()V"
+      },
+      "shadows/apotheosis/mixin/ThrownTridentMixin": {
+        "tridentItem": "f_37555_:Lnet/minecraft/world/item/ItemStack;",
+        "onHitEntity(Lnet/minecraft/world/phys/EntityHitResult;)V": "Lnet/minecraft/world/entity/projectile/ThrownTrident;m_5790_(Lnet/minecraft/world/phys/EntityHitResult;)V"
+      },
+      "shadows/apotheosis/mixin/ItemStackMixin": {
+        "getHoverName": "Lnet/minecraft/world/item/ItemStack;m_41786_()Lnet/minecraft/network/chat/Component;",
+        "getTooltipLines(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/TooltipFlag;)Ljava/util/List;": "Lnet/minecraft/world/item/ItemStack;m_41651_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/TooltipFlag;)Ljava/util/List;",
+        "Lnet/minecraft/world/item/ItemStack;appendEnchantmentNames(Ljava/util/List;Lnet/minecraft/nbt/ListTag;)V": "Lnet/minecraft/world/item/ItemStack;m_41709_(Ljava/util/List;Lnet/minecraft/nbt/ListTag;)V",
+        "getTooltipLines": "Lnet/minecraft/world/item/ItemStack;m_41651_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/TooltipFlag;)Ljava/util/List;",
+        "net/minecraft/world/item/ItemStack.shouldShowInTooltip(ILnet/minecraft/world/item/ItemStack$TooltipPart;)Z": "Lnet/minecraft/world/item/ItemStack;m_41626_(ILnet/minecraft/world/item/ItemStack$TooltipPart;)Z",
+        "net/minecraft/world/item/ItemStack.hasTag()Z": "Lnet/minecraft/world/item/ItemStack;m_41782_()Z",
+        "hurt": "Lnet/minecraft/world/item/ItemStack;m_220157_(ILnet/minecraft/util/RandomSource;Lnet/minecraft/server/level/ServerPlayer;)Z",
+        "net/minecraft/world/item/ItemStack.getDamageValue()I": "Lnet/minecraft/world/item/ItemStack;m_41773_()I"
+      },
+      "shadows/apotheosis/mixin/AnvilMenuMixin": {
+        "Lnet/minecraft/world/entity/player/Player;giveExperienceLevels(I)V": "Lnet/minecraft/world/entity/player/Player;m_6749_(I)V",
+        "onTake": "Lnet/minecraft/world/inventory/AnvilMenu;m_142365_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;)V",
+        "createResult()V": "Lnet/minecraft/world/inventory/AnvilMenu;m_6640_()V"
+      },
+      "shadows/apotheosis/mixin/EnchantmentHelperMixin": {
+        "getDamageBonus(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/MobType;)F": "Lnet/minecraft/world/item/enchantment/EnchantmentHelper;m_44833_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/MobType;)F",
+        "getDamageProtection(Ljava/lang/Iterable;Lnet/minecraft/world/damagesource/DamageSource;)I": "Lnet/minecraft/world/item/enchantment/EnchantmentHelper;m_44856_(Ljava/lang/Iterable;Lnet/minecraft/world/damagesource/DamageSource;)I",
+        "doPostDamageEffects(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;)V": "Lnet/minecraft/world/item/enchantment/EnchantmentHelper;m_44896_(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;)V",
+        "Lnet/minecraft/nbt/ListTag;getCompound(I)Lnet/minecraft/nbt/CompoundTag;": "Lnet/minecraft/nbt/ListTag;m_128728_(I)Lnet/minecraft/nbt/CompoundTag;",
+        "doPostHurtEffects(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;)V": "Lnet/minecraft/world/item/enchantment/EnchantmentHelper;m_44823_(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/Entity;)V"
+      },
+      "shadows/apotheosis/mixin/client/AnvilScreenMixin": {
+        "renderLabels(Lcom/mojang/blaze3d/vertex/PoseStack;II)V": "Lnet/minecraft/client/gui/screens/inventory/AnvilScreen;m_7027_(Lcom/mojang/blaze3d/vertex/PoseStack;II)V"
+      },
+      "shadows/apotheosis/mixin/DamageSourceMixin": {
+        "explosion(Lnet/minecraft/world/level/Explosion;)Lnet/minecraft/world/damagesource/DamageSource;": "Lnet/minecraft/world/damagesource/DamageSource;m_19358_(Lnet/minecraft/world/level/Explosion;)Lnet/minecraft/world/damagesource/DamageSource;"
+      },
+      "shadows/apotheosis/mixin/PotionUtilsMixin": {
+        "addPotionTooltip(Lnet/minecraft/world/item/ItemStack;Ljava/util/List;F)V": "Lnet/minecraft/world/item/alchemy/PotionUtils;m_43555_(Lnet/minecraft/world/item/ItemStack;Ljava/util/List;F)V"
+      },
+      "shadows/apotheosis/mixin/client/GuiMixin": {
+        "setOverlayMessage": "Lnet/minecraft/client/gui/Gui;m_93063_(Lnet/minecraft/network/chat/Component;Z)V"
+      },
+      "shadows/apotheosis/mixin/EnchantmentMixin": {
+        "getFullname": "Lnet/minecraft/world/item/enchantment/Enchantment;m_44700_(I)Lnet/minecraft/network/chat/Component;"
+      },
+      "shadows/apotheosis/mixin/LivingEntityMixin": {
+        "Lnet/minecraft/world/effect/MobEffectInstance;getAmplifier()I": "Lnet/minecraft/world/effect/MobEffectInstance;m_19564_()I",
+        "getDamageAfterArmorAbsorb(Lnet/minecraft/world/damagesource/DamageSource;F)F": "Lnet/minecraft/world/entity/LivingEntity;m_21161_(Lnet/minecraft/world/damagesource/DamageSource;F)F",
+        "getDamageAfterMagicAbsorb(Lnet/minecraft/world/damagesource/DamageSource;F)F": "Lnet/minecraft/world/entity/LivingEntity;m_6515_(Lnet/minecraft/world/damagesource/DamageSource;F)F",
+        "Lnet/minecraft/world/damagesource/CombatRules;getDamageAfterMagicAbsorb(FF)F": "Lnet/minecraft/world/damagesource/CombatRules;m_19269_(FF)F",
+        "Lnet/minecraft/world/entity/LivingEntity;hasEffect(Lnet/minecraft/world/effect/MobEffect;)Z": "Lnet/minecraft/world/entity/LivingEntity;m_21023_(Lnet/minecraft/world/effect/MobEffect;)Z",
+        "Lnet/minecraft/world/damagesource/CombatRules;getDamageAfterAbsorb(FFF)F": "Lnet/minecraft/world/damagesource/CombatRules;m_19272_(FFF)F"
+      },
+      "shadows/apotheosis/mixin/client/AbstractContainerScreenMixin": {
+        "mouseDragged(DDIDD)Z": "Lnet/minecraft/client/gui/screens/inventory/AbstractContainerScreen;m_7979_(DDIDD)Z"
+      },
+      "shadows/apotheosis/mixin/TemptGoalMixin": {
+        "shouldFollow": "Lnet/minecraft/world/entity/ai/goal/TemptGoal;m_148138_(Lnet/minecraft/world/entity/LivingEntity;)Z"
+      },
+      "shadows/apotheosis/mixin/BlockMixin": {
+        "net/minecraft/world/level/Level.addFreshEntity(Lnet/minecraft/world/entity/Entity;)Z": "Lnet/minecraft/world/level/Level;m_7967_(Lnet/minecraft/world/entity/Entity;)Z",
+        "popResource(Lnet/minecraft/world/level/Level;Ljava/util/function/Supplier;Lnet/minecraft/world/item/ItemStack;)V": "Lnet/minecraft/world/level/block/Block;m_152440_(Lnet/minecraft/world/level/Level;Ljava/util/function/Supplier;Lnet/minecraft/world/item/ItemStack;)V",
+        "dropResources(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/item/ItemStack;)V": "Lnet/minecraft/world/level/block/Block;m_49881_(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/item/ItemStack;)V"
+      },
+      "shadows/apotheosis/mixin/SlimeMixin": {
+        "net/minecraft/world/level/Level.addFreshEntity(Lnet/minecraft/world/entity/Entity;)Z": "Lnet/minecraft/world/level/Level;m_7967_(Lnet/minecraft/world/entity/Entity;)Z",
+        "remove(Lnet/minecraft/world/entity/Entity$RemovalReason;)V": "Lnet/minecraft/world/entity/monster/Slime;m_142687_(Lnet/minecraft/world/entity/Entity$RemovalReason;)V"
+      },
+      "shadows/apotheosis/mixin/WandererSpawnerMixin": {
+        "findSpawnPositionNear": "Lnet/minecraft/world/entity/npc/WanderingTraderSpawner;m_35928_(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;I)Lnet/minecraft/core/BlockPos;",
+        "spawn": "Lnet/minecraft/world/entity/npc/WanderingTraderSpawner;m_35915_(Lnet/minecraft/server/level/ServerLevel;)Z",
+        "tick": "Lnet/minecraft/world/entity/npc/WanderingTraderSpawner;m_7995_(Lnet/minecraft/server/level/ServerLevel;ZZ)I"
+      },
+      "shadows/apotheosis/mixin/SmithingMenuMixin": {
+        "onTake": "Lnet/minecraft/world/inventory/SmithingMenu;m_142365_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;)V"
+      }
+    }
+  }
+}

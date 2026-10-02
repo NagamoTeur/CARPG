@@ -1,0 +1,21 @@
+{
+    "name": "Minor Boon of Trickery",
+    "description": "Loki grants you a small portion of his dark magic. You gain increased reach, true invisibility while sneaking and your attacks also poison your foes.",
+    "hidden": true,
+    "type": "origins:attribute",
+    "modifiers": [
+        {
+            "attribute": "reach-entity-attributes:reach",
+            "operation": "addition",
+            "value": 1.6,
+            "name": "Lokis Reach"
+        },
+        {
+            "attribute": "reach-entity-attributes:attack_range",
+            "operation": "addition",
+            "value": 1.5,
+            "name": "Loki's Reach"
+        }
+    ],
+    "update_health": true
+}

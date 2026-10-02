@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "sons_of_sins:soul_steel_block"
+    }
+  },
+  "result": {
+    "item": "sons_of_sins:soul_steel_tiles",
+    "count": 4
+  }
+}

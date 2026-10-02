@@ -1,0 +1,29 @@
+package daripher.skilltree.item.gem.bonus;
+
+import daripher.skilltree.item.gem.GemItem;
+import daripher.skilltree.skill.bonus.item.ItemBonus;
+import javax.annotation.Nullable;
+import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+
+public interface GemBonusProvider {
+   @Nullable
+   ItemBonus<?> getBonus(Player var1, ItemStack var2, ItemStack var3);
+
+   boolean canApply(Player var1, ItemStack var2, ItemStack var3);
+
+   default void addGemBonus(Player player, ItemStack itemStack, ItemStack gemStack) {
+      ItemBonus<?> bonus = this.getBonus(player, itemStack, gemStack);
+      if (bonus != null) {
+         GemItem.addGemBonus(player, itemStack, gemStack, bonus);
+      }
+   }
+
+   MutableComponent getTooltip(ItemStack var1);
+
+   GemBonusProvider.Serializer getSerializer();
+
+   public interface Serializer extends daripher.skilltree.data.serializers.Serializer<GemBonusProvider> {
+   }
+}

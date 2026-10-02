@@ -1,0 +1,8 @@
+{
+  "block": "minecraft:soul_campfire",
+  "frozen_block": "minecraft:soul_campfire",
+  "preserve_states": true,
+  "states": {
+    "lit": "false"
+  }
+}

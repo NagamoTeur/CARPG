@@ -1,0 +1,7 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:air",
+    "cisco_mod:beltof_bracing"
+  ]
+}

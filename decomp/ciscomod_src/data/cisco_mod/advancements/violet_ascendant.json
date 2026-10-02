@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cisco_mod:ascended_hero_violet_helmet"
+    },
+    "title": {
+      "translate": "advancements.violet_ascendant.title"
+    },
+    "description": {
+      "translate": "advancements.violet_ascendant.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "violet_ascendant": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cisco_mod:regicide"
+}

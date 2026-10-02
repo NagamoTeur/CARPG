@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "cisco_mod:divine_core"
+    },
+    "1": {
+      "item": "cisco_mod:frigidiumingot"
+    },
+    "2": {
+      "item": "cisco_mod:divine_core"
+    },
+    "3": {
+      "item": "cisco_mod:glacial_core"
+    },
+    "4": {
+      "item": "cisco_mod:frigidiumingot"
+    },
+    "5": {
+      "item": "cisco_mod:glacial_core"
+    },
+    "6": {
+      "item": "cisco_mod:brilliant_diamond"
+    },
+    "7": {
+      "item": "cisco_mod:glacies"
+    },
+    "8": {
+      "item": "cisco_mod:brilliant_diamond"
+    }
+  },
+  "result": {
+    "item": "cisco_mod:frostfang",
+    "count": 1
+  }
+}

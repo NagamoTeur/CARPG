@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "cisco_mod:tablet_of_descension"
+    },
+    "1": {
+      "item": "cisco_mod:equillibrium"
+    },
+    "2": {
+      "item": "cisco_mod:tablet_of_descension"
+    },
+    "3": {
+      "item": "cisco_mod:darksteel"
+    },
+    "4": {
+      "item": "cisco_mod:tablet_of_descension"
+    },
+    "5": {
+      "item": "cisco_mod:darksteel"
+    },
+    "6": {
+      "item": "cisco_mod:tablet_of_descension"
+    },
+    "7": {
+      "item": "cisco_mod:nightfall"
+    },
+    "8": {
+      "item": "cisco_mod:tablet_of_descension"
+    }
+  },
+  "result": {
+    "item": "cisco_mod:supreme_nightfall",
+    "count": 1
+  }
+}

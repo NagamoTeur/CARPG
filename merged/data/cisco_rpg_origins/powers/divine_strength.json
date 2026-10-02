@@ -1,0 +1,10 @@
+{
+    "name": "Divine Strength",
+    "description": "Your divine heritage grants you might. You do 40% increased damage.",
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "operation": "multiply_base_multiplicative",
+        "value": 0.4,
+        "name": "Divine Strength"
+    }
+}

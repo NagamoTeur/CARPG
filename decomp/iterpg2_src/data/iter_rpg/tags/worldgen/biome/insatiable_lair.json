@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "frozen_ocean",
+    "warm_ocean",
+    "mushroom_fields",
+    "stony_shore",
+    "deep_lukewarm_ocean",
+    "cold_ocean",
+    "swamp",
+    "mangrove_swamp",
+    "deep_ocean",
+    "deep_frozen_ocean",
+    "ocean",
+    "lukewarm_ocean",
+    "river",
+    "snowy_beach"
+  ]
+}

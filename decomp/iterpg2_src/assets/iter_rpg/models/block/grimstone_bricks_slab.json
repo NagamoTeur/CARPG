@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "iter_rpg:blocks/grimstone_bricks",
+    "bottom": "iter_rpg:blocks/grimstone_bricks",
+    "top": "iter_rpg:blocks/grimstone_bricks",
+    "side": "iter_rpg:blocks/grimstone_bricks"
+  },
+  "render_type": "solid"
+}

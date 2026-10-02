@@ -1,0 +1,17 @@
+{
+    "name": "Lumerian Justicar",
+    "description": "Lumera your home, holy magic your weapon, the forces of darkness your sworn enemy.",
+    "powers": [
+        "cisco_rpg_origins:rastraiya_might",
+        "cisco_rpg_origins:ender_rebuke",
+        "cisco_rpg_origins:holy_blessing",
+        "cisco_rpg_origins:dl_blessing",
+        "cisco_rpg_origins:guiding_bolt_expert",
+        "cisco_rpg_origins:fortify",
+        "cisco_rpg_origins:righteous_respite"
+    ],
+    "icon": {
+        "item": "irons_spellbooks:priest_helmet"
+    },
+    "impact": 2
+}

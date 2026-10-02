@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_leggings"
+  },
+  "addition": {
+    "item": "upgradednetherite:wither_essence"
+  },
+  "result": {
+    "item": "upgradednetherite:wither_upgraded_netherite_leggings"
+  }
+}

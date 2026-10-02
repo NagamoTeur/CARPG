@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "undead_unleashed:textures/screens/grave_soil.png",
+    "icon": {
+      "item": "undead_unleashed:grave_metal_sword"
+    },
+    "title": {
+      "translate": "advancements.undead_unleashed.title"
+    },
+    "description": {
+      "translate": "advancements.undead_unleashed.descr"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "undead_unleashed": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

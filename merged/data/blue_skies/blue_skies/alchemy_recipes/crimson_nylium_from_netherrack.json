@@ -1,0 +1,12 @@
+{
+  "type": "blue_skies:catylist",
+  "catylists": [
+    "minecraft:crimson_fungus"
+  ],
+  "inputs": [
+    "minecraft:netherrack"
+  ],
+  "results": [
+    "minecraft:crimson_nylium"
+  ]
+}

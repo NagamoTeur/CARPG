@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "small_end_islands",
+  "features": "unusualend:ancient_end_city_structure",
+  "step": "raw_generation"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Minor Boon of Trickery",
+    "description": "Loki grants you a small portion of his dark magic. You gain increased reach, true invisibility  while sneaking and your attacks also poison your foes.",
+    "condition": {
+        "type": "origins:sneaking"
+    },
+    "type": "origins:invisibility",
+    "render_armor": false
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "INI",
+    "NLN",
+    "INI"
+  ],
+  "key": {
+    "I": {
+      "item": "unusualend:gilded_pearl"
+    },
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "L": {
+      "item": "minecraft:lodestone"
+    }
+  },
+  "result": {
+    "item": "unusualend:teleportation_anchor",
+    "count": 1
+  }
+}

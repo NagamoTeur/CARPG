@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "cisco_mod:nocturnal_amethyst"
+    },
+    "1": {
+      "item": "cisco_mod:darksteel_slab"
+    },
+    "2": {
+      "item": "cisco_mod:nocturnal_amethyst"
+    },
+    "3": {
+      "item": "cisco_mod:darksteel_slab"
+    },
+    "4": {
+      "item": "cisco_mod:darksteel_slab"
+    },
+    "5": {
+      "item": "cisco_mod:darksteel_slab"
+    },
+    "6": {
+      "item": "cisco_mod:nocturnal_amethyst"
+    },
+    "7": {
+      "item": "cisco_mod:darksteel_block"
+    },
+    "8": {
+      "item": "cisco_mod:nocturnal_amethyst"
+    }
+  },
+  "result": {
+    "item": "cisco_mod:podiumofpurgatory",
+    "count": 1
+  }
+}

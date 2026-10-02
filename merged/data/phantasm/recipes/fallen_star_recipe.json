@@ -1,0 +1,42 @@
+{
+  "group": "fallen_star",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "phantasm:stardust"
+    },
+    "1": {
+      "item": "phantasm:stardust"
+    },
+    "2": {
+      "item": "phantasm:stardust"
+    },
+    "3": {
+      "item": "phantasm:stardust"
+    },
+    "4": {
+      "item": "phantasm:stellium_ingot"
+    },
+    "5": {
+      "item": "phantasm:stardust"
+    },
+    "6": {
+      "item": "phantasm:stardust"
+    },
+    "7": {
+      "item": "phantasm:stardust"
+    },
+    "8": {
+      "item": "phantasm:stardust"
+    }
+  },
+  "result": {
+    "item": "phantasm:fallen_star",
+    "count": 1
+  }
+}

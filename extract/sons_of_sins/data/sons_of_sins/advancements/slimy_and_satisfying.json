@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "sons_of_sins:creeper_ribs"
+    },
+    "title": {
+      "translate": "advancements.slimy_and_satisfying.title"
+    },
+    "description": {
+      "translate": "advancements.slimy_and_satisfying.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "slimy_and_satisfying": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "sons_of_sins:slice_all"
+}

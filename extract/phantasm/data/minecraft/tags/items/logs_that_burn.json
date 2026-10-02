@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "phantasm:stripped_ebony_wood",
+    "phantasm:stripped_pream_log",
+    "phantasm:pream_log",
+    "phantasm:pream_wood",
+    "phantasm:stripped_pream_wood",
+    "phantasm:ebony_packed_stems",
+    "phantasm:ebony_wood",
+    "phantasm:stripped_ebony_packed_stems"
+  ]
+}

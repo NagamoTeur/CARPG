@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: upgradednetherite
+Specification-Vendor: Rolfmao
+Specification-Version: 1
+Implementation-Title: UpgradedNetherite
+Implementation-Version: 1.19.2-5.1.0.9-release
+Implementation-Vendor: Rolfmao
+Implementation-Timestamp: 2023-05-14T01:17:58+0200
+MixinConfigs: upgradednetherite.mixins.json
+

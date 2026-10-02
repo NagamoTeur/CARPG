@@ -1,0 +1,290 @@
+288
+0
+aiimprovements | AI-Improvements | ${file.jarVersion} | 0
+advancementplaques | Advancement Plaques | ${file.jarVersion} | 0
+apotheosis | Apotheosis | 6.5.2 | 1043
+apothiccurios | Apothic Curios | 1.0.3c | 0
+aquaculture | Aquaculture 2 | ${file.jarVersion} | 256
+armordamagelimit | Armor Damage Limit | 1.19.2-1.0.0 | 0
+attributefix | AttributeFix | 17.2.8 | 0
+autoleveling | Auto Leveling | 1.19b | 0
+autoreglib | AutoRegLib | ${file.jarVersion} | 0
+bhmenu | BHMenu | 2.4.3 | 0
+bosses_of_mass_destruction | Bosses of Mass Destruction | 1.0.6 | 52
+badmobs | BadMobs | 16.1.3 | 0
+badoptimizations | BadOptimizations | 2.1.4 | 0
+betteradvancements | Better Advancements | 0.2.2.142 | 0
+betterthirdperson | Better Third Person | ${file.jarVersion} | 0
+bookshelf | Bookshelf | 16.3.20 | 43
+brewinandchewin | Brewin' and Chewin' | 1.19-2.0 | 85
+clumps | Clumps | ${file.jarVersion} | 0
+controlling | Controlling | ${file.jarVersion} | 0
+corgilib | CorgiLib | ${file.jarVersion} | 0
+crafttweaker | CraftTweaker | ${file.jarVersion} | 0
+crash_assistant | Crash Assistant | 1.11.9 | 0
+craterlib | CraterLib | 3.0.1 | 0
+culllessleaves | Cull Less Leaves Reforged | ${file.jarVersion} | 0
+darkerdepths | Darker Depths | 1.19-1.0.7 | 548
+decorative_blocks | Decorative Blocks | ${file.jarVersion} | 219
+delightful | Delightful | ${file.jarVersion} | 645
+dramaticdoors | Dramatic Doors | 1.19.2-3.2.7 | 280
+dungeoncrawl | Dungeon Crawl | 2.3.12 | 172
+dungeons_arise | When Dungeons Arise | 2.1.54-1.19.2 | 385
+dungeons_arise_seven_seas | When Dungeons Arise: Seven Seas | 1.0.2 | 40
+enchdesc | EnchantmentDescriptions | 13.0.14 | 0
+phantasm | End's Phantasm | 1.2.10.5 | 168
+endlessbiomes | EndlessBiomes | 1.0.0 | 177
+enigmaticlegacy | Enigmatic Legacy | 2.26.5 | 420
+entitycollisionfpsfix | Entity Collision FPS Fix | ${file.jarVersion} | 0
+explorerscompass | Explorer's Compass | ${file.jarVersion} | 4
+explorify | Explorify | 1.6.3 | 136
+farmersdelight | Farmer's Delight | 1.19.2-1.2.4 | 746
+farmersrespite | Farmer's Respite | 1.19-2.0 | 147
+galosphere | Galosphere | 1.19.2-1.3.0 | 391
+gamestages | GameStages | 11.1.4 | 0
+gateways | Gateways To Eternity | 3.2.3 | 66
+highlighter | Highlighter | ${file.jarVersion} | 0
+hoporp | HopoBetterRuinedPortals | 1.3.3 | 42
+iceberg | Iceberg | ${file.jarVersion} | 0
+immediatelyfast | ImmediatelyFast | 1.4.0+1.19.2 | 0
+incendium | Incendium | 5.1.6 | 914
+insanelib | InsaneLib | ${file.jarVersion} | 0
+itemproductionlib | Item Production Lib | 1.0.2a | 0
+itemstages | ItemStages | 5.1.4 | 0
+item_obliterator | Item Obliterator | 1.6.2 | 0
+jade | Jade | ${file.jarVersion} | 0
+jeresources | Just Enough Resources | 1.2.3.243 | 0
+cataclysm | Cataclysm Mod | 2.46 | 471
+leavesbegone | Leaves Be Gone | 4.0.1 | 0
+legendarytooltips | Legendary Tooltips | ${file.jarVersion} | 0
+longnbtkiller | LongNbtKiller | 1.0.0 | 0
+maxhealthfix | MaxHealthFix | 8.0.2 | 0
+mousetweaks | Mouse Tweaks | ${file.jarVersion} | 0
+mutantmonsters | Mutant Monsters | 4.0.6 | 37
+myserveriscompatible | MyServerIsCompatible | ${file.jarVersion} | 0
+naturescompass | Nature's Compass | ${file.jarVersion} | 4
+necronomicon | Necronomicon | 1.4.2 | 0
+nethersdelight | Nether's Delight | 1.19-3.1 | 113
+nightconfigfixes | Night Config Fixes | 4.0.7 | 0
+byg | Oh The Biomes You'll Go | ${file.jarVersion} | 3198
+overflowingbars | Overflowing Bars | 4.0.1 | 0
+skilltree | Passive Skill Tree | 0.6.14b | 733
+patchouli | Patchouli | ${file.jarVersion} | 1
+paxi | Paxi | 1.19.2-Forge-3.0.1 | 0
+pehkui | Pehkui | 3.8.2+1.19.2-forge | 0
+placebo | Placebo | 7.4.1 | 0
+prism | Prism | 1.0.2 | 0
+progressivebosses | Progressive Bosses | ${file.jarVersion} | 12
+puzzleslib | Puzzles Lib | 4.4.3 | 0
+quark | Quark | ${file.jarVersion} | 2700
+raided | Raided | ${file.jarVersion} | 6
+ringsofascension | Rings of Ascension | 1.0.0 | 1
+simplerpc | Simple RPC | 4.0.4 | 0
+skyvillages | Sky Villages | 1.0.3 | 22
+storagedrawers | Storage Drawers | 11.4.1 | 139
+structory | Structory | 1.3.1a | 135
+structorytowers | Structory: Towers | 1.0.2 | 118
+terrablender | TerraBlender | ${file.jarVersion} | 2
+reeses_sodium_options | TexTrue's Rubidium Options | 1.0.7-mc1.19.2 | 0
+t_and_t | Towns and Towers | ${file.jarVersion} | 344
+travelerstitles | Traveler's Titles | 1.19.2-Forge-3.1.2 | 1
+undead_unleashed | Undead Unleashed | 1.1.0 | 94
+unusualend | Unusual End | 1.4.3 | 272
+wabi_sabi_structures | Wabi-Sabi Structures | 1.2.0-1.19 | 466
+yungsapi | YUNG's API | ${file.jarVersion} | 0
+betterdeserttemples | YUNG's Better Desert Temples | 1.19.2-Forge-2.2.2 | 47
+betterdungeons | YUNG's Better Dungeons | 1.19.2-Forge-3.2.2 | 77
+betterendisland | YUNG's Better End Island | 1.19.2-Forge-1.0 | 2
+betterjungletemples | YUNG's Better Jungle Temples | 1.19.2-Forge-1.0.1 | 27
+bettermineshafts | YUNG's Better Mineshafts | 1.19.2-Forge-3.2.1 | 30
+betterfortresses | YUNG's Better Nether Fortresses | 1.19.2-Forge-1.0.6 | 32
+betteroceanmonuments | YUNG's Better Ocean Monuments | 1.19.2-Forge-2.1.1 | 20
+betterstrongholds | YUNG's Better Strongholds | 1.19.2-Forge-3.2.0 | 34
+aeroblender | AeroBlender | ${file.jarVersion} | 4
+aether | The Aether | ${file.jarVersion} | 1230
+alexsdelight | Alex's Delight | ${file.jarVersion} | 44
+alexsmobs | Alex's Mobs | 1.21.1 | 457
+apotheotic_additions | apotheotic_additions | 1.0.4 | 619
+apothsb | ApothSB | 1.0.0 | 1
+appleskin | AppleSkin | ${file.jarVersion} | 0
+aquamirae | Aquamirae | 6.API15 | 133
+architectury | Architectury | 6.6.92 | 0
+ars_additions | Ars Additions | 1.19.2-1.4.0 | 142
+ars_elemental | Ars Elemental | ${file.jarVersion} | 296
+ars_nouveau | Ars Nouveau | ${file.jarVersion} | 1523
+atmospheric | Atmospheric | ${file.jarVersion} | 1196
+awesomedungeonend | Awesome dungeon the end | 3.1.1 | 24
+awesomedungeonnether | Awesome dungeon nether | 3.1.1 | 32
+azurelib | AzureLib | 3.2.2 | 0
+balm | Balm | ${file.jarVersion} | 32
+bettercombat | Better Combat | 1.7.1+1.19 | 35
+betterfpsdist | betterfpsdist mod | ${file.jarVersion} | 0
+betterwithminecolonies | Better With Minecolonies | ${file.jarVersion} | 78
+biomemusic | biomemusic mod | ${file.jarVersion} | 0
+blockui | UI Library Mod | 1.19.2-1.0.140-BETA | 1
+blue_skies | Blue Skies | ${file.jarVersion} | 2505
+blueprint | Blueprint | 6.2.0 | 44
+bocchium | Bocchium | 1.19.2-0.0.3 | 0
+brutalbosses | brutalbosses mod | ${file.jarVersion} | 30
+bygonenether | Bygone Nether | 1.3.2 | 174
+caelus | Caelus API | 1.19.2-3.0.0.6 | 1
+canary | Canary | 0.3.3 | 0
+carryon | Carry On | ${file.jarVersion} | 6
+celestisynth | Celestisynth | 1.19.2-1.1.5 | 68
+celestweaks | Celestweaks | 0.9.7 | 1
+chunksending | chunksending mod | ${file.jarVersion} | 0
+cisco_mod | Cisco's Content | 5.8 | 183
+ciscounbound | Ciscos Content Unbound | 0.0.1-1.19.2 | 184
+citadel | Citadel | 2.1.4 | 2
+clayworks | Clayworks | ${file.jarVersion} | 1162
+cloth_config | Cloth Config v8 API | 8.3.134 | 0
+collectionofsingiro | Collection of Singiro | 1.0 | 361
+combatroll | Combat Roll | 1.1.5+1.19 | 0
+comforts | Comforts | 6.0.7+1.19.2 | 165
+connectivity | Connectivity Mod | ${file.jarVersion} | 0
+constructionwand | Construction Wand | ${file.jarVersion} | 13
+corpse | Corpse | 1.19.2-1.0.17 | 0
+corpsecurioscompat | corpsecurioscompat | 2.2.2 | 0
+ctov | ChoiceTheorem's Overhauled Village | 3.2.6c | 363
+cupboard | Cupboard utilities | ${file.jarVersion} | 0
+curios | Curios API | ${file.jarVersion} | 0
+deep_aether | Deep Aether | ${file.jarVersion} | 1026
+deeperdarker | Deeper and Darker | 1.2.2 | 661
+defaultoptions | Default Options | ${file.jarVersion} | 0
+doapi | Lets Do Api | 1.1.0b | 0
+doespotatotick | DoesPotatoTick | 1.19.2-5.3.4 | 0
+domum_ornamentum | Domum Ornamentum | ${file.jarVersion} | 204
+dragonenchants | Dragon Enchants | 1.0.4 | 0
+dreadsteel | Dreadsteel | ${file.jarVersion} | 11
+dummmmmmy | MmmMmmMmmmmm | 1.19.2-1.7.1 | 2
+dungeons_andtaverns_mr | Dungeons and Taverns | 2.0.2 | 313
+dungeons_enhanced | Dungeons Enhanced | 4.1 | 58
+dungeons_plus | Dungeons Plus | ${file.jarVersion} | 80
+easy_villagers | Easy Villagers | 1.19.2-1.1.23 | 15
+eccentrictome | Eccentric Tome | 1.19.2-1.10.2 | 3
+ecologics | Ecologics | 2.1.11 | 362
+elevatorid | Elevator Mod | ${file.jarVersion} | 50
+elytraslot | Elytra Slot | 6.1.2+1.19.2 | 1
+endrem | End Remastered | ${file.jarVersion} | 55
+enemyexpansion | Enemy Expansion | 2.4.0 | 87
+enigmaticaddons | Enigmatic Addons | 1.19.2-1.2.2 | 121
+entityculling | EntityCulling | 1.6.1 | 0
+fancymenu | FancyMenu | 3.8.1 | 0
+fantasyfurniture | Fantasy's Furniture | ${file.jarVersion} | 322
+fastasyncworldsave | fastasyncworldsave mod | ${file.jarVersion} | 0
+fastpaintings | Fast Paintings | 1.19-1.1.3 | 1
+ferritecore | Ferrite Core | ${file.jarVersion} | 0
+forbidden_arcanus | Forbidden & Arcanus | ${file.jarVersion} | 837
+ftbchunks | FTB Chunks | 1902.4.7-build.420 | 5
+ftblibrary | FTB Library | 1902.4.1-build.236 | 0
+ftbquests | FTB Quests | 1902.5.10-build.497 | 17
+ftbteams | FTB Teams | 1902.2.14-build.123 | 0
+ftbultimine | FTB Ultimine | 1902.4.2-build.14 | 5
+ftbxmodcompat | FTB XMod Compat | 1.2.4 | 0
+geckolib3 | GeckoLib | ${file.jarVersion} | 0
+getittogetherdrops | Get It Together, Drops! | ${file.jarVersion} | 0
+goblintraders | Goblin Traders | 1.8.0 | 11
+gpumemleakfix | Gpu memory leak fix | ${file.jarVersion} | 0
+humancompanions | Human Companions | ${file.jarVersion} | 12
+immersive_armors | Immersive Armors | 1.5.6+1.19.2 | 52
+immersive_paintings | Immersive Paintings | 0.6.7+1.19.2 | 103
+infernalmobs | Infernal Mobs | ${file.jarVersion} | 0
+ironchest | Iron Chests | 1.19.2-14.2.7 | 60
+ironfurnaces | Iron Furnaces | ${file.jarVersion} | 92
+irons_spellbooks | Iron's Spells 'n Spellbooks | 1.19.2-3.4.0 | 419
+itemfilters | Item Filters | 1902.2.9-build.51 | 17
+iter_rpg | Iter RPG | 0.5.0 | 385
+jei | Just Enough Items | 11.8.1.1034 | 0
+knightlib | Knight Lib | ${file.jarVersion} | 32
+knightquest | Knight Quest | 1.8.5 | 380
+konkrete | Konkrete | 1.8.0 | 0
+kubejs | KubeJS | 1902.6.2-build.73 | 0
+lazydfu | LazyDFU | 0.1.3 | 0
+letmedespawn | Let Me Despawn | 1.3.2b | 0
+bakery | Bakery | 1.0.6 | 209
+vinery | Vinery | 1.3.12 | 377
+libraryferret | Library ferret | 4.0.0 | 26
+lionfishapi | LionfishAPI | 1.8 | 0
+lootintegrations | Lootintegrations mod | ${file.jarVersion} | 50
+lootr | Lootr | 0.4.28.75 | 40
+majruszlibrary | Majrusz Library | 7.0.5-backport.1 | 0
+majruszsaccessories | Majrusz's Accessories | 1.5.2-backport.2 | 36
+majruszsdifficulty | Majrusz's Progressive Difficulty | 1.9.9-backport.1 | 113
+majruszsenchantments | Majrusz's Enchantments | 1.10.7-backport.1 | 6
+mcsa | MC Story Mode Armors | 3.1.4+1.19 | 7
+medieval_paintings | Medieval Paintings | 7.0 | 1
+meetyourfight | Meet Your Fight | ${file.jarVersion} | 47
+melody | Melody | 1.0.1 | 0
+memoryleakfix | Memory Leak Fix | 1.0.0 | 0
+memorysettings | memorysettings mod | ${file.jarVersion} | 0
+minecolonies | MineColonies | 1.19.2-1.1.516-BETA | 1066
+modernfix | ModernFix | 5.18.1+mc1.19.2 | 0
+moonlight | Moonlight Library | 1.19.2-2.3.7 | 17
+morevillagers | More Villagers | 4.0.3 | 53
+mowziesmobs | Mowzie's Mobs | 1.6.3 | 109
+multipiston | Multi-Piston | 1.19.2-1.2.25-ALPHA | 3
+mythicmounts | MythicMounts | ${file.jarVersion} | 52
+nerb | Not Enough Recipe Book | 0.3 | 0
+noisium | Noisium | 1.0.2 | 0
+obscure_api | Obscure API | 15 | 0
+octolib | OctoLib | 0.3 | 0
+oculus | Oculus | 1.6.9a | 0
+oriacs | Origins: Accessibilities | 1.1.0 | 29
+origins_classes | Origins: Classes | 1.2.1 | 80
+origins | Origins | 1.19.2-1.7.1.7 | 81
+packetfixer | PacketFixer | 3.1.4 | 0
+playeranimator | Player Animator | 1.0.2 | 0
+pluto | Pluto | ${file.jarVersion} | 0
+polymorph | Polymorph | 0.46.6+1.19.2 | 0
+mixample | mixample | 1.0.1 | 0
+recipeessentials | recipeessentials mod | ${file.jarVersion} | 0
+redirector | Redirector | 5.0.0 | 0
+relics | Relics | 0.6.2.5 | 14
+repurposed_structures | Repurposed Structures | ${file.jarVersion} | 2218
+rhino | Rhino | 1902.2.3-build.284 | 0
+rightclickharvest | Right Click Harvest | ${file.jarVersion} | 6
+royalvariations | Royal Variations | 1.0.0 | 19
+rubidium | Rubidium | 0.6.2c | 0
+rubidium_extras | Rubidium Extras | ${file.jarVersion} | 0
+saturn | Saturn | 0.1.4 | 0
+savage_and_ravage | Savage & Ravage | ${file.jarVersion} | 100
+servercore | ServerCore | 1.3.6+1.19.2 | 0
+shadowizardlib | ShadowizardLib | ${file.jarVersion} | 0
+simplyswords | Simply Swords | 1.47.0-1.19.2 | 1309
+smallships | Small Ships | 2.0.0-b1.3.1 | 66
+smoothboot | Smooth Boot (Reloaded) | 0.0.4 | 0
+solapplepie | Spice of Life: Apple Pie Edition | ${file.jarVersion} | 5
+sons_of_sins | Sons of Sins | 2.1.6 | 107
+sophisticatedbackpacks | Sophisticated Backpacks | ${file.jarVersion} | 188
+sophisticatedcore | Sophisticated Core | ${file.jarVersion} | 2
+stalwart_dungeons | Stalwart Dungeons | 1.2.8 | 92
+starlight | Starlight | 1.1.1+forge.a3aea74 | 0
+strictly_origins | Strictly Origins | 8 | 160
+structure_gel | Structure Gel API | ${file.jarVersion} | 5
+structureessentials | Structure Essentials mod | ${file.jarVersion} | 0
+structurize | Structurize | 1.19.2-1.0.689-RELEASE | 7
+stylecolonies | stylecolonies mod | ${file.jarVersion} | 0
+supplementaries | Supplementaries | 1.19.2-2.4.20 | 895
+takesapillage | It Takes A Pillage | 1.0.3 | 63
+tlc | The Lost Castle | 1.0.2 | 25
+toms_storage | Tom's Simple Storage Mod | ${file.jarVersion} | 43
+toofast | Too Fast | 0.2.2.4 | 0
+toomanyglyphs | Too Many Glyphs | ${file.jarVersion} | 35
+totw_modded | Towers of the Wild Modded | ${file.jarVersion} | 105
+towntalk | TownTalk | 1.0.1 | 0
+transmog | Transmog | ${file.jarVersion} | 6
+twigs | Twigs | 1.19.2-3.0.1 | 1398
+twilightforest | The Twilight Forest | ${file.jarVersion} | 1767
+upgradedcore | Upgraded Core | ${file.jarVersion} | 1
+upgradednetherite | Upgraded Netherite | ${file.jarVersion} | 285
+upgradednetherite_items | Upgraded Netherite : Items | ${file.jarVersion} | 31
+upgradednetherite_ultimate | Upgraded Netherite : Ultimerite | ${file.jarVersion} | 19
+valhelsia_core | Valhelsia Core | ${file.jarVersion} | 1
+waystones | Waystones | ${file.jarVersion} | 89
+whisperwoods | Whisperwoods | 1.19-2.1.1 | 38
+woodworks | Woodworks | ${file.jarVersion} | 865
+xaerominimap | Xaero's Minimap | 25.3.13 | 0
+xaeroworldmap | Xaero's World Map | 1.40.16 | 0
+xpbook | XP Tome | ${file.jarVersion} | 1
+yeetusexperimentus | Yeetus Experimentus | 1.0.1-build.2+mc1.19.1 | 0
+medievalmusic | medievalmusic mod | ${file.jarVersion} | 0

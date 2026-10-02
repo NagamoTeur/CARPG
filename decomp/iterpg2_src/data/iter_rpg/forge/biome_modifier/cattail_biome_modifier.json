@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "swamp",
+  "features": "iter_rpg:cattail",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cisco_mod:skysplitter"
+    },
+    "title": {
+      "translate": "advancements.wind_favoured.title"
+    },
+    "description": {
+      "translate": "advancements.wind_favoured.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wind_favoured": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cisco_mod:divine_ruby_advancement"
+}

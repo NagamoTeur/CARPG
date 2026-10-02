@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "endlessbiomes:penumbra_planks"
+    },
+    "1": {
+      "item": "endlessbiomes:penumbra_planks"
+    },
+    "2": {
+      "item": "endlessbiomes:penumbra_planks"
+    }
+  },
+  "result": {
+    "item": "endlessbiomes:penumbra_slabs",
+    "count": 6
+  }
+}

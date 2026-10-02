@@ -1,0 +1,8 @@
+{
+  "type": "blue_skies:transmute",
+  "items": [
+    "minecraft:crimson_roots",
+    "minecraft:warped_roots",
+    "minecraft:nether_sprouts"
+  ]
+}

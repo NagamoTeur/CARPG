@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "cisco_mod:brightsteel_ingot"
+    },
+    "2": {
+      "item": "cisco_mod:brightsteel_ingot"
+    },
+    "3": {
+      "item": "cisco_mod:brightsteel_ingot"
+    },
+    "4": {
+      "item": "cisco_mod:brightsteel_ingot"
+    },
+    "5": {
+      "item": "cisco_mod:brightsteel_ingot"
+    },
+    "6": {
+      "item": "cisco_mod:brightsteel_ingot"
+    },
+    "7": {
+      "item": "cisco_mod:brightsteel_ingot"
+    },
+    "8": {
+      "item": "cisco_mod:brightsteel_ingot"
+    }
+  },
+  "result": {
+    "item": "cisco_mod:brightsteel_chestplate",
+    "count": 1
+  }
+}

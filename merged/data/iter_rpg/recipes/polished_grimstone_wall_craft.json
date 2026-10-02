@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "iter_rpg:polished_grimstone"
+    },
+    "1": {
+      "item": "iter_rpg:polished_grimstone"
+    },
+    "2": {
+      "item": "iter_rpg:polished_grimstone"
+    },
+    "3": {
+      "item": "iter_rpg:polished_grimstone"
+    },
+    "4": {
+      "item": "iter_rpg:polished_grimstone"
+    },
+    "5": {
+      "item": "iter_rpg:polished_grimstone"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:polished_grimstone_wall",
+    "count": 6
+  }
+}

@@ -1,0 +1,60 @@
+{
+	"conditions": [{
+		"type": "forge:mod_loaded",
+		"modid": "botania"
+	}],
+	"weight": 25,
+	"mainhands": [{
+			"weight": 3,
+			"stack": {
+				"item": "botania:manasteel_sword"
+			}
+		},
+		{
+			"weight": 3,
+			"stack": {
+				"item": "botania:manasteel_axe"
+			}
+		},
+		{
+			"weight": 2,
+			"stack": {
+				"item": "botania:manasteel_pickaxe"
+			}
+		},
+		{
+			"weight": 2,
+			"stack": {
+				"item": "botania:manasteel_shovel"
+			}
+		}
+	],
+	"offhands": [],
+	"boots": [{
+		"weight": 1,
+		"stack": {
+			"item": "botania:manasteel_boots"
+		}
+	}],
+	"leggings": [{
+		"weight": 1,
+		"stack": {
+			"item": "botania:manasteel_leggings"
+		}
+	}],
+	"chestplates": [{
+		"weight": 1,
+		"stack": {
+			"item": "botania:manasteel_chestplate"
+		}
+	}],
+	"helmets": [{
+		"weight": 1,
+		"stack": {
+			"item": "botania:manasteel_helmet"
+		}
+	}],
+	"tags": [
+		"twilight"
+	]
+}

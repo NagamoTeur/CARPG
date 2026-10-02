@@ -1,0 +1,9 @@
+{
+  "type": "aether:repairing",
+  "category": "enchanting_repair",
+  "group": "altar_helmet_repair",
+  "ingredient": {
+    "item": "minecraft:netherite_helmet"
+  },
+  "repairTime": 2000
+}

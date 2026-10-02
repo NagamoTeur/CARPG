@@ -1,0 +1,6 @@
+{
+  "block": "minecraft:water",
+  "frozen_block": "minecraft:ice",
+  "preserve_states": false,
+  "states": {}
+}

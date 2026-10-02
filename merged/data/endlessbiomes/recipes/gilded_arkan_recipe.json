@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "endlessbiomes:riftite_shard"
+    },
+    "1": {
+      "item": "endlessbiomes:arkan"
+    },
+    "2": {
+      "item": "endlessbiomes:riftite_shard"
+    },
+    "3": {
+      "item": "endlessbiomes:riftite_shard"
+    },
+    "4": {
+      "item": "endlessbiomes:arkan"
+    },
+    "5": {
+      "item": "endlessbiomes:riftite_shard"
+    },
+    "6": {
+      "item": "endlessbiomes:riftite_shard"
+    },
+    "7": {
+      "item": "endlessbiomes:arkan"
+    },
+    "8": {
+      "item": "endlessbiomes:riftite_shard"
+    }
+  },
+  "result": {
+    "item": "endlessbiomes:gilded_arkan",
+    "count": 3
+  }
+}

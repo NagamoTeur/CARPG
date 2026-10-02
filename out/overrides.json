@@ -1,0 +1,1014 @@
+[
+ [
+  "data/apotheosis/gems/core/samurai.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/core/lunar.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/core/brawlers.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/core/combatant.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/core/lightning.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/core/warlord.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/core/solar.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/core/splendor.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/core/ballast.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/core/guardian.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/core/tyrannical.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/core/slipstream.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/core/breach.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/twilight/queen.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/the_nether/blood_lord.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/the_nether/inferno.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/overworld/royalty.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheosis/gems/overworld/earth.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/blue_skies/blue_skies.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/twilight/wildheart.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/twilight/umbral_matrimony.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/armor.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/bloodcaster.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/hearty.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/ars_mana.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/mystic.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/safari.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/undergarden/decay.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/undergarden/undergarden.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/aether/purity.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/aether/zanite_alchemist.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/aether/aether.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/curios/reinforced.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/curios/twisted.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/curios/vitalic.json",
+  "Cisco Rpg Affix settings"
+ ],
+ [
+  "data/apotheotic_additions/gems/blue_skies/blue_skies.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/blue_skies/horizonite_alchemist.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/blue_skies/ventium_alchemist.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/felfire.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/corrupted.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/armor.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/soultwisted.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/archmage.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/bloodcaster.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/cataclysm.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/witherstorm.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/hearty.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/rat_chef.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/dracula.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/ars_mana.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/mystic.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/modded/safari.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/undergarden/decay.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/undergarden/undergarden.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/aether/purity.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/aether/zanite_alchemist.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/apotheotic_additions/gems/aether/aether.json",
+  "Cisco Rpg Spell Power Buff"
+ ],
+ [
+  "data/irons_spellbooks/gems/ice.json",
+  "Cisco Rpg Spell Power Iron Spells"
+ ],
+ [
+  "data/irons_spellbooks/gems/summoning.json",
+  "Cisco Rpg Spell Power Iron Spells"
+ ],
+ [
+  "data/irons_spellbooks/gems/ender.json",
+  "Cisco Rpg Spell Power Iron Spells"
+ ],
+ [
+  "data/irons_spellbooks/gems/lightning.json",
+  "Cisco Rpg Spell Power Iron Spells"
+ ],
+ [
+  "data/irons_spellbooks/gems/intelligent.json",
+  "Cisco Rpg Spell Power Iron Spells"
+ ],
+ [
+  "data/irons_spellbooks/gems/spell_resist.json",
+  "Cisco Rpg Spell Power Iron Spells"
+ ],
+ [
+  "data/irons_spellbooks/gems/holy.json",
+  "Cisco Rpg Spell Power Iron Spells"
+ ],
+ [
+  "data/irons_spellbooks/gems/fire.json",
+  "Cisco Rpg Spell Power Iron Spells"
+ ],
+ [
+  "data/irons_spellbooks/gems/evocation.json",
+  "Cisco Rpg Spell Power Iron Spells"
+ ],
+ [
+  "data/irons_spellbooks/gems/blood.json",
+  "Cisco Rpg Spell Power Iron Spells"
+ ],
+ [
+  "data/irons_spellbooks/gems/cast_time.json",
+  "Cisco Rpg Spell Power Iron Spells"
+ ],
+ [
+  "data/irons_spellbooks/gems/nature.json",
+  "Cisco Rpg Spell Power Iron Spells"
+ ],
+ [
+  "data/irons_spellbooks/gems/cooldown.json",
+  "Cisco Rpg Spell Power Iron Spells"
+ ],
+ [
+  "data/origins/origin_layers/origin.json",
+  "Cisco's Rpg Origins 1.1.2.zip"
+ ],
+ [
+  "data/gateways/gateways/skeleton_gate_small.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/magma_cube_gate_small.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/blaze_gate_large.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/shulker_gate_small.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/spider_gate.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/enderman_gate_small.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/zombie_gate_small.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/skeleton_gate_large.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/slime_gate_small.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/blaze_gate.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/shulker_gate_large.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/witch_gate_large.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/skeleton_gate.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/spider_gate_large.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/witch_gate.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/shulker_gate.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/creeper_gate_large.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/slime_gate_large.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/zombie_gate.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/ghast_gate.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/creeper_gate.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/spider_gate_small.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/creeper_gate_small.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/ghast_gate_small.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/zombie_gate_large.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/slime_gate.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/enderman_gate.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/ghast_gate_large.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/magma_cube_gate.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/witch_gate_small.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/enderman_gate_large.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/blaze_gate_small.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/gateways/gateways/magma_cube_gate_large.json",
+  "CiscoRpg Gateway Fix"
+ ],
+ [
+  "data/origins-classes/origins/merchant.json",
+  "CiscoRpgClassDisable"
+ ],
+ [
+  "data/medievalorigins/origins/paladin.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/fae.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/elf.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/yeti.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/arachnae.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/plague_victim.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/troll.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/siren.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/dwarf.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/daemon.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/werewolf.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/ogre.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/goblin.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/pixie.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/gorgon.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/banshee.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/knight.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/medievalorigins/origins/necromancer.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/strictly/origins/umvuthi.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/strictly/origins/troll.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/strictly/origins/dwarf.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/strictly/origins/buzz.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/strictly/origins/adapted_raccoon.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/arkwys/origins/moth.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/arkwys/origins/minotaur.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/arkwys/origins/demon.json",
+  "CiscoRpgOrigin"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/crawler_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/direwolf_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/equestrian_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/flutterfly_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/gladius_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/goblin_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/intruder_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/ladybug_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/meature_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/scorpion_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/slugger_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/spectre_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/sprinter_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/starved_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/tarantula_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/vampire_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/wasp_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/enemyexpansion/forge/biome_modifier/wolfsbane_biome_modifier.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/forge/tags/worldgen/biome/is_eyestalker.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/forge/tags/worldgen/biome/is_flutterfly.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/forge/tags/worldgen/biome/is_general.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/forge/tags/worldgen/biome/is_generalcave.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/forge/tags/worldgen/biome/is_generalnotemp.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/forge/tags/worldgen/biome/is_generalnotempcave.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/forge/tags/worldgen/biome/is_goblin.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/forge/tags/worldgen/biome/is_mountainous.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/forge/tags/worldgen/biome/is_waterbased.json",
+  "EE Modded 1.18.zip"
+ ],
+ [
+  "data/apotheosis/gems/core/tyrannical.json",
+  "Gem of the Royal Fam Anti OP"
+ ],
+ [
+  "data/apotheosis/gems/overworld/royalty.json",
+  "Gem of the Royal Fam Anti OP"
+ ],
+ [
+  "data/apotheotic_additions/gems/aether/purity.json",
+  "Gem of the Royal Fam Anti OP"
+ ],
+ [
+  "data/apotheotic_additions/gems/aether/aether.json",
+  "Gem of the Royal Fam Anti OP"
+ ],
+ [
+  "data/medievalorigins/powers/banshee/flesheater.json",
+  "Origins_Expanded_Foods_v2.3+1.19.2.zip"
+ ],
+ [
+  "data/medievalorigins/powers/daemon/carnivore.json",
+  "Origins_Expanded_Foods_v2.3+1.19.2.zip"
+ ],
+ [
+  "data/origins/powers/carnivore.json",
+  "Origins_Expanded_Foods_v2.3+1.19.2.zip"
+ ],
+ [
+  "data/origins/powers/vegetarian.json",
+  "Origins_Expanded_Foods_v2.3+1.19.2.zip"
+ ],
+ [
+  "data/origins/tags/items/ignore_diet.json",
+  "Origins_Expanded_Foods_v2.3+1.19.2.zip"
+ ],
+ [
+  "data/origins/tags/items/meat.json",
+  "Origins_Expanded_Foods_v2.3+1.19.2.zip"
+ ],
+ [
+  "data/repurposed_structures/tags/worldgen/biome/has_structure/monuments/icy.json",
+  "Repurposed_Structures-Better_Monuments_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/structure/monument_desert.json",
+  "Repurposed_Structures-Better_Monuments_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/structure/monument_icy.json",
+  "Repurposed_Structures-Better_Monuments_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/structure/monument_jungle.json",
+  "Repurposed_Structures-Better_Monuments_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/structure/monument_nether.json",
+  "Repurposed_Structures-Better_Monuments_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/advancements/fortress_jungle.json",
+  "Repurposed_Structures-Better_Nether_Fortress_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/tags/worldgen/structure/collections/fortresses.json",
+  "Repurposed_Structures-Better_Nether_Fortress_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/tags/worldgen/structure/no_jungle_vines.json",
+  "Repurposed_Structures-Better_Nether_Fortress_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/tags/worldgen/structure_set/overworld_monument_avoid.json",
+  "Repurposed_Structures-Better_Nether_Fortress_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/structure_set/fortresses_overworld.json",
+  "Repurposed_Structures-Better_Nether_Fortress_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/structure/stronghold_end.json",
+  "Repurposed_Structures-Better_Strongholds_v4.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/structure/stronghold_nether.json",
+  "Repurposed_Structures-Better_Strongholds_v4.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/template_pool/strongholds/end/start_pool.json",
+  "Repurposed_Structures-Better_Strongholds_v4.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/template_pool/strongholds/nether/start_pool.json",
+  "Repurposed_Structures-Better_Strongholds_v4.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/badlands/houses.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/birch/houses.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/dark_forest/houses.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/giant_taiga/houses.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/jungle/houses.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/mountains/houses.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/mushroom/houses.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/oak/houses.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/swamp/houses.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_badlands.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_birch.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_dark_forest.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_giant_taiga.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_jungle.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_mountains.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_mushroom.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_oak.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_swamp.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/processor_list/villages/birch/crop_randomizer.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/processor_list/villages/dark_forest/crop_randomizer.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/processor_list/villages/giant_taiga/crop_randomizer.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/processor_list/villages/jungle/crop_randomizer.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/processor_list/villages/mountains/crop_randomizer.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/processor_list/villages/oak/crop_randomizer.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/processor_list/villages/swamp/crop_randomizer.json",
+  "Repurposed_Structures-Farmers_Delight_v5.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/badlands/houses.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/birch/houses.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/dark_forest/houses.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/giant_taiga/houses.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/jungle/houses.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/mountains/houses.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/mushroom/houses.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/oak/houses.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/ocean/houses.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/pool_additions/villages/swamp/houses.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_badlands.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_birch.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_dark_forest.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_giant_taiga.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_jungle.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_mountains.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_mushroom.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_oak.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_ocean.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/rs_pieces_spawn_counts_additions/village_swamp.json",
+  "Repurposed_Structures-Oh_The_Biomes_Youll_Go_v2.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/processor_list/outposts/decay_terracotta.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/processor_list/outposts/strongly_demossify.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/processor_list/outposts/strongly_mossify.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/processor_list/outposts/weakly_crying.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/processor_list/outposts/weakly_demossify.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/processor_list/outposts/weakly_mossify.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/template_pool/outposts/badlands/towers.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/template_pool/outposts/birch/towers.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/template_pool/outposts/crimson/towers.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/template_pool/outposts/desert/towers.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/template_pool/outposts/giant_tree_taiga/towers.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/template_pool/outposts/icy/towers.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/template_pool/outposts/jungle/towers.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/template_pool/outposts/mangrove/towers.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/template_pool/outposts/nether_brick/towers.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/template_pool/outposts/oak/towers.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/template_pool/outposts/snowy/towers.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/template_pool/outposts/taiga/towers.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/repurposed_structures/worldgen/template_pool/outposts/warped/towers.json",
+  "Repurposed_Structures-Savage_And_Ravage_v6.zip"
+ ],
+ [
+  "data/towns_and_towers/worldgen/structure_set/other.json",
+  "Towns and towers structure fix"
+ ],
+ [
+  "data/towns_and_towers/worldgen/structure_set/towers.json",
+  "Towns and towers structure fix"
+ ],
+ [
+  "data/towns_and_towers/worldgen/structure_set/towns.json",
+  "Towns and towers structure fix"
+ ],
+ [
+  "data/betterwithminecolonies/recipes/create/stupid_dragon_breath.json",
+  "betterwithmine recipe disable"
+ ],
+ [
+  "data/betterwithminecolonies/recipes/create/stupid_chorus_fruit.json",
+  "betterwithmine recipe disable"
+ ],
+ [
+  "data/betterwithminecolonies/recipes/create/stupid_blaze_powder.json",
+  "betterwithmine recipe disable"
+ ],
+ [
+  "data/lootintegrations/loot/dungeonloot_no_overflow.json",
+  "lootintegrations"
+ ]
+]

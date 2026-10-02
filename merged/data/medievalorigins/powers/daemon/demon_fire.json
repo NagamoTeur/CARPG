@@ -1,0 +1,12 @@
+{
+	"type": "origins:fire_projectile",
+	"entity_type": "minecraft:fireball",
+	"cooldown": 100,
+	"hud_render": {
+		"should_render": false
+	},
+	"key": {
+		"key": "key.origins.secondary_active",
+		"continuous": false
+	}
+}

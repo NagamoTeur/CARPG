@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "iter_rpg:arcane_powder"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:ametrine_ingot",
+    "count": 2
+  }
+}

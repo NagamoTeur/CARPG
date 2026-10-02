@@ -1,0 +1,6 @@
+{
+  "block": "minecraft:magma_block",
+  "frozen_block": "minecraft:cobblestone",
+  "preserve_states": false,
+  "states": {}
+}

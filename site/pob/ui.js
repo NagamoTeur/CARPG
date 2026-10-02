@@ -1,0 +1,398 @@
+/* Interface du planificateur de build */
+(function () {
+  const { SLOT_DEFS } = ENG;
+  const TF = D.typeFr, RO = D.rarityOrder, RA = D.rarities;
+  const $ = (s, r = document) => r.querySelector(s);
+  const el = (tag, props, ...kids) => {
+    const e = document.createElement(tag);
+    for (const k in props || {}) {
+      if (k === 'class') e.className = props[k]; else if (k === 'html') e.innerHTML = props[k];
+      else if (k.startsWith('on')) e.addEventListener(k.slice(2), props[k]); else if (props[k] !== false && props[k] != null) e.setAttribute(k, props[k] === true ? '' : props[k]);
+    }
+    for (const c of kids.flat()) if (c != null && c !== false) e.append(c.nodeType ? c : document.createTextNode(c));
+    return e;
+  };
+  const fnum = (x, nd = 2) => { if (!isFinite(x)) return '∞'; const r = Math.round(x * 10 ** nd) / 10 ** nd; return String(r).replace('.', ','); };
+  const pct = (x, nd = 1) => fnum(x * 100, nd) + ' %';
+  const rname = r => RA[r].name;
+
+  /* ---------- état ---------- */
+  const DEFAULT = () => ({ v: 1, name: 'Nouveau build', origin: 'origins:human', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:no_blessing',
+    flags: {}, points: 40, nodes: [], gear: {}, spells: [], manual: [], notes: '', hit: 30 });
+  let S = load();
+  function load() {
+    try {
+      const h = location.hash.slice(1);
+      if (h.startsWith('b=')) return Object.assign(DEFAULT(), JSON.parse(decodeURIComponent(escape(atob(h.slice(2).replace(/-/g, '+').replace(/_/g, '/'))))));
+    } catch (e) { console.warn('hash invalide', e); }
+    try { const j = localStorage.getItem('carpg_pob'); if (j) return Object.assign(DEFAULT(), JSON.parse(j)); } catch (e) { }
+    return DEFAULT();
+  }
+  const save = () => { try { localStorage.setItem('carpg_pob', JSON.stringify(S)); } catch (e) { } };
+  const shareLink = () => location.href.split('#')[0] + '#b=' + btoa(unescape(encodeURIComponent(JSON.stringify(S)))).replace(/\+/g, '-').replace(/\//g, '_');
+
+  let tab = 'perso', slotSel = 'main', R = null, treeView = null;
+  function recalc() { R = ENG.compute(S); save(); renderSheet(); }
+
+  /* ---------- aides d'affichage ---------- */
+  const layer = id => D.origins[id];
+  const nameOf = o => o.name_fr || o.name;
+  const descOf = o => o.desc_fr || o.desc;
+  const isFr = o => !!(o.desc_fr);
+  function affixLabel(a, rar) { const t = a.text && (a.text[rar] || a.text[a.rarities[0]]); return a.name + (t ? '  —  ' + t : ''); }
+  function slotTitle(sd) { const it = S.gear[sd.id]; return it ? (it.name || '') : ''; }
+
+  /* ---------- onglets ---------- */
+  const TABS = [['perso', 'Personnage'], ['arbre', 'Arbre de talents'], ['equip', 'Équipement'], ['sorts', 'Sorts'], ['boss', 'Simulateur de boss'], ['stats', 'Statistiques détaillées'], ['builds', 'Builds prêts']];
+  function renderTabs() {
+    const t = $('#tabs'); t.innerHTML = '';
+    TABS.forEach(([id, n]) => t.append(el('button', { class: tab === id ? 'on' : '', onclick: () => { tab = id; render(); } }, n)));
+  }
+  function render() {
+    renderTabs();
+    const m = $('#main'); m.innerHTML = '';
+    ({ perso: renderPerso, arbre: renderTree, equip: renderGear, sorts: renderSpells, boss: renderBoss, stats: renderStats, builds: renderBuilds })[tab](m);
+    renderSheet();
+  }
+
+  /* ---------- Personnage ---------- */
+  function powerBlock(o) {
+    const seen = new Set();
+    return o.powers.filter(p => { const k = (p.name || '') + (p.desc || ''); if (seen.has(k) || !p.desc) return false; seen.add(k); return true; })
+      .map(p => el('div', { class: 'power' }, el('b', {}, p.name_fr || p.name), p.desc_fr ? null : el('span', { class: 'tag', title: 'Description originale (anglais) — pas encore traduite' }, 'EN'), el('div', { class: 'small' }, p.desc_fr || p.desc)));
+  }
+  function renderPerso(m) {
+    const pick = (lid, key, title, hint) => {
+      const L = layer(lid); const sel = el('select', { onchange: e => { S[key] = e.target.value; recalc(); render(); } },
+        ...L.origins.slice().sort((a, b) => nameOf(a).localeCompare(nameOf(b))).map(o => el('option', { value: o.id, selected: S[key] === o.id }, nameOf(o))));
+      const cur = L.origins.find(o => o.id === S[key]) || L.origins[0];
+      return el('div', { class: 'card' }, el('h3', {}, title), el('div', { class: 'mut small' }, hint), sel,
+        el('p', { class: 'small' }, cur ? descOf(cur) : ''), ...(cur ? powerBlock(cur) : []));
+    };
+    m.append(el('div', { class: 'note' }, 'Chaque joueur choisit 1 origine + 1 classe + 1 bénédiction divine. Les bonus chiffrés sont ajoutés automatiquement à la fiche de droite ; les pouvoirs sans chiffre sont décrits à titre indicatif.'));
+    m.append(el('div', { class: 'row' }, el('label', {}, 'Dragon vaincu ?'),
+      el('input', { type: 'checkbox', checked: !!S.flags.dragon, onchange: e => { S.flags.dragon = e.target.checked; recalc(); } }), el('span', { class: 'mut small' }, 'Active les bonus de bénédiction qui se débloquent après avoir tué l\'Ender Dragon.')));
+    m.append(el('div', { class: 'grid3' }, pick('origins:origin', 'origin', 'Origine', 'Race : capacités passives, avantages et handicaps.'),
+      pick('origins-classes:class', 'cls', 'Classe', 'Petits bonus de métier (forgeron, archer, guerrier…).'),
+      pick('cisco_rpg_origins:divineblessings', 'blessing', 'Bénédiction divine', 'Un dieu te protège ; les « grands bienfaits » arrivent après le dragon.')));
+    const as = S.assume = S.assume || {};
+    const ck = (k, label) => el('label', { class: 'small', style: 'margin-right:14px' }, el('input', { type: 'checkbox', checked: !!as[k], onchange: e => { as[k] = e.target.checked; recalc(); } }), ' ' + label);
+    m.append(el('div', { class: 'card' }, el('h3', {}, 'Hypothèses de combat'), el('div', { class: 'small mut' }, 'Certains talents et pouvoirs dépendent de la situation. Coche ce qui s\'applique à ton calcul.'),
+      el('div', { class: 'row' }, ck('burning', 'Cible en feu'), ck('lowHp', 'PV ≤ 50 %'), ck('targetEffect', 'Cible sous effet (poison…)'), ck('sun', 'Exposé au soleil / au ciel')),
+      el('div', { class: 'row' }, el('label', { class: 'small' }, 'Distance moyenne de la cible (blocs) '), el('input', { type: 'number', min: 0, value: as.dist ?? '', placeholder: 'auto', onchange: e => { as.dist = e.target.value === '' ? undefined : +e.target.value; recalc(); } }),
+        el('label', { class: 'small' }, ' Effets de potion actifs '), el('input', { type: 'number', min: 0, value: as.potions || 0, onchange: e => { as.potions = +e.target.value; recalc(); } }),
+        el('label', { class: 'small' }, ' Niveaux d\'enchantement sur l\'arme '), el('input', { type: 'number', min: 0, value: as.enchants || 0, onchange: e => { as.enchants = +e.target.value; recalc(); } }))));
+    m.append(el('div', { class: 'card' }, el('h3', {}, 'Notes de build'), el('textarea', { rows: 4, style: 'width:100%', oninput: e => { S.notes = e.target.value; save(); } }, S.notes || '')));
+  }
+
+  /* ---------- Arbre ---------- */
+  function renderTree(m) {
+    const used = S.nodes.length, max = D.skilltree.config.maxPoints;
+    const bar = el('div', { class: 'treebar' },
+      el('b', {}, 'Points :'), el('span', { id: 'ptsused' }, used + ' utilisés'),
+      el('label', { class: 'mut small' }, 'dispo ', el('input', { type: 'number', min: 0, max, value: S.points, onchange: e => { S.points = +e.target.value; renderTree2(); save(); } })),
+      el('div', { class: 'meter' }, el('i', { id: 'ptsbar', style: `width:${Math.min(100, used / S.points * 100)}%` })),
+      el('input', { placeholder: 'Chercher un talent…', oninput: e => { treeView.search = e.target.value; treeView.draw(); } }),
+      el('button', { onclick: () => { S.nodes = []; recalc(); treeView.draw(); updatePts(); } }, 'Tout retirer'),
+      el('button', { onclick: () => { treeView.scale = 1.3; treeView.ox = treeView.w / 2; treeView.oy = treeView.h / 2; treeView.draw(); } }, 'Recentrer'),
+      ...['alchemist', 'blacksmith', 'cook', 'enchanter', 'hunter', 'miner'].map(c => el('button', { class: 'sm', onclick: () => treeView.focus(c + '_class') }, ({ alchemist: 'Alchimiste', blacksmith: 'Forgeron', cook: 'Cuisinier', enchanter: 'Enchanteur', hunter: 'Chasseur', miner: 'Mineur' })[c])));
+    m.append(bar);
+    m.append(el('div', { id: 'xpcost', class: 'small mut', style: 'margin:0 0 6px' }));
+    m.append(el('div', { class: 'note small' }, 'Clic = alloue un nœud (ou tout le chemin jusqu\'à lui) · clic sur un nœud alloué ou clic droit = le retire · molette = zoom · glisser = déplacer. Les points viennent surtout des parchemins de sagesse des quêtes (≈74 dans le livre de quêtes).'));
+    const wrap = el('div', { id: 'treewrap' }, el('canvas', { id: 'treecv' })); m.append(wrap);
+    m.append(el('div', { class: 'card', style: 'margin-top:14px' }, el('h3', {}, 'Bonus apportés par l\'arbre'), el('div', { id: 'treesum' })));
+    treeView = new TreeView($('#treecv'), S, (orph) => { recalc(); updatePts(); treeView.draw(); renderTreeSum(); });
+    window.TREEVIEW = treeView;
+    setTimeout(() => { treeView.resize(); if (S.nodes.length) { const n = IDX.TREE.byId[S.nodes[0]]; treeView.focus(S.nodes[0]); } }, 30);
+    updatePts(); renderTreeSum();
+  }
+  function renderTree2() { updatePts(); }
+  const xpCost = (a, b) => { let t = 0; for (let l = a; l < b; l++) t += Math.floor(15 + Math.floor(19985 * l / 115)); return t; }; // Config.getSkillPointCost : 15 + (20000-15)*niveau/115
+  function updatePts() {
+    const xc = $('#xpcost'); if (xc) { const used = S.nodes.length, sc = Math.min(used, S.scrolls ?? 74); xc.innerHTML = ''; xc.append(`Coût en XP pour obtenir ces ${used} points : `, el('b', {}, fnum(xpCost(sc, used), 0)), ` points d'expérience (en supposant ${sc} points gagnés par les parchemins de sagesse des quêtes ; il y en a ${74} dans le livre). `, el('input', { type: 'number', min: 0, max: 100, value: S.scrolls ?? 74, style: 'width:60px', title: 'Parchemins déjà utilisés', onchange: e => { S.scrolls = +e.target.value; updatePts(); save(); } })); }
+    const used = S.nodes.length; const u = $('#ptsused'); if (u) { u.textContent = used + ' utilisés'; u.className = used > S.points ? 'bad' : ''; }
+    const b = $('#ptsbar'); if (b) b.style.width = Math.min(100, used / Math.max(1, S.points) * 100) + '%';
+  }
+  function renderTreeSum() {
+    const box = $('#treesum'); if (!box) return;
+    const agg = {};
+    S.nodes.forEach(id => { const n = IDX.TREE.byId[id]; n.effects.forEach(e => { agg[e] = (agg[e] || 0) + 1; }); });
+    const keys = Object.keys(agg).sort(); box.innerHTML = '';
+    if (!keys.length) { box.append(el('span', { class: 'mut' }, 'Aucun talent alloué.')); return; }
+    const notables = S.nodes.map(id => IDX.TREE.byId[id]).filter(n => n.tier === 'notable' || n.tier === 'keystone');
+    if (notables.length) box.append(el('div', {}, ...notables.map(n => el('span', { class: 'chip', title: n.effects.join('\n'), style: n.tier === 'keystone' ? 'border-color:var(--acc);color:var(--acc)' : '' }, n.name))));
+    box.append(el('table', { class: 't' }, ...keys.map(k => el('tr', {}, el('td', {}, k), el('td', { class: 'mut' }, agg[k] > 1 ? '× ' + agg[k] : '')))));
+  }
+
+  /* ---------- Équipement ---------- */
+  const TYPE_NAME = t => TF[t] || t;
+  function gemOptionsFor(type) {
+    const opts = [];
+    for (const g of D.gems.apotheosis) if (g.bonuses.some(b => b.types.includes(type))) opts.push(g);
+    return opts;
+  }
+  function gemBonusTexts(g, type, rar) {
+    if (g.skilltree) return g.bonuses.filter(b => b.types.includes(type)).map(b => b.text);
+    return g.bonuses.filter(b => b.types.includes(type)).map(b => (b.text && b.text[rar]) || '').filter(Boolean);
+  }
+  function gearItem(id) { return S.gear[id]; }
+  function ensureItem(sd) {
+    if (!S.gear[sd.id]) S.gear[sd.id] = { type: sd.types[0], rarity: 'epic', affixes: [], gems: [], base: {}, extra: [], name: '' };
+    return S.gear[sd.id];
+  }
+  function renderGear(m) {
+    const left = el('div', { class: 'card slots' }, el('h3', {}, 'Emplacements'));
+    SLOT_DEFS.forEach(sd => {
+      const it = S.gear[sd.id];
+      left.append(el('button', { class: 'slotbtn' + (slotSel === sd.id ? ' on' : '') + (sd.needs && ENG.treeSocketInfo(S).rings < 1 ? ' mut' : ''), style: it ? `border-left-color:${RA[it.rarity].color}` : '', onclick: () => { slotSel = sd.id; render(); } },
+        el('span', {}, sd.name), el('span', { class: 'mut small' }, it ? ((it.name ? it.name + ' · ' : '') + rname(it.rarity) + ' · ' + it.affixes.length + ' aff.') : '—')));
+    });
+    left.append(el('div', { class: 'row' }, el('button', { class: 'sm', onclick: () => { if (confirm('Vider tout l\'équipement ?')) { S.gear = {}; recalc(); render(); } } }, 'Tout vider')));
+    const sd = SLOT_DEFS.find(s => s.id === slotSel);
+    m.append(el('div', { style: 'display:grid;grid-template-columns:230px minmax(0,1fr);gap:14px' }, left, el('div', {}, renderSlotEditor(sd))));
+  }
+  function renderSlotEditor(sd) {
+    const it = S.gear[sd.id];
+    const card = el('div', { class: 'card' }, el('h3', {}, sd.name));
+    if (!it) { card.append(el('p', { class: 'mut' }, 'Emplacement vide.'), el('button', { class: 'pri', onclick: () => { ensureItem(sd); render(); recalc(); } }, 'Équiper un objet')); return card; }
+    const type = it.type || sd.types[0]; const rar = it.rarity;
+    const upd = () => { recalc(); render(); };
+    card.append(el('div', { class: 'row' }, el('label', {}, 'Nom'), el('input', { value: it.name || '', placeholder: 'ex. Épée de Gabin', oninput: e => { it.name = e.target.value; save(); } }),
+      el('button', { class: 'sm', onclick: () => { delete S.gear[sd.id]; upd(); } }, 'Retirer')));
+    if (sd.types.length > 1) card.append(el('div', { class: 'row' }, el('label', {}, 'Type'), el('select', { onchange: e => { it.type = e.target.value; it.affixes = []; it.gems = []; upd(); } }, ...sd.types.map(t => el('option', { value: t, selected: t === type }, TYPE_NAME(t))))));
+    card.append(el('div', { class: 'row' }, el('label', {}, 'Rareté'), el('select', { class: 'rar-' + rar, onchange: e => { it.rarity = e.target.value; clampItem(it); upd(); } },
+      ...RO.map(r => el('option', { value: r, selected: r === rar, class: 'rar-' + r }, rname(r)))),
+      el('span', { class: 'mut small' }, `${RA[rar].stat} stats · ${RA[rar].ability} capacités · ${RA[rar].sockets} sockets max`)));
+    // base
+    const nb = (key, label, step = 0.1) => el('span', {}, el('label', { class: 'mut small' }, label + ' '), el('input', { type: 'number', step, value: it.base[key] ?? '', oninput: e => { it.base[key] = e.target.value === '' ? '' : +e.target.value; recalc(); } }), ' ');
+    const baseRow = el('div', { class: 'row' }, el('label', {}, 'Base'));
+    if (sd.weapon) baseRow.append(nb('dmg', 'Dégâts (affichés)', 0.5), nb('spd', 'Vitesse', 0.05));
+    if (sd.armor) baseRow.append(nb('armor', 'Armure', 0.5), nb('tough', 'Robustesse', 0.5), nb('kb', 'Rés. recul', 0.1));
+    const presets = (D.presets && D.presets[type]) || [];
+    if (presets.length) baseRow.append(el('select', { onchange: e => { const p = presets[+e.target.value]; if (p) { it.base = Object.assign({}, p.base); if (!it.name) it.name = p.name; upd(); } } },
+      el('option', { value: '' }, '— base prédéfinie —'), ...presets.map((p, i) => el('option', { value: i }, p.name))));
+    card.append(baseRow);
+    if (!sd.weapon && !sd.armor) card.append(el('div', { class: 'mut small' }, 'Les objets d\'accessoire n\'ont pas de stat de base : tout vient des affixes, des gemmes et de leur propre effet (voir « Stats supplémentaires »).'));
+    // affixes
+    clampItem(it);
+    const slotsOf = k => RA[rar][k];
+    for (const kind of ['stat', 'ability']) {
+      const label = kind === 'stat' ? 'Affixes de statistique' : 'Affixes de capacité (effets spéciaux)';
+      card.append(el('div', { class: 'sec' }, label + ` (${it.affixes.filter(a => (IDX.AFFIX[a.id] || {}).slot === kind).length}/${slotsOf(kind)})`));
+      const cand = D.affixes.filter(a => a.slot === kind && a.types.includes(type) && a.rarities.includes(rar));
+      it.affixes.forEach((af, idx) => {
+        const a = IDX.AFFIX[af.id]; if (!a || a.slot !== kind) return;
+        const rangeable = a.kind === 'attribute' && a.values[rar] && typeof a.values[rar] === 'object';
+        const t = a.text[rar];
+        card.append(el('div', { class: 'affrow' }, el('div', {}, el('b', {}, a.name), el('div', { class: 'txt' }, rangeable ? ENG_TEXT(a, rar, af.roll ?? 1) : t), a.suffix ? el('div', { class: 'mut small' }, a.suffix) : null),
+          el('div', { class: 'row' }, rangeable ? el('input', { type: 'range', min: 0, max: 1, step: 0.05, value: af.roll ?? 1, title: 'Roll : position entre le min et le max', oninput: e => { af.roll = +e.target.value; recalc(); e.target.closest('.affrow').querySelector('.txt').textContent = ENG_TEXT(a, rar, af.roll); } }) : null,
+            el('button', { class: 'sm', onclick: () => { it.affixes.splice(idx, 1); upd(); } }, '✕'))));
+      });
+      if (it.affixes.filter(a => (IDX.AFFIX[a.id] || {}).slot === kind).length < slotsOf(kind)) {
+        const have = new Set(it.affixes.map(a => a.id));
+        const sel = el('select', { onchange: e => { if (e.target.value) { it.affixes.push({ id: e.target.value, roll: 1 }); upd(); } } },
+          el('option', { value: '' }, `+ ajouter (${cand.filter(a => !have.has(a.id)).length} dispo)`),
+          ...cand.filter(a => !have.has(a.id)).sort((a, b) => a.name.localeCompare(b.name)).map(a => el('option', { value: a.id }, affixLabel(a, rar).slice(0, 110))));
+        card.append(el('div', { class: 'row' }, sel));
+      }
+    }
+    // sockets / gemmes
+    const xs = ENG.extraSockets(S, sd, it); const maxS = RA[rar].sockets + xs;
+    card.append(el('div', { class: 'sec' }, `Sockets & gemmes (${it.gems.length}/${maxS}${xs ? ' dont +' + xs + ' via l\'arbre de talents' : ''})`));
+    const gopts = gemOptionsFor(type);
+    const stOpts = D.gems.skilltree.filter(g => g.bonuses.some(b => b.types.includes(type)));
+    it.gems.forEach((g, idx) => {
+      const gem = g.id && IDX.GEM[g.id];
+      const sel = el('select', { onchange: e => { g.id = e.target.value; if (g.id.startsWith('skilltree:')) g.rar = IDX.GEM[g.id].rarity; upd(); } },
+        el('option', { value: '' }, '— gemme —'),
+        el('optgroup', { label: 'Gemmes Apotheosis' }, ...gopts.sort((a, b) => a.name.localeCompare(b.name)).map(x => el('option', { value: x.id, selected: g.id === x.id }, x.name))),
+        el('optgroup', { label: 'Gemmes de l\'arbre' }, ...stOpts.map(x => el('option', { value: x.id, selected: g.id === x.id }, x.name + ' (' + rname(x.rarity) + ')'))));
+      const rsel = (gem && !gem.skilltree) ? el('select', { onchange: e => { g.rar = e.target.value; upd(); } }, ...RO.map(r => el('option', { value: r, selected: (g.rar || 'common') === r }, rname(r)))) : null;
+      card.append(el('div', { class: 'affrow' }, el('div', {}, sel, rsel, gem ? el('div', { class: 'txt' }, ...gemBonusTexts(gem, type, g.rar || 'common').map(t => el('div', {}, '◆ ' + t))) : null),
+        el('button', { class: 'sm', onclick: () => { it.gems.splice(idx, 1); upd(); } }, '✕')));
+    });
+    if (it.gems.length < Math.max(maxS, 1)) card.append(el('div', { class: 'row' }, el('button', { class: 'sm', onclick: () => { it.gems.push({ id: '', rar: 'epic' }); upd(); } }, '+ socket')));
+    else card.append(el('div', { class: 'row' }, el('button', { class: 'sm', onclick: () => { it.gems.push({ id: '', rar: 'epic' }); upd(); } }, '+ socket supplémentaire (compétence/reforge)')));
+    // extra
+    card.append(el('div', { class: 'sec' }, 'Stats supplémentaires (effet propre à l\'objet, enchantements…)'));
+    (it.extra = it.extra || []).forEach((x, idx) => card.append(manualRow(x, () => { it.extra.splice(idx, 1); upd(); })));
+    card.append(el('button', { class: 'sm', onclick: () => { it.extra.push({ attr: 'minecraft:generic.max_health', op: 0, val: 0 }); upd(); } }, '+ stat'));
+    return card;
+  }
+  function ENG_TEXT(a, rar, roll) {
+    const v = ENG.rollVal(a.values[rar], roll); const pctv = a.op !== 0 || D.attrs[a.attr]?.pct;
+    const nm = (D.attrs[ENG.norm(a.attr)] || D.attrs[a.attr] || { name: a.attr }).name;
+    return (v >= 0 ? '+' : '−') + (pctv ? fnum(Math.abs(v) * 100, 1) + ' %' : fnum(Math.abs(v))) + (a.op === 2 ? ' (mult.)' : '') + ' ' + nm;
+  }
+  function clampItem(it) {
+    const rar = it.rarity; const type = it.type;
+    it.affixes = it.affixes.filter(a => { const x = IDX.AFFIX[a.id]; return x && x.rarities.includes(rar); });
+    ['stat', 'ability'].forEach(k => { let n = 0; it.affixes = it.affixes.filter(a => { if (IDX.AFFIX[a.id].slot !== k) return true; return ++n <= RA[rar][k]; }); });
+  }
+  function manualRow(x, onDel) {
+    const attrs = Object.keys(D.attrs).filter(k => !k.startsWith('generic.')).sort((a, b) => D.attrs[a].name.localeCompare(D.attrs[b].name));
+    return el('div', { class: 'row' }, el('select', { onchange: e => { x.attr = e.target.value; recalc(); } }, ...attrs.map(a => el('option', { value: a, selected: ENG.norm(x.attr) === a }, D.attrs[a].name))),
+      el('select', { onchange: e => { x.op = +e.target.value; recalc(); } }, el('option', { value: 0, selected: x.op === 0 }, 'ajoute (+)'), el('option', { value: 1, selected: x.op === 1 }, '× base'), el('option', { value: 2, selected: x.op === 2 }, '× total')),
+      el('input', { type: 'number', step: 'any', value: x.val, oninput: e => { x.val = +e.target.value; recalc(); } }),
+      el('span', { class: 'mut small' }, 'valeur brute (0,10 = 10 % pour les %)'), el('button', { class: 'sm', onclick: onDel }, '✕'));
+  }
+
+  const implausible = i => (/Portée|Rayon/.test(i.label) && i.val > 64) || (/Durée/.test(i.label) && i.val > 600) || (/esquiv|Cibles/.test(i.label) && i.val > 50);
+  /* ---------- Sorts ---------- */
+  const SCH = D.spells.schools;
+  let spellFilter = '';
+  function renderSpells(m) {
+    const at = R.at;
+    m.append(el('div', { class: 'note' }, 'Les formules (dégâts, mana, recharge) sont lues dans le code d\'Iron\'s Spells ; les multiplicateurs de puissance et niveaux max sont ceux de TA config (Cisco les a modifiés : plusieurs sorts sont bridés à ×0,2–0,3, certains à presque rien). Les sorts d\'Ars Nouveau (glyphes) ne sont pas modélisés ici.'));
+    const chosen = el('div', { class: 'card' }, el('h3', {}, 'Mes sorts'));
+    if (!S.spells.length) chosen.append(el('p', { class: 'mut' }, 'Aucun sort choisi — ajoute-en depuis la liste ci-dessous.'));
+    const tbl = el('table', { class: 't' }, el('tr', {}, ...['Sort', 'École', 'Niv.', 'Puissance', 'Mana', 'Incantation', 'Recharge', 'Effets', ''].map(h => el('th', {}, h))));
+    S.spells.forEach((s, i) => {
+      const sp = D.spells.spells.find(x => x.id === s.id); if (!sp) return;
+      const c = ENG.spellCalc(sp, s.level, at);
+      tbl.append(el('tr', {}, el('td', {}, el('b', {}, sp.name), sp.cfg.enabled ? '' : el('span', { class: 'bad' }, ' (désactivé)')), el('td', {}, SCH[sp.cfg.school] || sp.cfg.school),
+        el('td', {}, el('input', { type: 'number', min: 1, max: sp.cfg.maxLevel, value: s.level, style: 'width:60px', onchange: e => { s.level = Math.max(1, Math.min(sp.cfg.maxLevel, +e.target.value)); recalc(); render(); } }), el('span', { class: 'mut small' }, ' /' + sp.cfg.maxLevel)),
+        el('td', {}, fnum(c.sp, 3)), el('td', {}, c.mana), el('td', {}, c.cast ? fnum(c.cast, 1) + ' s' : 'instant'), el('td', {}, fnum(c.cd, 1) + ' s'),
+        el('td', { class: 'small' }, ...c.info.map(i => el('div', {}, i.label + ' : ', i.val == null ? el('span', { class: 'mut' }, 'voir en jeu') : implausible(i) ? el('span', { class: 'mut', title: 'La formule donne ' + fnum(i.val, 0) + ' : le jeu borne probablement cette valeur' }, 'très élevé (borné ?)') : el('b', {}, fnum(i.val, 1) + (i.unit || ''))))),
+        el('td', {}, el('button', { class: 'sm', onclick: () => { S.spells.splice(i, 1); recalc(); render(); } }, '✕'))));
+    });
+    chosen.append(tbl);
+    chosen.append(el('div', { class: 'mut small' }, `Mana max ${fnum(R.mana, 0)} · régénération ≈ ${fnum(R.manaPerSec, 1)} mana/s · puissance de sorts globale ×${fnum(R.spellPower, 2)}.`));
+    m.append(chosen);
+    const f = el('input', { placeholder: 'Filtrer…', value: spellFilter, oninput: e => { spellFilter = e.target.value; renderSpellList(); } });
+    m.append(el('div', { class: 'card' }, el('h3', {}, 'Tous les sorts d\'Iron\'s Spells'), f, el('div', { id: 'spelllist', style: 'margin-top:8px' })));
+    renderSpellList();
+  }
+  function renderSpellList() {
+    const box = $('#spelllist'); if (!box) return; box.innerHTML = '';
+    const q = spellFilter.toLowerCase();
+    const list = D.spells.spells.filter(s => !q || (s.name + ' ' + (SCH[s.cfg.school] || '')).toLowerCase().includes(q)).sort((a, b) => a.cfg.school.localeCompare(b.cfg.school) || a.name.localeCompare(b.name));
+    const t = el('table', { class: 't' }, el('tr', {}, ...['Sort', 'École', 'Rareté min.', 'Niv. max', 'Puiss. ×', 'Recharge', ''].map(h => el('th', {}, h))));
+    list.forEach(s => t.append(el('tr', {}, el('td', {}, el('b', {}, s.name), el('div', { class: 'mut small' }, s.guide)), el('td', {}, SCH[s.cfg.school] || s.cfg.school), el('td', {}, D.spells.rarities[s.cfg.minRarity] || s.cfg.minRarity), el('td', {}, s.cfg.maxLevel),
+      el('td', { class: s.cfg.powerMult < 0.5 ? 'bad' : '' }, s.cfg.powerMult), el('td', {}, s.cfg.cooldown + ' s'), el('td', {}, el('button', { class: 'sm', onclick: () => { if (!S.spells.find(x => x.id === s.id)) { S.spells.push({ id: s.id, level: s.cfg.maxLevel }); recalc(); render(); } } }, '+ ajouter')))));
+    box.append(t);
+  }
+
+
+  /* ---------- Simulateur de boss ---------- */
+  let bossSel = 'cataclysm:ignis', bossDist = 1500, bossWl = 0, bossWhich = 'avg';
+  const TIER_ORDER = ['Palier 1', 'Gardien', 'Palier 2', 'Palier 3', 'Histoire'];
+  function verdict(r) {
+    if (!isFinite(r.ttk)) return ['—', 'mut'];
+    if (r.ttk < 90 && r.hitsToDie > 8) return ['Facile', 'good'];
+    if (r.ttk < 240 && r.hitsToDie > 4) return ['Jouable', 'good'];
+    if (r.ttk < 600 && r.hitsToDie > 2) return ['Difficile', ''];
+    return ['Très dur', 'bad'];
+  }
+  function fmtT(t) { if (!isFinite(t)) return '∞'; if (t < 120) return fnum(t, 0) + ' s'; return fnum(t / 60, 1) + ' min'; }
+  function renderBoss(m) {
+    m.append(el('div', { class: 'warn' }, 'Estimation de ligne de base : niveau du boss = niveau de départ + distance × niveaux/bloc + bonus aléatoire (+ niveau du monde). Stats × (1 + coefficient × niveau). Ne compte pas les phases, l\'infernal, ni les sorts d\'invocation. À utiliser pour comparer des builds, pas comme une promesse.'));
+    const sel = el('select', { onchange: e => { bossSel = e.target.value; render(); } },
+      ...TIER_ORDER.map(t => el('optgroup', { label: t }, ...D.bosses.filter(b => b.tier === t).map(b => el('option', { value: b.id, selected: b.id === bossSel }, b.name)))));
+    const ctr = el('div', { class: 'card' }, el('div', { class: 'row' }, el('label', {}, 'Boss'), sel),
+      el('div', { class: 'row' }, el('label', {}, 'Distance du spawn'), el('input', { type: 'number', min: 0, step: 250, value: bossDist, onchange: e => { bossDist = +e.target.value || 0; render(); } }), el('span', { class: 'mut small' }, 'blocs (le niveau monte avec la distance)')),
+      el('div', { class: 'row' }, el('label', {}, 'Niveau du monde'), el('select', { onchange: e => { bossWl = +e.target.value; render(); } },
+        ...[[0, 'Normal'], [150, 'Ascendant (Azure) +150'], [300, 'Divin +300'], [500, 'Hellheim +500']].map(([v, n]) => el('option', { value: v, selected: bossWl === v }, n))),
+        el('select', { onchange: e => { bossWhich = e.target.value; render(); } }, ...[['min', 'niveau mini'], ['avg', 'niveau moyen'], ['max', 'niveau maxi']].map(([v, n]) => el('option', { value: v, selected: bossWhich === v }, n)))));
+    m.append(ctr);
+    const b = D.bosses.find(x => x.id === bossSel); const r = ENG.bossSim(R, S, b, bossDist, bossWl, bossWhich);
+    const card = el('div', { class: 'card' }, el('h3', {}, b.name, el('span', { class: 'tag' }, b.tier), el('span', { class: 'tag' }, b.mod)), el('div', { class: 'small mut' }, b.dim + ' — ' + b.how));
+    const row = (k, v, cls) => el('div', { class: 'stat ' + (cls || '') }, el('span', {}, k), el('b', {}, v));
+    const [vt, vc] = verdict(r);
+    card.append(el('div', { class: 'grid2' }, el('div', {},
+      el('div', { class: 'sec' }, 'Le boss'), row('Niveau', r.L), row('PV', b.hp ? fnum(r.hp, 0) : '?'), row('Dégâts par coup', b.dmg ? fnum(r.dmg, 1) : '?'), row('Armure', fnum(r.armor, 1) + (r.tough ? ' · rob. ' + r.tough : '')),
+      b.cap ? row('Plafond de dégâts par coup', b.cap, 'hl') : null),
+      el('div', {}, el('div', { class: 'sec' }, 'Ton build'),
+        row('Coup avant armure', fnum(r.raw, 1)), row('Réduction par son armure', pct(r.red, 0)), row('Coup effectif (crit. inclus)', fnum(r.perHit, 1) + (r.capped ? ' (plafonné)' : '')),
+        row('DPS armes', fnum(r.dps, 1)), r.spellBest ? row('Meilleur sort : ' + r.spellBest.name, fnum(r.spellBest.dps, 1) + ' /s') : null,
+        row('Temps pour le tuer', fmtT(r.ttk), 'hl'), row('Ce qu\'il t\'inflige (après armure)', fnum(r.takes, 1) + ' → ' + (isFinite(r.hitsToDie) ? fnum(r.hitsToDie, 1) + ' coups pour te tuer' : '—')),
+        el('div', { class: 'stat' }, el('span', {}, 'Verdict'), el('b', { class: vc }, vt)))));
+    card.append(el('ul', { class: 'small' }, ...b.notes.map(n => el('li', {}, n))));
+    m.append(card);
+    const t = el('table', { class: 't' }, el('tr', {}, ...['Boss', 'Palier', 'Niv.', 'PV', 'Plafond', 'Temps pour le tuer', 'Coups pour te tuer', 'Verdict'].map(h => el('th', {}, h))));
+    D.bosses.slice().sort((a, b) => a.tier.localeCompare(b.tier) || ((a.level || { start: 0 }).start - (b.level || { start: 0 }).start)).forEach(bb => {
+      const rr = ENG.bossSim(R, S, bb, bossDist, bossWl, bossWhich); const [v, c] = verdict(rr);
+      t.append(el('tr', { style: 'cursor:pointer', onclick: () => { bossSel = bb.id; render(); } }, el('td', {}, bb.name), el('td', { class: 'mut small' }, bb.tier), el('td', {}, rr.L), el('td', {}, bb.hp ? fnum(rr.hp, 0) : '?'), el('td', {}, bb.cap || '—'),
+        el('td', {}, bb.hp ? fmtT(rr.ttk) : '?'), el('td', {}, bb.dmg && isFinite(rr.hitsToDie) ? fnum(rr.hitsToDie, 1) : '—'), el('td', { class: c }, bb.hp ? v : '?')));
+    });
+    m.append(el('div', { class: 'card' }, el('h3', {}, 'Tous les boss avec ton build'), t));
+  }
+
+  /* ---------- Stats détaillées ---------- */
+  function renderStats(m) {
+    m.append(el('div', { class: 'card' }, el('h3', {}, 'Toutes les statistiques (valeurs finales)'), el('div', { class: 'small mut' }, 'Formule : (base + Σ ajouts) × (1 + Σ « × base ») × Π(1 + « × total »), puis plafonds du pack.'), (() => {
+      const t = el('table', { class: 't' }, el('tr', {}, el('th', {}, 'Attribut'), el('th', {}, 'Base'), el('th', {}, 'Final'), el('th', {}, 'Sources')));
+      const ids = Object.keys(R.at).filter(id => { const mm = R.mods.filter(x => x.attr === id); return mm.length; }).sort((a, b) => (D.attrs[a]?.name || a).localeCompare(D.attrs[b]?.name || b));
+      ids.forEach(id => {
+        const info = D.attrs[id] || D.attrs[id.replace('minecraft:', '')] || { name: id, base: 0, pct: false };
+        const fmt = v => info.pct ? pct(v, 1) : fnum(v, 2);
+        const src = {}; R.mods.filter(x => x.attr === id).forEach(x => { const k = x.src; (src[k] = src[k] || []).push(x); });
+        t.append(el('tr', {}, el('td', {}, info.name), el('td', { class: 'mut' }, fmt(info.base)), el('td', {}, el('b', {}, fmt(R.at[id]))),
+          el('td', { class: 'small' }, Object.entries(src).map(([k, v]) => k + ' (' + v.map(x => (x.op === 0 ? '+' : x.op === 1 ? '×b ' : '×t ') + fnum(x.val, 3)).join(', ') + ')').join(' · '))));
+      });
+      return t;
+    })()));
+    if (R.texts.length) m.append(el('div', { class: 'card' }, el('h3', {}, 'Effets non chiffrés / conditionnels'), el('div', { class: 'small mut' }, 'Pris en compte à la main : ils dépendent d\'une situation (arme en main, PV bas, cible en feu…).'),
+      el('ul', { class: 'small' }, ...R.texts.map(x => el('li', {}, el('span', { class: 'mut' }, x.src + ' — '), x.text)))));
+  }
+
+  /* ---------- Builds prêts ---------- */
+  function renderBuilds(m) {
+    m.append(el('div', { class: 'note' }, 'Ce sont des builds « théoriques » construits à partir des données du pack (talents, gemmes, affixes). Charge-en un puis ajuste selon ton loot. Pour le guide complet de chaque build (ordre de progression, boss), va dans le wiki.'));
+    (window.BUILDS || []).forEach(b => m.append(el('div', { class: 'build' }, el('div', {}, el('h3', {}, b.title), el('div', { class: 'small' }, b.summary), el('div', {}, ...(b.tags || []).map(t => el('span', { class: 'chip' }, t)))),
+      el('div', {}, el('button', { class: 'pri', onclick: () => { S = Object.assign(DEFAULT(), JSON.parse(JSON.stringify(b.state)), { name: b.title }); $('#bname').value = S.name; recalc(); tab = 'perso'; render(); } }, 'Charger'), b.wiki ? el('div', {}, el('a', { href: '../wiki/' + b.wiki }, 'Guide complet →')) : null))));
+    if (!(window.BUILDS || []).length) m.append(el('p', { class: 'mut' }, 'Aucun build prêt pour l\'instant.'));
+  }
+
+  /* ---------- Fiche (colonne de droite) ---------- */
+  function renderSheet() {
+    const box = $('#sheet'); if (!box || !R) return; box.innerHTML = '';
+    const row = (k, v, hl) => el('div', { class: 'stat' + (hl ? ' hl' : '') }, el('span', {}, k), el('b', {}, v));
+    const hit = S.hit || 30;
+    box.append(el('h3', {}, S.name || 'Build'));
+    box.append(el('div', { class: 'sec' }, 'Défense'));
+    box.append(row('Vie max', fnum(R.hp, 0), 1), row('Armure', fnum(R.armor, 1) + (R.tough ? ' · rob. ' + fnum(R.tough, 1) : '')));
+    const red = R.armorReduction(hit);
+    box.append(el('div', { class: 'stat' }, el('span', {}, 'Réduction vs coup de ', el('input', { type: 'number', value: hit, style: 'width:56px;padding:0 4px', onchange: e => { S.hit = +e.target.value || 30; renderSheet(); save(); } })), el('b', {}, pct(red, 1))));
+    box.append(row('Vie effective (vs ce coup)', fnum(R.hp / Math.max(0.01, 1 - red) / R.taken, 0), 1));
+    if (R.taken !== 1) box.append(row('Dégâts subis (origine)', '×' + fnum(R.taken, 2)));
+    box.append(row('Esquive (points → %)', fnum(R.evasion, 1) + ' → ' + pct(R.evasionChance, 1)));
+    if (R.dodgeAttr) box.append(row('Esquive Apotheosis', pct(R.dodgeAttr, 1)));
+    if (R.blocking) box.append(row('Blocage (bouclier)', fnum(R.blocking, 1) + ' → ' + pct(R.blockChance, 1)));
+    if (R.regen) box.append(row('Régénération', fnum(R.regen, 2) + ' PV/s'));
+    box.append(el('div', { class: 'sec' }, 'Attaque (mêlée / distance)'));
+    if (R.ranged) box.append(row('Flèche (base × attributs)', fnum(R.arrowHit, 1), 1), row('Cadence de tir', fnum(R.drawSpeed, 2) + ' /s'));
+    else box.append(row('Dégâts par coup (base)', fnum(R.hit, 1) + (R.dmgPct ? ' (+' + pct(R.dmgPct, 0) + ' dégâts)' : ''), 1), row('Vitesse d\'attaque', fnum(R.spd, 2)));
+    const base = R.ranged ? R.arrowHit : R.hit;
+    box.append(row('Critique', pct(R.critC, 1) + ' × ' + fnum(R.critD, 2)), row('Multiplicateur de crit. moyen', '×' + fnum(R.critE, 2)), row('Dégâts moyens avec crit.', fnum(base * R.critE, 1), 1), row('DPS estimé', fnum(R.dps, 1), 1));
+    if (R.fire || R.cold) box.append(row('Dégâts élémentaires', (R.fire ? '🔥' + fnum(R.fire) : '') + ' ' + (R.cold ? '❄' + fnum(R.cold) : '')));
+    if (R.lifesteal) box.append(row('Vol de vie', pct(R.lifesteal, 1)));
+    if (!R.hasWeapon) box.append(el('div', { class: 'warn small' }, 'Aucune arme équipée : mets tes dégâts/vitesse de base dans « Équipement → Arme principale ».'));
+    box.append(el('div', { class: 'sec' }, 'Magie'));
+    box.append(row('Mana max', fnum(R.mana, 0), 1), row('Régénération', fnum(R.manaPerSec, 1) + ' /s'), row('Puissance de sorts', '×' + fnum(R.spellPower, 2)));
+    const schools = Object.keys(SCH).map(s => [s, R.at['irons_spellbooks:' + s + '_spell_power']]).filter(([s, v]) => Math.abs(v - 1) > 1e-6);
+    schools.forEach(([s, v]) => box.append(row('· ' + SCH[s], '×' + fnum(v, 2))));
+    const cdr = R.at['irons_spellbooks:cooldown_reduction'], ctr = R.at['irons_spellbooks:cast_time_reduction'];
+    if (cdr !== 1) box.append(row('Réduction de recharge', 'recharge × ' + fnum(2 - ENG.softCap(cdr), 2)));
+    if (ctr !== 1) box.append(row('Vitesse d\'incantation', 'temps × ' + fnum(2 - ENG.softCap(ctr), 2)));
+    box.append(el('div', { class: 'sec' }, 'Divers'));
+    const mv = R.at['minecraft:generic.movement_speed']; box.append(row('Vitesse de déplacement', pct(mv / 0.1, 0)), row('Chance', fnum(R.at['minecraft:generic.luck'], 1)));
+    const hl = R.at['apotheosis:healing_received']; if (hl !== 1) box.append(row('Soins reçus', pct(hl, 0)));
+    const xp = R.at['skilltree:exp_per_minute']; if (xp) box.append(row('XP passive', fnum(xp, 1) + ' /min'));
+    box.append(el('div', { class: 'sec' }, 'Talents'));
+    box.append(row('Points utilisés', S.nodes.length + ' / ' + S.points));
+  }
+
+  /* ---------- barre du haut ---------- */
+  function init() {
+    $('#bname').value = S.name; $('#bname').addEventListener('input', e => { S.name = e.target.value; save(); renderSheet(); });
+    $('#btnShare').addEventListener('click', async () => { const l = shareLink(); try { await navigator.clipboard.writeText(l); toast('Lien copié ! Colle-le à tes amis.'); } catch (e) { prompt('Copie ce lien :', l); } history.replaceState(null, '', '#' + l.split('#')[1]); });
+    $('#btnNew').addEventListener('click', () => { if (confirm('Repartir d\'un build vierge ?')) { S = DEFAULT(); $('#bname').value = S.name; history.replaceState(null, '', location.pathname); recalc(); render(); } });
+    $('#btnExport').addEventListener('click', () => { const b = new Blob([JSON.stringify(S, null, 1)], { type: 'application/json' }); const a = el('a', { href: URL.createObjectURL(b), download: (S.name || 'build').replace(/[^\w-]+/g, '_') + '.json' }); a.click(); });
+    $('#fileImport').addEventListener('change', e => { const f = e.target.files[0]; if (!f) return; f.text().then(t => { S = Object.assign(DEFAULT(), JSON.parse(t)); $('#bname').value = S.name; recalc(); render(); }); });
+    recalc(); render();
+  }
+  function toast(t) { const d = el('div', { class: 'tip', style: 'left:50%;top:70px;transform:translateX(-50%);border-color:var(--good)' }, t); document.body.append(d); setTimeout(() => d.remove(), 2200); }
+  window.POB = { init, getState: () => S };
+  document.addEventListener('DOMContentLoaded', init);
+})();

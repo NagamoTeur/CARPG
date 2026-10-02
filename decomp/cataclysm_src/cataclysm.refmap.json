@@ -1,0 +1,194 @@
+{
+  "mappings": {
+    "com/github/L_Ender/cataclysm/mixin/MixinDesertWellFeature": {
+      "place": "Lnet/minecraft/world/level/levelgen/feature/DesertWellFeature;m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+    },
+    "com/github/L_Ender/cataclysm/mixin/ItemMixin": {
+      "hurt": "Lnet/minecraft/world/entity/item/ItemEntity;m_6469_(Lnet/minecraft/world/damagesource/DamageSource;F)Z"
+    },
+    "com/github/L_Ender/cataclysm/mixin/LivingEntityMixin": {
+      "Lnet/minecraft/world/entity/LivingEntity;canAttack*": "Lnet/minecraft/world/entity/LivingEntity;m_6779_(Lnet/minecraft/world/entity/LivingEntity;)Z"
+    },
+    "com/github/L_Ender/cataclysm/mixin/NoBasaltColumnsInStructuresMixin": {
+      "canPlaceAt(Lnet/minecraft/world/level/LevelAccessor;ILnet/minecraft/core/BlockPos$MutableBlockPos;)Z": "Lnet/minecraft/world/level/levelgen/feature/BasaltColumnsFeature;m_65154_(Lnet/minecraft/world/level/LevelAccessor;ILnet/minecraft/core/BlockPos$MutableBlockPos;)Z"
+    },
+    "com/github/L_Ender/cataclysm/mixin/accessor/FeaturePoolElementAccessor": {
+      "feature": "f_210205_:Lnet/minecraft/core/Holder;"
+    },
+    "com/github/L_Ender/cataclysm/mixin/MixinDesertPyramidPiece": {
+      "postProcess": "Lnet/minecraft/world/level/levelgen/structure/structures/DesertPyramidPiece;m_213694_(Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/chunk/ChunkGenerator;Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/core/BlockPos;)V"
+    },
+    "com/github/L_Ender/cataclysm/mixin/Client/HumanoidModelMixin": {
+      "Lnet/minecraft/client/model/HumanoidModel;poseLeftArm(Lnet/minecraft/world/entity/LivingEntity;)V": "Lnet/minecraft/client/model/HumanoidModel;m_102878_(Lnet/minecraft/world/entity/LivingEntity;)V",
+      "Lnet/minecraft/client/model/HumanoidModel;poseRightArm(Lnet/minecraft/world/entity/LivingEntity;)V": "Lnet/minecraft/client/model/HumanoidModel;m_102875_(Lnet/minecraft/world/entity/LivingEntity;)V"
+    },
+    "com/github/L_Ender/cataclysm/mixin/MixinOceanRuinPiece": {
+      "Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;clearProcessors()Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;": "Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;m_74394_()Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;",
+      "postProcess": "Lnet/minecraft/world/level/levelgen/structure/structures/OceanRuinPieces$OceanRuinPiece;m_213694_(Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/chunk/ChunkGenerator;Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/core/BlockPos;)V"
+    },
+    "com/github/L_Ender/cataclysm/mixin/NoGeodeInStructuresMixin": {
+      "place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z": "Lnet/minecraft/world/level/levelgen/feature/GeodeFeature;m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+    },
+    "com/github/L_Ender/cataclysm/mixin/accessor/BoundingBoxAccessor": {
+      "minY": "f_162357_:I",
+      "minX": "f_162356_:I",
+      "maxZ": "f_162361_:I",
+      "maxY": "f_162360_:I",
+      "maxX": "f_162359_:I",
+      "minZ": "f_162358_:I"
+    },
+    "com/github/L_Ender/cataclysm/mixin/WorldGenRegionAccessor": {
+      "cache": "f_9475_:Ljava/util/List;",
+      "size": "f_9478_:I",
+      "structureManager": "f_215157_:Lnet/minecraft/world/level/StructureManager;",
+      "firstPos": "f_9487_:Lnet/minecraft/world/level/ChunkPos;",
+      "lastPos": "f_9488_:Lnet/minecraft/world/level/ChunkPos;"
+    },
+    "com/github/L_Ender/cataclysm/mixin/accessor/StructureTemplatePoolAccessor": {
+      "rawTemplates": "f_210559_:Ljava/util/List;"
+    },
+    "com/github/L_Ender/cataclysm/mixin/accessor/CriteriaTriggersAccessor": {
+      "CRITERIA": "f_10566_:Ljava/util/Map;"
+    },
+    "com/github/L_Ender/cataclysm/mixin/NoDeltasInStructuresMixin": {
+      "place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z": "Lnet/minecraft/world/level/levelgen/feature/DeltaFeature;m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+    },
+    "com/github/L_Ender/cataclysm/mixin/NoLakesInStructuresMixin": {
+      "place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z": "Lnet/minecraft/world/level/levelgen/feature/LakeFeature;m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+    },
+    "com/github/L_Ender/cataclysm/mixin/accessor/BeardifierAccessor": {
+      "junctionIterator": "f_158066_:Lit/unimi/dsi/fastutil/objects/ObjectListIterator;",
+      "pieceIterator": "f_158065_:Lit/unimi/dsi/fastutil/objects/ObjectListIterator;"
+    },
+    "com/github/L_Ender/cataclysm/mixin/StructureManagerAccessor": {
+      "level": "f_220460_:Lnet/minecraft/world/level/LevelAccessor;"
+    },
+    "com/github/L_Ender/cataclysm/mixin/NoMagmaBlockInStructuresMixin": {
+      "place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z": "Lnet/minecraft/world/level/levelgen/feature/UnderwaterMagmaFeature;m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+    },
+    "com/github/L_Ender/cataclysm/mixin/NoMultifaceGrowthFeatureInStructuresMixin": {
+      "Lnet/minecraft/world/level/levelgen/feature/MultifaceGrowthFeature;place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z": "Lnet/minecraft/world/level/levelgen/feature/MultifaceGrowthFeature;m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+    },
+    "com/github/L_Ender/cataclysm/mixin/accessor/ListPoolElementAccessor": {
+      "elements": "f_210360_:Ljava/util/List;"
+    },
+    "com/github/L_Ender/cataclysm/mixin/MixinStructure": {
+      "afterPlace": "Lnet/minecraft/world/level/levelgen/structure/Structure;m_214110_(Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/chunk/ChunkGenerator;Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/levelgen/structure/pieces/PiecesContainer;)V"
+    },
+    "com/github/L_Ender/cataclysm/mixin/StructureTemplateMixin": {
+      "placeInWorld(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;Lnet/minecraft/util/RandomSource;I)Z": "Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate;m_230328_(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;Lnet/minecraft/util/RandomSource;I)Z"
+    },
+    "com/github/L_Ender/cataclysm/mixin/BrushItemMixin": {
+      "onUseTick": "Lcom/min01/archaeology/item/BrushItem;m_5929_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;I)V"
+    },
+    "com/github/L_Ender/cataclysm/mixin/Client/LevelRendererMixin": {
+      "levelEvent": "Lnet/minecraft/client/renderer/LevelRenderer;m_234304_(ILnet/minecraft/core/BlockPos;I)V"
+    },
+    "com/github/L_Ender/cataclysm/mixin/accessor/SinglePoolElementAccessor": {
+      "getTemplate": "m_227299_(Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;)Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate;"
+    },
+    "com/github/L_Ender/cataclysm/mixin/NoOreInStructuresMixin": {
+      "place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z": "Lnet/minecraft/world/level/levelgen/feature/OreFeature;m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+    },
+    "com/github/L_Ender/cataclysm/mixin/StructureProcessorAccessor": {
+      "getType": "m_6953_()Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureProcessorType;"
+    }
+  },
+  "data": {
+    "searge": {
+      "com/github/L_Ender/cataclysm/mixin/MixinDesertWellFeature": {
+        "place": "Lnet/minecraft/world/level/levelgen/feature/DesertWellFeature;m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+      },
+      "com/github/L_Ender/cataclysm/mixin/ItemMixin": {
+        "hurt": "Lnet/minecraft/world/entity/item/ItemEntity;m_6469_(Lnet/minecraft/world/damagesource/DamageSource;F)Z"
+      },
+      "com/github/L_Ender/cataclysm/mixin/LivingEntityMixin": {
+        "Lnet/minecraft/world/entity/LivingEntity;canAttack*": "Lnet/minecraft/world/entity/LivingEntity;m_6779_(Lnet/minecraft/world/entity/LivingEntity;)Z"
+      },
+      "com/github/L_Ender/cataclysm/mixin/NoBasaltColumnsInStructuresMixin": {
+        "canPlaceAt(Lnet/minecraft/world/level/LevelAccessor;ILnet/minecraft/core/BlockPos$MutableBlockPos;)Z": "Lnet/minecraft/world/level/levelgen/feature/BasaltColumnsFeature;m_65154_(Lnet/minecraft/world/level/LevelAccessor;ILnet/minecraft/core/BlockPos$MutableBlockPos;)Z"
+      },
+      "com/github/L_Ender/cataclysm/mixin/accessor/FeaturePoolElementAccessor": {
+        "feature": "f_210205_:Lnet/minecraft/core/Holder;"
+      },
+      "com/github/L_Ender/cataclysm/mixin/MixinDesertPyramidPiece": {
+        "postProcess": "Lnet/minecraft/world/level/levelgen/structure/structures/DesertPyramidPiece;m_213694_(Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/chunk/ChunkGenerator;Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/core/BlockPos;)V"
+      },
+      "com/github/L_Ender/cataclysm/mixin/Client/HumanoidModelMixin": {
+        "Lnet/minecraft/client/model/HumanoidModel;poseLeftArm(Lnet/minecraft/world/entity/LivingEntity;)V": "Lnet/minecraft/client/model/HumanoidModel;m_102878_(Lnet/minecraft/world/entity/LivingEntity;)V",
+        "Lnet/minecraft/client/model/HumanoidModel;poseRightArm(Lnet/minecraft/world/entity/LivingEntity;)V": "Lnet/minecraft/client/model/HumanoidModel;m_102875_(Lnet/minecraft/world/entity/LivingEntity;)V"
+      },
+      "com/github/L_Ender/cataclysm/mixin/MixinOceanRuinPiece": {
+        "Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;clearProcessors()Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;": "Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;m_74394_()Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;",
+        "postProcess": "Lnet/minecraft/world/level/levelgen/structure/structures/OceanRuinPieces$OceanRuinPiece;m_213694_(Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/chunk/ChunkGenerator;Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/core/BlockPos;)V"
+      },
+      "com/github/L_Ender/cataclysm/mixin/NoGeodeInStructuresMixin": {
+        "place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z": "Lnet/minecraft/world/level/levelgen/feature/GeodeFeature;m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+      },
+      "com/github/L_Ender/cataclysm/mixin/accessor/BoundingBoxAccessor": {
+        "minY": "f_162357_:I",
+        "minX": "f_162356_:I",
+        "maxZ": "f_162361_:I",
+        "maxY": "f_162360_:I",
+        "maxX": "f_162359_:I",
+        "minZ": "f_162358_:I"
+      },
+      "com/github/L_Ender/cataclysm/mixin/WorldGenRegionAccessor": {
+        "cache": "f_9475_:Ljava/util/List;",
+        "size": "f_9478_:I",
+        "structureManager": "f_215157_:Lnet/minecraft/world/level/StructureManager;",
+        "firstPos": "f_9487_:Lnet/minecraft/world/level/ChunkPos;",
+        "lastPos": "f_9488_:Lnet/minecraft/world/level/ChunkPos;"
+      },
+      "com/github/L_Ender/cataclysm/mixin/accessor/StructureTemplatePoolAccessor": {
+        "rawTemplates": "f_210559_:Ljava/util/List;"
+      },
+      "com/github/L_Ender/cataclysm/mixin/accessor/CriteriaTriggersAccessor": {
+        "CRITERIA": "f_10566_:Ljava/util/Map;"
+      },
+      "com/github/L_Ender/cataclysm/mixin/NoDeltasInStructuresMixin": {
+        "place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z": "Lnet/minecraft/world/level/levelgen/feature/DeltaFeature;m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+      },
+      "com/github/L_Ender/cataclysm/mixin/NoLakesInStructuresMixin": {
+        "place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z": "Lnet/minecraft/world/level/levelgen/feature/LakeFeature;m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+      },
+      "com/github/L_Ender/cataclysm/mixin/accessor/BeardifierAccessor": {
+        "junctionIterator": "f_158066_:Lit/unimi/dsi/fastutil/objects/ObjectListIterator;",
+        "pieceIterator": "f_158065_:Lit/unimi/dsi/fastutil/objects/ObjectListIterator;"
+      },
+      "com/github/L_Ender/cataclysm/mixin/StructureManagerAccessor": {
+        "level": "f_220460_:Lnet/minecraft/world/level/LevelAccessor;"
+      },
+      "com/github/L_Ender/cataclysm/mixin/NoMagmaBlockInStructuresMixin": {
+        "place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z": "Lnet/minecraft/world/level/levelgen/feature/UnderwaterMagmaFeature;m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+      },
+      "com/github/L_Ender/cataclysm/mixin/NoMultifaceGrowthFeatureInStructuresMixin": {
+        "Lnet/minecraft/world/level/levelgen/feature/MultifaceGrowthFeature;place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z": "Lnet/minecraft/world/level/levelgen/feature/MultifaceGrowthFeature;m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+      },
+      "com/github/L_Ender/cataclysm/mixin/accessor/ListPoolElementAccessor": {
+        "elements": "f_210360_:Ljava/util/List;"
+      },
+      "com/github/L_Ender/cataclysm/mixin/MixinStructure": {
+        "afterPlace": "Lnet/minecraft/world/level/levelgen/structure/Structure;m_214110_(Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/chunk/ChunkGenerator;Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/structure/BoundingBox;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/world/level/levelgen/structure/pieces/PiecesContainer;)V"
+      },
+      "com/github/L_Ender/cataclysm/mixin/StructureTemplateMixin": {
+        "placeInWorld(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;Lnet/minecraft/util/RandomSource;I)Z": "Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate;m_230328_(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings;Lnet/minecraft/util/RandomSource;I)Z"
+      },
+      "com/github/L_Ender/cataclysm/mixin/BrushItemMixin": {
+        "onUseTick": "Lcom/min01/archaeology/item/BrushItem;m_5929_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;I)V"
+      },
+      "com/github/L_Ender/cataclysm/mixin/Client/LevelRendererMixin": {
+        "levelEvent": "Lnet/minecraft/client/renderer/LevelRenderer;m_234304_(ILnet/minecraft/core/BlockPos;I)V"
+      },
+      "com/github/L_Ender/cataclysm/mixin/accessor/SinglePoolElementAccessor": {
+        "getTemplate": "m_227299_(Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;)Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate;"
+      },
+      "com/github/L_Ender/cataclysm/mixin/NoOreInStructuresMixin": {
+        "place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z": "Lnet/minecraft/world/level/levelgen/feature/OreFeature;m_142674_(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z"
+      },
+      "com/github/L_Ender/cataclysm/mixin/StructureProcessorAccessor": {
+        "getType": "m_6953_()Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureProcessorType;"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "group": "crystal",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "phantasm:crystiles"
+    },
+    "1": {
+      "item": "phantasm:crystiles"
+    },
+    "2": {
+      "item": "phantasm:crystiles"
+    }
+  },
+  "result": {
+    "item": "phantasm:crystiles_slab",
+    "count": 6
+  }
+}

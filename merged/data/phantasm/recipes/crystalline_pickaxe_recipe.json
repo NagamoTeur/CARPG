@@ -1,0 +1,30 @@
+{
+  "group": "crystal_tools",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "phantasm:crystal_block"
+    },
+    "1": {
+      "item": "phantasm:void_crystal_block"
+    },
+    "2": {
+      "item": "phantasm:crystal_block"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "phantasm:crystalline_pickaxe",
+    "count": 1
+  }
+}

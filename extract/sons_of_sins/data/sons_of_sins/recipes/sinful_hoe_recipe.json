@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aa",
+    "b ",
+    "a "
+  ],
+  "key": {
+    "a": {
+      "item": "sons_of_sins:bloody_bone"
+    },
+    "b": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "sons_of_sins:sinful_hoe",
+    "count": 1
+  }
+}

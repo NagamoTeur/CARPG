@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "M": {
+      "item": "blue_skies:vitreous_moonstone"
+    },
+    "S": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "pattern": [
+    "MSM",
+    "MMM",
+    " M "
+  ],
+  "result": {
+    "item": "blue_skies:moonstone_shield"
+  }
+}

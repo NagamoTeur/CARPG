@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "ingredient": {
+    "tag": "forbidden_arcanus:runic_stones"
+  },
+  "result": "forbidden_arcanus:rune"
+}

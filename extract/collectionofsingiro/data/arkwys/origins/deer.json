@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"origins:vegetarian",
+		"arkwys:deer/oh_deer_god_drawback",
+		"arkwys:deer/oh_deer_god",
+		"arkwys:deer/forest_native",
+		"arkwys:deer/sensitive_awareness",
+		"arkwys:deer/food_bonus",
+		"arkwys:deer/weak",
+		"arkwys:deer/jump_bonus"
+	],
+	"icon": "minecraft:mutton",
+	"order": 4,
+	"impact": 2
+}

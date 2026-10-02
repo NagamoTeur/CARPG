@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "soul_sand_valley",
+  "features": "iter_rpg:grimstone",
+  "step": "underground_ores"
+}

@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "modifiers": [
+        {
+            "operation": "addition",
+            "value": 4,
+            "attribute": "minecraft:generic.max_health",
+            "name": "minotaur health"
+        }
+    ]
+}

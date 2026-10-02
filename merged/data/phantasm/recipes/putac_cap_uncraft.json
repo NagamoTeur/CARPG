@@ -1,0 +1,13 @@
+{
+  "group": "putac",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "phantasm:putac_cap"
+    }
+  ],
+  "result": {
+    "item": "phantasm:putac_shroom",
+    "count": 4
+  }
+}

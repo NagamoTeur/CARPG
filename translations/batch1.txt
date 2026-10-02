@@ -1,0 +1,110 @@
+0|Les Slimefolk sont faits de slime vert, plus forts dans leur habitat naturel : le marais.
+1|Être un slime te permet de sauter plus haut (2 blocs).
+2|Ton corps est fait de slime vert. (Purement cosmétique)
+3|Tu es né dans le marais : y rester te fait du bien.
+4|Tu es vraiment petit par rapport à la plupart des créatures. (1 bloc de haut)
+5|Tu as 8 cœurs complets (16 PV).
+6|Tu ne subis jamais de dégâts de chute, quelle que soit la hauteur.
+7|Origines créées par Arkwys et Aiko_Suzuki.
+8|Habitants des forêts, les elfes sont habiles à l'arc mais faibles au corps à corps.
+9|Les elfes infligent nettement plus de dégâts avec tout type de projectile que les autres races.
+10|Tu es né au pays des feuilles et de l'écorce : y rester te fait du bien.
+11|Vu leur finesse, la plus lourde armure qu'un elfe peut porter est la netherite. (Ne compte que si des mods ajoutent des armures plus fortes que la netherite.)
+12|Les elfes accordent aux animaux la même valeur qu'aux autres races intelligentes : ils ne mangent aucune viande.
+13|Les elfes ne sont pas forts au corps à corps : ils font moins de dégâts avec les épées et les haches.
+14|Variante plus puissante des piglins, qui obtient ce qu'elle veut par la force brute.
+15|Tu subis des dégâts continus au contact de l'eau.
+16|La forme de tes mains ne te permet pas de tenir un bouclier.
+17|Ton régime est limité à la viande : tu ne peux pas manger de légumes.
+18|Tu es assez fort pour casser les pierres naturelles sans pioche.
+19|Tu as peur du feu d'âme : tu t'affaiblis à proximité.
+20|Les outils en or font plus de dégâts et l'armure en or protège davantage. L'équipement en or dure bien plus longtemps, mais l'équipement ni en or ni en netherite se casse plus vite. L'armure en netherite donne un petit bonus de vitesse.
+21|Les haches en or et en netherite font plus de dégâts : les brutes sont très efficaces avec.
+22|Habitant des forêts et galopeur des plaines, le cerf est une bête sereine et très mobile.
+23|Tu ne peux digérer aucune viande.
+24|Quand tes PV sont bas, tu as envie de fuir : tu gagnes de la vitesse mais aussi de la faiblesse.
+25|En appuyant sur ta touche de capacité principale, tu détectes les joueurs dans un rayon de 50 blocs (un son retentit si un joueur est à portée).
+26|Tu n'as que 8 cœurs.
+27|Bonus de saut quand tu cours.
+28|Rusés et cupides, les gobelins excellent en duel et obtiennent plus de butin sur les monstres qu'ils tuent, mais leur petite taille est un handicap face aux groupes.
+29|Les gobelins sont rusés : leurs attaques font plus de dégâts et ils gagnent plus de butin en tuant des monstres.
+30|Être petit a un prix : la vie max des gobelins est réduite, car leur petite taille les rend fragiles.
+31|Les gobelins sont naturellement cupides : tout ce qui est doré leur apporte bien plus d'avantages qu'aux autres.
+32|Petits mais pas lents : les gobelins ont une vitesse de déplacement de base nettement augmentée.
+33|À cause de leur mauvaise alimentation et de leur génétique, les gobelins n'atteignent pas la taille des autres créatures.
+34|Les sirènes ont une beauté envoûtante et une nature maléfique : leur charme irrésistible a causé la perte de bien des marins. À toi d'en tirer le meilleur parti.
+35|Les sirènes, branche des êtres de la mer, survivent dans l'eau et nagent plus vite.
+36|Les sirènes et le feu font mauvais ménage : tout contact avec les flammes tue instantanément. Fais attention au Nether !
+37|Les sirènes se régénèrent, à pleine puissance quand elles sont dans l'eau.
+38|Sur terre, les sirènes survivent sans problème mais ce n'est pas leur milieu naturel : leur régénération ne s'applique pas et les dégâts ne se soignent qu'avec des potions.
+39|Les sirènes se régénèrent mais sont fragiles aux coups contondants : les attaques de mêlée leur font plus de dégâts.
+40|Les sirènes sont connues pour leurs chants envoûtants. Appuie sur [capacité principale] pour rendre tous les monstres alentour neutres jusqu'à ce qu'ils soient frappés. (NE FONCTIONNE PAS SUR LES BOSS, évidemment)
+41|Les sirènes voient bien mieux sous l'eau que les autres créatures.
+42|Leur capacité à grimper et à piéger leurs ennemis dans des toiles font des Arachnides d'excellents chasseurs.
+43|Tu peux grimper sur n'importe quel mur, pas seulement les échelles.
+44|Tu te déplaces parfaitement dans les toiles d'araignée et peux y grimper. Quand tu frappes un ennemi au corps à corps, il reste coincé dans une toile un moment. Tu sens les créatures non arthropodes prises dans une toile. Tu peux fabriquer de la toile avec de la ficelle.
+45|Tu as 3 cœurs de moins que les humains.
+46|Les Aviens ont perdu depuis longtemps la capacité de voler. Ces créatures paisibles se déplacent désormais en planant d'un endroit à un autre.
+47|Tu tombes aussi doucement qu'une plume, sauf si tu t'accroupis.
+48|Pour dormir, ton lit doit être à au moins 86 blocs d'altitude, afin que tu respires de l'air frais.
+49|Les modificateurs de vitesse de marche s'appliquent aussi quand tu es en l'air.
+50|Tu es un peu plus rapide à pied que les autres.
+51|Chaque matin au réveil, tu pondras un œuf.
+52|Lointains descendants des Blazes, les Blazeborn sont naturellement immunisés contre les dangers du Nether.
+53|Tu es immunisé contre tous les types de dégâts de feu.
+54|Ton point d'apparition naturel est dans le Nether.
+55|Quand tu es en feu, tes attaques font plus de dégâts.
+56|Ton corps brûlant consume les venins : tu es immunisé au poison et à la faim.
+57|Souvent portés par les vents, les Élytriens sont mal à l'aise quand ils manquent d'espace au-dessus de la tête.
+58|Tu possèdes des ailes d'élytres sans avoir besoin de les équiper.
+59|Toutes les 30 secondes, tu peux t'élancer d'environ 20 blocs dans les airs.
+60|Tu infliges nettement plus de dégâts en vol d'élytres.
+61|Tu ne peux pas porter d'armure lourde (valeur de protection supérieure à la cotte de mailles).
+62|Rester trop longtemps sous un plafond bas t'affaiblit et te ralentit.
+63|Tu subis plus de dégâts quand tu tombes ou que tu t'écrases contre des blocs en vol.
+64|Enfants de l'Ender Dragon, les Enderiens peuvent se téléporter mais craignent l'eau.
+65|À tout moment, tu peux lancer une perle d'Ender sans dégâts pour te téléporter.
+66|Tu as peur des citrouilles. Pour de bonnes raisons.
+67|Tu atteins les blocs et les entités de plus loin.
+68|Avec leur allure de chat, les Félins font fuir les creepers et retombent toujours sur leurs pattes.
+69|Tu sautes plus haut en sautant pendant que tu cours.
+70|Tes pas ne causent aucune vibration pouvant être captée par les êtres vivants proches.
+71|Tu as 1 cœur de moins que les humains.
+72|Sans potion de force, tu ne peux miner la pierre naturelle que si elle a au plus 2 autres blocs de pierre naturelle adjacents.
+73|Les creepers ont peur de toi et n'explosent que si tu les attaques en premier.
+74|Tu vois un peu dans le noir quand tu n'es pas dans l'eau.
+75|Un humain ordinaire. L'expérience Minecraft classique t'attend.
+76|Habitants naturels de l'océan, les Merlings n'aiment pas rester longtemps hors de l'eau.
+77|Tu respires sous l'eau, mais pas sur terre.
+78|Ta vision sous l'eau est parfaite.
+79|Tu peux casser des blocs sous l'eau aussi vite qu'à l'air libre.
+80|Ta vitesse sous l'eau est augmentée.
+81|Sous l'eau, tu ne coules pas, sauf si tu le veux.
+82|Mi-humains mi-fantômes, ces êtres peuvent passer de la forme Fantôme à la forme normale.
+83|Tu peux passer de la forme humaine à la forme fantôme à volonté, mais seulement si tu es assez rassasié pour courir.
+84|Ta peau est translucide.
+85|En forme fantôme, tu traverses les matériaux solides, sauf l'obsidienne.
+86|En forme fantôme, tu es invisible.
+87|Tu brûles en plein jour si tu n'es pas invisible.
+88|Rester en forme fantôme te donne faim.
+89|Cousins des Shulkers, les Shulks ont une peau résistante comme une carapace.
+90|Tu as 9 emplacements d'inventaire supplémentaires, qui conservent leur contenu à ta mort.
+91|Même sans armure, ta peau te protège naturellement.
+92|Tu te fatigues bien plus vite que les autres : tu dois manger plus.
+93|Les 13 espèces de loutres sont semi-aquatiques, aquatiques ou marines. Avec le changement du climat et des années de mutations menées par le chef Blaze_Kitty, elles ont appris à s'adapter et à manger tous les aliments pour survivre !
+94|Tu respires plus longtemps sous l'eau.
+95|Entièrement immergé, tu combats à une vitesse folle, et brièvement aussi sur terre.
+96|Don du Dieu Loutre : tu deviens physiquement plus fort.
+97|Les loutres de mer ont des replis de peau sous chaque patte avant, qu'elles utilisent comme poche pour rapporter un maximum de nourriture. [Principale]
+98|Tu n'as que huit cœurs.
+99|Te projette dans la direction où tu regardes (doit être immergé). [Secondaire]
+100|Tu es légèrement plus petit qu'un humain normal.
+101|Personne ne demande qui il craint ; une fois, il a volé toute la réserve d'un clan sans même être vu...
+102|En étant accroupi, toi et tout ton équipement êtes totalement invisibles.
+103|Personne ne questionne un Voleur, on craint seulement ce qu'il pourrait faire... (Tu reçois le Sac de butin et 3 diamants que tu as... euh... trouvés ?)
+104|En tenant un diamant, tu obtiens Vitesse II.
+105|Tes années de larcins t'ont rendu costaud : tu infliges un peu plus de dégâts.
+106|Tu vois dans le noir.
+107|Les prêtres n'étaient pas riches comme les évêques. Ils dirigeaient généralement une église et portaient souvent de longues robes noires.
+108|Tu commences l'aventure avec quelques objets de ton meilleur ami, le Paladin, qui a donné sa vie pour toi et ton Église : des fioles d'expérience, du lapis-lazuli et un Médaillon sacré...
+109|Tu es plus rapide, grâce aux bénédictions d'en haut.

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "iter_rpg:grimstone_bricks"
+    },
+    "1": {
+      "item": "iter_rpg:grimstone_bricks"
+    },
+    "2": {
+      "item": "iter_rpg:grimstone_bricks"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:grimstone_bricks_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "block": "minecraft:jack_o_lantern",
+  "frozen_block": "minecraft:carved_pumpkin",
+  "preserve_states": true,
+  "states": {}
+}

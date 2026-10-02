@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "endlessbiomes:twisted_stem"
+    },
+    {
+      "item": "endlessbiomes:twisted_stem"
+    },
+    {
+      "item": "endlessbiomes:twisted_stem"
+    },
+    {
+      "item": "endlessbiomes:twisted_stem"
+    }
+  ],
+  "result": {
+    "item": "endlessbiomes:twisted_hyphae",
+    "count": 3
+  }
+}

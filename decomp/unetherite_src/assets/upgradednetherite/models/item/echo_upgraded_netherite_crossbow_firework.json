@@ -1,0 +1,6 @@
+{
+    "parent": "item/crossbow",
+    "textures": {
+        "layer0": "upgradednetherite:items/echo_upgraded_netherite_crossbow_firework"
+    }
+}

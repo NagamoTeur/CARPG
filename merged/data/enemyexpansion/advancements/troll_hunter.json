@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "enemyexpansion:trollface"
+    },
+    "title": {
+      "translate": "advancements.troll_hunter.title"
+    },
+    "description": {
+      "translate": "advancements.troll_hunter.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "troll_hunter_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "minecraft:adventure/kill_a_mob"
+}

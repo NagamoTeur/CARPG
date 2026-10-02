@@ -1,0 +1,53 @@
+{
+  "parent": "dungeons_plus:adventure/find_snowy_temple",
+  "criteria": {
+    "stand_in_snow": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "head": {
+                  "items": [
+                    "dungeons_plus:frosted_cowl"
+                  ]
+                }
+              },
+              "location": {
+                "block": {
+                  "blocks": [
+                    "minecraft:powder_snow"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "dungeons_plus:advancements.adventure.hide_in_snow.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "dungeons_plus:frosted_cowl",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "dungeons_plus:advancements.adventure.hide_in_snow.title"
+    }
+  },
+  "requirements": [
+    [
+      "stand_in_snow"
+    ]
+  ]
+}

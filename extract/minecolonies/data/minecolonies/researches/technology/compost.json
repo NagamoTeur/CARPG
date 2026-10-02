@@ -1,0 +1,26 @@
+{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/farmingmultiplier": 3
+    }
+  ],
+  "icon": "minecraft:bone",
+  "parentResearch": "minecolonies:technology/dung",
+  "requirements": [
+    {
+      "building": "miner",
+      "level": 5
+    },
+    {
+      "type": "minecolonies:item_list",
+      "item": {
+        "items": [
+          "minecraft:wheat_seeds"
+        ]
+      },
+      "quantity": 256
+    }
+  ],
+  "researchLevel": 4
+}

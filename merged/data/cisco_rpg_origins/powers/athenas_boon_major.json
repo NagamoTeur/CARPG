@@ -1,0 +1,13 @@
+{
+    "name": "Greater Boon of Wisdom",
+    "description": "Upon slaying the ender dragon, Athena grants you a permanent 25 percent reduction to all incoming damage.",
+    "condition": {
+        "type": "origins:advancement",
+        "advancement": "minecraft:end/kill_dragon"
+    },
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+        "operation": "multiply_base_multiplicative",
+        "value": -0.25
+    }
+}

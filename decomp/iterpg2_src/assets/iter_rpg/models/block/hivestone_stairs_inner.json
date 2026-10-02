@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "iter_rpg:blocks/hivestone",
+    "top": "iter_rpg:blocks/hivestone",
+    "side": "iter_rpg:blocks/hivestone"
+  },
+  "render_type": "solid"
+}

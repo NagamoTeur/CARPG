@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:twiffle_block",
+    "iter_rpg:spider_silk_block",
+    "iter_rpg:sacred_leaves"
+  ]
+}

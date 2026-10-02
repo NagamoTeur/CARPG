@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "cisco_mod:fell_fragment"
+    },
+    "1": {
+      "item": "cisco_mod:talisman_of_challenge"
+    },
+    "2": {
+      "item": "cisco_mod:fell_fragment"
+    }
+  },
+  "result": {
+    "item": "cisco_mod:tainted_talisman",
+    "count": 1
+  }
+}

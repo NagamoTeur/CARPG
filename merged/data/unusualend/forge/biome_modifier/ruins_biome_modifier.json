@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "the_end",
+    "end_highlands"
+  ],
+  "features": "unusualend:ruins",
+  "step": "surface_structures"
+}

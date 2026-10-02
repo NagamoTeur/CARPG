@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sons_of_sins:ether_ashes"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "sons_of_sins:ether_ashes"
+    }
+  ],
+  "result": {
+    "item": "sons_of_sins:iron_and_ether",
+    "count": 2
+  }
+}

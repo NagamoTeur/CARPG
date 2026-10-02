@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "royalvariations:royal_zombie",
+    "weight": 12,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

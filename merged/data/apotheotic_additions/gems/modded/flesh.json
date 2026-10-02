@@ -1,0 +1,134 @@
+{
+	"conditions": [{
+		"type": "forge:mod_loaded",
+		"modid": "biomancy"
+	}],
+	"weight": 5,
+	"quality": 2.5,
+	"dimensions": ["minecraft:overworld", "minecraft:the_nether"],
+	"unique": true,
+	"min_rarity": "uncommon",
+	"bonuses": [
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "helmet",
+				"types": [
+					"helmet"
+				]
+			},
+			"attribute": "apotheosis:healing_received",
+			"operation": "MULTIPLY_TOTAL",
+			"values": {
+				"uncommon": 0.02,
+				"rare": 0.04,
+				"epic": 0.06,
+				"mythic": 0.08,
+				"ancient": 0.1
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "chestplate",
+				"types": [
+					"chestplate"
+				]
+			},
+			"attribute": "minecraft:generic.max_health",
+			"operation": "MULTIPLY_TOTAL",
+			"values": {
+				"uncommon": 0.03,
+				"rare": 0.06,
+				"epic": 0.09,
+				"mythic": 0.12,
+				"ancient": 0.15
+			}
+		},
+		{
+			"type": "apotheosis:attribute",
+			"gem_class": {
+				"key": "lower_armor",
+				"types": [
+					"boots", "leggings"
+				]
+			},
+			"attribute": "apotheosis:cold_damage",
+			"operation": "MULTIPLY_TOTAL",
+			"values": {
+				"uncommon": 0.015,
+				"rare": 0.03,
+				"epic": 0.045,
+				"mythic": 0.06,
+				"ancient": 0.075
+			}
+		},
+		{
+			"type": "apotheosis:mob_effect",
+			"gem_class": {
+				"key": "heavy_weapon",
+				"types": [
+					"heavy_weapon"
+				]
+			},
+			"mob_effect": "biomancy:corrosive",
+			"target": "attack_target",
+			"values": {
+				"rare": {
+					"duration": 60,
+					"amplifier": 0,
+					"cooldown": 900
+				},
+				"epic": {
+					"duration": 80,
+					"amplifier": 0,
+					"cooldown": 900
+				},
+				"mythic": {
+					"duration": 120,
+					"amplifier": 0,
+					"cooldown": 900
+				},
+				"ancient": {
+					"duration": 160,
+					"amplifier": 1,
+					"cooldown": 900
+				}
+			}
+		},
+		{
+			"type": "apotheosis:mob_effect",
+			"gem_class": {
+				"key": "light_weapon",
+				"types": [
+					"trident",
+					"sword"
+				]
+			},
+			"mob_effect": "biomancy:despoil",
+			"target": "attack_self",
+			"values": {
+				"rare": {
+					"duration": 200,
+					"amplifier": 0,
+					"cooldown": 900
+				},
+				"epic": {
+					"duration": 240,
+					"amplifier": 0,
+					"cooldown": 900
+				},
+				"mythic": {
+					"duration": 280,
+					"amplifier": 0,
+					"cooldown": 900
+				},
+				"ancient": {
+					"duration": 320,
+					"amplifier": 0,
+					"cooldown": 900
+				}
+			}
+		}
+	]
+}

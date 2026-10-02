@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "endlessbiomes:radon"
+    },
+    "2": {
+      "item": "endlessbiomes:radon"
+    },
+    "3": {
+      "item": "endlessbiomes:shattered_obsidian"
+    },
+    "4": {
+      "item": "endlessbiomes:bottle_of_void"
+    },
+    "5": {
+      "item": "endlessbiomes:shattered_obsidian"
+    },
+    "6": {
+      "item": "endlessbiomes:shattered_obsidian"
+    },
+    "7": {
+      "item": "endlessbiomes:shattered_obsidian"
+    },
+    "8": {
+      "item": "endlessbiomes:shattered_obsidian"
+    }
+  },
+  "result": {
+    "item": "endlessbiomes:end_altar",
+    "count": 1
+  }
+}

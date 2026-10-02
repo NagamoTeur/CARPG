@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cisco_mod:brightsteelblock"
+    }
+  ],
+  "result": {
+    "item": "cisco_mod:brightsteel_ingot",
+    "count": 9
+  }
+}

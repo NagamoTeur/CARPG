@@ -1,0 +1,274 @@
+{
+  "mappings": {
+    "dev/latvian/mods/kubejs/core/mixin/common/OptionsMixin": {
+      "load": "Lnet/minecraft/client/Options;m_92140_()V"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/RecipeManagerMixin": {
+      "apply*": "Lnet/minecraft/world/item/crafting/RecipeManager;m_5787_(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/EntityMixin": {
+      "load": "Lnet/minecraft/world/entity/Entity;m_20258_(Lnet/minecraft/nbt/CompoundTag;)V",
+      "saveWithoutId": "Lnet/minecraft/world/entity/Entity;m_20240_(Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag;"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/LoadingOverlayMixin": {
+      "Lnet/minecraft/client/gui/screens/LoadingOverlay;fill(Lcom/mojang/blaze3d/vertex/PoseStack;IIIII)V": "Lnet/minecraft/client/gui/screens/LoadingOverlay;m_93172_(Lcom/mojang/blaze3d/vertex/PoseStack;IIIII)V",
+      "drawProgressBar": "Lnet/minecraft/client/gui/screens/LoadingOverlay;m_96182_(Lcom/mojang/blaze3d/vertex/PoseStack;IIIIF)V"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/ScreenMixin": {
+      "Lcom/mojang/blaze3d/vertex/BufferBuilder;begin(Lcom/mojang/blaze3d/vertex/VertexFormat$Mode;Lcom/mojang/blaze3d/vertex/VertexFormat;)V": "Lcom/mojang/blaze3d/vertex/BufferBuilder;m_166779_(Lcom/mojang/blaze3d/vertex/VertexFormat$Mode;Lcom/mojang/blaze3d/vertex/VertexFormat;)V",
+      "Lcom/mojang/blaze3d/vertex/Tesselator;end()V": "Lcom/mojang/blaze3d/vertex/Tesselator;m_85914_()V",
+      "renderDirtBackground": "Lnet/minecraft/client/gui/screens/Screen;m_96626_(I)V"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/ImageButtonMixin": {
+      "resourceLocation": "f_94223_:Lnet/minecraft/resources/ResourceLocation;"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/MinecraftMixin": {
+      "reloadResourcePacks(Z)Ljava/util/concurrent/CompletableFuture;": "Lnet/minecraft/client/Minecraft;m_168019_(Z)Ljava/util/concurrent/CompletableFuture;",
+      "Lnet/minecraft/client/player/LocalPlayer;swing(Lnet/minecraft/world/InteractionHand;)V": "Lnet/minecraft/client/player/LocalPlayer;m_6674_(Lnet/minecraft/world/InteractionHand;)V",
+      "startAttack": "Lnet/minecraft/client/Minecraft;m_202354_()Z",
+      "createTitle": "Lnet/minecraft/client/Minecraft;m_91270_()Ljava/lang/String;",
+      "Lnet/minecraft/client/Minecraft;startUseItem()V": "Lnet/minecraft/client/Minecraft;m_91277_()V",
+      "handleKeybinds": "Lnet/minecraft/client/Minecraft;m_91279_()V",
+      "Lnet/minecraft/server/packs/repository/PackRepository;openAllSelected()Ljava/util/List;": "Lnet/minecraft/server/packs/repository/PackRepository;m_10525_()Ljava/util/List;"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/ItemMixin": {
+      "maxStackSize": "f_41370_:I",
+      "getName": "Lnet/minecraft/world/item/Item;m_7626_(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/network/chat/Component;",
+      "getBarWidth": "Lnet/minecraft/world/item/Item;m_142158_(Lnet/minecraft/world/item/ItemStack;)I",
+      "getUseAnimation": "Lnet/minecraft/world/item/Item;m_6164_(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/UseAnim;",
+      "use": "Lnet/minecraft/world/item/Item;m_7203_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder;",
+      "maxDamage": "f_41371_:I",
+      "isBarVisible": "Lnet/minecraft/world/item/Item;m_142522_(Lnet/minecraft/world/item/ItemStack;)Z",
+      "getBarColor": "Lnet/minecraft/world/item/Item;m_142159_(Lnet/minecraft/world/item/ItemStack;)I",
+      "releaseUsing": "Lnet/minecraft/world/item/Item;m_5551_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;I)V",
+      "isFoil": "Lnet/minecraft/world/item/Item;m_5812_(Lnet/minecraft/world/item/ItemStack;)Z",
+      "finishUsingItem": "Lnet/minecraft/world/item/Item;m_5922_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/ItemStack;",
+      "isFireResistant": "f_41372_:Z",
+      "hurtEnemy": "Lnet/minecraft/world/item/Item;m_7579_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;)Z",
+      "craftingRemainingItem": "f_41378_:Lnet/minecraft/world/item/Item;",
+      "foodProperties": "f_41380_:Lnet/minecraft/world/food/FoodProperties;",
+      "appendHoverText": "Lnet/minecraft/world/item/Item;m_7373_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V",
+      "getUseDuration": "Lnet/minecraft/world/item/Item;m_8105_(Lnet/minecraft/world/item/ItemStack;)I",
+      "rarity": "f_41369_:Lnet/minecraft/world/item/Rarity;"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/AbstractSelectionListMixin": {
+      "Lcom/mojang/blaze3d/vertex/BufferBuilder;begin(Lcom/mojang/blaze3d/vertex/VertexFormat$Mode;Lcom/mojang/blaze3d/vertex/VertexFormat;)V": "Lcom/mojang/blaze3d/vertex/BufferBuilder;m_166779_(Lcom/mojang/blaze3d/vertex/VertexFormat$Mode;Lcom/mojang/blaze3d/vertex/VertexFormat;)V",
+      "Lcom/mojang/blaze3d/vertex/Tesselator;end()V": "Lcom/mojang/blaze3d/vertex/Tesselator;m_85914_()V",
+      "render": "Lnet/minecraft/client/gui/components/AbstractSelectionList;m_6305_(Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/tools/TridentItemMixin": {
+      "defaultModifiers": "f_43379_:Lcom/google/common/collect/Multimap;"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/WorldOpenFlowsMixin": {
+      "Lnet/minecraft/server/WorldLoader$PackConfig;createResourceManager()Lcom/mojang/datafixers/util/Pair;": "Lnet/minecraft/server/WorldLoader$PackConfig;m_214399_()Lcom/mojang/datafixers/util/Pair;",
+      "createLevelFromExistingSettings": "Lnet/minecraft/client/gui/screens/worldselection/WorldOpenFlows;m_233107_(Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/server/ReloadableServerResources;Lnet/minecraft/core/RegistryAccess$Frozen;Lnet/minecraft/world/level/storage/WorldData;)V"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/UtilMixin": {
+      "shutdownExecutors": "Lnet/minecraft/Util;m_137580_()V"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/LootTablesMixin": {
+      "apply*": "Lnet/minecraft/world/level/storage/loot/LootTables;m_5787_(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/FireworkRocketEntityMixin": {
+      "lifetime": "f_37023_:I"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/inject_resources/WorldLoaderPackConfigMixin": {
+      "createResourceManager": "Lnet/minecraft/server/WorldLoader$PackConfig;m_214399_()Lcom/mojang/datafixers/util/Pair;"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/ReloadableServerResourcesMixin": {
+      "updateRegistryTags(Lnet/minecraft/core/RegistryAccess;)V": "Lnet/minecraft/server/ReloadableServerResources;m_206868_(Lnet/minecraft/core/RegistryAccess;)V"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/MinecraftServerMixin": {
+      "resources": "f_129740_:Lnet/minecraft/server/MinecraftServer$ReloadableResources;",
+      "tickServer": "Lnet/minecraft/server/MinecraftServer;m_5705_(Ljava/util/function/BooleanSupplier;)V"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/LivingEntityMixin": {
+      "eat": "Lnet/minecraft/world/entity/LivingEntity;m_5584_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/TagLoaderMixin": {
+      "load": "Lnet/minecraft/tags/TagLoader;m_144495_(Lnet/minecraft/server/packs/resources/ResourceManager;)Ljava/util/Map;"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/IngredientTagValueMixin": {
+      "getItems": "Lnet/minecraft/world/item/crafting/Ingredient$TagValue;m_6223_()Ljava/util/Collection;",
+      "net/minecraft/world/item/crafting/Ingredient$TagValue": "net/minecraft/world/item/crafting/Ingredient$TagValue"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/WindowMixin": {
+      "setIcon": "Lcom/mojang/blaze3d/platform/Window;m_85395_(Ljava/io/InputStream;Ljava/io/InputStream;)V"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/TagManagerMixin": {
+      "reload": "Lnet/minecraft/tags/TagManager;m_5540_(Lnet/minecraft/server/packs/resources/PreparableReloadListener$PreparationBarrier;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;Lnet/minecraft/util/profiling/ProfilerFiller;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;",
+      "createLoader": "Lnet/minecraft/tags/TagManager;m_203907_(Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/util/concurrent/Executor;Lnet/minecraft/core/RegistryAccess$RegistryEntry;)Ljava/util/concurrent/CompletableFuture;",
+      "Lnet/minecraft/core/RegistryAccess;registries()Ljava/util/stream/Stream;": "Lnet/minecraft/core/RegistryAccess;m_206193_()Ljava/util/stream/Stream;",
+      "Lnet/minecraft/tags/TagLoader;<init>(Ljava/util/function/Function;Ljava/lang/String;)V": "Lnet/minecraft/tags/TagLoader;<init>(Ljava/util/function/Function;Ljava/lang/String;)V"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/BlockBehaviourMixin": {
+      "explosionResistance": "f_60444_:F",
+      "material": "f_60442_:Lnet/minecraft/world/level/material/Material;",
+      "isRandomlyTicking": "f_60445_:Z",
+      "speedFactor": "f_60448_:F",
+      "hasCollision": "f_60443_:Z",
+      "soundType": "f_60446_:Lnet/minecraft/world/level/block/SoundType;",
+      "friction": "f_60447_:F",
+      "jumpFactor": "f_60449_:F"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/PlayerListMixin": {
+      "respawn": "Lnet/minecraft/server/players/PlayerList;m_11236_(Lnet/minecraft/server/level/ServerPlayer;Z)Lnet/minecraft/server/level/ServerPlayer;"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/tools/DiggerItemMixin": {
+      "defaultModifiers": "f_40982_:Lcom/google/common/collect/Multimap;"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/tools/ArmorItemMixin": {
+      "defaultModifiers": "f_40383_:Lcom/google/common/collect/Multimap;"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/KeyboardHandlerMixin": {
+      "handleDebugKeys": "Lnet/minecraft/client/KeyboardHandler;m_90932_(I)Z",
+      "Lnet/minecraft/client/Minecraft;reloadResourcePacks()Ljava/util/concurrent/CompletableFuture;": "Lnet/minecraft/client/Minecraft;m_91391_()Ljava/util/concurrent/CompletableFuture;"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/tools/SwordItemMixin": {
+      "defaultModifiers": "f_43267_:Lcom/google/common/collect/Multimap;"
+    },
+    "dev/latvian/mods/kubejs/core/mixin/common/BlockStateBaseMixin": {
+      "lightEmission": "f_60594_:I",
+      "material": "f_60597_:Lnet/minecraft/world/level/material/Material;",
+      "destroySpeed": "f_60599_:F",
+      "requiresCorrectToolForDrops": "f_60600_:Z"
+    }
+  },
+  "data": {
+    "searge": {
+      "dev/latvian/mods/kubejs/core/mixin/common/OptionsMixin": {
+        "load": "Lnet/minecraft/client/Options;m_92140_()V"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/RecipeManagerMixin": {
+        "apply*": "Lnet/minecraft/world/item/crafting/RecipeManager;m_5787_(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/EntityMixin": {
+        "load": "Lnet/minecraft/world/entity/Entity;m_20258_(Lnet/minecraft/nbt/CompoundTag;)V",
+        "saveWithoutId": "Lnet/minecraft/world/entity/Entity;m_20240_(Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag;"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/LoadingOverlayMixin": {
+        "Lnet/minecraft/client/gui/screens/LoadingOverlay;fill(Lcom/mojang/blaze3d/vertex/PoseStack;IIIII)V": "Lnet/minecraft/client/gui/screens/LoadingOverlay;m_93172_(Lcom/mojang/blaze3d/vertex/PoseStack;IIIII)V",
+        "drawProgressBar": "Lnet/minecraft/client/gui/screens/LoadingOverlay;m_96182_(Lcom/mojang/blaze3d/vertex/PoseStack;IIIIF)V"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/ScreenMixin": {
+        "Lcom/mojang/blaze3d/vertex/BufferBuilder;begin(Lcom/mojang/blaze3d/vertex/VertexFormat$Mode;Lcom/mojang/blaze3d/vertex/VertexFormat;)V": "Lcom/mojang/blaze3d/vertex/BufferBuilder;m_166779_(Lcom/mojang/blaze3d/vertex/VertexFormat$Mode;Lcom/mojang/blaze3d/vertex/VertexFormat;)V",
+        "Lcom/mojang/blaze3d/vertex/Tesselator;end()V": "Lcom/mojang/blaze3d/vertex/Tesselator;m_85914_()V",
+        "renderDirtBackground": "Lnet/minecraft/client/gui/screens/Screen;m_96626_(I)V"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/ImageButtonMixin": {
+        "resourceLocation": "f_94223_:Lnet/minecraft/resources/ResourceLocation;"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/MinecraftMixin": {
+        "reloadResourcePacks(Z)Ljava/util/concurrent/CompletableFuture;": "Lnet/minecraft/client/Minecraft;m_168019_(Z)Ljava/util/concurrent/CompletableFuture;",
+        "Lnet/minecraft/client/player/LocalPlayer;swing(Lnet/minecraft/world/InteractionHand;)V": "Lnet/minecraft/client/player/LocalPlayer;m_6674_(Lnet/minecraft/world/InteractionHand;)V",
+        "startAttack": "Lnet/minecraft/client/Minecraft;m_202354_()Z",
+        "createTitle": "Lnet/minecraft/client/Minecraft;m_91270_()Ljava/lang/String;",
+        "Lnet/minecraft/client/Minecraft;startUseItem()V": "Lnet/minecraft/client/Minecraft;m_91277_()V",
+        "handleKeybinds": "Lnet/minecraft/client/Minecraft;m_91279_()V",
+        "Lnet/minecraft/server/packs/repository/PackRepository;openAllSelected()Ljava/util/List;": "Lnet/minecraft/server/packs/repository/PackRepository;m_10525_()Ljava/util/List;"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/ItemMixin": {
+        "maxStackSize": "f_41370_:I",
+        "getName": "Lnet/minecraft/world/item/Item;m_7626_(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/network/chat/Component;",
+        "getBarWidth": "Lnet/minecraft/world/item/Item;m_142158_(Lnet/minecraft/world/item/ItemStack;)I",
+        "getUseAnimation": "Lnet/minecraft/world/item/Item;m_6164_(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/UseAnim;",
+        "use": "Lnet/minecraft/world/item/Item;m_7203_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder;",
+        "maxDamage": "f_41371_:I",
+        "isBarVisible": "Lnet/minecraft/world/item/Item;m_142522_(Lnet/minecraft/world/item/ItemStack;)Z",
+        "getBarColor": "Lnet/minecraft/world/item/Item;m_142159_(Lnet/minecraft/world/item/ItemStack;)I",
+        "releaseUsing": "Lnet/minecraft/world/item/Item;m_5551_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;I)V",
+        "isFoil": "Lnet/minecraft/world/item/Item;m_5812_(Lnet/minecraft/world/item/ItemStack;)Z",
+        "finishUsingItem": "Lnet/minecraft/world/item/Item;m_5922_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/ItemStack;",
+        "isFireResistant": "f_41372_:Z",
+        "hurtEnemy": "Lnet/minecraft/world/item/Item;m_7579_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;)Z",
+        "craftingRemainingItem": "f_41378_:Lnet/minecraft/world/item/Item;",
+        "foodProperties": "f_41380_:Lnet/minecraft/world/food/FoodProperties;",
+        "appendHoverText": "Lnet/minecraft/world/item/Item;m_7373_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V",
+        "getUseDuration": "Lnet/minecraft/world/item/Item;m_8105_(Lnet/minecraft/world/item/ItemStack;)I",
+        "rarity": "f_41369_:Lnet/minecraft/world/item/Rarity;"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/AbstractSelectionListMixin": {
+        "Lcom/mojang/blaze3d/vertex/BufferBuilder;begin(Lcom/mojang/blaze3d/vertex/VertexFormat$Mode;Lcom/mojang/blaze3d/vertex/VertexFormat;)V": "Lcom/mojang/blaze3d/vertex/BufferBuilder;m_166779_(Lcom/mojang/blaze3d/vertex/VertexFormat$Mode;Lcom/mojang/blaze3d/vertex/VertexFormat;)V",
+        "Lcom/mojang/blaze3d/vertex/Tesselator;end()V": "Lcom/mojang/blaze3d/vertex/Tesselator;m_85914_()V",
+        "render": "Lnet/minecraft/client/gui/components/AbstractSelectionList;m_6305_(Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/tools/TridentItemMixin": {
+        "defaultModifiers": "f_43379_:Lcom/google/common/collect/Multimap;"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/WorldOpenFlowsMixin": {
+        "Lnet/minecraft/server/WorldLoader$PackConfig;createResourceManager()Lcom/mojang/datafixers/util/Pair;": "Lnet/minecraft/server/WorldLoader$PackConfig;m_214399_()Lcom/mojang/datafixers/util/Pair;",
+        "createLevelFromExistingSettings": "Lnet/minecraft/client/gui/screens/worldselection/WorldOpenFlows;m_233107_(Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/server/ReloadableServerResources;Lnet/minecraft/core/RegistryAccess$Frozen;Lnet/minecraft/world/level/storage/WorldData;)V"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/UtilMixin": {
+        "shutdownExecutors": "Lnet/minecraft/Util;m_137580_()V"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/LootTablesMixin": {
+        "apply*": "Lnet/minecraft/world/level/storage/loot/LootTables;m_5787_(Ljava/util/Map;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/FireworkRocketEntityMixin": {
+        "lifetime": "f_37023_:I"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/inject_resources/WorldLoaderPackConfigMixin": {
+        "createResourceManager": "Lnet/minecraft/server/WorldLoader$PackConfig;m_214399_()Lcom/mojang/datafixers/util/Pair;"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/ReloadableServerResourcesMixin": {
+        "updateRegistryTags(Lnet/minecraft/core/RegistryAccess;)V": "Lnet/minecraft/server/ReloadableServerResources;m_206868_(Lnet/minecraft/core/RegistryAccess;)V"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/MinecraftServerMixin": {
+        "resources": "f_129740_:Lnet/minecraft/server/MinecraftServer$ReloadableResources;",
+        "tickServer": "Lnet/minecraft/server/MinecraftServer;m_5705_(Ljava/util/function/BooleanSupplier;)V"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/LivingEntityMixin": {
+        "eat": "Lnet/minecraft/world/entity/LivingEntity;m_5584_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/TagLoaderMixin": {
+        "load": "Lnet/minecraft/tags/TagLoader;m_144495_(Lnet/minecraft/server/packs/resources/ResourceManager;)Ljava/util/Map;"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/IngredientTagValueMixin": {
+        "getItems": "Lnet/minecraft/world/item/crafting/Ingredient$TagValue;m_6223_()Ljava/util/Collection;",
+        "net/minecraft/world/item/crafting/Ingredient$TagValue": "net/minecraft/world/item/crafting/Ingredient$TagValue"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/WindowMixin": {
+        "setIcon": "Lcom/mojang/blaze3d/platform/Window;m_85395_(Ljava/io/InputStream;Ljava/io/InputStream;)V"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/TagManagerMixin": {
+        "reload": "Lnet/minecraft/tags/TagManager;m_5540_(Lnet/minecraft/server/packs/resources/PreparableReloadListener$PreparationBarrier;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;Lnet/minecraft/util/profiling/ProfilerFiller;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;",
+        "createLoader": "Lnet/minecraft/tags/TagManager;m_203907_(Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/util/concurrent/Executor;Lnet/minecraft/core/RegistryAccess$RegistryEntry;)Ljava/util/concurrent/CompletableFuture;",
+        "Lnet/minecraft/core/RegistryAccess;registries()Ljava/util/stream/Stream;": "Lnet/minecraft/core/RegistryAccess;m_206193_()Ljava/util/stream/Stream;",
+        "Lnet/minecraft/tags/TagLoader;<init>(Ljava/util/function/Function;Ljava/lang/String;)V": "Lnet/minecraft/tags/TagLoader;<init>(Ljava/util/function/Function;Ljava/lang/String;)V"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/BlockBehaviourMixin": {
+        "explosionResistance": "f_60444_:F",
+        "material": "f_60442_:Lnet/minecraft/world/level/material/Material;",
+        "isRandomlyTicking": "f_60445_:Z",
+        "speedFactor": "f_60448_:F",
+        "hasCollision": "f_60443_:Z",
+        "soundType": "f_60446_:Lnet/minecraft/world/level/block/SoundType;",
+        "friction": "f_60447_:F",
+        "jumpFactor": "f_60449_:F"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/PlayerListMixin": {
+        "respawn": "Lnet/minecraft/server/players/PlayerList;m_11236_(Lnet/minecraft/server/level/ServerPlayer;Z)Lnet/minecraft/server/level/ServerPlayer;"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/tools/DiggerItemMixin": {
+        "defaultModifiers": "f_40982_:Lcom/google/common/collect/Multimap;"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/tools/ArmorItemMixin": {
+        "defaultModifiers": "f_40383_:Lcom/google/common/collect/Multimap;"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/KeyboardHandlerMixin": {
+        "handleDebugKeys": "Lnet/minecraft/client/KeyboardHandler;m_90932_(I)Z",
+        "Lnet/minecraft/client/Minecraft;reloadResourcePacks()Ljava/util/concurrent/CompletableFuture;": "Lnet/minecraft/client/Minecraft;m_91391_()Ljava/util/concurrent/CompletableFuture;"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/tools/SwordItemMixin": {
+        "defaultModifiers": "f_43267_:Lcom/google/common/collect/Multimap;"
+      },
+      "dev/latvian/mods/kubejs/core/mixin/common/BlockStateBaseMixin": {
+        "lightEmission": "f_60594_:I",
+        "material": "f_60597_:Lnet/minecraft/world/level/material/Material;",
+        "destroySpeed": "f_60599_:F",
+        "requiresCorrectToolForDrops": "f_60600_:Z"
+      }
+    }
+  }
+}

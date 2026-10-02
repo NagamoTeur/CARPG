@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "cisco_mod:bjorn_helmet"
+    },
+    "title": {
+      "translate": "advancements.the_crimson_demon.title"
+    },
+    "description": {
+      "translate": "advancements.the_crimson_demon.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_crimson_demon": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "cisco_mod:fitforaking"
+}

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Classes — Wiki CARPG</title>
+<meta name="description" content="Les 13 classes (petits bonus de métier)">
+<link rel="stylesheet" href="../css/app.css"><link rel="stylesheet" href="../css/wiki.css">
+</head><body>
+<header class="top"><a class="brand" href="../index.html">⚔ CARPG</a>
+<button id="navbtn" class="sm" aria-label="Menu">☰ Menu</button>
+<input id="q" type="search" placeholder="Rechercher dans le wiki…" autocomplete="off"><div id="results" class="hidden"></div>
+<span class="spacer"></span><a href="../pob/index.html"><button class="pri">Ouvrir le planificateur de build</button></a></header>
+<div class="wikiwrap"><nav id="wnav"><details class="navsec" ><summary>Démarrer</summary><a href="../wiki/index.html" class="">Accueil</a><a href="../wiki/premiers-pas.html" class="">Premiers pas</a><a href="../wiki/monde.html" class="">Le monde &amp; le danger</a><a href="../wiki/campagne.html" class="">La campagne</a><a href="../wiki/survie.html" class="">Mort, sauvegarde &amp; sécurité</a></details><details class="navsec" open><summary>Personnage</summary><a href="../wiki/origines.html" class="">Origines</a><a href="../wiki/classes.html" class="on">Classes</a><a href="../wiki/benedictions.html" class="">Bénédictions divines</a><a href="../wiki/talents.html" class="">Arbre de talents</a><a href="../wiki/combat.html" class="">Combat &amp; statistiques</a></details><details class="navsec" ><summary>Équipement</summary><a href="../wiki/equipement.html" class="">Rareté, affixes &amp; sockets</a><a href="../wiki/gemmes.html" class="">Gemmes</a><a href="../wiki/affixes.html" class="">Catalogue des affixes</a><a href="../wiki/atelier.html" class="">Ateliers &amp; enchantement</a><a href="../wiki/objets-campagne.html" class="">Équipement de campagne</a><a href="../wiki/accessoires.html" class="">Accessoires &amp; reliques</a></details><details class="navsec" ><summary>Magie</summary><a href="../wiki/magie.html" class="">Comprendre la magie</a><a href="../wiki/sorts.html" class="">Catalogue des sorts (Iron's)</a><a href="../wiki/ars.html" class="">Glyphes d'Ars Nouveau</a></details><details class="navsec" ><summary>Boss</summary><a href="../wiki/boss.html" class="">Guide des boss</a></details><details class="navsec" ><summary>Builds</summary><a href="../wiki/builds/index.html" class="">Tous les builds</a><a href="../wiki/builds/mage-ender.html" class="">Mage sombre (Ender)</a><a href="../wiki/builds/justicier.html" class="">Justicier sacré</a><a href="../wiki/builds/mage-feu.html" class="">Chevalier-mage du Phénix</a><a href="../wiki/builds/mage-foudre.html" class="">Mage de la tempête</a><a href="../wiki/builds/necro.html" class="">Chaman nécromant</a><a href="../wiki/builds/archer.html" class="">Tireur d'élite</a><a href="../wiki/builds/berserker.html" class="">Berserker du Nord</a><a href="../wiki/builds/chevalier.html" class="">Chevalier gardien</a><a href="../wiki/builds/assassin.html" class="">Lame fantôme</a><a href="../wiki/builds/paladin-feu.html" class="">Templier du Phénix</a><a href="../wiki/builds/druide.html" class="">Druide du marais</a><a href="../wiki/builds/chasseur-tresors.html" class="">Chasseur de trésors</a></details><details class="navsec" ><summary>Vie quotidienne</summary><a href="../wiki/vie.html" class="">Cuisine, ferme, colonie &amp; stockage</a></details><details class="navsec" ><summary>Référence</summary><a href="../wiki/outil.html" class="">Utiliser le planificateur</a><a href="../wiki/quetes.html" class="">Le livre de quêtes</a><a href="../wiki/mods.html" class="">Liste des mods</a><a href="../wiki/glossaire.html" class="">Glossaire</a><a href="../wiki/faq.html" class="">FAQ</a></details></nav>
+<main class="wiki"><h1>Classes</h1><p>La <strong>classe</strong> est un choix plus léger que l'origine : elle donne <strong>deux petits bonus</strong> liés à un métier. Elle ne change pas radicalement ton build, mais c'est gratuit — autant prendre celle qui colle à ton style.</p>
+<table>
+<thead>
+<tr>
+<th>Si tu fais…</th>
+<th>Prends</th>
+<th>Bonus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Du combat au corps à corps</td>
+<td><strong>Warrior</strong></td>
+<td>+1 dégât d'attaque, moins ralenti avec un bouclier</td>
+</tr>
+<tr>
+<td>Du tir à l'arc</td>
+<td><strong>Archer</strong></td>
+<td>Projectiles plus précis, moins ralenti en bandant l'arc</td>
+</tr>
+<tr>
+<td>De la furtivité</td>
+<td><strong>Rogue</strong></td>
+<td>Nom invisible à travers les murs, <strong>Furtivité</strong> après 10 s accroupi (moins de bruit, dégâts dans le dos)</td>
+</tr>
+<tr>
+<td>De la magie / potions</td>
+<td><strong>Cleric</strong></td>
+<td>Potions affinées (meilleurs effets), enchantements de plus haut niveau</td>
+</tr>
+<tr>
+<td>De la forge</td>
+<td><strong>Blacksmith</strong></td>
+<td>Équipement fabriqué avec de petits bonus, réparations moins chères</td>
+</tr>
+<tr>
+<td>De la cuisine</td>
+<td><strong>Cook</strong></td>
+<td>Nourriture plus rassasiante, plus d'XP au fumoir</td>
+</tr>
+<tr>
+<td>De la ferme</td>
+<td><strong>Farmer</strong></td>
+<td>Chance de récolte doublée, poudre d'os ×2</td>
+</tr>
+<tr>
+<td>De l'élevage</td>
+<td><strong>Rancher</strong></td>
+<td>Chance de jumeaux, plus de butin sur les animaux</td>
+</tr>
+<tr>
+<td>Du minage</td>
+<td><strong>Miner</strong></td>
+<td>Pierre minée plus vite, miner ne fatigue pas</td>
+</tr>
+<tr>
+<td>Du bois</td>
+<td><strong>Lumberjack</strong></td>
+<td>Abattage d'arbre entier, +2 planches par bûche</td>
+</tr>
+<tr>
+<td>Des animaux apprivoisés</td>
+<td><strong>Beastmaster</strong></td>
+<td>Animaux apprivoisés renforcés, reçoivent tes potions</td>
+</tr>
+<tr>
+<td>De l'exploration</td>
+<td><strong>Explorer</strong></td>
+<td>Boussole, horloge et 9 cartes ; courir ne fatigue pas</td>
+</tr>
+<tr>
+<td>Rien de particulier</td>
+<td><strong>Nitwit</strong></td>
+<td>Aucun bonus</td>
+</tr>
+</tbody>
+</table>
+<p>(La classe <em>Merchant</em> est désactivée dans ce pack.)</p>
+<div class="admonition note">
+<p class="admonition-title">À ne pas confondre</p>
+<p>Les <strong>classes d'Origins</strong> ci-dessus sont différentes des <strong>classes de l'arbre de talents</strong> (Alchimiste, Forgeron, Cuisinier, Enchanteur, Chasseur, Mineur). Voir <a href="talents.html">Arbre de talents</a>.</p>
+</div>
+<h2 id="details">Détails</h2>
+<input class="filter" data-target="olist" placeholder="Filtrer…">
+<div id="olist">
+<div class="card" data-q="archer un tir, un mort."><h3 id="origins-classes-archer">Archer</h3><p class="small">Un tir, un mort.</p><div class="power"><b>Accuracy</b><div class="small">Tous tes projectiles sont plus précis.</div></div><div class="power"><b>Agility</b><div class="small">Tu te déplaces plus vite que les autres en bandant ton arc.</div></div></div>
+<div class="card" data-q="beastmaster les maîtres des bêtes sont des solitaires qui préfèrent la compagnie des animaux."><h3 id="origins-classes-beastmaster">Beastmaster</h3><p class="small">Les maîtres des bêtes sont des solitaires qui préfèrent la compagnie des animaux.</p><div class="power"><b>Fauna Friends</b><div class="small">Les animaux que tu apprivoises reçoivent un bonus permanent de vie et de force.</div></div><div class="power"><b>Effective Empathy</b><div class="small">Tes animaux apprivoisés proches reçoivent aussi les effets des potions que tu bois.</div></div></div>
+<div class="card" data-q="blacksmith amis précieux de tous, les forgerons fabriquent de meilleurs outils, armes et armures."><h3 id="origins-classes-blacksmith">Blacksmith</h3><p class="small">Amis précieux de tous, les forgerons fabriquent de meilleurs outils, armes et armures.</p><div class="power"><b>High-Quality Equipment</b><div class="small">L'équipement que tu fabriques donne de petits bonus.</div></div><div class="power"><b>Efficient Repairs</b><div class="small">Réparer à l'enclume coûte moins de matériaux. Réparer en combinant deux objets restaure plus de durabilité.</div></div></div>
+<div class="card" data-q="cleric ils ont appris à canaliser la magie présente dans le monde et à s'en servir à leur avantage."><h3 id="origins-classes-cleric">Cleric</h3><p class="small">Ils ont appris à canaliser la magie présente dans le monde et à s'en servir à leur avantage.</p><div class="power"><b>Refined Potions</b><div class="small">En dernière étape d'une potion, tu peux l'affiner avec de l'eau d'un chaudron : les effets instantanés sont renforcés et les effets durables durent plus longtemps.</div></div><div class="power"><b>Enchantment Mastery</b><div class="small">Tu atteins des niveaux d'enchantement plus élevés à la table d'enchantement.</div></div></div>
+<div class="card" data-q="cook personne ne prépare mieux ta nourriture qu'un cuisinier."><h3 id="origins-classes-cook">Cook</h3><p class="small">Personne ne prépare mieux ta nourriture qu'un Cuisinier.</p><div class="power"><b>Good Meals</b><div class="small">La nourriture que tu fabriques est plus rassasiante.</div></div><div class="power"><b>Smoking</b><div class="small">Tu reçois plus d'expérience en cuisant de la nourriture dans un fumoir.</div></div></div>
+<div class="card" data-q="explorer les explorateurs se repèrent facilement dans les terrains les plus difficiles et découvrent les lieux cachés."><h3 id="origins-classes-explorer">Explorer</h3><p class="small">Les explorateurs se repèrent facilement dans les terrains les plus difficiles et découvrent les lieux cachés.</p><div class="power"><b>Explorer Kit</b><div class="small">Tu commences la partie avec une boussole, une horloge et neuf cartes vides.</div></div><div class="power"><b>Fit</b><div class="small">Courir ne te fatigue pas.</div></div></div>
+<div class="card" data-q="farmer les fermiers nourrissent tout le monde depuis aussi longtemps qu'on s'en souvienne."><h3 id="origins-classes-farmer">Farmer</h3><p class="small">Les fermiers nourrissent tout le monde depuis aussi longtemps qu'on s'en souvienne.</p><div class="power"><b>Bountiful Harvest</b><div class="small">À la récolte, tu as une chance d'obtenir le double de rendement.</div></div><div class="power"><b>Fertilizing Techniques</b><div class="small">La poudre d'os est deux fois plus efficace entre tes mains expertes sur les cultures et les plantes.</div></div></div>
+<div class="card" data-q="lumberjack les arbres feraient bien de se méfier quand un bûcheron est dans les parages."><h3 id="origins-classes-lumberjack">Lumberjack</h3><p class="small">Les arbres feraient bien de se méfier quand un Bûcheron est dans les parages.</p><div class="power"><b>Timber!</b><div class="small">Tu abats un arbre entier d'un coup, sauf si tu t'accroupis.</div></div><div class="power"><b>Woodcutting</b><div class="small">Tu obtiens 2 planches de plus par bûche lors du craft.</div></div></div>
+<div class="card" data-q="miner les mineurs sont les plus doués pour déterrer les trésors du sol."><h3 id="origins-classes-miner">Miner</h3><p class="small">Les mineurs sont les plus doués pour déterrer les trésors du sol.</p><div class="power"><b>Mining Expert</b><div class="small">Tu mines la pierre plus vite que les autres.</div></div><div class="power"><b>Experienced Excavator</b><div class="small">Casser des blocs ne te fatigue pas.</div></div></div>
+<div class="card" data-q="nitwit les benêts ne sont vraiment bons à rien."><h3 id="origins-classes-nitwit">Nitwit</h3><p class="small">Les benêts ne sont vraiment bons à rien.</p></div>
+<div class="card" data-q="rancher les éleveurs tirent le meilleur des animaux et collectent de nombreuses ressources utiles."><h3 id="origins-classes-rancher">Rancher</h3><p class="small">Les éleveurs tirent le meilleur des animaux et collectent de nombreuses ressources utiles.</p><div class="power"><b>Twin Births</b><div class="small">Les animaux que tu fais se reproduire ont une chance de donner deux petits.</div></div><div class="power"><b>Scavenging</b><div class="small">Tu obtiens parfois plus de matériaux en tuant des animaux.</div></div></div>
+<div class="card" data-q="rogue souvent voleurs et brigands, les roublards excellent dans les embuscades et les attaques furtives."><h3 id="origins-classes-rogue">Rogue</h3><p class="small">Souvent voleurs et brigands, les roublards excellent dans les embuscades et les attaques furtives.</p><div class="power"><b>Sneaky</b><div class="small">Ton nom n'est jamais visible à travers les murs, même sans être accroupi.</div></div><div class="power"><b>In the Shadows</b><div class="small">Après 10 secondes accroupi, tu entres en Furtivité.</div></div><div class="power"><b>Stealth</b><div class="small">En furtivité, tu fais moins de bruit et infliges des dégâts supplémentaires en attaquant un ennemi par derrière. Tu quittes la furtivité quand tu arrêtes de t'accroupir.</div></div></div>
+<div class="card" data-q="warrior ces guerriers honorables préfèrent l'épée et le bouclier pour abattre leurs ennemis."><h3 id="origins-classes-warrior">Warrior</h3><p class="small">Ces guerriers honorables préfèrent l'épée et le bouclier pour abattre leurs ennemis.</p><div class="power"><b>Weapon Knowledge</b><div class="small">Capable d'exploiter chaque arme au maximum, tu infliges un peu plus de dégâts.</div></div><div class="power"><b>Shield Wield</b><div class="small">Tu es moins ralenti quand tu te protèges avec un bouclier.</div></div></div>
+</div>
+<footer class="mut small">Wiki généré à partir des fichiers du modpack « Cisco's Adventure RPG Ultimate » (V8E). Les chiffres viennent des fichiers de config et du code des mods ; en cas de doute, ce qui s'affiche en jeu fait foi.</footer></main></div>
+<script>window.ROOT="../";</script><script src="../wiki/search-index.js"></script><script src="../wiki/wiki.js"></script>
+</body></html>

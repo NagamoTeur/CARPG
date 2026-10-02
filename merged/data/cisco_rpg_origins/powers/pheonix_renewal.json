@@ -1,0 +1,19 @@
+{
+    "name": "Pheonix Renewal",
+    "description": "The fiery embrace of the sun rejuvenates your body and spirit .While under the radiance of the sun you regenerate health quickly.",
+    "condition": {
+        "type": "origins:exposed_to_sun"
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:regeneration",
+            "duration": 200,
+            "amplifier": 1,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        }
+    }
+}

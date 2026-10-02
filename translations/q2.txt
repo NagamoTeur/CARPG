@@ -1,0 +1,170 @@
+170|Peine de gobelins
+171|Des gobelins hostiles deviennent une nuisance : occupe-t'en.
+172|Terrasser des vampires
+173|Vaincre les vampires
+174|Des démons suceurs de sang rôdent sur ces terres et s'attaquent aux hommes comme aux bêtes... Renvoie-les en enfer.
+175|Étendre l'expérience
+176|Sert à stocker et récupérer des niveaux d'expérience.
+177|Tenue d'aventurier
+178|Bien équipé
+179|Fabrique l'armure d'aventurier et poursuis ton voyage.
+180|Fabriquer la pioche en brightsteel
+181|Miner au brightsteel
+182|Cette pioche très efficace n'est dépassée que par la variante en darksteel.
+183|Creuser au darksteel
+184|La pioche en darksteel utilise une magie ancienne pour renforcer les coups de son porteur à une efficacité inégalée.
+185|Tuer un Betrayed Guzzler
+186|Bannir les Trahis
+187|Des démons nés des sept péchés capitaux ont trouvé le chemin de notre monde. ⏎  ⏎ Ils représentent un danger considérable et doivent être éliminés rapidement. ⏎  ⏎ La rumeur dit qu'ils n'apparaissent que la nuit.
+188|Initié
+189|Pour commencer l'étude de la magie ambiante, il te faudra fabriquer un livre de sorts. ⏎  ⏎ Des livres plus puissants se trouvent dans des coffres de donjons, s'obtiennent en tuant des ennemis ou se fabriquent avec des matériaux très rares.
+190|Obtenir de l'encre
+191|Trouver de l'encre
+192|Avant de pouvoir inscrire un sort dans ton livre, il te faut de l'encre. ⏎  ⏎ On en trouve dans des coffres, à différentes raretés, mais c'est plus facile dans les tours de mages en battant les sorciers qui s'y trouvent.
+193|Inscrire des sorts
+194|Avec l'encre récoltée, il te faut aussi une table pour inscrire. ⏎  ⏎ La table d'inscription se fabrique facilement ou s'« emprunte » dans une structure de mages.
+195|Utiliser des gemmes pour augmenter la puissance des sorts
+196|Gemmes extravagantes
+197|Les gemmes qui augmentent la puissance des sorts, une fois serties dans les bonnes pièces d'équipement, peuvent grandement augmenter tes dégâts magiques. ⏎  ⏎ Tu ne peux sertir qu'une seule gemme de l'archimage dans ton plastron : il est donc recommandé d'utiliser l'une des plus hautes qualités disponibles. ⏎  ⏎ Plusieurs joyaux de Source peuvent en revanche être sertis dans leurs pièces respectives, ce qui peut donner des augmentations de dégâts cumulées.
+198|Sertir des gemmes
+199|Puissance des gemmes
+200|Sertir des gemmes dans ton équipement augmente la puissance de l'école de magie correspondante. ⏎  ⏎ Le principal moyen d'en trouver est d'explorer les donjons du monde.
+201|Enclume arcanique
+202|L'enclume arcanique a plusieurs usages, le principal étant de combiner deux parchemins de même rareté en versions de rang supérieur.
+203|Le livre de sorts ultime
+204|Le Codex
+205|L'ancien codex est le plus puissant des livres de sorts et se fabrique avec des matériaux très rares.
+206|Premier sort
+207|Firebolt
+208|Des sorts se trouvent dans le monde, dans les donjons et les tours de mages, sous forme de parchemins. ⏎  ⏎ Ces parchemins sont à usage unique, mais peuvent et doivent être inscrits dans un livre de sorts pour être utilisés à répétition.
+209|Clique sur la coche.
+210|Antique et polyvalent
+211|La variante en darksteel du multi-outil en brightsteel, d'une vitesse et d'une efficacité inégalées.
+212|Visiter un monument océanique
+213|Temple des anciens
+214|Les monuments océaniques se trouvent dans les biomes océaniques.
+215|Terrasser l'Elder Guardian
+216|Gardien au regard fixe
+217|Gardien ⏎  ⏎ L'Elder Guardian est une puissante créature qui garde le monument océanique. ⏎  ⏎ Tu peux obtenir l'œil de gardien nécessaire pour ouvrir le portail de l'End en le tuant.
+218|Armure en Darksteel
+219|Chevalier plus lourd
+220|L'armure en Darksteel offre une protection globale supérieure avec une défense accrue contre les coups particulièrement meurtriers. ⏎  ⏎ Elle donne aussi un bonus de résistance permanent.
+221|Terrasser des Huntsmen
+222|Chasser les chasseurs
+223|Les Huntsmen sont une menace redoutable pour les villageois à cause de leur létalité à distance. ⏎  ⏎ Élimine-en autant que possible.
+224|Terrasser un Huntsman
+225|Terrasser des Silverqueens
+226|Profanées et détrônées
+227|Les reines des poissons d'argent ont acquis la capacité de prendre le contrôle de cadavres profanés, ce qui les rend extrêmement dangereuses.
+228|Deus Interfectorem
+229|Terrasser le Leviathan
+230|Terreur abyssale
+231|Gardien ⏎  ⏎ La cité engloutie se localise avec l'œil de l'abysse et le Leviathan s'éveille quand un sacrifice abyssal est déposé sur son autel.
+232|Terrasser la Netherite Monstrosity
+233|Neutraliser la netherite
+234|Gardien ⏎  ⏎ Utilise l'œil de monstruosité pour localiser son repaire dans le Nether.
+235|Terrasser le fantôme du capitaine Cornelia
+236|Éliminer le capitaine
+237|Palier 2 ⏎  ⏎ Peut être invoqué près de l'eau avec la corne de coquillage, dans le biome Ice Maze.
+238|Terrasser le capitaine Cornelia
+239|Terrasser le Void Worm
+240|Démon né du Vide
+241|Gardien ⏎  ⏎ Invoqué en jetant un ver mystérieux dans le vide, dans l'End extérieur.
+242|Terrasser le Harbinger
+243|Le Harbinger
+244|Gardien ⏎  ⏎ Utilise l'œil de la mécanique pour localiser sa structure, puis éveille-le avec une étoile du Nether.
+245|Terrasser le Warden
+246|Malheurs du Warden
+247|Gardien ⏎  ⏎ Se trouve dans les Abysses (Deep Dark).
+248|Terrasser le Warped Mosco
+249|Moustique musclé
+250|Palier 3 ⏎  ⏎ Cette version amplifiée du moustique cramoisi peut être créée quand un moustique cramoisi suce le sang d'un mungus couvert de champignon biscornu, dans l'Overworld.
+251|Terrasser l'Arachnarch
+252|Écraser les araignées
+253|Palier 2 ⏎  ⏎ Se trouve dans un donjon de la dimension Everdawn.
+254|Terrasser le Starlit Crusher
+255|Frapper la lumière des étoiles
+256|Palier 2 ⏎  ⏎ Se trouve dans le donjon de la nature de la dimension Everbright.
+257|Terrasser Rosalyne
+258|Lame du crépuscule
+259|Palier 1 ⏎  ⏎ Vaincs Rosalyne, la lame du crépuscule. Invoquée avec la clé du crépuscule.
+260|Terrasser Dame Fortuna
+261|Dame Chance
+262|Palier 1 ⏎  ⏎ Vaincs la Dame de la chance. Invoquée avec la mise du diable (devil's ante).
+263|Terrasser Swampjaw
+264|Fracasser Swampjaw
+265|Palier 1 ⏎  ⏎ Vaincs l'ancien Swampjaw. Invoqué avec l'appât fossile.
+266|Vaincre le Bell Ringer
+267|Le Bell Ringer
+268|Palier 1 ⏎  ⏎ Terrasse le mystérieux Bell Ringer. Invoqué avec la cloche hantée.
+269|Terrasser le Bellringer
+270|Terrasser le Dead King
+271|Le Dead King meurt à nouveau
+272|Palier 2 ⏎  ⏎ Le repaire du Dead King se trouve en fabriquant et en suivant la boussole errante (wayward compass).
+273|Terrasser le Night Lich
+274|Malheurs du Night Lich
+275|Palier 3 ⏎  ⏎ Le Night Lich se trouve dans de rares tours des biomes froids. Repère les tours en suivant les étoiles d'âmes.
+276|Terrasser l'Obsidilith
+277|Anéantir l'Obsidilith
+278|Palier 3 ⏎  ⏎ L'Obsidilith se trouve dans de rares structures sur les îles de l'End.
+279|Terrasser le Nether Gauntlet
+280|Neutraliser le Nether Gauntlet
+281|Palier 3 ⏎  ⏎ Le Nether Gauntlet se trouve dans de rares structures du Nether.
+282|Terrasser le Void Blossom
+283|Vaincre la fleur
+284|Palier 2 ⏎  ⏎ Le Void Blossom se trouve dans de rares grottes tout en bas du monde. Les lis du Vide indiquent le chemin.
+285|Terrasser l'Ancient Remnant
+286|Dans les sables
+287|Gardien ⏎  ⏎ Ce roi préhistorique des sables réside dans une structure en forme de pyramide dans le désert. ⏎  ⏎ Son œuf d'invocation et son matériau d'éveil se trouvent aussi à la boutique de Cisco.
+288|Terrasser l'Insatiable
+289|Malheurs de l'Insatiable
+290|Palier 1 ⏎  ⏎ L'Insatiable peut être invoqué en tuant des animaux près de rivières et d'autres grandes étendues d'eau. ⏎  ⏎ Son œuf d'invocation peut aussi être acheté à la boutique de Cisco.
+291|Terrasser le Sorrow Sealed
+292|Tueur de chagrin
+293|Palier 3 ⏎  ⏎ Le Sorrow Sealed se trouve dans la Sorrowspire, quelque part dans le Nether.
+294|Paliers
+295|Guide
+296|Palier 1 : niveau minimum 25. Bonus de niveau aléatoire de 1 à 10. Pas d'augmentation de niveau avec la distance. ⏎  ⏎ Palier 2 : niveau minimum 50. Bonus aléatoire de 1 à 15. Petite augmentation de niveau avec la distance. ⏎  ⏎ Palier 3 : niveau minimum 85. Bonus aléatoire de 1 à 20. Augmentation modérée avec la distance. ⏎  ⏎ Gardiens : toujours infernaux. Commencent à un niveau un peu plus élevé que le palier qu'ils gardent. Doivent être vaincus pour progresser vers le palier suivant.
+297|Terrasser Umvuthi
+298|L'Oiseau du soleil
+299|Palier 2 ⏎  ⏎ Créateur des abavuthana, Umvuthi se trouve dans son repaire, dans le biome de la savane.
+300|Terrasser Frostmaw
+301|La Bête de l'hiver
+302|Palier 2 ⏎  ⏎ Cette bête dangereuse se trouve rarement dans les zones enneigées.
+303|Terrasser le Ferrous Wroughtnaut
+304|Gardien d'acier
+305|Gardien ⏎  ⏎ Le Ferrous Wroughtnaut se trouve dans une structure souterraine.
+306|Terrasser Maledictus
+307|Sombres méfaits
+308|Gardien ⏎  ⏎ Cette entité sombre réside dans la prison gelée, que l'on trouve sous terre ou avec l'œil de la malédiction.
+309|Terrasser le Netherman
+310|Architecte du chaos
+311|Gardien ⏎  ⏎ L'Architecte du chaos s'invoque en remplissant un Grand Calice de Grande Essence, puis en ajoutant de l'Essence radieuse.
+312|Le Voyage du voyageur
+313|Repérer les paysages
+314|Cet outil utile t'aidera à trouver n'importe quel biome.
+315|Visiter la Twilight Forest
+316|Voyager dans le crépuscule
+317|Ce portail se fabrique avec des fleurs et de la terre et t'emmène dans la Twilight Forest.
+318|Visiter la dimension Otherside
+319|Au cœur des ténèbres
+320|On y accède en allumant le portail de la cité ancienne avec le cœur du Warden, après l'avoir nettoyée de tout sculk.
+321|Voyager vers l'Everbright
+322|Entrer dans l'Everbright
+323|Trouve la maison du gardien pour commencer ce voyage.
+324|Voyager vers l'Everdawn
+325|Entrer dans l'Everdawn
+326|Fabriquer les Soul Elytra
+327|Vol alimenté par les âmes
+328|Te propulse périodiquement, ce qui supprime le besoin de feux d'artifice. (Les élytres peuvent être enchantées avec l'enchantement « everlasting » pour les rendre incassables.)
+329|Stockage à distance
+330|Permet d'accéder à distance à un coffre une fois lié.
+331|Plan de secours
+332|T'aidera à voir dans les Abysses.
+333|Terrasser le Naga
+334|Naga neutralisé
+335|Se trouve dans la cour du Naga.
+336|Obtenir la tête du Naga
+337|Terrasser le Lich du Twilight
+338|Lacérer le Lich
+339|Se trouve dans la tour du Lich.

@@ -1,0 +1,100 @@
+110|Tu obtiens un bouclier de protection pendant 10 secondes. [Principale]
+111|Les morts-vivants t'affaiblissent.
+112|Le cousin plus grand et plus fort du félin.
+113|Comme tous les félins, tu retombes toujours sur tes pattes.
+114|Les creepers font demi-tour et s'enfuient à la vue de ton apparence féline.
+115|Chasseur silencieux, tes pas ne sont pas détectables.
+116|Dans les endroits sombres, tu obtiens la Vision nocturne.
+117|Chasseur terrestre, tu te fatigues plus vite dans l'eau.
+118|Ramène les morts à la vie dans une attaque dévastatrice.
+119|Le légendaire capuchon des chamans orcs, grande source de pouvoirs et de protections.
+120|Tu es immunisé au plus puissant des poisons : tu es immunisé aux effets de tes propres attaques.
+121|Tu as appris à utiliser le pouvoir du Dieu Orc de la Malédiction. Mais tu es moins fort qu'un orc : ton pouvoir a un délai de recharge bien plus long !
+122|En temps de guerre, les orcs peuvent compter sur leur fidèle allié, le bâton qui appelle les cieux.
+123|Maître indompté du ciel, ancêtre angélique des Aviens.
+124|Avec tes ailes souples, tu peux voler en battant des ailes et en planant.
+125|Ta maîtrise du vol t'évite de t'écraser au sol.
+126|Être né avec des ailes t'empêche de nager.
+127|Tu es béni par les vents du paradis : tu es immunisé à la lenteur.
+128|Quelqu'un à qui le roi ou la reine d'Angleterre a accordé l'honneur et le titre de Sir. On l'a adoubé chevalier.
+129|L'une des épées les plus célèbres de la littérature islandaise ; Skofnung appartint d'abord au légendaire roi danois Hrolf Kraki.
+130|Tenir Skofnung te donne +1,5 de dégâts en attaquant.
+131|Bonus de dégâts d'attaque.
+132|Ta vitesse de déplacement est réduite.
+133|Tu ne peux pas utiliser d'arc ni d'arbalète.
+134|Un livre d'instructions pour réparer ton épée.
+135|Te soigne et augmente ta vitesse d'attaque pendant 30 secondes.
+136|Chevalier sacré, croisé au nom du bien et de l'ordre, et lanceur de sorts divin.
+137|Le pouvoir du Seigneur enflamme les morts-vivants à ton simple contact !
+138|Vitesse de marche fortement réduite dans le Nether.
+139|Tuer te donne de l'eau bénite (tu te soignes un peu).
+140|Appétit plus grand : fatigue supplémentaire.
+141|Durendal est l'épée de Roland, légendaire paladin, qui te l'a transmise pour que tu manies sa puissante lame.
+142|Tenir Durendal te donne +1,5 de dégâts en attaquant.
+143|Te soigne et te donne résistance et régénération pendant 10 secondes (fonctionne uniquement de jour).
+144|Aussi appelés floramanciens, les plantaemanciens utilisent le pouvoir de la nature, en particulier des plantes.
+145|Lance une liane qui empoisonne la cible.
+146|Clic droit en étant accroupi sur des plantes, main vide, pour les faire pousser.
+147|Te soigne quand tu es dans l'eau.
+148|Tu subis plus de dégâts du feu et de la lave.
+149|Faiblesse quand la luminosité est faible.
+150|Vitesse augmentée pendant la journée.
+151|Les elfes sont des habitants intelligents et longévifs de la forêt. Leur habileté à l'arc est précieuse à distance, mais leur fragilité devient un problème au corps à corps.
+152|Tire un trait de flamme qui enflamme tes ennemis.
+153|Des siècles passés dans la forêt donnent aux elfes une bien meilleure perception dans le noir.
+154|La perception aiguisée des elfes leur permet de suivre un ennemi un moment après l'avoir touché, même hors de vue.
+155|Les elfes sont nettement plus grands que l'humain moyen, mais tout aussi minces.
+156|Les elfes vivent de la forêt et de ses fruits : leur système digestif ne supporte pas la viande.
+157|Vu leur finesse, la plus lourde armure qu'un elfe peut porter est la cotte de mailles.
+158|Les Hauts-Elfes, grands, sautent aussi très haut.
+159|Enfant d'un dieu primordial des ténèbres et d'un humain. Un pouvoir sombre sommeille en toi, qui ne peut être pleinement utilisé.
+160|Ton héritage divin te donne de la puissance : tu infliges 40 % de dégâts en plus.
+161|Ta force naturelle te rend orgueilleux… imprudent. Tu subis 20 % de dégâts en plus.
+162|Les régions chargées d'énergie ombrale te renforcent : tu subis 15 % de dégâts en moins dans l'End.
+163|L'obscurité ne te cache rien : tu y vois librement.
+164|Ton estomac réclame une nourriture divine : tu ne peux manger que des pommes dorées, des carottes et certains autres aliments divins.
+165|Ton corps divin est robuste : il te donne plus de vie de base.
+166|Enfant d'un dieu primordial de la lumière et d'un humain. La lumière sacrée coule en toi sans pouvoir rayonner pleinement.
+167|La lumière des cieux te renforce : tu subis 10 % de dégâts en moins quand tu es exposé au ciel.
+168|Porteur de lumière, tu es immunisé aux effets de ténèbres et de Wither.
+169|Tu es né dans la nation du vent, réputée pour ses excellents archers. Ta main est sûre et ton tir juste.
+170|Tu t'entraînes à l'arc depuis toujours : tu infliges 30 % de dégâts de projectile en plus.
+171|Les plantes de qualité poussent difficilement dans les déserts arides de Venthari : ton peuple s'est adapté à manger surtout de la viande.
+172|Tu te sens chez toi dans les climats chauds mais gêné dans les climats froids : vitesse augmentée dans les biomes chauds, lenteur dans les biomes froids.
+173|Les Venthari ne sont pas réputés pour leur robustesse : tu as 30 % de PV en moins.
+174|Tu es un mage noir d'Anthrax, la terre voilée des ténèbres. La magie noire plie à ta volonté, tandis que tes ennemis se brisent.
+175|Ton corps vibre de la magie noire d'Anthrax : tu gagnes +350 % de puissance des sorts d'Ender.
+176|Souillé par la magie noire d'Anthrax, sa sœur Lumera te voit comme une saleté et te rejette : tu subis −350 % de puissance des sorts sacrés.
+177|Tu as engagé ton âme à Anthrax qui t'accorde une part de son pouvoir : tu gagnes du mana supplémentaire et lances tes sorts 2 fois plus vite.
+178|Tu te dévoues à Lumera qui t'accorde une part de son pouvoir : tu gagnes du mana supplémentaire et lances tes sorts 2 fois plus vite.
+179|Tu as poussé le Projectile magique à ses limites : tu le lances à son niveau maximum à volonté. (touche par défaut : G)
+180|Ne fais plus qu'un avec les ombres et esquive les attaques entrantes. (touche par défaut : H)
+181|Anthrax exige du sang en échange de sa puissance : tu as 40 % de PV en moins.
+182|Lumera est ton foyer, la magie sacrée ton arme et les forces des ténèbres tes ennemies jurées.
+183|Les Justiciers sont bénis de la puissance sacrée de la déesse : +350 % de puissance des sorts sacrés.
+184|Anthrax rejette les fidèles de sa sœur Lumera et te ferme son domaine : tu subis −350 % de puissance des sorts d'Ender.
+185|Tu te dévoues à Lumera qui t'accorde une part de son pouvoir : tu gagnes du mana supplémentaire et lances tes sorts 2 fois plus vite.
+186|Tu as poussé le Trait guidant à ses limites : tu le lances à son niveau maximum à volonté. (touche par défaut : G)
+187|Bénis-toi et tes alliés de lumière sacrée pour les fortifier contre les dégâts. (touche par défaut : H)
+188|Le poids de ton serment te pèse énormément : tu es 30 % plus lent.
+189|Né dans les tribus des glaces de la nation de Frijani, tu n'as connu que les hivers rudes et les combats féroces, ce qui t'a rendu fort.
+190|Tu combats avec la fureur des dieux : tu subis 30 % de dégâts en plus mais gagnes 20 % de vol de vie.
+191|Tu gagnes un vol de vie supplémentaire.
+192|Tes lames glacées te donnent 20 % de chance de critique et 50 % de dégâts critiques, et ralentissent les ennemis touchés.
+193|Tu gagnes des dégâts critiques supplémentaires.
+194|Tu infliges de la lenteur aux ennemis.
+195|Ta rage te rend prévisible et tu manques souvent : tu infliges 20 % de dégâts en moins.
+196|Ton appétit est aussi insatiable que celui du dieu de la nourriture Andhrimnir : tu te fatigues bien plus vite.
+197|Ta concentration totale sur l'attaque t'empêche d'utiliser un bouclier au combat.
+198|Né du royaume du feu de Pyrios, tu as rejoint l'illustre ordre des Chevaliers Phénix. Feu et lame sont ta doctrine.
+199|Tes armes sont imprégnées de puissante magie du feu : tu infliges des dégâts de feu bonus et peux enflammer les ennemis.
+200|Le dieu de la flamme Pyr se réjouit que tu incinères des ennemis en son nom : les cibles enflammées subissent 60 % de dégâts en plus de ta part.
+201|Tu tires ta puissance de l'exposition au soleil : quand tu n'es pas exposé, tu t'affaiblis et tu ralentis.
+202|L'étreinte brûlante du soleil régénère ton corps et ton esprit : sous le soleil, tu régénères rapidement ta vie.
+203|Le froid extrême perturbe la magie du feu qui circule en toi et te fragilise : tes PV sont réduits de 40 % dans les biomes très froids.
+204|Les membres de l'ordre du Phénix maîtrisent la magie du feu mais méprisent la magie de glace : tu gagnes +200 % de puissance du feu mais subis un malus égal en glace.
+205|Élance-toi dans un brasier furieux qui incinère tout sur ton passage. (touche par défaut : G)
+206|Amis précieux de tous, les forgerons fabriquent de meilleurs outils, armes et armures.
+207|L'équipement que tu fabriques donne de petits bonus.
+208|Réparer à l'enclume coûte moins de matériaux. Réparer en combinant deux objets restaure plus de durabilité.
+209|Ils ont appris à canaliser la magie présente dans le monde et à s'en servir à leur avantage.

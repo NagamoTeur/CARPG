@@ -1,0 +1,12 @@
+{
+    "name": "Lumera's Might",
+    "description": "Justicars are blessed with the goddess' holy might granting them a 350% boost to holy spell power.",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "irons_spellbooks:holy_spell_power",
+        "operation": "addition",
+        "value": 3.5,
+        "name": "Rastraiya's Might"
+    },
+    "update_health": true
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "blue_skies:keys",
+  "criteria": {
+    "have_sapling": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:cherry_sapling"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.blue_skies.regrowth.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "blue_skies:cherry_sapling"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.blue_skies.regrowth"
+    }
+  },
+  "requirements": [
+    [
+      "have_sapling"
+    ]
+  ]
+}

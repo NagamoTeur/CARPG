@@ -1,0 +1,12 @@
+{
+    "name": "Ender Affinity",
+    "description": "Your body courses with anthrax's dark magic. You gain a 350 % boost to ender spell power.",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "irons_spellbooks:ender_spell_power",
+        "operation": "addition",
+        "value": 3.5,
+        "name": "Ender Affinity"
+    },
+    "update_health": true
+}

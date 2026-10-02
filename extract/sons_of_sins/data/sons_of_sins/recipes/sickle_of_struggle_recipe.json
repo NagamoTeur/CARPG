@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "  a",
+    "  b"
+  ],
+  "key": {
+    "a": {
+      "item": "sons_of_sins:soul_steel"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "sons_of_sins:sickle_of_struggle",
+    "count": 1
+  }
+}

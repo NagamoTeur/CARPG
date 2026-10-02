@@ -1,0 +1,12 @@
+{
+  "type": "blue_skies:catylist",
+  "catylists": [
+    "minecraft:potion"
+  ],
+  "inputs": [
+    "minecraft:netherite_ingot"
+  ],
+  "results": [
+    "minecraft:gold_ingot"
+  ]
+}

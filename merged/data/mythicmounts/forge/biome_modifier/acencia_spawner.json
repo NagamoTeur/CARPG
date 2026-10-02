@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "minecraft:grove",
+    "minecraft:snowy_taiga"
+  ],
+  "spawners": {
+    "type": "mythicmounts:acencia",
+    "weight": 15,
+    "minCount": 2,
+    "maxCount": 3
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Major Boon of Lethality",
+    "description": "Ares lends you a portion of his might. You gain an addition 20 percent crit chance and 40 percent crit damage.",
+    "hidden": true,
+    "condition": {
+        "type": "origins:advancement",
+        "advancement": "minecraft:end/kill_dragon"
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "apotheosis:crit_damage",
+        "operation": "addition",
+        "value": 0.4,
+        "name": "Major Boon of Lethality"
+    },
+    "tick_rate": 20,
+    "update_health": true
+}

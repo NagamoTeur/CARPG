@@ -1,0 +1,25 @@
+{
+    "name": "Minor Boon of Cauldron",
+    "description": "The Baba Yaga brew's afflict your enemies. On hit weaken and wither your foes.",
+    "type": "origins:target_action_on_hit",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:weakness",
+            "duration": 180,
+            "amplifier": 3,
+            "show_particles": true,
+            "show_icon": true
+        },
+        "effects": [
+            {
+                "effect": "minecraft:wither",
+                "duration": 180,
+                "amplifier": 3,
+                "show_particles": true,
+                "show_icon": true
+            }
+        ]
+    },
+    "cooldown": 20
+}

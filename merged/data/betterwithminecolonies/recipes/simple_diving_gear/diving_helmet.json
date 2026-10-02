@@ -1,0 +1,32 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+	{
+	  "conditions": [
+		{
+		  "modid": "simpledivegear",
+		  "type": "forge:mod_loaded"
+		}
+	  ],
+	  "recipe": {
+		"type": "minecraft:crafting_shaped",
+		"pattern": [
+		  "xxx",
+		  "x#x",
+		  "xxx"
+		],
+		"key": {
+		  "x": {
+			"item": "minecraft:obsidian"
+		  },
+		  "#": {
+			"item": "minecraft:glass_pane"
+		  }
+		},
+		"result": {
+		  "item": "simpledivegear:divehelmet"
+		}
+	  }
+	}
+  ]
+}

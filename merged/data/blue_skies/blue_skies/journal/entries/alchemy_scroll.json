@@ -1,0 +1,16 @@
+{
+  "icon": {
+    "type": "item",
+    "icon": {
+      "item": "blue_skies:alchemy_scroll"
+    }
+  },
+  "lores": [
+    {
+      "text": "blue_skies.everdawn.alchemy_scroll.lore"
+    }
+  ],
+  "requirement": "blue_skies:defeat_alchemist",
+  "section": "blue_skies:everdawn",
+  "title": "blue_skies.everdawn.alchemy_scroll.title"
+}

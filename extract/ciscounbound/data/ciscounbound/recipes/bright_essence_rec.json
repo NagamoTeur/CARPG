@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cisco_mod:arcane_apparatus"
+    },
+    {
+      "item": "cisco_mod:brightsteel_ingot"
+    }
+  ],
+  "result": {
+    "item": "cisco_mod:bright_essence",
+    "count": 3
+  }
+}

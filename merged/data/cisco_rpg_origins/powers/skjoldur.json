@@ -1,0 +1,11 @@
+{
+    "name": "Enginn Skjöldur",
+    "description": "Your intense focus on offence prevents you from using shields in combat.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "origins:shields"
+        }
+    }
+}

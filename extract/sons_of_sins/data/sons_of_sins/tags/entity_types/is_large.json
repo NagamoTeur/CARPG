@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "zombie",
+    "donkey",
+    "mule",
+    "horse",
+    "hoglin",
+    "ravager",
+    "sons_of_sins:grub",
+    "zoglin"
+  ]
+}

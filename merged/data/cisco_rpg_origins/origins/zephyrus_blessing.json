@@ -1,0 +1,13 @@
+{
+    "name": "Zephyrus's Blessing",
+    "description": "You are favoured by zephyrus god of the west wind. You recieve his windy blessing.",
+    "powers": [
+        "cisco_rpg_origins:zephyrus_boon_minor",
+        "cisco_rpg_origins:zephyrus_boon_minor2",
+        "cisco_rpg_origins:zephyrus_boon_major"
+    ],
+    "icon": {
+        "item": "cisco_mod:zephyrs_wings"
+    },
+    "impact": 1
+}

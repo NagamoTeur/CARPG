@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "unusualend:weak_endermite_egg"
+    },
+    "title": {
+      "translate": "advancements.get_endermite_egg.title"
+    },
+    "description": {
+      "translate": "advancements.get_endermite_egg.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_endermite_egg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "unusualend:weak_endermite_egg"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "minecraft:end/enter_end_gateway"
+}

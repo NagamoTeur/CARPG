@@ -1,0 +1,10 @@
+{
+    "type": "origins:modify_projectile_damage",
+    "damage_condition": {
+        "type": "origins:projectile"
+    },
+    "modifier": {
+        "operation": "addition",
+        "value": 2.5
+    }
+}

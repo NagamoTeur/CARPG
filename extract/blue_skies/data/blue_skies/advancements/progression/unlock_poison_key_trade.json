@@ -1,0 +1,38 @@
+{
+  "parent": "blue_skies:progression/root",
+  "criteria": {
+    "click_keystone": {
+      "conditions": {
+        "item": {},
+        "location": {
+          "block": {
+            "blocks": [
+              "blue_skies:poison_keystone"
+            ]
+          }
+        }
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "text": ""
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "blue_skies:poison_key"
+    },
+    "show_toast": false,
+    "title": {
+      "text": ""
+    }
+  },
+  "requirements": [
+    [
+      "click_keystone"
+    ]
+  ]
+}

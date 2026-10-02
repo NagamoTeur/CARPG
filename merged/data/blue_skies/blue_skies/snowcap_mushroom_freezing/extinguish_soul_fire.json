@@ -1,0 +1,6 @@
+{
+  "block": "minecraft:soul_fire",
+  "frozen_block": "minecraft:air",
+  "preserve_states": false,
+  "states": {}
+}

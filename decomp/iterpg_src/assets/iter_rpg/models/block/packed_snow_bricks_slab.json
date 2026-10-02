@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "iter_rpg:blocks/packed_snow_bricks",
+    "top": "iter_rpg:blocks/packed_snow_bricks",
+    "side": "iter_rpg:blocks/packed_snow_bricks"
+  },
+  "render_type": "solid"
+}

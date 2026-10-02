@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blue_skies:blush_blossom"
+    }
+  ],
+  "result": {
+    "item": "minecraft:pink_dye"
+  }
+}

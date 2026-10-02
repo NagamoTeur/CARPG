@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "undead_unleashed:lost_soul"
+    },
+    "title": {
+      "translate": "advancements.boo.title"
+    },
+    "description": {
+      "translate": "advancements.boo.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "boo": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "undead_unleashed:undead_unleashed"
+}

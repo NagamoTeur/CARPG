@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "nether_wastes",
+  "features": "undead_unleashed:ashthorn_patch_2",
+  "step": "vegetal_decoration"
+}

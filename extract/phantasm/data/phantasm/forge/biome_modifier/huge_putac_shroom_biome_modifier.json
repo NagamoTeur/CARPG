@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "small_end_islands",
+  "features": "phantasm:huge_putac_shroom",
+  "step": "raw_generation"
+}

@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": [
+                      "minecraft:shears"
+                    ]
+                  }
+                }
+              ],
+              "name": "blue_skies:lunar_grass"
+            },
+            {
+              "type": "minecraft:tag",
+              "conditions": [
+                {
+                  "condition": "minecraft:survives_explosion"
+                },
+                {
+                  "block": "blue_skies:tall_lunar_grass",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "half": "lower"
+                  }
+                },
+                {
+                  "chance": 0.125,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "expand": true,
+              "name": "blue_skies:drops/lunar_grass"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

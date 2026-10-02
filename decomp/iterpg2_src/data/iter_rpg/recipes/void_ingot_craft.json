@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "iter_rpg:ametrine_ingot"
+  },
+  "addition": {
+    "item": "iter_rpg:void_fragment"
+  },
+  "result": {
+    "item": "iter_rpg:void_ingot"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "the_end",
+  "features": "unusualend:warped_ship_1",
+  "step": "raw_generation"
+}

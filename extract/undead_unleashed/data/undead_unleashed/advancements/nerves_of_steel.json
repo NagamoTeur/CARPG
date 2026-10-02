@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "undead_unleashed:grave_metal_helmet"
+    },
+    "title": {
+      "translate": "advancements.nerves_of_steel.title"
+    },
+    "description": {
+      "translate": "advancements.nerves_of_steel.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nerves_of_steel": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "undead_unleashed:shards_of_the_past"
+}

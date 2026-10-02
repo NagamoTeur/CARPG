@@ -1,0 +1,10 @@
+{
+  "type": "blue_skies:transmute",
+  "items": [
+    "blue_skies:midnight_sand",
+    "blue_skies:crystal_sand"
+  ],
+  "tags": [
+    "forge:sand"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "group": "raw_purpur",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "phantasm:raw_purpur_bricks"
+    },
+    "1": {
+      "item": "phantasm:raw_purpur_bricks"
+    },
+    "2": {
+      "item": "phantasm:raw_purpur_bricks"
+    }
+  },
+  "result": {
+    "item": "phantasm:raw_purpur_bricks_slab",
+    "count": 6
+  }
+}

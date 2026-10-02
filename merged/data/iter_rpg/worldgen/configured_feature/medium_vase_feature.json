@@ -1,0 +1,14 @@
+{
+  "type": "iter_rpg:medium_vase_feature",
+  "config": {
+    "to_place": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "iter_rpg:vase",
+        "Properties": {
+          "waterlogged": "false"
+        }
+      }
+    }
+  }
+}

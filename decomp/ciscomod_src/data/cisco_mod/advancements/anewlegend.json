@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "cisco_mod:ciscos_armor_helmet"
+    },
+    "title": {
+      "translate": "advancements.anewlegend.title"
+    },
+    "description": {
+      "translate": "advancements.anewlegend.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "anewlegend": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "cisco_mod:trials_and_talismans"
+}

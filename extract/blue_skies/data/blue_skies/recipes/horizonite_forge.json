@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "blue_skies:lunar_cobblestone"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    },
+    "H": {
+      "item": "blue_skies:horizonite_ingot"
+    }
+  },
+  "pattern": [
+    "HHH",
+    "HFH",
+    "CCC"
+  ],
+  "result": {
+    "item": "blue_skies:horizonite_forge"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "upgradednetherite:netherite_shield"
+  },
+  "addition": {
+    "item": "upgradednetherite:gold_essence"
+  },
+  "result": {
+    "item": "upgradednetherite:gold_upgraded_netherite_shield"
+  }
+}

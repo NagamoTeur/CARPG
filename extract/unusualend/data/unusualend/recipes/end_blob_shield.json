@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "NNN",
+    " N "
+  ],
+  "key": {
+    "P": {
+      "tag": "planks"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "N": {
+      "item": "unusualend:enderblob_block"
+    }
+  },
+  "result": {
+    "item": "unusualend:blob_shield",
+    "count": 1
+  }
+}

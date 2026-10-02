@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FAQ — Wiki CARPG</title>
+<meta name="description" content="Les questions fréquentes">
+<link rel="stylesheet" href="../css/app.css"><link rel="stylesheet" href="../css/wiki.css">
+</head><body>
+<header class="top"><a class="brand" href="../index.html">⚔ CARPG</a>
+<button id="navbtn" class="sm" aria-label="Menu">☰ Menu</button>
+<input id="q" type="search" placeholder="Rechercher dans le wiki…" autocomplete="off"><div id="results" class="hidden"></div>
+<span class="spacer"></span><a href="../pob/index.html"><button class="pri">Ouvrir le planificateur de build</button></a></header>
+<div class="wikiwrap"><nav id="wnav"><details class="navsec" ><summary>Démarrer</summary><a href="../wiki/index.html" class="">Accueil</a><a href="../wiki/premiers-pas.html" class="">Premiers pas</a><a href="../wiki/monde.html" class="">Le monde &amp; le danger</a><a href="../wiki/campagne.html" class="">La campagne</a><a href="../wiki/survie.html" class="">Mort, sauvegarde &amp; sécurité</a></details><details class="navsec" ><summary>Personnage</summary><a href="../wiki/origines.html" class="">Origines</a><a href="../wiki/classes.html" class="">Classes</a><a href="../wiki/benedictions.html" class="">Bénédictions divines</a><a href="../wiki/talents.html" class="">Arbre de talents</a><a href="../wiki/combat.html" class="">Combat &amp; statistiques</a></details><details class="navsec" ><summary>Équipement</summary><a href="../wiki/equipement.html" class="">Rareté, affixes &amp; sockets</a><a href="../wiki/gemmes.html" class="">Gemmes</a><a href="../wiki/affixes.html" class="">Catalogue des affixes</a><a href="../wiki/atelier.html" class="">Ateliers &amp; enchantement</a><a href="../wiki/objets-campagne.html" class="">Équipement de campagne</a><a href="../wiki/accessoires.html" class="">Accessoires &amp; reliques</a></details><details class="navsec" ><summary>Magie</summary><a href="../wiki/magie.html" class="">Comprendre la magie</a><a href="../wiki/sorts.html" class="">Catalogue des sorts (Iron's)</a><a href="../wiki/ars.html" class="">Glyphes d'Ars Nouveau</a></details><details class="navsec" ><summary>Boss</summary><a href="../wiki/boss.html" class="">Guide des boss</a></details><details class="navsec" ><summary>Builds</summary><a href="../wiki/builds/index.html" class="">Tous les builds</a><a href="../wiki/builds/mage-ender.html" class="">Mage sombre (Ender)</a><a href="../wiki/builds/justicier.html" class="">Justicier sacré</a><a href="../wiki/builds/mage-feu.html" class="">Chevalier-mage du Phénix</a><a href="../wiki/builds/mage-foudre.html" class="">Mage de la tempête</a><a href="../wiki/builds/necro.html" class="">Chaman nécromant</a><a href="../wiki/builds/archer.html" class="">Tireur d'élite</a><a href="../wiki/builds/berserker.html" class="">Berserker du Nord</a><a href="../wiki/builds/chevalier.html" class="">Chevalier gardien</a><a href="../wiki/builds/assassin.html" class="">Lame fantôme</a><a href="../wiki/builds/paladin-feu.html" class="">Templier du Phénix</a><a href="../wiki/builds/druide.html" class="">Druide du marais</a><a href="../wiki/builds/chasseur-tresors.html" class="">Chasseur de trésors</a></details><details class="navsec" ><summary>Vie quotidienne</summary><a href="../wiki/vie.html" class="">Cuisine, ferme, colonie &amp; stockage</a></details><details class="navsec" open><summary>Référence</summary><a href="../wiki/outil.html" class="">Utiliser le planificateur</a><a href="../wiki/quetes.html" class="">Le livre de quêtes</a><a href="../wiki/mods.html" class="">Liste des mods</a><a href="../wiki/glossaire.html" class="">Glossaire</a><a href="../wiki/faq.html" class="on">FAQ</a></details></nav>
+<main class="wiki"><h1>FAQ</h1><p>??? question "Pourquoi les monstres me tuent en un coup ?"
+    Leur niveau dépend de la distance au spawn (+1 niveau tous les 125 blocs) et de la dimension (Nether : 35 de base, End : 150). Chaque niveau = +9 % PV et <strong>+14 % dégâts</strong>. Reviens vers le spawn, améliore ton armure, et regarde le niveau du monstre avec Jade. Voir <a href="monde.html">Le monde &amp; le danger</a>.</p>
+<p>??? question "Combien de points de talent au maximum ?"
+    115. Le livre de quêtes en donne environ 74 (parchemins de sagesse) ; le reste s'achète avec de l'XP (voir <a href="talents.html">Arbre de talents</a>).</p>
+<p>??? question "Je me suis trompé dans l'arbre, comment le refaire ?"
+    Avec un <strong>parchemin d'amnésie</strong>. Tu en reçois un en tuant l'Ender Dragon ; il est aussi fabricable (parchemin de sagesse + œil d'Ender + 3 lingots de netherite).</p>
+<p>??? question "Je peux changer d'origine ?"
+    Les origines se changent avec la commande <code>/origin set &lt;joueur&gt; origins:origin &lt;origine&gt;</code> (réservée aux opérateurs) ou avec un <em>Orb of Origin</em> si ton serveur en fournit. Demande à l'admin du serveur.</p>
+<p>??? question "À quoi servent les pièces de champion ?"
+    À la <strong>boutique de Cisco</strong> (chapitre « Cisco's Wares » du livre de quêtes) : équipement, œufs d'invocation de boss, matériaux rares…</p>
+<p>??? question "Où trouver des gemmes ?"
+    Dans les coffres (≈ 25 %), sur les monstres (≈ 4,5 %, +33 % sur les boss) et en récompense de quêtes. Qualité : voir <a href="equipement.html">Rareté, affixes &amp; sockets</a>. On monte leur qualité à la <a href="atelier.html">table de taille de gemmes</a>.</p>
+<p>??? question "Mon arme a des sockets vides, comment mettre une gemme ?"
+    Prends la gemme à la souris et <strong>clique-la sur l'objet</strong> dans ton inventaire (comme on applique un livre d'enchantement à l'enclume). Pour <strong>ajouter</strong> un socket : <em>Sigil of Socketing</em>.</p>
+<p>??? question "Pourquoi un boss ne prend presque plus de dégâts ?"
+    Plusieurs boss de Cataclysm <strong>plafonnent les dégâts par coup</strong> (20 à 50) et certains divisent les dégâts par deux pendant leurs transitions de phase. Fais <strong>beaucoup de petits coups</strong> (arme rapide, canalisation, invocations, dégâts en continu). Voir <a href="boss.html">Guide des boss</a>.</p>
+<p>??? question "Quelle magie choisir : Iron's ou Ars ?"
+    Voir <a href="magie.html">Comprendre la magie</a>. Pour débuter : Iron's Spells.</p>
+<p>??? question "Comment trouver une structure ou un biome ?"
+    <strong>Explorer's Compass</strong> (structures) et <strong>Nature's Compass</strong> (biomes). Les boss ont aussi leurs objets de repérage (œil de flamme pour Ignis, œil de l'abysse pour le Leviathan…).</p>
+<p>??? question "Les chiffres du planificateur sont-ils exacts ?"
+    Ce sont les formules lues dans le code des mods et les valeurs de ta config, mais <strong>ce qui s'affiche en jeu fait foi</strong>. Si un chiffre diffère, c'est précieux : dis-le pour qu'on corrige.</p>
+<p>??? question "Où est la liste des mods ?"
+    <a href="mods.html">Liste des mods</a>.</p>
+<footer class="mut small">Wiki généré à partir des fichiers du modpack « Cisco's Adventure RPG Ultimate » (V8E). Les chiffres viennent des fichiers de config et du code des mods ; en cas de doute, ce qui s'affiche en jeu fait foi.</footer></main></div>
+<script>window.ROOT="../";</script><script src="../wiki/search-index.js"></script><script src="../wiki/wiki.js"></script>
+</body></html>

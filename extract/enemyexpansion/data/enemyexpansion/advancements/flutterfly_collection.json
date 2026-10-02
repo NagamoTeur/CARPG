@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "enemyexpansion:bottled_flutterfly"
+    },
+    "title": {
+      "translate": "advancements.flutterfly_collection.title"
+    },
+    "description": {
+      "translate": "advancements.flutterfly_collection.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "flutterfly_collection_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "enemyexpansion:enemy_expansion_advancement"
+}

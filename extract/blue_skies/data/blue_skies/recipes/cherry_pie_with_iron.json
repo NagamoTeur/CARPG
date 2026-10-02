@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cherry_pie",
+  "key": {
+    "C": {
+      "item": "blue_skies:cherry"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "CCC",
+    "III"
+  ],
+  "result": {
+    "item": "blue_skies:cherry_pie"
+  }
+}

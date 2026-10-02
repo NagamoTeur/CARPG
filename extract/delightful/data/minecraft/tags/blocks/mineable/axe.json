@@ -1,0 +1,21 @@
+{
+  "values": [
+    "delightful:mini_melon",
+    "delightful:sliced_mini_melon",
+    "delightful:sliced_melon",
+    "delightful:sliced_pumpkin",
+    "delightful:cantaloupe",
+    "delightful:sliced_cantaloupe",
+    {
+      "id": "fruittrees:citrus_cabinet",
+      "required": false
+    },
+    {
+      "id": "fruittrees:cherry_cabinet",
+      "required": false
+    },
+    "delightful:green_apple_crate",
+    "delightful:joshua_fruit_crate",
+    "delightful:baobab_fruit_crate"
+  ]
+}

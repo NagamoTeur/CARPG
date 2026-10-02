@@ -1,0 +1,93 @@
+{
+  "step": {
+    "subtitle": "subtitles.celestisynth.step",
+    "sounds": [
+      "celestisynth:cs_step"
+    ]
+  },
+  "hop": {
+    "subtitle": "subtitles.celestisynth.hop",
+    "sounds": [
+      "celestisynth:hop"
+    ]
+  },
+  "sword_swing": {
+    "subtitle": "subtitles.celestisynth.sword_swing",
+    "sounds": [
+      "celestisynth:solaris_1"
+    ]
+  },
+  "sword_swing_fire": {
+    "subtitle": "subtitles.celestisynth.sword_swing_fire",
+    "sounds": [
+      "celestisynth:solaris_2"
+    ]
+  },
+  "air_swing": {
+    "subtitle": "subtitles.celestisynth.air_swing",
+    "sounds": [
+      "celestisynth:solaris_3"
+    ]
+  },
+  "impact_hit": {
+    "subtitle": "subtitles.celestisynth.impact_hit",
+    "sounds": [
+      "celestisynth:solaris_4"
+    ]
+  },
+  "sword_clash": {
+    "subtitle": "subtitles.celestisynth.sword_clash",
+    "sounds": [
+      "celestisynth:solaris_5"
+    ]
+  },
+  "fire_shoot": {
+    "subtitle": "subtitles.celestisynth.fire_shoot",
+    "sounds": [
+      "celestisynth:solaris_6"
+    ]
+  },
+  "wind_strike": {
+    "subtitle": "subtitles.celestisynth.wind_strike",
+    "sounds": [
+      "celestisynth:cs_wind_strike"
+    ]
+  },
+  "whirlwind": {
+    "subtitle": "subtitles.celestisynth.whirlwind",
+    "sounds": [
+      "celestisynth:cs_whirlwind"
+    ]
+  },
+  "loud_impact": {
+    "subtitle": "subtitles.celestisynth.loud_impact",
+    "sounds": [
+      "celestisynth:cs_loud_impact"
+    ]
+  },
+  "bling": {
+    "subtitle": "subtitles.celestisynth.bling",
+    "sounds": [
+      "celestisynth:cs_bling"
+    ]
+  },
+  "laser_shoot": {
+    "subtitle": "subtitles.celestisynth.laser_shoot",
+    "sounds": [
+      "celestisynth:rainfall_serenity_shoot-01",
+      "celestisynth:rainfall_serenity_shoot-02",
+      "celestisynth:rainfall_serenity_shoot-03",
+      "celestisynth:rainfall_serenity_shoot-04",
+      "celestisynth:rainfall_serenity_shoot-05",
+      "celestisynth:rainfall_serenity_shoot-06",
+      "celestisynth:rainfall_serenity_shoot-07",
+      "celestisynth:rainfall_serenity_shoot-08"
+    ]
+  },
+  "vanish": {
+    "subtitle": "subtitles.celestisynth.vanish",
+    "sounds": [
+      "celestisynth:rainfall_serenity_vanish"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "undead_unleashed:grave_metal_chestplate"
+    },
+    "title": {
+      "translate": "advancements.metalhead.title"
+    },
+    "description": {
+      "translate": "advancements.metalhead.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "metalhead": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "undead_unleashed:nerves_of_steel"
+}

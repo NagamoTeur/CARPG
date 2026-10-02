@@ -1,0 +1,17 @@
+{
+    "name": "Major Boon of Respite",
+    "description": "Upon slaying the ender dragon, Chiron grants you his supreme healing prowess, increasing healing from all sources , granting overheal and periodically healing you.",
+    "condition": {
+        "type": "origins:advancement",
+        "advancement": "minecraft:end/kill_dragon"
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "apotheosis:overheal",
+        "operation": "addition",
+        "value": 2,
+        "name": "Major Boon of Respite"
+    },
+    "tick_rate": 20,
+    "update_health": true
+}

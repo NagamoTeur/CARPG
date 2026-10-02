@@ -1,0 +1,16 @@
+{
+    "name": "Demi-God Umbra",
+    "description": "The offspring of a dark primordial god and a human.  A dark power slumbers within you unable to be fully utilised.",
+    "powers": [
+        "cisco_rpg_origins:divine_strength",
+        "cisco_rpg_origins:hubris",
+        "cisco_rpg_origins:umbral_lineage",
+        "cisco_rpg_origins:dark_vision",
+        "cisco_rpg_origins:divine_hunger",
+        "cisco_rpg_origins:divine_body"
+    ],
+    "icon": {
+        "item": "cisco_mod:ciscos_armor_helmet"
+    },
+    "impact": 2
+}

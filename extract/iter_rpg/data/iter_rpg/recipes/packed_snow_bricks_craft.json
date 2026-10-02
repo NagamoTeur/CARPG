@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "iter_rpg:packed_snow"
+    },
+    "1": {
+      "item": "iter_rpg:packed_snow"
+    },
+    "2": {
+      "item": "iter_rpg:packed_snow"
+    },
+    "3": {
+      "item": "iter_rpg:packed_snow"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:packed_snow_bricks",
+    "count": 4
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "phantasm:fallen_star",
+    "phantasm:chiseled_end_stone",
+    "phantasm:vivid_nihilium",
+    "phantasm:raw_purpur",
+    "phantasm:raw_purpur_bricks",
+    "phantasm:raw_purpur_bricks_stairs",
+    "phantasm:raw_purpur_bricks_slab",
+    "phantasm:cracked_raw_purpur_bricks",
+    "phantasm:chiseled_raw_purpur",
+    "phantasm:raw_purpur_pillar",
+    "phantasm:raw_purpur_tiles",
+    "phantasm:purpur_lamp",
+    "phantasm:smooth_obsidian",
+    "phantasm:smooth_obsidian_bricks",
+    "phantasm:smooth_obsidian_bricks_stairs",
+    "phantasm:smooth_obsidian_bricks_slab",
+    "phantasm:smooth_obsidian_pillar",
+    "phantasm:chiseled_smooth_obsidian",
+    "phantasm:smooth_obsidian_lamp",
+    "phantasm:oblivy_end_stone",
+    "phantasm:crystal_spike_tip",
+    "phantasm:void_crystal_spike_tip",
+    "phantasm:stellium_ore",
+    "phantasm:stellium_block",
+    "phantasm:stellium_bricks",
+    "phantasm:crystal_spike",
+    "phantasm:void_crystal_spike"
+  ]
+}

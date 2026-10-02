@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: Enigmatic Legacy
+Specification-Vendor: Aizistral
+Specification-Version: 2.26.5
+Implementation-Title: Enigmatic Legacy
+Implementation-Version: 2.26.5
+Implementation-Vendor: Aizistral
+Implementation-Timestamp: 2023-02-12T12:58:54+0100
+MixinConnector: com.aizistral.enigmaticlegacy.MixinConnector
+

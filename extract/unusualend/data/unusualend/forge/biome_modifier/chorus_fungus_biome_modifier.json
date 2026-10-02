@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "small_end_islands",
+    "end_highlands",
+    "end_barrens"
+  ],
+  "features": "unusualend:chorus_fungus",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,16 @@
+{
+  "icon": {
+    "type": "item",
+    "icon": {
+      "item": "blue_skies:different_sword"
+    }
+  },
+  "lores": [
+    {
+      "text": "blue_skies.everdawn.different_sword.lore"
+    }
+  ],
+  "requirement": "blue_skies:defeat_arachnarch",
+  "section": "blue_skies:everdawn",
+  "title": "blue_skies.everdawn.different_sword.title"
+}

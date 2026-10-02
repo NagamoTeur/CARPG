@@ -1,0 +1,9 @@
+{
+  "replace": "false",
+  "values": [
+    "minecraft:air",
+    "cisco_mod:amuletof_vitality",
+    "cisco_mod:amuletof_luck",
+    "cisco_mod:amuletof_swim_speed"
+  ]
+}

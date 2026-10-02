@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "iter_rpg:magmanum_chunk"
+    },
+    "1": {
+      "item": "iter_rpg:magmanum_chunk"
+    },
+    "2": {
+      "item": "iter_rpg:magmanum_chunk"
+    },
+    "3": {
+      "item": "iter_rpg:magmanum_chunk"
+    },
+    "5": {
+      "item": "iter_rpg:magmanum_chunk"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:magmanum_armor_helmet",
+    "count": 1
+  }
+}

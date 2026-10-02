@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "iter_rpg:blocks/voidquartz",
+    "particle": "iter_rpg:blocks/voidquartz"
+  },
+  "render_type": "cutout"
+}

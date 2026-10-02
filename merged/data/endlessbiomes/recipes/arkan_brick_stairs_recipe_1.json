@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 45",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "endlessbiomes:arkan_bricks"
+    },
+    "4": {
+      "item": "endlessbiomes:arkan_bricks"
+    },
+    "5": {
+      "item": "endlessbiomes:arkan_bricks"
+    },
+    "6": {
+      "item": "endlessbiomes:arkan_bricks"
+    },
+    "7": {
+      "item": "endlessbiomes:arkan_bricks"
+    },
+    "8": {
+      "item": "endlessbiomes:arkan_bricks"
+    }
+  },
+  "result": {
+    "item": "endlessbiomes:arkan_brick_stairs",
+    "count": 4
+  }
+}

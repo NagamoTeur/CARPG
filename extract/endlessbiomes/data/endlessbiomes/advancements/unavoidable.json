@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "endlessbiomes:void_touched_blade"
+    },
+    "title": {
+      "translate": "advancements.unavoidable.title"
+    },
+    "description": {
+      "translate": "advancements.unavoidable.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "unavoidable": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "endlessbiomes:a_noble_sacrifice"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "warped_forest",
+    "soul_sand_valley"
+  ],
+  "features": "stalwart_dungeons:awful_dungeons",
+  "step": "underground_structures"
+}

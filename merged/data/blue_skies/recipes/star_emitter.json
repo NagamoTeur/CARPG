@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "F": {
+      "tag": "blue_skies:ingots/falsite"
+    },
+    "P": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "S": {
+      "item": "blue_skies:star_flare"
+    }
+  },
+  "pattern": [
+    " S ",
+    " F ",
+    "PPP"
+  ],
+  "result": {
+    "item": "blue_skies:star_emitter"
+  }
+}

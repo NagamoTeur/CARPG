@@ -1,0 +1,32 @@
+{
+  "parent": "item/bow",
+  "textures": {
+    "layer0": "iter_rpg:items/bloodbranch"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 0
+      },
+      "model": "iter_rpg:item/bloodbranch_unpulled"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "iter_rpg:item/bloodbranch_pull"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "iter_rpg:item/bloodbranch_pulling"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "iter_rpg:item/bloodbranch_pulled"
+    }
+  ]
+}

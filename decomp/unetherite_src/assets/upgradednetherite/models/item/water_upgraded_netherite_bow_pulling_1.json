@@ -1,0 +1,6 @@
+{
+    "parent": "item/bow",
+    "textures": {
+        "layer0": "upgradednetherite:items/water_upgraded_netherite_bow_pulling_1"
+    }
+}

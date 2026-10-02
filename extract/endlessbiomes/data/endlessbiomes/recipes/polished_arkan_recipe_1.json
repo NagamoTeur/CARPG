@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "endlessbiomes:arkan"
+    },
+    "1": {
+      "item": "endlessbiomes:arkan"
+    },
+    "2": {
+      "item": "endlessbiomes:arkan"
+    },
+    "3": {
+      "item": "endlessbiomes:arkan"
+    }
+  },
+  "result": {
+    "item": "endlessbiomes:polished_arkan",
+    "count": 4
+  }
+}

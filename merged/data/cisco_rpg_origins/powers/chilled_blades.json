@@ -1,0 +1,12 @@
+{
+    "name": "Chilled Blades ",
+    "description": "Your chilled blades grant 20 percent crit chance and 50 percent crit dmg and slow enemies hit.",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "apotheosis:crit_chance",
+        "operation": "addition",
+        "value": 0.2,
+        "name": "Chilled Blades"
+    },
+    "update_health": true
+}

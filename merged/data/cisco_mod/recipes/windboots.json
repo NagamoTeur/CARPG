@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "cisco_mod:brightsteel_ingot"
+    },
+    "1": {
+      "item": "cisco_mod:wind_core"
+    },
+    "2": {
+      "item": "cisco_mod:brightsteel_ingot"
+    },
+    "3": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "5": {
+      "item": "minecraft:lapis_lazuli"
+    }
+  },
+  "result": {
+    "item": "cisco_mod:test_boots",
+    "count": 1
+  }
+}

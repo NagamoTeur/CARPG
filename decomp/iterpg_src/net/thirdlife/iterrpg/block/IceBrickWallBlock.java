@@ -1,0 +1,22 @@
+package net.thirdlife.iterrpg.block;
+
+import java.util.Collections;
+import java.util.List;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.storage.loot.LootContext.Builder;
+
+public class IceBrickWallBlock extends WallBlock {
+   public IceBrickWallBlock() {
+      super(Properties.m_60939_(Material.f_76316_).m_60918_(SoundType.f_56744_).m_60978_(2.8F).m_60911_(0.989F).m_60988_());
+   }
+
+   public List<ItemStack> m_7381_(BlockState state, Builder builder) {
+      List<ItemStack> dropsOriginal = super.m_7381_(state, builder);
+      return !dropsOriginal.isEmpty() ? dropsOriginal : Collections.singletonList(new ItemStack(this, 1));
+   }
+}

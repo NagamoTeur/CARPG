@@ -1,0 +1,13 @@
+{
+  "group": "crystal",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "phantasm:void_crystal_block"
+    }
+  ],
+  "result": {
+    "item": "phantasm:void_crystal_spike_tip",
+    "count": 4
+  }
+}

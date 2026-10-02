@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "endlessbiomes:twisted_stem",
+    "endlessbiomes:twisted_hyphae",
+    "endlessbiomes:stripped_twisted_stem",
+    "endlessbiomes:stripped_twisted_hyphae"
+  ]
+}

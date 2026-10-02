@@ -1,0 +1,31 @@
+{
+  "parent": "blue_skies:root",
+  "criteria": {
+    "enter_everbright": {
+      "conditions": {
+        "to": "blue_skies:everbright"
+      },
+      "trigger": "minecraft:changed_dimension"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.blue_skies.everbright.enter.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "blue_skies:everbright_portal"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.blue_skies.everbright.enter"
+    }
+  },
+  "requirements": [
+    [
+      "enter_everbright"
+    ]
+  ]
+}

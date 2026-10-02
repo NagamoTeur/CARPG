@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:painting",
+    "minecraft:item_frame",
+    "minecraft:glow_item_frame",
+    "minecraft:falling_block",
+    "minecraft:leash_knot",
+    "minecraft:armor_stand"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Endothermic",
+    "description": "Extreme cold disrupts the flame magic cycling through your body causing you to be more fragile. Your hp is reduced by 40 % in very cold biomes .",
+    "condition": {
+        "type": "origins:biome",
+        "condition": {
+            "type": "origins:precipitation",
+            "precipitation": "snow"
+        }
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "generic.max_health",
+        "operation": "multiply_total",
+        "value": -0.4,
+        "name": "Endothermic"
+    },
+    "tick_rate": 20,
+    "update_health": true
+}

@@ -1,0 +1,331 @@
+{
+	"type": "origins:restrict_armor",
+	"head": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:enchantment",
+				"enchantment": "minecraft:binding_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:enchantment",
+				"enchantment": "minecraft:vanishing_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:decay_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:insomnia_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:conductivity_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:enfeeblement_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:depth_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:flammability_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:suffocation_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:unwieldiness_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:inaccuracy_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:buckling_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:armor_value",
+				"comparison": ">",
+				"compare_to": 2
+			}
+		]
+	},
+	"chest": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:enchantment",
+				"enchantment": "minecraft:binding_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:enchantment",
+				"enchantment": "minecraft:vanishing_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:decay_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:insomnia_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:conductivity_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:enfeeblement_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:depth_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:flammability_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:suffocation_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:unwieldiness_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:inaccuracy_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:buckling_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:armor_value",
+				"comparison": ">",
+				"compare_to": 6
+			}
+		]
+	},
+	"legs": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:enchantment",
+				"enchantment": "minecraft:binding_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:enchantment",
+				"enchantment": "minecraft:vanishing_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:decay_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:insomnia_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:conductivity_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:enfeeblement_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:depth_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:flammability_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:suffocation_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:unwieldiness_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:inaccuracy_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:buckling_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:armor_value",
+				"comparison": ">",
+				"compare_to": 5
+			}
+		]
+	},
+	"feet": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:enchantment",
+				"enchantment": "minecraft:binding_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:enchantment",
+				"enchantment": "minecraft:vanishing_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:decay_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:insomnia_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:conductivity_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:enfeeblement_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:depth_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:flammability_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:suffocation_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:unwieldiness_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:inaccuracy_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+            {
+				"type": "origins:enchantment",
+				"enchantment": "biomemakeover:buckling_curse",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:armor_value",
+				"comparison": ">",
+				"compare_to": 2
+			}
+		]
+	}
+}

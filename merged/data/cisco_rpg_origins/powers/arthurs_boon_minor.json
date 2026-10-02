@@ -1,0 +1,14 @@
+{
+    "name": "Minor Boon of Radiance",
+    "description": "Arthur's blessing boosts your courage against the forces of darkness. You deal 60 percent increased damage to undead.",
+    "type": "origins:modify_damage_dealt",
+    "target_condition": {
+        "type": "origins:entity_group",
+        "group": "undead"
+    },
+    "modifier": {
+        "operation": "multiply_base_multiplicative",
+        "value": 0.6,
+        "name": "Minor Boon of Radiance"
+    }
+}

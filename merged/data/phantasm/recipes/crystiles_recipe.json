@@ -1,0 +1,26 @@
+{
+  "group": "crystal",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:end_stone"
+    },
+    "1": {
+      "item": "phantasm:crystal_spike_tip"
+    },
+    "2": {
+      "item": "phantasm:crystal_spike_tip"
+    },
+    "3": {
+      "item": "minecraft:end_stone"
+    }
+  },
+  "result": {
+    "item": "phantasm:crystiles",
+    "count": 4
+  }
+}

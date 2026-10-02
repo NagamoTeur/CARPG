@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:water_sword",
+    "iter_rpg:void_sword",
+    "minecraft:netherite_sword",
+    "iter_rpg:very_good_and_cheerful_rapier",
+    "minecraft:wooden_sword",
+    "minecraft:golden_sword",
+    "iter_rpg:air_sword",
+    "iter_rpg:earth_sword",
+    "minecraft:diamond_sword",
+    "iter_rpg:fire_sword",
+    "minecraft:stone_sword",
+    "minecraft:iron_sword",
+    "iter_rpg:elemental_sword"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "iter_rpg:custom/cocoon",
+  "textures": {
+    "all": "iter_rpg:blocks/cocoon",
+    "particle": "iter_rpg:blocks/spider_egg",
+    "0": "iter_rpg:blocks/cocoon"
+  },
+  "render_type": "cutout_mipped"
+}

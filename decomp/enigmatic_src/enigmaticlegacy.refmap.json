@@ -1,0 +1,194 @@
+{
+  "mappings": {
+    "com/aizistral/enigmaticlegacy/mixin/MixinLivingEntity": {
+      "isDamageSourceBlocked": "Lnet/minecraft/world/entity/LivingEntity;m_21275_(Lnet/minecraft/world/damagesource/DamageSource;)Z"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinPlayer": {
+      "findRespawnPositionAndUseSpawnBlock": "Lnet/minecraft/world/entity/player/Player;m_36130_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;FZZ)Ljava/util/Optional;",
+      "disableShield": "Lnet/minecraft/world/entity/player/Player;m_36384_(Z)V"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinGuiBookLanding": {
+      "init": "Lvazkii/patchouli/client/book/gui/GuiBookLanding;m_7856_()V"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinPlayerList": {
+      "respawn": "Lnet/minecraft/server/players/PlayerList;m_11236_(Lnet/minecraft/server/level/ServerPlayer;Z)Lnet/minecraft/server/level/ServerPlayer;"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinVillager": {
+      "spawnGolemIfNeeded": "Lnet/minecraft/world/entity/npc/Villager;m_35397_(Lnet/minecraft/server/level/ServerLevel;JI)V"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinEnchantmentHelper": {
+      "hasBindingCurse": "Lnet/minecraft/world/item/enchantment/EnchantmentHelper;m_44920_(Lnet/minecraft/world/item/ItemStack;)Z"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinEnderDragon": {
+      "tickDeath": "Lnet/minecraft/world/entity/boss/enderdragon/EnderDragon;m_6153_()V"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinEntityRenderer": {
+      "renderNameTag": "Lnet/minecraft/client/renderer/entity/EntityRenderer;m_7649_(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/network/chat/Component;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/AccessorAbstractArrowEntity": {
+      "resetPiercedEntities": "m_36723_()V"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinPhantomSpawner": {
+      "tick": "Lnet/minecraft/world/level/levelgen/PhantomSpawner;m_7995_(Lnet/minecraft/server/level/ServerLevel;ZZ)I"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinSummonedEntityTrigger": {
+      "trigger": "Lnet/minecraft/advancements/critereon/SummonedEntityTrigger;m_68256_(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/entity/Entity;)V"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinItemRenderer": {
+      "Lnet/minecraft/world/item/ItemStack;is(Lnet/minecraft/tags/TagKey;)Z": "Lnet/minecraft/world/item/ItemStack;m_204117_(Lnet/minecraft/tags/TagKey;)Z",
+      "render(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/renderer/block/model/ItemTransforms$TransformType;ZLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;IILnet/minecraft/client/resources/model/BakedModel;)V": "Lnet/minecraft/client/renderer/entity/ItemRenderer;m_115143_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/renderer/block/model/ItemTransforms$TransformType;ZLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;IILnet/minecraft/client/resources/model/BakedModel;)V"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinEnchantmentContainer": {
+      "net.minecraft.world.inventory.EnchantmentMenu.getGoldCount()I": "Lnet/minecraft/world/inventory/EnchantmentMenu;m_39492_()I",
+      "net.minecraft.world.inventory.EnchantmentMenu.clickMenuButton(Lnet/minecraft/world/entity/player/Player;I)Z": "Lnet/minecraft/world/inventory/EnchantmentMenu;m_6366_(Lnet/minecraft/world/entity/player/Player;I)Z"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinEnderEyeItem": {
+      "useOn": "Lnet/minecraft/world/item/EnderEyeItem;m_6225_(Lnet/minecraft/world/item/context/UseOnContext;)Lnet/minecraft/world/InteractionResult;",
+      "Lnet/minecraft/world/level/Level;globalLevelEvent(ILnet/minecraft/core/BlockPos;I)V": "Lnet/minecraft/world/level/Level;m_6798_(ILnet/minecraft/core/BlockPos;I)V"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinCrossbowItem": {
+      "getArrow": "Lnet/minecraft/world/item/CrossbowItem;m_40914_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/projectile/AbstractArrow;"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinPiglinTasks": {
+      "mobInteract": "Lnet/minecraft/world/entity/monster/piglin/PiglinAi;m_34846_(Lnet/minecraft/world/entity/monster/piglin/Piglin;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;",
+      "pickUpItem": "Lnet/minecraft/world/entity/monster/piglin/PiglinAi;m_34843_(Lnet/minecraft/world/entity/monster/piglin/Piglin;Lnet/minecraft/world/entity/item/ItemEntity;)V",
+      "stopHoldingOffHandItem": "Lnet/minecraft/world/entity/monster/piglin/PiglinAi;m_34867_(Lnet/minecraft/world/entity/monster/piglin/Piglin;Z)V",
+      "isWearingGold": "Lnet/minecraft/world/entity/monster/piglin/PiglinAi;m_34808_(Lnet/minecraft/world/entity/LivingEntity;)Z"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinShulker": {
+      "teleportSomewhere": "Lnet/minecraft/world/entity/monster/Shulker;m_33460_()Z"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinHoglinTasks": {
+      "findNearestValidAttackTarget": "Lnet/minecraft/world/entity/monster/hoglin/HoglinAi;m_34610_(Lnet/minecraft/world/entity/monster/hoglin/Hoglin;)Ljava/util/Optional;"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinItemStack": {
+      "getHoverName": "Lnet/minecraft/world/item/ItemStack;m_41786_()Lnet/minecraft/network/chat/Component;",
+      "hasCustomHoverName": "Lnet/minecraft/world/item/ItemStack;m_41788_()Z"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinWorldListEntry": {
+      "joinWorld": "Lnet/minecraft/client/gui/screens/worldselection/WorldSelectionList$WorldListEntry;m_101704_()V",
+      "Lnet/minecraft/world/level/storage/LevelSummary;getInfo()Lnet/minecraft/network/chat/Component;": "Lnet/minecraft/world/level/storage/LevelSummary;m_78376_()Lnet/minecraft/network/chat/Component;",
+      "render": "Lnet/minecraft/client/gui/screens/worldselection/WorldSelectionList$WorldListEntry;m_6311_(Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIIZF)V"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinVillagerEntity": {
+      "updateSpecialPrices": "Lnet/minecraft/world/entity/npc/Villager;m_35540_(Lnet/minecraft/world/entity/player/Player;)V"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinAutomaticRecipeUnlockModule": {
+      "Lnet/minecraft/world/entity/player/Player;awardRecipes(Ljava/util/Collection;)I": "Lnet/minecraft/world/entity/player/Player;m_7281_(Ljava/util/Collection;)I",
+      "Lnet/minecraft/resources/ResourceLocation;getPath()Ljava/lang/String;": "Lnet/minecraft/resources/ResourceLocation;m_135815_()Ljava/lang/String;"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinInventoryChangeTrigger": {
+      "trigger(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/item/ItemStack;)V": "Lnet/minecraft/advancements/critereon/InventoryChangeTrigger;m_43149_(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/item/ItemStack;)V"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/AccessorDisconnectedScreen": {
+      "reason": "f_95988_:Lnet/minecraft/network/chat/Component;"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinEnterBlockTrigger": {
+      "trigger": "Lnet/minecraft/advancements/critereon/EnterBlockTrigger;m_31269_(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/level/block/state/BlockState;)V"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/MixinMobEffect": {
+      "applyEffectTick": "Lnet/minecraft/world/effect/MobEffect;m_6742_(Lnet/minecraft/world/entity/LivingEntity;I)V",
+      "Lnet/minecraft/world/entity/LivingEntity;hurt(Lnet/minecraft/world/damagesource/DamageSource;F)Z": "Lnet/minecraft/world/entity/LivingEntity;m_6469_(Lnet/minecraft/world/damagesource/DamageSource;F)Z"
+    },
+    "com/aizistral/enigmaticlegacy/mixin/AccessorAdvancementCommands": {
+      "SUGGEST_ADVANCEMENTS": "f_136308_:Lcom/mojang/brigadier/suggestion/SuggestionProvider;"
+    }
+  },
+  "data": {
+    "searge": {
+      "com/aizistral/enigmaticlegacy/mixin/MixinLivingEntity": {
+        "isDamageSourceBlocked": "Lnet/minecraft/world/entity/LivingEntity;m_21275_(Lnet/minecraft/world/damagesource/DamageSource;)Z"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinPlayer": {
+        "findRespawnPositionAndUseSpawnBlock": "Lnet/minecraft/world/entity/player/Player;m_36130_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;FZZ)Ljava/util/Optional;",
+        "disableShield": "Lnet/minecraft/world/entity/player/Player;m_36384_(Z)V"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinGuiBookLanding": {
+        "init": "Lvazkii/patchouli/client/book/gui/GuiBookLanding;m_7856_()V"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinPlayerList": {
+        "respawn": "Lnet/minecraft/server/players/PlayerList;m_11236_(Lnet/minecraft/server/level/ServerPlayer;Z)Lnet/minecraft/server/level/ServerPlayer;"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinVillager": {
+        "spawnGolemIfNeeded": "Lnet/minecraft/world/entity/npc/Villager;m_35397_(Lnet/minecraft/server/level/ServerLevel;JI)V"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinEnchantmentHelper": {
+        "hasBindingCurse": "Lnet/minecraft/world/item/enchantment/EnchantmentHelper;m_44920_(Lnet/minecraft/world/item/ItemStack;)Z"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinEnderDragon": {
+        "tickDeath": "Lnet/minecraft/world/entity/boss/enderdragon/EnderDragon;m_6153_()V"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinEntityRenderer": {
+        "renderNameTag": "Lnet/minecraft/client/renderer/entity/EntityRenderer;m_7649_(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/network/chat/Component;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/AccessorAbstractArrowEntity": {
+        "resetPiercedEntities": "m_36723_()V"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinPhantomSpawner": {
+        "tick": "Lnet/minecraft/world/level/levelgen/PhantomSpawner;m_7995_(Lnet/minecraft/server/level/ServerLevel;ZZ)I"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinSummonedEntityTrigger": {
+        "trigger": "Lnet/minecraft/advancements/critereon/SummonedEntityTrigger;m_68256_(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/entity/Entity;)V"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinItemRenderer": {
+        "Lnet/minecraft/world/item/ItemStack;is(Lnet/minecraft/tags/TagKey;)Z": "Lnet/minecraft/world/item/ItemStack;m_204117_(Lnet/minecraft/tags/TagKey;)Z",
+        "render(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/renderer/block/model/ItemTransforms$TransformType;ZLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;IILnet/minecraft/client/resources/model/BakedModel;)V": "Lnet/minecraft/client/renderer/entity/ItemRenderer;m_115143_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/renderer/block/model/ItemTransforms$TransformType;ZLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;IILnet/minecraft/client/resources/model/BakedModel;)V"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinEnchantmentContainer": {
+        "net.minecraft.world.inventory.EnchantmentMenu.getGoldCount()I": "Lnet/minecraft/world/inventory/EnchantmentMenu;m_39492_()I",
+        "net.minecraft.world.inventory.EnchantmentMenu.clickMenuButton(Lnet/minecraft/world/entity/player/Player;I)Z": "Lnet/minecraft/world/inventory/EnchantmentMenu;m_6366_(Lnet/minecraft/world/entity/player/Player;I)Z"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinEnderEyeItem": {
+        "useOn": "Lnet/minecraft/world/item/EnderEyeItem;m_6225_(Lnet/minecraft/world/item/context/UseOnContext;)Lnet/minecraft/world/InteractionResult;",
+        "Lnet/minecraft/world/level/Level;globalLevelEvent(ILnet/minecraft/core/BlockPos;I)V": "Lnet/minecraft/world/level/Level;m_6798_(ILnet/minecraft/core/BlockPos;I)V"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinCrossbowItem": {
+        "getArrow": "Lnet/minecraft/world/item/CrossbowItem;m_40914_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/entity/projectile/AbstractArrow;"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinPiglinTasks": {
+        "mobInteract": "Lnet/minecraft/world/entity/monster/piglin/PiglinAi;m_34846_(Lnet/minecraft/world/entity/monster/piglin/Piglin;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;",
+        "pickUpItem": "Lnet/minecraft/world/entity/monster/piglin/PiglinAi;m_34843_(Lnet/minecraft/world/entity/monster/piglin/Piglin;Lnet/minecraft/world/entity/item/ItemEntity;)V",
+        "stopHoldingOffHandItem": "Lnet/minecraft/world/entity/monster/piglin/PiglinAi;m_34867_(Lnet/minecraft/world/entity/monster/piglin/Piglin;Z)V",
+        "isWearingGold": "Lnet/minecraft/world/entity/monster/piglin/PiglinAi;m_34808_(Lnet/minecraft/world/entity/LivingEntity;)Z"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinShulker": {
+        "teleportSomewhere": "Lnet/minecraft/world/entity/monster/Shulker;m_33460_()Z"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinHoglinTasks": {
+        "findNearestValidAttackTarget": "Lnet/minecraft/world/entity/monster/hoglin/HoglinAi;m_34610_(Lnet/minecraft/world/entity/monster/hoglin/Hoglin;)Ljava/util/Optional;"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinItemStack": {
+        "getHoverName": "Lnet/minecraft/world/item/ItemStack;m_41786_()Lnet/minecraft/network/chat/Component;",
+        "hasCustomHoverName": "Lnet/minecraft/world/item/ItemStack;m_41788_()Z"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinWorldListEntry": {
+        "joinWorld": "Lnet/minecraft/client/gui/screens/worldselection/WorldSelectionList$WorldListEntry;m_101704_()V",
+        "Lnet/minecraft/world/level/storage/LevelSummary;getInfo()Lnet/minecraft/network/chat/Component;": "Lnet/minecraft/world/level/storage/LevelSummary;m_78376_()Lnet/minecraft/network/chat/Component;",
+        "render": "Lnet/minecraft/client/gui/screens/worldselection/WorldSelectionList$WorldListEntry;m_6311_(Lcom/mojang/blaze3d/vertex/PoseStack;IIIIIIIZF)V"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinVillagerEntity": {
+        "updateSpecialPrices": "Lnet/minecraft/world/entity/npc/Villager;m_35540_(Lnet/minecraft/world/entity/player/Player;)V"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinAutomaticRecipeUnlockModule": {
+        "Lnet/minecraft/world/entity/player/Player;awardRecipes(Ljava/util/Collection;)I": "Lnet/minecraft/world/entity/player/Player;m_7281_(Ljava/util/Collection;)I",
+        "Lnet/minecraft/resources/ResourceLocation;getPath()Ljava/lang/String;": "Lnet/minecraft/resources/ResourceLocation;m_135815_()Ljava/lang/String;"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinInventoryChangeTrigger": {
+        "trigger(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/item/ItemStack;)V": "Lnet/minecraft/advancements/critereon/InventoryChangeTrigger;m_43149_(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/item/ItemStack;)V"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/AccessorDisconnectedScreen": {
+        "reason": "f_95988_:Lnet/minecraft/network/chat/Component;"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinEnterBlockTrigger": {
+        "trigger": "Lnet/minecraft/advancements/critereon/EnterBlockTrigger;m_31269_(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/level/block/state/BlockState;)V"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/MixinMobEffect": {
+        "applyEffectTick": "Lnet/minecraft/world/effect/MobEffect;m_6742_(Lnet/minecraft/world/entity/LivingEntity;I)V",
+        "Lnet/minecraft/world/entity/LivingEntity;hurt(Lnet/minecraft/world/damagesource/DamageSource;F)Z": "Lnet/minecraft/world/entity/LivingEntity;m_6469_(Lnet/minecraft/world/damagesource/DamageSource;F)Z"
+      },
+      "com/aizistral/enigmaticlegacy/mixin/AccessorAdvancementCommands": {
+        "SUGGEST_ADVANCEMENTS": "f_136308_:Lcom/mojang/brigadier/suggestion/SuggestionProvider;"
+      }
+    }
+  }
+}

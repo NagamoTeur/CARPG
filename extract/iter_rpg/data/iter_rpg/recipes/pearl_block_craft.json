@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "iter_rpg:pearl"
+    },
+    "1": {
+      "item": "iter_rpg:pearl"
+    },
+    "2": {
+      "item": "iter_rpg:pearl"
+    },
+    "3": {
+      "item": "iter_rpg:pearl"
+    },
+    "4": {
+      "item": "iter_rpg:pearl"
+    },
+    "5": {
+      "item": "iter_rpg:pearl"
+    },
+    "6": {
+      "item": "iter_rpg:pearl"
+    },
+    "7": {
+      "item": "iter_rpg:pearl"
+    },
+    "8": {
+      "item": "iter_rpg:pearl"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:pearl_block",
+    "count": 1
+  }
+}

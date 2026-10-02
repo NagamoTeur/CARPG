@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "tag": "forge:chests"
+    }
+  },
+  "pattern": [
+    "   ",
+    "C C",
+    "CCC"
+  ],
+  "result": {
+    "item": "minecolonies:supplycampdeployer"
+  }
+}

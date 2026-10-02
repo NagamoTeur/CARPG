@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cisco_mod:fell_ragnarok"
+    },
+    "title": {
+      "translate": "advancements.herald_of_ragnarok.title"
+    },
+    "description": {
+      "translate": "advancements.herald_of_ragnarok.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "herald_of_ragnarok": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cisco_mod:divine_ruby_advancement"
+}

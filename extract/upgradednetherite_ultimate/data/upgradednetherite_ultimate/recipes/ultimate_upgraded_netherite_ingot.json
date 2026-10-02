@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ultimate_upgraded_netherite_ingot",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "minecraft:nether_star"
+    },
+    {
+      "item": "upgradednetherite_ultimate:ultimate_essence"
+    }
+  ],
+  "result": {
+    "item": "upgradednetherite_ultimate:ultimate_upgraded_netherite_ingot"
+  }
+}

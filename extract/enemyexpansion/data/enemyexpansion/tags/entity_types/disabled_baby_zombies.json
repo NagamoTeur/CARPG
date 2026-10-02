@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "enemyexpansion:meature",
+    "enemyexpansion:sprinter",
+    "enemyexpansion:slugger",
+    "enemyexpansion:equestrian"
+  ]
+}

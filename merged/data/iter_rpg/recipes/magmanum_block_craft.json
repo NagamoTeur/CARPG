@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "iter_rpg:magmanum_chunk"
+    },
+    "1": {
+      "item": "iter_rpg:magmanum_chunk"
+    },
+    "2": {
+      "item": "iter_rpg:magmanum_chunk"
+    },
+    "3": {
+      "item": "iter_rpg:magmanum_chunk"
+    },
+    "4": {
+      "item": "iter_rpg:magmanum_chunk"
+    },
+    "5": {
+      "item": "iter_rpg:magmanum_chunk"
+    },
+    "6": {
+      "item": "iter_rpg:magmanum_chunk"
+    },
+    "7": {
+      "item": "iter_rpg:magmanum_chunk"
+    },
+    "8": {
+      "item": "iter_rpg:magmanum_chunk"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:magmanum_block",
+    "count": 1
+  }
+}

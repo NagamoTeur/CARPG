@@ -1,0 +1,24 @@
+{
+  "group": "brochette",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    " 4 ",
+    "  8"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:stick"
+    },
+    "4": {
+      "item": "phantasm:putac_shroom"
+    },
+    "8": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "phantasm:putac_brochette",
+    "count": 1
+  }
+}

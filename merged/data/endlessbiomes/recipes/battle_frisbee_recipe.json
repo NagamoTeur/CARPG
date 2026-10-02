@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "endlessbiomes:penumbral_disk"
+    },
+    {
+      "item": "endlessbiomes:anklor_shell_plate"
+    },
+    {
+      "item": "endlessbiomes:resistive_grease"
+    }
+  ],
+  "result": {
+    "item": "endlessbiomes:battle_frisbee",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Skadi's Blessing",
+    "description": "You are favoured by skadi icy goddess of the wilderness. She grants you her frigid blessing.",
+    "powers": [
+        "cisco_rpg_origins:skadis_boon_minor",
+        "cisco_rpg_origins:skadis_boon_major"
+    ],
+    "icon": {
+        "item": "twilightforest:ice_bow"
+    },
+    "impact": 1
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_horse_armor"
+  },
+  "addition": {
+    "item": "upgradednetherite:echo_upgraded_netherite_ingot"
+  },
+  "result": {
+    "item": "upgradednetherite:echo_upgraded_netherite_horse_armor"
+  }
+}

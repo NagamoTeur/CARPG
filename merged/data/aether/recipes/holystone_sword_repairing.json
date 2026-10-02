@@ -1,0 +1,9 @@
+{
+  "type": "aether:repairing",
+  "category": "enchanting_repair",
+  "group": "altar_sword_repair",
+  "ingredient": {
+    "item": "aether:holystone_sword"
+  },
+  "repairTime": 500
+}

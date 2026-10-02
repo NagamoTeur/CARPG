@@ -1,0 +1,26 @@
+{
+  "group": "putac",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "phantasm:putac_shroom"
+    },
+    "1": {
+      "item": "phantasm:putac_shroom"
+    },
+    "2": {
+      "item": "phantasm:putac_shroom"
+    },
+    "3": {
+      "item": "phantasm:putac_shroom"
+    }
+  },
+  "result": {
+    "item": "phantasm:putac_cap",
+    "count": 1
+  }
+}

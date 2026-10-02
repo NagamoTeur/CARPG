@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blue_skies:nightcress"
+    }
+  ],
+  "result": {
+    "item": "minecraft:blue_dye"
+  }
+}

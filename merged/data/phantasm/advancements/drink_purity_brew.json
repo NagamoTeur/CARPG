@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "phantasm:crystalily"
+    },
+    "title": {
+      "translate": "advancements.drink_purity_brew.title"
+    },
+    "description": {
+      "translate": "advancements.drink_purity_brew.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "drink_purity_brew": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "phantasm:get_crystal"
+}

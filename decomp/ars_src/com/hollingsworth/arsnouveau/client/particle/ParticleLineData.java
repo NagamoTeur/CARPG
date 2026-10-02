@@ -1,0 +1,20 @@
+package com.hollingsworth.arsnouveau.client.particle;
+
+import java.util.Random;
+import net.minecraft.core.particles.ParticleOptions;
+import net.minecraft.core.particles.ParticleType;
+
+@Deprecated
+public class ParticleLineData {
+   public static Random random = new Random();
+
+   public static ParticleOptions createData(ParticleColor color) {
+      return new ColoredDynamicTypeData(
+         (ParticleType<ColoredDynamicTypeData>)ModParticles.LINE_TYPE.get(), color, (float)ParticleUtil.inRange(0.05, 0.15), 40 + random.nextInt(20)
+      );
+   }
+
+   public static ParticleOptions createData(ParticleColor color, float scale, int age) {
+      return new ColoredDynamicTypeData((ParticleType<ColoredDynamicTypeData>)ModParticles.LINE_TYPE.get(), color, scale, age);
+   }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "sons_of_sins:soul_steel"
+    },
+    "title": {
+      "translate": "advancements.freddys_favorite_alloy.title"
+    },
+    "description": {
+      "translate": "advancements.freddys_favorite_alloy.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "freddys_favorite_alloy": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "sons_of_sins:to_dust_you_shall_return"
+}

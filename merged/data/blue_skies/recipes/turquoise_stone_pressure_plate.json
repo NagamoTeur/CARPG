@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "blue_skies:turquoise_stone"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "blue_skies:turquoise_stone_pressure_plate"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "blue_skies:get_aquite",
+  "criteria": {
+    "obtain_material": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blue_skies:diopside_gem"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.blue_skies.get_diopside.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "blue_skies:diopside_gem"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.blue_skies.get_diopside"
+    }
+  },
+  "requirements": [
+    [
+      "obtain_material"
+    ]
+  ]
+}

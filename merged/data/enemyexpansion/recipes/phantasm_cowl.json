@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "cac",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "b": {
+      "item": "minecraft:bone"
+    },
+    "c": {
+      "item": "enemyexpansion:phantom_eye"
+    }
+  },
+  "result": {
+    "item": "enemyexpansion:phantasm_helmet",
+    "count": 1
+  }
+}

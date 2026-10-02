@@ -1,0 +1,9 @@
+{
+  "group": "raw_purpur",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "tag": "forge:raw_purpur_cuttable"
+  },
+  "result": "phantasm:cracked_raw_purpur_bricks"
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Minor Boon of Gentlestep",
+    "description": "Zephyrus' gentle winds guide your movement , you take no fall damage and jump higher whilst sprinting.",
+    "type": "origins:modify_falling",
+    "take_fall_damage": false
+}

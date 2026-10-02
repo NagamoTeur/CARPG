@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ateliers &amp; enchantement — Wiki CARPG</title>
+<meta name="description" content="Table de reforge, taille de gemmes, désenchantement et enchantement apothique">
+<link rel="stylesheet" href="../css/app.css"><link rel="stylesheet" href="../css/wiki.css">
+</head><body>
+<header class="top"><a class="brand" href="../index.html">⚔ CARPG</a>
+<button id="navbtn" class="sm" aria-label="Menu">☰ Menu</button>
+<input id="q" type="search" placeholder="Rechercher dans le wiki…" autocomplete="off"><div id="results" class="hidden"></div>
+<span class="spacer"></span><a href="../pob/index.html"><button class="pri">Ouvrir le planificateur de build</button></a></header>
+<div class="wikiwrap"><nav id="wnav"><details class="navsec" ><summary>Démarrer</summary><a href="../wiki/index.html" class="">Accueil</a><a href="../wiki/premiers-pas.html" class="">Premiers pas</a><a href="../wiki/monde.html" class="">Le monde &amp; le danger</a><a href="../wiki/campagne.html" class="">La campagne</a><a href="../wiki/survie.html" class="">Mort, sauvegarde &amp; sécurité</a></details><details class="navsec" ><summary>Personnage</summary><a href="../wiki/origines.html" class="">Origines</a><a href="../wiki/classes.html" class="">Classes</a><a href="../wiki/benedictions.html" class="">Bénédictions divines</a><a href="../wiki/talents.html" class="">Arbre de talents</a><a href="../wiki/combat.html" class="">Combat &amp; statistiques</a></details><details class="navsec" open><summary>Équipement</summary><a href="../wiki/equipement.html" class="">Rareté, affixes &amp; sockets</a><a href="../wiki/gemmes.html" class="">Gemmes</a><a href="../wiki/affixes.html" class="">Catalogue des affixes</a><a href="../wiki/atelier.html" class="on">Ateliers &amp; enchantement</a><a href="../wiki/objets-campagne.html" class="">Équipement de campagne</a><a href="../wiki/accessoires.html" class="">Accessoires &amp; reliques</a></details><details class="navsec" ><summary>Magie</summary><a href="../wiki/magie.html" class="">Comprendre la magie</a><a href="../wiki/sorts.html" class="">Catalogue des sorts (Iron's)</a><a href="../wiki/ars.html" class="">Glyphes d'Ars Nouveau</a></details><details class="navsec" ><summary>Boss</summary><a href="../wiki/boss.html" class="">Guide des boss</a></details><details class="navsec" ><summary>Builds</summary><a href="../wiki/builds/index.html" class="">Tous les builds</a><a href="../wiki/builds/mage-ender.html" class="">Mage sombre (Ender)</a><a href="../wiki/builds/justicier.html" class="">Justicier sacré</a><a href="../wiki/builds/mage-feu.html" class="">Chevalier-mage du Phénix</a><a href="../wiki/builds/mage-foudre.html" class="">Mage de la tempête</a><a href="../wiki/builds/necro.html" class="">Chaman nécromant</a><a href="../wiki/builds/archer.html" class="">Tireur d'élite</a><a href="../wiki/builds/berserker.html" class="">Berserker du Nord</a><a href="../wiki/builds/chevalier.html" class="">Chevalier gardien</a><a href="../wiki/builds/assassin.html" class="">Lame fantôme</a><a href="../wiki/builds/paladin-feu.html" class="">Templier du Phénix</a><a href="../wiki/builds/druide.html" class="">Druide du marais</a><a href="../wiki/builds/chasseur-tresors.html" class="">Chasseur de trésors</a></details><details class="navsec" ><summary>Vie quotidienne</summary><a href="../wiki/vie.html" class="">Cuisine, ferme, colonie &amp; stockage</a></details><details class="navsec" ><summary>Référence</summary><a href="../wiki/outil.html" class="">Utiliser le planificateur</a><a href="../wiki/quetes.html" class="">Le livre de quêtes</a><a href="../wiki/mods.html" class="">Liste des mods</a><a href="../wiki/glossaire.html" class="">Glossaire</a><a href="../wiki/faq.html" class="">FAQ</a></details></nav>
+<main class="wiki"><h1>Ateliers &amp; enchantement</h1><h2 id="les-4-ateliers-apotheosis">Les 4 ateliers (Apotheosis)</h2>
+<table>
+<thead>
+<tr>
+<th>Atelier</th>
+<th>À quoi ça sert</th>
+<th>Coût</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table de recyclage</strong> (<em>Salvaging Table</em>)</td>
+<td>Démonte un objet à affixes en <strong>matériaux de rareté</strong> et en poussière de gemme ; une gemme devient de la <strong>poussière de gemme</strong></td>
+<td>Gratuit</td>
+</tr>
+<tr>
+<td><strong>Table de taille de gemmes</strong> (<em>Gem Cutting Table</em>)</td>
+<td><strong>Monte une gemme d'un cran de qualité</strong> : 2 gemmes identiques (même gemme, même qualité) + poussière + matériau de rareté</td>
+<td>Voir ci-dessous</td>
+</tr>
+<tr>
+<td><strong>Table de reforge</strong> (<em>Reforging Table</em>)</td>
+<td><strong>Relance</strong> les affixes d'un objet et fixe sa <strong>rareté</strong> (3 options : ×1, ×2, ×3 le coût = qualité croissante)</td>
+<td>Voir ci-dessous</td>
+</tr>
+<tr>
+<td><strong>Table de reforge simple</strong></td>
+<td>Même chose, avec une <strong>rareté maximale plus basse</strong></td>
+<td>Moins cher à fabriquer</td>
+</tr>
+</tbody>
+</table>
+<h3 id="materiaux-de-rarete">Matériaux de rareté</h3>
+<table>
+<thead>
+<tr>
+<th>Rareté</th>
+<th>Matériau (nom en jeu)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Commun</td>
+<td>Mysterious Scrap Metal</td>
+</tr>
+<tr>
+<td>Peu commun</td>
+<td>Timeworn Fabric</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td>Luminous Crystal Shard</td>
+</tr>
+<tr>
+<td>Épique</td>
+<td>Arcane Sands</td>
+</tr>
+<tr>
+<td>Mythique</td>
+<td>Godforged Pearl</td>
+</tr>
+<tr>
+<td>Ancien</td>
+<td>Manifestation of Infinity</td>
+</tr>
+</tbody>
+</table>
+<p>Tu les obtiens en <strong>recyclant</strong> des objets (ou en tuant des monstres infernaux).</p>
+<h3 id="cout-du-reforge-option-de-base-2-et-3-pour-les-deux-autres">Coût du reforge (option de base ; ×2 et ×3 pour les deux autres)</h3>
+<table>
+<thead>
+<tr>
+<th>Rareté visée</th>
+<th>Matériaux</th>
+<th>Poussière de gemme</th>
+<th>Niveaux d'XP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Commun</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Peu commun</td>
+<td>2</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td>2</td>
+<td>2</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Épique</td>
+<td>2</td>
+<td>4</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Mythique</td>
+<td>2</td>
+<td>5</td>
+<td>50</td>
+</tr>
+</tbody>
+</table>
+<p>Il n'existe <strong>pas de reforge vers « Ancien »</strong>.</p>
+<h3 id="monter-une-gemme-table-de-taille">Monter une gemme (table de taille)</h3>
+<p>Il faut <strong>deux gemmes identiques</strong> (même gemme, même qualité), de la <strong>poussière de gemme</strong> (1 + 2 par cran de qualité : 1, 3, 5, 7, 9) et un matériau de rareté :</p>
+<ul>
+<li>matériau de la <strong>même rareté</strong> que la gemme : <strong>×3</strong> ;</li>
+<li>matériau de la rareté <strong>juste au-dessus</strong> : <strong>×1</strong> ;</li>
+<li>matériau de la rareté <strong>juste en dessous</strong> : <strong>×9</strong>.</li>
+</ul>
+<p>Résultat : une gemme de la qualité suivante (jusqu'à « Parfaite » = Ancien).</p>
+<h2 id="enchanter-la-table-denchantement-apothique">Enchanter : la table d'enchantement apothique</h2>
+<p>La table d'enchantement n'est pas celle du vanilla. Tu l'améliores en posant des <strong>étagères</strong> (<em>shelves</em>) autour d'elle (avec une case d'air entre) :</p>
+<ul>
+<li><strong>Eterna</strong> : le <strong>niveau</strong> d'enchantement atteignable.</li>
+<li><strong>Quanta</strong> : la <strong>puissance / le hasard</strong> du tirage.</li>
+<li><strong>Arcana</strong> : la chance d'obtenir des enchantements <strong>rares</strong>.</li>
+<li><strong>Rectification</strong> : corrige un mauvais résultat (réduit les enchantements négatifs).</li>
+<li><strong>Clues</strong> : nombre d'enchantements que la table te <strong>révèle</strong> avant de payer.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Étagère</th>
+<th>Eterna (max)</th>
+<th>Eterna / étagère</th>
+<th>Quanta</th>
+<th>Arcana</th>
+<th>Remarque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hellshelf</td>
+<td>22,5</td>
+<td>+1,5</td>
+<td>+3</td>
+<td>—</td>
+<td>Nether</td>
+</tr>
+<tr>
+<td>Infused Hellshelf</td>
+<td>27</td>
+<td>+1,75</td>
+<td>+1,75</td>
+<td>—</td>
+<td></td>
+</tr>
+<tr>
+<td>Blazing Hellshelf</td>
+<td>30</td>
+<td>+4</td>
+<td>+5</td>
+<td>—</td>
+<td>−1 indice</td>
+</tr>
+<tr>
+<td>Seashelf</td>
+<td>22,5</td>
+<td>+1,5</td>
+<td>—</td>
+<td>+2</td>
+<td>Océans</td>
+</tr>
+<tr>
+<td>Infused Seashelf</td>
+<td>27</td>
+<td>+1,75</td>
+<td>—</td>
+<td>+1,75</td>
+<td></td>
+</tr>
+<tr>
+<td>Crystalline Seashelf</td>
+<td>30</td>
+<td>+2</td>
+<td>+4</td>
+<td>+2</td>
+<td></td>
+</tr>
+<tr>
+<td>Heart-Forged Seashelf</td>
+<td>30</td>
+<td>+3</td>
+<td>—</td>
+<td>+10</td>
+<td>−5 de rectification</td>
+</tr>
+<tr>
+<td>Deepshelf</td>
+<td>35</td>
+<td>+2,5</td>
+<td>+5</td>
+<td>+5</td>
+<td>Deep Dark</td>
+</tr>
+<tr>
+<td>Echoing Deepshelf</td>
+<td>37,5</td>
+<td>+2,5</td>
+<td>—</td>
+<td>+15</td>
+<td></td>
+</tr>
+<tr>
+<td>Soul-Touched Deepshelf</td>
+<td>37,5</td>
+<td>+2,5</td>
+<td>+15</td>
+<td>—</td>
+<td></td>
+</tr>
+<tr>
+<td>Endshelf</td>
+<td>45</td>
+<td>+2,5</td>
+<td>+5</td>
+<td>+5</td>
+<td>End</td>
+</tr>
+<tr>
+<td>Pearlescent Endshelf</td>
+<td>45</td>
+<td>+5</td>
+<td>+7,5</td>
+<td>+7,5</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Draconic Endshelf</strong></td>
+<td><strong>50</strong></td>
+<td><strong>+10</strong></td>
+<td>—</td>
+<td>—</td>
+<td>Le plus fort pour le niveau</td>
+</tr>
+<tr>
+<td>Echoing / Soul-Touched Sculkshelf</td>
+<td>40</td>
+<td>+5</td>
+<td>+5 / +15</td>
+<td>+15 / +5</td>
+<td></td>
+</tr>
+<tr>
+<td>Stoneshelf</td>
+<td>—</td>
+<td>−1,5</td>
+<td>—</td>
+<td>−7,5</td>
+<td>à éviter</td>
+</tr>
+<tr>
+<td>Melonshelf</td>
+<td>—</td>
+<td>−1</td>
+<td>−10</td>
+<td>—</td>
+<td>réduit l'aléatoire (utile pour viser)</td>
+</tr>
+<tr>
+<td>Beeshelf</td>
+<td>—</td>
+<td>−15</td>
+<td>+100</td>
+<td>—</td>
+<td><strong>100 de Quanta</strong> pour la puissance</td>
+</tr>
+<tr>
+<td>Terra Rune</td>
+<td>—</td>
+<td>−5</td>
+<td>+100</td>
+<td>+2,5</td>
+<td></td>
+</tr>
+<tr>
+<td>Sacrificial Rune</td>
+<td>50</td>
+<td>+7,5</td>
+<td>+7,5</td>
+<td>−10</td>
+<td>−2 indices</td>
+</tr>
+<tr>
+<td>Void Rune</td>
+<td>50</td>
+<td>+6</td>
+<td>+6</td>
+<td>+20</td>
+<td>+2 indices (très bon)</td>
+</tr>
+<tr>
+<td>Wavebinder's Rune</td>
+<td>50</td>
+<td>+5</td>
+<td>−1</td>
+<td>+15</td>
+<td>−10 de rectification</td>
+</tr>
+<tr>
+<td>Shelf of Sight / Masterful Sight</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>+1 / +2 indices</td>
+</tr>
+<tr>
+<td>Shelves of Rectification (Seabound / Hellbound / End-Fused)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>+10 / +15 / +25 de rectification</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Recette d'un enchantement ciblé</p>
+<p>Pose assez d'<strong>Eterna</strong> (Draconic Endshelf, Void Rune…), ajoute des <strong>Melonshelf / Beeshelf</strong> pour gérer le Quanta (le hasard), des <strong>étagères de rectification</strong> pour éviter les enchantements négatifs, et des <strong>étagères de vision</strong> pour voir ce que tu achètes. La <strong>bibliothèque</strong> (<em>Enchantment Library</em>) stocke tes livres ; la <strong>Library of Alexandria</strong> est la version ultime.</p>
+</div>
+<h2 id="niveaux-denchantement-maximum-dans-ce-pack">Niveaux d'enchantement maximum dans ce pack</h2>
+<p>Le pack relève les maximums vanilla :</p>
+<table>
+<thead>
+<tr>
+<th>Enchantement</th>
+<th>Niveau max (table)</th>
+<th>Enchantement</th>
+<th>Niveau max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Protection</td>
+<td>8</td>
+<td>Efficacité</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Prot. feu / explosions</td>
+<td>9</td>
+<td>Solidité</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Prot. projectiles / Chute amortie</td>
+<td>11</td>
+<td>Fortune / Butin</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Épines</td>
+<td>5</td>
+<td>Puissance (arc)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Tranchant</td>
+<td>9</td>
+<td>Frappe</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Châtiment / Fléau</td>
+<td>10</td>
+<td>Empalement</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Affilage</td>
+<td>8</td>
+<td>Perforation</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Agilité aquatique / Apnée</td>
+<td>7</td>
+<td>Charge rapide</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Chance de la mer / Appât</td>
+<td>8</td>
+<td>Loyauté / Impulsion</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+<p>Les enchantements « Mending », « Infinity », « Silk Touch »… restent à 1. Des enchantements des mods (Majrusz's Enchantments, Dragon Enchants, Enchantment Descriptions pour les descriptions) s'ajoutent.</p>
+<h2 id="charmes-de-potion">Charmes de potion</h2>
+<p>Un <strong>charme de potion</strong> (<em>Charm of …</em>) donne un effet <strong>permanent</strong> tant qu'il est dans ton inventaire (ou un emplacement Curios) ; il s'use, sauf si tu l'enchantes avec assez de Quanta/Eterna/Arcana (voir le chapitre <em>Arcane Amplification</em>).</p>
+<h2 id="tomes">Tomes</h2>
+<p>Les <strong>tomes</strong> (<em>Tome of Helmets</em>, <em>Tome of Weaponry</em>, <em>Tome of Scrapping</em>, <em>Tome of Extraction</em>…) se combinent à l'enclume avec un objet ou un livre d'enchantement ; lis leur info-bulle (JEI : touche <code>R</code>) pour connaître l'effet exact.</p>
+<h2 id="transmogrification">Transmogrification</h2>
+<p>La <strong>table de transmog</strong> (quête <em>Transmoggin time!</em>) change l'<strong>apparence</strong> d'une pièce d'armure (ou la rend invisible) sans toucher à ses stats.</p>
+<footer class="mut small">Wiki généré à partir des fichiers du modpack « Cisco's Adventure RPG Ultimate » (V8E). Les chiffres viennent des fichiers de config et du code des mods ; en cas de doute, ce qui s'affiche en jeu fait foi.</footer></main></div>
+<script>window.ROOT="../";</script><script src="../wiki/search-index.js"></script><script src="../wiki/wiki.js"></script>
+</body></html>

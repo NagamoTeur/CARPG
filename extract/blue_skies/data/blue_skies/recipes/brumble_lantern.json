@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "blue_skies:brumble_block"
+    },
+    "V": {
+      "item": "blue_skies:brumble_vine_top"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#V#",
+    " # "
+  ],
+  "result": {
+    "item": "blue_skies:brumble_lantern"
+  }
+}

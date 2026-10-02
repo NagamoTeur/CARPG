@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Comprendre la magie — Wiki CARPG</title>
+<meta name="description" content="Iron's Spells et Ars Nouveau : deux magies, une seule logique de puissance">
+<link rel="stylesheet" href="../css/app.css"><link rel="stylesheet" href="../css/wiki.css">
+</head><body>
+<header class="top"><a class="brand" href="../index.html">⚔ CARPG</a>
+<button id="navbtn" class="sm" aria-label="Menu">☰ Menu</button>
+<input id="q" type="search" placeholder="Rechercher dans le wiki…" autocomplete="off"><div id="results" class="hidden"></div>
+<span class="spacer"></span><a href="../pob/index.html"><button class="pri">Ouvrir le planificateur de build</button></a></header>
+<div class="wikiwrap"><nav id="wnav"><details class="navsec" ><summary>Démarrer</summary><a href="../wiki/index.html" class="">Accueil</a><a href="../wiki/premiers-pas.html" class="">Premiers pas</a><a href="../wiki/monde.html" class="">Le monde &amp; le danger</a><a href="../wiki/campagne.html" class="">La campagne</a><a href="../wiki/survie.html" class="">Mort, sauvegarde &amp; sécurité</a></details><details class="navsec" ><summary>Personnage</summary><a href="../wiki/origines.html" class="">Origines</a><a href="../wiki/classes.html" class="">Classes</a><a href="../wiki/benedictions.html" class="">Bénédictions divines</a><a href="../wiki/talents.html" class="">Arbre de talents</a><a href="../wiki/combat.html" class="">Combat &amp; statistiques</a></details><details class="navsec" ><summary>Équipement</summary><a href="../wiki/equipement.html" class="">Rareté, affixes &amp; sockets</a><a href="../wiki/gemmes.html" class="">Gemmes</a><a href="../wiki/affixes.html" class="">Catalogue des affixes</a><a href="../wiki/atelier.html" class="">Ateliers &amp; enchantement</a><a href="../wiki/objets-campagne.html" class="">Équipement de campagne</a><a href="../wiki/accessoires.html" class="">Accessoires &amp; reliques</a></details><details class="navsec" open><summary>Magie</summary><a href="../wiki/magie.html" class="on">Comprendre la magie</a><a href="../wiki/sorts.html" class="">Catalogue des sorts (Iron's)</a><a href="../wiki/ars.html" class="">Glyphes d'Ars Nouveau</a></details><details class="navsec" ><summary>Boss</summary><a href="../wiki/boss.html" class="">Guide des boss</a></details><details class="navsec" ><summary>Builds</summary><a href="../wiki/builds/index.html" class="">Tous les builds</a><a href="../wiki/builds/mage-ender.html" class="">Mage sombre (Ender)</a><a href="../wiki/builds/justicier.html" class="">Justicier sacré</a><a href="../wiki/builds/mage-feu.html" class="">Chevalier-mage du Phénix</a><a href="../wiki/builds/mage-foudre.html" class="">Mage de la tempête</a><a href="../wiki/builds/necro.html" class="">Chaman nécromant</a><a href="../wiki/builds/archer.html" class="">Tireur d'élite</a><a href="../wiki/builds/berserker.html" class="">Berserker du Nord</a><a href="../wiki/builds/chevalier.html" class="">Chevalier gardien</a><a href="../wiki/builds/assassin.html" class="">Lame fantôme</a><a href="../wiki/builds/paladin-feu.html" class="">Templier du Phénix</a><a href="../wiki/builds/druide.html" class="">Druide du marais</a><a href="../wiki/builds/chasseur-tresors.html" class="">Chasseur de trésors</a></details><details class="navsec" ><summary>Vie quotidienne</summary><a href="../wiki/vie.html" class="">Cuisine, ferme, colonie &amp; stockage</a></details><details class="navsec" ><summary>Référence</summary><a href="../wiki/outil.html" class="">Utiliser le planificateur</a><a href="../wiki/quetes.html" class="">Le livre de quêtes</a><a href="../wiki/mods.html" class="">Liste des mods</a><a href="../wiki/glossaire.html" class="">Glossaire</a><a href="../wiki/faq.html" class="">FAQ</a></details></nav>
+<main class="wiki"><h1>Comprendre la magie</h1><p>Le pack contient <strong>deux systèmes de magie</strong> indépendants. La quête <em>The path of the mage</em> te demande de choisir :</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Iron's Spells 'n Spellbooks</strong></th>
+<th><strong>Ars Nouveau</strong> (+ Elemental, Additions, Too Many Glyphs)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ressource</td>
+<td><strong>Mana</strong> (une jauge qui se régénère toute seule)</td>
+<td><strong>Source</strong> (une énergie à produire/stocker : gemmes de source, jarres, starbuncles)</td>
+</tr>
+<tr>
+<td>Sorts</td>
+<td>Une liste de <strong>sorts nommés</strong> (Boule de feu, Trait guidant…) trouvés en <strong>parchemins</strong> ou appris</td>
+<td>Tu <strong>construis</strong> tes sorts en combinant des <strong>glyphes</strong> (Projectile, Dégâts, Flamme, Amplifier…)</td>
+</tr>
+<tr>
+<td>Matériel</td>
+<td><strong>Livre de sorts</strong> (emplacement Curios) + <strong>encre</strong> + <strong>table d'inscription</strong></td>
+<td><strong>Livre de sorts</strong> (Novice → Mage → Archimage) + <strong>table du scribe</strong></td>
+</tr>
+<tr>
+<td>Calcul de puissance</td>
+<td>Détaillé par le planificateur de build</td>
+<td>Non modélisé par le planificateur (dépend des glyphes)</td>
+</tr>
+<tr>
+<td>Avantage</td>
+<td>Très <strong>simple</strong> à lancer, énorme <strong>mise à l'échelle</strong> avec l'équipement</td>
+<td>Très <strong>flexible</strong> et créatif</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Quelle magie choisir ?</p>
+<p>Pour débuter et tenir un rôle précis (mage de feu, soigneur…), <strong>Iron's Spells</strong> est plus direct et mieux intégré au système d'équipement du pack (gemmes, affixes, origines). Ars Nouveau est génial pour automatiser (starbuncles, golems d'améthyste) et personnaliser.</p>
+</div>
+<h2 id="irons-spells-en-pratique">Iron's Spells en pratique</h2>
+<ol>
+<li><strong>Mana</strong> : ton maximum est l'attribut <em>Mana max</em> (100 de base). Tu <strong>régénères 1 % de ton max × ta régénération toutes les 0,5 seconde</strong>. Les origines Anthraxi / Lumerian <strong>triplent</strong> le mana max.</li>
+<li><strong>Livre de sorts</strong> : sans lui, tu ne lances rien. Il définit <strong>combien de sorts</strong> tu peux préparer (emplacements) et leur <strong>rareté maximale</strong>. Il se porte dans un emplacement Curios. Les spellbooks se trouvent en donjon ou se fabriquent avec des matériaux rares ; le pack donne des quêtes pour passer aux rangs supérieurs (<em>Rank up your magic</em> : Mage's Spell Book → <em>The Greatest Magician</em> : Archmage → <em>The Codex</em>).</li>
+<li><strong>Sorts</strong> : trouve des <strong>parchemins</strong> (donjons, tours de mages, ennemis), puis <strong>inscris-les</strong> dans ton livre avec de l'<strong>encre</strong> (<em>Common / Uncommon / Epic Ink…</em>) à la <strong>table d'inscription</strong>. L'<strong>enclume arcanique</strong> fusionne deux parchemins identiques en une version plus haute.</li>
+<li><strong>Lancer</strong> : on sélectionne un sort puis on utilise l'objet « focus » (arme, bâton, livre) ; certains sorts sont <strong>instantanés</strong>, d'autres demandent une <strong>incantation</strong> ou se <strong>canalisent</strong> (tu maintiens).</li>
+<li><strong>Écoles de magie</strong> : Feu, Glace, Foudre, Sacré, Ender, Sang, Évocation, Nature. Chaque école a <strong>sa propre puissance</strong> (attribut) qui se <strong>multiplie</strong> avec la puissance globale.</li>
+</ol>
+<h3 id="puissance-des-sorts-la-partie-importante">Puissance des sorts (la partie importante)</h3>
+<blockquote>
+<p>puissance du sort = (base du sort + gain par niveau) × <strong>puissance globale</strong> × <strong>puissance de l'école</strong> × <strong>multiplicateur du pack</strong></p>
+</blockquote>
+<p>Les gemmes d'école (<em>Inferno, Frozen, Storm, Holy, Ender, Blood, Illager's, Natural</em>), les affixes d'accessoires (« Power Ender »…) et les origines (Ender Affinity : +350 %, Lumera's Might : +350 %, Fire Magic Adept : +200 %) alimentent ces puissances. Les bonus « total » <strong>se multiplient entre eux</strong> : c'est ce qui rend les builds de mage aussi explosifs.</p>
+<div class="admonition warning">
+<p class="admonition-title">Spécificités de ce pack</p>
+<ul>
+<li>Le pack <strong>modifie le multiplicateur de puissance de presque chaque sort</strong> (×0,2 à ×0,3 pour la plupart, ×1 pour une poignée, ×0,008–0,01 pour les sorts de mobilité). Les sorts à <strong>×1</strong> (Missile magique ×0,9, Trait guidant ×0,9, Éclair en boule, Onde de choc, Tempête, Flaming Barrage, Heat Surge, Scorch, Gluttony, Stomp…) sont <strong>ceux qui servent d'attaques principales</strong>.</li>
+<li><strong>Boule de feu</strong> est volontairement quasi inutile (×0,008, niveau max 3).</li>
+<li>Le sort <strong>Flaming Strike</strong> est passé de l'école Feu à l'école <strong>Sacré</strong>.</li>
+<li><strong>Echoing Strikes, Firecracker, Root</strong> sont <strong>désactivés</strong>.</li>
+<li>Les <strong>épées magiques</strong> consomment du mana et ont une recharge réduite de moitié.</li>
+<li>Le <strong>griefing</strong> des sorts (casser des blocs) est désactivé.</li>
+</ul>
+</div>
+<h3 id="formules-utiles">Formules utiles</h3>
+<ul>
+<li><strong>Mana</strong> : coût = base + (niveau − 1) × coût par niveau.</li>
+<li><strong>Recharge</strong> = recharge de base × (2 − réduction de recharge, lissée). Au-delà de ×1,75 de réduction, les gains diminuent.</li>
+<li><strong>Temps d'incantation</strong> = temps de base × (2 − vitesse d'incantation, lissée) ; pour les sorts <strong>canalisés</strong> c'est directement multiplié par ta vitesse.</li>
+</ul>
+<h2 id="ars-nouveau-en-pratique">Ars Nouveau en pratique</h2>
+<ol>
+<li><strong>Source</strong> : fabrique une <strong>table du scribe</strong> (<em>Scribe's Table</em>, que la quête de départ appelle <em>Mage's Workstation</em>) : c'est là que tu apprends les glyphes ; chaque nouveau glyphe <strong>augmente un peu ton mana max</strong>.</li>
+<li><strong>Starbuncles</strong> (petites créatures) transportent la Source ; capture-en avec des pépites d'or (quête <em>Tiny Workhorse</em>). Les <strong>golems d'améthyste</strong> produisent l'améthyste de façon automatique.</li>
+<li><strong>Construire un sort</strong> : une <strong>forme</strong> (Projectile, Toucher, Soi…) + des <strong>effets</strong> (Dégâts, Flamme, Gel…) + des <strong>augmentations</strong> (Amplifier, Accélérer, AoE…). Le glyphe <strong>Amplify</strong> est le premier à apprendre (<em>Amplified Magics</em>).</li>
+<li><strong>Grimoires</strong> : un livre plus haut permet plus de glyphes par sort. Le pack ajoute <strong>Ars Elemental</strong> (écoles élémentaires), <strong>Ars Additions</strong> et <strong>Too Many Glyphs</strong> (plus de glyphes).</li>
+<li>Les gemmes <strong>Source Jewel</strong> (<em>Jewel of the Archmage</em>) donnent du mana Ars et de la puissance.</li>
+</ol>
+<h2 id="pierre-de-sort-charmes-et-divers">Pierre de sort, charmes et divers</h2>
+<ul>
+<li><strong>Spellstone</strong> (Curios) : une pierre qui donne une capacité active (touche <code>K</code>).</li>
+<li><strong>Iron's + Ars</strong> coexistent : tu peux avoir un livre de sorts Iron's <strong>et</strong> un grimoire Ars ; les deux jauges (mana / Source) sont indépendantes.</li>
+</ul>
+<h2 id="voir-aussi">Voir aussi</h2>
+<ul>
+<li><a href="sorts.html">Catalogue des sorts</a> (réglages exacts du pack)</li>
+<li><a href="gemmes.html">Catalogue des gemmes</a> (gemmes de magie)</li>
+<li><a href="builds/index.html">Builds de magie</a></li>
+</ul>
+<footer class="mut small">Wiki généré à partir des fichiers du modpack « Cisco's Adventure RPG Ultimate » (V8E). Les chiffres viennent des fichiers de config et du code des mods ; en cas de doute, ce qui s'affiche en jeu fait foi.</footer></main></div>
+<script>window.ROOT="../";</script><script src="../wiki/search-index.js"></script><script src="../wiki/wiki.js"></script>
+</body></html>

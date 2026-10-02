@@ -1,0 +1,25 @@
+{
+    "order": 3,
+    "origins": [
+        "cisco_rpg_origins:amaterasus_blessing",
+        "cisco_rpg_origins:athenas_blessing",
+        "cisco_rpg_origins:neptunes_blessing",
+        "cisco_rpg_origins:skadis_blessing",
+        "cisco_rpg_origins:ras_blessing",
+        "cisco_rpg_origins:chiron_blessing",
+        "cisco_rpg_origins:boreas_blessing",
+        "cisco_rpg_origins:lokis_blessing",
+        "cisco_rpg_origins:susanoos_blessing",
+        "cisco_rpg_origins:thors_blessing",
+        "cisco_rpg_origins:zephyrus_blessing",
+        "cisco_rpg_origins:no_blessing",
+        "cisco_rpg_origins:ares_blessing",
+        "cisco_rpg_origins:arthurs_blessing",
+        "cisco_rpg_origins:babayaga_blessing",
+        "cisco_rpg_origins:vishnus_blessing",
+        "cisco_rpg_origins:hephaestus_blessing"
+    ],
+    "enabled": true,
+    "name": "Divine Blessing",
+    "allow_random": true
+}

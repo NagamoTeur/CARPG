@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "iter_rpg:arcane_flower"
+    },
+    "title": {
+      "translate": "advancements.iter_arcane_flower.title"
+    },
+    "description": {
+      "translate": "advancements.iter_arcane_flower.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "iter_arcane_flower": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "iter_rpg:arcane_flower"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "iter_rpg:iter_root"
+}

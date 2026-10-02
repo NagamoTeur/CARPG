@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "horizonite_nugget_from_item",
+  "ingredient": {
+    "item": "blue_skies:horizonite_leggings"
+  },
+  "result": "blue_skies:horizonite_nugget"
+}

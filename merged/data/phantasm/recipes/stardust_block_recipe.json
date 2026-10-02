@@ -1,0 +1,26 @@
+{
+  "group": "stardust",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "phantasm:stardust"
+    },
+    "1": {
+      "item": "phantasm:stardust"
+    },
+    "2": {
+      "item": "phantasm:stardust"
+    },
+    "3": {
+      "item": "phantasm:stardust"
+    }
+  },
+  "result": {
+    "item": "phantasm:stardust_block",
+    "count": 1
+  }
+}

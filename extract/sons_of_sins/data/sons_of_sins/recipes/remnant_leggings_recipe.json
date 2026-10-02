@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "sons_of_sins:soul_steel"
+    }
+  },
+  "result": {
+    "item": "sons_of_sins:remnant_leggings",
+    "count": 1
+  }
+}

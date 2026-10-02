@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "unusualend:polished_purpur"
+    }
+  },
+  "result": {
+    "item": "unusualend:polished_purpur_bricks",
+    "count": 4
+  }
+}

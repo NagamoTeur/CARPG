@@ -1,0 +1,12 @@
+{
+    "name": "Minor Boon of Might",
+    "description": "Thor empowers your strikes. You gain +9 to your attack.",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "generic.attack_damage",
+        "operation": "addition",
+        "value": 9,
+        "name": "Thor's Blessing"
+    },
+    "update_health": true
+}

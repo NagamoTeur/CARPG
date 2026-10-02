@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_shovel"
+  },
+  "addition": {
+    "item": "upgradednetherite:fire_upgraded_netherite_ingot"
+  },
+  "result": {
+    "item": "upgradednetherite:fire_upgraded_netherite_shovel"
+  }
+}

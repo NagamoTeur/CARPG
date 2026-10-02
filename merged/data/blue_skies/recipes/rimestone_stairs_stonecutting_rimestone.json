@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "blue_skies:rimestone"
+  },
+  "result": "blue_skies:rimestone_stairs"
+}

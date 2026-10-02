@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "unusualend:bolok_scale_boots"
+    },
+    "title": {
+      "translate": "advancements.use_bolok_boots.title"
+    },
+    "description": {
+      "translate": "advancements.use_bolok_boots.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "use_bolok_boots": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "unusualend:trade_with_bolok"
+}

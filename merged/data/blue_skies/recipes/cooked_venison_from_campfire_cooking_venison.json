@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "blue_skies:venison"
+  },
+  "result": "blue_skies:cooked_venison"
+}

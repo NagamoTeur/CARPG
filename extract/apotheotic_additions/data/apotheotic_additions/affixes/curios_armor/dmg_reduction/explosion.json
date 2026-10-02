@@ -1,0 +1,33 @@
+{
+	"conditions": [{
+		"type": "forge:mod_loaded",
+		"modid": "apothiccurios"
+	}],
+	"type": "apotheosis:damage_reduction",
+	"damage_type": "EXPLOSION",
+	"values": {
+		"rare": {
+			"min": 0.01,
+			"steps": 1,
+			"step": 0.01
+		},
+		"epic": {
+			"min": 0.01,
+			"steps": 2,
+			"step": 0.01
+		},
+		"mythic": {
+			"min": 0.02,
+			"steps": 2,
+			"step": 0.01
+		},
+		"ancient": {
+			"min": 0.03,
+			"steps": 2,
+			"step": 0.01
+		}
+	},
+	"types": [
+		"curios:head", "curios:body", "curios:back", "curios:feet", "curios:hands", "curios:belt", "curios:talisman", "curios:bracelet"
+	]
+}

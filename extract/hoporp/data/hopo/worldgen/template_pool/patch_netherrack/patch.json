@@ -1,0 +1,69 @@
+  {
+  "name": "hopo:patch_netherrack/patch",
+  "fallback": "hopo:patch_netherrack/patch",
+  "elements": [
+    {
+      "weight": 100,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:patch_netherrack/variant_1",
+        "projection": "terrain_matching",
+        "processors": "hopo:netherrackier"
+      }
+    },
+    {
+      "weight": 100,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:patch_netherrack/variant_2",
+        "projection": "terrain_matching",
+        "processors": "hopo:netherrackier"
+      }
+    },
+    {
+      "weight": 100,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:patch_netherrack/variant_3",
+        "projection": "terrain_matching",
+        "processors": "hopo:netherrackier"
+      }
+    },
+    {
+      "weight": 100,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:patch_netherrack/variant_4",
+        "projection": "terrain_matching",
+        "processors": "hopo:netherrackier"
+      }
+    },
+    {
+      "weight": 100,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:patch_netherrack/variant_5",
+        "projection": "terrain_matching",
+        "processors": "hopo:netherrackier"
+      }
+    },
+    {
+      "weight": 100,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:patch_netherrack/variant_6",
+        "projection": "terrain_matching",
+        "processors": "hopo:netherrackier"
+      }
+    },
+    {
+      "weight": 100,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:patch_netherrack/variant_7",
+        "projection": "terrain_matching",
+        "processors": "hopo:netherrackier"
+      }
+    }
+  ]
+}

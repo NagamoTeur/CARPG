@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cisco_mod:fell_king_armor_chestplate"
+    },
+    "title": {
+      "translate": "advancements.fitforaking.title"
+    },
+    "description": {
+      "translate": "advancements.fitforaking.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fitforaking": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cisco_mod:divine_ruby_advancement"
+}

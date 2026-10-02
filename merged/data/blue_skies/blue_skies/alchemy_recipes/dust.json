@@ -1,0 +1,7 @@
+{
+  "type": "blue_skies:transmute",
+  "items": [
+    "minecraft:redstone",
+    "minecraft:glowstone_dust"
+  ]
+}

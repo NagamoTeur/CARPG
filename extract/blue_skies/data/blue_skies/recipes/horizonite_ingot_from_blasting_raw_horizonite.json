@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "horizonite_ingot",
+  "ingredient": {
+    "item": "blue_skies:raw_horizonite"
+  },
+  "result": "blue_skies:horizonite_ingot"
+}

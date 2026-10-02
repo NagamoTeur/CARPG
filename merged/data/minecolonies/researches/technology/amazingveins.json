@@ -1,0 +1,24 @@
+{
+  "branch": "minecolonies:technology",
+  "effects": [
+    {
+      "minecolonies:effects/moreoresmultiplier": 4
+    }
+  ],
+  "icon": "minecraft:lapis_block",
+  "parentResearch": "minecolonies:technology/richveins",
+  "requirements": [
+    {
+      "building": "blacksmith",
+      "level": 5
+    },
+    {
+      "type": "minecolonies:item_tag",
+      "item": {
+        "tag": "minecraft:gold_ores"
+      },
+      "quantity": 64
+    }
+  ],
+  "researchLevel": 5
+}

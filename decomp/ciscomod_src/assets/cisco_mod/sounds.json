@@ -1,0 +1,434 @@
+{
+  "equillibrium": {
+    "sounds": [
+      {
+        "name": "cisco_mod:magic-strike-5856_1",
+        "stream": false
+      }
+    ]
+  },
+  "armor": {
+    "sounds": [
+      {
+        "name": "cisco_mod:reverb-perc-142442_1",
+        "stream": false
+      }
+    ]
+  },
+  "holy1": {
+    "sounds": [
+      {
+        "name": "cisco_mod:heavenly-army-24611",
+        "stream": false
+      }
+    ]
+  },
+  "thunderswoosh": {
+    "sounds": [
+      {
+        "name": "cisco_mod:mixkit-cinematic-impact-thunder-1286",
+        "stream": false
+      }
+    ]
+  },
+  "evilsword": {
+    "sounds": [
+      {
+        "name": "cisco_mod:evil_sword",
+        "stream": false
+      }
+    ]
+  },
+  "windjump": {
+    "sounds": [
+      {
+        "name": "cisco_mod:fast-whoosh-118248",
+        "stream": false
+      }
+    ]
+  },
+  "jump": {
+    "sounds": [
+      {
+        "name": "cisco_mod:whoosh_long_low-6087",
+        "stream": false
+      }
+    ]
+  },
+  "teleport": {
+    "sounds": [
+      {
+        "name": "cisco_mod:teleport-sound-46215",
+        "stream": false
+      }
+    ]
+  },
+  "eagle": {
+    "sounds": [
+      {
+        "name": "cisco_mod:eagle-scream-112940",
+        "stream": false
+      }
+    ]
+  },
+  "iceswing": {
+    "sounds": [
+      {
+        "name": "cisco_mod:ice_swing",
+        "stream": false
+      }
+    ]
+  },
+  "rage": {
+    "sounds": [
+      {
+        "name": "cisco_mod:high-quality-monster-screech-65012",
+        "stream": false
+      }
+    ]
+  },
+  "adjudicatorswing": {
+    "sounds": [
+      {
+        "name": "cisco_mod:swoosh-11-46749",
+        "stream": false
+      }
+    ]
+  },
+  "wind": {
+    "sounds": [
+      {
+        "name": "cisco_mod:windy",
+        "stream": false
+      }
+    ]
+  },
+  "ragslam": {
+    "sounds": [
+      {
+        "name": "cisco_mod:ragnarok_slam1",
+        "stream": false
+      }
+    ]
+  },
+  "ragslash": {
+    "sounds": [
+      {
+        "name": "cisco_mod:ragnarok_slash1",
+        "stream": false
+      }
+    ]
+  },
+  "ragstab": {
+    "sounds": [
+      {
+        "name": "cisco_mod:ragnarok_stab1",
+        "stream": false
+      }
+    ]
+  },
+  "polluxslash": {
+    "sounds": [
+      {
+        "name": "cisco_mod:pollux_slash1",
+        "stream": false
+      }
+    ]
+  },
+  "castorslash": {
+    "sounds": [
+      {
+        "name": "cisco_mod:castor_slash1",
+        "stream": false
+      }
+    ]
+  },
+  "nightfallslash": {
+    "sounds": [
+      {
+        "name": "cisco_mod:nightfall_slash1",
+        "stream": false
+      }
+    ]
+  },
+  "nightfallslam": {
+    "sounds": [
+      {
+        "name": "cisco_mod:nightfall_slam1",
+        "stream": false
+      }
+    ]
+  },
+  "nightfallstab": {
+    "sounds": [
+      {
+        "name": "cisco_mod:nightfall_stab1",
+        "stream": false
+      }
+    ]
+  },
+  "skyslash": {
+    "sounds": [
+      {
+        "name": "cisco_mod:skyslash1",
+        "stream": false
+      }
+    ]
+  },
+  "skyspin": {
+    "sounds": [
+      {
+        "name": "cisco_mod:skyspin1",
+        "stream": false
+      }
+    ]
+  },
+  "azure": {
+    "sounds": [
+      {
+        "name": "cisco_mod:thunder_sword1",
+        "stream": false
+      }
+    ]
+  },
+  "skysplitterstab": {
+    "sounds": [
+      {
+        "name": "cisco_mod:skysplitter_stab1",
+        "stream": false
+      }
+    ]
+  },
+  "thunder": {
+    "sounds": [
+      {
+        "name": "cisco_mod:azurethunder",
+        "stream": false
+      }
+    ]
+  },
+  "nightfallsound": {
+    "sounds": [
+      {
+        "name": "cisco_mod:nazgul-scream-1-94999-1",
+        "stream": false
+      }
+    ]
+  },
+  "glaciate": {
+    "sounds": [
+      {
+        "name": "cisco_mod:ice-10-104149",
+        "stream": false
+      }
+    ]
+  },
+  "equiswing1": {
+    "sounds": [
+      {
+        "name": "cisco_mod:swoosh-29-46735-1",
+        "stream": false
+      }
+    ]
+  },
+  "equislash": {
+    "sounds": [
+      {
+        "name": "cisco_mod:equillibrium_slash2",
+        "stream": false
+      }
+    ]
+  },
+  "equislam": {
+    "sounds": [
+      {
+        "name": "cisco_mod:equillbrium_slam2",
+        "stream": false
+      }
+    ]
+  },
+  "equistab": {
+    "sounds": [
+      {
+        "name": "cisco_mod:equillibrium_stab2",
+        "stream": false
+      }
+    ]
+  },
+  "whereisyourgodnow": {
+    "sounds": [
+      {
+        "name": "cisco_mod:rok_nardin_-_where_is_your_god_now",
+        "stream": true
+      }
+    ]
+  },
+  "bravesoul": {
+    "sounds": [
+      {
+        "name": "cisco_mod:brave_soul__epic_orchestral_battle_music_cc-by",
+        "stream": true
+      }
+    ]
+  },
+  "whereisyourgodboss": {
+    "sounds": [
+      {
+        "name": "cisco_mod:where_is_your_god_boss",
+        "stream": true
+      }
+    ]
+  },
+  "bravesoulboss": {
+    "sounds": [
+      {
+        "name": "cisco_mod:brave_soul_bossfix",
+        "stream": true
+      }
+    ]
+  },
+  "lightability": {
+    "sounds": [
+      {
+        "name": "cisco_mod:lightability",
+        "stream": false
+      }
+    ]
+  },
+  "coinflip": {
+    "sounds": [
+      {
+        "name": "cisco_mod:coin_flip__free_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "absoluteeqactive": {
+    "sounds": [
+      {
+        "name": "cisco_mod:absoluteeqactive2",
+        "stream": false
+      }
+    ]
+  },
+  "absoluteeqslash": {
+    "sounds": [
+      {
+        "name": "cisco_mod:absoluteeq2",
+        "stream": false
+      }
+    ]
+  },
+  "nightxragdual": {
+    "sounds": [
+      {
+        "name": "cisco_mod:nightfallragdual_slash1",
+        "stream": false
+      }
+    ]
+  },
+  "lootbagopen": {
+    "sounds": [
+      {
+        "name": "cisco_mod:championbagopening",
+        "stream": false
+      }
+    ]
+  },
+  "chasedisc": {
+    "sounds": [
+      {
+        "name": "cisco_mod:chasedisc",
+        "stream": false
+      }
+    ]
+  },
+  "overwatchdisc": {
+    "sounds": [
+      {
+        "name": "cisco_mod:overwatchdisc",
+        "stream": false
+      }
+    ]
+  },
+  "overwatchboss": {
+    "sounds": [
+      {
+        "name": "cisco_mod:overwatchboss",
+        "stream": false
+      }
+    ]
+  },
+  "chaseboss": {
+    "sounds": [
+      {
+        "name": "cisco_mod:chaseboss",
+        "stream": false
+      }
+    ]
+  },
+  "bjorn_scythe_active": {
+    "sounds": [
+      {
+        "name": "cisco_mod:bjorn_scythe_active",
+        "stream": false
+      }
+    ]
+  },
+  "frostfangslash": {
+    "sounds": [
+      {
+        "name": "cisco_mod:frostfangslash",
+        "stream": false
+      }
+    ]
+  },
+  "supremenightfallslash": {
+    "sounds": [
+      {
+        "name": "cisco_mod:supremenightfallslash",
+        "stream": false
+      }
+    ]
+  },
+  "supremenightfallactive": {
+    "sounds": [
+      {
+        "name": "cisco_mod:supremenightfallactive",
+        "stream": false
+      }
+    ]
+  },
+  "bjorn_scythe_slash": {
+    "sounds": [
+      {
+        "name": "cisco_mod:bjornscytheslash",
+        "stream": false
+      }
+    ]
+  },
+  "frostfangactive": {
+    "sounds": [
+      {
+        "name": "cisco_mod:frostfangactive",
+        "stream": false
+      }
+    ]
+  },
+  "descendedactive": {
+    "sounds": [
+      {
+        "name": "cisco_mod:descendedarmoractive",
+        "stream": false
+      }
+    ]
+  },
+  "sovereignactive": {
+    "sounds": [
+      {
+        "name": "cisco_mod:sovereignability",
+        "stream": false
+      }
+    ]
+  }
+}

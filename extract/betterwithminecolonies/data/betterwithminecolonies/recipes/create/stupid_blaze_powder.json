@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sss",
+    "sbs",
+    "sss"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "b": {
+      "item": "minecraft:lava_bucket"
+    }
+  },
+  "result": {
+    "item": "minecraft:blaze_powder",
+    "count": 6
+  }
+}

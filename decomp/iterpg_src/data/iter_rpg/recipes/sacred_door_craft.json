@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "iter_rpg:sacred_planks"
+    },
+    "1": {
+      "item": "iter_rpg:sacred_planks"
+    },
+    "2": {
+      "item": "iter_rpg:sacred_planks"
+    },
+    "3": {
+      "item": "iter_rpg:sacred_planks"
+    },
+    "4": {
+      "item": "iter_rpg:sacred_planks"
+    },
+    "5": {
+      "item": "iter_rpg:sacred_planks"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:sacred_door",
+    "count": 3
+  }
+}

@@ -1,0 +1,54 @@
+{
+	"conditions": [{
+		"type": "forge:mod_loaded",
+		"modid": "eidolon"
+	},
+	{
+		"type": "forge:mod_loaded",
+		"modid": "apothiccurios"
+	}],
+	"type": "apotheosis:mob_effect",
+	"mob_effect": "eidolon:reinforced",
+	"target": "HURT_SELF",
+	"values": {
+		"rare": {
+			"duration": {
+				"min": 100,
+				"steps": 5,
+				"step": 5
+			},
+			"amplifier": 0,
+			"cooldown": 3000
+		},
+		"epic": {
+			"duration": {
+				"min": 140,
+				"steps": 5,
+				"step": 5
+			},
+			"amplifier": 0,
+			"cooldown": 2500
+		},
+		"mythic": {
+			"duration": {
+				"min": 200,
+				"steps": 5,
+				"step": 8
+			},
+			"amplifier": 0,
+			"cooldown": 2000
+		},
+		"ancient": {
+			"duration": {
+				"min": 250,
+				"steps": 8,
+				"step": 8
+			},
+			"amplifier": 0,
+			"cooldown": 1750
+		}
+	},
+	"types": [
+		"curios:ring", "curios:necklace", "curios:charm"
+	]
+}

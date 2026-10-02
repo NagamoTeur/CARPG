@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x x",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:birch_slab"
+    }
+  },
+  "result": {
+    "item": "minecraft:birch_boat",
+    "count": 1
+  }
+}

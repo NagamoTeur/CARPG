@@ -1,0 +1,12 @@
+{
+  "type": "blue_skies:catylist",
+  "catylists": [
+    "blue_skies:soul_fragment"
+  ],
+  "inputs": [
+    "minecraft:sand"
+  ],
+  "results": [
+    "minecraft:soul_sand"
+  ]
+}

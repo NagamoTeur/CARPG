@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "undead_unleashed:frenzied_knight",
+    "weight": 6,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

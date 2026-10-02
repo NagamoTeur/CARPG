@@ -1,0 +1,24 @@
+{
+	"conditions": [{
+		"type": "forge:mod_loaded",
+		"modid": "combatroll"
+	}],
+	"type": "apotheosis:attribute",
+	"attribute": "combatroll:count",
+	"operation": "ADDITION",
+	"values": {
+		"mythic": {
+			"min": 1,
+			"steps": 1,
+			"step": 1
+		},
+		"ancient": {
+			"min": 1,
+			"steps": 2,
+			"step": 1
+		}
+	},
+	"types": [
+		"helmet", "chestplate", "leggings", "boots"
+	]
+}

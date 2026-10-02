@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "endlessbiomes:riftite_shard"
+    },
+    "title": {
+      "translate": "advancements.little_green_men.title"
+    },
+    "description": {
+      "translate": "advancements.little_green_men.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "little_green_men": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "endlessbiomes:glowing_green_rocks"
+}

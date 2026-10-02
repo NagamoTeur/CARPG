@@ -1,0 +1,17 @@
+{
+  "icon": {
+    "type": "item",
+    "icon": {
+      "item": "blue_skies:poison_keystone"
+    }
+  },
+  "lores": [
+    {
+      "text": "blue_skies.everdawn.poison_dungeon.lore"
+    }
+  ],
+  "priority": 49,
+  "requirement": "blue_skies:defeat_alchemist",
+  "section": "blue_skies:everdawn",
+  "title": "blue_skies.everdawn.poison_dungeon.title"
+}

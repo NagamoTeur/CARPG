@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "FFP",
+      " SN",
+      "S B"
+    ],
+    "key": {
+      "F": {
+        "item": "minecraft:feather"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "B": {
+        "item": "minecraft:bell"
+      },
+      "N": {
+        "item": "minecraft:name_tag"
+      },
+      "P": {
+        "item": "minecraft:ender_pearl"
+      }
+    },
+    "result": {
+      "item": "mythicmounts:summoning_staff",
+      "count": 1
+    }
+  }
+

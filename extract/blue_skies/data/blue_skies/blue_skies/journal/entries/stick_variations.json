@@ -1,0 +1,16 @@
+{
+  "icon": {
+    "type": "texture",
+    "icon": {
+      "texture": "blue_skies:textures/gui/journal/icons/stick_variations.png"
+    }
+  },
+  "lores": [
+    {
+      "text": "blue_skies.general.stick_variations.lore"
+    }
+  ],
+  "requirement": "blue_skies:enter_one",
+  "section": "blue_skies:general",
+  "title": "blue_skies.general.stick_variations.title"
+}

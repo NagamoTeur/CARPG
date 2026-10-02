@@ -1,0 +1,13 @@
+{
+    "name": "Guiding Bolt Expert",
+    "description": "You have honed the guiding bolt to it's limits able to cast it at max level at will. (default key ) (g) ",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "cast @p guiding_bolt 10"
+    },
+    "cooldown": 20,
+    "key": {
+        "key": "key.origins.primary_active"
+    }
+}

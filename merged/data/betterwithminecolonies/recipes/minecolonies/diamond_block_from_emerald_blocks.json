@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "x3x",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:emerald_block"
+    },
+    "3": {
+      "item": "minecraft:lapis_block"
+    }
+  },
+  "result": {
+    "item": "minecraft:diamond_block",
+    "count": 2
+  }
+}

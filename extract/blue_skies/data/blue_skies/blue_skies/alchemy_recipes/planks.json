@@ -1,0 +1,12 @@
+{
+  "type": "blue_skies:transmute",
+  "blacklist": [
+    "botania:livingwood_planks",
+    "botania:mossy_livingwood_planks",
+    "botania:dreamwood_planks",
+    "botania:mossy_dreamwood_planks"
+  ],
+  "tags": [
+    "minecraft:planks"
+  ]
+}

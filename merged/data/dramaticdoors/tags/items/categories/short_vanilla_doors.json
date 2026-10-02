@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "dramaticdoors:short_iron_door",
+    "dramaticdoors:short_oak_door",
+    "dramaticdoors:short_spruce_door",
+    "dramaticdoors:short_birch_door",
+    "dramaticdoors:short_jungle_door",
+    "dramaticdoors:short_acacia_door",
+    "dramaticdoors:short_dark_oak_door",
+    "dramaticdoors:short_mangrove_door",
+    {"id": "dramaticdoors:short_bamboo_door", "required": false},
+    {"id": "dramaticdoors:short_cherry_door", "required": false},
+    "dramaticdoors:short_crimson_door",
+    "dramaticdoors:short_warped_door"
+  ]
+}

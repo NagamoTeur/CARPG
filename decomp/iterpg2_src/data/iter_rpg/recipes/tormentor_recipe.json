@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    " 45",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "iter_rpg:ametrine_block"
+    },
+    "2": {
+      "item": "iter_rpg:hollow_visage"
+    },
+    "4": {
+      "item": "iter_rpg:hollow_visage"
+    },
+    "5": {
+      "item": "iter_rpg:ametrine_block"
+    },
+    "6": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "7": {
+      "item": "iter_rpg:hollow_visage"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:tormentor",
+    "count": 1
+  }
+}

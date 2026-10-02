@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Planificateur de build — Cisco's Adventure RPG</title>
+<link rel="stylesheet" href="../css/app.css">
+</head><body>
+<header class="top">
+  <a class="brand" href="../index.html">⚔ CARPG</a>
+  <input id="bname" class="name" placeholder="Nom du build">
+  <nav id="tabs" class="tabs"></nav>
+  <span class="spacer"></span>
+  <button id="btnShare" class="pri">Partager</button>
+  <button id="btnExport" title="Télécharger le build en fichier">Exporter</button>
+  <label class="small mut" style="cursor:pointer">Importer <input id="fileImport" type="file" accept=".json" class="hidden"></label>
+  <button id="btnNew">Nouveau</button>
+</header>
+<div class="wrap">
+  <main id="main"></main>
+  <aside class="card side" id="sheet"></aside>
+</div>
+<script src="../data/data.js"></script>
+<script src="../data/presets.js"></script>
+<script src="../data/builds.js"></script>
+<script src="engine.js"></script>
+<script src="tree.js"></script>
+<script src="ui.js"></script>
+</body></html>

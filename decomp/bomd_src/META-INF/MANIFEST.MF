@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: bosses_of_mass_destruction
+Specification-Vendor: CerbonXD
+Specification-Version: 1.0.6
+Implementation-Title: Bosses-of-Mass-Destruction-FORGE
+Implementation-Version: 1.0.6
+Implementation-Vendor: CerbonXD
+Implementation-Timestamp: 2023-12-13T21:48:46-0300
+MixinConfigs: mixins.bosses_of_mass_destruction.json
+

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "cisco_mod:fell_king_armor_leggings"
+  },
+  "addition": {
+    "item": "cisco_mod:frigidiumingot"
+  },
+  "result": {
+    "item": "cisco_mod:sylvi_leggings"
+  }
+}

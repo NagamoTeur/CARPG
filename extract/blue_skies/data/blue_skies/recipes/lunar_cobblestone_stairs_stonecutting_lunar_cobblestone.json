@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "blue_skies:lunar_cobblestone"
+  },
+  "result": "blue_skies:lunar_cobblestone_stairs"
+}

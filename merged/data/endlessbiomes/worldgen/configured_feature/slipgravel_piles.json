@@ -1,0 +1,11 @@
+{
+  "type": "endlessbiomes:slipgravel_piles",
+  "config": {
+    "state_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "endlessbiomes:slipgravel"
+      }
+    }
+  }
+}

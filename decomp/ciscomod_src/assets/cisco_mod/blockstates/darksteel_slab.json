@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cisco_mod:block/darksteel_slab"
+    },
+    "type=top": {
+      "model": "cisco_mod:block/darksteel_slab_top"
+    },
+    "type=double": {
+      "model": "cisco_mod:block/darksteel_slab_full"
+    }
+  }
+}

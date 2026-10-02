@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:prismarine_shard"
+    },
+    {
+      "tag": "minecraft:fishes"
+    },
+    {
+      "item": "minecraft:kelp"
+    },
+    {
+      "item": "iter_rpg:water_fragment"
+    },
+    {
+      "item": "iter_rpg:empty_rune"
+    },
+    {
+      "item": "minecraft:ink_sac"
+    },
+    {
+      "item": "iter_rpg:ametrine_nugget"
+    },
+    {
+      "item": "iter_rpg:arcane_powder"
+    },
+    {
+      "item": "iter_rpg:ametrine_nugget"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:water_rune",
+    "count": 1
+  }
+}

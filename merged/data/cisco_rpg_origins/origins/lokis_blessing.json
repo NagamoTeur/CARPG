@@ -1,0 +1,15 @@
+{
+    "name": "Loki's Blessing",
+    "description": "You are favoured by Loki god of mischief. You recieve his devious blessing.",
+    "powers": [
+        "cisco_rpg_origins:lokis_boon_minor",
+        "cisco_rpg_origins:lokis_boon_minor2",
+        "cisco_rpg_origins:lokis_boon_minor3",
+        "cisco_rpg_origins:lokis_boon_major",
+        "cisco_rpg_origins:lokis_boon_major2"
+    ],
+    "icon": {
+        "item": "simplyswords:toxic_longsword"
+    },
+    "impact": 1
+}

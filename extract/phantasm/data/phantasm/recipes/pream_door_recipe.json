@@ -1,0 +1,28 @@
+{
+  "group": "pream",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "phantasm:pream_planks"
+    },
+    {
+      "item": "phantasm:pream_planks"
+    },
+    {
+      "item": "phantasm:pream_planks"
+    },
+    {
+      "item": "phantasm:pream_planks"
+    },
+    {
+      "item": "phantasm:pream_planks"
+    },
+    {
+      "item": "phantasm:pream_planks"
+    }
+  ],
+  "result": {
+    "item": "phantasm:pream_door",
+    "count": 3
+  }
+}

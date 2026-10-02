@@ -1,0 +1,34 @@
+{
+  "loading_priority": 1,
+  "type": "origins:action_on_callback",
+  "entity_action_added": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:grant_power",
+        "power": "oef:carnivore",
+        "source": "*:*"
+      },
+      {
+        "type": "origins:grant_power",
+        "power": "oef:omnivore_half_c",
+        "source": "*:*"
+      }
+    ]
+  },
+  "entity_action_lost": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:revoke_power",
+        "power": "oef:carnivore",
+        "source": "*:*"
+      },
+      {
+        "type": "origins:revoke_power",
+        "power": "oef:omnivore_half_c",
+        "source": "*:*"
+      }
+    ]
+  }
+}

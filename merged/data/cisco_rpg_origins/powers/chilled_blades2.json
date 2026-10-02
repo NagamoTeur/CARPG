@@ -1,0 +1,13 @@
+{
+    "name": "Chilled Blades 3",
+    "description": "You gain addtional crit damage.",
+    "hidden": true,
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "apotheosis:crit_damage",
+        "operation": "addition",
+        "value": 0.5,
+        "name": "Chilled Blades"
+    },
+    "update_health": true
+}

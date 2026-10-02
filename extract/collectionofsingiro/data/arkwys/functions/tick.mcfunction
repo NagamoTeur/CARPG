@@ -1,0 +1,1 @@
+execute as @a[scores={drink_milk=1..}] run function minotaur:drank

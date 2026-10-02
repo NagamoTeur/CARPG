@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"arkwys:woodelf/adept_projectiles",
+		"arkwys:woodelf/forest_habitat",
+		"arkwys:woodelf/light_armoured",
+		"arkwys:woodelf/vegetarian",
+		"arkwys:woodelf/weak_melee_dungeons_gear",
+		"arkwys:woodelf/weak_melee_iceandfire",
+		"arkwys:woodelf/weak_melee_spartanweaponry",
+		"arkwys:woodelf/weak_melee",
+		"arkwys:credits"
+	],
+	"icon": "minecraft:oak_sapling",
+	"order": 9,
+	"impact": 2
+}

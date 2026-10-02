@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: Celestisynth
+Specification-Vendor: AquTheSeal, Meme Man, YeoXuHang
+Specification-Version: 1.1.5
+Implementation-Title: Celestisynth
+Implementation-Version: 1.1.5
+Implementation-Vendor: AquTheSeal, Meme Man, YeoXuHang
+Implementation-Timestamp: 2024-01-15T20:09:13+0800
+MixinConfigs: celestisynth.mixins.json
+

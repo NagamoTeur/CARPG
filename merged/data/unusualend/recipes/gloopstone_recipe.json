@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "UB",
+    "BU"
+  ],
+  "key": {
+    "U": {
+      "item": "unusualend:raw_purpur_block"
+    },
+    "B": {
+      "tag": "unusualend:blob_loot"
+    }
+  },
+  "result": {
+    "item": "unusualend:gloopstone",
+    "count": 4
+  }
+}

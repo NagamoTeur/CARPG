@@ -1,0 +1,10 @@
+{
+  "type": "blue_skies:transmute",
+  "items": [
+    "minecraft:grass_block",
+    "blue_skies:turquoise_grass_block",
+    "blue_skies:lunar_grass_block",
+    "blue_skies:turquoise_cherry_grass_block",
+    "blue_skies:lunar_cherry_grass_block"
+  ]
+}

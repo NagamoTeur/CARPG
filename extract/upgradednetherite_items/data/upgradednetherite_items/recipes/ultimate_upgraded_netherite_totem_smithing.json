@@ -1,0 +1,18 @@
+{
+  "conditions": [
+    {
+      "modid": "upgradednetherite_ultimate",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "minecraft:smithing",
+  "base": {
+    "tag": "upgradednetherite_items:upgraded_netherite_totem"
+  },
+  "addition": {
+    "item": "upgradednetherite_ultimate:ultimate_upgraded_netherite_ingot"
+  },
+  "result": {
+    "item": "upgradednetherite_items:ultimate_upgraded_netherite_totem"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "iter_rpg:small_vase_feature",
+  "step": "underground_decoration"
+}

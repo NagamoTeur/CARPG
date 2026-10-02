@@ -1,0 +1,29 @@
+{
+  "parent": "blue_skies:everbright/get_ventium",
+  "criteria": {
+    "use_tool_box": {
+      "conditions": {},
+      "trigger": "blue_skies:used_tool_box"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.blue_skies.everbright.use_tool_box.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "blue_skies:tool_box"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.blue_skies.everbright.use_tool_box"
+    }
+  },
+  "requirements": [
+    [
+      "use_tool_box"
+    ]
+  ]
+}

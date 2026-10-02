@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "blue_skies:lunar_stone"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "blue_skies:lunar_stone_pressure_plate"
+  }
+}

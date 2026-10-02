@@ -1,0 +1,12 @@
+{
+    "name": "Minor Boon of Ice",
+    "description": "Boreas blesses your weapons granting you a plus 9 boost to cold damage.",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "apotheosis:cold_damage",
+        "operation": "addition",
+        "value": 9,
+        "name": "Minor Boon of Ice"
+    },
+    "update_health": true
+}

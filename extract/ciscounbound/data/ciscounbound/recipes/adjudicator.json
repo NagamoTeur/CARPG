@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 45",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "cisco_mod:brightsteel_ingot"
+    },
+    "1": {
+      "item": "cisco_mod:arcane_brightsteel_block"
+    },
+    "2": {
+      "item": "cisco_mod:divine_core"
+    },
+    "4": {
+      "item": "cisco_mod:arcane_brightsteel_block"
+    },
+    "5": {
+      "item": "cisco_mod:light_core"
+    },
+    "7": {
+      "item": "cisco_mod:brightsteel_ingot"
+    }
+  },
+  "result": {
+    "item": "cisco_mod:adjudicator",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "package": "com.aqutheseal.celestisynth.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "celestisynth.refmap.json",
+  "mixins": [
+    "AbstractArrowMixin",
+    "InventoryMixin",
+    "LivingEntityMixin",
+    "PlayerMixin",
+    "RecipeManagerAccessor",
+    "ServerPlayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "EntityRendererMixin",
+    "MinecraftMixin"
+  ]
+}

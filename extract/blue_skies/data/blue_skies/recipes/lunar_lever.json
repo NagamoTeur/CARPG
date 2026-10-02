@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "blue_skies:lunar_cobblestone"
+    },
+    "S": [
+      {
+        "item": "blue_skies:lunar_stick"
+      },
+      {
+        "item": "blue_skies:dusk_stick"
+      }
+    ]
+  },
+  "pattern": [
+    "S",
+    "C"
+  ],
+  "result": {
+    "item": "blue_skies:lunar_lever"
+  }
+}

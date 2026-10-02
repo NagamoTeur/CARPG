@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "blue_skies:carabeef"
+  },
+  "result": "blue_skies:cooked_carabeef"
+}

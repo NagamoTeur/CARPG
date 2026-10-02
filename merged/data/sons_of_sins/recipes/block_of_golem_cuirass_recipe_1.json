@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "sons_of_sins:golem_cuirass"
+    }
+  },
+  "result": {
+    "item": "sons_of_sins:block_of_golem_cuirass",
+    "count": 1
+  }
+}

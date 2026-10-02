@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "blue_skies:turquoise_cobblestone"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    },
+    "S": {
+      "item": "blue_skies:snowcap_mushroom_block"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "CFC",
+    "CCC"
+  ],
+  "result": {
+    "item": "blue_skies:snowcap_oven"
+  }
+}

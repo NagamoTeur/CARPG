@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "iter_rpg:ice_bricks"
+    },
+    "1": {
+      "item": "iter_rpg:ice_bricks"
+    },
+    "2": {
+      "item": "iter_rpg:ice_bricks"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:ice_brick_slab",
+    "count": 6
+  }
+}

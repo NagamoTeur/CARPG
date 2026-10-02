@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iter_rpg:blocks/ametrine_bricks",
+    "particle": "iter_rpg:blocks/ametrine_bricks"
+  },
+  "render_type": "solid"
+}

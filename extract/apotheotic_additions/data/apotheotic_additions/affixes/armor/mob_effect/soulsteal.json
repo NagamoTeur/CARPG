@@ -1,0 +1,32 @@
+{
+	"conditions": [{
+	"type": "forge:mod_loaded",
+	"modid": "alexsmobs"
+}],
+	"type": "apotheosis:mob_effect",
+	"mob_effect": "alexsmobs:soulsteal",
+	"target": "HURT_SELF",
+	"values": {
+		"mythic": {
+			"duration": {
+				"min": 20,
+				"steps": 20,
+				"step": 5
+			},
+			"amplifier": 0,
+			"cooldown": 3000
+		},
+		"ancient": {
+			"duration": {
+				"min": 30,
+				"steps": 20,
+				"step": 10
+			},
+			"amplifier": 0,
+			"cooldown": 3000
+		}
+	},
+	"types": [
+		"boots"
+	]
+}

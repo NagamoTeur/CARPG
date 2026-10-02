@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "endlessbiomes:arkan"
+    },
+    "title": {
+      "translate": "advancements.its_aliveeeeee.title"
+    },
+    "description": {
+      "translate": "advancements.its_aliveeeeee.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "its_aliveeeeee": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "minecraft:end/enter_end_gateway"
+}

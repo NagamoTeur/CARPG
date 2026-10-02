@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 45",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "endlessbiomes:twisted_planks"
+    },
+    "4": {
+      "item": "endlessbiomes:twisted_planks"
+    },
+    "5": {
+      "item": "endlessbiomes:twisted_planks"
+    },
+    "6": {
+      "item": "endlessbiomes:twisted_planks"
+    },
+    "7": {
+      "item": "endlessbiomes:twisted_planks"
+    },
+    "8": {
+      "item": "endlessbiomes:twisted_planks"
+    }
+  },
+  "result": {
+    "item": "endlessbiomes:twisted_stairs",
+    "count": 4
+  }
+}

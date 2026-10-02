@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "strictly_origins:damaged_durendal"
+  },
+  "addition": {
+    "item": "strictly_origins:scroll"
+  },
+  "result": {
+    "item": "strictly_origins:durendal"
+  }
+}

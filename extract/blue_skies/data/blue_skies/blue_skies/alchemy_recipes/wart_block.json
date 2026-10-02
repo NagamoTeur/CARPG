@@ -1,0 +1,7 @@
+{
+  "type": "blue_skies:transmute",
+  "items": [
+    "minecraft:nether_wart_block",
+    "minecraft:warped_wart_block"
+  ]
+}

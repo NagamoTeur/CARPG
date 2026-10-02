@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "blue_skies:blinding_stone"
+  },
+  "result": "blue_skies:carved_blinding_stone"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "upgradednetherite:netherite_crossbow"
+  },
+  "addition": {
+    "item": "upgradednetherite:echo_essence"
+  },
+  "result": {
+    "item": "upgradednetherite:echo_upgraded_netherite_crossbow"
+  }
+}

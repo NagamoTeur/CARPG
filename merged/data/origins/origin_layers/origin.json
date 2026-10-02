@@ -1,0 +1,12 @@
+{
+    "origins": [
+        "cisco_rpg_origins:demi_god_umbra",
+        "cisco_rpg_origins:demi_god_lux",
+        "cisco_rpg_origins:venthari_sharpshooter",
+        "cisco_rpg_origins:hobrosi_dark_mage",
+        "cisco_rpg_origins:rastrayian_justicar",
+        "cisco_rpg_origins:frijani_drengr",
+        "cisco_rpg_origins:pyrios_pheonix_knight"
+    ],
+    "enabled": true
+}

@@ -1,0 +1,123 @@
+{
+  "name": "hopo:portal",
+  "fallback": "hopo:portal",
+  "elements": [
+    {
+      "weight": 75,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:portal1",
+        "projection": "rigid",
+        "processors": "hopo:portalier"
+      }
+    },
+    {
+      "weight": 75,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:portal2",
+        "projection": "rigid",
+        "processors": "hopo:portalier"  
+      }
+    },
+    {
+      "weight": 75,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:portal3",
+        "projection": "rigid",
+        "processors": "hopo:portalier"
+      }
+    },
+    {
+      "weight": 75,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:portal4",
+        "projection": "rigid",
+        "processors": "hopo:portalier"
+      }
+    },
+    {
+      "weight": 75,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:portal5",
+        "projection": "rigid",
+        "processors": "hopo:portalier"
+      }
+    },
+    {
+      "weight": 75,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:portal6",
+        "projection": "rigid",
+        "processors": "hopo:portalier"
+      }
+    },
+    {
+      "weight": 75,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:portal7",
+        "projection": "rigid",
+        "processors": "hopo:portalier"
+      }
+    },
+    {
+      "weight": 75,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:portal8",
+        "projection": "rigid",
+        "processors": "hopo:portalier"
+      }
+    },
+    {
+      "weight": 75,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:portal9",
+        "projection": "rigid",
+        "processors": "hopo:portalier"
+      }
+    },
+    {
+      "weight": 75,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:portal10",
+        "projection": "rigid",
+        "processors": "hopo:portalier"
+      }
+    },
+    {
+      "weight": 100,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:portal11",
+        "projection": "rigid",
+        "processors": "hopo:portalier"
+      }
+    },
+    {
+      "weight": 100,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:portal12",
+        "projection": "rigid",
+        "processors": "hopo:portalier"
+      }
+    },
+    {
+      "weight": 100,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "hopo:portal13",
+        "projection": "rigid",
+        "processors": "hopo:portalier"
+      }
+    }
+  ]
+}

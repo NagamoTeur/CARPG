@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "blue_skies:horizofin_tunid"
+  },
+  "result": "blue_skies:cooked_horizofin_tunid"
+}

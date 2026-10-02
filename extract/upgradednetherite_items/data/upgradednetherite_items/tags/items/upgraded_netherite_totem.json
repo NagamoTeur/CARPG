@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "upgradednetherite_items:gold_upgraded_netherite_totem",
+    "upgradednetherite_items:fire_upgraded_netherite_totem",
+    "upgradednetherite_items:ender_upgraded_netherite_totem",
+    "upgradednetherite_items:water_upgraded_netherite_totem",
+    "upgradednetherite_items:wither_upgraded_netherite_totem",
+    "upgradednetherite_items:poison_upgraded_netherite_totem",
+    "upgradednetherite_items:phantom_upgraded_netherite_totem",
+    "upgradednetherite_items:feather_upgraded_netherite_totem"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_leggings"
+  },
+  "addition": {
+    "item": "upgradednetherite:corrupt_essence"
+  },
+  "result": {
+    "item": "upgradednetherite:corrupt_upgraded_netherite_leggings"
+  }
+}

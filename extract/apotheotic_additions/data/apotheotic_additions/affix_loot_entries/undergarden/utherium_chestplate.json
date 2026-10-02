@@ -1,0 +1,19 @@
+{
+  "conditions": [{
+		"type": "forge:mod_loaded",
+		"modid": "undergarden"
+	}],
+  "weight": 15,
+  "quality": 12.0,
+  "stack": {
+    "item": "undergarden:utherium_chestplate",
+    "count": 1,
+    "nbt": "{Damage:0}"
+  },
+  "type": "ARMOR",
+  "dimensions": [
+    "undergarden:undergarden"
+  ],
+  "min_rarity": "uncommon",
+  "max_rarity": "epic"
+}

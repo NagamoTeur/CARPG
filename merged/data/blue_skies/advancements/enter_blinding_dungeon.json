@@ -1,0 +1,58 @@
+{
+  "parent": "blue_skies:thinking_with_portals",
+  "criteria": {
+    "entered_everbright_blinding_dungeon": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "blue_skies:everbright_blinding_dungeon"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "entered_everdawn_blinding_dungeon": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "blue_skies:everdawn_blinding_dungeon"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.blue_skies.enter_blinding_dungeon.desc"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "blue_skies:bright_blinding_keystone"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.blue_skies.enter_blinding_dungeon"
+    }
+  },
+  "requirements": [
+    [
+      "entered_everbright_blinding_dungeon",
+      "entered_everdawn_blinding_dungeon"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x x",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:jungle_slab"
+    }
+  },
+  "result": {
+    "item": "minecraft:jungle_boat",
+    "count": 1
+  }
+}

@@ -1,0 +1,88 @@
+210|En dernière étape d'une potion, tu peux l'affiner avec de l'eau d'un chaudron : les effets instantanés sont renforcés et les effets durables durent plus longtemps.
+211|Tu atteins des niveaux d'enchantement plus élevés à la table d'enchantement.
+212|Personne ne prépare mieux ta nourriture qu'un Cuisinier.
+213|La nourriture que tu fabriques est plus rassasiante.
+214|Tu reçois plus d'expérience en cuisant de la nourriture dans un fumoir.
+215|Les fermiers nourrissent tout le monde depuis aussi longtemps qu'on s'en souvienne.
+216|À la récolte, tu as une chance d'obtenir le double de rendement.
+217|La poudre d'os est deux fois plus efficace entre tes mains expertes sur les cultures et les plantes.
+218|Les éleveurs tirent le meilleur des animaux et collectent de nombreuses ressources utiles.
+219|Les animaux que tu fais se reproduire ont une chance de donner deux petits.
+220|Tu obtiens parfois plus de matériaux en tuant des animaux.
+221|Les mineurs sont les plus doués pour déterrer les trésors du sol.
+222|Tu mines la pierre plus vite que les autres.
+223|Casser des blocs ne te fatigue pas.
+224|Souvent voleurs et brigands, les roublards excellent dans les embuscades et les attaques furtives.
+225|Ton nom n'est jamais visible à travers les murs, même sans être accroupi.
+226|Après 10 secondes accroupi, tu entres en Furtivité.
+227|En furtivité, tu fais moins de bruit et infliges des dégâts supplémentaires en attaquant un ennemi par derrière. Tu quittes la furtivité quand tu arrêtes de t'accroupir.
+228|Ces guerriers honorables préfèrent l'épée et le bouclier pour abattre leurs ennemis.
+229|Capable d'exploiter chaque arme au maximum, tu infliges un peu plus de dégâts.
+230|Tu es moins ralenti quand tu te protèges avec un bouclier.
+231|Un tir, un mort.
+232|Tous tes projectiles sont plus précis.
+233|Tu te déplaces plus vite que les autres en bandant ton arc.
+234|Les maîtres des bêtes sont des solitaires qui préfèrent la compagnie des animaux.
+235|Les animaux que tu apprivoises reçoivent un bonus permanent de vie et de force.
+236|Tes animaux apprivoisés proches reçoivent aussi les effets des potions que tu bois.
+237|Les arbres feraient bien de se méfier quand un Bûcheron est dans les parages.
+238|Tu abats un arbre entier d'un coup, sauf si tu t'accroupis.
+239|Tu obtiens 2 planches de plus par bûche lors du craft.
+240|Les explorateurs se repèrent facilement dans les terrains les plus difficiles et découvrent les lieux cachés.
+241|Tu commences la partie avec une boussole, une horloge et neuf cartes vides.
+242|Courir ne te fatigue pas.
+243|Les benêts ne sont vraiment bons à rien.
+244|Tu es favorisé par Amaterasu, déesse du soleil. Tu reçois sa bénédiction rayonnante.
+245|Amaterasu bénit ton corps : +10 de vie max.
+246|Après avoir tué l'Ender Dragon, Amaterasu t'accorde de façon permanente +20 % de vie max et une régénération accrue.
+247|Après avoir tué l'Ender Dragon, Amaterasu t'accorde de façon permanente +20 % de vie max et une régénération accrue.
+248|Tu es favorisé par Athéna, déesse de la sagesse. Elle t'accorde sa bénédiction protectrice.
+249|Athéna bénit ton armure : +12 d'armure.
+250|Après avoir tué l'Ender Dragon, Athéna t'accorde de façon permanente −25 % de tous les dégâts reçus.
+251|Tu es favorisé par Neptune, dieu des eaux et des mers. Il t'accorde sa bénédiction des marées.
+252|Tu es renforcé par les marées : +80 % de dégâts sous l'eau.
+253|Après avoir tué l'Ender Dragon, Neptune te permet de respirer, de voir clairement et de miner plus vite sous l'eau.
+254|Tu es favorisé par Skadi, déesse glacée des étendues sauvages. Elle t'accorde sa bénédiction glaciale.
+255|Dans le domaine de Skadi, elle te donne de la force : +14 % de dégâts dans les biomes froids.
+256|Après avoir tué l'Ender Dragon, Skadi t'accorde de façon permanente +25 % de dégâts de projectile.
+257|Tu es favorisé par Râ, dieu du soleil, de la lumière et de l'ordre. Tu reçois sa bénédiction radieuse.
+258|Râ bénit tes armes : +11 de dégâts de feu quand tu es exposé au soleil.
+259|Après avoir tué l'Ender Dragon, Râ t'accorde +10 de dégâts de feu supplémentaires.
+260|Tu es favorisé par Chiron, le grand centaure guérisseur et enseignant. Tu reçois sa bénédiction avisée.
+261|Chiron te transmet son enseignement : tu gagnes le triple d'expérience de toutes les sources.
+262|Après avoir tué l'Ender Dragon, Chiron t'accorde sa suprême maîtrise des soins : soins augmentés de toutes sources, sur-soin (bouclier) et soins périodiques.
+263|Tu es favorisé par Borée, dieu de la glace et du vent du nord. Tu reçois sa bénédiction glaciale.
+264|Borée bénit tes armes : +9 de dégâts de froid.
+265|Après avoir tué l'Ender Dragon, Borée t'accorde +25 de dégâts de froid supplémentaires.
+266|Tu es favorisé par Loki, dieu de la malice. Tu reçois sa bénédiction sournoise.
+267|Loki te confie une part de sa magie noire : portée accrue, vraie invisibilité en étant accroupi, et tes attaques empoisonnent tes ennemis.
+268|Loki te confie une part de sa magie noire : portée accrue, vraie invisibilité en étant accroupi, et tes attaques empoisonnent tes ennemis.
+269|Après avoir tué l'Ender Dragon, Loki te permet de te téléporter vers un projectile lancé (touche par défaut : X). Tu infliges aussi +40 % de dégâts aux cibles empoisonnées.
+270|Tu es favorisé par Susanoo, dieu des tempêtes. Il t'accorde sa bénédiction tempétueuse.
+271|Susanoo bénit tes déplacements : +15 % de vitesse de déplacement.
+272|Après avoir tué l'Ender Dragon, Susanoo t'accorde de façon permanente +25 % de vitesse d'attaque et l'immunité à la lenteur.
+273|Tu es favorisé par Thor, dieu de la foudre et de la force. Il t'accorde sa bénédiction tonitruante.
+274|Thor renforce tes coups : +9 à ton attaque.
+275|Après avoir tué l'Ender Dragon, Thor t'accorde +15 % de dégâts infligés.
+276|Tu es favorisé par Zéphyr, dieu du vent d'ouest. Tu reçois sa bénédiction venteuse.
+277|Les vents doux de Zéphyr guident tes déplacements : aucun dégât de chute et saut plus haut en courant.
+278|Après avoir tué l'Ender Dragon, Zéphyr t'accorde le vol ailé. Bats des ailes avec la touche (par défaut : H).
+279|Tu renonces aux dieux et marches seul. Tu ne reçois aucune bénédiction.
+280|Tu es favorisé par Arès, dieu de la guerre et du courage. Tu reçois sa bénédiction féroce.
+281|Arès bénit tes coups : +10 % de chance de critique.
+282|Après avoir tué l'Ender Dragon, Arès te prête une part de sa puissance : +20 % de chance de critique et +40 % de dégâts critiques supplémentaires.
+283|Arès te prête une part de sa puissance : +20 % de chance de critique et +40 % de dégâts critiques supplémentaires.
+284|Tu es favorisé par Arthur, le légendaire roi guerrier. Tu reçois sa bénédiction chevaleresque.
+285|La bénédiction d'Arthur renforce ton courage face aux forces des ténèbres : +60 % de dégâts aux morts-vivants.
+286|Après avoir tué l'Ender Dragon, Arthur exalte ton arme : dégâts de feu, dégâts d'attaque et vitesse d'attaque.
+287|Après avoir tué l'Ender Dragon, Arthur exalte ton arme : dégâts de feu, dégâts d'attaque et vitesse d'attaque accrus.
+288|Après avoir tué l'Ender Dragon, Arthur exalte tes armes : portée d'attaque, dégâts d'attaque et vitesse d'attaque accrus.
+289|Tu es favorisé par Baba Yaga, la sorcière slave du chaudron. Tu reçois sa bénédiction maléfique.
+290|Les brassins de Baba Yaga affligent tes ennemis : à chaque coup, ils sont affaiblis et subissent le Wither.
+291|Les brassins de Baba Yaga gagnent en puissance : les ennemis affligés de faiblesse ou de Wither te font 45 % de dégâts en moins.
+292|Tu es favorisé par Vishnu, dieu de la préservation, de l'équilibre et de la subsistance. Tu reçois sa bénédiction protectrice.
+293|Vishnu bénit ta force vitale : tu gagnes un puissant effet de régénération.
+294|Après avoir tué l'Ender Dragon, Vishnu t'accorde une absorption permanente et −15 % de dégâts reçus.
+295|Tu es favorisé par Héphaïstos, dieu des forges et des volcans. Tu reçois sa bénédiction ardente.
+296|Héphaïstos bénit ton arme et te donne la capacité d'abattre les géants : tes coups infligent +2 % des PV actuels de la cible.
+297|Après avoir tué l'Ender Dragon, Héphaïstos te prête une part de sa puissance : tes coups réduisent les PV ennemis en cendres, avec +4 % de PV actuels supplémentaires.

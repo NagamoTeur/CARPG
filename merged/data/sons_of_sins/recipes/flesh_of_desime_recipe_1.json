@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "sons_of_sins:flesh_of_demise"
+    }
+  },
+  "result": {
+    "item": "sons_of_sins:flesh_block",
+    "count": 1
+  }
+}

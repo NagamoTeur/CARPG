@@ -1,0 +1,1 @@
+scoreboard objectives add drink_milk minecraft.used:minecraft.milk_bucket

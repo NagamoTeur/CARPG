@@ -1,0 +1,36 @@
+{
+  "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+  "bonuses": [
+    {
+      "type": "skilltree:attribute",
+      "amount": 1.0,
+      "attribute": "minecraft:generic.max_health",
+      "id": "a6ac21a2-36b7-4d2c-971e-30a007110e0f",
+      "name": "SkillBonus",
+      "operation": 0,
+      "player_condition": {
+        "type": "skilltree:none"
+      },
+      "player_multiplier": {
+        "type": "skilltree:gems_amount",
+        "item_condition": {
+          "type": "skilltree:tag",
+          "tag_id": "forge:curios/jewelry"
+        }
+      }
+    }
+  ],
+  "borderTexture": "skilltree:textures/tooltip/lesser.png",
+  "buttonSize": 16,
+  "directConnections": [
+    "skilltree:miner_subclass_2_life_3"
+  ],
+  "iconTexture": "skilltree:textures/icons/miner_subclass_2_life_1.png",
+  "id": "skilltree:miner_subclass_2_life_2",
+  "isStartingPoint": false,
+  "longConnections": [],
+  "oneWayConnections": [],
+  "positionX": -254.91936,
+  "positionY": 296.07227,
+  "tags": []
+}

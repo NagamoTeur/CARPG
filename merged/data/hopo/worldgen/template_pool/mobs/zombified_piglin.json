@@ -1,0 +1,15 @@
+{
+    "name": "hopo:mobs/zombified_piglin",
+    "fallback": "hopo:mobs/zombified_piglin",
+    "elements": [
+        {
+            "weight": 100,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "hopo:mobs/zombified_piglin",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "blue_skies:cut_crystal_sandstone"
+  },
+  "result": "blue_skies:cut_crystal_sandstone_slab"
+}

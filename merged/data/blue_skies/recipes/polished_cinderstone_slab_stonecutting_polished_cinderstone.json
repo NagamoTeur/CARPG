@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "blue_skies:polished_cinderstone"
+  },
+  "result": "blue_skies:polished_cinderstone_slab"
+}

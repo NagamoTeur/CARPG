@@ -1,0 +1,68 @@
+package com.hollingsworth.arsnouveau.common.network;
+
+import com.hollingsworth.arsnouveau.common.block.tile.IAnimationListener;
+import java.util.function.Supplier;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.core.BlockPos;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraftforge.network.NetworkEvent.Context;
+
+public class PacketOneShotAnimation {
+   final int x;
+   final int y;
+   final int z;
+   final int arg;
+
+   public PacketOneShotAnimation(int x, int y, int z, int arg) {
+      this.x = x;
+      this.y = y;
+      this.z = z;
+      this.arg = arg;
+   }
+
+   public PacketOneShotAnimation(BlockPos pos, int arg) {
+      this.x = pos.m_123341_();
+      this.y = pos.m_123342_();
+      this.z = pos.m_123343_();
+      this.arg = arg;
+   }
+
+   public PacketOneShotAnimation(BlockPos pos) {
+      this.x = pos.m_123341_();
+      this.y = pos.m_123342_();
+      this.z = pos.m_123343_();
+      this.arg = 0;
+   }
+
+   public static PacketOneShotAnimation decode(FriendlyByteBuf buf) {
+      return new PacketOneShotAnimation(buf.readInt(), buf.readInt(), buf.readInt(), buf.readInt());
+   }
+
+   public static void encode(PacketOneShotAnimation msg, FriendlyByteBuf buf) {
+      buf.writeInt(msg.x);
+      buf.writeInt(msg.y);
+      buf.writeInt(msg.z);
+      buf.writeInt(msg.arg);
+   }
+
+   public static class Handler {
+      public static void handle(final PacketOneShotAnimation m, Supplier<Context> ctx) {
+         if (ctx.get().getDirection().getReceptionSide().isServer()) {
+            ctx.get().setPacketHandled(true);
+         } else {
+            ctx.get().enqueueWork(new Runnable() {
+               @Override
+               public void run() {
+                  Minecraft mc = Minecraft.m_91087_();
+                  ClientLevel world = mc.f_91073_;
+                  if (world.m_7702_(new BlockPos(m.x, m.y, m.z)) instanceof IAnimationListener) {
+                     ((IAnimationListener)world.m_7702_(new BlockPos(m.x, m.y, m.z))).startAnimation(m.arg);
+                  }
+               }
+            });
+            ctx.get().setPacketHandled(true);
+         }
+      }
+   }
+}

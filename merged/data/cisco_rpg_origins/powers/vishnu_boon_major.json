@@ -1,0 +1,20 @@
+{
+    "name": "Greater Boon of Balance",
+    "description": "Upon slaying the ender dragon, Vishnu grants you permanent absorbtion and 15 percent damage reduction.",
+    "condition": {
+        "type": "origins:advancement",
+        "advancement": "minecraft:end/kill_dragon"
+    },
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:absorption",
+            "duration": 100,
+            "amplifier": 4,
+            "show_particles": false,
+            "show_icon": true
+        }
+    }
+}

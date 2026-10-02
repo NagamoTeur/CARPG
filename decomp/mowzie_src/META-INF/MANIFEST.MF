@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: mowziesmobs
+Implementation-Version: 1.6.3
+Specification-Vendor: BobMowzie
+Specification-Title: mowziesmobs
+Implementation-Timestamp: 2024-03-13T16:03:40-0700
+Specification-Version: 1
+Implementation-Vendor: BobMowzie
+

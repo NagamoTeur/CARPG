@@ -1,0 +1,13 @@
+{
+    "name": "Dark Light Blessing",
+    "description": "You devote yourself to lumera and she grants you a small portion of her power. You gain extra mana and cast spells 2x faster.",
+    "hidden": true,
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "irons_spellbooks:max_mana",
+        "operation": "multiply_base",
+        "value": 2,
+        "name": "Dark Light Blessing"
+    },
+    "update_health": true
+}

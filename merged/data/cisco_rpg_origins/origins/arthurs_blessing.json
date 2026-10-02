@@ -1,0 +1,14 @@
+{
+    "name": "Arthur's Blessing",
+    "description": "You are favoured by Arthur the legendary warrior king. You recieve his chivalric blessing.",
+    "powers": [
+        "cisco_rpg_origins:arthurs_boon_minor",
+        "cisco_rpg_origins:arthurs_boon_major",
+        "cisco_rpg_origins:arthurs_boon_major2",
+        "cisco_rpg_origins:arthurs_boon_major3"
+    ],
+    "icon": {
+        "item": "simplyswords:sunfire"
+    },
+    "impact": 1
+}

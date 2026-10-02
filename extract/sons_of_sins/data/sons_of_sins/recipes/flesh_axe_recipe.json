@@ -1,0 +1,12 @@
+{
+  "type": "sons_of_sins:etheric_blood_imbibation",
+  "ingredients": [
+    {
+      "item": "sons_of_sins:osseous_axe"
+    }
+  ],
+  "output": {
+    "item": "sons_of_sins:flesh_axe",
+    "count": 1
+  }
+}

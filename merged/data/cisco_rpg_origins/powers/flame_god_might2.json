@@ -1,0 +1,13 @@
+{
+    "name": "Fire Magic Adept",
+    "description": "Members of the order of the pheonix profiecient in the use of fire magic but frown on the use of ice magic. As such you gain a 200 % boost to fire magic but an equal penalty to ice magic.",
+    "hidden": true,
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "irons_spellbooks:ice_spell_power",
+        "operation": "addition",
+        "value": -2,
+        "name": "Fire Magic Adept2"
+    },
+    "update_health": true
+}

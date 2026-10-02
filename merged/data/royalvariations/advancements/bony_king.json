@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "royalvariations:bony_king_icon"
+    },
+    "title": {
+      "translate": "advancements.bony_king.title"
+    },
+    "description": {
+      "translate": "advancements.bony_king.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bony_king": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 15
+  },
+  "parent": "royalvariations:royal_variations_achievement"
+}

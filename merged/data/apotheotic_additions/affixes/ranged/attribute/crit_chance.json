@@ -1,0 +1,42 @@
+{
+	"type": "apotheosis:attribute",
+	"attribute": "apotheosis:crit_chance",
+	"operation": "MULTIPLY_BASE",
+	"values": {
+		"common": {
+			"min": 0.03,
+			"steps": 2,
+			"step": 0.01
+		},
+		"uncommon": {
+			"min": 0.04,
+			"steps": 3,
+			"step": 0.01
+		},
+		"rare": {
+			"min": 0.06,
+			"steps": 3,
+			"step": 0.03
+		},
+		"epic": {
+			"min": 0.12,
+			"steps": 3,
+			"step": 0.04
+		},
+		"mythic": {
+			"min": 0.14,
+			"steps": 4,
+			"step": 0.05
+		},
+		"ancient": {
+			"min": 0.16,
+			"steps": 5,
+			"step": 0.06
+		}
+	},
+	"types": [
+		"bow",
+		"crossbow",
+		"trident"
+	]
+}

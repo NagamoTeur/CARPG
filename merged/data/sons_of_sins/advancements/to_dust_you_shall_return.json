@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "sons_of_sins:textures/screens/flesh_block_side.png",
+    "icon": {
+      "item": "sons_of_sins:ether_ashes"
+    },
+    "title": {
+      "translate": "advancements.to_dust_you_shall_return.title"
+    },
+    "description": {
+      "translate": "advancements.to_dust_you_shall_return.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "to_dust_you_shall_return": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

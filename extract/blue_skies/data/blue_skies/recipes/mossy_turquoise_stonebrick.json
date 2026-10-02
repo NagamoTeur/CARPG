@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blue_skies:turquoise_stonebrick"
+    },
+    [
+      {
+        "item": "blue_skies:bluebright_vine"
+      },
+      {
+        "item": "blue_skies:starlit_vine"
+      }
+    ]
+  ],
+  "result": {
+    "item": "blue_skies:mossy_turquoise_stonebrick"
+  }
+}

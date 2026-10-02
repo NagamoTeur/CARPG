@@ -1,0 +1,9 @@
+{
+  "parent": "cisco_mod:custom/podium_of_purgatory",
+  "textures": {
+    "all": "cisco_mod:blocks/podium_texture",
+    "particle": "cisco_mod:blocks/podium_texture",
+    "0": "cisco_mod:blocks/podium_texture"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cisco_mod:fell_king_armor_helmet"
+    },
+    "title": {
+      "translate": "advancements.regicide.title"
+    },
+    "description": {
+      "translate": "advancements.regicide.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "regicide": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cisco_mod:trials_and_talismans"
+}

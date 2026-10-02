@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "sunflower_plains",
+    "windswept_hills",
+    "stony_peaks",
+    "flower_forest",
+    "frozen_peaks",
+    "jagged_peaks",
+    "meadow"
+  ],
+  "features": "iter_rpg:arcane_flower",
+  "step": "vegetal_decoration"
+}

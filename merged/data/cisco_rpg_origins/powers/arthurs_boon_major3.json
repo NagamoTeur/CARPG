@@ -1,0 +1,18 @@
+{
+    "name": "Major Boon of Excalibur",
+    "description": "Upon slaying the ender dragon, Arthur exalts your weapons granting you increased attack range , attack damage and attack speed.",
+    "hidden": true,
+    "condition": {
+        "type": "origins:advancement",
+        "advancement": "minecraft:end/kill_dragon"
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "generic.attack_speed",
+        "operation": "multiply_total",
+        "value": 0.15,
+        "name": "Major Boon of Excalibur"
+    },
+    "tick_rate": 20,
+    "update_health": true
+}

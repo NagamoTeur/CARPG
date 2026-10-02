@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "upgradednetherite:gold_upgraded_netherite_ingot",
+    "upgradednetherite:fire_upgraded_netherite_ingot",
+    "upgradednetherite:ender_upgraded_netherite_ingot",
+    "upgradednetherite:water_upgraded_netherite_ingot",
+    "upgradednetherite:wither_upgraded_netherite_ingot",
+    "upgradednetherite:poison_upgraded_netherite_ingot",
+    "upgradednetherite:phantom_upgraded_netherite_ingot",
+    "upgradednetherite:feather_upgraded_netherite_ingot",
+    "upgradednetherite:corrupt_upgraded_netherite_ingot"
+  ]
+}

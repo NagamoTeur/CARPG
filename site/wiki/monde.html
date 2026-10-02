@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Le monde &amp; le danger — Wiki CARPG</title>
+<meta name="description" content="Niveaux des monstres, distance, infernaux, épreuves sombres">
+<link rel="stylesheet" href="../css/app.css"><link rel="stylesheet" href="../css/wiki.css">
+</head><body>
+<header class="top"><a class="brand" href="../index.html">⚔ CARPG</a>
+<button id="navbtn" class="sm" aria-label="Menu">☰ Menu</button>
+<input id="q" type="search" placeholder="Rechercher dans le wiki…" autocomplete="off"><div id="results" class="hidden"></div>
+<span class="spacer"></span><a href="../pob/index.html"><button class="pri">Ouvrir le planificateur de build</button></a></header>
+<div class="wikiwrap"><nav id="wnav"><details class="navsec" open><summary>Démarrer</summary><a href="../wiki/index.html" class="">Accueil</a><a href="../wiki/premiers-pas.html" class="">Premiers pas</a><a href="../wiki/monde.html" class="on">Le monde &amp; le danger</a><a href="../wiki/campagne.html" class="">La campagne</a><a href="../wiki/survie.html" class="">Mort, sauvegarde &amp; sécurité</a></details><details class="navsec" ><summary>Personnage</summary><a href="../wiki/origines.html" class="">Origines</a><a href="../wiki/classes.html" class="">Classes</a><a href="../wiki/benedictions.html" class="">Bénédictions divines</a><a href="../wiki/talents.html" class="">Arbre de talents</a><a href="../wiki/combat.html" class="">Combat &amp; statistiques</a></details><details class="navsec" ><summary>Équipement</summary><a href="../wiki/equipement.html" class="">Rareté, affixes &amp; sockets</a><a href="../wiki/gemmes.html" class="">Gemmes</a><a href="../wiki/affixes.html" class="">Catalogue des affixes</a><a href="../wiki/atelier.html" class="">Ateliers &amp; enchantement</a><a href="../wiki/objets-campagne.html" class="">Équipement de campagne</a><a href="../wiki/accessoires.html" class="">Accessoires &amp; reliques</a></details><details class="navsec" ><summary>Magie</summary><a href="../wiki/magie.html" class="">Comprendre la magie</a><a href="../wiki/sorts.html" class="">Catalogue des sorts (Iron's)</a><a href="../wiki/ars.html" class="">Glyphes d'Ars Nouveau</a></details><details class="navsec" ><summary>Boss</summary><a href="../wiki/boss.html" class="">Guide des boss</a></details><details class="navsec" ><summary>Builds</summary><a href="../wiki/builds/index.html" class="">Tous les builds</a><a href="../wiki/builds/mage-ender.html" class="">Mage sombre (Ender)</a><a href="../wiki/builds/justicier.html" class="">Justicier sacré</a><a href="../wiki/builds/mage-feu.html" class="">Chevalier-mage du Phénix</a><a href="../wiki/builds/mage-foudre.html" class="">Mage de la tempête</a><a href="../wiki/builds/necro.html" class="">Chaman nécromant</a><a href="../wiki/builds/archer.html" class="">Tireur d'élite</a><a href="../wiki/builds/berserker.html" class="">Berserker du Nord</a><a href="../wiki/builds/chevalier.html" class="">Chevalier gardien</a><a href="../wiki/builds/assassin.html" class="">Lame fantôme</a><a href="../wiki/builds/paladin-feu.html" class="">Templier du Phénix</a><a href="../wiki/builds/druide.html" class="">Druide du marais</a><a href="../wiki/builds/chasseur-tresors.html" class="">Chasseur de trésors</a></details><details class="navsec" ><summary>Vie quotidienne</summary><a href="../wiki/vie.html" class="">Cuisine, ferme, colonie &amp; stockage</a></details><details class="navsec" ><summary>Référence</summary><a href="../wiki/outil.html" class="">Utiliser le planificateur</a><a href="../wiki/quetes.html" class="">Le livre de quêtes</a><a href="../wiki/mods.html" class="">Liste des mods</a><a href="../wiki/glossaire.html" class="">Glossaire</a><a href="../wiki/faq.html" class="">FAQ</a></details></nav>
+<main class="wiki"><h1>Le monde &amp; le danger</h1><h2 id="la-regle-dor-plus-tu-teloignes-plus-cest-dur">La règle d'or : plus tu t'éloignes, plus c'est dur</h2>
+<p>Chaque monstre a un <strong>niveau</strong>. Ce niveau est calculé quand il apparaît :</p>
+<blockquote>
+<p>niveau = niveau de départ de la zone + (0,008 × distance au point d'apparition du monde) + un petit bonus de profondeur sous le sol + un bonus aléatoire (+ le « niveau du monde » si tu as relevé la difficulté)</p>
+</blockquote>
+<p>Chaque niveau ajoute (réglages du pack) : <strong>+9 % de PV</strong>, <strong>+14 % de dégâts</strong>, <strong>+8 % d'armure</strong>, et un peu de vitesse. Les projectiles et les explosions des monstres gagnent aussi des bonus (+7 % et +10 % par niveau).</p>
+<table>
+<thead>
+<tr>
+<th>Distance du spawn</th>
+<th>Niveau</th>
+<th>PV des monstres</th>
+<th>Dégâts</th>
+<th>Armure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>×1,1</td>
+<td>×1,1</td>
+<td>×1,1</td>
+</tr>
+<tr>
+<td>500 blocs</td>
+<td>5</td>
+<td>×1,5</td>
+<td>×1,7</td>
+<td>×1,4</td>
+</tr>
+<tr>
+<td>1 000 blocs</td>
+<td>9</td>
+<td>×1,8</td>
+<td>×2,3</td>
+<td>×1,7</td>
+</tr>
+<tr>
+<td>2 000 blocs</td>
+<td>17</td>
+<td>×2,5</td>
+<td>×3,4</td>
+<td>×2,4</td>
+</tr>
+<tr>
+<td>3 000 blocs</td>
+<td>25</td>
+<td>×3,3</td>
+<td>×4,5</td>
+<td>×3,0</td>
+</tr>
+<tr>
+<td>5 000 blocs</td>
+<td>41</td>
+<td>×4,7</td>
+<td>×6,7</td>
+<td>×4,3</td>
+</tr>
+<tr>
+<td>10 000 blocs</td>
+<td>81</td>
+<td>×8,3</td>
+<td>×12,3</td>
+<td>×7,5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculateur">Calculateur</h3>
+<div id="dangercalc" class="card calc" markdown="0">
+<div class="row"><label>Distance du spawn</label><input id="dc-dist" type="number" value="2000" step="250" min="0"> blocs</div>
+<div class="row"><label>Altitude (Y)</label><input id="dc-y" type="number" value="64"></div>
+<div class="row"><label>Niveau du monde</label><select id="dc-wl"><option value="0">Normal</option><option value="150">Ascendant +150</option><option value="300">Divin +300</option><option value="500">Hellheim +500</option></select></div>
+<div id="dc-out" class="note"></div>
+</div>
+
+<h2 id="chaque-dimension-a-son-niveau-de-base">Chaque dimension a son niveau de base</h2>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Niveau de départ</th>
+<th>Niveaux par bloc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overworld</td>
+<td>1</td>
+<td>0,008 (+0,01 par bloc sous Y=64)</td>
+</tr>
+<tr>
+<td>Nether</td>
+<td><strong>35</strong></td>
+<td>0,02</td>
+</tr>
+<tr>
+<td>Aether</td>
+<td>35</td>
+<td>0,022</td>
+</tr>
+<tr>
+<td>End</td>
+<td><strong>150</strong></td>
+<td>0,03</td>
+</tr>
+</tbody>
+</table>
+<p>Autrement dit : <strong>le Nether est déjà du niveau 35+ dès l'entrée</strong>, et l'End du niveau 150+. C'est pour ça qu'il faut être prêt avant d'y aller.</p>
+<h2 id="les-boss-ont-leur-propre-niveau">Les boss ont leur propre niveau</h2>
+<p>Chaque boss a un niveau de départ propre (voir <a href="boss.html">Guide des boss</a>) :</p>
+<ul>
+<li><strong>Palier 1</strong> : à partir du niveau 25 (+1 à 10 au hasard), pas de hausse avec la distance.</li>
+<li><strong>Palier 2</strong> : niveau 50 mini (+1 à 15), petite hausse avec la distance.</li>
+<li><strong>Palier 3</strong> : niveau 85 mini (+1 à 20), hausse modérée.</li>
+<li><strong>Gardiens</strong> : toujours infernaux, niveau un peu plus haut que le palier qu'ils protègent. <strong>Il faut les vaincre pour passer au palier suivant.</strong></li>
+<li><strong>Ender Dragon</strong> : niveau 100 à 150. L'End entier est niveau 150+.</li>
+</ul>
+<h2 id="monstres-speciaux-a-reperer">Monstres spéciaux à repérer</h2>
+<table>
+<thead>
+<tr>
+<th>Monstre</th>
+<th>Comment le reconnaître</th>
+<th>Pourquoi c'est dangereux</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Infernal</strong></td>
+<td>Particules violettes</td>
+<td>Stats et pouvoirs aléatoires en plus ; environ 1 monstre hostile sur 15 est « élite », puis plus rare pour « ultra » et « infernal » ; ils lâchent de beaux matériaux (Sable arcanique, sceau de socket, poussière de gemme…)</td>
+</tr>
+<tr>
+<td><strong>Maître de donjon</strong></td>
+<td>Garde un coffre de donjon</td>
+<td>Il faut le tuer pour ouvrir le coffre</td>
+</tr>
+<tr>
+<td><strong>Boss apothique</strong></td>
+<td>Son + message quand il apparaît près de toi</td>
+<td>Gros loot arcanique ; il a son équipement et ses affixes</td>
+</tr>
+<tr>
+<td><strong>Mini-boss royaux</strong></td>
+<td>Variantes « royales » (squelette, creeper…)</td>
+<td>Pouvoirs spéciaux, drops uniques (livre de quêtes « Royal Variants »)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="les-epreuves-sombres-difficulte-du-monde">Les Épreuves sombres (difficulté du monde)</h2>
+<p>Définies par le chapitre <em>Tutorial</em> du livre de quêtes :</p>
+<ol>
+<li><strong>Épreuve 1</strong> (dès le début) : ennemis plus cohérents et plus létaux, <strong>possibilité de lune de sang</strong>.</li>
+<li><strong>Épreuve 2</strong> (en entrant dans une autre dimension) : ennemis encore plus forts, mais récompenses accrues.</li>
+<li><strong>Épreuve 3</strong> (après la mort de l'Ender Dragon) : ennemis impitoyables, <strong>ennemis élites</strong> possibles.</li>
+</ol>
+<h2 id="apres-la-campagne-les-difficultes-new-game">Après la campagne : les difficultés « New Game+ »</h2>
+<p>Le chapitre <em>Finis Dierum</em> permet de relever la difficulté du monde :</p>
+<ul>
+<li><strong>Ascendant</strong> : +150 niveaux sur le monde (« Azure » ; attention, ça se cumule en multijoueur) ou remise à zéro du chapitre des boss (« Violet »).</li>
+<li><strong>Divin</strong> : +300 niveaux, réinitialise le chapitre Deus pour refaire tous les boss.</li>
+<li><strong>Hellheim</strong> : +500 niveaux. Au niveau 400–750 les ennemis lâchent des matériaux rares (poussière de gemme, sceaux de socket) ; au-dessus de 750, des objets très précieux (cendres brûlantes, pièces de champion).</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">À plusieurs, c'est global</p>
+<p>Le niveau du monde est un bonus <strong>global</strong> au serveur : si deux joueurs choisissent « Azure », les +150 se <strong>cumulent</strong>. Choisissez-le ensemble.</p>
+</div>
+<h2 id="aussi-presents">Aussi présents</h2>
+<ul>
+<li><strong>Majrusz's Progressive Difficulty</strong> : le monde passe par des paliers « normal → expert → maître » quand on entre dans une dimension, avec de nouveaux pouvoirs pour les monstres.</li>
+<li><strong>Raided</strong> : raids de pillards plus poussés. <strong>Savage &amp; Ravage / It Takes a Pillage</strong> : illagers et structures supplémentaires.</li>
+<li><strong>Lune de sang</strong> : événement nocturne dangereux lié à l'Épreuve 1.</li>
+</ul>
+<footer class="mut small">Wiki généré à partir des fichiers du modpack « Cisco's Adventure RPG Ultimate » (V8E). Les chiffres viennent des fichiers de config et du code des mods ; en cas de doute, ce qui s'affiche en jeu fait foi.</footer></main></div>
+<script>window.ROOT="../";</script><script src="../wiki/search-index.js"></script><script src="../wiki/wiki.js"></script>
+</body></html>

@@ -1,0 +1,17 @@
+{
+  "group": "socket_fallenstar",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "phantasm:stellium_shovel"
+    },
+    {
+      "item": "phantasm:fallen_star"
+    }
+  ],
+  "result": {
+    "item": "phantasm:stellium_shovel",
+    "count": 1,
+    "nbt": {"socket": "starlit"}
+  }
+}

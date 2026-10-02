@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"medievalorigins:fae/allure",
+		"medievalorigins:fae/diminutive",
+		"origins:fall_immunity",
+		"medievalorigins:fae/frail",
+		"medievalorigins:fae/iron_aversion",
+		"medievalorigins:fae/levitation",
+		"medievalorigins:fae/magic_strength",
+		"medievalorigins:fae/plant_immunity",
+		"medievalorigins:fae/reach_fix"
+	],
+	"icon": "minecraft:experience_bottle",
+	"impact": 2,
+	"order": 1
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "unusualend:enderling_scrap"
+    },
+    {
+      "item": "unusualend:enderling_scrap"
+    },
+    {
+      "item": "unusualend:enderling_scrap"
+    }
+  ],
+  "result": {
+    "item": "unusualend:scrape_cloth",
+    "count": 1
+  }
+}

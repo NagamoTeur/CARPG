@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "unusualend:warped_island_5",
+  "step": "raw_generation"
+}

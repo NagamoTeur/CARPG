@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "dsd",
+    "sps",
+    "dsd"
+  ],
+  "key": {
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "s": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "p": {
+      "item": "minecraft:purple_dye"
+    }
+  },
+  "result": {
+    "item": "minecraft:chorus_fruit",
+    "count": 1
+  }
+}

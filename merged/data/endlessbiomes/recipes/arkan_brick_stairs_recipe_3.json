@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "endlessbiomes:arkan_bricks"
+  },
+  "result": "endlessbiomes:arkan_brick_stairs"
+}

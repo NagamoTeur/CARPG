@@ -1,0 +1,12 @@
+{
+    "name": "Athena's Blessing",
+    "description": "You are favoured by athena goddess of wisdom.She grants you her protective blessing.",
+    "powers": [
+        "cisco_rpg_origins:athenas_boon_minor",
+        "cisco_rpg_origins:athenas_boon_major"
+    ],
+    "icon": {
+        "item": "ars_nouveau:enchanters_shield"
+    },
+    "impact": 1
+}

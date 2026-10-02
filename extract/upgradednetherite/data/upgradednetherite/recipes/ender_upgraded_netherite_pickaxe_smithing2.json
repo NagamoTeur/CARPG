@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_pickaxe"
+  },
+  "addition": {
+    "item": "upgradednetherite:ender_essence"
+  },
+  "result": {
+    "item": "upgradednetherite:ender_upgraded_netherite_pickaxe"
+  }
+}

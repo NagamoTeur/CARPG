@@ -1,0 +1,36 @@
+{
+  "group": "stellium_armor",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "phantasm:stellium_ingot"
+    },
+    "1": {
+      "item": "phantasm:stellium_ingot"
+    },
+    "2": {
+      "item": "phantasm:stellium_ingot"
+    },
+    "3": {
+      "item": "phantasm:stellium_ingot"
+    },
+    "5": {
+      "item": "phantasm:stellium_ingot"
+    },
+    "6": {
+      "item": "phantasm:stellium_ingot"
+    },
+    "8": {
+      "item": "phantasm:stellium_ingot"
+    }
+  },
+  "result": {
+    "item": "phantasm:stellium_leggings",
+    "count": 1
+  }
+}

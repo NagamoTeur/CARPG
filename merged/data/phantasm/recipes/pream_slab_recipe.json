@@ -1,0 +1,22 @@
+{
+  "group": "pream",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "phantasm:pream_planks"
+    },
+    "1": {
+      "item": "phantasm:pream_planks"
+    },
+    "2": {
+      "item": "phantasm:pream_planks"
+    }
+  },
+  "result": {
+    "item": "phantasm:pream_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:brick"
+    },
+    "b": {
+      "item": "sons_of_sins:ether_ashes"
+    }
+  },
+  "result": {
+    "item": "sons_of_sins:urn",
+    "count": 1
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:blaze_powder"
+    },
+    "1": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "2": {
+      "item": "minecraft:blaze_powder"
+    },
+    "3": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "4": {
+      "item": "minecraft:blaze_powder"
+    },
+    "5": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "6": {
+      "item": "minecraft:blaze_powder"
+    },
+    "7": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "8": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "result": {
+    "item": "cisco_mod:nocturnal_amethyst",
+    "count": 1
+  }
+}

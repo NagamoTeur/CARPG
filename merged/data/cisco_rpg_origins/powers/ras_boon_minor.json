@@ -1,0 +1,16 @@
+{
+    "name": "Minor Boon of Light",
+    "description": "Ra blesses your weapons granting you a + 11 boost to fire damage when exposed to the sun.",
+    "condition": {
+        "type": "origins:exposed_to_sun"
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "apotheosis:fire_damage",
+        "operation": "addition",
+        "value": 11,
+        "name": "Minor Boon of Light"
+    },
+    "tick_rate": 20,
+    "update_health": true
+}

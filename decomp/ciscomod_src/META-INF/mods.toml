@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="cisco_mod"
+version="5.8"
+displayName="Cisco's Content"
+credits="franciscogolden"
+displayURL="https://www.buymeacoffee.com/ciscodev"
+authors="franciscogolden"
+description="Adds custom items and features."
+
+[[dependencies.cisco_mod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+[[dependencies.cisco_mod]]
+    modId="curios_api"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.cisco_mod]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+

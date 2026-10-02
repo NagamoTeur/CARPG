@@ -1,0 +1,33 @@
+{
+  "group": "crystal",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 45",
+    "678"
+  ],
+  "key": {
+    "2": {
+      "item": "phantasm:void_crystiles"
+    },
+    "4": {
+      "item": "phantasm:void_crystiles"
+    },
+    "5": {
+      "item": "phantasm:void_crystiles"
+    },
+    "6": {
+      "item": "phantasm:void_crystiles"
+    },
+    "7": {
+      "item": "phantasm:void_crystiles"
+    },
+    "8": {
+      "item": "phantasm:void_crystiles"
+    }
+  },
+  "result": {
+    "item": "phantasm:void_crystiles_stair",
+    "count": 4
+  }
+}

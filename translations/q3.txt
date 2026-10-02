@@ -1,0 +1,180 @@
+340|Obtenir la tête du Lich
+341|Terrasser le Minoshroom
+342|Massacrer le Minoshroom
+343|Se trouve au fond du Labyrinthe.
+344|Obtenir la tête du Minoshroom
+345|Terrasser l'Hydre
+346|Décapiter l'Hydre
+347|Se trouve dans son antre, dans un marais de feu.
+348|Obtenir la tête de l'Hydre
+349|Terrasser le Knight Phantom
+350|Abattre le Knight Phantom
+351|Se trouve dans une grande salle de la forteresse des chevaliers gobelins.
+352|Obtenir la tête du Knight Phantom
+353|Terrasser l'Ur-Ghast
+354|Tuer l'Ur-Ghast
+355|Se trouve au sommet de la Dark Tower.
+356|Obtenir la tête de l'Ur-Ghast
+357|Terrasser le Yéti alpha
+358|Troll de l'hiver
+359|Se trouve dans son antre, dans la forêt enneigée.
+360|Obtenir la tête du Yéti alpha
+361|Terrasser la Reine des neiges
+362|Renverser la reine
+363|Se trouve au sommet du Palais de l'Aurore.
+364|Obtenir la tête de la Reine des neiges
+365|Terrasser le Troll des cavernes
+366|Abattre le Troll des cavernes
+367|Se trouve dans les grottes de trolls qui se génèrent dans et autour des Highlands.
+368|Trouver le Temple ancien
+369|Architecture archaïque
+370|Sauras-tu découvrir tous ses secrets ?
+371|Trouver le donjon aveuglant de l'Everdawn
+372|Everdawn
+373|Il te faudra 4 clés de donjon pour défier le boss.
+374|Trouver le donjon aveuglant de l'Everbright
+375|Everbright
+376|Il te faudra 4 clés de donjon pour défier le boss.
+377|Terrasser le Summoner
+378|Tuer le Summoner
+379|Tue le Summoner qui préside à la dimension Everbright.
+380|Terrasser l'Alchemist
+381|Tuer l'Alchemist
+382|Tue l'Alchemist qui préside à la dimension Everdawn.
+383|Fabriquer la boussole de l'explorateur
+384|Repérer les lieux
+385|Cet objet t'aidera à localiser des structures dans ton monde.
+386|Piller Keep Kayra
+387|Keep Kayra
+388|Pille cette immense forteresse et prends ses trésors.
+389|Visiter Keep Kayra
+390|Piller le palais de Shiraz
+391|Palais de Shiraz
+392|Nettoie cet immense palais rempli d'ennemis puissants et de butin.
+393|Piller la Bastille
+394|Blues de la Bastille
+395|Nettoie ce camp de pillards fortifié.
+396|Piller le donjon Dungeon Crawl
+397|Donjon descendant
+398|Ce donjon massif paraît petit en surface mais abrite de nombreux étages, de plus en plus difficiles mais aussi plus gratifiants à mesure que tu descends.
+399|Visiter la dimension de l'Aether
+400|Ascension éthérée
+401|Visite la dimension dans le ciel.
+402|Trouver le donjon de bronze
+403|Bâtiments de bronze
+404|Le premier des trois donjons de l'Aether.
+405|Trouver le donjon d'argent
+406|À la recherche de l'argent
+407|Trouve le donjon d'argent et tue des valkyries pour obtenir des médailles de victoire.
+408|Trouver le donjon d'or
+409|Viser l'or
+410|Le dernier des donjons de l'Aether.
+411|Vaincre le Slider
+412|Arrêter le Slider
+413|Ce boss se trouve dans le donjon de bronze. Il doit être vaincu avec des pioches ou des pelles.
+414|Terrasser la Reine des Valkyries
+415|Vaincre les Valkyries
+416|Après avoir obtenu 10 médailles de victoire, tu peux défier la reine des valkyries.
+417|Terrasser le Sun Spirit
+418|Tuer le soleil
+419|Le Sun Spirit réside dans le donjon d'or ; une fois tué, l'Aether ne sera plus plongé dans un jour perpétuel.
+420|Fabriquer un sac à dos
+421|Construire un sac à dos
+422|Le sac à dos est un objet qui contient d'autres objets et se porte sur soi. Il possède de nombreuses améliorations utilitaires et peut être agrandi du niveau standard jusqu'au niveau netherite pour encore plus de stockage.
+423|Piles de piles
+424|Cette amélioration permet de stocker des piles d'objets dans le même emplacement. Améliorable de 2 piles jusqu'à 16.
+425|Éternel
+426|Cette amélioration rend le sac à dos indestructible.
+427|Amélioration de fonte
+428|Cette amélioration permet de fondre des objets dans le sac à dos. Cette fonction peut être améliorée.
+429|Artisanat compact
+430|Cette amélioration permet de fabriquer des objets dans le sac à dos.
+431|Amélioration d'alimentation
+432|Cette amélioration permet au sac à dos de nourrir automatiquement le joueur avec les objets de son inventaire.
+433|Fabriquer le four en fer
+434|Four en fer
+435|Les fours peuvent être améliorés en les combinant avec des métaux rares.
+436|Fabriquer le four en or
+437|Four en or
+438|Le four en or cuit plus vite que celui en fer et peut être amélioré encore davantage.
+439|À l'ombre
+440|Protège les joueurs de la pluie et du soleil, ce dont les Blazeborn, Enderiens et Phantoms ont justement besoin. ⏎  ⏎ À tenir en main pour fonctionner. Perd lentement de la durabilité sous la pluie mais ne se brise pas complètement. ⏎  ⏎ Regagne lentement de la durabilité par temps normal ; les environnements chauds peuvent accélérer le processus. Il doit être teint d'une couleur assez sombre pour bloquer le soleil, et ne coûte alors pas de durabilité.
+441|Dans les profondeurs
+442|Sous l'eau, le casque de plongée donne la respiration aquatique aux origines non aquatiques mais se remplit lentement d'eau et devient un casque terrestre. ⏎  ⏎ Apnée ralentit cette transformation.
+443|Revenu sur terre
+444|Hors de l'eau, le casque terrestre donne la respiration aquatique aux origines non terrestres mais perd lentement son eau et redevient un casque de plongée. ⏎  ⏎ Apnée ralentit cette transformation.
+445|Woodworks
+446|Cet établi fait office de tailleur de pierre pour le bois et permet d'obtenir de nombreuses variantes.
+447|Baguette de pierre
+448|Fabriquer une baguette de construction
+449|Les baguettes de construction te permettent de bâtir de grandes structures rapidement et efficacement.
+450|Améliorer les baguettes
+451|Les baguettes de construction peuvent être améliorées du niveau pierre au niveau infini. ⏎  ⏎ Des noyaux peuvent aussi être combinés aux baguettes pour accroître leurs fonctions.
+452|Easy Villagers : échangeur automatique
+453|Échange automatique facile
+454|Place un villageois avec un métier dans l'échangeur automatique et choisis les objets à échanger. ⏎  ⏎ L'échangeur automatisera ensuite cet échange.
+455|Easy Villagers : échanges
+456|Échanges faciles
+457|Place un villageois avec un métier dans l'échangeur pour accéder facilement à ses échanges à tout moment.
+458|Easy Villagers : ferme à fer
+459|Ferme à fer facile
+460|Place un villageois dans la ferme à fer pour commencer à produire du fer automatiquement.
+461|Easy Villagers : fermier
+462|Agriculture facile
+463|Place un villageois fermier et des graines dans la ferme pour automatiser les cultures.
+464|Easy Villagers : conversion
+465|Conversion facile
+466|Le convertisseur transforme automatiquement les villageois en villageois zombies puis à nouveau en villageois normaux. ⏎  ⏎ Ce processus baisse leurs prix d'échange et demande un villageois, une pomme d'or et n'importe quelle potion de faiblesse.
+467|Easy Villagers : élevage
+468|Élevage facile
+469|L'éleveur demande deux villageois et un aliment pour produire des bébés villageois.
+470|Easy Villagers : incubateur
+471|Incubation facile
+472|L'incubateur augmente la vitesse de croissance des bébés villageois.
+473|KnightHood
+474|Variantes royales
+475|Regrets royaux
+476|Des variantes royales de certaines créatures hostiles sont apparues dans le monde. ⏎  ⏎ Ces variantes sont plus puissantes et possèdent des capacités spéciales qui les rendent encore plus dangereuses.
+477|Créatures royales
+478|Squelette royal
+479|Roi squelette
+480|Ce squelette a des caractéristiques améliorées. Ses tirs sont bien plus puissants, repoussent et peuvent faire des coups à la tête. ⏎  ⏎ Un coup à la tête affaiblit et ralentit la cible. Ce squelette essaie aussi d'esquiver les attaques. ⏎  ⏎ Il lâche l'os royal, qui permet de fabriquer une poudre d'os amplifiée.
+481|Creeper royal
+482|Roi creeper
+483|A plus de vie et de vitesse et peut infecter ses victimes avec des spores toxiques. ⏎  ⏎ Les spores toxiques te ralentissent et t'empoisonnent tout en augmentant la vitesse et les dégâts des monstres hostiles affectés. ⏎  ⏎ Il lâche de la poudre à canon royale, utilisée pour fabriquer une bombe puissante.
+484|Zombie royal
+485|Roi zombie
+486|A de meilleures stats et est toujours accompagné de deux autres zombies. Il leur donne un casque et une épée qui augmentent leur défense et leur attaque. ⏎  ⏎ Il peut aussi t'infliger un affaiblissement qui renforce les zombies proches. ⏎  ⏎ Il lâche le sceptre royal, un objet utile pour renforcer ses alliés.
+487|Adoubement Pomme
+488|Chevalier Pomme
+489|Fabrique le set Chevalier Pomme pour achever son adoubement.
+490|Adoubement Bambou bleu
+491|Chevalier Bambou bleu
+492|Fabrique le set Bambou bleu pour achever son adoubement.
+493|Adoubement Bambou vert
+494|Chevalier Bambou vert
+495|Fabrique le set Bambou vert pour achever son adoubement.
+496|Adoubement Bambou
+497|Chevalier Bambou
+498|Complète le set Chevalier Bambou pour achever son adoubement.
+499|Adoubement Chauve-souris
+500|Chevalier Chauve-souris
+501|Fabrique le set Chevalier Chauve-souris pour achever son adoubement.
+502|Adoubement Blaze
+503|Chevalier Blaze
+504|Fabrique le set Chevalier Blaze pour achever son adoubement.
+505|Adoubement Arc
+506|Chevalier Arc
+507|Fabrique le set Chevalier Arc pour achever son adoubement.
+508|Adoubement Corne
+509|Chevalier Corne
+510|Fabrique le set Chevalier Corne pour achever son adoubement.
+511|Adoubement Creeper
+512|Chevalier Creeper
+513|Fabrique le set Chevalier Creeper pour achever son adoubement.
+514|Adoubement Deepslate
+515|Chevalier Deepslate
+516|Fabrique le set Chevalier Deepslate pour achever son adoubement.
+517|Adoubement Dragon
+518|Chevalier Dragon
+519|Fabrique le set Chevalier Dragon pour achever son adoubement.

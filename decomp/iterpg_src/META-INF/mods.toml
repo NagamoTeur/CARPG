@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="iter_rpg"
+version="0.5.0"
+displayName="Iter RPG"
+credits="https://discord.gg/veQH6zZfDb"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/iter-rpg"
+logoFile="logo.png"
+authors="BaronFonShish, RayRindou"
+description="Global semi-vanilla RPG mod"
+
+[[dependencies.iter_rpg]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+[[dependencies.iter_rpg]]
+    modId="curios_api"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.iter_rpg]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+

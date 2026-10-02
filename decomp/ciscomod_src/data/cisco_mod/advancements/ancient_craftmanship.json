@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "cisco_mod:darksteel_multitool"
+    },
+    "title": {
+      "translate": "advancements.ancient_craftmanship.title"
+    },
+    "description": {
+      "translate": "advancements.ancient_craftmanship.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ancient_craftmanship": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "cisco_mod:divine_ruby_advancement"
+}

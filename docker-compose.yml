@@ -1,0 +1,6 @@
+services:
+  carpg:
+    build: .
+    container_name: carpg-site
+    ports: ["8088:80"]
+    restart: unless-stopped

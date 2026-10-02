@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "cisco_mod:equillibrium"
+    }
+  },
+  "result": {
+    "item": "cisco_mod:refined_equillibrium",
+    "count": 1
+  }
+}

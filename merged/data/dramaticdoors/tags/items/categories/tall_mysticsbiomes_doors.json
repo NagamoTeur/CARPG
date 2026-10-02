@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "dramaticdoors:tall_mb_cherry_door", "required": false},
+    {"id": "dramaticdoors:tall_mb_jacaranda_door", "required": false},
+    {"id": "dramaticdoors:tall_mb_strawberry_door", "required": false}
+  ]
+}

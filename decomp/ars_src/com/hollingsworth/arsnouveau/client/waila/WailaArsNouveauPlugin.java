@@ -1,0 +1,42 @@
+package com.hollingsworth.arsnouveau.client.waila;
+
+import com.hollingsworth.arsnouveau.common.block.MobJar;
+import com.hollingsworth.arsnouveau.common.block.tile.GhostWeaveTile;
+import com.hollingsworth.arsnouveau.common.block.tile.MirrorWeaveTile;
+import com.hollingsworth.arsnouveau.common.block.tile.SkyBlockTile;
+import com.hollingsworth.arsnouveau.common.potions.ModPotions;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.entity.player.Player;
+import snownee.jade.api.BlockAccessor;
+import snownee.jade.api.IWailaClientRegistration;
+import snownee.jade.api.IWailaPlugin;
+import snownee.jade.api.WailaPlugin;
+
+@WailaPlugin
+public class WailaArsNouveauPlugin implements IWailaPlugin {
+   public void registerClient(IWailaClientRegistration registration) {
+      registration.registerBlockComponent(MobJarComponent.INSTANCE, MobJar.class);
+      registration.addRayTraceCallback((hitResult, accessor, originalAccessor) -> {
+         if (accessor instanceof BlockAccessor target) {
+            Player player = accessor.getPlayer();
+            if (player.m_7500_() || player.m_5833_() || player.m_21023_((MobEffect)ModPotions.MAGIC_FIND_EFFECT.get())) {
+               return accessor;
+            }
+
+            if (target.getBlockEntity() instanceof GhostWeaveTile tile && tile.isInvisible()) {
+               return null;
+            }
+
+            if (target.getBlockEntity() instanceof SkyBlockTile skyWeave && !skyWeave.showFacade()) {
+               return null;
+            }
+
+            if (target.getBlockEntity() instanceof MirrorWeaveTile tile) {
+               return registration.blockAccessor().from(target).blockState(tile.mimicState).build();
+            }
+         }
+
+         return accessor;
+      });
+   }
+}

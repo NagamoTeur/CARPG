@@ -1,0 +1,9 @@
+{
+    "name": "Lightbringer",
+    "description": "As the light bringer your are immune to darkness and wither effects.",
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:darkness",
+        "minecraft:wither"
+    ]
+}

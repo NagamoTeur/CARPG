@@ -1,0 +1,16 @@
+{
+	"type": "origins:self_action_when_hit",
+	"entity_action": {
+		"type": "origins:damage",
+		"amount": 99,
+		"source": {
+			"name": "onFire",
+			"fire": false,
+			"bypasses_armor": true
+		}
+	},
+	"cooldown": 20,
+	"damage_condition": {
+		"type": "origins:fire"
+	}
+}

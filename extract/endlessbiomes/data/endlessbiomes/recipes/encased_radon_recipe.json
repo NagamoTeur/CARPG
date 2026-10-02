@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "endlessbiomes:arkan"
+    },
+    "1": {
+      "item": "endlessbiomes:radon"
+    },
+    "2": {
+      "item": "endlessbiomes:arkan"
+    },
+    "3": {
+      "item": "endlessbiomes:arkan"
+    },
+    "4": {
+      "item": "endlessbiomes:radon"
+    },
+    "5": {
+      "item": "endlessbiomes:arkan"
+    },
+    "6": {
+      "item": "endlessbiomes:arkan"
+    },
+    "7": {
+      "item": "endlessbiomes:radon"
+    },
+    "8": {
+      "item": "endlessbiomes:arkan"
+    }
+  },
+  "result": {
+    "item": "endlessbiomes:encased_radon",
+    "count": 3
+  }
+}

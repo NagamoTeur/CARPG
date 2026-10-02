@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "minecraft:oxeye_daisy"},{"item": "minecraft:oxeye_daisy"}
+  ],
+  "result": {
+    "item": "minecraft:peony",
+    "count":  2
+  }
+}

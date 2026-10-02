@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "phantasm:chiseled_smooth_obsidian",
+    "phantasm:smooth_obsidian_bricks",
+    "phantasm:smooth_obsidian",
+    "phantasm:smooth_obsidian_pillar"
+  ]
+}

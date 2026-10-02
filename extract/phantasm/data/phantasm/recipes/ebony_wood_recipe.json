@@ -1,0 +1,26 @@
+{
+  "group": "ebony",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "phantasm:ebony_packed_stems"
+    },
+    "1": {
+      "item": "phantasm:ebony_packed_stems"
+    },
+    "2": {
+      "item": "phantasm:ebony_packed_stems"
+    },
+    "3": {
+      "item": "phantasm:ebony_packed_stems"
+    }
+  },
+  "result": {
+    "item": "phantasm:ebony_wood",
+    "count": 3
+  }
+}

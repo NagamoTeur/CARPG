@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " O ",
+    "OHO",
+    " O "
+  ],
+  "key": {
+    "O": {
+      "item": "unusualend:polished_gloopstone"
+    },
+    "H": {
+      "item": "unusualend:shiny_crystal_block"
+    }
+  },
+  "result": {
+    "item": "unusualend:gloopstone_lamp",
+    "count": 1
+  }
+}

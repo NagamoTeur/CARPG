@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "end_midlands",
+    "end_highlands",
+    "end_barrens"
+  ],
+  "spawners": {
+    "type": "endlessbiomes:anklor",
+    "weight": 10,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

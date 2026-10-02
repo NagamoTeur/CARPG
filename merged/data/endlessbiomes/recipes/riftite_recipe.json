@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "endlessbiomes:riftite_shard"
+    },
+    "1": {
+      "item": "endlessbiomes:riftite_shard"
+    },
+    "2": {
+      "item": "endlessbiomes:riftite_shard"
+    },
+    "3": {
+      "item": "endlessbiomes:riftite_shard"
+    }
+  },
+  "result": {
+    "item": "endlessbiomes:riftite",
+    "count": 1
+  }
+}

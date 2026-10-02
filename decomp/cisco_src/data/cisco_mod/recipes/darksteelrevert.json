@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cisco_mod:darksteel_block"
+    }
+  ],
+  "result": {
+    "item": "cisco_mod:darksteel",
+    "count": 9
+  }
+}

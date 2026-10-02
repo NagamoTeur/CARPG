@@ -1,0 +1,220 @@
+520|Adoubement Enderman
+521|Chevalier Enderman
+522|Fabrique le set Chevalier Enderman pour achever son adoubement.
+523|Adoubement Evoker
+524|Chevalier Evoker
+525|Fabrique le set Chevalier Evoker pour achever son adoubement.
+526|Adoubement Forze
+527|Chevalier Forze
+528|Fabrique le set Chevalier Forze pour achever son adoubement.
+529|Adoubement Hollow
+530|Chevalier Hollow
+531|Fabrique le set Chevalier Hollow pour achever son adoubement.
+532|Adoubement Nether
+533|Chevalier Nether
+534|Fabrique le set Chevalier Nether pour achever son adoubement.
+535|Adoubement Vétéran
+536|Fabrique le set Chevalier Vétéran pour achever son adoubement.
+537|Adoubement Sentier
+538|Fabrique le set Chevalier Sentier pour achever son adoubement.
+539|Adoubement Phantom
+540|Chevalier Phantom
+541|Fabrique le set Chevalier Phantom pour achever son adoubement.
+542|Adoubement Sea
+543|Chevalier Sea
+544|Fabrique le set Chevalier Sea pour achever son adoubement.
+545|Adoubement Shield
+546|Chevalier Shield
+547|Fabrique le set Chevalier Shield pour achever son adoubement.
+548|Adoubement Silver
+549|Chevalier Silver
+550|Fabrique le set Chevalier Silver pour achever son adoubement.
+551|Adoubement Silverfish
+552|Chevalier Silverfish
+553|Fabrique le set Chevalier Silverfish pour achever son adoubement.
+554|Adoubement Skeleton
+555|Chevalier Skeleton
+556|Fabrique le set Chevalier Skeleton pour achever son adoubement.
+557|Adoubement Spider
+558|Chevalier Spider
+559|Fabrique le set Chevalier Spider pour achever son adoubement.
+560|Adoubement Warlord
+561|Chevalier Warlord
+562|Fabrique le set Chevalier Warlord pour achever son adoubement.
+563|Adoubement Straw-hat
+564|Chevalier Straw-hat
+565|Fabrique le set Chevalier Straw-hat pour achever son adoubement.
+566|Adoubement Pirate
+567|Chevalier Pirate
+568|Fabrique le set Chevalier Pirate et ses variantes de casque pour achever son adoubement.
+569|Adoubement Conquistador
+570|Chevalier Conquistador
+571|Fabrique le set Chevalier Conquistador et ses variantes de casque pour achever son adoubement.
+572|Adoubement Zombie
+573|Chevalier Zombie
+574|Fabrique le set Chevalier Zombie et ses variantes de casque pour achever son adoubement.
+575|Adoubement Husk
+576|Chevalier Husk
+577|Fabrique le set Chevalier Husk et ses variantes de casque pour achever son adoubement.
+578|Adoubement Wither
+579|Chevalier Wither
+580|Fabrique le set Chevalier Wither pour achever son adoubement.
+581|Adoubement Squire
+582|Chevalier Squire
+583|Fabrique le set Chevalier Squire pour achever son adoubement.
+584|Adoubement Sorcière
+585|Fabrique le set Chevalier Sorcière pour achever son adoubement.
+586|Adoubement Polar
+587|Chevalier Polar
+588|Fabrique le set Chevalier Polar pour achever son adoubement.
+589|Adoubement Shinobi
+590|Chevalier Shinobi
+591|Fabrique le set Chevalier Shinobi pour achever son adoubement.
+592|Adoubement Sculk
+593|Chevalier Sculk
+594|Fabrique le set Chevalier Sculk et ses variantes de casque pour achever son adoubement.
+595|Chevalier ultime
+596|Complet et récompensé
+597|Tu as prouvé ta valeur et obtenu tous les adoubements possibles : tu seras donc récompensé.
+598|Trouver et apprivoiser Samhain
+599|Dompter Samhain
+600|Tu peux le trouver en train de jouer dans les jardins fleuris, ou l'invoquer en plaçant une citrouille-lanterne sur un bloc d'or. ⏎  ⏎ Donne-lui de la Grande Essence pour l'apprivoiser. Il aime le casque d'écuyer : essaie de le lui offrir.
+601|Terrasser des Ratmen
+602|Hommes-rats rances
+603|Les Ratmen sont des créatures rusées qu'on trouve généralement dans les grottes. Ils manient une arbalète et peuvent devenir invisibles ou utiliser des flèches empoisonnées quand leur vie passe sous un certain seuil.
+604|Terrasser des Gremlins et des Ghosties
+605|Gremlins et Ghosties
+606|Les Gremlins sont de méchantes petites créatures du Nether. Ils peuvent faire apparaître des Ghosties qui les rendent invulnérables jusqu'à leur défaite.
+607|Terrasser des Eld Knights
+608|Adversaire en armure
+609|Ce guerrier lourdement blindé aime le froid et est très résistant. ⏎  ⏎ S'il subit assez de dégâts, il peut empoisonner ses ennemis tout en se soignant. ⏎  ⏎ Il peut aussi faire apparaître des bombes eld, très meurtrières.
+610|Tuer des Swampmen
+611|Tuer des hommes des marais
+612|Les Swampmen sont des monstruosités mi-poisson mi-homme capables de manier des armes.
+613|Magies interdites
+614|Magie interdite
+615|Arts sombres
+616|La magie ambiante réside dans le monde et ses créatures vivantes. Depuis des millénaires, des individus consacrent leur vie à son étude, en séparant les types de mana en « écoles ». ⏎  ⏎ Des écoles comme le feu, la glace et le sacré, très répandues, sont encouragées par la grande citadelle qui supervise les affaires magiques. En revanche, sans être totalement interdit, l'usage d'écoles comme l'ender est mal vu à cause de la nature sombre de son mana. ⏎  ⏎ Et bien que même les écoles soumises à des restrictions soient largement utilisées dans certaines régions, deux écoles sont complètement interdites.
+617|Clique pour terminer
+618|École occulte (Eldritch)
+619|Le don de l'Obscur
+620|L'une des deux écoles interdites, l'occulte : son mana provient de l'Obscur lui-même, comme don à ceux qu'il a choisis pour exécuter sa volonté. ⏎  ⏎ Contrairement aux autres écoles qui tirent leur mana de l'environnement, on est imprégné de mana occulte en acceptant le pacte de l'Obscur. ⏎  ⏎ Pour commencer ton voyage, tu devras trouver des fragments de savoir ancien pour forger un manuscrit occulte.
+621|Le pacte de l'Obscur
+622|Une fois le manuscrit occulte achevé, lis-le pour conclure un pacte avec l'Obscur et gagner un sort occulte aléatoire. ⏎  ⏎ Il te faudra d'autres manuscrits pour obtenir d'autres sorts.
+623|Puissance des sorts occultes
+624|La gemme de l'Obscur
+625|Bien que les sorts occultes soient redoutables par eux-mêmes, leur puissance peut encore être renforcée avec des gemmes. ⏎  ⏎ La gemme de l'Obscur, sertie dans ton équipement, renforcera la puissance de tes sorts occultes. ⏎  ⏎ On en trouve dans les donjons ou on les achète à la boutique.
+626|Trophées du pêcheur
+627|Fabriquer une canne à pêche
+628|Prêt à ferrer
+629|Le meilleur ami du pêcheur.
+630|N'importe quelle canne à pêche (#forge:tools/fishing_rods)
+631|Pêcher la morue de l'Atlantique (Atlantic Cod)
+632|Pêche
+633|Se trouve dans les biomes d'océan arctique.
+634|Pêcher le hareng de l'Atlantique (Atlantic Herring)
+635|Se trouve dans les biomes d'océan arctique.
+636|Pêcher le Blackfish
+637|Se trouve dans les biomes d'océan arctique.
+638|Pêcher le flétan du Pacifique (Pacific Halibut)
+639|Pêcher le flétan de l'Atlantique (Atlantic Halibut)
+640|Pêcher le saumon rose (Pink Salmon)
+641|Pêcher le Pollock
+642|Pêcher la truite arc-en-ciel (Rainbow Trout)
+643|Pêche
+644|Pêcher la truite brune (Brown Trout)
+645|Se trouve dans les biomes d'eau douce.
+646|Pêcher le Bayad
+647|Se trouve dans les biomes arides.
+648|Pêcher le Capitaine
+649|Pêcher le Boulti
+650|Pêcher le Synodontis
+651|Pêcher le Smallmouth Bass
+652|Pêcher le Bluegill
+653|Pêcher la carpe (Carp)
+654|Pêcher le poisson-chat (Catfish)
+655|Pêcher le Gar
+656|Fabriquer la ferme à vers
+657|Ferme à vers
+658|Cet objet utile, semblable à un composteur, te permet d'obtenir des vers pour l'appât.
+659|Fabriquer un hameçon en fer
+660|Hameçon en fer
+661|Il existe de nombreux hameçons différents, celui en fer étant le plus simple. Essaie-les pour trouver celui qui convient à tes objectifs.
+662|Boîte à pêche
+663|Elle te permet d'appliquer des modifications à ta canne à pêche et de mettre de l'appât sur ton hameçon.
+664|Flotteur
+665|Une modification de la canne à pêche.
+666|Pêcher le Minnow
+667|Pêcher le Muskellunge
+668|Pêcher la perche (Perch)
+669|Pêcher l'Arapaima
+670|Se trouve dans les biomes de jungle.
+671|Pêcher le piranha (Piranha)
+672|Se trouve dans les biomes de jungle.
+673|Pêcher le Tambaqui
+674|Pêcher le Brown Shrooma
+675|Se trouve dans les biomes d'île aux champignons.
+676|Pêcher le Red Shrooma
+677|Se trouve dans les biomes d'île aux champignons.
+678|Pêcher la méduse (Jellyfish)
+679|Se trouve dans les biomes d'eau salée.
+680|Pêcher le Red Grouper
+681|Se trouve dans les biomes d'eau salée.
+682|Pêcher le thon (Tuna)
+683|Pêcher le poisson rouge (Goldfish)
+684|Se trouve à peu près partout.
+685|Un appât alternatif. Se trouve dans les biomes de marais.
+686|Saveurs fermentées
+687|Fabriquer un tonneau de vieillissement
+688|Vieilli à la perfection
+689|Cette station sert à transformer le jus de raisin en vin.
+690|Fabriquer le pot à raisin
+691|Sauter pour le jus
+692|S'utilise en y plaçant des raisins puis en sautant dessus pour faire du jus de raisin.
+693|Fabriquer le pressoir à pommes
+694|Écraseur de pommes
+695|Sert à écraser les pommes en compote, un ingrédient utile pour certaines recettes de vin.
+696|Obtenir toutes les espèces de raisin rouge
+697|Connaisseur de raisin rouge
+698|Réparties dans les biomes du monde, trouve toutes les espèces de raisin rouge.
+699|Obtenir toutes les espèces de raisin blanc
+700|Connaisseur de raisin blanc
+701|Réparties dans les biomes du monde, trouve toutes les espèces de raisin blanc.
+702|Vignoble
+703|Augmente brièvement ta vie maximale.
+704|Donne résistance aux dégâts et absorption.
+705|Attire les objets proches vers le joueur.
+706|Une excellente façon de voyager vers des lieux aléatoires.
+707|Ce vin t'aide à mieux voir dans l'obscurité.
+708|Un vin parfait pour les esprits offensifs.
+709|Rend de la vie quand on le boit.
+710|Donne bonne fortune et vitesse d'attaque.
+711|Donne une légère régénération quand on le boit.
+712|Un excellent vin pour plus de mobilité.
+713|Un puissant vin régénérant.
+714|Un excellent vin pour restaurer et maintenir une vie élevée.
+715|Donne résistance au feu et absorption quand on le boit.
+716|Te fait briller, ce qui te rend plus visible des autres joueurs.
+717|Donne un bonus de vitesse et la capacité de marcher sur l'eau quand on le boit.
+718|Puissant vin de soin.
+719|Résistance au feu et absorption.
+720|Augmente le gain d'expérience quand on le boit.
+721|Te fait briller pour que les autres joueurs te localisent mieux.
+722|Pars en beauté !
+723|Te donne de la force quand on le boit.
+724|Te donne le mauvais présage, ce qui permet de déclencher plus facilement un raid.
+725|Augmente ta faim et l'empêche de diminuer.
+726|Donne un puissant bonus de vie.
+727|Fondation
+728|Obtenir des fournitures
+729|Obtenir des fournitures
+730|Pour fonder ton royaume, il te faudra des fournitures. ⏎  ⏎ Construis et place un camp d'approvisionnement ou un navire d'approvisionnement.
+731|Fabriquer l'outil de construction
+732|Simple à fabriquer, l'outil de construction sera essentiel pour placer correctement les bâtiments et crucial pour certaines recettes.
+733|Construire l'hôtel de ville
+734|Hôtel de ville
+735|L'hôtel de ville sera le centre de ton royaume : tu pourras y voir les statistiques de tes citoyens, nommer tes amis officiers et gérer d'autres affaires importantes.
+736|Construire et placer l'hôtel de ville
+737|Fonder ton royaume
+738|Un nouveau royaume naît !
+739|Place le bloc de l'hôtel de ville avec l'outil de construction et interagis avec lui pour fonder ton royaume. ⏎  ⏎ Tu peux aussi changer le style de ton royaume pendant ce processus.

@@ -1,0 +1,24 @@
+{
+  "group": "crystal_tools",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "phantasm:crystal_block"
+    },
+    "1": {
+      "item": "phantasm:void_crystal_block"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "phantasm:crystalline_sword",
+    "count": 1
+  }
+}
