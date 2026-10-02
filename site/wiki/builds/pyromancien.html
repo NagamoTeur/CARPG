@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pyromancien Blazeborn (Feu pur) — Wiki CARPG</title>
+<meta name="description" content="Guide du mage de feu avec l'origine Blazeborn">
+<link rel="stylesheet" href="../../css/app.css"><link rel="stylesheet" href="../../css/wiki.css">
+</head><body>
+<header class="top"><a class="brand" href="../../index.html">⚔ CARPG</a>
+<button id="navbtn" class="sm" aria-label="Menu">☰ Menu</button>
+<input id="q" type="search" placeholder="Rechercher dans le wiki…" autocomplete="off"><div id="results" class="hidden"></div>
+<span class="spacer"></span><a href="../../pob/index.html"><button class="pri">Ouvrir le planificateur de build</button></a></header>
+<div class="wikiwrap"><nav id="wnav"><details class="navsec" ><summary>Démarrer</summary><a href="../../wiki/index.html" class="">Accueil</a><a href="../../wiki/premiers-pas.html" class="">Premiers pas</a><a href="../../wiki/monde.html" class="">Le monde &amp; le danger</a><a href="../../wiki/campagne.html" class="">La campagne</a><a href="../../wiki/survie.html" class="">Mort, sauvegarde &amp; sécurité</a></details><details class="navsec" ><summary>Personnage</summary><a href="../../wiki/origines.html" class="">Origines</a><a href="../../wiki/classes.html" class="">Classes</a><a href="../../wiki/benedictions.html" class="">Bénédictions divines</a><a href="../../wiki/talents.html" class="">Arbre de talents</a><a href="../../wiki/combat.html" class="">Combat &amp; statistiques</a></details><details class="navsec" ><summary>Équipement</summary><a href="../../wiki/equipement.html" class="">Rareté, affixes &amp; sockets</a><a href="../../wiki/gemmes.html" class="">Gemmes</a><a href="../../wiki/affixes.html" class="">Catalogue des affixes</a><a href="../../wiki/atelier.html" class="">Ateliers &amp; enchantement</a><a href="../../wiki/enchants.html" class="">Tous les enchantements</a><a href="../../wiki/objets-campagne.html" class="">Équipement de campagne</a><a href="../../wiki/accessoires.html" class="">Accessoires &amp; reliques</a><a href="../../wiki/ring-sept-maledictions.html" class="">Anneau des Sept Malédictions</a></details><details class="navsec" ><summary>Magie</summary><a href="../../wiki/magie.html" class="">Comprendre la magie</a><a href="../../wiki/sorts.html" class="">Catalogue des sorts (Iron's)</a><a href="../../wiki/ars.html" class="">Glyphes d'Ars Nouveau</a></details><details class="navsec" ><summary>Boss</summary><a href="../../wiki/boss.html" class="">Guide des boss</a></details><details class="navsec" ><summary>Builds</summary><a href="../../wiki/builds/index.html" class="">Tous les builds</a><a href="../../wiki/builds/niveaux.html" class="">Débutant → Optimisé</a><a href="../../wiki/builds/adapter.html" class="">Adapter un build à son loot</a></details><details class="navsec" open><summary>🔮 Mages offensifs</summary><a href="../../wiki/builds/mage-ender.html" class="">Mage sombre</a><a href="../../wiki/builds/mage-feu.html" class="">Chevalier-mage du Phénix</a><a href="../../wiki/builds/mage-foudre.html" class="">Mage de la tempête</a><a href="../../wiki/builds/mage-glace.html" class="">Mage de glace</a><a href="../../wiki/builds/mage-sang.html" class="">Mage de sang</a><a href="../../wiki/builds/mage-evocateur.html" class="">Évocateur des vents</a><a href="../../wiki/builds/archimage-elfe.html" class="">Archimage haut elfe</a><a href="../../wiki/builds/pyromancien.html" class="on">Pyromancien Blazeborn</a><a href="../../wiki/builds/empoisonneur.html" class="">Empoisonneur des ombres</a></details><details class="navsec" ><summary>✨ Soutien &amp; invocation</summary><a href="../../wiki/builds/justicier.html" class="">Justicier sacré</a><a href="../../wiki/builds/necro.html" class="">Chaman nécromant</a><a href="../../wiki/builds/druide.html" class="">Druide du marais</a><a href="../../wiki/builds/mage-tank.html" class="">Gardien sacré</a><a href="../../wiki/builds/pretre-soigneur.html" class="">Prêtre soigneur</a></details><details class="navsec" ><summary>🏹 Distance (arcs et arbalètes)</summary><a href="../../wiki/builds/archer.html" class="">Tireur d'élite</a><a href="../../wiki/builds/archer-elfe.html" class="">Archer elfe des bois</a><a href="../../wiki/builds/arbalete.html" class="">Arbalétrier critique</a><a href="../../wiki/builds/archer-braise.html" class="">Archer de braise</a><a href="../../wiki/builds/archer-fantome.html" class="">Archer fantôme</a></details><details class="navsec" ><summary>⚔ Mêlée : dégâts</summary><a href="../../wiki/builds/berserker.html" class="">Berserker du Nord</a><a href="../../wiki/builds/berserker-critique.html" class="">Berserker critique</a><a href="../../wiki/builds/demi-umbra.html" class="">Demi-dieu Umbra</a><a href="../../wiki/builds/demi-lux.html" class="">Demi-dieu Lux</a><a href="../../wiki/builds/duelliste.html" class="">Duelliste glacé</a><a href="../../wiki/builds/assassin.html" class="">Lame fantôme</a><a href="../../wiki/builds/assassin-voleur.html" class="">Voleur de l'ombre</a><a href="../../wiki/builds/maitre-betes.html" class="">Maître des bêtes</a><a href="../../wiki/builds/brute-bastion.html" class="">Brute des bastions</a><a href="../../wiki/builds/rodeur-ender.html" class="">Rôdeur d'Ender</a><a href="../../wiki/builds/frappeur-foudre.html" class="">Frappeur de foudre</a></details><details class="navsec" ><summary>🛡 Tanks &amp; hybrides</summary><a href="../../wiki/builds/chevalier.html" class="">Chevalier gardien</a><a href="../../wiki/builds/tank-lux.html" class="">Rempart de lumière</a><a href="../../wiki/builds/nain-tank.html" class="">Tank Shulk</a><a href="../../wiki/builds/phenix-bouclier.html" class="">Rempart du Phénix</a><a href="../../wiki/builds/paladin-feu.html" class="">Templier du Phénix</a><a href="../../wiki/builds/templier-sacre.html" class="">Templier sacré</a><a href="../../wiki/builds/forteresse-ardente.html" class="">Forteresse ardente</a><a href="../../wiki/builds/garde-royal.html" class="">Garde royal</a></details><details class="navsec" ><summary>💰 Farm &amp; utilité</summary><a href="../../wiki/builds/chasseur-tresors.html" class="">Chasseur de trésors</a><a href="../../wiki/builds/mineur-blinde.html" class="">Mineur blindé</a><a href="../../wiki/builds/chef-de-guerre.html" class="">Chef de guerre</a></details><details class="navsec" ><summary>💀 Anneau des Sept Malédictions</summary><a href="../../wiki/builds/maudit-tank.html" class="">Le Maudit</a><a href="../../wiki/builds/maudit-esquive.html" class="">Spectre maudit</a><a href="../../wiki/builds/maudit-mage.html" class="">Mage maudit</a><a href="../../wiki/builds/maudit-archer.html" class="">Archer maudit</a><a href="../../wiki/builds/maudit-berserker.html" class="">Berserker maudit</a></details><details class="navsec" ><summary>Vie quotidienne</summary><a href="../../wiki/vie.html" class="">Cuisine, ferme, colonie &amp; stockage</a></details><details class="navsec" ><summary>Référence</summary><a href="../../wiki/outil.html" class="">Utiliser le planificateur</a><a href="../../wiki/quetes.html" class="">Le livre de quêtes</a><a href="../../wiki/mods.html" class="">Liste des mods</a><a href="../../wiki/glossaire.html" class="">Glossaire</a><a href="../../wiki/faq.html" class="">FAQ</a></details></nav>
+<main class="wiki"><h1>Pyromancien Blazeborn (Feu pur)</h1><blockquote>
+<p><strong>En une phrase :</strong> le Nether est ta maison : immunisé au feu, tu lances des sorts de zone en restant au milieu des flammes.</p>
+</blockquote>
+<h2 id="pour-qui">Pour qui ?</h2>
+<p>Joueurs qui veulent <strong>brûler tout ce qui bouge</strong>, à l'aise dans le Nether. Redoutable en groupe.</p>
+<h2 id="style-de-jeu">Style de jeu</h2>
+<p>Tu poses un <strong>mur de feu</strong>, tu restes dedans (immunisé), tu bombardes (<em>Boule de feu</em>, <em>Bombe de magma</em>) et tu finis avec <em>Tempête de braise</em>. Tu <strong>brûles</strong> les ennemis qui s'approchent ; ton propre feu ne te touche pas.</p>
+<h2 id="les-3-choix-du-debut">Les 3 choix du début</h2>
+<table>
+<thead>
+<tr>
+<th>Choix</th>
+<th>Pick</th>
+<th>Pourquoi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Origine</td>
+<td><strong>Blazeborn</strong></td>
+<td>Immunisé au feu, au poison et à la faim ; plus de dégâts en feu ; <strong>hydrophobe</strong> (l'eau te blesse)</td>
+</tr>
+<tr>
+<td>Classe</td>
+<td><strong>Explorer</strong></td>
+<td>Mobilité, exploration</td>
+</tr>
+<tr>
+<td>Bénédiction</td>
+<td><strong>Râ</strong></td>
+<td>+11 dégâts de feu au soleil ; +10 après le dragon</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Hydrophobie</p>
+<p>L'eau te fait des dégâts : évite la pluie, les rivières et les boss aquatiques.</p>
+</div>
+<h2 id="equipement-quoi-chercher">Équipement : quoi chercher</h2>
+<p><strong>Puissance Feu</strong>, <strong>dégâts de feu fixes</strong>, <strong>mana</strong>, <strong>recharge</strong>. Armure légère à moyenne, mais prends des PV.</p>
+<h2 id="talents">Talents</h2>
+<p>Voie de l'<strong>Enchanteur</strong> puis les gemmes de feu.</p>
+<h2 id="tes-sorts-et-comment-les-enchainer">Tes sorts et comment les enchaîner</h2>
+<ol>
+<li><strong>Mur de feu</strong> pour bloquer et brûler.</li>
+<li><strong>Bombe de magma</strong> sur les groupes.</li>
+<li><strong>Boule de feu</strong> pour les dégâts de zone moyens.</li>
+<li><strong>Souffle de feu</strong> à courte portée.</li>
+<li><strong>Tempête de braise</strong> pour finir.</li>
+</ol>
+<h2 id="face-aux-boss">Face aux boss</h2>
+<ul>
+<li><strong>Boss de feu</strong> : inutile, change de build.</li>
+<li><strong>Boss de glace / morts-vivants</strong> : excellent.</li>
+<li><strong>Boss aquatique</strong> : à éviter.</li>
+</ul>
+<h2 id="forces-et-faiblesses">Forces et faiblesses</h2>
+<table>
+<thead>
+<tr>
+<th>👍 Forces</th>
+<th>👎 Faiblesses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dégâts de zone énormes</td>
+<td>Aucun dégât contre les boss de feu</td>
+</tr>
+<tr>
+<td>Immunisé au feu et au poison</td>
+<td>L'eau te fait mal</td>
+</tr>
+<tr>
+<td>Immunité à la faim</td>
+<td>Peu de mobilité hors Nether</td>
+</tr>
+</tbody>
+</table>
+<h2 id="les-erreurs-classiques">Les erreurs classiques</h2>
+<ul>
+<li><strong>Se battre dans l'eau.</strong></li>
+<li><strong>Utiliser le feu contre un boss de feu.</strong></li>
+<li><strong>Oublier le soleil</strong> : le bonus de Râ n'agit qu'au soleil.</li>
+</ul>
+<h2 id="variantes">Variantes</h2>
+<p>Hors Nether : <a href="mage-feu.html">Chevalier-mage du Phénix</a>. Avec bouclier : <a href="forteresse-ardente.html">Forteresse ardente</a>.</p>
+<p>Voir aussi : <a href="adapter.html">Adapter un build à son loot</a> · <a href="niveaux.html">Débutant → Optimisé</a>.</p>
+<h2>Comment adapter ce build</h2><p class="small">Catégorie : <b>🔮 Mages offensifs</b> — <a href="index.html#mages">voir les autres builds de la catégorie</a>.</p>
+<ul>
+<li><strong>Change d'école, garde la structure</strong> : tous ces builds partagent la même base (classe de talents Enchanteur, bâton + livre de sorts, armure légère). Pour passer de feu à glace, change l'origine/bénédiction et les 5 sorts, le reste de l'équipement reste valable.</li>
+<li><strong>Priorité d'équipement</strong> : puissance de l'école &gt; mana max &gt; régénération de mana &gt; réduction de recharge &gt; PV. Si ton loot n'a pas la bonne école, une pièce « puissance de sorts » générale reste toujours utile.</li>
+<li><strong>Trop fragile ?</strong> Remplace un sort d'attaque par un sort de défense (téléportation, bouclier, soins) et ajoute des PV avant de monter la puissance.</li>
+<li><strong>Manque de mana ?</strong> Ajoute un affixe de régénération de mana avant un affixe de puissance : un sort puissant que tu ne peux pas lancer ne sert à rien.</li>
+</ul>
+<p><strong>Pour aller plus loin :</strong> <a href="adapter.html">Adapter un build à son loot</a> · <a href="niveaux.html">Débutant → Optimisé</a> · charge-le dans le <a href="../../pob/index.html">planificateur</a> pour tester tes modifications.</p>
+<h2 id="choix">Tes 3 choix en détail</h2><p class="small">Ce que chaque choix te donne réellement, tiré des fichiers du pack. Les pouvoirs sans chiffre sont décrits à titre indicatif.</p><div class="grid3"><div class="card"><div class="mut small">Origine</div><h3>Blazeborn</h3><p class="small">Lointains descendants des Blazes, les Blazeborn sont naturellement immunisés contre les dangers du Nether.</p><ul class="small"><li><b>Fire Immunity</b> — Tu es immunisé contre tous les types de dégâts de feu.</li><li><b>Nether Inhabitant</b> — Ton point d'apparition naturel est dans le Nether.</li><li><b>Burning Wrath</b> — Quand tu es en feu, tes attaques font plus de dégâts.</li><li><b>Hotblooded</b> — Ton corps brûlant consume les venins : tu es immunisé au poison et à la faim.</li><li><b>Hydrophobia</b> — Tu subis des dégâts continus au contact de l'eau.</li></ul></div><div class="card"><div class="mut small">Classe</div><h3>Explorer</h3><p class="small">Les explorateurs se repèrent facilement dans les terrains les plus difficiles et découvrent les lieux cachés.</p><ul class="small"><li><b>Explorer Kit</b> — Tu commences la partie avec une boussole, une horloge et neuf cartes vides.</li><li><b>Fit</b> — Courir ne te fatigue pas.</li></ul></div><div class="card"><div class="mut small">Bénédiction divine</div><h3>Ra's Blessing</h3><p class="small">Tu es favorisé par Râ, dieu du soleil, de la lumière et de l'ordre. Tu reçois sa bénédiction radieuse.</p><ul class="small"><li><b>Minor Boon of Light</b> — Râ bénit tes armes : +11 de dégâts de feu quand tu es exposé au soleil.</li><li><b>Greater Boon of Sol</b> — Après avoir tué l'Ender Dragon, Râ t'accorde +10 de dégâts de feu supplémentaires.</li></ul></div></div>
+<h2 id="progression">Ce que chaque niveau t'apporte</h2><table class="t"><tr><th></th><th>Débutant</th><th>Intermédiaire</th><th>Avancé</th><th>Optimisé</th></tr><tr><td><b>Vie max</b></td><td>99</td><td>179</td><td>460</td><td>1239</td></tr><tr><td><b>Armure</b></td><td>23</td><td>66</td><td>103</td><td>105</td></tr><tr><td><b>Esquive</b></td><td>0 %</td><td>13 %</td><td>47 %</td><td>82 %</td></tr><tr><td><b>Dégâts par coup</b></td><td>36</td><td>36</td><td>36</td><td>42</td></tr><tr><td><b>Critique</b></td><td>5 % × 1,5</td><td>5 % × 1,5</td><td>5 % × 1,5</td><td>5 % × 1,5</td></tr><tr><td><b>Mana max</b></td><td>100</td><td>157</td><td>440</td><td>540</td></tr><tr><td><b>Points de talent</b></td><td>14</td><td>45</td><td>100</td><td>115</td></tr></table><p class="small mut">Les chiffres augmentent surtout grâce à la rareté de l'équipement, au nombre d'affixes/gemmes et aux points de talent. Ils servent à comparer les niveaux entre eux.</p>
+<h2 id="arbre">Arbre de talents</h2><p class="small">Les nœuds <b>en couleur</b> sont ceux à prendre ; choisis le niveau avec les boutons. Molette pour zoomer, glisser pour déplacer, survole un nœud pour lire son effet. <span class="tleg"><i style="background:#5bd75b"></i>départ <i style="background:#8aa0b8"></i>mineur <i style="background:#58a6ff"></i>notable <i style="background:#e0a63a"></i>clé de voûte</span></p><div class="treebox" data-stages='{"debutant": ["enchanter_class", "enchanter_defensive_1", "enchanter_defensive_2", "enchanter_defensive_3", "enchanter_defensive_4", "enchanter_defensive_notable_1", "enchanter_subclass_2_defensive_1", "cook_subclass_1_defensive_1", "cook_offensive_notable_1", "cook_offensive_4", "cook_life_2", "cook_life_notable_1", "cook_life_1", "enchanter_life_1"], "milieu": ["enchanter_class", "enchanter_defensive_1", "enchanter_defensive_2", "enchanter_defensive_3", "enchanter_defensive_4", "enchanter_defensive_notable_1", "enchanter_subclass_2_defensive_1", "cook_subclass_1_defensive_1", "cook_offensive_notable_1", "cook_offensive_4", "cook_life_2", "cook_life_notable_1", "cook_life_1", "enchanter_gateway", "miner_gateway", "miner_subclass_2_defensive_1", "miner_subclass_2_defensive_2", "miner_subclass_2_defensive_3", "miner_subclass_2_defensive_4", "miner_subclass_2", "miner_subclass_2_life_1", "miner_subclass_2_life_2", "miner_subclass_2_life_3", "miner_subclass_2_life_4", "miner_defensive_notable_1", "miner_defensive_crafting_5", "miner_defensive_crafting_6", "miner_defensive_crafting_7", "miner_defensive_crafting_keystone_1", "miner_defensive_crafting_4", "miner_defensive_crafting_3", "miner_defensive_crafting_2", "miner_defensive_crafting_1", "miner_defensive_4", "miner_life_1", "miner_life_notable_1", "enchanter_life_1", "alchemist_subclass_1_defensive_1", "alchemist_subclass_1_defensive_2", "alchemist_subclass_1_defensive_3", "alchemist_subclass_1_defensive_4", "miner_life_2", "miner_subclass_2_mastery", "miner_subclass_2_crafting_4", "miner_subclass_2_crafting_notable_1"], "fin": ["enchanter_class", "enchanter_defensive_1", "enchanter_defensive_2", "enchanter_defensive_3", "enchanter_defensive_4", "enchanter_defensive_notable_1", "enchanter_subclass_2_defensive_1", "enchanter_gateway", "miner_gateway", "miner_subclass_2_defensive_1", "miner_defensive_notable_1", "miner_defensive_crafting_5", "miner_defensive_crafting_6", "miner_defensive_crafting_7", "miner_defensive_crafting_keystone_1", "miner_subclass_2_defensive_2", "miner_subclass_2_defensive_3", "miner_subclass_2_defensive_4", "miner_subclass_2", "miner_subclass_2_life_1", "miner_subclass_2_life_2", "miner_subclass_2_life_3", "miner_subclass_2_life_4", "miner_defensive_crafting_4", "miner_defensive_crafting_3", "miner_defensive_crafting_2", "miner_defensive_crafting_1", "cook_subclass_1_defensive_1", "cook_offensive_notable_1", "cook_offensive_4", "cook_life_2", "cook_life_notable_1", "miner_defensive_4", "miner_life_1", "miner_life_notable_1", "alchemist_subclass_1_defensive_1", "alchemist_subclass_1_defensive_2", "alchemist_subclass_1_defensive_3", "alchemist_subclass_1_defensive_4", "miner_subclass_2_mastery", "miner_subclass_2_crafting_4", "miner_subclass_2_crafting_notable_1", "alchemist_offensive_notable_1", "alchemist_offensive_4", "alchemist_life_2", "alchemist_life_notable_1", "alchemist_life_1", "alchemist_defensive_4", "alchemist_defensive_5", "alchemist_defensive_6", "alchemist_defensive_7", "alchemist_defensive_8", "alchemist_defensive_3", "alchemist_defensive_2", "alchemist_defensive_1", "alchemist_defensive_notable_1", "alchemist_subclass_2_defensive_1", "hunter_subclass_1_defensive_1", "hunter_subclass_1_defensive_2", "hunter_subclass_1_defensive_3", "hunter_subclass_1_defensive_4", "alchemist_subclass_2_defensive_2", "alchemist_subclass_2_defensive_3", "alchemist_subclass_2_defensive_4", "cook_life_1", "enchanter_life_1", "miner_life_2", "hunter_offensive_notable_1", "hunter_offensive_4", "hunter_life_2", "hunter_life_notable_1", "hunter_life_1", "hunter_defensive_4", "hunter_defensive_5", "hunter_defensive_6", "hunter_defensive_7", "hunter_defensive_8", "hunter_defensive_3", "hunter_defensive_2", "hunter_defensive_1", "alchemist_subclass_2", "alchemist_subclass_2_life_1", "alchemist_subclass_2_life_2", "alchemist_subclass_2_life_3", "alchemist_subclass_2_life_4", "enchanter_subclass_2_defensive_2", "enchanter_subclass_2_defensive_3", "enchanter_subclass_2_defensive_4", "enchanter_subclass_2", "enchanter_subclass_2_life_1", "enchanter_subclass_2_life_2", "enchanter_subclass_2_life_3", "enchanter_subclass_2_life_4", "enchanter_subclass_2_life_notable_1", "miner_subclass_2_crafting_1", "miner_subclass_2_crafting_2", "miner_subclass_2_crafting_3", "miner_subclass_2_crafting_5", "enchanter_life_notable_1", "enchanter_life_2"], "optimise": ["enchanter_class", "enchanter_defensive_1", "enchanter_defensive_2", "enchanter_defensive_3", "enchanter_defensive_4", "enchanter_defensive_notable_1", "enchanter_subclass_2_defensive_1", "enchanter_gateway", "miner_gateway", "miner_subclass_2_defensive_1", "miner_defensive_notable_1", "miner_defensive_crafting_5", "miner_defensive_crafting_6", "miner_defensive_crafting_7", "miner_defensive_crafting_keystone_1", "miner_defensive_crafting_4", "miner_defensive_crafting_3", "miner_defensive_crafting_2", "miner_subclass_2_defensive_2", "miner_subclass_2_defensive_3", "miner_subclass_2_defensive_4", "miner_subclass_2", "miner_subclass_2_life_1", "miner_subclass_2_life_2", "miner_subclass_2_life_3", "miner_subclass_2_life_4", "miner_defensive_4", "miner_life_1", "miner_life_notable_1", "alchemist_subclass_1_defensive_1", "alchemist_subclass_1_defensive_2", "alchemist_subclass_1_defensive_3", "cook_subclass_1_defensive_1", "cook_offensive_notable_1", "cook_offensive_4", "cook_life_2", "cook_life_notable_1", "alchemist_subclass_1_defensive_4", "alchemist_offensive_notable_1", "alchemist_offensive_4", "alchemist_life_2", "alchemist_life_notable_1", "alchemist_life_1", "alchemist_defensive_4", "alchemist_defensive_5", "alchemist_defensive_6", "alchemist_defensive_7", "alchemist_defensive_8", "alchemist_defensive_3", "alchemist_defensive_2", "alchemist_defensive_1", "alchemist_defensive_notable_1", "alchemist_subclass_2_defensive_1", "hunter_subclass_1_defensive_1", "hunter_subclass_1_defensive_2", "hunter_subclass_1_defensive_3", "hunter_subclass_1_defensive_4", "alchemist_subclass_2_defensive_2", "alchemist_subclass_2_defensive_3", "alchemist_subclass_2_defensive_4", "miner_subclass_2_mastery", "miner_subclass_2_crafting_4", "miner_subclass_2_crafting_notable_1", "miner_life_2", "hunter_offensive_notable_1", "hunter_offensive_4", "hunter_life_2", "hunter_life_notable_1", "hunter_life_1", "hunter_defensive_4", "hunter_defensive_5", "hunter_defensive_6", "hunter_defensive_7", "hunter_defensive_8", "hunter_defensive_3", "hunter_defensive_2", "hunter_defensive_1", "miner_defensive_crafting_1", "cook_life_1", "enchanter_life_1", "miner_offensive_4", "miner_offensive_notable_1", "miner_offensive_crafting_5", "miner_offensive_crafting_6", "miner_offensive_crafting_7", "miner_offensive_crafting_keystone_1", "miner_offensive_crafting_4", "miner_offensive_crafting_3", "miner_offensive_crafting_2", "miner_offensive_crafting_1", "hunter_defensive_notable_1", "hunter_subclass_2_defensive_1", "enchanter_subclass_1_defensive_1", "enchanter_subclass_1_defensive_2", "enchanter_subclass_1_defensive_3", "enchanter_subclass_1_defensive_4", "hunter_subclass_2_defensive_2", "hunter_subclass_2_defensive_3", "hunter_subclass_2_defensive_4", "miner_subclass_2_crafting_1", "miner_subclass_2_crafting_2", "miner_subclass_2_crafting_3", "miner_subclass_2_crafting_5", "alchemist_subclass_2", "alchemist_subclass_2_life_1", "alchemist_subclass_2_life_2", "alchemist_subclass_2_life_3", "alchemist_subclass_2_life_4", "enchanter_life_notable_1", "enchanter_life_2", "enchanter_subclass_2_defensive_2", "enchanter_subclass_2_defensive_3", "enchanter_subclass_2_defensive_4", "enchanter_subclass_2", "enchanter_subclass_2_life_1"]}' data-order='["debutant", "milieu", "fin", "optimise"]' data-labels='{"debutant": "Débutant", "milieu": "Intermédiaire", "fin": "Avancé", "optimise": "Optimisé"}'><div class="tbar"></div><div class="tinfo small"></div><canvas></canvas><div class="ttip" hidden></div><button class="tfit sm">Recentrer</button></div><script src="../tree.js"></script>
+<h2>Fiche chiffrée — Débutant</h2><div class="note small">Calculée avec le moteur du planificateur : équipement : Rare, affixes à 30 % de leur plage, 1 affixe et 1 gemme par pièce, armure d'aventurier et arme en fer ; 14 points de talent fixés sur la classe de départ. <b>C'est une cible théorique</b>, pas un loot garanti.</div><div class="grid2"><div class="card">
+<div class="stat"><span>Vie max</span><b>99</b></div><div class="stat"><span>Armure / robustesse</span><b>23 / 16</b></div><div class="stat"><span>Esquive</span><b>0 %</b></div>
+<div class="stat"><span>Coup de mêlée</span><b>36</b></div><div class="stat"><span>Vitesse d'attaque</span><b>1,4</b></div>
+<div class="stat"><span>Critique</span><b>5 % × 1,5</b></div>
+</div><div class="card">
+<div class="stat"><span>Mana max</span><b>100</b></div><div class="stat"><span>Régénération de mana</span><b>2 /s</b></div>
+<div class="stat"><span>Puissance Feu</span><b>×2,5</b></div>
+<div class="stat"><span>Recharge des sorts</span><b>× 1</b></div>
+</div></div>
+<h3>Sorts</h3><table class="t"><tr><th>Sort</th><th>Niv.</th><th>Mana</th><th>Incantation</th><th>Recharge</th><th>Effets (calculés)</th></tr>
+<tr><td><b>Fireball</b></td><td>3</td><td>90</td><td>2 s</td><td>25 s</td><td class="small">Dégâts 5 · Rayon (blocs) 2</td></tr>
+<tr><td><b>Wall of Fire</b></td><td>5</td><td>50</td><td>0 s</td><td>20 s</td><td class="small">Dégâts de zone 7 · Portée (blocs) 23</td></tr>
+<tr><td><b>Blaze Storm</b></td><td>8</td><td>12</td><td>2,75 s</td><td>20 s</td><td class="small">Dégâts 4</td></tr>
+<tr><td><b>Magma Bomb</b></td><td>8</td><td>65</td><td>1 s</td><td>12 s</td><td class="small">Dégâts 7 · Dégâts de zone 4 · Rayon (blocs) 4</td></tr>
+<tr><td><b>Fire Breath</b></td><td>10</td><td>14</td><td>5 s</td><td>12 s</td><td class="small">Dégâts 7</td></tr>
+</table>
+<h3>Équipement visé (Débutant)</h3><table class="t"><tr><th>Emplacement</th><th>Objet</th><th>Affixes de stat (valeur max de la plage)</th><th>Gemmes</th></tr>
+<tr><td>Arme</td><td><b>Bâton / baguette (arme de mage)</b><div class="mut small"><span class="rar-rare">Rare</span> dégâts 4</div></td><td class="small">Spellcasting : +14–14 % Puissance des sorts</td><td class="small">Hearty Jewel</td></tr>
+<tr><td>Casque</td><td><b>Adventurer Helmet</b><div class="mut small"><span class="rar-rare">Rare</span> armure 5</div></td><td class="small">Blessed : +3–6 Vie max</td><td class="small">Inferno Gem</td></tr>
+<tr><td>Plastron</td><td><b>Adventurer Chestplate</b><div class="mut small"><span class="rar-rare">Rare</span> armure 7</div></td><td class="small">Blessed : +3–6 Vie max</td><td class="small">Gem of the Warlord</td></tr>
+<tr><td>Jambières</td><td><b>Adventurer Leggings</b><div class="mut small"><span class="rar-rare">Rare</span> armure 6</div></td><td class="small">Blessed : +3–6 Vie max</td><td class="small">Inferno Gem</td></tr>
+<tr><td>Bottes</td><td><b>Adventurer Boots</b><div class="mut small"><span class="rar-rare">Rare</span> armure 5</div></td><td class="small">Blessed : +3–6 Vie max</td><td class="small">Hearty Jewel</td></tr>
+<tr><td>Anneau 1</td><td><b>Anneau</b><div class="mut small"><span class="rar-rare">Rare</span></div></td><td class="small">Immortal : +7–8,5 % (mult.) Vie max</td><td class="small">Brawler's Gem</td></tr>
+<tr><td>Anneau 2</td><td><b>Anneau</b><div class="mut small"><span class="rar-rare">Rare</span></div></td><td class="small">Immortal : +7–8,5 % (mult.) Vie max</td><td class="small">Brawler's Gem</td></tr>
+<tr><td>Livre de sorts</td><td><b>Livre de sorts</b><div class="mut small"><span class="rar-rare">Rare</span></div></td><td class="small">Pyromancer's : +15–15 % Puissance des sorts de Feu</td><td class="small">Inferno Gem</td></tr>
+</table>
+<h3>Talents choisis (14 points) — départ : classe Enchanteur</h3><p class="small">Runic Barrier · Heavy Strike · Healthy Diet</p>
+<p><a href="../../pob/index.html" class="btn">Ouvrir ce build dans le planificateur</a> <span class="mut small">(onglet « Builds prêts » → Pyromancien Blazeborn (Feu pur) — Débutant)</span></p>
+<h2>Fiche chiffrée — Intermédiaire</h2><div class="note small">Calculée avec le moteur du planificateur : équipement : Épique, affixes à 40 % de leur plage, 2 affixes et 1 gemme optimisés par pièce ; 45 points de talent choisis automatiquement. <b>C'est une cible théorique</b>, pas un loot garanti.</div><div class="grid2"><div class="card">
+<div class="stat"><span>Vie max</span><b>179</b></div><div class="stat"><span>Armure / robustesse</span><b>66 / 20</b></div><div class="stat"><span>Esquive</span><b>13 %</b></div>
+<div class="stat"><span>Coup de mêlée</span><b>36</b></div><div class="stat"><span>Vitesse d'attaque</span><b>1,4</b></div>
+<div class="stat"><span>Critique</span><b>5 % × 1,5</b></div>
+</div><div class="card">
+<div class="stat"><span>Mana max</span><b>157</b></div><div class="stat"><span>Régénération de mana</span><b>3,1 /s</b></div>
+<div class="stat"><span>Puissance Feu</span><b>×19,4</b></div>
+<div class="stat"><span>Recharge des sorts</span><b>× 0,12</b></div>
+</div></div>
+<h3>Sorts</h3><table class="t"><tr><th>Sort</th><th>Niv.</th><th>Mana</th><th>Incantation</th><th>Recharge</th><th>Effets (calculés)</th></tr>
+<tr><td><b>Fireball</b></td><td>3</td><td>90</td><td>2 s</td><td>3,1 s</td><td class="small">Dégâts 8 · Rayon (blocs) 3</td></tr>
+<tr><td><b>Wall of Fire</b></td><td>5</td><td>50</td><td>0 s</td><td>2,5 s</td><td class="small">Dégâts de zone 61</td></tr>
+<tr><td><b>Blaze Storm</b></td><td>8</td><td>12</td><td>2,75 s</td><td>2,5 s</td><td class="small">Dégâts 37</td></tr>
+<tr><td><b>Magma Bomb</b></td><td>8</td><td>65</td><td>1 s</td><td>1,5 s</td><td class="small">Dégâts 61 · Dégâts de zone 23 · Rayon (blocs) 11</td></tr>
+<tr><td><b>Fire Breath</b></td><td>10</td><td>14</td><td>5 s</td><td>1,5 s</td><td class="small">Dégâts 53</td></tr>
+</table>
+<h3>Équipement visé (Intermédiaire)</h3><table class="t"><tr><th>Emplacement</th><th>Objet</th><th>Affixes de stat (valeur max de la plage)</th><th>Gemmes</th></tr>
+<tr><td>Arme</td><td><b>Bâton / baguette (arme de mage)</b><div class="mut small"><span class="rar-epic">Épique</span> dégâts 4</div></td><td class="small">Quick-Minded : +20–20 % Réduction de recharge des sorts<br>Spellcasting : +16–16 % Puissance des sorts</td><td class="small">Hearty Jewel</td></tr>
+<tr><td>Casque</td><td><b>Darksteel Helmet</b><div class="mut small"><span class="rar-epic">Épique</span> armure 9</div></td><td class="small">Quick-Minded : +20–20 % Réduction de recharge des sorts<br>Spellcasting : +8–8 % Puissance des sorts</td><td class="small">Inferno Gem</td></tr>
+<tr><td>Plastron</td><td><b>Darksteel Chestplate</b><div class="mut small"><span class="rar-epic">Épique</span> armure 12</div></td><td class="small">Blessed : +3–8 Vie max<br>Quick-Minded : +20–20 % Réduction de recharge des sorts</td><td class="small">Gem of the Warlord<br>Inferno Gem</td></tr>
+<tr><td>Jambières</td><td><b>Darksteel Leggings</b><div class="mut small"><span class="rar-epic">Épique</span> armure 10</div></td><td class="small">Quick-Minded : +20–20 % Réduction de recharge des sorts<br>Spellcasting : +8–8 % Puissance des sorts</td><td class="small">Inferno Gem</td></tr>
+<tr><td>Bottes</td><td><b>Darksteel Boots</b><div class="mut small"><span class="rar-epic">Épique</span> armure 8</div></td><td class="small">Blessed : +3–8 Vie max<br>Quick-Minded : +20–20 % Réduction de recharge des sorts</td><td class="small">Inferno Gem</td></tr>
+<tr><td>Anneau 1</td><td><b>Anneau</b><div class="mut small"><span class="rar-epic">Épique</span></div></td><td class="small">Immortal : +8–10,2 % (mult.) Vie max<br>Power Fire : +25–97 % Puissance des sorts de Feu</td><td class="small">Reinforced Jewel<br>Brawler's Gem</td></tr>
+<tr><td>Anneau 2</td><td><b>Anneau</b><div class="mut small"><span class="rar-epic">Épique</span></div></td><td class="small">Immortal : +8–10,2 % (mult.) Vie max<br>Power Fire : +25–97 % Puissance des sorts de Feu</td><td class="small">Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>Collier</td><td><b>Collier</b><div class="mut small"><span class="rar-epic">Épique</span></div></td><td class="small">Immortal : +8–17 % (mult.) Vie max<br>Immortal : +8–10,2 % (mult.) Vie max</td><td class="small">Brawler's Gem</td></tr>
+<tr><td>Livre de sorts</td><td><b>Livre de sorts</b><div class="mut small"><span class="rar-epic">Épique</span></div></td><td class="small">Pyromancer's : +20–20 % Puissance des sorts de Feu<br>Intelligent : +55–60 Mana max</td><td class="small">Inferno Gem</td></tr>
+</table>
+<h3>Talents choisis (45 points) — départ : classe Enchanteur</h3><p class="small">Runic Barrier · Heavy Strike · Healthy Diet · Safety Helmet · <b>Cullinan</b> · Life Crystal · <b>Aristocrat</b> · Star Shards</p>
+<p><a href="../../pob/index.html" class="btn">Ouvrir ce build dans le planificateur</a> <span class="mut small">(onglet « Builds prêts » → Pyromancien Blazeborn (Feu pur) — Intermédiaire)</span></p>
+<h2>Fiche chiffrée — Avancé</h2><div class="note small">Calculée avec le moteur du planificateur : équipement : Mythique, affixes à 60 % de leur plage, 3 affixes et 2 gemmes optimisés par pièce ; 100 points de talent choisis automatiquement. <b>C'est une cible théorique</b>, pas un loot garanti.</div><div class="grid2"><div class="card">
+<div class="stat"><span>Vie max</span><b>460</b></div><div class="stat"><span>Armure / robustesse</span><b>103 / 28</b></div><div class="stat"><span>Esquive</span><b>47 %</b></div>
+<div class="stat"><span>Coup de mêlée</span><b>36</b></div><div class="stat"><span>Vitesse d'attaque</span><b>1,4</b></div>
+<div class="stat"><span>Critique</span><b>5 % × 1,5</b></div>
+</div><div class="card">
+<div class="stat"><span>Mana max</span><b>440</b></div><div class="stat"><span>Régénération de mana</span><b>13,9 /s</b></div>
+<div class="stat"><span>Puissance Feu</span><b>×737,5</b></div>
+<div class="stat"><span>Recharge des sorts</span><b>× 0,08</b></div>
+</div></div>
+<h3>Sorts</h3><table class="t"><tr><th>Sort</th><th>Niv.</th><th>Mana</th><th>Incantation</th><th>Recharge</th><th>Effets (calculés)</th></tr>
+<tr><td><b>Fireball</b></td><td>3</td><td>90</td><td>2 s</td><td>2 s</td><td class="small">Dégâts 145 · Rayon (blocs) 30</td></tr>
+<tr><td><b>Wall of Fire</b></td><td>5</td><td>50</td><td>0 s</td><td>1,6 s</td><td class="small">Dégâts de zone 2796</td></tr>
+<tr><td><b>Blaze Storm</b></td><td>8</td><td>12</td><td>2,75 s</td><td>1,6 s</td><td class="small">Dégâts 1678</td></tr>
+<tr><td><b>Magma Bomb</b></td><td>8</td><td>65</td><td>1 s</td><td>0,9 s</td><td class="small">Dégâts 2796 · Dégâts de zone 1015</td></tr>
+<tr><td><b>Fire Breath</b></td><td>10</td><td>14</td><td>5 s</td><td>0,9 s</td><td class="small">Dégâts 2360</td></tr>
+</table>
+<h3>Équipement visé (Avancé)</h3><table class="t"><tr><th>Emplacement</th><th>Objet</th><th>Affixes de stat (valeur max de la plage)</th><th>Gemmes</th></tr>
+<tr><td>Arme</td><td><b>Bâton / baguette (arme de mage)</b><div class="mut small"><span class="rar-mythic">Mythique</span> dégâts 4</div></td><td class="small">Spellcasting : +18–18 % Puissance des sorts<br>Quick-Minded : +25–25 % Réduction de recharge des sorts<br>Mana-tapped : +30–30 % Régénération de mana</td><td class="small">Hearty Jewel<br>Hearty Jewel</td></tr>
+<tr><td>Casque</td><td><b>Ascendant Rouge Helmet</b><div class="mut small"><span class="rar-mythic">Mythique</span> armure 22</div></td><td class="small">Quick-Minded : +25–25 % Réduction de recharge des sorts<br>Spellcasting : +10–10 % Puissance des sorts<br>Intelligent : +65–70 Mana max</td><td class="small">Inferno Gem<br>Inferno Gem</td></tr>
+<tr><td>Plastron</td><td><b>Ascendant Rouge Chestplate</b><div class="mut small"><span class="rar-mythic">Mythique</span> armure 27</div></td><td class="small">Quick-Minded : +25–25 % Réduction de recharge des sorts<br>Spellcasting : +10–10 % Puissance des sorts<br>Intelligent : +65–70 Mana max</td><td class="small">Inferno Gem<br>Inferno Gem<br>Inferno Gem</td></tr>
+<tr><td>Jambières</td><td><b>Ascendant Rouge Leggings</b><div class="mut small"><span class="rar-mythic">Mythique</span> armure 25</div></td><td class="small">Quick-Minded : +25–25 % Réduction de recharge des sorts<br>Spellcasting : +10–10 % Puissance des sorts<br>Intelligent : +65–70 Mana max</td><td class="small">Inferno Gem<br>Inferno Gem</td></tr>
+<tr><td>Bottes</td><td><b>Ascendant Rouge Boots</b><div class="mut small"><span class="rar-mythic">Mythique</span> armure 20</div></td><td class="small">Quick-Minded : +25–25 % Réduction de recharge des sorts<br>Spellcasting : +10–10 % Puissance des sorts<br>Intelligent : +65–70 Mana max</td><td class="small">Inferno Gem<br>Inferno Gem</td></tr>
+<tr><td>Anneau 1</td><td><b>Anneau</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Power Fire : +25–125 % Puissance des sorts de Feu<br>Immortal : +9–13 % (mult.) Vie max<br>Healthy : +5–9 Vie max</td><td class="small">Brawler's Gem<br>Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>Anneau 2</td><td><b>Anneau</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Power Fire : +25–125 % Puissance des sorts de Feu<br>Immortal : +9–13 % (mult.) Vie max<br>Healthy : +5–9 Vie max</td><td class="small">Brawler's Gem<br>Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>ring3</td><td><b></b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small"><span class="mut">—</span></td><td class="small"><span class="mut">—</span></td></tr>
+<tr><td>Collier</td><td><b>Collier</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Power Fire : +25–125 % Puissance des sorts de Feu<br>Immortal : +9–25 % (mult.) Vie max<br>Immortal : +9–13 % (mult.) Vie max</td><td class="small">Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>Ceinture</td><td><b>Ceinture</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Power Fire : +25–125 % Puissance des sorts de Feu<br>Immortal : +9–13 % (mult.) Vie max<br>Lifespring : +5–20 % Régénération de mana</td><td class="small">Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>Dos</td><td><b>Cape/Dos</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Power Fire : +25–125 % Puissance des sorts de Feu<br>Immortal : +9–13 % (mult.) Vie max<br>Blessed : +3–4,25 Vie max</td><td class="small">Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>Charme</td><td><b>Charme</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Power Fire : +25–125 % Puissance des sorts de Feu<br>Immortal : +9–13 % (mult.) Vie max<br>Lifespring : +5–20 % Régénération de mana</td><td class="small">Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>Livre de sorts</td><td><b>Livre de sorts</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Pyromancer's : +25–25 % Puissance des sorts de Feu<br>Intelligent : +65–70 Mana max</td><td class="small">Inferno Gem<br>Inferno Gem</td></tr>
+</table>
+<h3>Talents choisis (100 points) — départ : classe Enchanteur</h3><p class="small">Runic Barrier · Safety Helmet · <b>Cullinan</b> · Heavy Strike · Healthy Diet · Life Crystal · <b>Aristocrat</b> · Star Shards · Cruelty · Addiction · Improved Reflexes · Skillful Archer · Movement is Life · Meditation · Life from Magic</p>
+<p><a href="../../pob/index.html" class="btn">Ouvrir ce build dans le planificateur</a> <span class="mut small">(onglet « Builds prêts » → Pyromancien Blazeborn (Feu pur) — Avancé)</span></p>
+<h2>Fiche chiffrée — Optimisé (BiS)</h2><div class="note small">Calculée avec le moteur du planificateur : équipement : Mythique, affixes à 90 % de leur plage, 4 affixes et 3 gemmes optimisés par pièce, tous les accessoires ; 115 points de talent choisis automatiquement. <b>C'est une cible théorique</b>, pas un loot garanti.</div><div class="grid2"><div class="card">
+<div class="stat"><span>Vie max</span><b>1239</b></div><div class="stat"><span>Armure / robustesse</span><b>105 / 28</b></div><div class="stat"><span>Esquive</span><b>82 %</b></div>
+<div class="stat"><span>Coup de mêlée</span><b>42</b></div><div class="stat"><span>Vitesse d'attaque</span><b>1,4</b></div>
+<div class="stat"><span>Critique</span><b>5 % × 1,5</b></div>
+</div><div class="card">
+<div class="stat"><span>Mana max</span><b>540</b></div><div class="stat"><span>Régénération de mana</span><b>28 /s</b></div>
+<div class="stat"><span>Puissance Feu</span><b>×4483,4</b></div>
+<div class="stat"><span>Recharge des sorts</span><b>× 0,08</b></div>
+</div></div>
+<h3>Sorts</h3><table class="t"><tr><th>Sort</th><th>Niv.</th><th>Mana</th><th>Incantation</th><th>Recharge</th><th>Effets (calculés)</th></tr>
+<tr><td><b>Fireball</b></td><td>3</td><td>90</td><td>2 s</td><td>2 s</td><td class="small">Dégâts 855</td></tr>
+<tr><td><b>Wall of Fire</b></td><td>5</td><td>50</td><td>0 s</td><td>1,6 s</td><td class="small">Dégâts de zone 17001</td></tr>
+<tr><td><b>Blaze Storm</b></td><td>8</td><td>12</td><td>2,75 s</td><td>1,6 s</td><td class="small">Dégâts 10201</td></tr>
+<tr><td><b>Magma Bomb</b></td><td>8</td><td>65</td><td>1 s</td><td>0,9 s</td><td class="small">Dégâts 17001 · Dégâts de zone 6164</td></tr>
+<tr><td><b>Fire Breath</b></td><td>10</td><td>14</td><td>5 s</td><td>0,9 s</td><td class="small">Dégâts 14346</td></tr>
+</table>
+<h3>Équipement visé (Optimisé (BiS))</h3><table class="t"><tr><th>Emplacement</th><th>Objet</th><th>Affixes de stat (valeur max de la plage)</th><th>Gemmes</th></tr>
+<tr><td>Arme</td><td><b>Bâton / baguette (arme de mage)</b><div class="mut small"><span class="rar-mythic">Mythique</span> dégâts 4</div></td><td class="small">Spellcasting : +18–18 % Puissance des sorts<br>Quick-Minded : +25–25 % Réduction de recharge des sorts<br>Mana-tapped : +30–30 % Régénération de mana</td><td class="small">Hearty Jewel<br>Hearty Jewel<br>Hearty Jewel<br>Hearty Jewel</td></tr>
+<tr><td>Casque</td><td><b>Ascendant Rouge Helmet</b><div class="mut small"><span class="rar-mythic">Mythique</span> armure 22</div></td><td class="small">Quick-Minded : +25–25 % Réduction de recharge des sorts<br>Spellcasting : +10–10 % Puissance des sorts<br>Intelligent : +65–70 Mana max<br>Blessed : +3–8 Vie max</td><td class="small">Jewel of the Blue Skies<br>Inferno Gem<br>Inferno Gem</td></tr>
+<tr><td>Plastron</td><td><b>Ascendant Rouge Chestplate</b><div class="mut small"><span class="rar-mythic">Mythique</span> armure 27</div></td><td class="small">Quick-Minded : +25–25 % Réduction de recharge des sorts<br>Spellcasting : +10–10 % Puissance des sorts<br>Intelligent : +65–70 Mana max<br>Blessed : +3–8 Vie max</td><td class="small">Inferno Gem<br>Inferno Gem<br>Inferno Gem<br>Inferno Gem</td></tr>
+<tr><td>Jambières</td><td><b>Ascendant Rouge Leggings</b><div class="mut small"><span class="rar-mythic">Mythique</span> armure 25</div></td><td class="small">Quick-Minded : +25–25 % Réduction de recharge des sorts<br>Spellcasting : +10–10 % Puissance des sorts<br>Intelligent : +65–70 Mana max<br>Blessed : +3–8 Vie max</td><td class="small">Inferno Gem<br>Inferno Gem<br>Inferno Gem</td></tr>
+<tr><td>Bottes</td><td><b>Ascendant Rouge Boots</b><div class="mut small"><span class="rar-mythic">Mythique</span> armure 20</div></td><td class="small">Quick-Minded : +25–25 % Réduction de recharge des sorts<br>Spellcasting : +10–10 % Puissance des sorts<br>Intelligent : +65–70 Mana max<br>Blessed : +3–8 Vie max</td><td class="small">Slipstream Gem<br>Inferno Gem<br>Inferno Gem</td></tr>
+<tr><td>Anneau 1</td><td><b>Anneau</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Power Fire : +25–125 % Puissance des sorts de Feu<br>Immortal : +9–13 % (mult.) Vie max<br>Healthy : +5–9 Vie max<br>Lifespring : +5–20 % Régénération de mana</td><td class="small">Brawler's Gem<br>Brawler's Gem<br>Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>Anneau 2</td><td><b>Anneau</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Power Fire : +25–125 % Puissance des sorts de Feu<br>Immortal : +9–13 % (mult.) Vie max<br>Healthy : +5–9 Vie max<br>Lifespring : +5–20 % Régénération de mana</td><td class="small">Brawler's Gem<br>Brawler's Gem<br>Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>ring3</td><td><b></b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small"><span class="mut">—</span></td><td class="small"><span class="mut">—</span></td></tr>
+<tr><td>Collier</td><td><b>Collier</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Immortal : +9–25 % (mult.) Vie max<br>Power Fire : +25–125 % Puissance des sorts de Feu<br>Immortal : +9–13 % (mult.) Vie max<br>Lifespring : +5–20 % Régénération de mana</td><td class="small">Brawler's Gem<br>Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>Ceinture</td><td><b>Ceinture</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Power Fire : +25–125 % Puissance des sorts de Feu<br>Immortal : +9–13 % (mult.) Vie max<br>Lifespring : +5–20 % Régénération de mana<br>Arcane : +5–25 Mana max</td><td class="small">Brawler's Gem<br>Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>Dos</td><td><b>Cape/Dos</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Power Fire : +25–125 % Puissance des sorts de Feu<br>Immortal : +9–13 % (mult.) Vie max<br>Blessed : +3–4,25 Vie max<br>Terratouched : +1–2 Vie max</td><td class="small">Brawler's Gem<br>Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>Corps</td><td><b>Corps</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Power Fire : +25–125 % Puissance des sorts de Feu<br>Immortal : +9–13 % (mult.) Vie max<br>Blessed : +3–4,25 Vie max<br>Terratouched : +1–2 Vie max</td><td class="small">Brawler's Gem<br>Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>Mains</td><td><b>Gants</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Power Fire : +25–125 % Puissance des sorts de Feu<br>Immortal : +9–13 % (mult.) Vie max<br>Blessed : +3–4,25 Vie max<br>Terratouched : +1–2 Vie max</td><td class="small">Brawler's Gem<br>Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>Bracelet</td><td><b>Bracelet</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Lifespring : +5–20 % Régénération de mana<br>Arcane : +5–25 Mana max</td><td class="small">Brawler's Gem<br>Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>Talisman</td><td><b>Talisman</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Power Fire : +25–125 % Puissance des sorts de Feu<br>Immortal : +9–13 % (mult.) Vie max<br>Lifespring : +5–20 % Régénération de mana<br>Arcane : +5–25 Mana max</td><td class="small">Brawler's Gem<br>Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>Charme</td><td><b>Charme</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Power Fire : +25–125 % Puissance des sorts de Feu<br>Immortal : +9–13 % (mult.) Vie max<br>Lifespring : +5–20 % Régénération de mana<br>Arcane : +5–25 Mana max</td><td class="small">Brawler's Gem<br>Brawler's Gem<br>Brawler's Gem</td></tr>
+<tr><td>Livre de sorts</td><td><b>Livre de sorts</b><div class="mut small"><span class="rar-mythic">Mythique</span></div></td><td class="small">Intelligent : +65–70 Mana max<br>Pyromancer's : +25–25 % Puissance des sorts de Feu</td><td class="small">Inferno Gem<br>Inferno Gem<br>Inferno Gem</td></tr>
+</table>
+<h3>Talents choisis (115 points) — départ : classe Enchanteur</h3><p class="small">Runic Barrier · Safety Helmet · <b>Cullinan</b> · Life Crystal · Heavy Strike · Healthy Diet · Cruelty · Addiction · Improved Reflexes · <b>Aristocrat</b> · Star Shards · Skillful Archer · Movement is Life · Polishing · <b>Estrela de Fura</b> · Will to Survive · Life from Magic</p>
+<p><a href="../../pob/index.html" class="btn">Ouvrir ce build dans le planificateur</a> <span class="mut small">(onglet « Builds prêts » → Pyromancien Blazeborn (Feu pur) — Optimisé (BiS))</span></p>
+<footer class="mut small">Wiki généré à partir des fichiers du modpack « Cisco's Adventure RPG Ultimate » (V8E). Les chiffres viennent des fichiers de config et du code des mods ; en cas de doute, ce qui s'affiche en jeu fait foi.</footer></main></div>
+<script>window.ROOT="../../";</script><script src="../../wiki/search-index.js"></script><script src="../../wiki/wiki.js"></script>
+</body></html>

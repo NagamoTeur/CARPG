@@ -77,18 +77,69 @@ const ARCH = [
     pitch: 'Armure naturelle de la carapace du Shulk + 9 emplacements d\'inventaire en plus ; Forgeron pour de petits bonus d\'équipement. Un tank facile à vivre.' },
 ];
 
-// ---- Builds « Anneau des Sept Malédictions » : mêmes bases que des builds existants, avec l'anneau équipé (assume.cursed) ----
-const derive = (base, over) => Object.assign({}, ARCH.find(x => x.id === base), { isNew: 1, cursed: true }, over);
+const derive = (base, over) => Object.assign({}, ARCH.find(x => x.id === base), { isNew: 1 }, over);
+// ---- Builds supplémentaires (vague 3) : nouvelles origines, nouvelles écoles, nouveaux rôles ----
+const heal = R => Math.pow(school(R, 'holy'), 0.5) * Math.pow(1 / (2 - ENG.softCap(R.at['irons_spellbooks:cooldown_reduction'])), 0.2) * Math.pow(R.mana * R.manaRegen, 0.15) * Math.pow(ehp(R), 0.35);
 ARCH.push(
-  derive('nain-tank', { id: 'maudit-tank', title: 'Le Maudit (Tank)', tags: ['Anneau maudit', 'Tank', 'Armure'], wiki: 'builds/maudit-tank.html',
+  derive('justicier', { id: 'pretre-soigneur', title: 'Prêtre soigneur (Soutien pur)', obj: heal, origin: 'strictly:priest', cls: 'origins-classes:cleric', blessing: 'cisco_rpg_origins:chiron_blessing',
+    spells: [['heal', 10], ['greater_heal', 1], ['healing_circle', 10], ['blessing_of_life', 8], ['fortify', 8], ['cloud_of_regeneration', 8]], tags: ['Soutien', 'Soigneur', 'Groupe'], wiki: 'builds/pretre-soigneur.html',
+    pitch: 'Le soigneur « pur » : tous les soins du pack, de la bénédiction de vie à la zone de régénération. Il ne tue presque rien, mais personne ne meurt à côté de lui.' }),
+  derive('mage-foudre', { id: 'mage-evocateur', title: 'Évocateur des vents (Foudre mobile)', origin: 'origins:elytrian', cls: 'origins-classes:explorer', blessing: 'cisco_rpg_origins:zephyrus_blessing',
+    spells: [['lightning_bolt', 10], ['thunder_step', 5], ['electrocute', 10], ['charge', 8], ['gust', 5]], tags: ['Magie', 'Foudre', 'Mobilité'], wiki: 'builds/mage-evocateur.html',
+    pitch: 'Un mage de foudre qui ne reste jamais en place : élytres, pas de tonnerre et bourrasques pour frapper puis disparaître. Zéphyr accélère encore le tout.' }),
+  derive('mage-ender', { id: 'archimage-elfe', title: 'Archimage haut elfe (Ender)', origin: 'strictly:high_elf', cls: 'origins-classes:cleric', blessing: 'cisco_rpg_origins:ras_blessing',
+    spells: [['magic_arrow', 10], ['starfall', 10], ['black_hole', 5], ['counterspell', 3], ['teleport', 5]], tags: ['Magie', 'Ender', 'Contrôle'], wiki: 'builds/archimage-elfe.html',
+    pitch: 'Le même moteur Ender que le Mage sombre, mais avec une origine plus « classique » : trou noir pour regrouper, étoiles filantes pour finir, contresort pour couper les incantations.' }),
+  derive('mage-feu', { id: 'pyromancien', title: 'Pyromancien Blazeborn (Feu pur)', origin: 'origins:blazeborn', cls: 'origins-classes:explorer', blessing: 'cisco_rpg_origins:ras_blessing',
+    spells: [['fireball', 10], ['wall_of_fire', 8], ['blaze_storm', 8], ['magma_bomb', 8], ['fire_breath', 10]], tags: ['Magie', 'Feu', 'Zone'], wiki: 'builds/pyromancien.html',
+    pitch: 'Le Nether est ta maison : immunisé au feu, tu peux lancer des sorts de zone en restant au milieu des flammes. Idéal contre les groupes et les boss sensibles au feu.' }),
+  derive('druide', { id: 'empoisonneur', title: 'Empoisonneur des ombres (Nature)', obj: OBJ.magic('nature'), origin: 'origins:arachnid', cls: 'origins-classes:cleric', blessing: 'cisco_rpg_origins:lokis_blessing', tree: 'alchemist',
+    spells: [['poison_arrow', 10], ['acid_orb', 8], ['blight', 8], ['poison_splash', 8], ['root', 5]], tags: ['Magie', 'Poison', 'Dégâts sur la durée'], wiki: 'builds/empoisonneur.html',
+    pitch: 'Dégâts sur la durée : tu empoisonnes, tu immobilises (Racines) et tu laisses le temps travailler. Loki donne ensuite +40 % de dégâts aux empoisonnés.' }),
+  derive('archer-elfe', { id: 'archer-braise', title: 'Archer de braise (Feu)', origin: 'origins:blazeborn', cls: 'origins-classes:archer', blessing: 'cisco_rpg_origins:ras_blessing',
+    tags: ['Distance', 'Feu', 'Zone'], wiki: 'builds/archer-braise.html',
+    pitch: 'Des flèches enflammées : les dégâts de feu fixes s\'ajoutent à chaque tir et brûlent les cibles. Ra donne la puissance du feu, le Blazeborn ne craint pas ses propres flammes.' }),
+  derive('archer-elfe', { id: 'archer-fantome', title: 'Archer fantôme (Mobilité)', origin: 'origins:phantom', cls: 'origins-classes:archer', blessing: 'cisco_rpg_origins:zephyrus_blessing',
+    tags: ['Distance', 'Mobilité', 'Esquive'], wiki: 'builds/archer-fantome.html',
+    pitch: 'Un tireur qui passe en forme fantôme pour traverser les murs et tirer là où personne ne l\'attend. Zéphyr ajoute de la vitesse pour garder ses distances.' }),
+  derive('chasseur-tresors', { id: 'maitre-betes', title: 'Maître des bêtes (Compagnons)', obj: R => Math.pow(R.dps + 1, 0.45) * Math.pow(ehp(R), 0.45) * Math.pow(R.at['irons_spellbooks:summon_damage'] || 1, 0.1), origin: 'strictly:wildcat', cls: 'origins-classes:beastmaster', blessing: 'cisco_rpg_origins:skadis_blessing', tree: 'hunter',
+    spells: [['fang_strike', 10], ['fang_ward', 8], ['summon_polar_bear', 8], ['summon_horse', 3]], tags: ['Mêlée', 'Invocation', 'Compagnons'], wiki: 'builds/maitre-betes.html',
+    pitch: 'Un chasseur qui combat avec ses bêtes : ours polaire, crocs, monture. Tu tapes à côté d\'eux et ils absorbent une partie de l\'attention du boss.' }),
+  derive('berserker', { id: 'brute-bastion', title: 'Brute des bastions (Piglin)', origin: 'arkwys:piglinbrute', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:hephaestus_blessing',
+    tags: ['Mêlée', 'Force brute', 'Simple'], wiki: 'builds/brute-bastion.html',
+    pitch: 'La force brute à l\'état pur : grosse hache, gros dégâts, aucune subtilité. Héphaïstos transforme chaque coup en pourcentage des PV du boss.' }),
+  derive('assassin', { id: 'rodeur-ender', title: 'Rôdeur d\'Ender (Téléportation)', origin: 'origins:enderian', cls: 'origins-classes:rogue', blessing: 'cisco_rpg_origins:lokis_blessing',
+    spells: [['teleport', 5], ['evasion', 5], ['echoing_strikes', 8]], tags: ['Mêlée', 'Téléportation', 'Burst'], wiki: 'builds/rodeur-ender.html',
+    pitch: 'Frappe, téléporte-toi, recommence : l\'Enderian se téléporte naturellement, les sorts Ender (Téléportation, Évasion, Frappes en écho) font le reste. Craint l\'eau.' }),
+  derive('templier-sacre', { id: 'frappeur-foudre', title: 'Frappeur de foudre (Mêlée + Foudre)', obj: R => Math.pow(R.dps + 1, 0.45) * Math.pow(ehp(R), 0.3) * Math.pow(R.at['irons_spellbooks:lightning_spell_power'], 0.25), origin: 'origins:human', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:thors_blessing',
+    spells: [['charge', 8], ['thunder_step', 5], ['electrocute', 10], ['lightning_bolt', 10]], tags: ['Mêlée', 'Foudre', 'Hybride'], wiki: 'builds/frappeur-foudre.html',
+    pitch: 'Épée au poing et foudre dans les veines : Thor renforce les dégâts de foudre, la Charge engage, le Pas du tonnerre repositionne. Un guerrier-mage plus sûr qu\'un mage pur.' }),
+  derive('chevalier', { id: 'forteresse-ardente', title: 'Forteresse ardente (Tank Blazeborn)', origin: 'origins:blazeborn', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:hephaestus_blessing', weapon: 'fire',
+    spells: [['burning_dash', 10], ['wall_of_fire', 6]], tags: ['Tank', 'Feu', 'Brûlure'], wiki: 'builds/forteresse-ardente.html',
+    pitch: 'Un tank qui fait mal : immunisé au feu, il avance dans le Nether sans broncher, brûle ses ennemis et protège le groupe derrière un mur de flammes.' }),
+  derive('chevalier', { id: 'garde-royal', title: 'Garde royal (Tank chevalier)', origin: 'strictly:knight', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:arthurs_blessing',
+    tags: ['Tank', 'Bouclier', 'Anti-mort-vivant'], wiki: 'builds/garde-royal.html',
+    pitch: 'Le chevalier de la légende : armure lourde, bouclier et l\'Excalibur d\'Arthur (+60 % contre les morts-vivants). Le tank idéal pour les donjons de squelettes et de Wither.' }),
+  derive('chasseur-tresors', { id: 'mineur-blinde', title: 'Mineur blindé (Farm de ressources)', obj: R => (1 + R.at['minecraft:generic.luck']) * Math.pow(ehp(R), 0.4) * Math.pow(R.dps + 1, 0.2), origin: 'origins:shulk', cls: 'origins-classes:miner', blessing: 'cisco_rpg_origins:athenas_blessing', tree: 'miner', weapon: 'equi',
+    tags: ['Utilitaire', 'Mineur', 'Gemmes'], wiki: 'builds/mineur-blinde.html',
+    pitch: 'Une carapace de Shulk, la voie du Mineur (gemmes Cullinan et Estrela de Fura) et une chance maximale : celui qui descend chercher les ressources pour tout le monde.' }),
+  derive('druide', { id: 'chef-de-guerre', title: 'Chef de guerre (Cuisinier-combattant)', obj: R => Math.pow(R.dps + 1, 0.35) * Math.pow(ehp(R), 0.55) * Math.pow(1 + (R.regen || 0), 0.1), origin: 'origins:human', cls: 'origins-classes:cook', blessing: 'cisco_rpg_origins:vishnus_blessing', tree: 'cook', weapon: 'equi', shield: true, extra: [], armor: ['darksteel_armor', 'ascended_hero_rouge'],
+    spells: [], tags: ['Hybride', 'Nourriture', 'Régénération'], wiki: 'builds/chef-de-guerre.html',
+    pitch: 'Un guerrier qui se bat avec ce qu\'il a cuisiné : voie du Cuisinier, régénération de Vishnu, repas buffs. Il récupère entre deux combats sans consommer de potions.' }),
+);
+
+// ---- Builds « Anneau des Sept Malédictions » : mêmes bases que des builds existants, avec l'anneau équipé (assume.cursed) ----
+const deriveC = (base, over) => derive(base, Object.assign({ cursed: true }, over));
+ARCH.push(
+  deriveC('nain-tank', { id: 'maudit-tank', title: 'Le Maudit (Tank)', tags: ['Anneau maudit', 'Tank', 'Armure'], wiki: 'builds/maudit-tank.html',
     pitch: 'Le moyen le plus sûr de porter l\'Anneau des Sept Malédictions : énormes PV et armure de Shulk pour absorber les dégâts doublés, bouclier pour parer ce qui reste.' }),
-  derive('duelliste', { id: 'maudit-esquive', title: 'Spectre maudit (Esquive)', tags: ['Anneau maudit', 'Esquive', 'Vol de vie'], wiki: 'builds/maudit-esquive.html',
+  deriveC('duelliste', { id: 'maudit-esquive', title: 'Spectre maudit (Esquive)', tags: ['Anneau maudit', 'Esquive', 'Vol de vie'], wiki: 'builds/maudit-esquive.html',
     pitch: 'Ne pas se faire toucher du tout : esquive et vol de vie pour ignorer la malédiction de douleur, épée rapide pour compenser les dégâts réduits de moitié.' }),
-  derive('mage-sang', { id: 'maudit-mage', title: 'Mage maudit (Sang)', tags: ['Anneau maudit', 'Magie', 'Vol de vie'], wiki: 'builds/maudit-mage.html',
+  deriveC('mage-sang', { id: 'maudit-mage', title: 'Mage maudit (Sang)', tags: ['Anneau maudit', 'Magie', 'Vol de vie'], wiki: 'builds/maudit-mage.html',
     pitch: 'Sorts de sang et siphon de vie : la magie ignore l\'armure réduite, et chaque sort soigne. Le plein de loot et d\'XP du Ring, sans prendre de coups.' }),
-  derive('archer-elfe', { id: 'maudit-archer', title: 'Archer maudit (Distance)', tags: ['Anneau maudit', 'Distance', 'Débutant-friendly'], wiki: 'builds/maudit-archer.html',
+  deriveC('archer-elfe', { id: 'maudit-archer', title: 'Archer maudit (Distance)', tags: ['Anneau maudit', 'Distance', 'Débutant-friendly'], wiki: 'builds/maudit-archer.html',
     pitch: 'Tout ce qui est neutre vous attaque quand vous portez l\'Anneau : tirer de loin est la meilleure façon d\'en profiter sans en subir les inconvénients.' }),
-  derive('berserker-critique', { id: 'maudit-berserker', title: 'Berserker maudit (Critique)', tags: ['Anneau maudit', 'Mêlée', 'Critique'], wiki: 'builds/maudit-berserker.html',
+  deriveC('berserker-critique', { id: 'maudit-berserker', title: 'Berserker maudit (Critique)', tags: ['Anneau maudit', 'Mêlée', 'Critique'], wiki: 'builds/maudit-berserker.html',
     pitch: 'Le pari fou : gros critiques à deux mains pour faire oublier les −50 % de dégâts, et un Emblème du Berserker qui récompense les PV bas.' }),
 );
 

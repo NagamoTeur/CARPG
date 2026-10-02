@@ -1,9 +1,146 @@
-window.BUILD_CATS={"cats":[
-{"id":"mages","title":"Mages offensifs","icon":"🔮","desc":"Tu fais tes dégâts avec des sorts, un par école de magie. Faible défense, forte puissance : à jouer derrière quelqu'un qui tient la ligne.","adapt":["**Change d'école, garde la structure** : tous ces builds partagent la même base (classe de talents Enchanteur, bâton + livre de sorts, armure légère). Pour passer de feu à glace, change l'origine/bénédiction et les 5 sorts, le reste de l'équipement reste valable.","**Priorité d'équipement** : puissance de l'école > mana max > régénération de mana > réduction de recharge > PV. Si ton loot n'a pas la bonne école, une pièce « puissance de sorts » générale reste toujours utile.","**Trop fragile ?** Remplace un sort d'attaque par un sort de défense (téléportation, bouclier, soins) et ajoute des PV avant de monter la puissance.","**Manque de mana ?** Ajoute un affixe de régénération de mana avant un affixe de puissance : un sort puissant que tu ne peux pas lancer ne sert à rien."],"builds":["mage-ender","mage-feu","mage-foudre","mage-glace","mage-sang"]},
-{"id":"soutien","title":"Soutien & invocation","icon":"✨","desc":"Soigner, invoquer, résister : ces builds font tenir le groupe plutôt que de tout tuer eux-mêmes.","adapt":["**Rôle avant puissance** : un soigneur doit survivre et lancer ses soins en continu. Priorité : mana, réduction de recharge, puissance de soins/de l'école, puis PV.","**Pas de soigneur dans le groupe ?** Prends le Justicier ou le Gardien sacré en priorité : un seul suffit pour la plupart des boss.","**Invocations** : la puissance d'invocation compte plus que la puissance de sort. Garde tes serviteurs devant, reste derrière.","**Variante solo** : remplace un sort de soutien par un sort d'attaque de l'école principale."],"builds":["justicier","necro","druide","mage-tank"]},
-{"id":"distance","title":"Distance (arcs et arbalètes)","icon":"🏹","desc":"Dégâts physiques à distance. Pas de mana à gérer, mais il faut rester mobile et garder des munitions.","adapt":["**Arc ou arbalète ?** L'arc tire plus vite, l'arbalète frappe plus fort par tir. Le même loot (dégâts de flèches, critiques) sert aux deux.","**Priorité d'équipement** : dégâts de flèche > cadence de tir > critiques > esquive > PV. L'armure compte peu.","**Pas assez de dégâts ?** Monte la chance et les dégâts critiques avant la cadence : les critiques multiplient tout.","**Trop touché ?** Reste à distance maximale ; une pièce d'esquive vaut plus qu'une pièce d'armure pour un archer."],"builds":["archer","archer-elfe","arbalete"]},
-{"id":"melee","title":"Mêlée : dégâts","icon":"⚔","desc":"Corps à corps pour faire de gros dégâts. Plus de risque, plus de récompense : à jouer avec un soigneur ou de bons soins.","adapt":["**Une ou deux mains ?** Une main + bouclier est plus sûr ; deux mains tape plus fort mais bloque moins. Les bonus d'affixes (critique, vitesse) sont les mêmes.","**Priorité d'équipement** : dégâts de l'arme > critiques > vitesse d'attaque > vol de vie > PV.","**Tu meurs trop vite ?** Passe sur un build de la catégorie « Tanks & hybrides » ou ajoute du vol de vie avant d'ajouter de la vitesse.","**Boss à gros PV ?** Les builds en pourcentage de PV (Berserker du Nord) battent les builds de critique."],"builds":["berserker","berserker-critique","demi-umbra","demi-lux","duelliste","assassin","assassin-voleur"]},
-{"id":"tanks","title":"Tanks & hybrides","icon":"🛡","desc":"Tenir devant, encaisser, protéger les autres. Plusieurs hybrides ajoutent des soins ou du feu.","adapt":["**Priorité d'équipement** : PV > armure/robustesse > blocage > soins > dégâts. Un bouclier est presque obligatoire.","**Armure ou esquive ?** Armure pour les coups réguliers, esquive pour les grosses attaques isolées. Les boss du pack ont des attaques en pourcentage de tes PV : les PV d'abord.","**Pas de dégâts ?** Ajoute une arme à effet (feu, poison) plutôt qu'un affixe de dégâts : tu fais des dégâts passifs en tenant.","**Dans un groupe de 7** : un seul tank suffit ; un deuxième vaut mieux en soutien (Templier sacré)."],"builds":["chevalier","tank-lux","nain-tank","phenix-bouclier","paladin-feu","templier-sacre"]},
-{"id":"utilitaire","title":"Farm & utilité","icon":"💰","desc":"Moins de combat, plus de butin, d'XP et d'argent : à jouer pour préparer l'équipement du reste du groupe.","adapt":["**À quoi ça sert ?** Récolter les ressources et le butin rare pour les autres builds. Change de build quand tu attaques un boss.","**Priorité d'équipement** : chance, butin, fortune, vitesse de déplacement, puis PV."],"builds":["chasseur-tresors"]},
-{"id":"maudit","title":"Anneau des Sept Malédictions","icon":"💀","desc":"Builds pensés pour le porteur de l'Anneau : dégâts subis ×2, armure −30 %, dégâts infligés −50 %, mais XP ×5 et butin supplémentaire. Chiffres déjà calculés avec l'anneau.","adapt":["**Choisis ta stratégie de survie** : encaisser (Maudit tank), esquiver (Spectre maudit), garder la distance (Archer maudit, Mage maudit) ou tout miser sur les critiques (Berserker maudit).","**Priorité d'équipement** : PV et esquive avant dégâts. Chaque point de PV compte double.","**Retire l'anneau du calcul** : décoche « Anneau des Sept Malédictions » dans le planificateur (Personnage → Hypothèses de combat) pour voir le même build sans l'anneau.","**Pas encore prêt ?** Joue d'abord la version sans anneau du build correspondant (Tank Shulk, Duelliste, Mage de sang, Archer elfe, Berserker critique) et mets l'anneau plus tard."],"builds":["maudit-tank","maudit-esquive","maudit-mage","maudit-archer","maudit-berserker"]}
-]};
+window.BUILD_CATS={
+"cats": [
+{
+"id": "mages",
+"title": "Mages offensifs",
+"icon": "🔮",
+"desc": "Tu fais tes dégâts avec des sorts, un par école de magie. Faible défense, forte puissance : à jouer derrière quelqu'un qui tient la ligne.",
+"adapt": [
+"**Change d'école, garde la structure** : tous ces builds partagent la même base (classe de talents Enchanteur, bâton + livre de sorts, armure légère). Pour passer de feu à glace, change l'origine/bénédiction et les 5 sorts, le reste de l'équipement reste valable.",
+"**Priorité d'équipement** : puissance de l'école > mana max > régénération de mana > réduction de recharge > PV. Si ton loot n'a pas la bonne école, une pièce « puissance de sorts » générale reste toujours utile.",
+"**Trop fragile ?** Remplace un sort d'attaque par un sort de défense (téléportation, bouclier, soins) et ajoute des PV avant de monter la puissance.",
+"**Manque de mana ?** Ajoute un affixe de régénération de mana avant un affixe de puissance : un sort puissant que tu ne peux pas lancer ne sert à rien."
+],
+"builds": [
+"mage-ender",
+"mage-feu",
+"mage-foudre",
+"mage-glace",
+"mage-sang",
+"mage-evocateur",
+"archimage-elfe",
+"pyromancien",
+"empoisonneur"
+]
+},
+{
+"id": "soutien",
+"title": "Soutien & invocation",
+"icon": "✨",
+"desc": "Soigner, invoquer, résister : ces builds font tenir le groupe plutôt que de tout tuer eux-mêmes.",
+"adapt": [
+"**Rôle avant puissance** : un soigneur doit survivre et lancer ses soins en continu. Priorité : mana, réduction de recharge, puissance de soins/de l'école, puis PV.",
+"**Pas de soigneur dans le groupe ?** Prends le Justicier ou le Gardien sacré en priorité : un seul suffit pour la plupart des boss.",
+"**Invocations** : la puissance d'invocation compte plus que la puissance de sort. Garde tes serviteurs devant, reste derrière.",
+"**Variante solo** : remplace un sort de soutien par un sort d'attaque de l'école principale."
+],
+"builds": [
+"justicier",
+"necro",
+"druide",
+"mage-tank",
+"pretre-soigneur"
+]
+},
+{
+"id": "distance",
+"title": "Distance (arcs et arbalètes)",
+"icon": "🏹",
+"desc": "Dégâts physiques à distance. Pas de mana à gérer, mais il faut rester mobile et garder des munitions.",
+"adapt": [
+"**Arc ou arbalète ?** L'arc tire plus vite, l'arbalète frappe plus fort par tir. Le même loot (dégâts de flèches, critiques) sert aux deux.",
+"**Priorité d'équipement** : dégâts de flèche > cadence de tir > critiques > esquive > PV. L'armure compte peu.",
+"**Pas assez de dégâts ?** Monte la chance et les dégâts critiques avant la cadence : les critiques multiplient tout.",
+"**Trop touché ?** Reste à distance maximale ; une pièce d'esquive vaut plus qu'une pièce d'armure pour un archer."
+],
+"builds": [
+"archer",
+"archer-elfe",
+"arbalete",
+"archer-braise",
+"archer-fantome"
+]
+},
+{
+"id": "melee",
+"title": "Mêlée : dégâts",
+"icon": "⚔",
+"desc": "Corps à corps pour faire de gros dégâts. Plus de risque, plus de récompense : à jouer avec un soigneur ou de bons soins.",
+"adapt": [
+"**Une ou deux mains ?** Une main + bouclier est plus sûr ; deux mains tape plus fort mais bloque moins. Les bonus d'affixes (critique, vitesse) sont les mêmes.",
+"**Priorité d'équipement** : dégâts de l'arme > critiques > vitesse d'attaque > vol de vie > PV.",
+"**Tu meurs trop vite ?** Passe sur un build de la catégorie « Tanks & hybrides » ou ajoute du vol de vie avant d'ajouter de la vitesse.",
+"**Boss à gros PV ?** Les builds en pourcentage de PV (Berserker du Nord) battent les builds de critique."
+],
+"builds": [
+"berserker",
+"berserker-critique",
+"demi-umbra",
+"demi-lux",
+"duelliste",
+"assassin",
+"assassin-voleur",
+"maitre-betes",
+"brute-bastion",
+"rodeur-ender",
+"frappeur-foudre"
+]
+},
+{
+"id": "tanks",
+"title": "Tanks & hybrides",
+"icon": "🛡",
+"desc": "Tenir devant, encaisser, protéger les autres. Plusieurs hybrides ajoutent des soins ou du feu.",
+"adapt": [
+"**Priorité d'équipement** : PV > armure/robustesse > blocage > soins > dégâts. Un bouclier est presque obligatoire.",
+"**Armure ou esquive ?** Armure pour les coups réguliers, esquive pour les grosses attaques isolées. Les boss du pack ont des attaques en pourcentage de tes PV : les PV d'abord.",
+"**Pas de dégâts ?** Ajoute une arme à effet (feu, poison) plutôt qu'un affixe de dégâts : tu fais des dégâts passifs en tenant.",
+"**Dans un groupe de 7** : un seul tank suffit ; un deuxième vaut mieux en soutien (Templier sacré)."
+],
+"builds": [
+"chevalier",
+"tank-lux",
+"nain-tank",
+"phenix-bouclier",
+"paladin-feu",
+"templier-sacre",
+"forteresse-ardente",
+"garde-royal"
+]
+},
+{
+"id": "utilitaire",
+"title": "Farm & utilité",
+"icon": "💰",
+"desc": "Moins de combat, plus de butin, d'XP et d'argent : à jouer pour préparer l'équipement du reste du groupe.",
+"adapt": [
+"**À quoi ça sert ?** Récolter les ressources et le butin rare pour les autres builds. Change de build quand tu attaques un boss.",
+"**Priorité d'équipement** : chance, butin, fortune, vitesse de déplacement, puis PV."
+],
+"builds": [
+"chasseur-tresors",
+"mineur-blinde",
+"chef-de-guerre"
+]
+},
+{
+"id": "maudit",
+"title": "Anneau des Sept Malédictions",
+"icon": "💀",
+"desc": "Builds pensés pour le porteur de l'Anneau : dégâts subis ×2, armure −30 %, dégâts infligés −50 %, mais XP ×5 et butin supplémentaire. Chiffres déjà calculés avec l'anneau.",
+"adapt": [
+"**Choisis ta stratégie de survie** : encaisser (Maudit tank), esquiver (Spectre maudit), garder la distance (Archer maudit, Mage maudit) ou tout miser sur les critiques (Berserker maudit).",
+"**Priorité d'équipement** : PV et esquive avant dégâts. Chaque point de PV compte double.",
+"**Retire l'anneau du calcul** : décoche « Anneau des Sept Malédictions » dans le planificateur (Personnage → Hypothèses de combat) pour voir le même build sans l'anneau.",
+"**Pas encore prêt ?** Joue d'abord la version sans anneau du build correspondant (Tank Shulk, Duelliste, Mage de sang, Archer elfe, Berserker critique) et mets l'anneau plus tard."
+],
+"builds": [
+"maudit-tank",
+"maudit-esquive",
+"maudit-mage",
+"maudit-archer",
+"maudit-berserker"
+]
+}
+]
+};

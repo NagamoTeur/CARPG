@@ -1,9 +1,9 @@
 ---
 title: Tous les builds
-desc: 31 guides de builds rangés par catégorie, chacun en 4 niveaux
+desc: 46 guides de builds rangés par catégorie, chacun en 4 niveaux
 ---
 
-**31 builds** rangés en **7 catégories**, chacun en **4 niveaux** (Débutant, Intermédiaire, Avancé, Optimisé : voir [Débutant → Optimisé](niveaux.html)). Chaque guide donne les 3 choix de départ, la classe de talents, les priorités d'équipement, les sorts, les conseils de boss, une fiche chiffrée calculée par le planificateur et une section **« Comment adapter ce build »**.
+**46 builds** rangés en **7 catégories**, chacun en **4 niveaux** (Débutant, Intermédiaire, Avancé, Optimisé : voir [Débutant → Optimisé](niveaux.html)). Chaque guide donne les 3 choix de départ, la classe de talents, les priorités d'équipement, les sorts, les conseils de boss, une fiche chiffrée calculée par le planificateur et une section **« Comment adapter ce build »**.
 
 !!! tip "Par où commencer ?"
     1. Choisis une **catégorie** (ce que tu aimes faire : lancer des sorts, tirer, frapper, protéger).

@@ -16,20 +16,20 @@ from mods_fr import FR as FRM
 CATS = json.loads(open('site/data/build_cats.js', encoding='utf8').read().split('=', 1)[1].rstrip().rstrip(';'))['cats']
 BUILD_CAT = {b: c for c in CATS for b in c['builds']}
 
+
+def TITLE_OF(b):
+    m = re.search(r'^title:\s*(.+)$', open(f'wiki_src/builds/{b}.md', encoding='utf8').read(), re.M)
+    return re.sub(r'\s*\(.*\)\s*$', '', m.group(1).strip()) if m else b
+
+
 NAV = [
     ('Démarrer', [('index', 'Accueil'), ('premiers-pas', 'Premiers pas'), ('monde', 'Le monde & le danger'), ('campagne', 'La campagne'), ('survie', 'Mort, sauvegarde & sécurité')]),
     ('Personnage', [('origines', 'Origines'), ('classes', 'Classes'), ('benedictions', 'Bénédictions divines'), ('talents', 'Arbre de talents'), ('combat', 'Combat & statistiques')]),
     ('Équipement', [('equipement', 'Rareté, affixes & sockets'), ('gemmes', 'Gemmes'), ('affixes', 'Catalogue des affixes'), ('atelier', 'Ateliers & enchantement'), ('enchants', 'Tous les enchantements'), ('objets-campagne', 'Équipement de campagne'), ('accessoires', 'Accessoires & reliques'), ('ring-sept-maledictions', 'Anneau des Sept Malédictions')]),
     ('Magie', [('magie', 'Comprendre la magie'), ('sorts', 'Catalogue des sorts (Iron\'s)'), ('ars', 'Glyphes d\'Ars Nouveau')]),
     ('Boss', [('boss', 'Guide des boss')]),
-    ('Builds', [('builds/index', 'Tous les builds'), ('builds/niveaux', 'Débutant → Optimisé'), ('builds/adapter', 'Adapter un build à son loot')] + [(f"builds/{b[0]}", b[1]) for b in [
-        ('mage-ender', 'Mage sombre (Ender)'), ('justicier', 'Justicier sacré'), ('mage-feu', 'Chevalier-mage du Phénix'), ('mage-foudre', 'Mage de la tempête'),
-        ('necro', 'Chaman nécromant'), ('archer', 'Tireur d\'élite'), ('berserker', 'Berserker du Nord'), ('chevalier', 'Chevalier gardien'),
-        ('assassin', 'Lame fantôme'), ('paladin-feu', 'Templier du Phénix'), ('druide', 'Druide du marais'), ('chasseur-tresors', 'Chasseur de trésors'),
-        ('mage-glace', 'Mage de glace'), ('mage-sang', 'Mage de sang'), ('archer-elfe', 'Archer elfe'), ('arbalete', 'Arbalétrier critique'), ('demi-umbra', 'Demi-dieu Umbra'), ('demi-lux', 'Demi-dieu Lux'),
-        ('duelliste', 'Duelliste glacé'), ('tank-lux', 'Rempart de lumière'), ('mage-tank', 'Gardien sacré'), ('phenix-bouclier', 'Rempart du Phénix'), ('berserker-critique', 'Berserker critique'),
-        ('templier-sacre', 'Templier sacré'), ('assassin-voleur', 'Voleur de l\'ombre'), ('nain-tank', 'Tank Shulk'),
-        ('maudit-tank', 'Le Maudit (Tank)'), ('maudit-esquive', 'Spectre maudit'), ('maudit-mage', 'Mage maudit'), ('maudit-archer', 'Archer maudit'), ('maudit-berserker', 'Berserker maudit')]]),
+    ('Builds', [('builds/index', 'Tous les builds'), ('builds/niveaux', 'Débutant → Optimisé'), ('builds/adapter', 'Adapter un build à son loot')]),
+] + [(f"{c['icon']} {c['title']}", [(f"builds/{b}", TITLE_OF(b)) for b in c['builds']]) for c in CATS] + [
     ('Vie quotidienne', [('vie', 'Cuisine, ferme, colonie & stockage')]),
     ('Référence', [('outil', 'Utiliser le planificateur'), ('quetes', 'Le livre de quêtes'), ('mods', 'Liste des mods'), ('glossaire', 'Glossaire'), ('faq', 'FAQ')]),
 ]
@@ -349,6 +349,9 @@ def build_page(bid, md_text):
         out.append(f'<h2>Comment adapter ce build</h2><p class="small">Catégorie : <b>{cat["icon"]} {esc(cat["title"])}</b> — <a href="index.html#{cat["id"]}">voir les autres builds de la catégorie</a>.</p>')
         out.append(md('\n'.join(f'- {t}' for t in cat['adapt']) + '\n\n**Pour aller plus loin :** [Adapter un build à son loot](adapter.html) · [Débutant → Optimisé](niveaux.html) · charge-le dans le [planificateur](../../pob/index.html) pour tester tes modifications.'))
     STD = {'debutant': 'Rare, affixes à 30 % de leur plage, 1 affixe et 1 gemme par pièce, armure d\'aventurier et arme en fer', 'milieu': 'Épique, affixes à 40 % de leur plage, 2 affixes et 1 gemme optimisés par pièce', 'fin': 'Mythique, affixes à 60 % de leur plage, 3 affixes et 2 gemmes optimisés par pièce', 'optimise': 'Mythique, affixes à 90 % de leur plage, 4 affixes et 3 gemmes optimisés par pièce, tous les accessoires'}
+    out.append(choices_detail(rs))
+    out.append(progression_table(rs))
+    out.append(tree_box(rs))
     for st in ['debutant', 'milieu', 'fin', 'optimise']:
         b = next((x for x in rs if x['stage'] == st), None)
         if not b: continue
@@ -392,6 +395,55 @@ def build_page(bid, md_text):
     return '\n'.join(out)
 
 
+ORI = {}
+for _k in ('origins:origin', 'origins-classes:class', 'cisco_rpg_origins:divineblessings'):
+    for _o in D['origins'][_k]['origins']: ORI[_o['id']] = (_k, _o)
+
+
+def choices_detail(rs):
+    """Détail des 3 choix de départ (origine, classe, bénédiction) : description et pouvoirs, tirés des données du pack."""
+    b = rs[0]; out = ['<h2 id="choix">Tes 3 choix en détail</h2><p class="small">Ce que chaque choix te donne réellement, tiré des fichiers du pack. Les pouvoirs sans chiffre sont décrits à titre indicatif.</p><div class="grid3">']
+    for lab, key in (('Origine', 'origin'), ('Classe', 'cls'), ('Bénédiction divine', 'blessing')):
+        k = ORI.get(b.get(key))
+        if not k: continue
+        o = k[1]
+        pw = ''.join(f'<li><b>{esc(p.get("name_fr") or p["name"])}</b> — {esc(p.get("desc_fr") or p["desc"])}</li>' for p in o['powers'] if not p.get('hidden') and (p.get('desc_fr') or p.get('desc')))
+        out.append(f'<div class="card"><div class="mut small">{lab}</div><h3>{esc(o.get("name_fr") or o["name"])}</h3><p class="small">{esc(o.get("desc_fr") or o["desc"])}</p><ul class="small">{pw}</ul></div>')
+    out.append('</div>')
+    return ''.join(out)
+
+
+def progression_table(rs):
+    """Tableau d'évolution des 4 niveaux : on voit ce que chaque palier apporte."""
+    st = [(k, next((x for x in rs if x['stage'] == k), None)) for k in ('debutant', 'milieu', 'fin', 'optimise')]
+    st = [(k, b) for k, b in st if b]
+    if len(st) < 2: return ''
+    ranged = any(b['summary'].get('arrow') and b['id'] in ('archer', 'archer-elfe', 'arbalete') for _, b in st) or rs[0]['id'].startswith(('archer', 'arbalete'))
+    rows = [('Vie max', lambda s: fnum(s['hp'], 0)), ('Armure', lambda s: fnum(s['armor'], 0)), ('Esquive', lambda s: pct(s['dodge'], 0)),
+            ('Dégâts par flèche' if ranged else 'Dégâts par coup', lambda s: fnum(s['arrow'] if ranged else s['hit'], 0)), ('Critique', lambda s: pct(s['critC'], 0) + ' × ' + fnum(s['critD'], 1)),
+            ('Mana max', lambda s: fnum(s['mana'], 0)), ('Points de talent', lambda s: str(s['nodes']))]
+    out = ['<h2 id="progression">Ce que chaque niveau t\'apporte</h2><table class="t"><tr><th></th>' + ''.join(f'<th>{STAGE_LABELS[k]}</th>' for k, _ in st) + '</tr>']
+    for lab, f in rows:
+        out.append(f'<tr><td><b>{lab}</b></td>' + ''.join(f'<td>{f(b["summary"])}</td>' for _, b in st) + '</tr>')
+    out.append('</table><p class="small mut">Les chiffres augmentent surtout grâce à la rareté de l\'équipement, au nombre d\'affixes/gemmes et aux points de talent. Ils servent à comparer les niveaux entre eux.</p>')
+    return ''.join(out)
+
+
+STAGE_LABELS = {'debutant': 'Débutant', 'milieu': 'Intermédiaire', 'fin': 'Avancé', 'optimise': 'Optimisé'}
+
+
+def tree_box(rs):
+    """Arbre de talents du build : visionneuse canvas (tous les nœuds en gris, ceux du build en couleur), un onglet par niveau."""
+    st = {b['stage']: b['nodes'] for b in rs if b.get('nodes')}
+    if not st: return ''
+    order = [k for k in STAGE_LABELS if k in st]
+    return ('<h2 id="arbre">Arbre de talents</h2><p class="small">Les nœuds <b>en couleur</b> sont ceux à prendre ; choisis le niveau avec les boutons. Molette pour zoomer, glisser pour déplacer, survole un nœud pour lire son effet. '
+            '<span class="tleg"><i style="background:#5bd75b"></i>départ <i style="background:#8aa0b8"></i>mineur <i style="background:#58a6ff"></i>notable <i style="background:#e0a63a"></i>clé de voûte</span></p>'
+            f'<div class="treebox" data-stages=\'{json.dumps(st)}\' data-order=\'{json.dumps(order)}\' data-labels=\'{json.dumps(STAGE_LABELS, ensure_ascii=False)}\'>'
+            '<div class="tbar"></div><div class="tinfo small"></div><canvas></canvas><div class="ttip" hidden></div><button class="tfit sm">Recentrer</button></div>'
+            '<script src="../tree.js"></script>')
+
+
 def builds_index():
     """Index des builds rangés par catégorie (source : site/data/build_cats.js + wiki_src/builds/*.md)."""
     meta = {}
@@ -424,7 +476,7 @@ def pct(x, nd=1): return fnum(x * 100, nd) + ' %'
 
 
 def main():
-    shutil.rmtree(OUT, ignore_errors=True); os.makedirs(OUT, exist_ok=True); shutil.copy(SRC + '/_wiki.js', OUT + '/wiki.js')
+    shutil.rmtree(OUT, ignore_errors=True); os.makedirs(OUT, exist_ok=True); shutil.copy(SRC + '/_wiki.js', OUT + '/wiki.js'); shutil.copy(SRC + '/_tree.js', OUT + '/tree.js')
     pages = load_md()
     DYN = {'gemmes': page_gemmes, 'affixes': page_affixes, 'talents': page_talents, 'sorts': page_sorts, 'boss': page_boss, 'objets-campagne': page_objets_campagne, 'quetes': page_quetes, 'mods': page_mods, 'ars': page_ars, 'enchants': page_enchants,
            'origines': lambda: origin_cards('origins:origin'), 'classes': lambda: origin_cards('origins-classes:class'), 'benedictions': lambda: origin_cards('cisco_rpg_origins:divineblessings')}
