@@ -13,6 +13,8 @@ MODS = json.load(open('out/mods_classified.json'))
 LANG = json.load(open('out/lang_en.json'))
 LABFR = {'damage reduction': 'Réduction de dégâts', 'fang count': 'Crocs', 'hits dodged': 'Coups esquivés', 'hp': 'PV du bouclier', 'projectile count': 'Projectiles', 'rend': 'Intensité de Rend (armure −)', 'ring count': 'Anneaux', 'shatter damage': 'Dégâts d\'éclatement'}
 from mods_fr import FR as FRM
+CATS = json.loads(open('site/data/build_cats.js', encoding='utf8').read().split('=', 1)[1].rstrip().rstrip(';'))['cats']
+BUILD_CAT = {b: c for c in CATS for b in c['builds']}
 
 NAV = [
     ('Démarrer', [('index', 'Accueil'), ('premiers-pas', 'Premiers pas'), ('monde', 'Le monde & le danger'), ('campagne', 'La campagne'), ('survie', 'Mort, sauvegarde & sécurité')]),
@@ -20,7 +22,7 @@ NAV = [
     ('Équipement', [('equipement', 'Rareté, affixes & sockets'), ('gemmes', 'Gemmes'), ('affixes', 'Catalogue des affixes'), ('atelier', 'Ateliers & enchantement'), ('enchants', 'Tous les enchantements'), ('objets-campagne', 'Équipement de campagne'), ('accessoires', 'Accessoires & reliques'), ('ring-sept-maledictions', 'Anneau des Sept Malédictions')]),
     ('Magie', [('magie', 'Comprendre la magie'), ('sorts', 'Catalogue des sorts (Iron\'s)'), ('ars', 'Glyphes d\'Ars Nouveau')]),
     ('Boss', [('boss', 'Guide des boss')]),
-    ('Builds', [('builds/index', 'Tous les builds'), ('builds/niveaux', 'Débutant → Optimisé')] + [(f"builds/{b[0]}", b[1]) for b in [
+    ('Builds', [('builds/index', 'Tous les builds'), ('builds/niveaux', 'Débutant → Optimisé'), ('builds/adapter', 'Adapter un build à son loot')] + [(f"builds/{b[0]}", b[1]) for b in [
         ('mage-ender', 'Mage sombre (Ender)'), ('justicier', 'Justicier sacré'), ('mage-feu', 'Chevalier-mage du Phénix'), ('mage-foudre', 'Mage de la tempête'),
         ('necro', 'Chaman nécromant'), ('archer', 'Tireur d\'élite'), ('berserker', 'Berserker du Nord'), ('chevalier', 'Chevalier gardien'),
         ('assassin', 'Lame fantôme'), ('paladin-feu', 'Templier du Phénix'), ('druide', 'Druide du marais'), ('chasseur-tresors', 'Chasseur de trésors'),
@@ -340,8 +342,12 @@ def stat(k, v): return f'<div class="stat"><span>{k}</span><b>{v}</b></div>'
 
 def build_page(bid, md_text):
     rs = [b for b in BUILDS if b['id'] == bid]
+    cat = BUILD_CAT.get(bid)
     if not rs: return md(md_text)
     out = [md(md_text)]
+    if cat:
+        out.append(f'<h2>Comment adapter ce build</h2><p class="small">Catégorie : <b>{cat["icon"]} {esc(cat["title"])}</b> — <a href="index.html#{cat["id"]}">voir les autres builds de la catégorie</a>.</p>')
+        out.append(md('\n'.join(f'- {t}' for t in cat['adapt']) + '\n\n**Pour aller plus loin :** [Adapter un build à son loot](adapter.html) · [Débutant → Optimisé](niveaux.html) · charge-le dans le [planificateur](../../pob/index.html) pour tester tes modifications.'))
     STD = {'debutant': 'Rare, affixes à 30 % de leur plage, 1 affixe et 1 gemme par pièce, armure d\'aventurier et arme en fer', 'milieu': 'Épique, affixes à 40 % de leur plage, 2 affixes et 1 gemme optimisés par pièce', 'fin': 'Mythique, affixes à 60 % de leur plage, 3 affixes et 2 gemmes optimisés par pièce', 'optimise': 'Mythique, affixes à 90 % de leur plage, 4 affixes et 3 gemmes optimisés par pièce, tous les accessoires'}
     for st in ['debutant', 'milieu', 'fin', 'optimise']:
         b = next((x for x in rs if x['stage'] == st), None)
@@ -386,6 +392,23 @@ def build_page(bid, md_text):
     return '\n'.join(out)
 
 
+def builds_index():
+    """Index des builds rangés par catégorie (source : site/data/build_cats.js + wiki_src/builds/*.md)."""
+    meta = {}
+    for f in glob.glob(SRC + '/builds/*.md'):
+        slug = os.path.basename(f)[:-3]
+        txt = open(f, encoding='utf8').read()
+        t = re.search(r'^title:\s*(.+)$', txt, re.M); one = re.search(r'En une phrase :\*\*\s*(.+)', txt)
+        meta[slug] = (t.group(1).strip() if t else slug, re.sub(r'[*_`]|\[([^\]]*)\]\([^)]*\)', lambda m: m.group(1) or '', one.group(1)) if one else '')
+    out = ['<h2>Choisir par catégorie</h2><p>' + ' · '.join(f'<a href="#{c["id"]}">{c["icon"]} {esc(c["title"])}</a>' for c in CATS) + '</p>']
+    for c in CATS:
+        out.append(f'<h2 id="{c["id"]}">{c["icon"]} {esc(c["title"])}</h2><p>{esc(c["desc"])}</p>')
+        out.append('<table class="t"><tr><th>Build</th><th>En bref</th></tr>' + ''.join(
+            f'<tr><td><a href="{b}.html"><b>{esc(meta.get(b, (b, ""))[0])}</b></a></td><td class="small">{esc(meta.get(b, (b, ""))[1])}</td></tr>' for b in c['builds']) + '</table>')
+        out.append('<details><summary>Comment adapter cette catégorie ?</summary>' + md('\n'.join(f'- {t}' for t in c['adapt'])) + '</details>')
+    return '\n'.join(out)
+
+
 def plausible(lab, v, u):
     """Écarte les durées / portées absurdes (la formule du sort explose avec une grosse puissance ; le jeu les borne probablement)."""
     if lab in ('Portée (blocs)', 'Rayon (blocs)', "Portée d'incantation") and v > 64: return False
@@ -410,7 +433,8 @@ def main():
         title = meta.get('title') or TITLES.get(slug) or slug
         body = md(raw)
         if slug in DYN: body += DYN[slug]()
-        elif slug.startswith('builds/') and slug != 'builds/index': body = build_page(slug.split('/')[1], raw)
+        elif slug == 'builds/index': body += builds_index()
+        elif slug.startswith('builds/') and slug not in ('builds/niveaux', 'builds/adapter'): body = build_page(slug.split('/')[1], raw)
         write(slug, title, body, meta.get('desc', '')); done.add(slug)
     for slug in DYN:
         if slug not in done: write(slug, TITLES.get(slug, slug), DYN[slug]())

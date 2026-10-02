@@ -345,7 +345,9 @@
   }
 
   /* ---------- Builds prêts ---------- */
-  let bf = { level: '', tag: '', q: '' };
+  let bf = { level: '', tag: '', q: '', cat: '' };
+  const CATS = (window.BUILD_CATS || { cats: [] }).cats;
+  const catOf = b => (CATS.find(c => c.builds.includes(b.arch || b.id)) || { id: 'autre' }).id;
   const LEVELS = [['debutant', 'Débutant'], ['milieu', 'Intermédiaire'], ['fin', 'Avancé'], ['optimise', 'Optimisé (BiS)']];
   function renderBuilds(m) {
     m.append(el('div', { class: 'note' }, 'Builds « théoriques » construits à partir des données du pack. Choisis un niveau selon ton avancement, charge-le puis ajuste selon ton loot. Le guide complet de chaque build est dans le wiki.'));
@@ -354,15 +356,18 @@
     const q = el('input', { placeholder: 'Rechercher un build…', value: bf.q, oninput: e => { bf.q = e.target.value; draw(); } });
     const ls = el('select', { onchange: e => { bf.level = e.target.value; draw(); } }, el('option', { value: '' }, 'Tous les niveaux'), ...LEVELS.map(([v, n]) => el('option', { value: v, selected: bf.level === v }, n)));
     const ts = el('select', { onchange: e => { bf.tag = e.target.value; draw(); } }, el('option', { value: '' }, 'Tous les rôles'), ...tags.map(t => el('option', { value: t, selected: bf.tag === t }, t)));
-    m.append(el('div', { class: 'row' }, q, ls, ts, el('span', { class: 'mut small', id: 'bcount' })));
+    const cs = el('select', { onchange: e => { bf.cat = e.target.value; draw(); } }, el('option', { value: '' }, 'Toutes les catégories'), ...CATS.map(c => el('option', { value: c.id, selected: bf.cat === c.id }, c.icon + ' ' + c.title)));
+    m.append(el('div', { class: 'row' }, q, cs, ls, ts, el('span', { class: 'mut small', id: 'bcount' })));
     const box = el('div', { id: 'blist' }); m.append(box);
     function draw() {
       box.innerHTML = '';
-      const rows = all.filter(b => (!bf.level || b.level === bf.level) && (!bf.tag || (b.tags || []).includes(bf.tag)) && (!bf.q || (b.title + ' ' + b.summary + ' ' + (b.tags || []).join(' ')).toLowerCase().includes(bf.q.toLowerCase())));
+      const rows = all.filter(b => (!bf.cat || catOf(b) === bf.cat) && (!bf.level || b.level === bf.level) && (!bf.tag || (b.tags || []).includes(bf.tag)) && (!bf.q || (b.title + ' ' + b.summary + ' ' + (b.tags || []).join(' ')).toLowerCase().includes(bf.q.toLowerCase())));
       $('#bcount').textContent = rows.length + ' / ' + all.length + ' builds';
       const order = {}; LEVELS.forEach(([v], i) => order[v] = i);
-      rows.sort((a, b) => (a.arch || a.id).localeCompare(b.arch || b.id) || (order[a.level] ?? 9) - (order[b.level] ?? 9)).forEach(b => box.append(el('div', { class: 'build' }, el('div', {}, el('h3', {}, b.title), el('div', { class: 'small' }, b.summary), el('div', {}, ...(b.tags || []).map(t => el('span', { class: 'chip' }, t)))),
-        el('div', {}, el('button', { class: 'pri', onclick: () => { S = Object.assign(DEFAULT(), JSON.parse(JSON.stringify(b.state)), { name: b.title }); $('#bname').value = S.name; recalc(); tab = 'perso'; render(); } }, 'Charger'), b.wiki ? el('div', {}, el('a', { href: '../wiki/' + b.wiki }, 'Guide complet →')) : null))));
+      const corder = {}; CATS.forEach((c, i) => corder[c.id] = i);
+      let lastCat = null;
+      rows.sort((a, b) => (corder[catOf(a)] ?? 99) - (corder[catOf(b)] ?? 99) || (CATS.find(c => c.id === catOf(a)) || { builds: [] }).builds.indexOf(a.arch || a.id) - (CATS.find(c => c.id === catOf(b)) || { builds: [] }).builds.indexOf(b.arch || b.id) || (order[a.level] ?? 9) - (order[b.level] ?? 9)).forEach(b => { const ck = catOf(b); if (ck !== lastCat) { lastCat = ck; const c = CATS.find(x => x.id === ck); if (c) box.append(el('div', { style: 'margin:14px 0 4px' }, el('h2', { style: 'margin:0' }, c.icon + ' ' + c.title), el('div', { class: 'small mut' }, c.desc))); } box.append(el('div', { class: 'build' }, el('div', {}, el('h3', {}, b.title), el('div', { class: 'small' }, b.summary), el('div', {}, ...(b.tags || []).map(t => el('span', { class: 'chip' }, t)))),
+        el('div', {}, el('button', { class: 'pri', onclick: () => { S = Object.assign(DEFAULT(), JSON.parse(JSON.stringify(b.state)), { name: b.title }); $('#bname').value = S.name; recalc(); tab = 'perso'; render(); } }, 'Charger'), b.wiki ? el('div', {}, el('a', { href: '../wiki/' + b.wiki }, 'Guide complet →')) : null))); });
       if (!rows.length) box.append(el('p', { class: 'mut' }, 'Aucun build ne correspond.'));
     }
     draw();
