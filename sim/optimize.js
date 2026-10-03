@@ -66,6 +66,7 @@ function optimize(spec) {
       }
       // gemmes
       for (const gslot of it.gems) {
+        if (spec.forceGem && spec.forceGem.types.includes(it.type)) { gslot.id = spec.forceGem.id; gslot.rar = RARITY; continue; } // build dédié : gemme imposée sur ces pièces
         let best = null, bs = -1; gslot.id = '';
         const base = score(S); bs = base;
         for (const gem of gemCandidates(it.type)) {
@@ -122,6 +123,6 @@ function summary(S) {
   return { hp: Math.round(R.hp), armor: Math.round(R.armor), tough: R.tough, red250: +(R.armorReduction(250)).toFixed(3), eva: +R.evasionChance.toFixed(3), dodge: +R.dodgeTotal.toFixed(3),
     hit: +R.hit.toFixed(1), spd: +R.spd.toFixed(2), critC: +R.critC.toFixed(2), critD: +R.critD.toFixed(2), dps: +R.dps.toFixed(1), arrow: +R.arrowHit.toFixed(1), mana: Math.round(R.mana), regen: +R.manaPerSec.toFixed(1), sp: +R.spellPower.toFixed(2),
     fire: +R.at['irons_spellbooks:fire_spell_power'].toFixed(2), ice: +R.at['irons_spellbooks:ice_spell_power'].toFixed(2), holy: +R.at['irons_spellbooks:holy_spell_power'].toFixed(2), lightning: +R.at['irons_spellbooks:lightning_spell_power'].toFixed(2), blood: +R.at['irons_spellbooks:blood_spell_power'].toFixed(2), ender: +R.at['irons_spellbooks:ender_spell_power'].toFixed(2), nature: +R.at['irons_spellbooks:nature_spell_power'].toFixed(2), evoc: +R.at['irons_spellbooks:evocation_spell_power'].toFixed(2), eld: +R.at['irons_spellbooks:eldritch_spell_power'].toFixed(2),
-    summon: +R.at['irons_spellbooks:summon_damage'].toFixed(2), cdr: +R.at['irons_spellbooks:cooldown_reduction'].toFixed(2), nodes: S.nodes.length };
+    summon: +R.at['irons_spellbooks:summon_damage'].toFixed(2), cdr: +R.at['irons_spellbooks:cooldown_reduction'].toFixed(2), nodes: S.nodes.length, div: Math.round(R.divine || 0), fell: Math.round(R.fell || 0) };
 }
 module.exports = { optimize, summary, OBJ, ctx };

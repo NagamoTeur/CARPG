@@ -143,6 +143,29 @@ window.BUILD_CATS={
 ]
 },
 {
+"id": "elem",
+"title": "Divinité & Corruption",
+"icon": "☯",
+"desc": "Les dégâts bonus de Cisco : à chaque coup, un second coup qui ignore l'armure. Divinité = critiques divins ; Corruption = pourcentage des PV max de la cible (anti-boss).",
+"adapt": [
+"**Les gemmes font tout** : Divinité ou Corruption se trouvent sur des gemmes qui ne vont que sur l'armure (casque, plastron, jambières, bottes). Remplis d'abord les sockets de ton armure, puis cherche des pièces avec plus de sockets.",
+"**Ne mélange pas** : la Divinité et la Corruption ont chacune des paliers (50, 100, 200…) ; mieux vaut en monter une seule.",
+"**Touche souvent** : chaque coup, flèche ou tic de sort déclenche le bonus. Une arme rapide ou un sort à plusieurs coups le multiplie.",
+"**L'ascension** se choisit après le Roi déchu (divine) ou Cisco descendu (déchue) : on ne peut en avoir qu'une. Coche-la dans le planificateur pour voir son effet."
+],
+"builds": [
+"div-champion",
+"div-jumeaux",
+"div-archer",
+"div-mage",
+"fell-seigneur",
+"fell-roi",
+"fell-archer",
+"fell-mage",
+"fell-dague"
+]
+},
+{
 "id": "leg-cisco",
 "title": "Armes légendaires de Cisco",
 "icon": "👑",

@@ -257,6 +257,11 @@
     return { lvl, sp: sp0, mana, cd, cast, info, powerRaw: epm };
   }
 
+  // armes qui ajoutent de la Divinité / Corruption (WeaponDamageHelper de Cisco Unbound) : [divinité, corruption]
+  const ELEM_WEAPON = { 'Absolute Equillibrium': [50, 0], 'Adjudicator': [20, 0], 'Pollux': [10, 0], 'Supreme Nightfall': [0, 50], 'Fell Ragnarok': [0, 50], 'Castor': [0, 10] };
+  function divineCrit(d) { let c = 0.15, m = 4; if (d > 50) { c += 0.05; m++; } if (d > 100) m++; if (d > 200) { c += 0.05; m++; } if (d > 300) m++; if (d > 500) { c += 0.05; m++; } if (d > 700) m++; return [c, m]; }
+  function fellProc(f) { const T = [[800, 0.35, 0.12], [550, 0.30, 0.11], [400, 0.25, 0.10], [250, 0.20, 0.09], [100, 0.15, 0.08], [50, 0.10, 0.07]]; for (const [t, p, d] of T) if (f >= t) return [p, d]; return [0.05, 0.06]; }
+
   /* restrictions d'équipement de l'origine (lues dans les pouvoirs des datapacks) : liste d'avertissements */
   function restrictions(S) {
     const rules = (D.originRules || {})[S.origin] || {}, g = S.gear || {}, w = [];
@@ -326,6 +331,21 @@
       R.hit *= 0.5; R.dps *= 0.5; R.arrowHit *= 0.5; R.arrowDps *= 0.5;
       R.lootBonus = { looting: 1, fortune: 1, xp: 4, enchPower: 10 };
     }
+    // Divinité / Corruption (mod Cisco Unbound, code décompilé) : à chaque coup porté, dégâts bonus séparés qui ignorent l'armure
+    {
+      const wn = ((S.gear || {}).main || {}).name || '';
+      const we = Object.entries(ELEM_WEAPON).find(([k]) => wn.startsWith(k)); const wd = we ? we[1] : [0, 0];
+      let dA = g('ciscounbound:divine_damage'), fA = g('ciscounbound:fell_damage'); const gh = (S.assume || {}).godhood;
+      if (gh === 'divine') { dA += 0.5 * R.atk; fA *= 0.25; }        // Ascension divine (après le Roi déchu) : +50 % des dégâts d'attaque, corruption ×0,25
+      else if (gh === 'umbral') { fA += 0.03 * R.hp; dA *= 0.25; }   // Ascension déchue (après Cisco descendu) : +3 % des PV max, divinité ×0,25
+      R.divine = dA + wd[0]; R.fell = fA + wd[1]; R.godhood = gh || '';
+      R.divCrit = divineCrit(R.divine); R.fellProc = fellProc(R.fell);
+      R.elemHit = (R.divine > 0 ? R.divine * (1 + R.divCrit[0] * (R.divCrit[1] - 1)) : 0) + (R.fell > 0 ? R.fell : 0); // sans le % de PV de la cible (inconnu ici)
+      if (R.elemHit > 0) {
+        if (R.ranged) { R.arrowDps += R.elemHit * R.drawSpeed * (mt === 'crossbow' ? 0.7 : 1); R.dps = R.arrowDps; }
+        else if (R.hasWeapon) R.dps += R.elemHit * R.spd * (R.uptime ?? 0.9);
+      }
+    }
     return R;
   }
 
@@ -353,7 +373,12 @@
     const red = armorRed(eff, st.tough, raw);
     let perHit = raw * (1 - red) * R.critE * (1 - (st.meleeRed || 0)), capped = false;
     if (st.cap && perHit > st.cap) { perHit = st.cap; capped = true; }
-    if (!R.ranged) perHit += (R.flatTrue || 0) + (R.truePct || 0) * st.hp; // dégâts réels : ignorent l'armure (le plafond Cataclysm n'est pas appliqué : hypothèse)
+    if (!R.ranged) perHit += (R.flatTrue || 0) + (R.truePct || 0) * st.hp;
+    // divinité / corruption : instances séparées (plafond Cataclysm appliqué à chacune), la corruption ajoute parfois un % des PV max de la cible
+    const capf = x => (st.cap ? Math.min(x, st.cap) : x);
+    const divE = R.divine > 0 ? (1 - R.divCrit[0]) * capf(R.divine) + R.divCrit[0] * capf(R.divine * R.divCrit[1]) : 0;
+    const fellE = R.fell > 0 ? (1 - R.fellProc[0]) * capf(R.fell) + R.fellProc[0] * capf(R.fell + R.fellProc[1] * st.hp) : 0;
+    if (raw > 1) perHit += divE + fellE; // dégâts réels : ignorent l'armure (le plafond Cataclysm n'est pas appliqué : hypothèse)
     const hps = R.ranged ? R.drawSpeed * (((S.gear || {}).main || {}).type === 'crossbow' ? 0.7 : 1) : R.spd * (R.uptime ?? 0.9);
     const dps = raw > 1 ? perHit * hps : 0;
     // sorts choisis (dégâts magiques : ignorent l'armure)
@@ -365,7 +390,7 @@
       if (!inf) continue;
       let hit = inf.val * cm; if (st.cap && hit > st.cap) hit = st.cap;
       const t = Math.max(c.cast + 0.05, c.cd, 0.5);
-      const dps2 = hit / t;
+      const dps2 = (hit + divE + fellE) / t; // 1 déclenchement de divinité/corruption par lancer (prudent : les sorts à plusieurs coups en déclenchent plus)
       if (!spellBest || dps2 > spellBest.dps) spellBest = { name: d.name, dps: dps2, hit, uncapped: inf.val, mana: c.mana, t };
     }
     const best = Math.max(dps, spellBest ? spellBest.dps : 0);
@@ -377,7 +402,7 @@
     return Object.assign(st, { raw, red, perHit, capped, dps, spellBest, best, ttk, bossHit, redP, takes, hitsToDie, dodge: R.dodgeTotal, eff });
   }
 
-  window.ENG = { restrictions, compute, collect, evalAttrs, spellCalc, SLOT_DEFS, extraSockets, treeSocketInfo, gemPowerMult, eqMatch, assume, critExpect, evaChance, softCap, rollVal, norm, CAP, bossSim, bossStats };
+  window.ENG = { divineCrit, fellProc, ELEM_WEAPON, restrictions, compute, collect, evalAttrs, spellCalc, SLOT_DEFS, extraSockets, treeSocketInfo, gemPowerMult, eqMatch, assume, critExpect, evaChance, softCap, rollVal, norm, CAP, bossSim, bossStats };
 
   /* index */
   const TREE = { byId: {} }; D.skilltree.nodes.forEach(n => TREE.byId[n.id] = n);

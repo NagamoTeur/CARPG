@@ -5,6 +5,15 @@ desc: Ce qui a changé sur le site, du plus récent au plus ancien
 
 Pack **{{PACK}}**. Les dates sont celles de la mise en ligne.
 
+## Octobre 2026 : Divinité et Corruption
+
+- Nouvelle page **[Divinité et Corruption](divinite-corruption.html)** : comment marchent ces dégâts bonus de Cisco (lu dans le code du mod), paliers, sources, ascensions.
+- **9 builds dédiés** (26 variantes) dans la nouvelle catégorie « Divinité & Corruption ».
+- Le planificateur calcule la Divinité (critiques divins) et la Corruption (décomposition en % des PV du boss), et l'**Ascension** se choisit dans les hypothèses de combat.
+- Correction : les gemmes de Divinité et de Corruption donnent **+5 à +40** (et non « +500 % »).
+- Les guides de builds disent maintenant **quelles stats chercher sur chaque pièce** au lieu des noms d'affixes ; nouvelle page « Que chercher sur chaque pièce ? ».
+- **Calibrage en jeu** : les chiffres du planificateur ont été comparés à un vrai personnage (voir « Utiliser le planificateur »).
+
 ## Octobre 2026 : le grand ménage
 
 - **Je débute** : un parcours en 6 étapes avec liste à cocher, et le **quiz « Quel build pour moi ? »**.

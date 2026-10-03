@@ -29,7 +29,7 @@ def TITLE_OF(b):
 NAV = [
     ('Démarrer', [('index', 'Accueil'), ('debuter', '🌱 Je débute'), ('quiz', '🎯 Quel build pour moi ?'), ('premiers-pas', 'Premiers pas'), ('monde', 'Le monde & le danger'), ('campagne', 'La campagne'), ('survie', 'Mort, sauvegarde & sécurité')]),
     ('Personnage', [('origines', 'Origines'), ('classes', 'Classes'), ('benedictions', 'Bénédictions divines'), ('talents', 'Arbre de talents'), ('combat', 'Combat & statistiques')]),
-    ('Équipement', [('equipement', 'Rareté, affixes & sockets'), ('gemmes', 'Gemmes'), ('stats-par-piece', 'Que chercher sur chaque pièce ?'), ('affixes', 'Catalogue des affixes'), ('atelier', 'Ateliers & enchantement'), ('enchants', 'Tous les enchantements'), ('objets-campagne', 'Équipement de campagne'), ('accessoires', 'Accessoires & reliques'), ('ring-sept-maledictions', 'Anneau des Sept Malédictions')]),
+    ('Équipement', [('equipement', 'Rareté, affixes & sockets'), ('gemmes', 'Gemmes'), ('stats-par-piece', 'Que chercher sur chaque pièce ?'), ('divinite-corruption', 'Divinité et Corruption'), ('affixes', 'Catalogue des affixes'), ('atelier', 'Ateliers & enchantement'), ('enchants', 'Tous les enchantements'), ('objets-campagne', 'Équipement de campagne'), ('accessoires', 'Accessoires & reliques'), ('ring-sept-maledictions', 'Anneau des Sept Malédictions')]),
     ('Magie', [('magie', 'Comprendre la magie'), ('sorts', 'Catalogue des sorts (Iron\'s)'), ('ars', 'Glyphes d\'Ars Nouveau')]),
     ('Boss', [('boss', 'Guide des boss')]),
     ('Builds', [('builds/index', 'Tous les builds'), ('builds/niveaux', 'Débutant → Optimisé'), ('builds/adapter', 'Adapter un build à son loot')]),
@@ -469,6 +469,8 @@ def progression_table(rs):
     rows = [('Vie max', lambda s: fnum(s['hp'], 0)), ('Armure', lambda s: fnum(s['armor'], 0)), ('Esquive', lambda s: pct(s['dodge'], 0)),
             ('Dégâts par flèche' if ranged else 'Dégâts par coup', lambda s: fnum(s['arrow'] if ranged else s['hit'], 0)), ('Critique', lambda s: pct(s['critC'], 0) + ' × ' + fnum(s['critD'], 1)),
             ('Mana max', lambda s: fnum(s['mana'], 0)), ('Points de talent', lambda s: str(s['nodes']))]
+    if any(b['summary'].get('div') for _, b in st): rows.insert(5, ('Divinité par coup', lambda s: fnum(s.get('div', 0), 0)))
+    if any(b['summary'].get('fell') for _, b in st): rows.insert(5, ('Corruption par coup', lambda s: fnum(s.get('fell', 0), 0)))
     out = ['<h2 id="progression">Ce que chaque niveau t\'apporte</h2><table class="t"><tr><th></th>' + ''.join(f'<th>{STAGE_LABELS[k]}</th>' for k, _ in st) + '</tr>']
     for lab, f in rows:
         out.append(f'<tr><td><b>{lab}</b></td>' + ''.join(f'<td>{f(b["summary"])}</td>' for _, b in st) + '</tr>')

@@ -86,8 +86,8 @@ ATTR_FR = {
     'voidscape:voidic_infusion_res': 'Résistance à l\'infusion du Vide',
     'voidscape:voidic_res': 'Résistance au Vide',
     'voidscape:voidic_dmg': 'Dégâts du Vide',
-    'ciscounbound:divine_damage': 'Dégâts divins',
-    'ciscounbound:fell_damage': 'Dégâts maléfiques (Fell)',
+    'ciscounbound:divine_damage': 'Divinité (dégâts divins)',
+    'ciscounbound:fell_damage': 'Corruption (dégâts Fell)',
     'attributeslib:fire_damage': 'Dégâts de feu',
     'vampirism:blood_exhaustion': 'Épuisement de sang',
     'combatroll:count': 'Nombre de roulades',
@@ -114,7 +114,7 @@ PCT_ADD = {
     'irons_spellbooks:blood_magic_resist', 'irons_spellbooks:holy_magic_resist',
     'eidolon:magic_power', 'eidolon:chanting_speed', 'forge:swim_speed', 'minecraft:generic.flying_speed',
     'obscure_api:dodge', 'obscure_api:healing_power', 'obscure_api:magic_damage', 'obscure_api:resilience',
-    'ciscounbound:divine_damage', 'ciscounbound:fell_damage', 'combatroll:recharge',
+    'combatroll:recharge',
 }
 
 OPS = {'ADDITION': 0, 'MULTIPLY_BASE': 1, 'MULTIPLY_TOTAL': 2,

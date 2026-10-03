@@ -193,6 +193,39 @@ ARCH.push(
     pitch: 'Chance d\'arracher la vie d\'une cible blessée pour te donner de l\'absorption, et de siphonner la santé des ennemis proches pour te soigner. Un build qui ne s\'arrête jamais.' }),
 );
 
+// ---- Builds Divinité / Corruption (Cisco Unbound) : gemmes imposées sur l'armure, armes qui en ajoutent, ascension au niveau Optimisé ----
+const ARMOR_TYPES = ['helmet', 'chestplate', 'leggings', 'boots'];
+const DIV = { id: 'apotheosis:divinity', types: ARMOR_TYPES }, FELL = { id: 'apotheosis:fell_corruption', types: ARMOR_TYPES };
+const ELM = (base, id, title, over) => derive(base, Object.assign({ id, title, wiki: 'builds/' + id + '.html', stages: ['milieu', 'fin', 'optimise'], extra: [], spells: [], manual: [] }, over));
+const godAt = g => k => (k === 'optimise' ? { godhood: g } : undefined);
+ARCH.push(
+  ELM('berserker-critique', 'div-champion', 'Champion divin (Divinité, mêlée)', { obj: mix(0.55, 0.45), origin: 'cisco_rpg_origins:demi_god_lux', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:ares_blessing', tree: 'blacksmith',
+    weaponStages: { milieu: 'cisco_mod:adjudicator', fin: 'cisco_mod:absolute_equillibrium', optimise: 'cisco_mod:absolute_equillibrium' }, forceGem: DIV, assumeFor: godAt('divine'), tags: ['Divinité', 'Mêlée', 'Gemmes'],
+    pitch: 'Chaque coup déclenche un éclat de Divinité qui ignore l\'armure et peut infliger un critique divin (×4 à ×10). Gemmes de Divinité sur toute l\'armure, épée de l\'équilibre, puis l\'Ascension divine après le Roi déchu.' }),
+  ELM('duelliste', 'div-jumeaux', 'Danseur céleste (Pollux, Divinité)', { obj: mix(0.55, 0.45), origin: 'origins:feline', cls: 'origins-classes:rogue', blessing: 'cisco_rpg_origins:susanoos_blessing', tree: 'hunter',
+    weaponStages: { milieu: 'cisco_mod:pollux', fin: 'cisco_mod:pollux', optimise: 'cisco_mod:pollux' }, forceGem: DIV, assumeFor: godAt('divine'), tags: ['Divinité', 'Vitesse', 'Mêlée'],
+    pitch: 'La Divinité se déclenche à chaque coup : plus tu frappes vite, plus elle tombe souvent. Pollux (+10 Divinité) frappe à vitesse 2,0.' }),
+  ELM('archer-elfe', 'div-archer', 'Archer de lumière (Divinité)', { obj: OBJ.ranged, origin: 'cisco_rpg_origins:venthari_sharpshooter', cls: 'origins-classes:archer', blessing: 'cisco_rpg_origins:skadis_blessing', tree: 'hunter', weapon: BOW,
+    forceGem: DIV, tags: ['Divinité', 'Distance'], pitch: 'Chaque flèche qui touche déclenche la Divinité : des dégâts qui ignorent l\'armure, avec des critiques divins. Idéal contre les ennemis très blindés.' }),
+  ELM('justicier', 'div-mage', 'Prêtre de la lumière (Divinité + sorts)', { obj: OBJ.magic('holy'), origin: 'cisco_rpg_origins:rastrayian_justicar', cls: 'origins-classes:cleric', blessing: 'cisco_rpg_origins:chiron_blessing', tree: 'enchanter', weapon: STAFF, extra: ['book'],
+    spells: [['guiding_bolt', 10], ['divine_smite', 5], ['sunbeam', 8], ['heal', 10]], forceGem: DIV, tags: ['Divinité', 'Magie', 'Soutien'],
+    pitch: 'Chaque fois qu\'un de tes sorts touche, la Divinité se déclenche aussi. Les sorts qui touchent plusieurs fois (rayons, zones) en profitent le plus.' }),
+  ELM('berserker', 'fell-seigneur', 'Seigneur corrompu (Supreme Nightfall, Corruption)', { obj: mix(0.6, 0.4), origin: 'cisco_rpg_origins:demi_god_umbra', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:babayaga_blessing', tree: 'blacksmith',
+    weaponStages: { milieu: 'cisco_mod:castor', fin: 'cisco_mod:supreme_nightfall', optimise: 'cisco_mod:supreme_nightfall' }, forceGem: FELL, assumeFor: godAt('umbral'), tags: ['Corruption', 'Mêlée', 'Anti-boss'],
+    pitch: 'La Corruption frappe à chaque coup et peut déclencher une « décomposition » qui retire 6 à 12 % des PV max de la cible : l\'arme anti-boss par excellence. Ascension déchue après Cisco descendu.' }),
+  ELM('berserker', 'fell-roi', 'Marteau du Roi déchu (Fell Ragnarok, Corruption)', { obj: mix(0.55, 0.45), origin: 'arkwys:piglinbrute', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:hephaestus_blessing', tree: 'blacksmith',
+    stages: ['fin', 'optimise'], weaponStages: { fin: 'cisco_mod:fell_ragnarok', optimise: 'cisco_mod:fell_ragnarok' }, forceGem: FELL, assumeFor: godAt('umbral'), tags: ['Corruption', 'Marteau', 'Anti-boss'],
+    manual: [man('pob:flat_true', 25, 'Ragnarok : +25 dégâts réels par coup (ignorent l\'armure)')],
+    pitch: 'Fell Ragnarok ajoute 25 dégâts réels ET 50 de Corruption à chaque coup. Contre un boss à 10 000 PV, chaque décomposition retire des centaines de PV.' }),
+  ELM('archer-elfe', 'fell-archer', 'Archer de la décomposition (Corruption)', { obj: OBJ.ranged, origin: 'cisco_rpg_origins:venthari_sharpshooter', cls: 'origins-classes:archer', blessing: 'cisco_rpg_origins:lokis_blessing', tree: 'hunter', weapon: BOW,
+    forceGem: FELL, tags: ['Corruption', 'Distance', 'Anti-boss'], pitch: 'Chaque flèche déclenche la Corruption : à distance, tu grignotes un pourcentage des PV max des boss sans jamais t\'approcher.' }),
+  ELM('mage-sang', 'fell-mage', 'Nécromancien corrompu (Sang + Corruption)', { obj: OBJ.magic('blood'), origin: 'cisco_rpg_origins:demi_god_umbra', cls: 'origins-classes:cleric', blessing: 'cisco_rpg_origins:babayaga_blessing', tree: 'alchemist', weapon: STAFF, extra: ['book'],
+    forceGem: FELL, tags: ['Corruption', 'Magie', 'Sang'], pitch: 'Les sorts de sang touchent souvent : chaque touche déclenche la Corruption et sa décomposition en pourcentage de PV.' }),
+  ELM('assassin', 'fell-dague', 'Lame de l\'ombre corrompue (Castor, Corruption)', { obj: mix(0.55, 0.45), origin: 'strictly:thief', cls: 'origins-classes:rogue', blessing: 'cisco_rpg_origins:lokis_blessing', tree: 'hunter',
+    weaponStages: { milieu: 'cisco_mod:castor', fin: 'cisco_mod:castor', optimise: 'cisco_mod:castor' }, forceGem: FELL, assumeFor: godAt('umbral'), tags: ['Corruption', 'Vitesse', 'Mêlée'],
+    pitch: 'Castor (+10 Corruption) frappe vite : beaucoup de coups, donc beaucoup de chances de décomposition. Un build rapide qui ronge les gros ennemis.' }),
+);
+
 // ---- Builds « Anneau des Sept Malédictions » : mêmes bases que des builds existants, avec l'anneau équipé (assume.cursed) ----
 const deriveC = (base, over) => derive(base, Object.assign({ cursed: true }, over));
 ARCH.push(
@@ -225,11 +258,12 @@ const prevR = fs.existsSync(__dirname + '/../out/builds_report.json') ? JSON.par
 const out = [], report = [];
 for (const a of ARCH) {
   if (((D.originRules || {})[a.origin] || {}).noShield) a.shield = false; // restriction d'origine : pas de bouclier
-  if (ONLY_ARCH && !ONLY_ARCH.includes(a.id) && !(ONLY_ARCH.includes('new') && a.isNew) && !(ONLY_ARCH.includes('leg') && a.id.startsWith('leg-'))) continue;
+  if (ONLY_ARCH && !ONLY_ARCH.includes(a.id) && !(ONLY_ARCH.includes('new') && a.isNew) && !(ONLY_ARCH.includes('leg') && a.id.startsWith('leg-')) && !(ONLY_ARCH.includes('elem') && /^(div|fell)-/.test(a.id))) continue;
   for (const st of STAGES) {
     if (ONLY_STAGES && !ONLY_STAGES.includes(st.key)) continue;
     if (a.stages && !a.stages.includes(st.key)) continue;
     let w = typeof a.weapon === 'string' ? (st.wi < 0 ? (a.weapon === 'heavy' ? EARLY.heavy_weapon : EARLY.sword) : WEAPON[a.weapon][st.wi]) : a.weapon;
+    if (a.weaponStages && a.weaponStages[st.key]) w = PS('sword', a.weaponStages[st.key]);
     const gear = { main: Object.assign({ rarity: st.rarity }, w) };
     if (a.shield) gear.off = Object.assign({ rarity: st.rarity }, SHIELD);
     if (a.offhand) gear.off = Object.assign({ rarity: st.rarity }, PS('sword', a.offhand));
@@ -242,7 +276,7 @@ for (const a of ARCH) {
     const cg = {}; [...st.curios, ...a.extra].forEach(sl => cg[sl] = { type: CTYPE[sl], name: NAME[sl] });
     for (const k of Object.keys(cg)) gear[k] = Object.assign({ rarity: st.rarity, gemRarity: st.rarity }, cg[k]);
     for (const k of Object.keys(gear)) gear[k].gemRarity = st.rarity;
-    const spec = { affixLimit: st.affixLimit, socketLimit: st.socketLimit, roll: st.roll, hpFloor: st.hp, title: a.title + ' — ' + st.label, origin: a.origin, cls: a.cls, blessing: a.blessing, flags: st.flags, points: st.points, objective: a.obj, treeClass: st.fixedTree ? a.tree : (process.env.TREE || a.tree), gear, manual: a.manual, spells: a.spells.map(([id, l]) => ({ id, level: l })) };
+    const spec = { affixLimit: st.affixLimit, socketLimit: st.socketLimit, roll: st.roll, hpFloor: st.hp, title: a.title + ' — ' + st.label, origin: a.origin, cls: a.cls, blessing: a.blessing, flags: st.flags, points: st.points, objective: a.obj, treeClass: st.fixedTree ? a.tree : (process.env.TREE || a.tree), gear, manual: a.manual, forceGem: a.forceGem, assume: a.assumeFor ? a.assumeFor(st.key) : undefined, spells: a.spells.map(([id, l]) => ({ id, level: l })) };
     if (a.cursed) { spec.assume = { cursed: true }; spec.gear.ring1 = { type: 'curios:ring', name: 'Anneau des Sept Malédictions', rarity: 'epic', fixedAffixes: [], sockets: 0 }; }
     let S;
     try { S = optimize(spec); } catch (e) { console.error('ERREUR', a.id, st.key, e.message); continue; }

@@ -139,6 +139,7 @@
     m.append(el('div', { class: 'card' }, el('h3', {}, 'Hypothèses de combat'), el('div', { class: 'small mut' }, 'Certains talents et pouvoirs dépendent de la situation. Coche ce qui s\'applique à ton calcul.'),
       el('div', { class: 'row' }, ck('burning', 'Cible en feu'), ck('lowHp', 'PV ≤ 50 %'), ck('targetEffect', 'Cible sous effet (poison…)'), ck('sun', 'Exposé au soleil / au ciel'), ck('active', 'Capacité active de l\'arme (clic droit : Hellbrand, Frostfang…)'), ck('cursed', 'Porte l\'Anneau des Sept Malédictions (dégâts subis ×2, armure −30 %, dégâts infligés −50 %)')),
       el('div', { class: 'row' }, el('label', { class: 'small' }, 'Distance moyenne de la cible (blocs) '), el('input', { type: 'number', min: 0, value: as.dist ?? '', placeholder: 'auto', onchange: e => { as.dist = e.target.value === '' ? undefined : +e.target.value; recalc(); } }),
+        el('label', { class: 'small', title: 'Ascension divine : après avoir vaincu le Roi déchu. Ascension déchue : après avoir vaincu Cisco descendu. On ne peut avoir que l\'une des deux.' }, ' Ascension '), el('select', { onchange: e => { as.godhood = e.target.value; recalc(); } }, ...[['', 'aucune'], ['divine', 'divine (Roi déchu vaincu)'], ['umbral', 'déchue (Cisco descendu vaincu)']].map(([v, n]) => el('option', { value: v, selected: (as.godhood || '') === v }, n))),
         el('label', { class: 'small', title: 'Part du temps passée à frapper à pleine charge (esquives, déplacements, recharge). 90 % = presque toujours en train de frapper.' }, ' Efficacité d\'attaque (%) '), el('input', { type: 'number', min: 10, max: 100, value: Math.round((as.uptime ?? 0.9) * 100), onchange: e => { as.uptime = Math.max(0.1, Math.min(1, +e.target.value / 100)); recalc(); } }),
         el('label', { class: 'small' }, ' Effets de potion actifs '), el('input', { type: 'number', min: 0, value: as.potions || 0, onchange: e => { as.potions = +e.target.value; recalc(); } }),
         el('label', { class: 'small' }, ' Niveaux d\'enchantement sur l\'arme '), el('input', { type: 'number', min: 0, value: as.enchants || 0, onchange: e => { as.enchants = +e.target.value; recalc(); } }))));
@@ -466,6 +467,8 @@
     if (R.fire || R.cold) box.append(row('Dégâts élémentaires', (R.fire ? '🔥' + fnum(R.fire) : '') + ' ' + (R.cold ? '❄' + fnum(R.cold) : '')));
     if (R.lifesteal) box.append(row('Vol de vie', pct(R.lifesteal, 1)));
     if (R.activeMult > 1) box.append(row('Attaque avec capacité active', '×' + fnum(R.activeMult, 1) + ((S.assume || {}).active ? ' (appliquée)' : ' (case à cocher)')));
+    if (R.divine > 0) box.append(row('Divinité par coup', fnum(R.divine, 0) + ' · crit. ' + pct(R.divCrit[0], 0) + ' ×' + R.divCrit[1]));
+    if (R.fell > 0) box.append(row('Corruption par coup', fnum(R.fell, 0) + ' · ' + pct(R.fellProc[0], 0) + ' : +' + pct(R.fellProc[1], 0) + ' PV max cible'));
     if (R.flatTrue) box.append(row('Dégâts réels par coup (arme)', '+' + fnum(R.flatTrue, 1)));
     if (R.truePct) box.append(row('Dégâts réels (% PV max cible)', pct(R.truePct, 1)));
     if (R.hitCap) box.append(row('Plafond des coups reçus', pct(R.hitCap, 0) + ' des PV max'));

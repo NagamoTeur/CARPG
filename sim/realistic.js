@@ -19,7 +19,7 @@ const pick = s => ({ hp: s.hp, armor: s.armor, dodge: s.dodge, hit: s.hit, dps: 
 let n = 0;
 for (const b of B) {
   const real = pick(summary(realistic(b.state))); b.real = real; n++;
-  const r = Rp.find(x => x.id === (b.arch || b.id) && x.stage === b.level); if (r) r.real = real;
+  const r = Rp.find(x => x.id === (b.arch || b.id) && x.stage === b.level); if (r) { r.real = real; r.summary = summary(b.state); } // résumé recalculé avec le moteur actuel
 }
 fs.writeFileSync(bp, 'window.BUILDS=' + JSON.stringify(B) + ';');
 fs.writeFileSync(rp, JSON.stringify(Rp, null, 1));
