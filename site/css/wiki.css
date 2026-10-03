@@ -67,3 +67,9 @@ li.chk input{margin-right:8px;transform:scale(1.2)}
 
 /* l'encadré « tip » du wiki ne doit pas hériter de l'infobulle .tip (position fixe) */
 .admonition.tip{position:static;z-index:auto;pointer-events:auto;max-width:none;box-shadow:none;font-size:inherit;color:inherit}
+
+/* glossaire */
+abbr.gl{text-decoration:underline dotted var(--acc,#e0a63a);cursor:help}
+
+/* icônes d'objets (32 px natifs, affichées à 24 px, sans lissage) */
+img.ic{width:24px;height:24px;image-rendering:pixelated;vertical-align:middle;margin-right:4px}

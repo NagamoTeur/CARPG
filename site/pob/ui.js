@@ -31,7 +31,7 @@
   const save = () => { try { localStorage.setItem('carpg_pob', JSON.stringify(S)); } catch (e) { } };
   const shareLink = () => location.href.split('#')[0] + '#b=' + btoa(unescape(encodeURIComponent(JSON.stringify(S)))).replace(/\+/g, '-').replace(/\//g, '_');
 
-  let tab = 'perso', slotSel = 'main', R = null, treeView = null;
+  let tab = 'simple', slotSel = 'main', R = null, treeView = null;
   function recalc() { R = ENG.compute(S); save(); renderSheet(); }
 
   /* ---------- aides d'affichage ---------- */
@@ -43,7 +43,7 @@
   function slotTitle(sd) { const it = S.gear[sd.id]; return it ? (it.name || '') : ''; }
 
   /* ---------- onglets ---------- */
-  const TABS = [['perso', 'Personnage'], ['arbre', 'Arbre de talents'], ['equip', 'Équipement'], ['sorts', 'Sorts'], ['boss', 'Simulateur de boss'], ['stats', 'Statistiques détaillées'], ['builds', 'Builds prêts']];
+  const TABS = [['simple', 'Mode simple'], ['perso', 'Personnage'], ['arbre', 'Arbre de talents'], ['equip', 'Équipement'], ['sorts', 'Sorts'], ['boss', 'Simulateur de boss'], ['stats', 'Statistiques détaillées'], ['builds', 'Builds prêts']];
   function renderTabs() {
     const t = $('#tabs'); t.innerHTML = '';
     TABS.forEach(([id, n]) => t.append(el('button', { class: tab === id ? 'on' : '', onclick: () => { tab = id; render(); } }, n)));
@@ -51,8 +51,55 @@
   function render() {
     renderTabs();
     const m = $('#main'); m.innerHTML = '';
-    ({ perso: renderPerso, arbre: renderTree, equip: renderGear, sorts: renderSpells, boss: renderBoss, stats: renderStats, builds: renderBuilds })[tab](m);
+    ({ simple: renderSimple, perso: renderPerso, arbre: renderTree, equip: renderGear, sorts: renderSpells, boss: renderBoss, stats: renderStats, builds: renderBuilds })[tab](m);
     renderSheet();
+  }
+
+
+  /* ---------- Mode simple : choisir un build, lire l'essentiel, savoir quoi améliorer ---------- */
+  let sm = { arch: '', level: 'debutant' };
+  function renderSimple(m) {
+    const all = window.BUILDS || [], CT = (window.BUILD_CATS || { cats: [] }).cats;
+    m.append(el('div', { class: 'note' }, 'Nouveau ? Choisis un build ci-dessous : l\'outil charge un personnage complet, affiche l\'essentiel et te dit quoi chercher en priorité. Tu peux ensuite passer en mode avancé pour tout modifier. Pas sûr de ton choix ? Fais le ', el('a', { href: '../wiki/quiz.html' }, 'quiz « Quel build pour moi ? »'), '.'));
+    const archs = [...new Set(all.map(b => b.arch || b.id))];
+    const label = a => (all.find(b => (b.arch || b.id) === a) || { title: a }).title.replace(/ — .*/, '');
+    const sa = el('select', { onchange: e => { sm.arch = e.target.value; load(); } }, el('option', { value: '' }, '— Choisis un build —'),
+      ...CT.map(c => el('optgroup', { label: c.icon + ' ' + c.title }, ...c.builds.filter(b => archs.includes(b)).map(b => el('option', { value: b, selected: sm.arch === b }, label(b))))));
+    const sl = el('select', { onchange: e => { sm.level = e.target.value; load(); } }, ...LEVELS.map(([v, n]) => el('option', { value: v, selected: sm.level === v }, n)));
+    m.append(el('div', { class: 'card' }, el('h3', {}, '1. Ton build'), el('div', { class: 'row' }, sa, sl)));
+    const box = el('div', {}); m.append(box);
+    function pickEntry(a, lv) { return all.find(b => (b.arch || b.id) === a && b.level === lv) || LEVELS.map(l => all.find(b => (b.arch || b.id) === a && b.level === l[0])).find(Boolean); }
+    function load() {
+      box.innerHTML = '';
+      if (!sm.arch) { box.append(el('p', { class: 'mut' }, 'Aucun build choisi : l\'outil affiche le personnage vide. Choisis-en un pour commencer.')); return; }
+      const b = pickEntry(sm.arch, sm.level); if (!b) return;
+      sm.level = b.level;
+      const key = sm.arch + '|' + b.level;
+      if (sm.key !== key) { sm.key = key; S = Object.assign(DEFAULT(), JSON.parse(JSON.stringify(b.state)), { name: b.title }); $('#bname').value = S.name; }
+      recalc();
+      const card = (k, v, sub) => el('div', { class: 'card', style: 'flex:1;min-width:140px;text-align:center' }, el('div', { class: 'mut small' }, k), el('div', { style: 'font-size:1.6rem;font-weight:700' }, v), sub ? el('div', { class: 'mut small' }, sub) : null);
+      const red = R.armorReduction(S.hit || 30);
+      box.append(el('div', { class: 'card' }, el('h3', {}, '2. L\'essentiel de ce build'), el('p', { class: 'small' }, b.summary),
+        el('div', { class: 'row', style: 'gap:10px;flex-wrap:wrap' },
+          card('Vie max', fnum(R.hp, 0)), card('Armure', fnum(R.armor, 0), 'réduit un coup de ' + (S.hit || 30) + ' de ' + pct(red, 0)), card('Esquive', pct(R.dodgeTotal, 0)),
+          R.ranged ? card('Dégâts par flèche', fnum(R.arrowHit, 0)) : card('Dégâts par coup', fnum(R.hit, 0)), card('Critique', pct(R.critC, 0), '× ' + fnum(R.critD, 1)), R.mana > 100 ? card('Mana', fnum(R.mana, 0)) : null)));
+      // quoi chercher : affixes visés par emplacement
+      const rows = Object.entries(S.gear).filter(([, it]) => it.affixes && it.affixes.length).map(([id, it]) => {
+        const sd = ENG.SLOT_DEFS.find(x => x.id === id);
+        return el('tr', {}, el('td', {}, icn(it.name), sd ? sd.name : id), el('td', {}, el('b', {}, it.name || it.type), el('div', { class: 'mut small' }, rname(it.rarity))), el('td', { class: 'small' }, it.affixes.map(a => IDX.AFFIX[a.id] ? IDX.AFFIX[a.id].name : a.id).join(' · ')));
+      });
+      box.append(el('div', { class: 'card' }, el('h3', {}, '3. Quoi chercher en priorité'), el('div', { class: 'small mut' }, 'Pour ce niveau de build : l\'objet à viser par emplacement et les affixes à faire sortir (à la reforge ou au butin).'),
+        el('table', { class: 't' }, el('tr', {}, el('th', {}, 'Emplacement'), el('th', {}, 'Objet'), el('th', {}, 'Affixes visés')), ...rows)));
+      // prochain niveau
+      const li = LEVELS.findIndex(l => l[0] === b.level), nx = LEVELS.slice(li + 1).map(l => all.find(x => (x.arch || x.id) === sm.arch && x.level === l[0])).find(Boolean);
+      if (nx) { const R2 = ENG.compute(nx.state), d = (a, c) => (c >= a ? '+' : '') + fnum(c - a, 0);
+        box.append(el('div', { class: 'card' }, el('h3', {}, '4. Prochain palier : ' + (LEVELS.find(l => l[0] === nx.level) || [0, nx.level])[1]),
+          el('p', { class: 'small' }, 'Si tu atteins ce palier : ', el('b', {}, d(R.hp, R2.hp) + ' PV'), ', ', el('b', {}, d(R.armor, R2.armor) + ' armure'), ', ', el('b', {}, d(R.ranged ? R.arrowHit : R.hit, R2.ranged ? R2.arrowHit : R2.hit) + ' dégâts par coup'), '.'),
+          el('button', { class: 'sm', onclick: () => { sm.level = nx.level; render(); } }, 'Voir ce palier'))); }
+      box.append(el('div', { class: 'row' }, el('button', { class: 'pri', onclick: () => { tab = 'perso'; render(); } }, 'Passer en mode avancé'), el('button', { onclick: () => { tab = 'arbre'; render(); } }, 'Voir l\'arbre de talents'),
+        b.wiki ? el('a', { class: 'btn', href: '../wiki/' + b.wiki }, 'Lire le guide complet') : null));
+    }
+    if (sm.arch) load();
   }
 
   /* ---------- Personnage ---------- */
@@ -247,7 +294,11 @@
 
   const implausible = i => (/Portée|Rayon/.test(i.label) && i.val > 64) || (/Durée/.test(i.label) && i.val > 600) || (/esquiv|Cibles/.test(i.label) && i.val > 50);
   /* ---------- Sorts ---------- */
+  let IC = { byId: {}, byName: {} };
+  fetch('../data/icons.json').then(r => r.json()).then(d => { IC = d; if (window.POB && POB.rerender) POB.rerender(); }).catch(() => {});
+  const icn = name => { const f = IC.byId[IC.byName[name]]; return f ? el('img', { src: '../assets/icons/' + f, class: 'ic', alt: '' }) : ''; };
   const SCH = D.spells.schools;
+  const spn = x => x.fr && x.fr !== x.name ? x.fr + ' (' + x.name + ')' : x.name;
   let spellFilter = '';
   function renderSpells(m) {
     const at = R.at;
@@ -258,7 +309,7 @@
     S.spells.forEach((s, i) => {
       const sp = D.spells.spells.find(x => x.id === s.id); if (!sp) return;
       const c = ENG.spellCalc(sp, s.level, at);
-      tbl.append(el('tr', {}, el('td', {}, el('b', {}, sp.name), sp.cfg.enabled ? '' : el('span', { class: 'bad' }, ' (désactivé)')), el('td', {}, SCH[sp.cfg.school] || sp.cfg.school),
+      tbl.append(el('tr', {}, el('td', {}, icn(sp.name), el('b', {}, spn(sp)), sp.cfg.enabled ? '' : el('span', { class: 'bad' }, ' (désactivé)')), el('td', {}, SCH[sp.cfg.school] || sp.cfg.school),
         el('td', {}, el('input', { type: 'number', min: 1, max: sp.cfg.maxLevel, value: s.level, style: 'width:60px', onchange: e => { s.level = Math.max(1, Math.min(sp.cfg.maxLevel, +e.target.value)); recalc(); render(); } }), el('span', { class: 'mut small' }, ' /' + sp.cfg.maxLevel)),
         el('td', {}, fnum(c.sp, 3)), el('td', {}, c.mana), el('td', {}, c.cast ? fnum(c.cast, 1) + ' s' : 'instant'), el('td', {}, fnum(c.cd, 1) + ' s'),
         el('td', { class: 'small' }, ...c.info.map(i => el('div', {}, i.label + ' : ', i.val == null ? el('span', { class: 'mut' }, 'voir en jeu') : implausible(i) ? el('span', { class: 'mut', title: 'La formule donne ' + fnum(i.val, 0) + ' : le jeu borne probablement cette valeur' }, 'très élevé (borné ?)') : el('b', {}, fnum(i.val, 1) + (i.unit || ''))))),
@@ -274,9 +325,9 @@
   function renderSpellList() {
     const box = $('#spelllist'); if (!box) return; box.innerHTML = '';
     const q = spellFilter.toLowerCase();
-    const list = D.spells.spells.filter(s => !q || (s.name + ' ' + (SCH[s.cfg.school] || '')).toLowerCase().includes(q)).sort((a, b) => a.cfg.school.localeCompare(b.cfg.school) || a.name.localeCompare(b.name));
+    const list = D.spells.spells.filter(s => !q || (s.name + ' ' + (s.fr || '') + ' ' + (SCH[s.cfg.school] || '')).toLowerCase().includes(q)).sort((a, b) => a.cfg.school.localeCompare(b.cfg.school) || a.name.localeCompare(b.name));
     const t = el('table', { class: 't' }, el('tr', {}, ...['Sort', 'École', 'Rareté min.', 'Niv. max', 'Puiss. ×', 'Recharge', ''].map(h => el('th', {}, h))));
-    list.forEach(s => t.append(el('tr', {}, el('td', {}, el('b', {}, s.name), el('div', { class: 'mut small' }, s.guide)), el('td', {}, SCH[s.cfg.school] || s.cfg.school), el('td', {}, D.spells.rarities[s.cfg.minRarity] || s.cfg.minRarity), el('td', {}, s.cfg.maxLevel),
+    list.forEach(s => t.append(el('tr', {}, el('td', {}, icn(s.name), el('b', {}, spn(s)), el('div', { class: 'mut small' }, s.guide)), el('td', {}, SCH[s.cfg.school] || s.cfg.school), el('td', {}, D.spells.rarities[s.cfg.minRarity] || s.cfg.minRarity), el('td', {}, s.cfg.maxLevel),
       el('td', { class: s.cfg.powerMult < 0.5 ? 'bad' : '' }, s.cfg.powerMult), el('td', {}, s.cfg.cooldown + ' s'), el('td', {}, el('button', { class: 'sm', onclick: () => { if (!S.spells.find(x => x.id === s.id)) { S.spells.push({ id: s.id, level: s.cfg.maxLevel }); recalc(); render(); } } }, '+ ajouter')))));
     box.append(t);
   }
@@ -426,6 +477,6 @@
     recalc(); render();
   }
   function toast(t) { const d = el('div', { class: 'tip', style: 'left:50%;top:70px;transform:translateX(-50%);border-color:var(--good)' }, t); document.body.append(d); setTimeout(() => d.remove(), 2200); }
-  window.POB = { init, getState: () => S };
+  window.POB = { init, getState: () => S, rerender: () => { if (tab === 'sorts' || tab === 'builds') render(); } };
   document.addEventListener('DOMContentLoaded', init);
 })();

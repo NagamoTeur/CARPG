@@ -5,6 +5,7 @@ import re, json, glob, os, tomllib
 
 SRC = 'decomp/irons_src/io/redspace/ironsspellbooks/'
 LANG = json.load(open('out/lang_en.json'))
+SPFR = json.load(open('translations/spells_fr.json'))
 CFG = tomllib.load(open('../minecraft/config/irons_spellbooks-server.toml', 'rb'))
 SPELLCFG = CFG.get('Spells', {})
 
@@ -99,6 +100,7 @@ def main():
     for sp in spells:
         c = SPELLCFG.get('irons_spellbooks:' + sp['id'], {})
         sp['name'] = LANG.get('spell.irons_spellbooks.' + sp['id']) or sp['id'].replace('_', ' ').title()
+        sp['fr'] = SPFR.get(sp['id'])
         sp['guide'] = LANG.get('spell.irons_spellbooks.%s.guide' % sp['id'], '')
         sp['cfg'] = {'enabled': c.get('Enabled', True), 'maxLevel': c.get('MaxLevel', sp['maxLevel']),
                      'minRarity': c.get('MinRarity', sp['rarityMin']), 'manaMult': c.get('ManaCostMultiplier', 1.0),

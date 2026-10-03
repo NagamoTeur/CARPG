@@ -40,6 +40,16 @@ NAV = [
 TITLES = {p: t for _, items in NAV for p, t in items}
 
 PAGES_SEARCH = []
+ICONS = json.load(open('site/data/icons.json')) if os.path.exists('site/data/icons.json') else {'byId': {}, 'byName': {}}
+
+
+def ico(name=None, id=None):
+    """Icône d'objet/sort (usage privé) ; @@ROOT@@ est remplacé par la racine relative dans layout()."""
+    i = id or ICONS['byName'].get((name or '').strip())
+    f = ICONS['byId'].get(i) if i else None
+    return f'<img class="ic" src="@@ROOT@@assets/icons/{f}" alt="" loading="lazy"> ' if f else ''
+
+
 import datetime
 BUILD_DATE = datetime.date.today().strftime('%d/%m/%Y')
 PACK = 'V8E'
@@ -77,14 +87,14 @@ def layout(slug, title, body, desc=''):
 <div class="wikiwrap"><nav id="wnav">{''.join(nav)}</nav>
 <main class="wiki"><h1>{esc(title)}</h1>{body}
 <footer class="mut small">Pack V8E · reconstruit le {BUILD_DATE}. Wiki généré à partir des fichiers du modpack « Cisco's Adventure RPG Ultimate » (V8E). Les chiffres viennent des fichiers de config et du code des mods ; en cas de doute, ce qui s'affiche en jeu fait foi.</footer></main></div>
-<script>window.ROOT="{root}";</script><script src="{root}wiki/search-index.js"></script><script src="{root}wiki/wiki.js"></script>
+<script>window.ROOT="{root}";</script><script src="{root}wiki/search-index.js"></script><script src="{root}wiki/glossary.js"></script><script src="{root}wiki/wiki.js"></script>
 </body></html>"""
 
 
 def write(slug, title, body, desc=''):
     p = os.path.join(OUT, slug + '.html')
     os.makedirs(os.path.dirname(p), exist_ok=True)
-    open(p, 'w', encoding='utf8').write(layout(slug, title, body, desc))
+    open(p, 'w', encoding='utf8').write(layout(slug, title, body, desc).replace('@@ROOT@@', '../' * (slug.count('/') + 1)))
 
 
 def tfr(t):
@@ -200,6 +210,15 @@ def page_talents():
     return '\n'.join(out)
 
 
+def spn(s): return f"{s['fr']} ({s['name']})" if s.get('fr') and s['fr'] != s['name'] else s['name']
+
+
+def spn_by_name(name):
+    for s in D['spells']['spells']:
+        if s['name'] == name: return spn(s)
+    return name
+
+
 def page_sorts():
     SP = D['spells']; SCH = SP['schools']
     out = ['<p>Voici les sorts d\'<b>Iron\'s Spells \'n Spellbooks</b> avec les <b>réglages de ce pack</b> : école, niveau maximum, multiplicateur de puissance et recharge. Un multiplicateur de puissance bas (×0,2–0,3) signifie que le sort dépend beaucoup de ta puissance de sorts ; <b>×1</b> est le réglage normal du mod.</p>',
@@ -214,7 +233,7 @@ def page_sorts():
             flag = '' if c['enabled'] else ' <span class="bad">(désactivé)</span>'
             changed = ' <span class="tag" title="École modifiée par le pack">école modifiée</span>' if c['school'] != s['school'] else ''
             pcls = 'bad' if c['powerMult'] < 0.5 else ('good' if c['powerMult'] >= 0.9 else '')
-            out.append(f'<tr data-q="{esc((s["name"] + " " + s["guide"]).lower())}"><td><b>{esc(s["name"])}</b>{flag}{changed}<div class="mut small">{esc(s["guide"])}</div></td><td>{SP["rarities"].get(c["minRarity"], c["minRarity"])}</td><td>{c["maxLevel"]}</td><td class="{pcls}">{c["powerMult"]}</td><td>{s["baseMana"]}+{s["manaPerLevel"]}/niv.</td><td>{ {"INSTANT": "instant", "LONG": fnum(s["castTime"]/20,1)+" s", "CONTINUOUS": "canalisé", "CHARGE": "chargé"}.get(s["castType"], "") }</td><td>{c["cooldown"]} s</td></tr>')
+            out.append(f'<tr data-q="{esc((s["name"] + " " + (s.get("fr") or "") + " " + s["guide"]).lower())}"><td>{ico(s["name"])}<b>{esc(spn(s))}</b>{flag}{changed}<div class="mut small">{esc(s["guide"])}</div></td><td>{SP["rarities"].get(c["minRarity"], c["minRarity"])}</td><td>{c["maxLevel"]}</td><td class="{pcls}">{c["powerMult"]}</td><td>{s["baseMana"]}+{s["manaPerLevel"]}/niv.</td><td>{ {"INSTANT": "instant", "LONG": fnum(s["castTime"]/20,1)+" s", "CONTINUOUS": "canalisé", "CHARGE": "chargé"}.get(s["castType"], "") }</td><td>{c["cooldown"]} s</td></tr>')
         out.append('</table>')
     out.append('</div>')
     return '\n'.join(out)
@@ -384,7 +403,7 @@ def build_page(bid, md_text):
             out.append('<h3>Sorts</h3><table class="t"><tr><th>Sort</th><th>Niv.</th><th>Mana</th><th>Incantation</th><th>Recharge</th><th>Effets (calculés)</th></tr>')
             for sp in b['spells']:
                 eff = ' · '.join(f"{LABFR.get(lab, lab)} {fnum(v,0)}{u}" for lab, v, u in sp['info'] if v is not None and plausible(lab, v, u)) or '—'
-                out.append(f'<tr><td><b>{esc(sp["name"])}</b></td><td>{sp["level"]}</td><td>{sp["mana"]}</td><td>{fnum(sp["cast"],2)} s</td><td>{fnum(sp["cd"],1)} s</td><td class="small">{esc(eff)}</td></tr>')
+                out.append(f'<tr><td>{ico(sp["name"])}<b>{esc(spn_by_name(sp["name"]))}</b></td><td>{sp["level"]}</td><td>{sp["mana"]}</td><td>{fnum(sp["cast"],2)} s</td><td>{fnum(sp["cd"],1)} s</td><td class="small">{esc(eff)}</td></tr>')
             out.append('</table>')
         out.append(f'<h3>Équipement visé ({b["label"]})</h3><table class="t"><tr><th>Emplacement</th><th>Objet</th><th>Affixes de stat (valeur max de la plage)</th><th>Gemmes</th></tr>')
         SLOTN = {'main': 'Arme', 'off': 'Main secondaire', 'head': 'Casque', 'chest': 'Plastron', 'legs': 'Jambières', 'boots': 'Bottes', 'ring1': 'Anneau 1', 'ring2': 'Anneau 2', 'neck': 'Collier', 'belt': 'Ceinture', 'back': 'Dos', 'body': 'Corps', 'hands': 'Mains', 'wrist': 'Bracelet', 'talis': 'Talisman', 'charm': 'Charme', 'book': 'Livre de sorts'}
@@ -395,7 +414,7 @@ def build_page(bid, md_text):
             if g['base']:
                 bb = g['base']
                 base = ' ' + ('dégâts ' + str(bb['dmg']) if 'dmg' in bb else ('armure ' + str(bb.get('armor', 0)) if 'armor' in bb else ''))
-            out.append(f'<tr><td>{SLOTN.get(g["slot"], g["slot"])}</td><td><b>{esc(g["name"])}</b><div class="mut small">{rarity_chip(g["rarity"])}{base}</div></td><td class="small">{aff}</td><td class="small">{gems}</td></tr>')
+            out.append(f'<tr><td>{SLOTN.get(g["slot"], g["slot"])}</td><td>{ico(g["name"])}<b>{esc(g["name"])}</b><div class="mut small">{rarity_chip(g["rarity"])}{base}</div></td><td class="small">{aff}</td><td class="small">{gems}</td></tr>')
         out.append('</table>')
         ks = b['keystones']
         CLN = {'alchemist': 'Alchimiste', 'blacksmith': 'Forgeron', 'cook': 'Cuisinier', 'enchanter': 'Enchanteur', 'hunter': 'Chasseur', 'miner': 'Mineur'}
@@ -479,6 +498,18 @@ def tokens():
 def subst(text):
     for k, v in tokens().items(): text = text.replace('{{' + k + '}}', str(v))
     return text
+
+
+def write_glossary():
+    """Glossaire -> infobulles (wiki.js entoure la 1re occurrence de chaque terme dans chaque page)."""
+    G = []
+    for line in open(SRC + '/glossaire.md', encoding='utf8'):
+        m = re.match(r'\|\s*\*\*(.+?)\*\*\s*(?:\((?:\*)?(.+?)(?:\*)?\))?\s*\|\s*(.+?)\s*\|\s*$', line)
+        if not m: continue
+        terms = [t.strip() for t in re.split(r'\s*/\s*', m.group(1))]
+        if m.group(2): terms.append(m.group(2).strip())
+        G.append({'t': [t for t in terms if len(t) > 2], 'd': re.sub(r'[*_`]', '', m.group(3))})
+    open(OUT + '/glossary.js', 'w', encoding='utf8').write('window.GLOSS=' + json.dumps(G, ensure_ascii=False) + ';')
 
 
 def write_home():
@@ -571,7 +602,7 @@ def page_reliques():
     for r in R:
         name = esc(r['fr'] or r['name']) + (f' <span class="mut small">({esc(r["name"])})</span>' if r['fr'] and r['fr'] != r['name'] else '')
         q = r['name'] + ' ' + (r['fr'] or '') + ' ' + ' '.join(a['name'] for a in r['abilities'])
-        out.append(f'<div class="card" data-q="{esc(q)}"><h3>{name}</h3><p class="small"><b>Progression :</b> {esc(r["leveling"]).replace(chr(10), "<br>")} (niveau max {r["maxLevel"]})</p>')
+        out.append(f'<div class="card" data-q="{esc(q)}"><h3>{ico(id="relics:" + r["id"])}{name}</h3><p class="small"><b>Progression :</b> {esc(r["leveling"]).replace(chr(10), "<br>")} (niveau max {r["maxLevel"]})</p>')
         for a in r['abilities']:
             st = ''.join(f'<tr><td>{esc(s["title"])}</td><td>{esc(s["level0"])}</td><td>{esc(s["levelmax"])}</td></tr>' for s in a['stats'])
             out.append(f'<h4>{esc(a["name"])} <span class="chip">niveau de relique {a["level"]}</span> <span class="chip">{a["points"]} point(s)</span></h4><p class="small">{esc(a["desc"])}</p>' + (f'<table class="t small"><tr><th></th><th>Niveau 0</th><th>Niveau {a["max"]}</th></tr>{st}</table>' if st else ''))
@@ -649,6 +680,7 @@ def main():
     if 'builds/index' not in done:
         write('builds/index', 'Tous les builds', '<p>Aucun guide pour l\'instant.</p>')
     write_home()
+    write_glossary()
     # recherche
     open(OUT + '/search-index.js', 'w', encoding='utf8').write('window.SEARCH=' + json.dumps(PAGES_SEARCH, ensure_ascii=False) + ';')
     print(len(PAGES_SEARCH), 'pages')

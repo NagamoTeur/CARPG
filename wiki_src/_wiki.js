@@ -49,3 +49,23 @@
   function upd() { const n = [...boxes].filter(b => b.checked).length; bar.innerHTML = '<b>Progression :</b> ' + n + ' / ' + boxes.length + ' <span class="meter"><i style="width:' + (100 * n / boxes.length) + '%"></i></span>'; }
   upd();
 })();
+
+/* infobulles du glossaire : 1re occurrence de chaque terme par page */
+(function () {
+  const G = window.GLOSS, root = document.querySelector('main.wiki'); if (!G || !root || /glossaire\.html$/.test(location.pathname)) return;
+  const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const items = [];
+  G.forEach(g => g.t.forEach(t => items.push({ rx: new RegExp('(^|[^\\p{L}])(' + esc(t) + ')(?![\\p{L}])', 'iu'), d: g.d, t })));
+  items.sort((a, b) => b.t.length - a.t.length);
+  const done = new Set(), SKIP = /^(A|H1|H2|H3|H4|H5|H6|CODE|ABBR|BUTTON|INPUT|SCRIPT|STYLE|TH|SELECT|TEXTAREA|CANVAS|SUMMARY)$/;
+  const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: n => { for (let p = n.parentNode; p && p !== root; p = p.parentNode) if (SKIP.test(p.nodeName) || (p.classList && ((p.classList.contains('tip') && !p.classList.contains('admonition')) || p.classList.contains('chkbar')))) return NodeFilter.FILTER_REJECT; return n.nodeValue.trim().length > 3 ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT; } });
+  const nodes = []; while (w.nextNode()) nodes.push(w.currentNode);
+  nodes.forEach(n => {
+    for (const it of items) {
+      if (done.has(it.d)) continue;
+      const m = it.rx.exec(n.nodeValue); if (!m) continue;
+      const i = m.index + m[1].length, a = document.createElement('abbr'); a.className = 'gl'; a.title = it.d; a.textContent = m[2];
+      const rest = n.splitText(i); rest.nodeValue = rest.nodeValue.slice(m[2].length); n.parentNode.insertBefore(a, rest); done.add(it.d); break;
+    }
+  });
+})();
