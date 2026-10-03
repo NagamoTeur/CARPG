@@ -88,13 +88,20 @@
         el('div', { class: 'row', style: 'gap:10px;flex-wrap:wrap' },
           card('Vie max', fnum(R.hp, 0)), card('Armure', fnum(R.armor, 0), 'réduit un coup de ' + (S.hit || 30) + ' de ' + pct(red, 0)), card('Esquive', pct(R.dodgeTotal, 0)),
           R.ranged ? card('Dégâts par flèche', fnum(R.arrowHit, 0)) : card('Dégâts par coup', fnum(R.hit, 0)), card('Critique', pct(R.critC, 0), '× ' + fnum(R.critD, 1)), R.mana > 100 ? card('Mana', fnum(R.mana, 0)) : null)));
-      // quoi chercher : affixes visés par emplacement
-      const rows = Object.entries(S.gear).filter(([, it]) => it.affixes && it.affixes.length).map(([id, it]) => {
-        const sd = ENG.SLOT_DEFS.find(x => x.id === id);
-        return el('tr', {}, el('td', {}, icn(it.name), sd ? sd.name : id), el('td', {}, el('b', {}, it.name || it.type), el('div', { class: 'mut small' }, rname(it.rarity))), el('td', { class: 'small' }, it.affixes.map(a => IDX.AFFIX[a.id] ? IDX.AFFIX[a.id].name : a.id).join(' · ')));
+      // quoi chercher : stats visées par emplacement, par ordre de priorité (on lit des lignes de statistiques, pas des noms d'affixes)
+      const WHY = D.statWhy || {};
+      const statsOf = it => (it.affixes || []).map(a => IDX.AFFIX[a.id]).filter(af => af && af.kind === 'attribute').map(af => {
+        const t = (af.text[it.rarity] || af.text[af.rarities[0]] || '').replace(/^([+\-][\d.,]+)–([\d.,]+)/, (m0, a, b2) => a.replace(/^[+\-]/, '') === b2 ? a : m0);
+        const mm = t.match(/^([+\-][\d.,]+(?:–[\d.,]+)?)\s*(%?)\s*(\(mult\.\)\s*)?(.+)$/);
+        return { label: mm ? mm[4] : af.name, val: mm ? mm[1] + (mm[2] ? ' %' : '') : '', why: WHY[af.attr] || '' };
       });
-      box.append(el('div', { class: 'card' }, el('h3', {}, '3. Quoi chercher en priorité'), el('div', { class: 'small mut' }, 'Pour ce niveau de build : l\'objet à viser par emplacement et les affixes à faire sortir (à la reforge ou au butin).'),
-        el('table', { class: 't' }, el('tr', {}, el('th', {}, 'Emplacement'), el('th', {}, 'Objet'), el('th', {}, 'Affixes visés')), ...rows)));
+      const rows = Object.entries(S.gear).filter(([, it]) => statsOf(it).length).map(([id, it]) => {
+        const sd = ENG.SLOT_DEFS.find(x => x.id === id);
+        return el('tr', {}, el('td', {}, icn(it.name), sd ? sd.name : id), el('td', { class: 'small' }, ...statsOf(it).flatMap((x, i) => [el('div', { title: x.why }, el('b', {}, (i + 1) + '. ' + x.label), ' ', el('span', { class: 'mut' }, x.val))])));
+      });
+      box.append(el('div', { class: 'card' }, el('h3', {}, '3. Quoi chercher sur chaque pièce'), el('div', { class: 'small mut' }, 'Lis les lignes de statistiques de l\'info-bulle de tes objets : une pièce qui a 2 de ces 3 lignes est déjà très bonne. Survole une ligne pour savoir à quoi elle sert. Valeurs : plafond de la rareté visée.'),
+        el('table', { class: 't' }, el('tr', {}, el('th', {}, 'Pièce'), el('th', {}, 'Stats à chercher (par ordre d\'importance)')), ...rows),
+        el('p', { class: 'small' }, el('a', { href: '../wiki/stats-par-piece.html' }, 'Que chercher selon mon rôle, et que peut-on trouver sur chaque pièce ? →'))));
       // prochain niveau
       const li = LEVELS.findIndex(l => l[0] === b.level), nx = LEVELS.slice(li + 1).map(l => all.find(x => (x.arch || x.id) === sm.arch && x.level === l[0])).find(Boolean);
       if (nx) { const R2 = ENG.compute(await stateOf(nx)), d = (a, c) => (c >= a ? '+' : '') + fnum(c - a, 0);

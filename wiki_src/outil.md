@@ -39,3 +39,10 @@ Toutes les statistiques, avec la **source** de chaque bonus. Les effets non chif
 
 !!! warning "Précautions"
     Les valeurs de base des armes/armures **hors Cisco/KubeJS** sont à saisir à la main. Les sorts d'**Ars Nouveau** ne sont pas calculés. Les résultats sont une **estimation** ; compare toujours avec ce que le jeu affiche.
+
+## Est-ce que les chiffres sont justes ?
+
+Le planificateur a été **comparé au jeu** (octobre 2026, sur un vrai personnage) : armure, robustesse, vitesse, mana, régénération de mana, réduction de recharge, coût en mana et dégâts de base des sorts, plages de stats des objets : **tout correspond exactement**. Deux points sont encore en cours de vérification : la **vie max** (la nourriture et les talents jouent) et les **dégâts réels sur un mannequin** (environ 5 % d'écart observé avec un bâton et un livre de sorts).
+
+!!! tip "Les parchemins mentent (un peu)"
+    L'info-bulle d'un parchemin de sort affiche les valeurs de **base** : puissance 1 et aucune réduction de recharge. Avec ton équipement, les dégâts sont plus élevés et la recharge plus courte. Le planificateur calcule les valeurs avec **tes** statistiques.

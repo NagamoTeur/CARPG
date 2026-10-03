@@ -82,6 +82,7 @@ def parse(path):
                 py = java_to_py(arg, methods)
             except Exception:
                 py = None
+            if py and '(int)this.getSpellPower' in arg: py = py.replace('sp', 'floor(sp)', 1)  # troncature Java : (int) puissance
             info.append({'unit': 's' if 'timeFromTicks' in arg else '', 'key': key, 'label': UI_FR.get(key, key.replace('_', ' ')), 'expr': py, 'raw': arg.strip()[:200]})
         # lignes en Component.m_237115_ / autre : ignorées
     sp['info'] = info

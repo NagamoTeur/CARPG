@@ -16,6 +16,7 @@ jobs:
           node sim/selftest.js
           node sim/smoke.js
           node sim/check_rules.js
+          node tests/calibration.js
       - name: Liens du wiki
         run: python3 check_links.py
       - name: Poids des fichiers chargés par le planificateur

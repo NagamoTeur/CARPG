@@ -37,14 +37,14 @@ desc: Le parcours d'un nouveau joueur, de la première heure jusqu'au dragon, av
 - [ ] J'ai une **table d'enchantement** avec des étagères autour : [enchantement](atelier.html)
 - [ ] J'ai mangé au moins **10 aliments différents** (la diversité alimentaire donne jusqu'à environ +50 PV) : [cuisine](vie.html)
 - [ ] J'ai **protégé ma base** avec FTB Chunks (touche `Insert`) : [sécurité](survie.html)
-- [ ] J'ai ouvert au moins un coffre de donjon et récupéré un objet à **affixes** : [équipement](equipement.html)
+- [ ] J'ai ouvert au moins un coffre de donjon et récupéré un objet avec des **lignes de stats** : [équipement](equipement.html) et [que chercher sur chaque pièce](stats-par-piece.html)
 
 ## Étape 3 : avant le Nether (niveau Intermédiaire)
 
 Le Nether a un niveau de monstres élevé d'office. N'y va pas sans :
 
 - [ ] Une armure **Brightsteel** ou Darksteel et un **bouclier**
-- [ ] Au moins **2 affixes utiles** par pièce principale (arme, plastron) : [affixes](affixes.html)
+- [ ] Au moins **2 lignes de stats utiles** par pièce principale (arme, plastron) : voir [que chercher sur chaque pièce](stats-par-piece.html)
 - [ ] Un **point de retour** (waystone ou lit) et de quoi te soigner
 - [ ] Mon build au niveau **Intermédiaire** (voir [Débutant → Optimisé](builds/niveaux.html))
 

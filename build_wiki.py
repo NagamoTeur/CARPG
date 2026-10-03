@@ -29,7 +29,7 @@ def TITLE_OF(b):
 NAV = [
     ('Démarrer', [('index', 'Accueil'), ('debuter', '🌱 Je débute'), ('quiz', '🎯 Quel build pour moi ?'), ('premiers-pas', 'Premiers pas'), ('monde', 'Le monde & le danger'), ('campagne', 'La campagne'), ('survie', 'Mort, sauvegarde & sécurité')]),
     ('Personnage', [('origines', 'Origines'), ('classes', 'Classes'), ('benedictions', 'Bénédictions divines'), ('talents', 'Arbre de talents'), ('combat', 'Combat & statistiques')]),
-    ('Équipement', [('equipement', 'Rareté, affixes & sockets'), ('gemmes', 'Gemmes'), ('affixes', 'Catalogue des affixes'), ('atelier', 'Ateliers & enchantement'), ('enchants', 'Tous les enchantements'), ('objets-campagne', 'Équipement de campagne'), ('accessoires', 'Accessoires & reliques'), ('ring-sept-maledictions', 'Anneau des Sept Malédictions')]),
+    ('Équipement', [('equipement', 'Rareté, affixes & sockets'), ('gemmes', 'Gemmes'), ('stats-par-piece', 'Que chercher sur chaque pièce ?'), ('affixes', 'Catalogue des affixes'), ('atelier', 'Ateliers & enchantement'), ('enchants', 'Tous les enchantements'), ('objets-campagne', 'Équipement de campagne'), ('accessoires', 'Accessoires & reliques'), ('ring-sept-maledictions', 'Anneau des Sept Malédictions')]),
     ('Magie', [('magie', 'Comprendre la magie'), ('sorts', 'Catalogue des sorts (Iron\'s)'), ('ars', 'Glyphes d\'Ars Nouveau')]),
     ('Boss', [('boss', 'Guide des boss')]),
     ('Builds', [('builds/index', 'Tous les builds'), ('builds/niveaux', 'Débutant → Optimisé'), ('builds/adapter', 'Adapter un build à son loot')]),
@@ -222,7 +222,7 @@ def spn_by_name(name):
 
 def page_sorts():
     SP = D['spells']; SCH = SP['schools']
-    out = ['<p>Voici les sorts d\'<b>Iron\'s Spells \'n Spellbooks</b> avec les <b>réglages de ce pack</b> : école, niveau maximum, multiplicateur de puissance et recharge. Un multiplicateur de puissance bas (×0,2–0,3) signifie que le sort dépend beaucoup de ta puissance de sorts ; <b>×1</b> est le réglage normal du mod.</p>',
+    out = ['<div class="note small">Les parchemins en jeu affichent les valeurs de <b>base</b> (puissance 1, sans réduction de recharge). Avec ton équipement, les dégâts sont plus élevés et la recharge plus courte.</div><p>Voici les sorts d\'<b>Iron\'s Spells \'n Spellbooks</b> avec les <b>réglages de ce pack</b> : école, niveau maximum, multiplicateur de puissance et recharge. Un multiplicateur de puissance bas (×0,2–0,3) signifie que le sort dépend beaucoup de ta puissance de sorts ; <b>×1</b> est le réglage normal du mod.</p>',
            '<input class="filter" data-target="splist" placeholder="Filtrer…">', '<div id="splist">']
     by = {}
     for s in SP['spells']: by.setdefault(s['cfg']['school'], []).append(s)
@@ -406,17 +406,20 @@ def build_page(bid, md_text):
                 eff = ' · '.join(f"{LABFR.get(lab, lab)} {fnum(v,0)}{u}" for lab, v, u in sp['info'] if v is not None and plausible(lab, v, u)) or '—'
                 out.append(f'<tr><td>{ico(sp["name"])}<b>{esc(spn_by_name(sp["name"]))}</b></td><td>{sp["level"]}</td><td>{sp["mana"]}</td><td>{fnum(sp["cast"],2)} s</td><td>{fnum(sp["cd"],1)} s</td><td class="small">{esc(eff)}</td></tr>')
             out.append('</table>')
-        out.append(f'<h3>Équipement visé ({b["label"]})</h3><table class="t"><tr><th>Emplacement</th><th>Objet</th><th>Affixes de stat (valeur max de la plage)</th><th>Gemmes</th></tr>')
-        SLOTN = {'main': 'Arme', 'off': 'Main secondaire', 'head': 'Casque', 'chest': 'Plastron', 'legs': 'Jambières', 'boots': 'Bottes', 'ring1': 'Anneau 1', 'ring2': 'Anneau 2', 'neck': 'Collier', 'belt': 'Ceinture', 'back': 'Dos', 'body': 'Corps', 'hands': 'Mains', 'wrist': 'Bracelet', 'talis': 'Talisman', 'charm': 'Charme', 'book': 'Livre de sorts'}
+        out.append(f'<h3>Quoi chercher sur chaque pièce ({b["label"]})</h3><p class="small mut">Par ordre d\'importance pour ce build. Les valeurs sont les plafonds de la rareté visée : en pratique, une valeur plus basse reste très bien. <a href="../stats-par-piece.html">Que peut-on trouver sur chaque pièce ?</a></p><table class="t"><tr><th>Pièce</th><th>Objet de base</th><th>Stats à chercher (priorité 1, 2, 3…)</th><th>Gemmes : effet visé</th></tr>')
+        SLOTN = {'main': 'Arme', 'off': 'Main secondaire', 'head': 'Casque', 'chest': 'Plastron', 'legs': 'Jambières', 'boots': 'Bottes', 'ring1': 'Anneau 1', 'ring2': 'Anneau 2', 'ring3': 'Anneau 3', 'neck': 'Collier', 'belt': 'Ceinture', 'back': 'Dos', 'body': 'Corps', 'hands': 'Gants', 'wrist': 'Bracelet', 'talis': 'Talisman', 'charm': 'Charme', 'book': 'Livre de sorts', 'stone': 'Pierre de sort'}
+        exact = []
         for g in b['gear']:
-            aff = '<br>'.join(f"{esc(a['name'])} : {esc(a['text'])}" for a in g['affixes']) or '<span class="mut">—</span>'
-            gems = '<br>'.join(esc(x['name']) for x in g['gems']) or '<span class="mut">—</span>'
+            sl = stat_lines(g)
+            aff = '<br>'.join(f'<b>{i}.</b> {esc(lab)} <span class="mut">{esc(val)}</span>' for i, (_, lab, val) in enumerate(sl, 1)) or '<span class="mut">—</span>'
+            gems = '<br>'.join(f'<span title="{esc(n)}">{esc(t)}</span>' for t, n in gem_effects(g)) or '<span class="mut">—</span>'
             base = ''
             if g['base']:
                 bb = g['base']
                 base = ' ' + ('dégâts ' + str(bb['dmg']) if 'dmg' in bb else ('armure ' + str(bb.get('armor', 0)) if 'armor' in bb else ''))
             out.append(f'<tr><td>{SLOTN.get(g["slot"], g["slot"])}</td><td>{ico(g["name"])}<b>{esc(g["name"])}</b><div class="mut small">{rarity_chip(g["rarity"])}{base}</div></td><td class="small">{aff}</td><td class="small">{gems}</td></tr>')
-        out.append('</table>')
+            if g['affixes'] or g['gems']: exact.append(f'<tr><td>{SLOTN.get(g["slot"], g["slot"])}</td><td class="small">{"<br>".join(esc(a["name"]) + " — " + esc(a["text"]) for a in g["affixes"]) or "—"}</td><td class="small">{"<br>".join(esc(n) for _, n in gem_effects(g)) or "—"}</td></tr>')
+        out.append('</table><details class="small"><summary>Noms exacts des affixes et des gemmes (pour les repérer par leur nom)</summary><table class="t"><tr><th>Pièce</th><th>Affixes</th><th>Gemmes</th></tr>' + ''.join(exact) + '</table></details>')
         ks = b['keystones']
         CLN = {'alchemist': 'Alchimiste', 'blacksmith': 'Forgeron', 'cook': 'Cuisinier', 'enchanter': 'Enchanteur', 'hunter': 'Chasseur', 'miner': 'Mineur'}
         start = b['nodes'][0].split('_')[0] if b.get('nodes') else b.get('tree')
@@ -477,6 +480,54 @@ def progression_table(rs):
     big = [b for _, b in st if b['summary'].get('dps', 0) > 100000]
     out.append('</table>' + real + (f'<div class="warn small">⚠ Niveau{"x" if len(big) > 1 else ""} {", ".join(b["label"] for b in big)} : les dégâts calculés dépassent 100 000 par seconde. C\'est un <b>maximum théorique</b> (loot parfait, gemmes parfaites, tous les cumuls). Regarde plutôt la colonne « Avancé » comme repère réaliste.</div>' if big else '') + '<p class="small mut">Les chiffres augmentent surtout grâce à la rareté de l\'équipement, au nombre d\'affixes/gemmes et aux points de talent. Ils servent à comparer les niveaux entre eux.</p>')
     return ''.join(out)
+
+
+STAGE_LABELS_PLACEHOLDER = None
+
+STAT_WHY = json.load(open('translations/stat_why.json', encoding='utf8'))
+SLOT_TYPE_FR = {'helmet': 'Casque', 'chestplate': 'Plastron', 'leggings': 'Jambières', 'boots': 'Bottes', 'sword': 'Épée (une main)', 'heavy_weapon': 'Arme lourde / deux mains', 'bow': 'Arc', 'crossbow': 'Arbalète', 'shield': 'Bouclier', 'trident': 'Trident',
+                'curios:ring': 'Anneau', 'curios:necklace': 'Collier', 'curios:belt': 'Ceinture', 'curios:charm': 'Charme', 'curios:spellbook': 'Livre de sorts', 'curios:back': 'Dos (cape)', 'curios:body': 'Corps', 'curios:hands': 'Gants',
+                'curios:bracelet': 'Bracelet', 'curios:talisman': 'Talisman', 'curios:spellstone': 'Pierre de sort', 'curios:head': 'Tête (curio)', 'curios:feet': 'Pieds (curio)', 'pickaxe': 'Pioche'}
+SLOT_GROUP = {'main': 'Arme', 'off': 'Main secondaire', 'head': 'Armure', 'chest': 'Armure', 'legs': 'Armure', 'boots': 'Armure', 'ring1': 'Anneaux', 'ring2': 'Anneaux', 'ring3': 'Anneaux', 'neck': 'Collier', 'belt': 'Ceinture',
+              'back': 'Dos', 'body': 'Corps', 'hands': 'Gants', 'wrist': 'Bracelet', 'talis': 'Talisman', 'charm': 'Charme', 'book': 'Livre de sorts', 'stone': 'Pierre de sort'}
+AFFIX = {a['id']: a for a in D['affixes']}
+GEMS = {g['id']: g for k in D['gems'] for g in D['gems'][k]} if isinstance(D['gems'], dict) else {}
+
+
+def stat_parse(txt):
+    """'+18–18 % (mult.) Puissance des sorts' -> ('Puissance des sorts', '+18 %')"""
+    m = re.match(r'^([+\-][\d.,]+(?:–[\d.,]+)?)\s*(%?)\s*(\(mult\.\)\s*)?(.+)$', txt.strip())
+    if not m: return txt, ''
+    v = m.group(1); a, _, b = v.partition('–')
+    if b and a.lstrip('+-') == b: v = a
+    return m.group(4).strip(), v + (' %' if m.group(2) else '')
+
+
+def stat_lines(g):
+    """Stats à chercher sur une pièce, par ordre de priorité du build : [(attr, libellé, valeur)]"""
+    out = []
+    for a in g['affixes']:
+        af = AFFIX.get(a['id'])
+        if af and af['kind'] != 'attribute': continue
+        lab, val = stat_parse(a['text'])
+        out.append((af['attr'] if af else '', lab, val))
+    return out
+
+
+def gem_effects(g):
+    """Effet recherché des gemmes pour ce type d'objet (texte), à la place des noms de gemmes"""
+    res = []
+    for x in g['gems']:
+        gm = GEMS.get(x['id']); txt = None
+        if gm:
+            for bo in gm['bonuses']:
+                if g.get('type') in bo['types'] or not g.get('type'):
+                    t = (bo.get('text') or {}).get(x.get('rar'))
+                    if t: txt = t; break
+        if txt:
+            lab, val = stat_parse(txt); txt = f'{lab} {val}'.strip() if val else txt
+        res.append((txt or x['name'], x['name']))
+    return res
 
 
 STAGE_LABELS = {'debutant': 'Débutant', 'milieu': 'Intermédiaire', 'fin': 'Avancé', 'optimise': 'Optimisé'}
@@ -643,6 +694,54 @@ def page_niveaux_extra():
             '<div class="note">Conséquence : l\'<b>Épique</b> est atteignable dès le Nether, le <b>Mythique</b> vient surtout de l\'End (donc après le dragon). Le niveau <b>Avancé</b> n\'a donc de sens qu\'après l\'Ender Dragon, et les objets <b>Anciens</b> ne tombent jamais au hasard. Les affixes d\'un même objet sont tirés au hasard dans leur plage : compte plutôt sur la <b>médiane</b> (colonne « loot médian » dans la fiche de chaque build).</div>')
 
 
+def page_stats_par_piece():
+    """Quelles stats peut-on trouver sur chaque type de pièce, et lesquelles chercher selon le rôle (statistiques des builds)."""
+    out = ['<p>Quand tu ramasses une arme ou une armure, tu n\'as pas besoin de connaître le nom des affixes : lis les <b>lignes de statistiques</b> de l\'info-bulle (« +5 Vie max », « +15 % Réduction de recharge »…) et compare avec la liste de ton rôle. '
+           'Cette page répond à deux questions : <b>que peut-on trouver sur chaque pièce</b>, et <b>que chercher selon ton rôle</b>.</p>',
+           '<div class="note"><b>La règle des 3.</b> 1) <b>Survivre</b> : Vie max d\'abord, puis armure et robustesse. 2) <b>Ton moteur</b> : ce qui fait tes dégâts (puissance de sorts, dégâts de flèche, dégâts d\'attaque, critiques). 3) <b>Confort</b> : mana, recharge des sorts, vitesse. '
+           'Une pièce avec <b>2 lignes sur 3 qui te servent</b> est déjà une bonne pièce.</div>',
+           '<h2 id="roles">Que chercher selon ton rôle</h2><p class="small mut">Calculé à partir de tous les builds du site (niveaux Avancé et Optimisé) : les stats qui reviennent le plus souvent sur chaque pièce.</p>']
+    import collections
+    groups = ['Arme', 'Armure', 'Anneaux', 'Collier', 'Ceinture', 'Dos', 'Charme', 'Livre de sorts']
+    bycat = {}
+    for c in CATS:
+        for b in c['builds']: bycat.setdefault(c['id'], []).append(b)
+    rows = []
+    for c in CATS:
+        cnt = {g: collections.Counter() for g in groups}; nb = 0
+        for r in BUILDS:
+            if r['id'] in c['builds'] and r['stage'] in ('fin', 'optimise'):
+                nb += 1
+                for g in r['gear']:
+                    grp = SLOT_GROUP.get(g['slot'])
+                    if grp in cnt:
+                        for _, lab, _v in stat_lines(g): cnt[grp][re.sub(r'^Puissance des sorts .+$', "Puissance de l'école de ton build", lab)] += 1
+        if not nb: continue
+        rows.append(f'<h3>{c["icon"]} {esc(c["title"])}</h3><table class="t"><tr><th>Pièce</th><th>À chercher, par ordre de fréquence</th></tr>' + ''.join(
+            f'<tr><td><b>{g}</b></td><td class="small">' + (' · '.join(f'{i}. {esc(l)}' for i, (l, _) in enumerate(cnt[g].most_common(5), 1)) or '—') + '</td></tr>' for g in groups if cnt[g]) + '</table>')
+    out += rows
+    out.append('<h2 id="par-piece">Ce qu\'on peut trouver sur chaque type de pièce</h2><p class="small mut">Les plages sont celles des raretés <b>Rare</b> et <b>Mythique</b>. Un objet n\'a qu\'une partie de ces stats : tire-les au hasard (butin) ou relance-les à la table de reforge.</p><input class="filter" data-target="slotlist" placeholder="Filtrer (pièce ou stat)…"><div id="slotlist">')
+    by = collections.defaultdict(list)
+    for a in D['affixes']:
+        if a['kind'] != 'attribute': continue
+        for t in a['types']: by[t].append(a)
+    for t in SLOT_TYPE_FR:
+        L = by.get(t)
+        if not L: continue
+        trs = ''
+        seen = set()
+        for a in sorted(L, key=lambda a: stat_parse(a['text'].get('mythic') or a['text'].get('epic') or '')[0]):
+            tm = a['text'].get('mythic') or a['text'].get('epic'); tr = a['text'].get('rare') or a['text'].get('uncommon') or ''
+            lab, vm = stat_parse(tm); _, vr = stat_parse(tr)
+            if (lab, vm) in seen: continue
+            seen.add((lab, vm))
+            why = STAT_WHY.get(a['attr'], '')
+            trs += f'<tr data-q="{esc(SLOT_TYPE_FR[t] + " " + lab)}"><td><b>{esc(lab)}</b><div class="mut small">{esc(why)}</div></td><td class="small">{esc(vr)}</td><td class="small">{esc(vm)}</td></tr>'
+        out.append(f'<div class="card" data-q="{esc(SLOT_TYPE_FR[t])}"><h3>{SLOT_TYPE_FR[t]}</h3><table class="t small"><tr><th>Stat</th><th>Rare</th><th>Mythique</th></tr>{trs}</table></div>')
+    out.append('</div><div class="note small">Les <b>capacités</b> (« quand tu es attaqué, gagne Résistance… ») existent aussi sur beaucoup de pièces : elles se lisent en jaune dans l\'info-bulle et sont listées dans le <a href="affixes.html">catalogue des affixes</a>.</div>')
+    return ''.join(out)
+
+
 def page_gardiens():
     rows = []
     for b in sorted([b for b in D['bosses'] if b['tier'] == 'Gardien' and b.get('level') and b['hp']], key=lambda b: b['level']['start']):
@@ -694,7 +793,7 @@ def pct(x, nd=1): return fnum(x * 100, nd) + ' %'
 def main():
     shutil.rmtree(OUT, ignore_errors=True); os.makedirs(OUT, exist_ok=True); shutil.copy(SRC + '/_wiki.js', OUT + '/wiki.js'); shutil.copy(SRC + '/_tree.js', OUT + '/tree.js'); shutil.copy(SRC + '/_recipes.js', OUT + '/recipes.js'); shutil.copy(SRC + '/_quiz.js', OUT + '/quiz.js')
     pages = load_md()
-    DYN = {'gemmes': page_gemmes, 'affixes': page_affixes, 'talents': page_talents, 'sorts': page_sorts, 'boss': page_boss, 'objets-campagne': page_objets_campagne, 'quetes': page_quetes, 'mods': page_mods, 'ars': page_ars, 'enchants': page_enchants, 'recettes': page_recettes, 'quiz': page_quiz, 'structures': page_structures, 'reliques': page_reliques,
+    DYN = {'gemmes': page_gemmes, 'affixes': page_affixes, 'talents': page_talents, 'sorts': page_sorts, 'boss': page_boss, 'objets-campagne': page_objets_campagne, 'quetes': page_quetes, 'mods': page_mods, 'ars': page_ars, 'enchants': page_enchants, 'recettes': page_recettes, 'quiz': page_quiz, 'structures': page_structures, 'reliques': page_reliques, 'stats-par-piece': page_stats_par_piece,
            'origines': lambda: origin_cards('origins:origin'), 'classes': lambda: origin_cards('origins-classes:class'), 'benedictions': lambda: origin_cards('cisco_rpg_origins:divineblessings')}
     done = set()
     for slug, (meta, raw) in pages.items():

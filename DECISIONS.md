@@ -4,7 +4,7 @@ Décisions prises sans demander, suite à « tu prends les décisions seul ». C
 
 | # | Décision | Raison |
 |---|---|---|
-| 1 | Le calibrage en jeu n'est pas fait (aucune mesure disponible). Le moteur est validé contre les configs et le code, et le site le dit. Le protocole en 10 mesures reste dans `PLAN_AMELIORATION.md` §6. | Impossible sans le jeu ; ne pas inventer de fausses mesures. |
+| 1 | Calibrage en jeu **partiel** : 19 captures reçues le 3 octobre 2026, résultats dans `calibrage/RESULTATS.md`, test `tests/calibration.js`. Reste à fermer : vie max (41,4 contre 25,2 calculé, il manque l'arbre de talents et le compte d'aliments) et dégâts sur mannequin. | Ne pas inventer de mesures ; les écarts sont listés. |
 | 2 | La lune de sang, l'armée des morts et le saignement sont présentés comme **désactivés** (config), même si le livre de quêtes en parle. | La config du serveur fait foi. |
 | 3 | Les chiffres de l'accueil, de l'index des builds et du pied de page sont **générés** à chaque reconstruction (nombre de builds, pages, mods, date, version du pack). | Éviter les chiffres périmés. |
 | 4 | Noms affichés « Français (anglais) » : le français vient de `fr_fr.json` des mods quand il existe, sinon d'une table de traduction à la main (sorts, reliques). Les noms propres (boss, armes et armures de Cisco) restent tels qu'en jeu. Rien n'est renommé dans les données. | Reste cherchable avec les noms du jeu (le client est en anglais). |

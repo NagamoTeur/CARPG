@@ -21,6 +21,7 @@ for r in RARITY_ORDER:
 D['rarities'] = rar
 D['originRules'] = json.load(open('site/data/origin_rules.json'))
 D['caps'] = json.load(open('site/data/caps.json'))
+D['statWhy'] = json.load(open('translations/stat_why.json'))
 D['typeFr'] = TYPE_FR
 D['rarityOrder'] = RARITY_ORDER
 for a in D['affixes']:

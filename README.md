@@ -79,7 +79,7 @@ Les formules viennent du **code décompilé** des mods (Vineflower) et des **con
 ## Limites connues (à vérifier en jeu)
 
 - **Valeurs de base des armes/armures** : fiables pour les objets de Cisco, de KubeJS et de quelques mods ; pour les autres (Twilight Forest, Aether, Blue Skies, MCSA, Iron's…), saisis la valeur de l'info-bulle.
-- **Aucun calibrage en jeu n'a été fait** : voir `PLAN_AMELIORATION.md` §6 pour les 10 mesures à relever.
+- **Calibrage en jeu partiel** (3 octobre 2026) : armure, robustesse, vitesse, mana, recharge, sorts et plages d'affixes correspondent exactement ; la vie max et les dégâts sur mannequin attendent l'arbre de talents. Voir `calibrage/RESULTATS.md` et `node tests/calibration.js`.
 - Ars Nouveau (glyphes), la rotation réelle des sorts, les phases des boss, l'infernal, les dégâts des invocations ne sont **pas modélisés**.
 - Les durées/valeurs de certains sorts utilisent des formules multi-lignes non extraites (affichées « voir en jeu »).
 - Les **builds** sont des cibles théoriques (optimiseur). Les chiffres servent à comparer, pas à promettre.
