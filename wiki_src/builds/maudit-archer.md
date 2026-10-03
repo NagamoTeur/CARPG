@@ -20,6 +20,9 @@ desc: Guide du build Archer maudit (Distance) avec l'Anneau des Sept Malédictio
 | Bénédiction | **Skadi** | +25 % de projectiles après le dragon |
 
 ## Équipement : quoi chercher
+!!! warning "Armure limitée"
+    Le Wood Elf ne peut pas porter une pièce dont la valeur d'armure dépasse **3 / 8 / 6 / 3**, soit le niveau netherite : ce build utilise de la **netherite vanilla** avec de bons affixes (et l'anneau réduit encore l'armure de 30 %).
+
 **Dégâts de flèches**, **vitesse de tir**, critiques, esquive. L'armure sert peu.
 
 ## Talents

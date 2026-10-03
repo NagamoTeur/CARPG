@@ -19,8 +19,8 @@ Tu **ouvres** avec *Trou noir* pour regrouper les monstres, puis *Étoiles filan
 | Classe | **Cleric** | Potions et enchantements |
 | Bénédiction | **Râ** | +11 dégâts de feu au soleil ; +10 après le dragon |
 
-!!! warning "Fragile"
-    Armure limitée à la cotte de mailles et aucune viande : prévois des repas végétariens.
+!!! warning "Armure limitée à la cotte de mailles"
+    Le Haut-Elfe ne peut porter aucune pièce dont la valeur d'armure dépasse **2 / 5 / 4 / 1**. Ce build utilise donc de la **cotte de mailles vanilla** avec de bons affixes, et ne mange pas de viande : prévois des repas végétariens.
 
 ## Équipement : quoi chercher
 **Puissance Ender**, **mana**, **recharge**. Armure légère. Ajoute des PV : l'origine est fragile.

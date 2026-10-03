@@ -17,6 +17,9 @@ desc: Guide du build Archer elfe des bois
 | Bénédiction | **Skadi** | +25 % de projectiles après le dragon |
 
 ## Équipement : quoi chercher
+!!! warning "Armure limitée"
+    Le Wood Elf ne peut pas porter une pièce dont la valeur d'armure dépasse **3 / 8 / 6 / 3** (casque / plastron / jambières / bottes), soit le niveau netherite. Les armures de Cisco sont trop fortes pour lui : ce build utilise de la **netherite vanilla** avec de bons affixes.
+
 Même équipement que l'[archer Venthari](archer.html) : vitesse de tension, dégâts des flèches, critiques. Prends de la **vie** pour compenser l'absence de bonus de PV.
 
 ## Talents

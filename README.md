@@ -7,9 +7,9 @@ Ouvre `site/index.html` dans un navigateur, ou lance `./serve.sh` (http://localh
 site/
   index.html          page d'accueil
   pob/                planificateur de build (style Path of Building)
-  wiki/               wiki non technique (37 pages) + recherche
+  wiki/               wiki non technique + guides de builds + recettes, structures, reliques, recherche (pages générées : voir la page d'accueil)
   data/               données normalisées lues dans le modpack (JSON + data.js)
-  assets/             icônes de l'arbre de talents (extraites du mod Passive Skill Tree)
+  assets/             icônes de l'arbre de talents et d'objets/sorts (extraites des jars du pack, usage privé)
   css/
 ```
 
@@ -26,7 +26,9 @@ docker compose up -d --build   # http://localhost:8088
 | Liste des mods (gameplay / autres) | `site/wiki/mods.html` (+ `out/MODS.md`, `out/mods_classified.json`) |
 | Planificateur de build | `site/pob/index.html` |
 | Wiki non technique | `site/wiki/index.html` |
-| Guides de 12 builds (milieu / fin de jeu) | `site/wiki/builds/` + onglet « Builds prêts » du planificateur |
+| Guides de builds rangés par catégorie, 4 niveaux chacun | `site/wiki/builds/` + « Mode simple » et « Builds prêts » du planificateur |
+| Parcours débutant, quiz de build | `site/wiki/debuter.html`, `site/wiki/quiz.html` |
+| Recettes, structures, reliques | `site/wiki/recettes.html`, `structures.html`, `reliques.html` |
 | Guide des boss + simulateur | `site/wiki/boss.html` + onglet « Simulateur de boss » |
 
 ## Régénérer à partir du dossier du modpack
@@ -35,15 +37,17 @@ Le pipeline lit `../minecraft/` (mods, config, kubejs, datapacks Paxi) et recré
 
 ```bash
 ./run_all.sh                         # extraction -> données -> wiki -> vérif des liens
-TREE=auto node sim/gen_builds.js     # (long) recalcule les 104 builds ; options : STAGES=debutant,optimise ARCHS=new,archer
+TREE=auto node sim/gen_builds.js     # (long) recalcule les builds ; options : STAGES=debutant,optimise ARCHS=new,leg,archer
+node sim/realistic.js && python3 split_builds.py   # variante « loot médian » + découpe de l'index léger du planificateur
 python3 build_wiki.py                # régénère le wiki avec les nouveaux builds
+python3 tests/check_claims.py        # vérifie que les chiffres du wiki correspondent aux configs du serveur
 ```
 
 Prérequis : Python 3.11+ (`markdown`), Node.js, et un Java 17 (déjà fourni par Prism Launcher) pour décompiler avec `tools/vineflower.jar`.
 
 | Script | Rôle |
 |---|---|
-| `index_mods.py`, `classify.py` | Inventaire des 288 mods et classement |
+| `index_mods.py`, `classify.py` | Inventaire des mods et classement |
 | `extract.py`, `merge.py` | Extraction des données JSON des jars, fusion avec les datapacks Paxi (les datapacks du pack surchargent les mods) |
 | `build_skilltree.py` | Arbre de talents (588 nœuds), bonus structurés (conditions, sockets, gemmes…) |
 | `build_gear.py` | Gemmes + affixes (Apotheosis, Apotheotic Additions, Apothic Curios, Iron's, Passive Skill Tree) |
@@ -53,7 +57,11 @@ Prérequis : Python 3.11+ (`markdown`), Node.js, et un Java 17 (déjà fourni pa
 | `build_ars.py` | Glyphes d'Ars Nouveau (coûts de la config) |
 | `build_items2.py` | Armures/armes d'autres mods (Cataclysm, Upgraded Netherite, Dreadsteel, Immersive Armors) |
 | `build_items.py` | Armures / armes (KubeJS + code de `cisco_mod`) |
-| `build_bosses.py` | Boss : stats de base (code), multiplicateurs/plafonds (config), niveaux (AutoLeveling) |
+| `build_bosses.py` | Boss : stats de base (code), multiplicateurs/plafonds (config), niveaux (AutoLeveling, liste noire comprise) |
+| `build_origin_rules.py` | Restrictions d'équipement des origines (bouclier, armure, arc) lues dans les pouvoirs des datapacks |
+| `build_caps.py` | Plafonds d'attributs lus dans le code des mods et `attributefix.json` |
+| `build_relics.py`, `build_recipes.py`, `build_structures.py`, `build_icons.py` | Reliques (config + code), recettes (jars, datapacks, `Cisco.zs`), structures (datapacks), icônes (jars) |
+| `tests/check_claims.py`, `sim/check_rules.js` | Tests : le wiki et les builds respectent configs et restrictions |
 | `sim/` | Optimiseur de builds (même moteur que le planificateur) |
 | `build_wiki.py` + `wiki_src/*.md` | Génération du wiki ; **les textes sont dans `wiki_src/`** |
 
@@ -70,16 +78,17 @@ Les formules viennent du **code décompilé** des mods (Vineflower) et des **con
 
 ## Limites connues (à vérifier en jeu)
 
-- **Valeurs de base des armes/armures** : fiables pour les objets de Cisco, de KubeJS (166 armures, 31 armes) ; pour les autres mods, saisis la valeur de l'info-bulle.
+- **Valeurs de base des armes/armures** : fiables pour les objets de Cisco, de KubeJS et de quelques mods ; pour les autres (Twilight Forest, Aether, Blue Skies, MCSA, Iron's…), saisis la valeur de l'info-bulle.
+- **Aucun calibrage en jeu n'a été fait** : voir `PLAN_AMELIORATION.md` §6 pour les 10 mesures à relever.
 - Ars Nouveau (glyphes), la rotation réelle des sorts, les phases des boss, l'infernal, les dégâts des invocations ne sont **pas modélisés**.
 - Les durées/valeurs de certains sorts utilisent des formules multi-lignes non extraites (affichées « voir en jeu »).
 - Les **builds** sont des cibles théoriques (optimiseur). Les chiffres servent à comparer, pas à promettre.
-- Les descriptions de pouvoirs d'origines sont traduites ; les **noms** (objets, sorts, talents) restent en anglais comme en jeu.
+- Les descriptions sont traduites ; les **noms** s'affichent « Français (anglais) » quand une traduction existe (sorts, objets avec fr_fr, reliques).
 
 ## Outils installés pour l'analyse
 
 - `tools/vineflower.jar` (décompilateur) lancé avec le Java 17 de Prism Launcher.
 - `decomp/` : sources décompilées (Apotheosis, Passive Skill Tree, Iron's, AutoLeveling, Cataclysm, Cisco…). Non redistribuables : ne pas publier.
 
-Les icônes de `site/assets/` proviennent du mod *Passive Skill Tree* (droits de ses auteurs) ; si tu publies le site, remplace-les ou demande l'accord.
+Les icônes de `site/assets/` proviennent des jars du pack (droits de leurs auteurs) ; le site est marqué `noindex` et réservé à un usage privé entre amis : ne le publie pas tel quel.
 # CARPG

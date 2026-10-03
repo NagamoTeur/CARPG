@@ -224,6 +224,7 @@ const prevB = fs.existsSync(__dirname + '/../site/data/builds.js') ? JSON.parse(
 const prevR = fs.existsSync(__dirname + '/../out/builds_report.json') ? JSON.parse(fs.readFileSync(__dirname + '/../out/builds_report.json', 'utf8')) : [];
 const out = [], report = [];
 for (const a of ARCH) {
+  if (((D.originRules || {})[a.origin] || {}).noShield) a.shield = false; // restriction d'origine : pas de bouclier
   if (ONLY_ARCH && !ONLY_ARCH.includes(a.id) && !(ONLY_ARCH.includes('new') && a.isNew) && !(ONLY_ARCH.includes('leg') && a.id.startsWith('leg-'))) continue;
   for (const st of STAGES) {
     if (ONLY_STAGES && !ONLY_STAGES.includes(st.key)) continue;
@@ -232,7 +233,11 @@ for (const a of ARCH) {
     const gear = { main: Object.assign({ rarity: st.rarity }, w) };
     if (a.shield) gear.off = Object.assign({ rarity: st.rarity }, SHIELD);
     if (a.offhand) gear.off = Object.assign({ rarity: st.rarity }, PS('sword', a.offhand));
-    const arm = armorSet(st.ai < 0 ? 'adventurer' : a.armor[st.ai]);
+    const rl = (D.originRules || {})[a.origin] || {};
+    if (rl.noShield) a.shield = false;
+    // origines à armure limitée : armure vanilla dont chaque pièce respecte le plafond (mailles ou netherite) ; les affixes font le reste
+    const vanilla = rl.armorMax ? (rl.armorMax.chest >= 8 ? 'netherite' : 'mailles') : null;
+    const arm = vanilla ? { head: P('helmet', 'Casque en ' + vanilla), chest: P('chestplate', 'Plastron en ' + vanilla), legs: P('leggings', 'Jambières en ' + vanilla), boots: P('boots', 'Bottes en ' + vanilla) } : armorSet(st.ai < 0 ? 'adventurer' : a.armor[st.ai]);
     for (const k of Object.keys(arm)) gear[k] = Object.assign({ rarity: st.rarity }, arm[k]);
     const cg = {}; [...st.curios, ...a.extra].forEach(sl => cg[sl] = { type: CTYPE[sl], name: NAME[sl] });
     for (const k of Object.keys(cg)) gear[k] = Object.assign({ rarity: st.rarity, gemRarity: st.rarity }, cg[k]);

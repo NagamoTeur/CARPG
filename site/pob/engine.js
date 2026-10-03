@@ -15,6 +15,7 @@
     'apotheosis:cold_damage': [0, 1000], 'apotheosis:fire_damage': [0, 1000], 'apotheosis:armor_pierce': [0, 1000],
   };
   ['fire', 'ice', 'lightning', 'holy', 'ender', 'blood', 'evocation', 'nature', 'eldritch'].forEach(s => CAP['irons_spellbooks:' + s + '_spell_power'] = [0, 5000]);
+  if (D.caps) Object.assign(CAP, D.caps); // plafonds lus à la source (build_caps.py : code des mods + attributefix.json du serveur)
 
   const SLOT_DEFS = [
     { id: 'main', name: 'Arme principale', types: ['sword', 'heavy_weapon', 'trident', 'bow', 'crossbow', 'pickaxe', 'shovel'], weapon: true },
@@ -256,6 +257,18 @@
     return { lvl, sp: sp0, mana, cd, cast, info, powerRaw: epm };
   }
 
+  /* restrictions d'équipement de l'origine (lues dans les pouvoirs des datapacks) : liste d'avertissements */
+  function restrictions(S) {
+    const rules = (D.originRules || {})[S.origin] || {}, g = S.gear || {}, w = [];
+    if (rules.noShield && g.off && g.off.type === 'shield') w.push('Ton origine ne permet pas de tenir un bouclier.');
+    if (rules.armorMax) for (const [slot, key, nm] of [['head', 'head', 'Casque'], ['chest', 'chest', 'Plastron'], ['legs', 'legs', 'Jambières'], ['boots', 'feet', 'Bottes']]) {
+      const it = g[slot], a = it && it.base ? +it.base.armor || 0 : 0;
+      if (it && a > rules.armorMax[key]) w.push(nm + ' : armure ' + a + ' alors que ton origine interdit plus de ' + rules.armorMax[key] + ' (cotte de mailles = limite).');
+    }
+    if (rules.noBow && g.main && ['bow', 'crossbow'].includes(g.main.type)) w.push('Ton origine ne permet pas d\'utiliser un arc ni une arbalète.');
+    return w;
+  }
+
   function compute(S) {
     const pass1 = collect(S, null); const A1 = evalAttrs(pass1.mods);
     const { mods, texts } = collect(S, A1);
@@ -284,7 +297,8 @@
     R.fire = g('apotheosis:fire_damage'); R.cold = g('apotheosis:cold_damage');
     R.critE = critExpect(R.critC, R.critD);
     R.hit = (R.atk + R.fire + R.cold) * (1 + dmgPct);
-    R.dps = R.hit * R.critE * R.spd * 0.9; // 0.9 ≈ rendement moyen d'attaque rechargée (placeholder)
+    const up = (S.assume || {}).uptime ?? 0.9; R.uptime = up; // « efficacité d'attaque » : part du temps passée à frapper à pleine charge (hypothèse réglable, 90 % par défaut)
+    R.dps = R.hit * R.critE * R.spd * up;
     R.lifesteal = g('apotheosis:life_steal');
     // armes à distance : dégâts de flèche = base de l'arc × attribut « dégâts des flèches » (Apotheosis)
     const mt = w && (w.type || 'sword');
@@ -318,23 +332,29 @@
 
   /* ---- simulateur de boss : niveau (AutoLeveling), stats, plafond de dégâts, temps de kill, survie ---- */
   const AL = { hp: 0.09, dmg: 0.14, armor: 0.08 }; // autoleveling-common.toml
-  function bossStats(b, dist, wl, which) {
-    const lv = b.level || { start: 1, lpd: 0.008, rand: 0 };
-    const base = lv.start - 1 + Math.floor(lv.lpd * dist) + (wl || 0);
+  const MAJ = { normal: [0, 0], expert: [0.15, 0.10], master: [0.30, 0.20] }; // majruszsdifficulty.json : mobs_spawn_stronger
+  function bossStats(b, dist, wl, which, as) {
+    as = as || {};
+    const lv = b.fixed ? { start: 1, lpd: 0, rand: 0 } : (b.level || { start: 1, lpd: 0.008, rand: 0 });
+    const base = b.fixed ? 0 : lv.start - 1 + Math.floor(lv.lpd * dist) + (wl || 0); // boss exclus de l'AutoLeveling : stats de base
     const L = base + (which === 'max' ? lv.rand : which === 'min' ? 0 : lv.rand / 2);
-    return { L: Math.round(L), hp: b.hp * b.hpm * (1 + AL.hp * L), dmg: b.dmg * b.dmgm * (1 + AL.dmg * L), armor: b.armor * (1 + AL.armor * L), tough: b.tough || 0, cap: b.cap || 0 };
+    const mj = MAJ[as.stage || 'normal'] || MAJ.normal;
+    const pb = b.id === 'minecraft:wither' ? (as.pbDiff || 0) : 0; // Progressive Bosses : +720 PV à la difficulté 8 (linéaire), réduction des coups de mêlée
+    return { L: Math.round(L), hp: (b.hp * b.hpm + 720 * pb / 8) * (1 + AL.hp * L) * (1 + mj[0]), dmg: b.dmg * b.dmgm * (1 + AL.dmg * L) * (1 + mj[1]), armor: b.armor * (1 + AL.armor * L), tough: b.tough || 0, cap: b.cap || 0,
+      meleeRed: pb ? 0.36 * pb / 8 : 0 };
   }
   const armorRed = (armor, tough, hit) => Math.min(20, Math.max(armor / 5, armor - hit / (2 + tough / 4))) / 25;
   function bossSim(R, S, b, dist, wl, which) {
-    const st = bossStats(b, dist, wl, which);
+    const as = Object.assign({}, S.assume || {}); if (!as.stage) as.stage = (S.flags || {}).dragon ? 'master' : 'expert';
+    const st = bossStats(b, dist, wl, which, as);
     const g = id => R.at[id] ?? 0;
     const eff = Math.max(0, st.armor * (1 - Math.min(1, g('apotheosis:armor_shred'))) - g('apotheosis:armor_pierce'));
     const raw = R.ranged ? R.arrowHit : R.hit; const cm = R.cursed ? 0.5 : 1;
     const red = armorRed(eff, st.tough, raw);
-    let perHit = raw * (1 - red) * R.critE, capped = false;
+    let perHit = raw * (1 - red) * R.critE * (1 - (st.meleeRed || 0)), capped = false;
     if (st.cap && perHit > st.cap) { perHit = st.cap; capped = true; }
     if (!R.ranged) perHit += (R.flatTrue || 0) + (R.truePct || 0) * st.hp; // dégâts réels : ignorent l'armure (le plafond Cataclysm n'est pas appliqué : hypothèse)
-    const hps = R.ranged ? R.drawSpeed * (((S.gear || {}).main || {}).type === 'crossbow' ? 0.7 : 1) : R.spd * 0.9;
+    const hps = R.ranged ? R.drawSpeed * (((S.gear || {}).main || {}).type === 'crossbow' ? 0.7 : 1) : R.spd * (R.uptime ?? 0.9);
     const dps = raw > 1 ? perHit * hps : 0;
     // sorts choisis (dégâts magiques : ignorent l'armure)
     let spellBest = null;
@@ -357,7 +377,7 @@
     return Object.assign(st, { raw, red, perHit, capped, dps, spellBest, best, ttk, bossHit, redP, takes, hitsToDie, dodge: R.dodgeTotal, eff });
   }
 
-  window.ENG = { compute, collect, evalAttrs, spellCalc, SLOT_DEFS, extraSockets, treeSocketInfo, gemPowerMult, eqMatch, assume, critExpect, evaChance, softCap, rollVal, norm, CAP, bossSim, bossStats };
+  window.ENG = { restrictions, compute, collect, evalAttrs, spellCalc, SLOT_DEFS, extraSockets, treeSocketInfo, gemPowerMult, eqMatch, assume, critExpect, evaChance, softCap, rollVal, norm, CAP, bossSim, bossStats };
 
   /* index */
   const TREE = { byId: {} }; D.skilltree.nodes.forEach(n => TREE.byId[n.id] = n);

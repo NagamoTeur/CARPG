@@ -221,7 +221,7 @@ add(id='breezebreaker', title="Danseur du vent (Breezebreaker)", weapon='Breezeb
     pitch="saut énorme et aucune chute, mais 2,3 fois plus de dégâts subis. Le vent comme arme.",
     abil=[('Passif – Agile', "**Saut énorme** et immunité à la chute, mais **×2,3 de dégâts subis** des autres sources."), ('Passif – Benevolent Soul', "Toutes les 15 compétences : vitesse et **recharge divisée par deux** pendant 8 s."), ('Compétences', "Galestorm, Galestorm double, tornade, ruée du vent et roue de vent verticale.")],
     who="Joueurs **experts** qui ne se font jamais toucher.", style="Tu sautes, tu lances des lames de vent, tu te déplaces sans cesse. Un seul coup mal esquivé fait très mal.",
-    trio="**Élytrien** : ailes ; **Voleur** ; **Zéphyr** : vol.", gear="**Esquive**, **PV**, **critiques**, **vitesse**.", talents="Voie du **Chasseur**.",
+    trio="**Élytrien** : ailes ; **Voleur** ; **Zéphyr** : vol.", gear="**Esquive**, **PV**, **critiques**, **vitesse**. **Armure limitée** : l'Élytrien ne peut porter aucune pièce au-dessus de 2 / 5 / 4 / 1 d'armure (cotte de mailles) ; ce build utilise donc de la cotte de mailles vanilla avec de bons affixes.", talents="Voie du **Chasseur**.",
     boss="- **Boss de mêlée** : reste en l'air.\n- **Boss à zone** : ne reste jamais.", sw="| Mobilité et compétences multiples | ×2,3 dégâts subis |", err="- **Rester au sol.**", var="Moins risqué : [Lancier des vents](leg-skysplitter.html).")
 
 add(id='aquaflora', title="Fleur des eaux (Aquaflora)", weapon='Aquaflora', kind='épée', stats='13 (vitesse 1,6)', obtain="Arme **Celestisynth** (succès « Obtain an Aquaflora »).",

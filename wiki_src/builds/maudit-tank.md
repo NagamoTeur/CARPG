@@ -3,7 +3,7 @@ title: Le Maudit (Tank)
 desc: Guide du build Le Maudit (Tank) avec l'Anneau des Sept Malédictions
 ---
 
-> **En une phrase :** le moyen le plus sûr de porter l'anneau : énormes PV et armure de Shulk pour encaisser les dégâts doublés, bouclier pour parer le reste.
+> **En une phrase :** le moyen le plus sûr de porter l'anneau : énormes PV et armure de Shulk pour encaisser les dégâts doublés, esquive et soins pour le reste (le Shulk ne peut pas tenir de bouclier).
 
 !!! danger "Build avec l'Anneau des Sept Malédictions"
     Ce build suppose que tu portes l'**[Anneau des Sept Malédictions](../ring-sept-maledictions.html)** : dégâts subis **×2**, armure **−30 %**, dégâts infligés **−50 %**, **+400 % d'XP**. Les chiffres plus bas **incluent** déjà ces effets. L'anneau ne peut plus être retiré une fois équipé.
@@ -20,7 +20,7 @@ Joueurs qui veulent **tester l'anneau sans mourir toutes les 5 minutes**, ou le 
 | Bénédiction | **Athéna** | +12 armure ; −25 % de dégâts après le dragon (annule une partie du ×2) |
 
 ## Équipement : quoi chercher
-**PV et bouclier d'abord**, puis armure/robustesse. Un **Bouclier infernal** (éteint le feu éternel, brûle les attaquants) est idéal. Prends l'**Emblème du Berserker** si tu acceptes de jouer à PV bas.
+**PV d'abord**, puis armure/robustesse et esquive. **Pas de bouclier** : le Shulk ne peut pas en tenir. Prends l'**Emblème du Berserker** si tu acceptes de jouer à PV bas.
 
 ## Talents
 Voie défense (Vie, Armure, Blocage) et dégâts de ta classe de départ.

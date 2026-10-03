@@ -28,7 +28,7 @@ Tu sautes, tu lances des lames de vent, tu te déplaces sans cesse. Un seul coup
 **Élytrien** : ailes ; **Voleur** ; **Zéphyr** : vol.
 
 ## Équipement : quoi chercher
-**Esquive**, **PV**, **critiques**, **vitesse**.
+**Esquive**, **PV**, **critiques**, **vitesse**. **Armure limitée** : l'Élytrien ne peut porter aucune pièce au-dessus de 2 / 5 / 4 / 1 d'armure (cotte de mailles) ; ce build utilise donc de la cotte de mailles vanilla avec de bons affixes.
 
 ## Talents
 Voie du **Chasseur**.

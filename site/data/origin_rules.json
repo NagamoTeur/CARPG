@@ -1,0 +1,41 @@
+{
+"arkwys:piglinbrute": {
+"noShield": true
+},
+"arkwys:woodelf": {
+"armorMax": {
+"head": 3,
+"chest": 8,
+"legs": 6,
+"feet": 3
+}
+},
+"cisco_rpg_origins:frijani_drengr": {
+"noShield": true
+},
+"origins:elytrian": {
+"armorMax": {
+"head": 2,
+"chest": 5,
+"legs": 4,
+"feet": 1
+}
+},
+"origins:shulk": {
+"noShield": true
+},
+"strictly:high_elf": {
+"armorMax": {
+"head": 2,
+"chest": 5,
+"legs": 4,
+"feet": 1
+}
+},
+"strictly:knight": {
+"noBow": true
+},
+"strictly:otter": {
+"noShield": true
+}
+}

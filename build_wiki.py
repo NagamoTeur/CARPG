@@ -241,13 +241,13 @@ def page_sorts():
 
 def page_boss():
     out = []
-    for tier in ['Palier 1', 'Gardien', 'Palier 2', 'Palier 3', 'Histoire']:
+    for tier in ['Palier 1', 'Gardien', 'Palier 2', 'Palier 3', 'Histoire', 'Twilight Forest', 'Aether', 'Blue Skies', 'Sept péchés']:
         bl = [b for b in D['bosses'] if b['tier'] == tier]
         if not bl: continue
         out.append(f'<h2>{tier}</h2>')
         for b in sorted(bl, key=lambda b: (b['level'] or {'start': 0})['start']):
             lv = b['level']
-            lvt = f"niveau {lv['start']} à {lv['start'] + lv['rand']} (+{lv['lpd']}/bloc)" if lv else '—'
+            lvt = f"niveau {lv['start']} à {lv['start'] + lv['rand']} (+{lv['lpd']}/bloc)" if lv else ("stats de base (exclu de l'AutoLeveling)" if b.get('fixed') else '—')
             st = []
             if b['hp']: st.append(f"PV de base {fnum(b['hp'])}" + (f" ×{fnum(b['hpm'])}" if b['hpm'] != 1 else ''))
             if b['dmg']: st.append(f"dégâts {fnum(b['dmg'])}" + (f" ×{fnum(b['dmgm'])}" if b['dmgm'] != 1 else ''))
@@ -468,8 +468,13 @@ def progression_table(rs):
     out = ['<h2 id="progression">Ce que chaque niveau t\'apporte</h2><table class="t"><tr><th></th>' + ''.join(f'<th>{STAGE_LABELS[k]}</th>' for k, _ in st) + '</tr>']
     for lab, f in rows:
         out.append(f'<tr><td><b>{lab}</b></td>' + ''.join(f'<td>{f(b["summary"])}</td>' for _, b in st) + '</tr>')
+    real = ''
+    if all(b.get('real') for _, b in st):
+        rr = [('Vie max', lambda s_: fnum(s_['hp'], 0)), ('Armure', lambda s_: fnum(s_['armor'], 0)), ('Dégâts par flèche' if ranged else 'Dégâts par coup', lambda s_: fnum(s_['arrow'] if ranged else s_['hit'], 0)), ('DPS estimé', lambda s_: fnum(s_['dps'], 0))]
+        real = ('<h3 id="loot-median">Avec un loot médian (plus proche de la réalité)</h3><p class="small mut">Mêmes équipements, mais chaque affixe à 50 % de sa plage au plus et les gemmes d\'une rareté en dessous.</p><table class="t"><tr><th></th>'
+                + ''.join(f'<th>{STAGE_LABELS[k]}</th>' for k, _ in st) + '</tr>' + ''.join('<tr><td><b>' + lab + '</b></td>' + ''.join(f'<td>{f(b["real"])} <span class="mut small">({f(b["summary"])})</span></td>' for _, b in st) + '</tr>' for lab, f in rr) + '</table><p class="small mut">Entre parenthèses : valeur du build « parfait ».</p>')
     big = [b for _, b in st if b['summary'].get('dps', 0) > 100000]
-    out.append('</table>' + (f'<div class="warn small">⚠ Niveau{"x" if len(big) > 1 else ""} {", ".join(b["label"] for b in big)} : les dégâts calculés dépassent 100 000 par seconde. C\'est un <b>maximum théorique</b> (loot parfait, gemmes parfaites, tous les cumuls). Regarde plutôt la colonne « Avancé » comme repère réaliste.</div>' if big else '') + '<p class="small mut">Les chiffres augmentent surtout grâce à la rareté de l\'équipement, au nombre d\'affixes/gemmes et aux points de talent. Ils servent à comparer les niveaux entre eux.</p>')
+    out.append('</table>' + real + (f'<div class="warn small">⚠ Niveau{"x" if len(big) > 1 else ""} {", ".join(b["label"] for b in big)} : les dégâts calculés dépassent 100 000 par seconde. C\'est un <b>maximum théorique</b> (loot parfait, gemmes parfaites, tous les cumuls). Regarde plutôt la colonne « Avancé » comme repère réaliste.</div>' if big else '') + '<p class="small mut">Les chiffres augmentent surtout grâce à la rareté de l\'équipement, au nombre d\'affixes/gemmes et aux points de talent. Ils servent à comparer les niveaux entre eux.</p>')
     return ''.join(out)
 
 
@@ -612,6 +617,31 @@ def page_reliques():
     return ''.join(out)
 
 
+def apo_cfg():
+    t = open('/home/nagamo/Documents/Dev/Minecraft/minecraft/config/apotheosis/adventure.cfg', encoding='utf8').read()
+    def block(name):
+        m = re.search(r'S:"' + re.escape(name) + r'" <\s*(.*?)\s*>', t, re.S)
+        return [l.strip().split('|') for l in m.group(1).splitlines() if l.strip()] if m else []
+    num = lambda name: float(re.search(r'S:"' + re.escape(name) + r'"=([0-9.]+)', t).group(1))
+    return {'conv': block('Affix Convert Rarities'), 'gem': block('Gem Dimensional Rarities'), 'affix': num('Random Affix Chance'), 'gemdrop': num('Gem Drop Chance'), 'gemboss': num('Gem Boss Bonus')}
+
+
+def page_niveaux_extra():
+    """Plausibilité des niveaux : quelles raretés on peut réellement trouver où (config d'Apotheosis), et ce que ça veut dire pour chaque niveau de build."""
+    c = apo_cfg(); DIM = {'overworld': 'Overworld', 'the_nether': 'Nether', 'the_end': 'End', 'twilightforest:twilight_forest': 'Twilight Forest'}
+    R = {r: RARITY_FR[r] for r in RARITY_FR}
+    rows = ''.join(f"<tr><td><b>{DIM.get(x[0], x[0])}</b></td><td>{R.get(x[1], x[1])} → {R.get(x[2], x[2])}</td></tr>" for x in c['conv'])
+    g = ''.join(f"<tr><td><b>{DIM.get(x[0], x[0])}</b></td><td>{R.get(x[1], x[1])} → {R.get(x[2], x[2])}</td></tr>" for x in c['gem'])
+    return (f'<h2 id="plausibilite">Est-ce réaliste ? Ce que la configuration permet de trouver</h2>'
+            f'<p>Les builds « Optimisé » supposent un équipement quasi parfait. Voici ce que la configuration d\'Apotheosis autorise réellement :</p>'
+            f'<table class="t"><tr><th>Dimension</th><th>Raretés des objets trouvés sur les monstres et dans les coffres</th></tr>{rows}</table>'
+            f'<table class="t"><tr><th>Dimension</th><th>Raretés des gemmes</th></tr>{g}</table>'
+            f'<ul><li>Chaque arme ou armure du butin a <b>35 %</b> de chances d\'être convertie en objet à affixes (règle « Affix Convert Loot Rules »).</li>'
+            f'<li>Chance de gemme sur un monstre : <b>{fnum(c["gemdrop"] * 100, 1)} %</b> (+{fnum(c["gemboss"] * 100, 0)} % sur un boss).</li>'
+            f'<li>Chance d\'affixe aléatoire : <b>{fnum(c["affix"] * 100, 1)} %</b>.</li></ul>'
+            '<div class="note">Conséquence : l\'<b>Épique</b> est atteignable dès le Nether, le <b>Mythique</b> vient surtout de l\'End (donc après le dragon). Le niveau <b>Avancé</b> n\'a donc de sens qu\'après l\'Ender Dragon, et les objets <b>Anciens</b> ne tombent jamais au hasard. Les affixes d\'un même objet sont tirés au hasard dans leur plage : compte plutôt sur la <b>médiane</b> (colonne « loot médian » dans la fiche de chaque build).</div>')
+
+
 def page_gardiens():
     rows = []
     for b in sorted([b for b in D['bosses'] if b['tier'] == 'Gardien' and b.get('level') and b['hp']], key=lambda b: b['level']['start']):
@@ -669,6 +699,7 @@ def main():
     for slug, (meta, raw) in pages.items():
         title = meta.get('title') or TITLES.get(slug) or slug
         body = md(subst(raw))
+        if slug == 'builds/niveaux': body += page_niveaux_extra()
         if slug == 'debuter': body = body.replace('<!--GARDIENS-->', page_gardiens())
         if slug in DYN: body += DYN[slug]()
         elif slug == 'builds/index': body += builds_index()

@@ -56,10 +56,15 @@
   }
 
 
+  /* état d'un build : téléchargé à la demande (data/builds/<archétype>.json) */
+  const STC = {};
+  const stateOf = b => { const a = b.arch || b.id; return STC[a] ? Promise.resolve(STC[a][b.level]) : fetch('../data/builds/' + a + '.json').then(r => r.json()).then(d => { STC[a] = d; return d[b.level]; }); };
+  const loadState = (b, st) => { S = Object.assign(DEFAULT(), JSON.parse(JSON.stringify(st)), { name: b.title }); $('#bname').value = S.name; };
+
   /* ---------- Mode simple : choisir un build, lire l'essentiel, savoir quoi améliorer ---------- */
   let sm = { arch: '', level: 'debutant' };
   function renderSimple(m) {
-    const all = window.BUILDS || [], CT = (window.BUILD_CATS || { cats: [] }).cats;
+    const all = window.BUILDS_IDX || [], CT = (window.BUILD_CATS || { cats: [] }).cats;
     m.append(el('div', { class: 'note' }, 'Nouveau ? Choisis un build ci-dessous : l\'outil charge un personnage complet, affiche l\'essentiel et te dit quoi chercher en priorité. Tu peux ensuite passer en mode avancé pour tout modifier. Pas sûr de ton choix ? Fais le ', el('a', { href: '../wiki/quiz.html' }, 'quiz « Quel build pour moi ? »'), '.'));
     const archs = [...new Set(all.map(b => b.arch || b.id))];
     const label = a => (all.find(b => (b.arch || b.id) === a) || { title: a }).title.replace(/ — .*/, '');
@@ -69,13 +74,13 @@
     m.append(el('div', { class: 'card' }, el('h3', {}, '1. Ton build'), el('div', { class: 'row' }, sa, sl)));
     const box = el('div', {}); m.append(box);
     function pickEntry(a, lv) { return all.find(b => (b.arch || b.id) === a && b.level === lv) || LEVELS.map(l => all.find(b => (b.arch || b.id) === a && b.level === l[0])).find(Boolean); }
-    function load() {
+    async function load() {
       box.innerHTML = '';
       if (!sm.arch) { box.append(el('p', { class: 'mut' }, 'Aucun build choisi : l\'outil affiche le personnage vide. Choisis-en un pour commencer.')); return; }
       const b = pickEntry(sm.arch, sm.level); if (!b) return;
       sm.level = b.level;
       const key = sm.arch + '|' + b.level;
-      if (sm.key !== key) { sm.key = key; S = Object.assign(DEFAULT(), JSON.parse(JSON.stringify(b.state)), { name: b.title }); $('#bname').value = S.name; }
+      if (sm.key !== key) { sm.key = key; loadState(b, await stateOf(b)); }
       recalc();
       const card = (k, v, sub) => el('div', { class: 'card', style: 'flex:1;min-width:140px;text-align:center' }, el('div', { class: 'mut small' }, k), el('div', { style: 'font-size:1.6rem;font-weight:700' }, v), sub ? el('div', { class: 'mut small' }, sub) : null);
       const red = R.armorReduction(S.hit || 30);
@@ -92,7 +97,7 @@
         el('table', { class: 't' }, el('tr', {}, el('th', {}, 'Emplacement'), el('th', {}, 'Objet'), el('th', {}, 'Affixes visés')), ...rows)));
       // prochain niveau
       const li = LEVELS.findIndex(l => l[0] === b.level), nx = LEVELS.slice(li + 1).map(l => all.find(x => (x.arch || x.id) === sm.arch && x.level === l[0])).find(Boolean);
-      if (nx) { const R2 = ENG.compute(nx.state), d = (a, c) => (c >= a ? '+' : '') + fnum(c - a, 0);
+      if (nx) { const R2 = ENG.compute(await stateOf(nx)), d = (a, c) => (c >= a ? '+' : '') + fnum(c - a, 0);
         box.append(el('div', { class: 'card' }, el('h3', {}, '4. Prochain palier : ' + (LEVELS.find(l => l[0] === nx.level) || [0, nx.level])[1]),
           el('p', { class: 'small' }, 'Si tu atteins ce palier : ', el('b', {}, d(R.hp, R2.hp) + ' PV'), ', ', el('b', {}, d(R.armor, R2.armor) + ' armure'), ', ', el('b', {}, d(R.ranged ? R.arrowHit : R.hit, R2.ranged ? R2.arrowHit : R2.hit) + ' dégâts par coup'), '.'),
           el('button', { class: 'sm', onclick: () => { sm.level = nx.level; render(); } }, 'Voir ce palier'))); }
@@ -127,6 +132,7 @@
     m.append(el('div', { class: 'card' }, el('h3', {}, 'Hypothèses de combat'), el('div', { class: 'small mut' }, 'Certains talents et pouvoirs dépendent de la situation. Coche ce qui s\'applique à ton calcul.'),
       el('div', { class: 'row' }, ck('burning', 'Cible en feu'), ck('lowHp', 'PV ≤ 50 %'), ck('targetEffect', 'Cible sous effet (poison…)'), ck('sun', 'Exposé au soleil / au ciel'), ck('active', 'Capacité active de l\'arme (clic droit : Hellbrand, Frostfang…)'), ck('cursed', 'Porte l\'Anneau des Sept Malédictions (dégâts subis ×2, armure −30 %, dégâts infligés −50 %)')),
       el('div', { class: 'row' }, el('label', { class: 'small' }, 'Distance moyenne de la cible (blocs) '), el('input', { type: 'number', min: 0, value: as.dist ?? '', placeholder: 'auto', onchange: e => { as.dist = e.target.value === '' ? undefined : +e.target.value; recalc(); } }),
+        el('label', { class: 'small', title: 'Part du temps passée à frapper à pleine charge (esquives, déplacements, recharge). 90 % = presque toujours en train de frapper.' }, ' Efficacité d\'attaque (%) '), el('input', { type: 'number', min: 10, max: 100, value: Math.round((as.uptime ?? 0.9) * 100), onchange: e => { as.uptime = Math.max(0.1, Math.min(1, +e.target.value / 100)); recalc(); } }),
         el('label', { class: 'small' }, ' Effets de potion actifs '), el('input', { type: 'number', min: 0, value: as.potions || 0, onchange: e => { as.potions = +e.target.value; recalc(); } }),
         el('label', { class: 'small' }, ' Niveaux d\'enchantement sur l\'arme '), el('input', { type: 'number', min: 0, value: as.enchants || 0, onchange: e => { as.enchants = +e.target.value; recalc(); } }))));
     m.append(el('div', { class: 'card' }, el('h3', {}, 'Notes de build'), el('textarea', { rows: 4, style: 'width:100%', oninput: e => { S.notes = e.target.value; save(); } }, S.notes || '')));
@@ -335,7 +341,7 @@
 
   /* ---------- Simulateur de boss ---------- */
   let bossSel = 'cataclysm:ignis', bossDist = 1500, bossWl = 0, bossWhich = 'avg';
-  const TIER_ORDER = ['Palier 1', 'Gardien', 'Palier 2', 'Palier 3', 'Histoire'];
+  const TIER_ORDER = ['Palier 1', 'Gardien', 'Palier 2', 'Palier 3', 'Histoire', 'Twilight Forest', 'Aether', 'Blue Skies', 'Sept péchés'];
   function verdict(r) {
     if (!isFinite(r.ttk)) return ['—', 'mut'];
     if (r.ttk < 90 && r.hitsToDie > 8) return ['Facile', 'good'];
@@ -353,6 +359,10 @@
       el('div', { class: 'row' }, el('label', {}, 'Niveau du monde'), el('select', { onchange: e => { bossWl = +e.target.value; render(); } },
         ...[[0, 'Normal'], [150, 'Ascendant (Azure) +150'], [300, 'Divin +300'], [500, 'Hellheim +500']].map(([v, n]) => el('option', { value: v, selected: bossWl === v }, n))),
         el('select', { onchange: e => { bossWhich = e.target.value; render(); } }, ...[['min', 'niveau mini'], ['avg', 'niveau moyen'], ['max', 'niveau maxi']].map(([v, n]) => el('option', { value: v, selected: bossWhich === v }, n)))));
+    const asx = S.assume = S.assume || {};
+    ctr.append(el('div', { class: 'row' }, el('label', { title: 'Majrusz\'s Progressive Difficulty : normal au début, expert dès qu\'un joueur change de dimension, maître après la mort de l\'Ender Dragon' }, 'Palier de difficulté du monde'),
+      el('select', { onchange: e => { asx.stage = e.target.value; render(); } }, ...[['', 'Automatique (maître si « Dragon vaincu »)'], ['normal', 'Normal'], ['expert', 'Expert : +15 % vie, +10 % dégâts'], ['master', 'Maître : +30 % vie, +20 % dégâts']].map(([v, n]) => el('option', { value: v, selected: (asx.stage || '') === v }, n))),
+      el('label', { class: 'small', title: 'Progressive Bosses : chaque Wither invoqué après un autre est plus dur (jusqu\'à 8)' }, ' Difficulté du Wither (0 à 8) '), el('input', { type: 'number', min: 0, max: 8, value: asx.pbDiff || 0, style: 'width:60px', onchange: e => { asx.pbDiff = Math.max(0, Math.min(8, +e.target.value || 0)); render(); } })));
     m.append(ctr);
     const b = D.bosses.find(x => x.id === bossSel); const r = ENG.bossSim(R, S, b, bossDist, bossWl, bossWhich);
     const card = el('div', { class: 'card' }, el('h3', {}, b.name, el('span', { class: 'tag' }, b.tier), el('span', { class: 'tag' }, b.mod)), el('div', { class: 'small mut' }, b.dim + ' — ' + b.how));
@@ -402,7 +412,7 @@
   const LEVELS = [['debutant', 'Débutant'], ['milieu', 'Intermédiaire'], ['fin', 'Avancé'], ['optimise', 'Optimisé (BiS)']];
   function renderBuilds(m) {
     m.append(el('div', { class: 'note' }, 'Builds « théoriques » construits à partir des données du pack. Choisis un niveau selon ton avancement, charge-le puis ajuste selon ton loot. Le guide complet de chaque build est dans le wiki.'));
-    const all = window.BUILDS || [];
+    const all = window.BUILDS_IDX || [];
     const tags = [...new Set(all.flatMap(b => b.tags || []).filter(t => !LEVELS.some(l => l[1] === t)))].sort();
     const q = el('input', { placeholder: 'Rechercher un build…', value: bf.q, oninput: e => { bf.q = e.target.value; draw(); } });
     const ls = el('select', { onchange: e => { bf.level = e.target.value; draw(); } }, el('option', { value: '' }, 'Tous les niveaux'), ...LEVELS.map(([v, n]) => el('option', { value: v, selected: bf.level === v }, n)));
@@ -418,7 +428,7 @@
       const corder = {}; CATS.forEach((c, i) => corder[c.id] = i);
       let lastCat = null;
       rows.sort((a, b) => (corder[catOf(a)] ?? 99) - (corder[catOf(b)] ?? 99) || (CATS.find(c => c.id === catOf(a)) || { builds: [] }).builds.indexOf(a.arch || a.id) - (CATS.find(c => c.id === catOf(b)) || { builds: [] }).builds.indexOf(b.arch || b.id) || (order[a.level] ?? 9) - (order[b.level] ?? 9)).forEach(b => { const ck = catOf(b); if (ck !== lastCat) { lastCat = ck; const c = CATS.find(x => x.id === ck); if (c) box.append(el('div', { style: 'margin:14px 0 4px' }, el('h2', { style: 'margin:0' }, c.icon + ' ' + c.title), el('div', { class: 'small mut' }, c.desc))); } box.append(el('div', { class: 'build' }, el('div', {}, el('h3', {}, b.title), el('div', { class: 'small' }, b.summary), el('div', {}, ...(b.tags || []).map(t => el('span', { class: 'chip' }, t)))),
-        el('div', {}, el('button', { class: 'pri', onclick: () => { S = Object.assign(DEFAULT(), JSON.parse(JSON.stringify(b.state)), { name: b.title }); $('#bname').value = S.name; recalc(); tab = 'perso'; render(); } }, 'Charger'), el('button', { class: 'sm', title: 'Charger ce build et voir son arbre de talents', onclick: () => { S = Object.assign(DEFAULT(), JSON.parse(JSON.stringify(b.state)), { name: b.title }); $('#bname').value = S.name; recalc(); tab = 'arbre'; render(); } }, 'Voir l\'arbre'), b.wiki ? el('div', {}, el('a', { href: '../wiki/' + b.wiki }, 'Guide complet →')) : null))); });
+        el('div', {}, el('button', { class: 'pri', onclick: async () => { loadState(b, await stateOf(b)); recalc(); tab = 'perso'; render(); } }, 'Charger'), el('button', { class: 'sm', title: 'Charger ce build et voir son arbre de talents', onclick: async () => { loadState(b, await stateOf(b)); recalc(); tab = 'arbre'; render(); } }, 'Voir l\'arbre'), b.wiki ? el('div', {}, el('a', { href: '../wiki/' + b.wiki }, 'Guide complet →')) : null))); });
       if (!rows.length) box.append(el('p', { class: 'mut' }, 'Aucun build ne correspond.'));
     }
     draw();
@@ -430,6 +440,7 @@
     const row = (k, v, hl) => el('div', { class: 'stat' + (hl ? ' hl' : '') }, el('span', {}, k), el('b', {}, v));
     const hit = S.hit || 30;
     box.append(el('h3', {}, S.name || 'Build'));
+    const wr = ENG.restrictions(S); if (wr.length) box.append(el('div', { class: 'warn small' }, el('b', {}, '⚠ Restriction d\'origine'), ...wr.map(x => el('div', {}, x))));
     box.append(el('div', { class: 'sec' }, 'Défense'));
     box.append(row('Vie max', fnum(R.hp, 0), 1), row('Armure', fnum(R.armor, 1) + (R.tough ? ' · rob. ' + fnum(R.tough, 1) : '')));
     const red = R.armorReduction(hit);

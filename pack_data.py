@@ -19,6 +19,8 @@ for r in RARITY_ORDER:
     rar[r] = {'name': RARITY_FR[r], 'color': RARITY_COLOR[r], 'stat': c['stat'], 'ability': c['ability'], 'sockets': len(sock), 'socketChances': sock,
               'quality': d.get('quality', 0), 'weight': d.get('weight', 0)}
 D['rarities'] = rar
+D['originRules'] = json.load(open('site/data/origin_rules.json'))
+D['caps'] = json.load(open('site/data/caps.json'))
 D['typeFr'] = TYPE_FR
 D['rarityOrder'] = RARITY_ORDER
 for a in D['affixes']:

@@ -1,0 +1,25 @@
+name: Vérifications du site
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Syntaxe JavaScript
+        run: for f in site/pob/*.js sim/*.js wiki_src/_*.js; do node --check "$f"; done
+      - name: Moteur et builds (smoke, auto-test, restrictions d'origine)
+        run: |
+          node sim/selftest.js
+          node sim/smoke.js
+          node sim/check_rules.js
+      - name: Liens du wiki
+        run: python3 check_links.py
+      - name: Poids des fichiers chargés par le planificateur
+        run: |
+          s=$(( $(stat -c%s site/data/data.js) + $(stat -c%s site/data/builds_index.js) + $(stat -c%s site/data/presets.js) ))
+          echo "data.js + index + presets = $s octets"
+          test $s -lt 2000000

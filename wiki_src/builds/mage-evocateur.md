@@ -19,8 +19,8 @@ Tu **tournes autour** du boss, tu tires depuis les airs (**+dégâts en vol**), 
 | Classe | **Explorer** | Mobilité, exploration |
 | Bénédiction | **Zéphyr** | Pas de dégâts de chute ; **vol ailé** après le dragon (touche `H`) |
 
-!!! warning "Armure légère seulement"
-    L'Élytrian ne porte pas d'armure supérieure à la cotte de mailles. Le planificateur ne vérifie pas cette règle : choisis tes pièces d'armure parmi les sets **légers** (robes de mage, cuir, mailles).
+!!! warning "Armure limitée à la cotte de mailles"
+    L'Élytrien ne peut porter aucune pièce dont la valeur d'armure dépasse **2 / 5 / 4 / 1** (casque / plastron / jambières / bottes). Les armures de Cisco sont toutes trop fortes : ce build utilise de la **cotte de mailles vanilla** avec de bons affixes. Le planificateur te prévient si ton équipement dépasse la limite.
 
 ## Équipement : quoi chercher
 **Puissance Foudre**, **mana**, **vitesse d'incantation** : tu dois pouvoir lancer en vol. Mets des PV : tu as peu d'armure et des os fragiles (dégâts de chute et de collision en vol).

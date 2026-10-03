@@ -37,7 +37,7 @@ B = [
       how="Structure souterraine ; il s'éveille quand on s'approche de son arène.", notes=["Sa vie est ×4 et ses dégâts ×2 dans ce pack. Esquive ses grands balayages puis frappe pendant sa récupération."]),
  dict(id='knightquest:netherman', name='Netherman (l\'Architecte du Chaos)', mod='Knight Quest', tier='Gardien', dim='Nether', hp=450, dmg=16, armor=0,
       how="Grand calice rempli de Grande essence, puis ajoute de l'Essence radieuse.", notes=["Très rapide (vitesse 0,8) et résiste au recul : prévois de l'esquive."]),
- dict(id='minecraft:elder_guardian', name='Elder Guardian', mod='Minecraft (Progressive Bosses)', tier='Gardien', dim='Monument océanique', hp=80, dmg=8, armor=0,
+ dict(id='minecraft:elder_guardian', name='Elder Guardian', mod='Minecraft (Progressive Bosses)', tier='Gardien', dim='Monument océanique', hp=80, hpm=1.5, dmg=8, armor=0,
       how="Se trouve dans le monument océanique.", notes=["Donne l'œil de gardien nécessaire pour ouvrir le portail de l'End. Progressive Bosses : +50 % de vie, 40 d'absorption, et il se renforce à chaque Elder Guardian tué."]),
  dict(id='cataclysm:ender_guardian', name='Ender Guardian', mod='Cataclysm', tier='Gardien', dim='End (citadelle en ruine)', hp=333, hpm=1.5, dmg=16, dmgm=1.5, armor=20, cap=50,
       how="Œil du Vide pour trouver la citadelle en ruine.", notes=["Armure de base 20 et plafond de 50 : privilégie les dégâts qui ignorent l'armure (perforation, magie). Ses attaques font jusqu'à 10 % de tes PV max."]),
@@ -87,10 +87,41 @@ B = [
       how="Talisman corrompu (tainted talisman) sur le podium du purgatoire.", notes=["Armure 70 de base, recul 2 : la fin de campagne. Récompense : Tablet of Ascension ×2 et 20 pièces de champion."]),
 ]
 
+# ---------- Boss ajoutés (vague 3) : stats lues dans le code décompilé (createAttributes) ; invocations d'après le livre de quêtes ----------
+B += [
+ dict(id='twilightforest:naga', name='Naga', mod='Twilight Forest', tier='Twilight Forest', dim='Twilight Forest (cour du Naga)', hp=120, dmg=5, armor=0, how="Se trouve dans sa cour, au premier palier de la forêt.", notes=["Premier boss de la Twilight Forest : il charge en serpentant, ne reste pas dans sa trajectoire.", "Pas de niveau propre : règle par défaut (niveau 1 + 0,008 par bloc)."]),
+ dict(id='twilightforest:lich', name='Lich (Twilight)', mod='Twilight Forest', tier='Twilight Forest', dim='Twilight Forest (tour du Lich)', hp=100, dmg=3, armor=0, how="Tour du Lich, après le Naga.", notes=["Il se protège d'un bouclier et lance des sorts (clones, éclairs) : tue d'abord ses clones.", "Ne pas confondre avec le Lich de Bosses of Mass Destruction (fiche séparée)."]),
+ dict(id='twilightforest:minoshroom', name='Minoshroom', mod='Twilight Forest', tier='Twilight Forest', dim='Twilight Forest (fond du Labyrinthe)', hp=120, dmg=0, armor=0, how="Au fond du Labyrinthe.", notes=["Un minotaure champignon : charge puis coup de hache, reste mobile."]),
+ dict(id='twilightforest:hydra', name='Hydre', mod='Twilight Forest', tier='Twilight Forest', dim='Twilight Forest (marais de feu)', hp=360, dmg=0, armor=0, how="Dans son antre, dans un marais de feu.", notes=["Plusieurs têtes : chaque tête a ses PV ; couper une tête la fait repousser.", "Son armure est multipliée par 8 tant que ses têtes sont intactes (code du mod)."]),
+ dict(id='twilightforest:knight_phantom', name='Knight Phantom', mod='Twilight Forest', tier='Twilight Forest', dim='Twilight Forest (forteresse des chevaliers gobelins)', hp=35, dmg=1, armor=0, how="Grande salle de la forteresse des chevaliers gobelins.", notes=["Plusieurs chevaliers à affronter ; chacun a peu de PV mais une armure ×5 quand il ne charge pas."]),
+ dict(id='twilightforest:ur_ghast', name='Ur-Ghast', mod='Twilight Forest', tier='Twilight Forest', dim='Twilight Forest (sommet de la Dark Tower)', hp=250, dmg=0, armor=0, how="Au sommet de la Dark Tower.", notes=["Un ghast géant qui lance des boules de feu et des explosions ; garde ta distance et reste à l'abri des projectiles."]),
+ dict(id='twilightforest:alpha_yeti', name='Yéti alpha', mod='Twilight Forest', tier='Twilight Forest', dim='Twilight Forest (forêt enneigée)', hp=200, dmg=1, armor=0, how="Dans son antre, dans la forêt enneigée.", notes=["Charge et lance de la glace ; frappe-le de côté pendant qu'il se repose."]),
+ dict(id='twilightforest:snow_queen', name='Reine des neiges', mod='Twilight Forest', tier='Twilight Forest', dim='Twilight Forest (Palais de l\'Aurore)', hp=200, dmg=7, armor=0, how="Au sommet du Palais de l'Aurore.", notes=["Elle invoque des cristaux de glace et se téléporte ; la tuer donne sa tête (quête)."]),
+ dict(id='aether:slider', name='Slider', mod='The Aether', tier='Aether', dim='Aether (donjon de bronze)', hp=400, dmg=0, armor=0, how="Donjon de bronze de l'Aether.", notes=["Doit être vaincu avec des pioches ou des pelles (livre de quêtes).", "La dimension de l'Aether a son propre niveau de départ (35)."]),
+ dict(id='aether:valkyrie_queen', name='Reine des Valkyries', mod='The Aether', tier='Aether', dim='Aether (donjon d\'argent)', hp=500, dmg=13.5, armor=0, how="Après avoir obtenu 10 médailles de victoire (donjon d'argent).", notes=["Bonne vitesse d'attaque : bloque ou esquive, puis réplique."]),
+ dict(id='aether:sun_spirit', name='Sun Spirit', mod='The Aether', tier='Aether', dim='Aether (donjon d\'or)', hp=50, dmg=0, armor=0, how="Donjon d'or de l'Aether.", notes=["Une fois tué, l'Aether n'est plus plongé dans un jour perpétuel."]),
+ dict(id='blue_skies:starlit_crusher', name='Starlit Crusher', mod='Blue Skies', tier='Blue Skies', dim='Everbright / Everdawn (donjon)', hp=500, dmg=10, armor=0, how="Boss de donjon de Blue Skies (clés de donjon).", notes=["Gros bras lent : esquive ses coups lourds et frappe dans son dos."]),
+ dict(id='blue_skies:arachnarch', name='Arachnarch', mod='Blue Skies', tier='Blue Skies', dim='Everbright / Everdawn (donjon)', hp=500, dmg=14, armor=6, how="Boss de donjon de Blue Skies (clés de donjon).", notes=["Une araignée géante : se déplace sur les murs et le plafond, prévois des attaques à distance."]),
+ dict(id='blue_skies:summoner', name='Summoner', mod='Blue Skies', tier='Blue Skies', dim='Everbright', hp=350, dmg=0, armor=0, how="Présidé par Everbright : il faut 4 clés de donjon.", notes=["Fait partie des mobs exclus de l'AutoLeveling (niveau fixe).", "Il invoque des serviteurs : tue-les ou garde ta distance."]),
+ dict(id='blue_skies:alchemist', name='Alchemist', mod='Blue Skies', tier='Blue Skies', dim='Everdawn', hp=500, dmg=0, armor=0, how="Présidé par Everdawn : il faut 4 clés de donjon.", notes=["Exclu de l'AutoLeveling (niveau fixe).", "Lance des potions : de la mobilité et un antidote sont utiles."]),
+ dict(id='sons_of_sins:wistiver', name='Wistiver (péché de la gourmandise)', mod='Sons of Sins', tier='Sept péchés', dim='Overworld', hp=750, dmg=40, armor=0, how="Chapitre « Sept péchés capitaux » du livre de quêtes.", notes=["Ses PV et son attaque augmentent à chaque mort qu'il cause : ne le laisse pas tuer."]),
+ dict(id='sons_of_sins:walking_bed', name='Walking Bed (péché de la paresse)', mod='Sons of Sins', tier='Sept péchés', dim='Overworld', hp=840, dmg=35, armor=0, how="Chapitre « Sept péchés capitaux ».", notes=["Lent mais très résistant et frappe fort."]),
+ dict(id='sons_of_sins:prowler', name='Prowler (péché de l\'orgueil)', mod='Sons of Sins', tier='Sept péchés', dim='Overworld', hp=100, dmg=30, armor=0, how="Chapitre « Sept péchés capitaux ».", notes=["Rapide et mortel : peu de PV, beaucoup de dégâts."]),
+ dict(id='sons_of_sins:kelvin', name='Kelvin (péché de l\'envie)', mod='Sons of Sins', tier='Sept péchés', dim='Overworld', hp=560, dmg=25, armor=0, how="Chapitre « Sept péchés capitaux ».", notes=["Plus lent que ses frères mais tout aussi vicieux."]),
+ dict(id='sons_of_sins:curse', name='Curse (péché de la luxure)', mod='Sons of Sins', tier='Sept péchés', dim='Overworld', hp=350, dmg=4, armor=0, how="Chapitre « Sept péchés capitaux ».", notes=["Il préfère voler : prévois des attaques à distance."]),
+ dict(id='sons_of_sins:blud', name='Blüd (péché de l\'avarice)', mod='Sons of Sins', tier='Sept péchés', dim='Overworld', hp=540, dmg=30, armor=0, how="Chapitre « Sept péchés capitaux ».", notes=["Moins mobile mais très robuste, avec des attaques à distance."]),
+ dict(id='sons_of_sins:butcher', name='Butcher (péché de la colère)', mod='Sons of Sins', tier='Sept péchés', dim='Overworld', hp=650, dmg=50, armor=0, how="Chapitre « Sept péchés capitaux ».", notes=["Polyvalent et vicieux : le plus gros dégât du chapitre."]),
+]
+
+import tomllib
+BLACKLIST = set(tomllib.load(open('../minecraft/config/autoleveling-common.toml', 'rb'))['mobs']['blacklist'])  # mobs exclus de l'AutoLeveling
+DEFAULT_LV = {'start': 1, 'lpd': 0.008, 'rand': 0}  # autoleveling-common.toml : default_leveling_settings (boss sans réglage propre)
+AETHER = {'start': 35, 'lpd': 0.022, 'rand': 0}
 out = []
 for b in B:
     b.setdefault('hpm', 1.0); b.setdefault('dmgm', 1.0); b.setdefault('tough', 0); b.setdefault('cap', 0)
-    b['level'] = lv(b['id'])
+    b['level'] = lv(b['id']) or (AETHER if b['id'].startswith('aether:') else DEFAULT_LV)
+    if b['id'] in BLACKLIST: b['fixed'] = True; b['level'] = None
     out.append(b)
 json.dump(out, open('site/data/bosses.json', 'w'), ensure_ascii=False, separators=(',', ':'))
 print(len(out), 'boss;', sum(1 for b in out if not b['level']), 'sans niveau')
