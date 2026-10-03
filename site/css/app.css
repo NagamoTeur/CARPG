@@ -81,3 +81,9 @@ img.ic{width:24px;height:24px;image-rendering:pixelated;vertical-align:middle;ma
   .side{position:static;max-height:none}
   .wrap{padding:10px}
 }
+
+/* accessibilité : focus visible partout, lien d'évitement */
+:focus-visible{outline:3px solid var(--acc,#e0a63a);outline-offset:2px}
+.skip{position:absolute;left:-999px;top:0;background:#e0a63a;color:#111;padding:8px 14px;z-index:100;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

@@ -80,12 +80,13 @@ def layout(slug, title, body, desc=''):
 <meta name="robots" content="noindex,nofollow"><meta name="description" content="{esc(desc or title)}">
 <link rel="stylesheet" href="{root}css/app.css"><link rel="stylesheet" href="{root}css/wiki.css">
 </head><body>
+<a class="skip" href="#content">Aller au contenu</a>
 <header class="top"><a class="brand" href="{root}index.html">⚔ CARPG</a>
-<button id="navbtn" class="sm" aria-label="Menu">☰ Menu</button>
-<input id="q" type="search" placeholder="Rechercher dans le wiki…" autocomplete="off"><div id="results" class="hidden"></div>
+<button id="navbtn" class="sm" aria-label="Ouvrir le menu" aria-controls="wnav">☰ Menu</button>
+<input id="q" type="search" placeholder="Rechercher dans le wiki…" aria-label="Rechercher dans le wiki" autocomplete="off"><div id="results" class="hidden"></div>
 <span class="spacer"></span><a href="{root}pob/index.html"><button class="pri">Ouvrir le planificateur de build</button></a></header>
 <div class="wikiwrap"><nav id="wnav">{''.join(nav)}</nav>
-<main class="wiki"><h1>{esc(title)}</h1>{body}
+<main class="wiki" id="content"><h1>{esc(title)}</h1>{body}
 <footer class="mut small">Pack V8E · reconstruit le {BUILD_DATE}. Wiki généré à partir des fichiers du modpack « Cisco's Adventure RPG Ultimate » (V8E). Les chiffres viennent des fichiers de config et du code des mods ; en cas de doute, ce qui s'affiche en jeu fait foi.</footer></main></div>
 <script>window.ROOT="{root}";</script><script src="{root}wiki/search-index.js"></script><script src="{root}wiki/glossary.js"></script><script src="{root}wiki/wiki.js"></script>
 </body></html>"""

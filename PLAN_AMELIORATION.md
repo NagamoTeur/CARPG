@@ -1,5 +1,9 @@
 # Audit du site CARPG et plan d'amélioration
 
+> **Statut (octobre 2026)** : phases 0, 1 et 4 faites ; phases 2 et 3 faites en grande partie. Voir `DECISIONS.md` pour le détail et les décisions prises.
+> **Fait** : parcours « Je débute » (liste à cocher) et quiz ; mode simple du planificateur ; icônes ; noms français (sorts, reliques) ; glossaire en infobulles ; correction de la lune de sang ; chiffres générés ; recettes (dont `Cisco.zs`) ; structures et dimensions ; reliques ; 22 boss ajoutés ; paliers Majrusz et Progressive Bosses ; restrictions d'origine (26 builds corrigés) ; loot médian ; plausibilité des niveaux ; caps lus à la source ; tests wiki↔config ; CI ; index léger ; accessibilité de base.
+> **Non fait** : calibrage en jeu (il faut tes mesures) ; équipement d'autres mods (valeurs non lisibles) ; bonus de set, nourriture, potions, reliques dans le calcul.
+
 Audit du 2026-10-03, pack **Cisco's Adventure RPG Ultimate V8E** (Forge 1.19.2, 288 mods), comparé au contenu réel du dossier `minecraft/` (mods, `config/`, `defaultconfigs/`, `config/paxi/datapacks/`, `kubejs/`, `scripts/Cisco.zs`).
 
 Ce qui a été vérifié : inventaire des mods, couverture du wiki et des données, lecture des configs, pages testées dans le navigateur (bureau et mobile), cohérence de quelques affirmations du wiki avec la config. Ce qui n'a **pas** pu l'être : aucune valeur lue en jeu (voir « Calibrage »).
