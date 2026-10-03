@@ -35,3 +35,17 @@
     calc.querySelectorAll('input,select').forEach(e => e.addEventListener('input', upd)); upd();
   }
 })();
+
+/* listes à cocher : état gardé dans le navigateur (par page) */
+(function () {
+  const boxes = document.querySelectorAll('li.chk input[type=checkbox]'); if (!boxes.length) return;
+  const key = 'chk:' + location.pathname; let st = {};
+  try { st = JSON.parse(localStorage.getItem(key) || '{}'); } catch (e) {}
+  boxes.forEach((b, i) => {
+    b.checked = !!st[i];
+    b.addEventListener('change', () => { st[i] = b.checked; try { localStorage.setItem(key, JSON.stringify(st)); } catch (e) {} upd(); });
+  });
+  const bar = document.createElement('div'); bar.className = 'chkbar small'; const h1 = document.querySelector('main.wiki h1'); if (h1) h1.after(bar);
+  function upd() { const n = [...boxes].filter(b => b.checked).length; bar.innerHTML = '<b>Progression :</b> ' + n + ' / ' + boxes.length + ' <span class="meter"><i style="width:' + (100 * n / boxes.length) + '%"></i></span>'; }
+  upd();
+})();

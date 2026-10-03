@@ -64,7 +64,7 @@ Chaque boss a un niveau de départ propre (voir [Guide des boss](boss.html)) :
 
 Définies par le chapitre *Tutorial* du livre de quêtes :
 
-1. **Épreuve 1** (dès le début) : ennemis plus cohérents et plus létaux, **possibilité de lune de sang**.
+1. **Épreuve 1** (dès le début) : ennemis plus cohérents et plus létaux. Le livre de quêtes évoque une *lune de sang*, mais elle est **désactivée** dans la configuration actuelle du serveur (voir plus bas).
 2. **Épreuve 2** (en entrant dans une autre dimension) : ennemis encore plus forts, mais récompenses accrues.
 3. **Épreuve 3** (après la mort de l'Ender Dragon) : ennemis impitoyables, **ennemis élites** possibles.
 
@@ -81,6 +81,25 @@ Le chapitre *Finis Dierum* permet de relever la difficulté du monde :
 
 ## Aussi présents
 
-- **Majrusz's Progressive Difficulty** : le monde passe par des paliers « normal → expert → maître » quand on entre dans une dimension, avec de nouveaux pouvoirs pour les monstres.
 - **Raided** : raids de pillards plus poussés. **Savage & Ravage / It Takes a Pillage** : illagers et structures supplémentaires.
-- **Lune de sang** : événement nocturne dangereux lié à l'Épreuve 1.
+
+## Majrusz's Progressive Difficulty : ce qui est vraiment actif
+
+Le monde passe par trois paliers de difficulté, **communs à tous les joueurs** (la difficulté par joueur est désactivée) :
+
+| Palier | Déclenché par | Monstres |
+|---|---|---|
+| **Normal** | Début de partie | Réglage de base |
+| **Expert** | Le premier passage dans une dimension | **+15 % de vie, +10 % de dégâts**, ×1,1 de vitesse d'apparition, +20 % d'XP |
+| **Maître** | La mort de l'Ender Dragon | **+30 % de vie, +20 % de dégâts**, ×1,2 d'apparition, +40 % d'XP |
+
+Fonctionnalités **activées** (certaines dépendent du palier) :
+
+| Palier | Effet |
+|---|---|
+| Normal | Creepers parfois chargés (12,5 %) ou affaiblis (37,5 %) ; explosions plus grandes (×1,26) et incendiaires ; évokers avec totem d'immortalité ; illusionnistes exclus des raids |
+| Expert | Les creepers se divisent en 4 *creeperlings* à leur mort et déclenchent une réaction en chaîne, explosent même derrière un mur ; les noyés appellent la foudre ; araignées empoisonnées et slimes ralentissants ; lapins tueurs (10 %) ; zombies « joueur » avec tête (10 % de chance de drop) ; escouades de piglins ; 5 % de butin doublé |
+| Maître | Creepers en 6 *creeperlings* ; Endermen qui se téléportent vers toi (50 %) ; pillards avec feux d'artifice ; 10 % de butin doublé |
+
+!!! warning "Désactivé sur ce serveur"
+    La **lune de sang**, l'**armée des morts** et le **saignement** existent dans le mod, mais sont **éteints** dans la configuration. Si le livre de quêtes en parle, ça ne s'applique pas ici.

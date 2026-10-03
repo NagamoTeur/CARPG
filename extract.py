@@ -20,5 +20,17 @@ for f in glob.glob('extract/*/assets/*/lang/en_us.json'):
     try: L.update(jl.load(f))
     except Exception as e: print('ERR', f, e)
 L = {k: (re.sub(r'§.', '', v) if isinstance(v, str) else v) for k, v in L.items()}
+# surcouche du resourcepack du modpack (config/paxi/resourcepacks/Carpg Translations) : prioritaire en jeu
+for f in glob.glob('/home/nagamo/Documents/Dev/Minecraft/minecraft/config/paxi/resourcepacks/Carpg Translations/assets/*/lang/en_us.json'):
+    try: L.update({k: (re.sub(r'§.', '', v) if isinstance(v, str) else v) for k, v in jl.load(f).items()})
+    except Exception as e: print('ERR', f, e)
 json.dump(L, open('out/lang_en.json', 'w'), ensure_ascii=False)
 print(len(L), 'clés de langue')
+# langue française officielle des mods (fr_fr.json), pour afficher « Nom FR (nom EN) »
+F = {}
+for f in glob.glob('extract/*/assets/*/lang/fr_fr.json'):
+    try: F.update(jl.load(f))
+    except Exception as e: print('ERR', f, e)
+F = {k: (re.sub(r'§.', '', v) if isinstance(v, str) else v) for k, v in F.items()}
+json.dump(F, open('out/lang_fr.json', 'w'), ensure_ascii=False)
+print(len(F), 'clés fr_fr')

@@ -45,3 +45,25 @@ details.quest summary{cursor:pointer}details.quest[open]{border-color:var(--acc)
 .treebox .ttip span{color:#cde}
 .tleg i{display:inline-block;width:10px;height:10px;border-radius:50%;margin:0 3px 0 10px;vertical-align:middle}
 @media(max-width:700px){.treebox canvas{height:380px}}
+
+/* recettes */
+.recipe{margin:8px 0;padding:10px 12px}
+.rgrid{border-collapse:collapse;margin-top:6px;font-size:.78rem}
+.rgrid td{border:1px solid var(--line,#3a4452);padding:3px 6px;min-width:70px;text-align:center}
+.rcount{margin-left:10px}
+
+/* listes à cocher */
+li.chk{list-style:none;margin-left:-1.2em}
+li.chk label{cursor:pointer}
+li.chk input{margin-right:8px;transform:scale(1.2)}
+.chkbar{margin:6px 0 12px;display:flex;align-items:center;gap:10px}
+.chkbar .meter{display:inline-block;width:160px;height:8px;border-radius:5px;background:rgba(128,140,160,.3);overflow:hidden}
+.chkbar .meter i{display:block;height:100%;background:#5bd75b}
+
+/* quiz */
+.qopts{display:grid;gap:10px;margin:12px 0}
+.qopt{padding:14px 16px;text-align:left;font-size:1.05rem;border-radius:10px}
+.qopt:hover{background:#e0a63a;color:#111}
+
+/* l'encadré « tip » du wiki ne doit pas hériter de l'infobulle .tip (position fixe) */
+.admonition.tip{position:static;z-index:auto;pointer-events:auto;max-width:none;box-shadow:none;font-size:inherit;color:inherit}
