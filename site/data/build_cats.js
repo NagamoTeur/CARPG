@@ -141,6 +141,60 @@ window.BUILD_CATS={
 "maudit-archer",
 "maudit-berserker"
 ]
+},
+{
+"id": "leg-cisco",
+"title": "Armes légendaires de Cisco",
+"icon": "👑",
+"desc": "Une arme légendaire de la campagne de Cisco, un build : Equillibrium et ses variantes, Nightfall, Hellbrand (la faux), Frostfang, Glacies… avec leur effet unique chiffré quand c'est possible.",
+"adapt": [
+"**L'arme d'abord** : ces builds sont construits autour d'une seule arme et de son effet unique. Si tu n'as pas encore l'arme, joue le build de la catégorie correspondante (mêlée, tank…) et passe à celui-ci quand tu la forges.",
+"**Lis la chaîne de fabrication** : la plupart de ces armes se fabriquent à partir d'une autre (Hellbrand ← Adjudicator, Frostfang et Fell Ragnarok ← Glacies, Nightfall et Absolute ← Equillibrium). Ne jette pas la précédente.",
+"**Effets uniques** : le planificateur prend en compte les dégâts réels, le plafond de dégâts subis et les capacités actives (case « Capacité active » dans Personnage → Hypothèses de combat). Les autres effets (soins, étendards…) sont décrits dans le guide mais pas chiffrés.",
+"**Changer d'arme sans changer de build** : garde l'origine, la classe et les talents, et remplace l'arme par une autre de la même famille (épée → épée). Seul l'effet unique change."
+],
+"builds": [
+"leg-equillibrium",
+"leg-refined-equillibrium",
+"leg-absolute-equillibrium",
+"leg-nightfall",
+"leg-supreme-nightfall",
+"leg-azure-thunder",
+"leg-adjudicator",
+"leg-skysplitter",
+"leg-glacies",
+"leg-castor-pollux",
+"leg-fell-ragnarok",
+"leg-hellbrand",
+"leg-frostfang"
+]
+},
+{
+"id": "leg-autres",
+"title": "Armes uniques (autres mods)",
+"icon": "✦",
+"desc": "Les armes à effet unique des autres mods du pack : Celestisynth, Simply Swords, Cataclysm, Dreadsteel.",
+"adapt": [
+"**Armes uniques de mods** : leurs effets sont décrits dans le guide ; le planificateur ne chiffre que les dégâts de base, pas les capacités spéciales (compétences, étendards).",
+"**Choisis selon ton rôle** : soutien d'équipe (Sunfire, Harbinger), contrôle (Icewhisper, Livyatan), mobilité (Breezebreaker, Thunderbrand), zone (Soul Render, Solaris), autonomie (The Watcher).",
+"**Les mêmes talents** s'appliquent : voie du Forgeron pour la défense, du Chasseur pour la vitesse et l'esquive."
+],
+"builds": [
+"leg-solaris",
+"leg-crescentia",
+"leg-breezebreaker",
+"leg-aquaflora",
+"leg-dreadsteel-scythe",
+"leg-soul-render",
+"leg-sunfire",
+"leg-harbinger",
+"leg-molten-edge",
+"leg-stormbringer",
+"leg-thunderbrand",
+"leg-icewhisper",
+"leg-livyatan",
+"leg-watcher"
+]
 }
 ]
 };

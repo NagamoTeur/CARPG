@@ -128,6 +128,71 @@ ARCH.push(
     pitch: 'Un guerrier qui se bat avec ce qu\'il a cuisiné : voie du Cuisinier, régénération de Vishnu, repas buffs. Il récupère entre deux combats sans consommer de potions.' }),
 );
 
+// ---- Builds d'armes légendaires : une arme, un build. Les effets uniques sont saisis en bonus manuels (pob:*) ----
+const mix = (a, b) => R => Math.pow(R.dps + 1, a) * Math.pow(ehp(R), b);
+const PS = (type, id) => { try { return P(type, id); } catch (e) { return P(type === 'sword' ? 'heavy_weapon' : 'sword', id); } };
+const LEG = (base, id, title, wid, over) => derive(base, Object.assign({ id: 'leg-' + id, title, weapon: PS(over.wtype || 'sword', wid), wiki: 'builds/leg-' + id + '.html', stages: ['fin', 'optimise'], extra: [], spells: [] }, over));
+const man = (attr, val, note) => ({ attr, op: 0, val, note });
+ARCH.push(
+  // --- Armes légendaires de Cisco ---
+  LEG('berserker-critique', 'equillibrium', 'Gardien de l\'Équilibre (Equillibrium éveillée)', 'cisco_mod:equillibrium', { obj: mix(0.5, 0.5), origin: 'cisco_rpg_origins:demi_god_lux', blessing: 'cisco_rpg_origins:ares_blessing', tags: ['Arme légendaire', 'Cisco', 'Dégâts réels'], manual: [man('pob:true_pct', 0.04, 'Equillibrium : 4 % des PV max de la cible en dégâts réels')],
+    pitch: 'L\'épée de l\'équilibre : chaque coup retire 4 % des PV maximum de la cible en dégâts réels, qui ignorent l\'armure. Idéale contre les boss à très gros PV.' }),
+  LEG('assassin', 'refined-equillibrium', 'Lame d\'équilibre agile (Equillibrium raffinée)', 'cisco_mod:refined_equillibrium', { obj: mix(0.5, 0.5), stages: ['milieu', 'fin', 'optimise'], origin: 'origins:feline', blessing: 'cisco_rpg_origins:susanoos_blessing', tags: ['Arme légendaire', 'Cisco', 'Vitesse'], manual: [man('pob:true_pct', 0.02, 'Raffinée : 2 % des PV max de la cible en dégâts réels')],
+    pitch: 'La version légère de l\'épée de l\'équilibre : 2 % de PV max en dégâts réels par coup, mais frappe bien plus vite. Le meilleur choix d\'arme légendaire « à mi-parcours ».' }),
+  LEG('berserker-critique', 'absolute-equillibrium', 'Équilibre absolu (Absolute Equillibrium)', 'cisco_mod:absolute_equillibrium', { obj: mix(0.55, 0.45), origin: 'cisco_rpg_origins:demi_god_lux', blessing: 'cisco_rpg_origins:thors_blessing', tags: ['Arme légendaire', 'Cisco', 'Fin de jeu'],
+    pitch: 'Le sommet de la lignée de l\'équilibre : 44 de dégâts de base, et un clic droit qui donne un énorme bonus de PV et de vitesse d\'attaque pendant 9 secondes.' }),
+  LEG('berserker-critique', 'nightfall', 'Chevalier déchu (Nightfall)', 'cisco_mod:nightfall', { obj: mix(0.6, 0.4), stages: ['milieu', 'fin', 'optimise'], origin: 'cisco_rpg_origins:demi_god_umbra', blessing: 'cisco_rpg_origins:ares_blessing', tags: ['Arme légendaire', 'Cisco', 'Exécution'], manual: [man('pob:true_pct', 0.02, 'Nightfall : 2 % des PV max de la cible en dégâts réels (cible > 25 % PV)')],
+    pitch: 'La lame d\'un héros déchu : fait de gros dégâts, achève les cibles sous 25 % de vie, et son clic droit donne force et vitesse au prix du poison du Wither sur toi.' }),
+  LEG('berserker-critique', 'supreme-nightfall', 'Canon de verre (Supreme Nightfall)', 'cisco_mod:supreme_nightfall', { obj: mix(0.75, 0.25), origin: 'cisco_rpg_origins:demi_god_umbra', blessing: 'cisco_rpg_origins:babayaga_blessing', tags: ['Arme légendaire', 'Cisco', 'Canon de verre'], manual: [man('pob:true_pct', 1 / 15, 'Supreme Nightfall : 6,7 % des PV max de la cible en dégâts réels (cible > 10 % PV)')],
+    pitch: 'L\'épée de l\'équilibre corrompue : 42 de dégâts à vitesse 2,0, et un clic droit qui met tes PV à 50 % mais donne une force et une vitesse énormes. Pour les joueurs qui aiment le risque.' }),
+  LEG('assassin', 'azure-thunder', 'Juge de la foudre (Azure Thunder)', 'cisco_mod:azure_thunder', { obj: mix(0.5, 0.5), stages: ['milieu', 'fin', 'optimise'], origin: 'origins:human', blessing: 'cisco_rpg_origins:thors_blessing', cls: 'origins-classes:rogue', tags: ['Arme légendaire', 'Cisco', 'Foudre'],
+    pitch: 'Une lame qui appelle la foudre : les coups déclenchent des éclairs, et le clic droit frappe tous les ennemis proches de 9 dégâts de foudre en te donnant de la vitesse.' }),
+  LEG('templier-sacre', 'adjudicator', 'Faucheur sacré (Adjudicator)', 'cisco_mod:adjudicator', { obj: mix(0.5, 0.5), stages: ['milieu', 'fin', 'optimise'], origin: 'cisco_rpg_origins:rastrayian_justicar', blessing: 'cisco_rpg_origins:chiron_blessing', tags: ['Arme légendaire', 'Cisco', 'Faux', 'Exécution'],
+    pitch: 'La faux sacrée : elle achève les cibles sous 20 % de PV (dégâts = presque tous leurs PV restants), et son clic droit purifie les effets négatifs et soigne.' }),
+  LEG('assassin', 'skysplitter', 'Lancier des vents (Skysplitter)', 'cisco_mod:skysplitter', { obj: mix(0.5, 0.5), stages: ['milieu', 'fin', 'optimise'], origin: 'origins:avian', cls: 'origins-classes:explorer', blessing: 'cisco_rpg_origins:zephyrus_blessing', tags: ['Arme légendaire', 'Cisco', 'Lance', 'Mobilité'],
+    pitch: 'La lance du vent : aucun dégât de chute, saut amélioré en main, et un clic droit qui te propulse dans les airs. Un build tout en mobilité.' }),
+  LEG('chevalier', 'glacies', 'Tribu du givre (Glacies)', 'cisco_mod:glacies', { obj: mix(0.4, 0.6), origin: 'cisco_rpg_origins:frijani_drengr', blessing: 'cisco_rpg_origins:boreas_blessing', tags: ['Arme légendaire', 'Cisco', 'Hache', 'Glace', 'Tank'], shield: false,
+    pitch: 'La hache double du chef de la tribu du givre : ralentit les ennemis à chaque coup, et le clic droit t\'enferme dans la glace pour un énorme bonus d\'armure au prix d\'un ralentissement.' }),
+  LEG('duelliste', 'castor-pollux', 'Jumeaux célestes (Castor & Pollux)', 'cisco_mod:castor', { obj: mix(0.55, 0.45), stages: ['milieu', 'fin', 'optimise'], origin: 'strictly:thief', blessing: 'cisco_rpg_origins:lokis_blessing', tags: ['Arme légendaire', 'Cisco', 'Dagues jumelles'], offhand: 'cisco_mod:pollux',
+    pitch: 'Deux dagues légendaires, très rapides : Castor inflige la Brûlure gémellaire, Pollux ralentit. Ensemble, elles font un combattant fluide et très mobile.' }),
+  LEG('berserker', 'fell-ragnarok', 'Roi déchu (Fell Ragnarok)', 'cisco_mod:fell_ragnarok', { obj: mix(0.55, 0.45), origin: 'arkwys:piglinbrute', blessing: 'cisco_rpg_origins:hephaestus_blessing', tags: ['Arme légendaire', 'Cisco', 'Marteau', 'Dégâts réels'], manual: [man('pob:flat_true', 25, 'Ragnarok : +25 dégâts réels par coup (ignorent l\'armure)')],
+    pitch: 'Le marteau du Roi déchu : 25 dégâts réels en plus à chaque coup (l\'armure ne compte pas) et la faiblesse infligée à chaque touche. Redoutable contre les boss très blindés.' }),
+  LEG('berserker', 'hellbrand', 'Faux des enfers (Hellbrand)', 'cisco_mod:hellbrand', { obj: mix(0.55, 0.45), origin: 'cisco_rpg_origins:pyrios_pheonix_knight', blessing: 'cisco_rpg_origins:ras_blessing', tags: ['Arme légendaire', 'Cisco', 'Faux', 'Dégâts triplés'], manual: [man('pob:dmg_dealt', 2.0, 'Hellbrand : la marque triple les dégâts de l\'arme (appliquée dès le 1ᵉʳ coup)'), man('pob:active_atk_armor', 0.6, 'Clic droit : attaque × (1 + 0,6 × armure) pendant 10 s si PV > 50 %')],
+    pitch: 'La faux du 2ᵉ Roi déchu : chaque coup marque la cible, et la marque triple les dégâts de la faux. La plus meurtrière des armes légendaires de Cisco… si la marque tient.' }),
+  LEG('duelliste', 'frostfang', 'Louve d\'argent (Frostfang)', 'cisco_mod:frostfang', { obj: mix(0.4, 0.6), origin: 'strictly:wildcat', blessing: 'cisco_rpg_origins:skadis_blessing', tags: ['Arme légendaire', 'Cisco', 'Défense', 'Vitesse'], manual: [man('pob:hit_cap', 0.4, 'Silver Wolf\'s Splendor : les coups ennemis ne dépassent jamais 40 % de tes PV max'), man('pob:active_atk_hp', 0.15, 'Clic droit : attaque × (1 + 0,15 × PV max) pendant 10 s si PV > 50 %')],
+    pitch: 'L\'épée de la 3ᵉ Reine déchue : vitesse d\'attaque 2,5 et surtout un bouclier passif — aucun coup ne peut te retirer plus de 40 % de tes PV max. Un build « jamais one-shot ».' }),
+  // --- Armes célestes (Celestisynth) ---
+  LEG('assassin', 'solaris', 'Épée du soleil (Solaris)', 'celestisynth:solaris', { obj: mix(0.5, 0.5), origin: 'origins:human', blessing: 'cisco_rpg_origins:ras_blessing', cls: 'origins-classes:warrior', tags: ['Arme légendaire', 'Celestisynth', 'Feu'],
+    pitch: 'Immunité au feu en main et chaque coup enflamme la cible. Compétences : tourbillon de flammes et charge enflammée.' }),
+  LEG('berserker-critique', 'crescentia', 'Lune de guerre (Crescentia)', 'celestisynth:crescentia', { obj: mix(0.5, 0.5), origin: 'origins:human', blessing: 'cisco_rpg_origins:athenas_blessing', cls: 'origins-classes:warrior', tags: ['Arme légendaire', 'Celestisynth', 'Résistance'],
+    pitch: 'Un niveau de résistance aux dégâts en main, chaque coup ralentit la cible. Compétences : barrage lunaire et ondes de croissants à longue portée.' }),
+  LEG('assassin', 'breezebreaker', 'Danseur du vent (Breezebreaker)', 'celestisynth:breezebreaker', { obj: mix(0.6, 0.4), origin: 'origins:elytrian', cls: 'origins-classes:rogue', blessing: 'cisco_rpg_origins:zephyrus_blessing', tags: ['Arme légendaire', 'Celestisynth', 'Canon de verre'], manual: [man('pob:dmg_taken', 1.3, 'Agile : −2,3× dégâts subis des autres sources')],
+    pitch: 'Saut énorme et aucun dégât de chute, mais tu subis 2,3 fois plus de dégâts. Le vent comme arme : tornades, charge et roue du vent.' }),
+  LEG('duelliste', 'aquaflora', 'Fleur des eaux (Aquaflora)', 'celestisynth:aquaflora', { obj: mix(0.5, 0.5), origin: 'origins:merling', blessing: 'cisco_rpg_origins:neptunes_blessing', tags: ['Arme légendaire', 'Celestisynth', 'Combos'],
+    pitch: 'Des pétales qui traversent une rangée d\'ennemis, un état « floraison » et un déchaînement de jusqu\'à 20 coups pendant lequel tu es immunisé aux dégâts.' }),
+  // --- Autres armes uniques ---
+  LEG('berserker', 'dreadsteel-scythe', 'Faux d\'acier funeste (Dreadsteel Scythe)', 'dreadsteel:dreadsteel_scythe', { wtype: 'heavy_weapon', obj: mix(0.55, 0.45), origin: 'origins:human', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:babayaga_blessing', tags: ['Arme légendaire', 'Faux', 'Dreadsteel'],
+    pitch: 'En attaquant, une lame magique en rotation traverse tous les ennemis et leur armure. Une faux simple et efficace contre les groupes.' }),
+  LEG('berserker', 'soul-render', 'Tourbillon d\'âmes (Soul Render)', 'cataclysm:soul_render', { obj: mix(0.5, 0.5), origin: 'cisco_rpg_origins:demi_god_umbra', blessing: 'cisco_rpg_origins:ares_blessing', tags: ['Arme légendaire', 'Cataclysm', 'Zone'],
+    pitch: 'L\'épée de l\'Harbinger du Cataclysm : fonce dans les ennemis avec la Rush of Render et, en s\'accroupissant, fait pleuvoir des hallebardes fantômes en spirale.' }),
+  LEG('chevalier', 'sunfire', 'Étendard solaire (Sunfire)', 'simplyswords:sunfire', { wtype: 'heavy_weapon', obj: mix(0.4, 0.6), origin: 'cisco_rpg_origins:pyrios_pheonix_knight', blessing: 'cisco_rpg_origins:arthurs_blessing', tags: ['Arme légendaire', 'Simply Swords', 'Soutien', 'Feu'], shield: false,
+    pitch: 'Chance de te soigner à chaque coup et pose un étendard qui enflamme, blesse et ralentit les ennemis tout en donnant force et vie à tes alliés. L\'arme de soutien du pack.' }),
+  LEG('berserker-critique', 'harbinger', 'Étendard abyssal (Harbinger)', 'simplyswords:harbinger', { obj: mix(0.55, 0.45), origin: 'cisco_rpg_origins:demi_god_umbra', blessing: 'cisco_rpg_origins:lokis_blessing', tags: ['Arme légendaire', 'Simply Swords', 'Contrôle'],
+    pitch: 'Chance d\'infliger la faiblesse ; l\'étendard abyssal attire, blesse et ralentit les ennemis et donne de la vitesse à tes alliés.' }),
+  LEG('paladin-feu', 'molten-edge', 'Rugissement de lave (Molten Edge)', 'simplyswords:molten_edge', { obj: mix(0.5, 0.5), origin: 'cisco_rpg_origins:pyrios_pheonix_knight', blessing: 'cisco_rpg_origins:hephaestus_blessing', tags: ['Arme légendaire', 'Simply Swords', 'Feu', 'Berserk'],
+    pitch: 'Plus tu perds de vie, plus tu gagnes de force et de vitesse. Le rugissement enflamme tout autour de toi et te donne résistance et ruée.' }),
+  LEG('chevalier', 'stormbringer', 'Parade-éclair (Stormbringer)', 'simplyswords:stormbringer', { obj: mix(0.35, 0.65), origin: 'origins:human', cls: 'origins-classes:warrior', blessing: 'cisco_rpg_origins:thors_blessing', tags: ['Arme légendaire', 'Simply Swords', 'Parade', 'Tank'], shield: false,
+    pitch: 'Concentre l\'énergie dans la lame pour bloquer, et si tu pares au bon moment tu renvoies l\'ennemi en l\'air et réduis ta recharge. Un build technique et très gratifiant.' }),
+  LEG('assassin', 'thunderbrand', 'Charge foudroyante (Thunderbrand)', 'simplyswords:thunderbrand', { obj: mix(0.55, 0.45), origin: 'origins:human', cls: 'origins-classes:rogue', blessing: 'cisco_rpg_origins:zephyrus_blessing', tags: ['Arme légendaire', 'Simply Swords', 'Foudre'],
+    pitch: 'Charge ton arme puis fonce en avant : énormes dégâts à tous ceux sur ton chemin. Des chances de rafraîchir la capacité à chaque coup.' }),
+  LEG('chevalier', 'icewhisper', 'Aura de givre (Icewhisper)', 'simplyswords:icewhisper', { obj: mix(0.4, 0.6), origin: 'cisco_rpg_origins:frijani_drengr', blessing: 'cisco_rpg_origins:boreas_blessing', tags: ['Arme légendaire', 'Simply Swords', 'Glace', 'Zone'], shield: false,
+    pitch: 'En main, une aura de givre blesse et ralentit tout ce qui t\'approche ; au prix de ta faim tu déclenches un blizzard qui blesse davantage encore.' }),
+  LEG('duelliste', 'livyatan', 'Brise-glace (Livyatan)', 'simplyswords:livyatan', { obj: mix(0.55, 0.45), origin: 'origins:merling', blessing: 'cisco_rpg_origins:neptunes_blessing', tags: ['Arme légendaire', 'Simply Swords', 'Glace', 'Contrôle'],
+    pitch: 'Emprisonne les ennemis dans la glace (ils ne subissent plus de dégâts) puis la brise pour faire des dégâts d\'autant plus forts que tu la brises tôt.' }),
+  LEG('assassin', 'watcher', 'L\'Observateur (The Watcher)', 'simplyswords:watcher_claymore', { obj: mix(0.5, 0.5), origin: 'cisco_rpg_origins:demi_god_lux', cls: 'origins-classes:rogue', blessing: 'cisco_rpg_origins:lokis_blessing', tags: ['Arme légendaire', 'Simply Swords', 'Vol de vie'],
+    pitch: 'Chance d\'arracher la vie d\'une cible blessée pour te donner de l\'absorption, et de siphonner la santé des ennemis proches pour te soigner. Un build qui ne s\'arrête jamais.' }),
+);
+
 // ---- Builds « Anneau des Sept Malédictions » : mêmes bases que des builds existants, avec l'anneau équipé (assume.cursed) ----
 const deriveC = (base, over) => derive(base, Object.assign({ cursed: true }, over));
 ARCH.push(
@@ -159,18 +224,20 @@ const prevB = fs.existsSync(__dirname + '/../site/data/builds.js') ? JSON.parse(
 const prevR = fs.existsSync(__dirname + '/../out/builds_report.json') ? JSON.parse(fs.readFileSync(__dirname + '/../out/builds_report.json', 'utf8')) : [];
 const out = [], report = [];
 for (const a of ARCH) {
-  if (ONLY_ARCH && !ONLY_ARCH.includes(a.id) && !(ONLY_ARCH.includes('new') && a.isNew)) continue;
+  if (ONLY_ARCH && !ONLY_ARCH.includes(a.id) && !(ONLY_ARCH.includes('new') && a.isNew) && !(ONLY_ARCH.includes('leg') && a.id.startsWith('leg-'))) continue;
   for (const st of STAGES) {
     if (ONLY_STAGES && !ONLY_STAGES.includes(st.key)) continue;
+    if (a.stages && !a.stages.includes(st.key)) continue;
     let w = typeof a.weapon === 'string' ? (st.wi < 0 ? (a.weapon === 'heavy' ? EARLY.heavy_weapon : EARLY.sword) : WEAPON[a.weapon][st.wi]) : a.weapon;
     const gear = { main: Object.assign({ rarity: st.rarity }, w) };
     if (a.shield) gear.off = Object.assign({ rarity: st.rarity }, SHIELD);
+    if (a.offhand) gear.off = Object.assign({ rarity: st.rarity }, PS('sword', a.offhand));
     const arm = armorSet(st.ai < 0 ? 'adventurer' : a.armor[st.ai]);
     for (const k of Object.keys(arm)) gear[k] = Object.assign({ rarity: st.rarity }, arm[k]);
     const cg = {}; [...st.curios, ...a.extra].forEach(sl => cg[sl] = { type: CTYPE[sl], name: NAME[sl] });
     for (const k of Object.keys(cg)) gear[k] = Object.assign({ rarity: st.rarity, gemRarity: st.rarity }, cg[k]);
     for (const k of Object.keys(gear)) gear[k].gemRarity = st.rarity;
-    const spec = { affixLimit: st.affixLimit, socketLimit: st.socketLimit, roll: st.roll, hpFloor: st.hp, title: a.title + ' — ' + st.label, origin: a.origin, cls: a.cls, blessing: a.blessing, flags: st.flags, points: st.points, objective: a.obj, treeClass: st.fixedTree ? a.tree : (process.env.TREE || a.tree), gear, spells: a.spells.map(([id, l]) => ({ id, level: l })) };
+    const spec = { affixLimit: st.affixLimit, socketLimit: st.socketLimit, roll: st.roll, hpFloor: st.hp, title: a.title + ' — ' + st.label, origin: a.origin, cls: a.cls, blessing: a.blessing, flags: st.flags, points: st.points, objective: a.obj, treeClass: st.fixedTree ? a.tree : (process.env.TREE || a.tree), gear, manual: a.manual, spells: a.spells.map(([id, l]) => ({ id, level: l })) };
     if (a.cursed) { spec.assume = { cursed: true }; spec.gear.ring1 = { type: 'curios:ring', name: 'Anneau des Sept Malédictions', rarity: 'epic', fixedAffixes: [], sockets: 0 }; }
     let S;
     try { S = optimize(spec); } catch (e) { console.error('ERREUR', a.id, st.key, e.message); continue; }

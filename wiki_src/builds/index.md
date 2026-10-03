@@ -1,9 +1,9 @@
 ---
 title: Tous les builds
-desc: 46 guides de builds rangés par catégorie, chacun en 4 niveaux
+desc: 73 guides de builds rangés par catégorie, chacun en 4 niveaux
 ---
 
-**46 builds** rangés en **7 catégories**, chacun en **4 niveaux** (Débutant, Intermédiaire, Avancé, Optimisé : voir [Débutant → Optimisé](niveaux.html)). Chaque guide donne les 3 choix de départ, la classe de talents, les priorités d'équipement, les sorts, les conseils de boss, une fiche chiffrée calculée par le planificateur et une section **« Comment adapter ce build »**.
+**73 builds** rangés en **9 catégories** (dont **27 builds d'armes légendaires**, voir [les armes légendaires](#leg-cisco)), chacun en **4 niveaux** (les armes légendaires commencent au niveau où on peut les obtenir) (Débutant, Intermédiaire, Avancé, Optimisé : voir [Débutant → Optimisé](niveaux.html)). Chaque guide donne les 3 choix de départ, la classe de talents, les priorités d'équipement, les sorts, les conseils de boss, une fiche chiffrée calculée par le planificateur et une section **« Comment adapter ce build »**.
 
 !!! tip "Par où commencer ?"
     1. Choisis une **catégorie** (ce que tu aimes faire : lancer des sorts, tirer, frapper, protéger).

@@ -294,6 +294,13 @@
     R.drawSpeed = g('apotheosis:draw_speed');
     R.arrowDps = R.arrowHit * R.critE * R.drawSpeed * (mt === 'crossbow' ? 0.7 : 1);
     if (R.ranged) R.dps = R.arrowDps;
+    // effets uniques d'armes légendaires (saisis comme bonus manuels) : dégâts réels fixes par coup, % des PV max de la cible, plafond des coups reçus
+    // capacité active (clic droit) des armes à bonus d'attaque proportionnel à l'armure ou aux PV (Hellbrand, Frostfang) : attaque × (1 + c·valeur)
+    R.activeMult = 1 + sumPob('pob:active_atk_armor') * R.armor + sumPob('pob:active_atk_hp') * R.hp;
+    if ((S.assume || {}).active && R.activeMult > 1) { R.hit *= R.activeMult; R.dps *= R.activeMult; }
+    R.flatTrue = sumPob('pob:flat_true'); R.truePct = sumPob('pob:true_pct');
+    const caps = mods.filter(m => m.attr === 'pob:hit_cap').map(m => m.val); R.hitCap = caps.length ? Math.min(...caps) : 0;
+    if (!R.ranged && R.flatTrue) R.dps += R.flatTrue * R.spd * 0.9;
     // magie
     R.mana = g('irons_spellbooks:max_mana'); R.manaRegen = g('irons_spellbooks:mana_regen');
     R.manaPerSec = R.mana * 0.01 * R.manaRegen * 2; // 1 % du max toutes les 10 ticks
@@ -326,6 +333,7 @@
     const red = armorRed(eff, st.tough, raw);
     let perHit = raw * (1 - red) * R.critE, capped = false;
     if (st.cap && perHit > st.cap) { perHit = st.cap; capped = true; }
+    if (!R.ranged) perHit += (R.flatTrue || 0) + (R.truePct || 0) * st.hp; // dégâts réels : ignorent l'armure (le plafond Cataclysm n'est pas appliqué : hypothèse)
     const hps = R.ranged ? R.drawSpeed * (((S.gear || {}).main || {}).type === 'crossbow' ? 0.7 : 1) : R.spd * 0.9;
     const dps = raw > 1 ? perHit * hps : 0;
     // sorts choisis (dégâts magiques : ignorent l'armure)
@@ -344,7 +352,7 @@
     const ttk = best > 0 ? st.hp / best : Infinity;
     // survie
     const bossHit = st.dmg; const redP = R.armorReduction(bossHit);
-    const takes = bossHit * (1 - redP) * R.taken;
+    let takes = bossHit * (1 - redP) * R.taken; if (R.hitCap) takes = Math.min(takes, R.hitCap * R.hp);
     const hitsToDie = takes > 0 ? R.hp / takes : Infinity;
     return Object.assign(st, { raw, red, perHit, capped, dps, spellBest, best, ttk, bossHit, redP, takes, hitsToDie, dodge: R.dodgeTotal, eff });
   }

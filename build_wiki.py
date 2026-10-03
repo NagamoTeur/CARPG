@@ -15,6 +15,10 @@ LABFR = {'damage reduction': 'Réduction de dégâts', 'fang count': 'Crocs', 'h
 from mods_fr import FR as FRM
 CATS = json.loads(open('site/data/build_cats.js', encoding='utf8').read().split('=', 1)[1].rstrip().rstrip(';'))['cats']
 BUILD_CAT = {b: c for c in CATS for b in c['builds']}
+BSTATE = {}
+if os.path.exists('site/data/builds.js'):
+    for _b in json.loads(open('site/data/builds.js', encoding='utf8').read().split('=', 1)[1].rstrip().rstrip(';')):
+        BSTATE[(_b.get('arch') or _b['id'], _b.get('level'))] = _b.get('state', {})
 
 
 def TITLE_OF(b):
@@ -350,6 +354,7 @@ def build_page(bid, md_text):
         out.append(md('\n'.join(f'- {t}' for t in cat['adapt']) + '\n\n**Pour aller plus loin :** [Adapter un build à son loot](adapter.html) · [Débutant → Optimisé](niveaux.html) · charge-le dans le [planificateur](../../pob/index.html) pour tester tes modifications.'))
     STD = {'debutant': 'Rare, affixes à 30 % de leur plage, 1 affixe et 1 gemme par pièce, armure d\'aventurier et arme en fer', 'milieu': 'Épique, affixes à 40 % de leur plage, 2 affixes et 1 gemme optimisés par pièce', 'fin': 'Mythique, affixes à 60 % de leur plage, 3 affixes et 2 gemmes optimisés par pièce', 'optimise': 'Mythique, affixes à 90 % de leur plage, 4 affixes et 3 gemmes optimisés par pièce, tous les accessoires'}
     out.append(choices_detail(rs))
+    out.append(weapon_effects(bid, rs))
     out.append(progression_table(rs))
     out.append(tree_box(rs))
     for st in ['debutant', 'milieu', 'fin', 'optimise']:
@@ -410,6 +415,20 @@ def choices_detail(rs):
         pw = ''.join(f'<li><b>{esc(p.get("name_fr") or p["name"])}</b> — {esc(p.get("desc_fr") or p["desc"])}</li>' for p in o['powers'] if not p.get('hidden') and (p.get('desc_fr') or p.get('desc')))
         out.append(f'<div class="card"><div class="mut small">{lab}</div><h3>{esc(o.get("name_fr") or o["name"])}</h3><p class="small">{esc(o.get("desc_fr") or o["desc"])}</p><ul class="small">{pw}</ul></div>')
     out.append('</div>')
+    return ''.join(out)
+
+
+def weapon_effects(bid, rs):
+    """Effets uniques d'arme pris en compte dans le calcul (saisis en bonus manuels), avec le multiplicateur de la capacité active."""
+    st = next((x for x in rs if x['stage'] in ('fin', 'optimise', 'milieu')), None)
+    man = (BSTATE.get((bid, 'fin')) or BSTATE.get((bid, 'optimise')) or {}).get('manual') or []
+    man = [m for m in man if str(m.get('attr', '')).startswith('pob:')]
+    if not man: return ''
+    out = ['<h2 id="effets">Effets de l\'arme pris en compte dans les chiffres</h2><ul class="small">' + ''.join(f'<li>{esc(m["note"])}</li>' for m in man) + '</ul>']
+    ca = sum(m['val'] for m in man if m['attr'] == 'pob:active_atk_armor'); ch = sum(m['val'] for m in man if m['attr'] == 'pob:active_atk_hp')
+    if ca or ch:
+        row = ' · '.join(f'{b["label"]} : <b>×{fnum(1 + ca * b["summary"]["armor"] + ch * b["summary"]["hp"], 0)}</b>' for b in rs if b['stage'] in ('fin', 'optimise'))
+        out.append(f'<p class="small">Multiplicateur d\'attaque pendant la capacité active du clic droit (PV > 50 %) : {row}. Ces valeurs sont théoriques : le jeu peut les plafonner.</p>')
     return ''.join(out)
 
 
